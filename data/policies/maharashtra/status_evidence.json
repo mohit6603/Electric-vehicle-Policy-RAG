@@ -1,0 +1,59 @@
+{
+  "checked_on": "2026-09-23",
+  "purpose": "Public provenance and status observations only; not accepted RAG context or confirmation of benefit availability.",
+  "official_portal_link": {
+    "listing_url": "https://transport.maharashtra.gov.in/Site/Common/ViewPdfList.aspx?Doctype=d0bc9262-60e0-4dcd-afa2-324484089ba1",
+    "anchor_text": "MHEV Policy Portal Link",
+    "href": "https://mhevpolicy.in/"
+  },
+  "portal_url": "https://mhevpolicy.in/",
+  "responses": [
+    {
+      "url": "https://mhevpolicy.in/api/PublicAccessAPI/RtoVehicleRegistrationsDetails",
+      "http_status": 200,
+      "interpretation": "Registration totals, not approved or paid incentive claims.",
+      "body": {
+        "id": 10,
+        "twoWheeler_L1_L2": "341832",
+        "threeWheeler_L5M": "11369",
+        "threeWheelerGoodsCarrier_L5N": "3785",
+        "fourWheelerCar_M1_NonTransport": "49098",
+        "fourWheelerCar_M1_Transport": "1334",
+        "fourWheelerLightGoodsCarrier_N1": "6352",
+        "buses_M3_M4_STU": "1085",
+        "buses_M3_M4_NonSTU": "613",
+        "fourWheelerGoodsCarrier_N2_N3": "1135",
+        "agriculturalVehicle": "263",
+        "asOnDate": "2026-09-21T11:57:00.765Z"
+      }
+    },
+    {
+      "url": "https://mhevpolicy.in/api/PublicAccessAPI/vehicleTypeCounts",
+      "http_status": 200,
+      "interpretation": "Vehicle-type counts; approval, disbursement and available-funding meanings are not established. Do not calculate available benefits from these counts.",
+      "body": {
+        "e_2W_L1_L2": 52265,
+        "e_3W_L5M": 323,
+        "e_3W_goods_carrier_L5N": 161,
+        "e_4W_cars_M1_Non_Transport": 9456,
+        "e_4W_cars_M1_Transport": 1069,
+        "e_4W_Light_Goods_Carrier_N1": 4909,
+        "e_buses_M3_M4_STU": 0,
+        "e_buses_M3_M4_non_STU": 28,
+        "e_4W_goods_carrier_N2_N3": 1001,
+        "e_Agricultural_Tractors_A": 14,
+        "createdBy": null,
+        "createdByName": null,
+        "updatedBy": null,
+        "createdAt": "2026-09-23T12:39:43.9507692Z",
+        "updatedAt": "2026-09-23T12:39:43.9507693Z",
+        "updatedByName": null
+      }
+    },
+    {
+      "url": "https://mhevpolicy.in/api/Announcement/active",
+      "http_status": 401,
+      "interpretation": "Not publicly readable in this request. No authentication attempted."
+    }
+  ]
+}

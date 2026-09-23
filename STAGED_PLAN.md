@@ -2,11 +2,11 @@
 
 Status: stage-wise work approved by the user on 23 September 2026; Stage 1 environment preflight completed. Source of scope: IMPLEMENTATION_GUIDE.md, with REQUIREMENTS_AND_REUSE.md for exact classroom references and assignment constraints. The four-person group is approved as reported by the user. AI assistance remains helper-only: the team implements and verifies the work; assistance supports explanation, review and debugging. See `PROGRESS.md` for actual checks and the next checkpoint.
 
-Confirmed choices: target 30–45-minute sessions; one state or Central per query; defer comparisons. Coverage: Maharashtra, Tamil Nadu, Uttar Pradesh, Delhi (NCT), Gujarat, Telangana, Karnataka and Madhya Pradesh. The user explicitly accepts seven states plus Delhi as the eight jurisdictions; this is a clarified scope adjustment to the proposal's literal state count, not an independently verified instructor exception. Verify benefits current through a fixed date still to be agreed. Select the central scheme and its documents during central-source review.
+Confirmed choices: target 30–45-minute sessions; one state or Central per query; defer comparisons. Coverage: Maharashtra, Tamil Nadu, Uttar Pradesh, Delhi (NCT), Gujarat, Telangana, Karnataka and Madhya Pradesh. The user explicitly accepts seven states plus Delhi as the eight jurisdictions; this is a clarified scope adjustment to the proposal's literal state count, not an independently verified instructor exception. The agreed current-benefit verification cutoff is **23 September 2026**; the first pilot is **Maharashtra**. Select the central scheme and its documents during central-source review.
 
 ## Session sizing
 
-Each numbered row targets one 30–45-minute session; stage 10 repeats for one additional jurisdiction at a time. Because current benefits must now be verified, source research is a separate repeatable session before a jurisdiction's ingestion session. Downloads, dependency failures, source research and model-service availability can require a separate narrowly scoped continuation; elapsed time does not predict account usage reliably. Pilot jurisdictions are to be selected from the agreed list based on readable official PDFs, not assumed here.
+Each numbered row targets one 30–45-minute session; stage 10 repeats for one additional jurisdiction at a time. Because current benefits must now be verified, source research is a separate repeatable session before a jurisdiction's ingestion session. Downloads, dependency failures, source research and model-service availability can require a separate narrowly scoped continuation; elapsed time does not predict account usage reliably. Maharashtra is the selected first pilot; the second pilot is still to be selected from the agreed list.
 
 Work on one agreed stage or batch at a time. Do not automatically continue to the next stage. If an external prerequisite fails or the stage grows, preserve the evidence and open a narrowly defined repair session. A saved checkpoint can be incomplete; it must not be labelled done until its checks pass.
 
@@ -48,10 +48,9 @@ Two-state comparison routing is deferred, as requested. If selected later, inser
 
 Combined central-plus-state answers are outside the first version under the confirmed one-state-or-Central scope. These questions should request separate queries. Current-benefit verification is explicitly included in the repeated S sessions. OCR is not included; a need for OCR or a source packet too large for a single ingestion session requires an explicit scope/batch adjustment.
 
-## Pending source-verification decision
+## Source-verification checkpoint
 
-1. The exact cutoff date for verification of current benefits. Proposed for discussion: 22 September 2026. A different date may be selected; no date is agreed yet.
-The user has approved starting stage-wise work. The central scheme selection is explicitly deferred to its S session.
+The cutoff (23 September 2026) and first pilot (Maharashtra) are agreed. Its [saved source review](data/policies/maharashtra/SOURCE_REVIEW.md) remains incomplete: operational circulars need reliable text and current benefit availability has not been established. A choice between an added OCR preparation session and team-provided checked transcriptions is pending. Do not start Stage 2 from the main policy alone. Central scheme selection remains deferred to its S session.
 
 Resolve later at the relevant checkpoint: page-preserving loader choice using stage 2 extraction evidence; explicit rebuild versus incremental index updates before stage 5; notebook-only launch versus a small app.py before stage 9. Extra OCR or materially different scope must be discussed before expanding a stage.
 

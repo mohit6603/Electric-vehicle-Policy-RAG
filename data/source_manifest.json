@@ -1,0 +1,158 @@
+{
+  "verification_cutoff": "2026-09-23",
+  "page_numbering": "Physical PDF pages, 1-based; paths are relative to the repository root.",
+  "source_stage_status": "incomplete",
+  "current_benefit_availability": "not_verified",
+  "review_file": "data/policies/maharashtra/SOURCE_REVIEW.md",
+  "sources": [
+    {
+      "source_id": "maharashtra_policy_2025-05-23",
+      "filename": "data/policies/maharashtra/maharashtra_ev_policy_2025-05-23.pdf",
+      "document_title": "Maharashtra Electric Vehicle Policy 2025",
+      "state": "Maharashtra",
+      "policy_year": 2025,
+      "document_date": "2025-05-23",
+      "official_url": "https://transport.maharashtra.gov.in/Site/Upload/GR/EV%20Policy%202025%20dated%2023-05-2025.pdf",
+      "official_listing_url": "https://transport.maharashtra.gov.in/Site/Common/ViewPdfList.aspx?Doctype=d0bc9262-60e0-4dcd-afa2-324484089ba1",
+      "retrieved_on": "2026-09-23",
+      "policy_period_start": "2025-04-01",
+      "policy_period_end": "2030-03-31",
+      "policy_period_note": "Overall policy period; not a universal demand-incentive eligibility date.",
+      "pdf_page_count": 25,
+      "sha256": "a0f87168a51239e4ab112b6db5556d00a27fcfb5c1a16681a5388f8fdfa3b665",
+      "extraction_status": "english_candidate_marathi_needs_review",
+      "text_characters_per_pdf_page": [
+        1534,
+        2336,
+        1701,
+        1416,
+        2105,
+        1711,
+        1609,
+        2282,
+        2747,
+        2400,
+        2368,
+        1576,
+        1656,
+        1985,
+        222,
+        2326,
+        2481,
+        1724,
+        2809,
+        2321,
+        2884,
+        2643,
+        2612,
+        2639,
+        1661
+      ],
+      "candidate_pdf_pages": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "visually_reviewed_pdf_pages": [
+        18,
+        19
+      ],
+      "accepted_for_ingestion": false,
+      "team_verified": false
+    },
+    {
+      "source_id": "maharashtra_operational_guidelines_2025-06-19",
+      "filename": "data/policies/maharashtra/maharashtra_ev_operational_guidelines_2025-06-19.pdf",
+      "document_title": "Operational Guidelines Circular 41/2025",
+      "state": "Maharashtra",
+      "policy_year": 2025,
+      "document_date": "2025-06-19",
+      "official_url": "https://transport.maharashtra.gov.in/Site/Upload/GR/Operational%20Guidelines%20Circular%20dated%2019062025.pdf",
+      "official_listing_url": "https://transport.maharashtra.gov.in/Site/Common/ViewPdfList.aspx?Doctype=d0bc9262-60e0-4dcd-afa2-324484089ba1",
+      "retrieved_on": "2026-09-23",
+      "policy_period_start": null,
+      "policy_period_end": null,
+      "policy_period_note": "No separate policy period assigned to this document.",
+      "pdf_page_count": 4,
+      "sha256": "5e2f170788552027a38a644f6b0c333506cceb65d51633f8df6263b9f4dc052b",
+      "extraction_status": "garbled_text_layer",
+      "text_characters_per_pdf_page": [
+        2083,
+        2336,
+        2470,
+        617
+      ],
+      "candidate_pdf_pages": [],
+      "visually_reviewed_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "accepted_for_ingestion": false,
+      "team_verified": false
+    },
+    {
+      "source_id": "maharashtra_operational_guidelines_2025-07-28",
+      "filename": "data/policies/maharashtra/maharashtra_ev_operational_guidelines_2025-07-28.pdf",
+      "document_title": "Operational Guidelines Circular 53/2025",
+      "state": "Maharashtra",
+      "policy_year": 2025,
+      "document_date": "2025-07-28",
+      "official_url": "https://transport.maharashtra.gov.in/Site/Upload/GR/Operational%20Guidelines%20Circular%20dated%2028072025.pdf",
+      "official_listing_url": "https://transport.maharashtra.gov.in/Site/Common/ViewPdfList.aspx?Doctype=d0bc9262-60e0-4dcd-afa2-324484089ba1",
+      "retrieved_on": "2026-09-23",
+      "policy_period_start": null,
+      "policy_period_end": null,
+      "policy_period_note": "No separate policy period assigned to this document.",
+      "pdf_page_count": 1,
+      "sha256": "c10bf89841bb7a238f74e043943c34ad706663546af62a25fa2bd1198b2de61b",
+      "extraction_status": "no_text_layer",
+      "text_characters_per_pdf_page": [
+        0
+      ],
+      "candidate_pdf_pages": [],
+      "visually_reviewed_pdf_pages": [
+        1
+      ],
+      "accepted_for_ingestion": false,
+      "team_verified": false
+    },
+    {
+      "source_id": "maharashtra_corrigendum_2025-08-29",
+      "filename": "data/policies/maharashtra/maharashtra_ev_corrigendum_2025-08-29.pdf",
+      "document_title": "Maharashtra Electric Vehicle Policy 2025 Corrigendum",
+      "state": "Maharashtra",
+      "policy_year": 2025,
+      "document_date": "2025-08-29",
+      "official_url": "https://cdnbbsr.s3waas.gov.in/s3d446e76a7b26f214b3f29f4441e6eb87/uploads/2025/09/202509221584431889.pdf",
+      "official_listing_url": "https://transports.maharashtra.gov.in/en/documents/",
+      "retrieved_on": "2026-09-23",
+      "policy_period_start": null,
+      "policy_period_end": null,
+      "policy_period_note": "No separate policy period assigned to this document.",
+      "pdf_page_count": 3,
+      "sha256": "c0e64b49da1c36de7d8bc7d6c31e2b197889f6944cb5b52431891ad07118f03e",
+      "extraction_status": "marathi_character_errors",
+      "text_characters_per_pdf_page": [
+        1591,
+        2024,
+        1140
+      ],
+      "candidate_pdf_pages": [],
+      "visually_reviewed_pdf_pages": [
+        1,
+        2
+      ],
+      "accepted_for_ingestion": false,
+      "team_verified": false
+    }
+  ]
+}

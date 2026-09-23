@@ -2,7 +2,7 @@
 
 An EV policy assistant planned for the Generative AI mini-project at Jio Institute. It will answer questions from official policy documents, with jurisdiction filtering and document/page citations.
 
-**Status:** Stage 1 setup is complete. Python, notebook imports, local embeddings and the authenticated Groq check have passed. The policy-answering application has not been implemented. See [progress](PROGRESS.md).
+**Status:** Stage 1 setup is complete. Maharashtra source review is in progress: four official PDFs are saved, with extraction and current-status gaps recorded. Stage 2 ingestion has not started. See [progress](PROGRESS.md) and the [source review](data/policies/maharashtra/SOURCE_REVIEW.md).
 
 ## Project documents
 
@@ -14,7 +14,7 @@ An EV policy assistant planned for the Generative AI mini-project at Jio Institu
 
 Coverage: Maharashtra, Tamil Nadu, Uttar Pradesh, Delhi (NCT), Gujarat, Telangana, Karnataka and Madhya Pradesh, plus a central scheme to be selected during source review. Answers will address one jurisdiction per query. Comparisons are deferred.
 
-The corpus will use official documents and amendments to verify benefits through a fixed cutoff. Stage-wise work is approved; the policy verification cutoff is still pending.
+The agreed verification cutoff is **23 September 2026**, and Maharashtra is the first pilot. This is the target date for source verification, not a claim that current benefits have already been verified. The corpus will include applicable official documents and amendments.
 
 Planned stack: Python 3.12, LangChain, local Ollama embeddings (`nomic-embed-text`), persisted Chroma, Groq (`openai/gpt-oss-120b`) and Gradio.
 
@@ -34,4 +34,4 @@ PDF loader imports are available, but extraction and any extra OCR dependencies 
 
 Implementation will adapt applicable examples from the [course repository](https://github.com/aagarwal4/generative-ai-pgp-ji-2026/tree/33c2faa22450cde16ead9071f7ce7ecc78ca592a). The reuse map records the relevant notebooks and cells.
 
-AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration and adaptation of the classroom setup cells into the smoke-check notebook. Local setup checks were executed and their actual outcomes recorded. No policy-answering pipeline or policy evaluation results have been generated. Assistance remains within the agreed helper-only scope, and its actual use will be disclosed in the presentation appendix.
+AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, and official-source research with extraction checks and provenance records. Actual setup outcomes and unresolved source gaps are recorded. The team still needs to verify the policy evidence and implement the EV pipeline; no policy evaluation results have been generated. Assistance remains within the agreed helper-only scope, and its actual use will be disclosed in the presentation appendix.
