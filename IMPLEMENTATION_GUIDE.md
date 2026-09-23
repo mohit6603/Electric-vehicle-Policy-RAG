@@ -27,7 +27,7 @@ Maintain these fields for each source:
 
 Read representative incentive tables and eligibility/validity sections in the PDF and compare them to the extracted text. Check currency, percentages, per-kWh units, caps, vehicle categories, dates and footnotes. An extraction returning some characters is not sufficient evidence that a numerical table is usable.
 
-If a PDF is scanned or unreadable, document the limitation and seek a usable official version. Do not replace an agreed jurisdiction without discussing the scope change. OCR is extra work, not an explicit assignment requirement. Do not invent or silently repair policy amounts.
+If a PDF is scanned or unreadable, document the limitation and seek a usable official version. Do not replace an agreed jurisdiction without discussing the scope change. OCR is extra work, not an explicit assignment requirement. One bounded preparation session was approved for the Maharashtra operational circulars; its [drafts](data/ocr/maharashtra/README.md) need team verification before source acceptance. Do not invent or silently repair policy amounts.
 
 A dated policy supports questions about that document but does not by itself establish current benefits. The user has chosen current-benefit verification through **23 September 2026**, starting with **Maharashtra**: check official amendments, extensions, replacement documents and status through that cutoff. Keep each applicable document chain traceable, record unresolved status, and avoid claiming live policy coverage beyond the cutoff.
 
@@ -135,7 +135,7 @@ For the final submission, use exactly these three slides:
 | 2 | Technical stack and GenAI architecture flow | Actual implemented ingestion/retrieval/generation flow and selected class libraries |
 | 3 | Appendix, including AI-use disclosure | Actual AI assistance, source/reuse attribution, observed evaluation and material limitations as space permits |
 
-Slide 3 must contain AI disclosure; the other suggested appendix material is not explicitly mandated. Keep a truthful assistance log now. AI assistance has included reading the PDFs, inspecting the reference code, mapping requirements, preparing guidance, configuring dependencies, adapting the classroom setup cells, running the environment checks, and researching official Maharashtra sources with extraction and provenance checks. It has not implemented the policy-answering solution or run its policy evaluation. Update that record as work continues; do not claim work was manually authored or tested when it was not.
+Slide 3 must contain AI disclosure; the other suggested appendix material is not explicitly mandated. Keep a truthful assistance log now. AI assistance has included reading the PDFs, inspecting the reference code, mapping requirements, preparing guidance, configuring dependencies, adapting the classroom setup cells, running the environment checks, researching official Maharashtra sources, and preparing OCR drafts with provenance and visual spot checks. It has not implemented the policy-answering solution or run its policy evaluation. Update that record as work continues; do not claim work was manually authored or tested when it was not.
 
 Recommended 8-minute rehearsal: 1 minute for the buyer problem, 2 for the architecture, 4 for the live demo, and 1 for observed evaluation/limitations and appendix. Prepare for a separate 3–4 minutes of questions. This timing split is advice; only the 8-minute total and approximate Q&A duration are specified.
 

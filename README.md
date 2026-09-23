@@ -2,7 +2,7 @@
 
 An EV policy assistant planned for the Generative AI mini-project at Jio Institute. It will answer questions from official policy documents, with jurisdiction filtering and document/page citations.
 
-**Status:** Stage 1 setup is complete. Maharashtra source review is in progress: four official PDFs are saved, with extraction and current-status gaps recorded. Stage 2 ingestion has not started. See [progress](PROGRESS.md) and the [source review](data/policies/maharashtra/SOURCE_REVIEW.md).
+**Status:** Stage 1 setup is complete. Maharashtra source review is in progress: four official PDFs are saved, and five circular-page OCR drafts await team verification. Current-status gaps remain open. Stage 2 ingestion has not started. See [progress](PROGRESS.md), the [source review](data/policies/maharashtra/SOURCE_REVIEW.md) and [OCR review checklist](data/ocr/maharashtra/README.md).
 
 ## Project documents
 
@@ -34,4 +34,4 @@ PDF loader imports are available, but extraction and any extra OCR dependencies 
 
 Implementation will adapt applicable examples from the [course repository](https://github.com/aagarwal4/generative-ai-pgp-ji-2026/tree/33c2faa22450cde16ead9071f7ce7ecc78ca592a). The reuse map records the relevant notebooks and cells.
 
-AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, and official-source research with extraction checks and provenance records. Actual setup outcomes and unresolved source gaps are recorded. The team still needs to verify the policy evidence and implement the EV pipeline; no policy evaluation results have been generated. Assistance remains within the agreed helper-only scope, and its actual use will be disclosed in the presentation appendix.
+AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, official-source research, provenance records and draft OCR preparation with visual spot checks. Actual setup outcomes and unresolved source gaps are recorded. The team still needs to verify the policy evidence and implement the EV pipeline; no policy evaluation results have been generated. Assistance remains within the agreed helper-only scope, and its actual use will be disclosed in the presentation appendix.

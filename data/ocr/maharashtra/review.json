@@ -1,0 +1,130 @@
+{
+  "prepared_on": "2026-09-23",
+  "preparation_status": "complete",
+  "acceptance_status": "pending_team_review",
+  "accepted_for_ingestion": false,
+  "language": "Original Marathi and embedded English; not translated.",
+  "engine": "tesseract 5.5.3",
+  "rendering": {
+    "tool": "pdftoppm",
+    "dpi": 300,
+    "grayscale": true,
+    "format": "png",
+    "source_pdfs_modified": false
+  },
+  "ocr_settings": {
+    "languages": "mar+eng",
+    "oem": 1,
+    "psm": "3 except June page 3 uses 6",
+    "whitespace_cleanup": "Strip trailing line whitespace and extra blank lines at file boundaries; no spelling, date, number or wording corrections."
+  },
+  "models": {
+    "mar": {
+      "url": "https://raw.githubusercontent.com/tesseract-ocr/tessdata_best/e12c65a915945e4c28e237a9b52bc4a8f39a0cec/mar.traineddata",
+      "sha256": "799405456528ffd688bc8173ea9179c0646120436ac35099dccb175c4c70f652",
+      "bytes": 13437670
+    },
+    "eng": {
+      "local_source": "/opt/homebrew/share/tessdata/eng.traineddata",
+      "sha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2"
+    }
+  },
+  "page_numbering": "Physical PDF pages, 1-based. Paths are relative to repository root.",
+  "pages": [
+    {
+      "source_id": "maharashtra_operational_guidelines_2025-06-19",
+      "source_pdf": "data/policies/maharashtra/maharashtra_ev_operational_guidelines_2025-06-19.pdf",
+      "source_sha256": "5e2f170788552027a38a644f6b0c333506cceb65d51633f8df6263b9f4dc052b",
+      "pdf_page": 1,
+      "draft_text": "data/ocr/maharashtra/2025-06-19/page-1.txt",
+      "draft_sha256": "949ec867ba44aa3c21c13b85bdd9f20dd45dbe2c435faba5f8ac374749cac0e6",
+      "text_characters": 2578,
+      "psm": 3,
+      "ai_spot_check": "issues_recorded_not_full_verification",
+      "issues_for_review": [
+        "Header date, dispatch number and circular number are garbled. Compare against 19 JUN 2025, 7349 and 41/2025 on the scan.",
+        "Rules year appears as १९५९ in OCR; the scan reads १९८९. Verify the policy reference date too."
+      ],
+      "team_verified": false,
+      "reviewer": null,
+      "reviewed_on": null,
+      "corrected_text": null
+    },
+    {
+      "source_id": "maharashtra_operational_guidelines_2025-06-19",
+      "source_pdf": "data/policies/maharashtra/maharashtra_ev_operational_guidelines_2025-06-19.pdf",
+      "source_sha256": "5e2f170788552027a38a644f6b0c333506cceb65d51633f8df6263b9f4dc052b",
+      "pdf_page": 2,
+      "draft_text": "data/ocr/maharashtra/2025-06-19/page-2.txt",
+      "draft_sha256": "e7626fdb37d685041e8105bc624db55d67dbec803b58d920c5996c4f77a65c84",
+      "text_characters": 3059,
+      "psm": 3,
+      "ai_spot_check": "issues_recorded_not_full_verification",
+      "issues_for_review": [
+        "The invoice template policy year is garbled as 2°2%. The rules year is also misread as १९५९.",
+        "Check both 30-day deadlines, their different triggers, GST conditions and first-come allocation against the scan."
+      ],
+      "team_verified": false,
+      "reviewer": null,
+      "reviewed_on": null,
+      "corrected_text": null
+    },
+    {
+      "source_id": "maharashtra_operational_guidelines_2025-06-19",
+      "source_pdf": "data/policies/maharashtra/maharashtra_ev_operational_guidelines_2025-06-19.pdf",
+      "source_sha256": "5e2f170788552027a38a644f6b0c333506cceb65d51633f8df6263b9f4dc052b",
+      "pdf_page": 3,
+      "draft_text": "data/ocr/maharashtra/2025-06-19/page-3.txt",
+      "draft_sha256": "2cbd2203733f9e52fed9962c84e75875d3aaa867a5ac08dafdc9566c9c2a778b",
+      "text_characters": 3074,
+      "psm": 6,
+      "ai_spot_check": "issues_recorded_not_full_verification",
+      "issues_for_review": [
+        "PSM 3 detached clause numbers from their paragraphs. PSM 6 was selected after visual comparison; spelling errors remain.",
+        "Verify the page-spanning clause from page 2, clauses 7–12, notification dates/numbers, exclusions and policy precedence."
+      ],
+      "team_verified": false,
+      "reviewer": null,
+      "reviewed_on": null,
+      "corrected_text": null
+    },
+    {
+      "source_id": "maharashtra_operational_guidelines_2025-06-19",
+      "source_pdf": "data/policies/maharashtra/maharashtra_ev_operational_guidelines_2025-06-19.pdf",
+      "source_sha256": "5e2f170788552027a38a644f6b0c333506cceb65d51633f8df6263b9f4dc052b",
+      "pdf_page": 4,
+      "draft_text": "data/ocr/maharashtra/2025-06-19/page-4.txt",
+      "draft_sha256": "b3a07065f1a12b7487775693b6e7f6b00a54ae023e851008524a7d11474b7c19",
+      "text_characters": 757,
+      "psm": 3,
+      "ai_spot_check": "issues_recorded_not_full_verification",
+      "issues_for_review": [
+        "Signatory name and title are partly missing or garbled. Check the authority and precedence paragraphs."
+      ],
+      "team_verified": false,
+      "reviewer": null,
+      "reviewed_on": null,
+      "corrected_text": null
+    },
+    {
+      "source_id": "maharashtra_operational_guidelines_2025-07-28",
+      "source_pdf": "data/policies/maharashtra/maharashtra_ev_operational_guidelines_2025-07-28.pdf",
+      "source_sha256": "c10bf89841bb7a238f74e043943c34ad706663546af62a25fa2bd1198b2de61b",
+      "pdf_page": 1,
+      "draft_text": "data/ocr/maharashtra/2025-07-28/page-1.txt",
+      "draft_sha256": "e18653c89fcb346b4f19adc7effede33b291f3c5491db0ab798d821a6bac7986",
+      "text_characters": 2019,
+      "psm": 3,
+      "ai_spot_check": "issues_recorded_not_full_verification",
+      "issues_for_review": [
+        "Stamp reads 2H JUL 2005 in OCR; scan reads 28 JUL 2025. Dispatch number Jo6S should be checked against 9068.",
+        "Reference 1 date and circular number are garbled. Compare against 23 May 2025 and 53/2025.",
+        "Signatory name/title are omitted. Check the full historic-registration interval, conditional revised invoices and 30-day deadline against the scan."
+      ],
+      "team_verified": false,
+      "reviewer": null,
+      "reviewed_on": null,
+      "corrected_text": null
+    }
+  ]
+}

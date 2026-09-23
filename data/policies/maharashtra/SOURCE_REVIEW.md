@@ -4,6 +4,8 @@ Reviewed: 23 September 2026. Agreed verification cutoff: **23 September 2026**.
 
 Stage S is **incomplete**. Four official PDFs are saved unchanged, with provenance, page counts and hashes in [the source manifest](../../source_manifest.json). They are research inputs, not an accepted ingestion set. The notebook still contains setup checks only.
 
+Follow-up on the same date: the user accepted one OCR preparation session for the June and July circulars. [Five page-matched drafts](../../ocr/maharashtra/README.md) are now prepared, with observed errors recorded and team verification pending. Original extraction results below remain the audit record; OCR drafts have not been accepted in their place.
+
 ## Official sources found
 
 The [Motor Vehicles Department EV listing](https://transport.maharashtra.gov.in/Site/Common/ViewPdfList.aspx?Doctype=d0bc9262-60e0-4dcd-afa2-324484089ba1) links the policy and both operational circulars. The [Transport Department document listing](https://transports.maharashtra.gov.in/en/documents/) links the corrigendum through the government S3WAAS document host. Listing/upload dates differ from the dates printed in the PDFs; the manifest uses the latter.
@@ -42,8 +44,8 @@ No current-entitlement claim is approved for the application from this checkpoin
 
 ## Next bounded session
 
-1. Resolve text preparation: either an explicitly approved OCR preparation session with team verification, or page-matched transcriptions supplied and checked by the team. Keep the original PDFs and cite their physical pages. Do not index the garbled text layer.
+1. Have the team verify the five OCR drafts against the original circular pages, record corrections and reviewer/date, and separately review the corrigendum's extracted text. Keep the original PDFs as citation targets. Do not index the garbled text layer or unchecked OCR.
 2. Continue the official amendment/status check through the cutoff. Establish which vehicle categories and benefits can be supported as current, and retain explicit unknowns where official evidence is unavailable. Claim-process questions may need the portal launch notice and referenced supporting notifications.
 3. Have the team check the document chain and extracted evidence. Only then accept the relevant sources for Stage 2, where the team implements page metadata and splitting using the existing classroom reuse map.
 
-No OCR, ingestion, embeddings, index, policy answers or evaluation cases were created in this source session. OCR remains a scope decision; current-status verification remains open independently of the extraction issue.
+The initial source session created no OCR, ingestion, embeddings, index, policy answers or evaluation cases. The subsequent approved session prepared OCR drafts only; current-status verification remains open independently of text preparation.

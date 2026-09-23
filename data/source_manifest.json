@@ -97,7 +97,9 @@
         4
       ],
       "accepted_for_ingestion": false,
-      "team_verified": false
+      "team_verified": false,
+      "ocr_status": "draft_prepared_pending_team_review",
+      "ocr_review_file": "data/ocr/maharashtra/review.json"
     },
     {
       "source_id": "maharashtra_operational_guidelines_2025-07-28",
@@ -123,7 +125,9 @@
         1
       ],
       "accepted_for_ingestion": false,
-      "team_verified": false
+      "team_verified": false,
+      "ocr_status": "draft_prepared_pending_team_review",
+      "ocr_review_file": "data/ocr/maharashtra/review.json"
     },
     {
       "source_id": "maharashtra_corrigendum_2025-08-29",
