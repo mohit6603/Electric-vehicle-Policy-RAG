@@ -19,9 +19,19 @@ Finish S in this order:
 4. Complete the applicable amendment/current-status check through 23 September 2026 — pending.
 5. Review S against its acceptance criteria, record the result and commit the checkpoint — pending. Required unresolved checks keep S incomplete.
 
-**Immediate next step:** review June circular page 1 against its OCR draft using the [team checklist](data/ocr/maharashtra/README.md), then work through the remaining text in order. AI can assist the comparison; the team provides actual human verification. Do not begin Stage 2 before S passes its acceptance checks.
+**Immediate next step:** the team compares [June page 1 proposed corrections](data/ocr/maharashtra/2025-06-19/page-1-review.md) with the original PDF, saves any final corrections and records reviewer/date. Its AI-assisted comparison is prepared; actual human verification is still pending. Then continue to June page 2. Do not begin Stage 2 before S passes its acceptance checks.
 
 The sections below are session history within this sequence. A “continue” request resumes the first unfinished step above. Report one required next step at each checkpoint rather than offering unrelated paths.
+
+## Stage S subtask: June circular page 1 comparison
+
+Status: **proposed corrections prepared; human verification pending**. Compared the full rendered page at 300 DPI with the OCR draft. Saved a separate proposed transcription and [change notes](data/ocr/maharashtra/2025-06-19/page-1-review.md); original PDF and raw OCR remain unchanged. Header/date/reference corrections and an eligibility-word correction are proposed. The non-policy file-path footer is explicitly omitted from the proposed text.
+
+Corrected an earlier AI review note: the scan appears to print the rules year `१९५९`, so the proposed transcription retains it. The previous definite instruction to replace it with `१९८९` was withdrawn; the analogous page-2 instruction is now an unresolved comparison item. Legal-reference clarification remains separate from transcription.
+
+Proposal provenance and hashes are recorded in `review.json`. No human reviewer, review date or accepted text was invented; all acceptance flags remain false. Original-file hashes, proposal metadata, local links and the focused diff were checked. Stage S step 3 remains active, and no later-stage work was started.
+
+AI assistance: visual source comparison, proposed transcription corrections, correction log and Git checkpoint. The team must still verify the complete page, including minor glyphs and contact text.
 
 ## Stage S subtask: Maharashtra circular OCR preparation
 

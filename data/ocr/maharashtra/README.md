@@ -9,6 +9,8 @@ Prepared on 23 September 2026. **Preparation complete; team verification pending
 
 [review.json](review.json) records source and draft hashes, OCR settings, known issues and empty reviewer fields for each page. The source manifest still rejects these documents for ingestion. The August corrigendum is outside this five-page preparation batch and still needs its own text review.
 
+Current review: [June page 1 proposed corrections](2025-06-19/page-1-review.md) are ready for team comparison. A `.proposed.txt` file contains AI-assisted suggestions; `.checked.txt` is reserved for the team's actual checked result. Neither filename alone establishes verification.
+
 ## Team review
 
 Open each draft beside the corresponding original PDF page. Check the full Marathi text, including dates, clause numbers, negations, conditions and sentences that continue onto the next page. AI spot checks identify examples of errors; they are not an exhaustive verification.

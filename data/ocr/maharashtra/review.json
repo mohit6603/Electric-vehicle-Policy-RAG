@@ -40,15 +40,19 @@
       "draft_sha256": "949ec867ba44aa3c21c13b85bdd9f20dd45dbe2c435faba5f8ac374749cac0e6",
       "text_characters": 2578,
       "psm": 3,
-      "ai_spot_check": "issues_recorded_not_full_verification",
+      "ai_spot_check": "full_page_compared_proposal_pending_team_review",
       "issues_for_review": [
-        "Header date, dispatch number and circular number are garbled. Compare against 19 JUN 2025, 7349 and 41/2025 on the scan.",
-        "Rules year appears as १९५९ in OCR; the scan reads १९८९. Verify the policy reference date too."
+        "Review the proposed header identifiers, date, policy reference and eligibility-word correction against the whole original page.",
+        "Earlier definite १९८९ correction withdrawn: the scan appears to print १९५९. Preserve it in transcription and separately verify the legal reference later.",
+        "Contact-line l/1 glyphs, spacing, spelling and punctuation still require the team full-page check. The non-policy file-path footer was omitted explicitly."
       ],
       "team_verified": false,
       "reviewer": null,
       "reviewed_on": null,
-      "corrected_text": null
+      "corrected_text": null,
+      "proposed_text": "data/ocr/maharashtra/2025-06-19/page-1.proposed.txt",
+      "proposed_sha256": "28d562e975688da568cf19abe34109cdc29ee65bb4ed30a84f380554c8237fa2",
+      "proposal_notes": "data/ocr/maharashtra/2025-06-19/page-1-review.md"
     },
     {
       "source_id": "maharashtra_operational_guidelines_2025-06-19",
@@ -61,7 +65,7 @@
       "psm": 3,
       "ai_spot_check": "issues_recorded_not_full_verification",
       "issues_for_review": [
-        "The invoice template policy year is garbled as 2°2%. The rules year is also misread as १९५९.",
+        "The invoice template policy year is garbled as 2°2%. Independently compare the printed rules year with OCR १९५९; do not assume it should be changed before reviewing this page.",
         "Check both 30-day deadlines, their different triggers, GST conditions and first-come allocation against the scan."
       ],
       "team_verified": false,
