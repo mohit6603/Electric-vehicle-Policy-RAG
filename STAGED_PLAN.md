@@ -1,6 +1,6 @@
 # EV Policy Assistant: proposed stages
 
-Status: DRAFT for agreement; no implementation started. Source of scope: IMPLEMENTATION_GUIDE.md, with REQUIREMENTS_AND_REUSE.md for exact classroom references and assignment constraints. The four-person group is approved as reported by the user. AI assistance remains helper-only: the team implements and verifies the work; assistance supports explanation, review and debugging.
+Status: stage-wise work approved by the user on 23 September 2026; Stage 1 environment preflight started. Source of scope: IMPLEMENTATION_GUIDE.md, with REQUIREMENTS_AND_REUSE.md for exact classroom references and assignment constraints. The four-person group is approved as reported by the user. AI assistance remains helper-only: the team implements and verifies the work; assistance supports explanation, review and debugging. See `PROGRESS.md` for actual checks and the next checkpoint.
 
 Confirmed choices: target 30–45-minute sessions; one state or Central per query; defer comparisons. Coverage: Maharashtra, Tamil Nadu, Uttar Pradesh, Delhi (NCT), Gujarat, Telangana, Karnataka and Madhya Pradesh. The user explicitly accepts seven states plus Delhi as the eight jurisdictions; this is a clarified scope adjustment to the proposal's literal state count, not an independently verified instructor exception. Verify benefits current through a fixed date still to be agreed. Select the central scheme and its documents during central-source review.
 
@@ -48,10 +48,10 @@ Two-state comparison routing is deferred, as requested. If selected later, inser
 
 Combined central-plus-state answers are outside the first version under the confirmed one-state-or-Central scope. These questions should request separate queries. Current-benefit verification is explicitly included in the repeated S sessions. OCR is not included; a need for OCR or a source packet too large for a single ingestion session requires an explicit scope/batch adjustment.
 
-## Decisions needed before agreement
+## Pending source-verification decision
 
 1. The exact cutoff date for verification of current benefits. Proposed for discussion: 22 September 2026. A different date may be selected; no date is agreed yet.
-2. Agreement to this stage breakdown before implementation begins. The central scheme selection is explicitly deferred to its S session.
+The user has approved starting stage-wise work. The central scheme selection is explicitly deferred to its S session.
 
 Resolve later at the relevant checkpoint: page-preserving loader choice using stage 2 extraction evidence; explicit rebuild versus incremental index updates before stage 5; notebook-only launch versus a small app.py before stage 9. Extra OCR or materially different scope must be discussed before expanding a stage.
 
