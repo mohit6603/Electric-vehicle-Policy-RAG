@@ -2,7 +2,7 @@
 
 ## Stage 1: environment preflight
 
-Date: 23 September 2026. Status: **in progress; live Groq check pending**. Stage-wise work is approved. Stop at this stage before source verification and ingestion.
+Date: 23 September 2026. Status: **complete**. The full setup notebook passed, including an authenticated Groq request. Stopped at this stage before source verification and ingestion.
 
 Completed setup:
 
@@ -20,11 +20,11 @@ Observed checks:
 | Installed package compatibility | Passed `uv pip check` |
 | Real Jupyter kernel and setup imports | Passed |
 | Local `nomic-embed-text` query embedding | Passed: 768 finite values |
-| Groq `openai/gpt-oss-120b` request | Not run: no key in the project `.env` or inherited environment |
+| Groq `openai/gpt-oss-120b` request | Passed in the notebook: returned `OK` |
 | Policy loading, indexing and answer evaluation | Not started; later stages |
 
-Next action: add `GROQ_API_KEY` to the local `.env` file without sharing it in chat, then rerun the notebook to verify the Groq response. Only then can Stage 1 be marked complete. If the check fails, record the failure and resolve it within Stage 1.
+The user configured the key in the local `.env` file. It remains excluded from Git, and the committed notebook has no saved outputs or credentials. The successful run required no application-code changes.
 
-Before the next source-verification session, agree the policy cutoff date and choose the first pilot state from the eight confirmed jurisdictions. Central scheme selection remains part of central-source review.
+Next action: agree the policy cutoff date and choose the first pilot state from the eight confirmed jurisdictions, then begin its source-verification session (S). Central scheme selection remains part of central-source review. No source verification or Stage 2 ingestion has started.
 
 AI assistance in this stage: environment configuration, setup-cell adaptation, setup checks, documentation and Git operations. The team still owns the policy corpus, EV-specific implementation, prompt and human-verified evaluation questions.

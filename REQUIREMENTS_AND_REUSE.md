@@ -23,7 +23,7 @@ The attached assignment instructions are the assignment specification. The EV id
 | A3 | Agents are optional | LangGraph only if the team implements the optional comparison path | Optional |
 | A4 | Idea PDF: member names and IDs, problem and why worthwhile, proposed approach, tech stack | Existing idea PDF | All four content categories present |
 | A5 | Idea due 22 September 2026, EOD; every member uploads a PDF on Digiicampus | Individual upload confirmations | Uploads not verified |
-| A6 | Final code: GitHub link of the project repository | The team's own runnable project repository and its URL | Repository created at https://github.com/mohit6603/Electric-vehicle-Policy-RAG; planning documents only, implementation pending |
+| A6 | Final code: GitHub link of the project repository | The team's own runnable project repository and its URL | Repository created at https://github.com/mohit6603/Electric-vehicle-Policy-RAG; planning documents and verified environment setup present, policy application pending |
 | A7 | Exactly 3 presentation slides | Slide 1: business impact. Slide 2: technical stack and GenAI architecture flow. Slide 3: appendix including AI disclosure | Not authored |
 | A8 | Every member submits final ZIP on Digiicampus | ZIP containing the repository link and the 3-slide presentation; individual upload confirmations | Not prepared/submitted |
 | A9 | Final submission date/time to be announced | Check the announced course deadline | TBD in the PDF |

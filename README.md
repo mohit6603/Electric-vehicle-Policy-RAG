@@ -2,7 +2,7 @@
 
 An EV policy assistant planned for the Generative AI mini-project at Jio Institute. It will answer questions from official policy documents, with jurisdiction filtering and document/page citations.
 
-**Status:** Stage 1 setup is in progress. Python, notebook imports and local embeddings have passed; the live Groq check is waiting for a local API key. The policy-answering application has not been implemented. See [progress](PROGRESS.md).
+**Status:** Stage 1 setup is complete. Python, notebook imports, local embeddings and the authenticated Groq check have passed. The policy-answering application has not been implemented. See [progress](PROGRESS.md).
 
 ## Project documents
 

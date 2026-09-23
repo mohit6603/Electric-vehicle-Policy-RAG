@@ -135,7 +135,7 @@ For the final submission, use exactly these three slides:
 | 2 | Technical stack and GenAI architecture flow | Actual implemented ingestion/retrieval/generation flow and selected class libraries |
 | 3 | Appendix, including AI-use disclosure | Actual AI assistance, source/reuse attribution, observed evaluation and material limitations as space permits |
 
-Slide 3 must contain AI disclosure; the other suggested appendix material is not explicitly mandated. Keep a truthful assistance log now. In this task, AI read the PDFs, inspected the reference code, mapped requirements, and prepared implementation/review guidance. It did not implement the solution or run its evaluation. Update that record if later assistance includes code suggestions or fixes; do not claim work was manually authored or tested when it was not.
+Slide 3 must contain AI disclosure; the other suggested appendix material is not explicitly mandated. Keep a truthful assistance log now. AI assistance has included reading the PDFs, inspecting the reference code, mapping requirements, preparing guidance, configuring dependencies, adapting the classroom setup cells, and running the environment checks. It has not implemented the policy-answering solution or run its policy evaluation. Update that record as work continues; do not claim work was manually authored or tested when it was not.
 
 Recommended 8-minute rehearsal: 1 minute for the buyer problem, 2 for the architecture, 4 for the live demo, and 1 for observed evaluation/limitations and appendix. Prepare for a separate 3–4 minutes of questions. This timing split is advice; only the 8-minute total and approximate Q&A duration are specified.
 
