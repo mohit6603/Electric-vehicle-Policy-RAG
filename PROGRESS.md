@@ -1,6 +1,29 @@
 # Project checkpoint
 
-## Added session: Maharashtra circular OCR preparation
+## Current stage and next step
+
+**Only active stage: S — Maharashtra source verification.** OCR preparation is a completed subtask within S, not completion of the source stage.
+
+| Stage | Current status |
+|---|---|
+| 1. Environment preflight | Complete |
+| S. Maharashtra source verification | In progress; required checks remain |
+| 2. First-state ingestion | Not started; depends on S acceptance |
+| 3–15 | Not started |
+
+Finish S in this order:
+
+1. Collect the initial official source packet — done; completeness is checked in step 4.
+2. Prepare readable circular drafts — done; errors are recorded, not accepted.
+3. Verify source text — pending: the team checks the five circular pages and the corrigendum text, with corrections and reviewer/date recorded.
+4. Complete the applicable amendment/current-status check through 23 September 2026 — pending.
+5. Review S against its acceptance criteria, record the result and commit the checkpoint — pending. Required unresolved checks keep S incomplete.
+
+**Immediate next step:** review June circular page 1 against its OCR draft using the [team checklist](data/ocr/maharashtra/README.md), then work through the remaining text in order. AI can assist the comparison; the team provides actual human verification. Do not begin Stage 2 before S passes its acceptance checks.
+
+The sections below are session history within this sequence. A “continue” request resumes the first unfinished step above. Report one required next step at each checkpoint rather than offering unrelated paths.
+
+## Stage S subtask: Maharashtra circular OCR preparation
 
 Date: 23 September 2026. Status: **preparation complete; team verification pending**. The user accepted the recommended bounded OCR session after the source checkpoint. Stage S remains incomplete and Stage 2 has not started.
 

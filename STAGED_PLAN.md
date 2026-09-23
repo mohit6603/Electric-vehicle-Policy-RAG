@@ -10,6 +10,8 @@ Each numbered row targets one 30–45-minute session; stage 10 repeats for one a
 
 Work on one agreed stage or batch at a time. Do not automatically continue to the next stage. If an external prerequisite fails or the stage grows, preserve the evidence and open a narrowly defined repair session. A saved checkpoint can be incomplete; it must not be labelled done until its checks pass.
 
+Keep exactly one active stage in `PROGRESS.md`, with an ordered list of its remaining steps. OCR preparation and other required repairs belong to that stage; completing a subtask does not complete the stage. A “continue” request resumes its first unfinished step. Finish each session by stating the current stage, checks passed, work remaining and one required next step. Do not offer unrelated follow-up paths or begin a later stage while the current stage's required checks remain unresolved. Change the agreed order only when the user requests it.
+
 ## Source verification: a separate repeatable stage
 
 Run one **Source verification session (S)** for each pilot state, central scheme, and later added jurisdiction, before its ingestion session. This separation keeps current-policy research from consuming the implementation session. For central, first select the buyer-relevant scheme(s) for the agreed cutoff.
