@@ -1,0 +1,53 @@
+{
+  "checked_at_utc": "2026-09-24T17:59:10.526399+00:00",
+  "technical_status": "passed",
+  "team_acceptance": "deferred_not_verified",
+  "current_benefit_availability": "not_verified",
+  "verification_cutoff": "2026-09-23",
+  "page_count": 23,
+  "chunk_count": 78,
+  "chunks_by_source": {
+    "tamil_nadu_policy_2023": 76,
+    "tamil_nadu_motor_vehicle_tax_2025-12-29": 2
+  },
+  "splitter": {
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "add_start_index": true,
+    "separators": [
+      "\n5.2.1",
+      "\n5.2.2",
+      "\n\n",
+      "\n",
+      " ",
+      ""
+    ]
+  },
+  "checks_passed": [
+    "23_unique_pages",
+    "source_hashes_and_original_citations",
+    "physical_page_numbers",
+    "metadata_and_status_preserved",
+    "relationship_targets_resolve",
+    "no_nonwhitespace_text_lost",
+    "five_demand_rows_and_conditions",
+    "demand_expiry_not_extended_by_tax_order",
+    "public_private_charging_tables",
+    "battery_swapping_cap_and_count",
+    "tax_order_scope_dates_and_link",
+    "distinct_jurisdiction_ids"
+  ],
+  "evidence_chunks": {
+    "demand_table": "tamil_nadu_policy_2023:p17:c0:7ac3dc5ebe33",
+    "public_charging": "tamil_nadu_policy_2023:p19:c1501:041dfff56787",
+    "private_charging": "tamil_nadu_policy_2023:p19:c1979:3bd10c21e540",
+    "battery_swapping": "tamil_nadu_policy_2023:p20:c0:15e4e1774463",
+    "motor_vehicle_tax": "tamil_nadu_motor_vehicle_tax_2025-12-29:p1:c734:804bb4a46d11"
+  },
+  "artifact_sha256": {
+    "pages.jsonl": "e705b5060ecddcdf3e6f5fd65845b8809b57b12f053be85c519cd2ac2a536ebe",
+    "chunks.jsonl": "8d1708d8766411a2c5e19e600cd5933dd2abd09a8a2b9a5b44fa8ffcbd930a63"
+  },
+  "notebook_sha256": "79e10183143d140142ba641aafbb3b29d5f0699660ef1c91f9dbe5deec27d663",
+  "source_manifest_sha256": "790708785febab89b8855b23e412b332f5ae5fc611754e59b513fc2459f4cd88"
+}

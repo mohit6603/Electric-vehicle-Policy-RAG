@@ -208,6 +208,97 @@
       "answer_candidate_pdf_pages": [
         2
       ]
+    },
+    {
+      "source_id": "tamil_nadu_policy_2023",
+      "filename": "data/policies/tamil_nadu/tamil_nadu_ev_policy_2023.pdf",
+      "document_title": "Tamil Nadu Electric Vehicles Policy 2023",
+      "state": "Tamil Nadu",
+      "policy_year": 2023,
+      "document_date": "2023",
+      "official_url": "https://sipcotweb.tn.gov.in/uploads/policy/12/TN_Electric_Vehicles_Policy_2023.pdf",
+      "retrieved_on": "2026-09-24",
+      "pdf_page_count": 28,
+      "sha256": "522b06e6dd428b01c06071df2448d9232d8626ba4953b3e3ee819d1fe18601f6",
+      "candidate_pdf_pages": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "extraction_status": "text_layer_available",
+      "accepted_for_ingestion": false,
+      "team_verified": false,
+      "current_benefit_availability": "not_verified",
+      "current_entitlement_answers_allowed": false,
+      "ready_for_extraction_tests": true,
+      "review_file": "data/policies/tamil_nadu/SOURCE_REVIEW.md",
+      "layout_pdf_pages": [
+        17,
+        19,
+        20
+      ],
+      "document_date_precision": "year",
+      "document_date_note": "The supplied policy booklet gives 2023, not a notification day. No exact day inferred.",
+      "visually_reviewed_pdf_pages": [
+        16,
+        17,
+        19,
+        20,
+        27
+      ],
+      "policy_period_note": "Section 7.4: five years from notification or until a new policy; not a universal benefit deadline.",
+      "special_demand_incentive_end": "2025-12-31",
+      "current_status_note": "Road-tax dates require the later tax notification. No demand-incentive or fee-waiver extension established."
+    },
+    {
+      "source_id": "tamil_nadu_motor_vehicle_tax_2025-12-29",
+      "filename": "data/policies/tamil_nadu/tamil_nadu_motor_vehicle_tax_2025-12-29.pdf",
+      "document_title": "G.O. Ms. No. 674: Battery-operated motor vehicle tax exemption",
+      "state": "Tamil Nadu",
+      "policy_year": 2023,
+      "document_date": "2025-12-29",
+      "official_url": "https://www.stationeryprinting.tn.gov.in/extraordinary/2025/861_Ex_II_2_2025.pdf",
+      "retrieved_on": "2026-09-24",
+      "pdf_page_count": 1,
+      "sha256": "d89d2b45ab48c832b0b3d95d0ae41d4b55bd37ddddcc846ea42acd79966760f0",
+      "candidate_pdf_pages": [
+        1
+      ],
+      "extraction_status": "text_layer_available",
+      "accepted_for_ingestion": false,
+      "team_verified": false,
+      "current_benefit_availability": "not_verified",
+      "current_entitlement_answers_allowed": false,
+      "ready_for_extraction_tests": true,
+      "review_file": "data/policies/tamil_nadu/SOURCE_REVIEW.md",
+      "official_listing_url": "https://www.stationeryprinting.tn.gov.in/extra_ordinary_lists.php?id=MjAyNQ%3D%3D",
+      "supplements_source_id": "tamil_nadu_policy_2023",
+      "effective_from": "2026-01-01",
+      "effective_to": "2027-12-31",
+      "benefit_scope": "motor_vehicle_tax_only",
+      "visually_reviewed_pdf_pages": [
+        1
+      ],
+      "current_status_note": "Official text specifies this tax-exemption period; no extension of purchase incentives or other fees is inferred."
     }
   ],
   "technical_review_completed_on": "2026-09-24",
@@ -216,5 +307,9 @@
   "ready_for_extraction_tests": true,
   "readiness_note": "Candidate text is ready for local extraction/splitting tests. Team acceptance and current-status verification remain open; this is not an accepted answer corpus.",
   "text_review_file": "data/ocr/maharashtra/TEXT_REVIEW.md",
-  "research_log": "data/policies/maharashtra/research_log.json"
+  "research_log": "data/policies/maharashtra/research_log.json",
+  "jurisdiction_reviews": {
+    "Maharashtra": "data/policies/maharashtra/SOURCE_REVIEW.md",
+    "Tamil Nadu": "data/policies/tamil_nadu/SOURCE_REVIEW.md"
+  }
 }

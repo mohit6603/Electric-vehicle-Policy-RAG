@@ -2,7 +2,7 @@
 
 An EV policy assistant planned for the Generative AI mini-project at Jio Institute. It will answer questions from official policy documents, with jurisdiction filtering and document/page citations.
 
-**Status:** Technical Stage 2 is complete. The notebook loads Maharashtra's ten English policy pages and eight OCR proposals, preserves their source/amendment metadata, and produces 53 draft chunks from 16 eligible pages. All 18 pages remain in the audit. Twelve technical checks pass in a fresh Jupyter kernel. Manual team review and current-benefit verification remain pending. See [Stage 2 run instructions](STAGE_2_HANDOFF.md), [progress](PROGRESS.md) and the [source review](data/policies/maharashtra/SOURCE_REVIEW.md).
+**Status:** Technical Stage 3 is complete. Maharashtra has 18 page records and 53 draft chunks; Tamil Nadu has 23 pages and 78 chunks. Both use the shared page loader with original PDF citations and jurisdiction metadata. Manual source acceptance and remaining current-benefit checks are deferred. See [Stage 3 run instructions](STAGE_3_HANDOFF.md), [Stage 2](STAGE_2_HANDOFF.md) and [progress](PROGRESS.md).
 
 ## Project documents
 
@@ -30,12 +30,16 @@ The notebook checks imports, one local embedding and one small Groq request. An 
 
 ## Run Stage 2 only
 
-Open `EV Policy Assistant.ipynb` from the project folder and run every cell under **Stage 2: Maharashtra ingestion and chunk checks**, in order. These cells need only the installed Python dependencies; they do not use the API key, Groq or Ollama. The prepared OCR text is already saved in the repository.
+Open `EV Policy Assistant.ipynb` from the project folder, run **Shared page loader**, then every cell under **Stage 2: Maharashtra ingestion and chunk checks**, in order. These cells need only the installed Python dependencies; they do not use the API key, Groq or Ollama. The prepared OCR text is already saved in the repository.
 
 Expected output: **18 page records, 16 draft pages, 53 chunks, 12 passed checks**. The notebook writes `pages.jsonl`, `chunks.jsonl` and `stage2_checks.json` under `data/processed/maharashtra/`. Rerunning replaces these derived files. The chunks are unverified development data; no index or answer generation is implemented yet. The [handoff](STAGE_2_HANDOFF.md) explains the amendment exclusions and remaining review work.
+
+## Run Stage 3 only
+
+Run **Shared page loader**, then every cell under **Stage 3: Tamil Nadu ingestion**, in order. No Stage 1/2 execution, API key or model service is needed; the committed Maharashtra artifacts are used for the jurisdiction-isolation check. Expected output: **23 pages, 78 chunks, 12 passed checks**. Outputs are saved under `data/processed/tamil_nadu/`. See [the Stage 3 handoff](STAGE_3_HANDOFF.md) for source scope and deferred acceptance.
 
 ## Reference and assistance
 
 Implementation will adapt applicable examples from the [course repository](https://github.com/aagarwal4/generative-ai-pgp-ji-2026/tree/33c2faa22450cde16ead9071f7ce7ecc78ca592a). The reuse map records the relevant notebooks and cells.
 
-AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, official-source research, provenance records, OCR preparation and proposed text corrections. The user subsequently authorized AI implementation of technical Stage 2: the complete page loader, metadata relationships, splitting, checks and exports. This supersedes the earlier helper-only instruction for Stage 2; it does not change the assignment's AI-use rule. The team must disclose the actual assistance in the presentation appendix. Manual source verification and independently authored evaluation cases remain the team's work; no policy-answer evaluation results have been generated.
+AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, official-source research, provenance records, OCR preparation and proposed text corrections. The user subsequently authorized AI implementation of technical Stages 2 and 3: the shared page loader, source-specific extraction, metadata relationships, splitting, checks and exports. This supersedes the earlier helper-only instruction for those stages; it does not change the assignment's AI-use rule. The team must disclose the actual assistance in the presentation appendix. Manual source verification and independently authored evaluation cases remain the team's work; no policy-answer evaluation results have been generated.

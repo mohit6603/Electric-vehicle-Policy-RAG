@@ -6,7 +6,7 @@
 
 1. From the project folder, install the locked environment with `uv sync --locked` if needed.
 2. Open `EV Policy Assistant.ipynb` using `uv run --locked jupyter lab "EV Policy Assistant.ipynb"` and select the project Python kernel.
-3. Run every cell under **Stage 2: Maharashtra ingestion and chunk checks**, in order. Stage 1 cells, API keys, Groq and Ollama are not needed for this stage.
+3. Run **Shared page loader**, then every cell under **Stage 2: Maharashtra ingestion and chunk checks**, in order. Stage 1 cells, API keys, Groq and Ollama are not needed for this stage.
 4. Confirm **18 loaded pages, 16 draft pages, 53 draft chunks and 12 passed checks**. Clear notebook outputs before committing.
 
 The export cell writes three files under `data/processed/maharashtra/`:
@@ -51,4 +51,4 @@ The team still needs to verify the source text/document chain, record actual rev
 
 The loader currently selects AI-proposed OCR. Accepting checked text later requires selecting and hashing the genuinely reviewed files, updating the loader/checks and rebuilding derived outputs. Changing review flags alone does not promote proposal text.
 
-Stage 2 ends here. The next development work is source preparation for a second jurisdiction, then Stage 3 ingestion; that jurisdiction is still to be selected from the agreed list. No embeddings, Chroma index, policy-answer generation or UI is part of this checkpoint.
+Stage 2 ends here. The selected second jurisdiction, Tamil Nadu, is now implemented in [Stage 3](STAGE_3_HANDOFF.md). The next development stage is central-source ingestion. No embeddings, Chroma index, policy-answer generation or UI is part of this checkpoint.

@@ -2,22 +2,38 @@
 
 ## Current stage and next step
 
-**Stage 2 — technical work complete.** The notebook loads all 18 Maharashtra page records and exports 53 draft chunks from 16 pages. Twelve technical checks pass in a fresh Jupyter kernel. Stage S's technical preparation is complete; human source acceptance and current-benefit verification remain open. Development is stopped at the Stage 2 boundary.
+**Stage 3 — technical work complete.** Tamil Nadu now has 23 page records and 78 draft chunks from two official PDFs. The shared loader supports both pilot jurisdictions; Maharashtra retains its original 18 pages and 53 chunks unchanged. Source acceptance and unresolved current-benefit checks remain deferred. Development is stopped at the Stage 3 boundary.
 
 | Stage | Current status |
 |---|---|
 | 1. Environment preflight | Complete |
 | S. Maharashtra sources | Preparation/AI comparison finished; team acceptance and current-status verification pending |
 | 2. First-state ingestion | Technical work complete: 18 pages, 16 draft pages, 53 chunks; team acceptance and two questions deferred |
-| 3–15 | Not started |
+| S. Tamil Nadu sources | Two official PDFs prepared; tax-period evidence found, other current-status gaps and team acceptance pending |
+| 3. Second-state ingestion | Technical work complete: 23 Tamil Nadu pages, 78 chunks; two team questions deferred |
+| 4–15 | Not started |
 
-**Latest authorization:** the user explicitly answered, "Yes—implement and finish technical Stage 2," allowing AI implementation of the remaining OCR loader, metadata relationships, splitting and technical checks. This supersedes the earlier helper-only/team-code instruction for Stage 2. Actual assistance must be disclosed; the assignment's AI-use rule remains unchanged.
+**Latest authorization:** after authorizing implementation of technical Stage 2, the user requested "start stage 3 and finish it," selected Tamil Nadu and asked to continue to completion. Technical Stage 3 was implemented with the same disclosed AI assistance and deferred manual-review arrangement. This does not change the assignment's AI-use rule or authorize inventing human review/evaluation cases.
 
-**Immediate next step:** agree the second jurisdiction, then prepare its source packet (S) before Stage 3 ingestion. Stage 3 has not started. Stage 2 can be rerun independently using [STAGE_2_HANDOFF.md](STAGE_2_HANDOFF.md).
+**Immediate next step:** Stage 4 central-source preparation: select the central scheme and collect its applicable official documents through the cutoff. Stage 4 has not started. See [Stage 3 run instructions](STAGE_3_HANDOFF.md); the [Stage 2 instructions](STAGE_2_HANDOFF.md) remain available.
 
 The user's earlier decision to defer manual source review and question-writing until the full prototype is built still applies. Those tasks do not block development stages 2–10; they remain required before formal evaluation and submission. Technical checks must pass before advancing stages. All source acceptance flags remain false, current status remains unknown, and prototype evidence is labelled unverified.
 
 Deferred review batch: verify the source text and applicable document chains; record actual reviewers/dates; independently author and verify the 24 evaluation cases; resolve current-benefit evidence gaps or keep unsupported claims explicitly unanswered. Freeze expected answers before formal evaluation. Do not invent review completion or remove these obligations from final acceptance.
+
+## Stage 3 technical closeout — 24 September 2026
+
+Added Tamil Nadu's 2023 policy booklet and the 29 December 2025 motor-vehicle-tax notification from official government hosts. The manifest selects policy physical pages 6–27 and notification page 1. Source dates, hashes, review scope and unresolved status checks are recorded in [the source review](data/policies/tamil_nadu/SOURCE_REVIEW.md) and research log. The tax order's 2026–2027 period is kept separate from the purchase-incentive/fee-waiver deadlines; no blanket current-entitlement claim is enabled.
+
+Moved the existing loader/imports into a shared notebook cell. Maharashtra still uses the same extraction path. Tamil Nadu selects layout extraction on three table pages and normalizes whitespace without rewriting values. Its recursive splitter uses 1000/200 with two extra section separators to preserve public/private charging blocks. Conditions, policy-period and tax-update page links survive splitting.
+
+Observed technical results: **23 Tamil Nadu pages, 78 chunks, 12 passed notebook checks**. Five demand rows, their units/caps/counts and linked conditions/deadline are preserved; charging/swapping tables and the later tax clause retain their scope. Six invalid-input tests reject bad hashes/counts, duplicate or out-of-range pages, empty selection and duplicate sources. Both jurisdictions retain distinct IDs/state values. Maharashtra's JSONL files and original four manifest source records are unchanged.
+
+Fresh Jupyter kernels passed both Stage 3 alone and Stages 2–3 together without Stage 1 services or keys. All four JSONL files reproduced byte-for-byte; both report notebook hashes match the saved notebook. Canonical notebook outputs remain empty.
+
+Outputs: [pages](data/processed/tamil_nadu/pages.jsonl), [chunks](data/processed/tamil_nadu/chunks.jsonl), [check report](data/processed/tamil_nadu/stage3_checks.json). Stage 2's check report was refreshed for the shared notebook revision. No new dependency, model call, embedding/index, generated answer, UI or evaluation case was introduced.
+
+AI assistance: official-source research/downloads, targeted PDF visual/text comparison, source records, loader adaptation, Stage 3 cells/checks/exports, execution and failure checks, documentation and Git operations. Independent source research was attempted but its agent stopped at a usage limit; the main session completed the PDF inspection and validation. Manual review, complete amendment verification and two team-authored Tamil Nadu cases remain deferred. This completes technical Stage 3, not final source acceptance.
 
 ## Stage 2 technical closeout — 24 September 2026
 

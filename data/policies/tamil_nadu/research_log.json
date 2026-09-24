@@ -1,0 +1,41 @@
+{
+  "research_date": "2026-09-24",
+  "verification_cutoff": "2026-09-23",
+  "research_type": "bounded_official_source_search_and_pdf_inspection",
+  "team_verified": false,
+  "observations": [
+    {
+      "url": "https://sipcotweb.tn.gov.in/uploads/policy/12/TN_Electric_Vehicles_Policy_2023.pdf",
+      "result": "Downloaded original 28-page 2023 booklet. Pages 16-17 give demand-incentive deadline/table/conditions; page 27 gives general policy period. Exact notification day not established."
+    },
+    {
+      "url": "https://www.stationeryprinting.tn.gov.in/extra_ordinary_lists.php?id=MjAyNQ%3D%3D",
+      "result": "Located issue 861 dated 2025-12-29 and its direct PDF link for G.O. Ms. No. 674."
+    },
+    {
+      "url": "https://www.stationeryprinting.tn.gov.in/extraordinary/2025/861_Ex_II_2_2025.pdf",
+      "result": "Downloaded and visually inspected the original one-page notification. Motor-vehicle-tax exemption period is 2026-01-01 through 2027-12-31; this does not establish extension of other incentives."
+    },
+    {
+      "url": "https://tnev.tn.gov.in/resources/EVPoliciesDocuments",
+      "result": "Search-indexed official resource listing identifies the 2023 policy and a tax-exemption document. Direct web-tool opening failed; its listing/upload dates were not used as legal effective dates."
+    }
+  ],
+  "searches": [
+    "Tamil Nadu Electric Vehicles Policy 2023 pdf site:tn.gov.in",
+    "Tamil Nadu Electric Vehicle Policy 2023 pdf site:investingintamilnadu.com",
+    "site:stationeryprinting.tn.gov.in 861 674 2025",
+    "site:tn.gov.in electric vehicles demand 2026 incentives",
+    "site:tn.gov.in electric vehicles operational guidelines 2025",
+    "site:tn.gov.in electric 2026 31.12.2027"
+  ],
+  "unresolved": [
+    "Completeness of amendments and any withdrawal/replacement through the cutoff",
+    "Later special demand-side operational guidelines or extension beyond the printed 2025 deadline",
+    "Current claim availability, funding and individual eligibility",
+    "Separate current registration-charge and permit-fee rules",
+    "Exact notification date of the 2023 policy booklet"
+  ],
+  "current_benefit_availability": "not_verified",
+  "current_entitlement_answers_allowed": false
+}
