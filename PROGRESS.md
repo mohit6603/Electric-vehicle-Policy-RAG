@@ -2,22 +2,30 @@
 
 ## Current stage and next step
 
-**Active stage: 2 — Maharashtra extraction tests.** A runnable one-page worked example is now saved; the full ingestion/splitting implementation is not complete. Stage S's technical preparation batch is finished; full source acceptance and current-benefit verification remain open. This is not an unconditional Stage S pass.
+**Active stage: 2 — Maharashtra extraction tests.** The worked example now loads all ten English policy pages; OCR-page ingestion and splitting are not complete. Stage S's technical preparation batch is finished; full source acceptance and current-benefit verification remain open. This is not an unconditional Stage S pass.
 
 | Stage | Current status |
 |---|---|
 | 1. Environment preflight | Complete |
 | S. Maharashtra sources | Preparation/AI comparison finished; team acceptance and current-status verification pending |
-| 2. First-state ingestion | Started: one-page example runs; 18-page loading and splitting still pending |
+| 2. First-state ingestion | Ten English page records checked; eight OCR records and splitting pending |
 | 3–15 | Not started |
 
 **Latest decision:** defer the user's manual source review and question-writing until the full prototype is built. Those tasks no longer block development stages 2–10; they remain required before formal evaluation and submission. Technical checks must still pass before advancing stages. Keep source acceptance flags false, preserve unknown current status, and label prototype evidence as unverified.
 
-**Immediate next step:** extend the example in `EV Policy Assistant.ipynb` to the 18 page records, then run the technical checks in [STAGE_2_HANDOFF.md](STAGE_2_HANDOFF.md). The helper-only scope remains active: the team implements the extension; assistance supports explanation, review and debugging. Manual source sign-off is deferred and does not block this development work.
+**Immediate next step:** the team extends the ten-page example in `EV Policy Assistant.ipynb` with the eight explicit OCR proposals and their document/page roles, then runs the technical checks in [STAGE_2_HANDOFF.md](STAGE_2_HANDOFF.md). The helper-only scope remains active: the team implements the extension; assistance supports explanation, review and debugging. Manual source sign-off is deferred and does not block this development work.
 
 Deferred review batch: verify the source text and applicable document chains; record actual reviewers/dates; independently author and verify the 24 evaluation cases; resolve current-benefit evidence gaps or keep unsupported claims explicitly unanswered. Freeze expected answers before formal evaluation. Do not invent review completion or remove these obligations from final acceptance.
 
-AI assistance in this update: recorded the user's revised ordering only; no application code, policy verification or evaluation results were added.
+The earlier review-deferral update changed ordering only. Subsequent implementation assistance and observed checks are recorded below.
+
+## Stage 2 continuation — English page records
+
+Extended the bounded loading example to physical pages 16–25, using the manifest's candidate list and Exercise 2's list/`Document` pattern. Each page receives an independent metadata dictionary. Removed page-specific fields from the shared template; only page 18 carries its conditions link to page 19. The earlier page-18 example is not added a second time.
+
+Observed checks: all Stage 2 cells execute in a fresh namespace without Stage 1 services or key access. Ten unique, nonempty records match their original PDF pages; source path/URL and review/status flags are preserved. Metadata dictionaries are independent, page 18 matches the earlier example, notebook syntax/schema pass and saved outputs are empty. Earlier notebook cells, PDFs and dependencies are unchanged. Character counts are diagnostic; extraction whitespace differs slightly from the earlier manifest measurements.
+
+This is the English-page checkpoint only. Eight OCR page records, document relationships, chunking and table/continuation checks remain. Manual review stays deferred. AI assistance: bounded example extension, independent review and execution checks; no evaluation examples or generated policy answers.
 
 ## Stage 2 start — one-page worked example
 
