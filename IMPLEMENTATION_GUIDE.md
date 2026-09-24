@@ -2,6 +2,8 @@
 
 Use this alongside `REQUIREMENTS_AND_REUSE.md` and `STAGED_PLAN.md`. The steps below describe work for the team to implement and understand, with bounded AI help for explanation, review and debugging. They are not completed code or claimed test results. The proposal originally specified 8–10 states and 20–30 questions; the user has selected eight jurisdictions, including Delhi, and the resulting evaluation design contains 24 cases. The 3-slide deck, submission rules and grading weights come from the assignment. Session boundaries and pending decisions are recorded in `STAGED_PLAN.md`.
 
+Checkpoint update, 24 September 2026: the user subsequently authorized AI implementation of technical Stage 2. Its page loader, amendment links, splitting and exports are complete; [PROGRESS.md](PROGRESS.md) records the observed checks. Manual source acceptance and team-written evaluation examples remain deferred. This guide describes the full project scope, including work still to be built.
+
 ## Keep the project close to the class examples
 
 Begin with one notebook that follows the class order: setup, load data, split documents, create embeddings, index, retrieve, generate, UI, evaluation. A name such as `EV Policy Assistant.ipynb` fits the repository's notebook naming. Keep a small `app.py` only if it helps launch the finished Gradio demo. Separate index-building from the code the app runs on each startup.

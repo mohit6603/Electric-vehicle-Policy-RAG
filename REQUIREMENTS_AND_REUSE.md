@@ -2,7 +2,7 @@
 
 Reviewed on 22 September 2026. This is a planning and code-review aid, not an implemented assignment or a submission-ready package.
 
-The attached assignment instructions are the assignment specification. The EV idea PDF adds the team's proposed scope. The user confirmed that the instructor approved the four-member group and asked to keep AI assistance within the helper-only limit. No assignment solution code has been written.
+The attached assignment instructions are the assignment specification. The EV idea PDF adds the team's proposed scope. The user confirmed that the instructor approved the four-member group and initially chose helper-only assistance. On 24 September 2026 the user explicitly authorized AI implementation of technical Stage 2. The setup and first-state ingestion are now implemented; actual checks and assistance are recorded in `PROGRESS.md`. This authorization does not amend the assignment's AI-use rule.
 
 ## Sources and decisions
 
@@ -12,7 +12,7 @@ The attached assignment instructions are the assignment specification. The EV id
 - A local-only reference checkout is available at `tmp/reference-repo/`, excluded from this project's Git history. Use the linked course commit to obtain the reference files elsewhere. Its assignment-3 PDF has the same substantive requirements as the attached instructions; the extraction differs only in one hyphen's spacing.
 - Group: Mohit Patle (27PGAI0102), Pushkar Brahmankar (27PGAI0100), Vaishnavi B (27PGAI0120), Sehal Chodankar (27PGAI0116). Four-person exception confirmed by the user; the written PDF itself says three.
 - Section 8 says, "AI tools may be used only as a helper for the code." It also specifies a 30% flat penalty for detected AI-generated code and requires an appendix disclosure. Style matching or a disclosure does not waive this restriction.
-- Subsequent scope decisions are recorded in `STAGED_PLAN.md`: eight specified jurisdictions (seven states plus Delhi), current-benefit verification through a date still to be agreed, and one jurisdiction per query. The proposal's original 8–10-state wording is preserved below for traceability; the user clarified the implementation scope.
+- Subsequent scope decisions are recorded in `STAGED_PLAN.md`: eight specified jurisdictions (seven states plus Delhi), current-benefit verification through 23 September 2026, and one jurisdiction per query. The proposal's original 8–10-state wording is preserved below for traceability; the user clarified the implementation scope.
 
 ## Assignment requirements
 
@@ -23,13 +23,13 @@ The attached assignment instructions are the assignment specification. The EV id
 | A3 | Agents are optional | LangGraph only if the team implements the optional comparison path | Optional |
 | A4 | Idea PDF: member names and IDs, problem and why worthwhile, proposed approach, tech stack | Existing idea PDF | All four content categories present |
 | A5 | Idea due 22 September 2026, EOD; every member uploads a PDF on Digiicampus | Individual upload confirmations | Uploads not verified |
-| A6 | Final code: GitHub link of the project repository | The team's own runnable project repository and its URL | Repository created at https://github.com/mohit6603/Electric-vehicle-Policy-RAG; planning documents and verified environment setup present, policy application pending |
+| A6 | Final code: GitHub link of the project repository | The team's own runnable project repository and its URL | Repository created at https://github.com/mohit6603/Electric-vehicle-Policy-RAG; environment setup and technical Stage 2 present, later application stages pending |
 | A7 | Exactly 3 presentation slides | Slide 1: business impact. Slide 2: technical stack and GenAI architecture flow. Slide 3: appendix including AI disclosure | Not authored |
 | A8 | Every member submits final ZIP on Digiicampus | ZIP containing the repository link and the 3-slide presentation; individual upload confirmations | Not prepared/submitted |
 | A9 | Final submission date/time to be announced | Check the announced course deadline | TBD in the PDF |
 | A10 | 8-minute team presentation and live demo, approximately 3–4 minutes of Q&A | Rehearsed running application and explanation | Not performed; date/time TBD |
 | A11 | Mainly classroom stack and syntax; explain additional syntax | Reuse map below and implementation notes | Reference code inspected |
-| A12 | AI only as code helper; brief disclosure in appendix | Student implementation, record of actual AI assistance | Helper-only scope confirmed |
+| A12 | AI only as code helper; brief disclosure in appendix | Student implementation, record of actual AI assistance | User authorized AI implementation of technical Stage 2; actual use recorded, final disclosure pending; assignment rule unchanged |
 | A13 | Main grading is the demo: technical 80%, presentation including narrative 20% | Working demo, defensible design choices, clear deck | No grades or performance claims made |
 | A14 | Any member's late submission or editing GitHub after the deadline can penalize the whole group, including a possible zero | All-member upload check; preserve submitted GitHub revision after deadline | Team action at submission |
 
@@ -120,4 +120,4 @@ Start from the course environment when possible. A smaller environment should re
 
 ## What this review establishes
 
-Both PDFs were read and their rendered pages inspected. The reference repo's source cells, starter script, manifest and lockfile were inspected. The mapping distinguishes working examples, partial examples and genuine gaps. The user subsequently created the project repository for these planning documents. At the initial review, no corpus, application, model checks, evaluation, deck or submission had been completed. Subsequent environment checks are recorded in `PROGRESS.md`; policy implementation and its evaluation remain later-stage work.
+Both PDFs were read and their rendered pages inspected. The reference repo's source cells, starter script, manifest and lockfile were inspected. The mapping distinguishes working examples, partial examples and genuine gaps. The user subsequently created the project repository for these planning documents. At the initial review, no corpus, application, model checks, evaluation, deck or submission had been completed. Subsequent environment and Stage 2 ingestion checks are recorded in `PROGRESS.md`; retrieval, answers, evaluation and submission remain later-stage work.

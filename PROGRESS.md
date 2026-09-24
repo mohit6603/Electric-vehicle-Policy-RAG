@@ -2,22 +2,48 @@
 
 ## Current stage and next step
 
-**Active stage: 2 — Maharashtra extraction tests.** The notebook loads ten English policy pages and has a separate, tested OCR-page example. The complete OCR loader and splitting are not implemented. Stage S's technical preparation batch is finished; full source acceptance and current-benefit verification remain open. This is not an unconditional Stage S pass.
+**Stage 2 — technical work complete.** The notebook loads all 18 Maharashtra page records and exports 53 draft chunks from 16 pages. Twelve technical checks pass in a fresh Jupyter kernel. Stage S's technical preparation is complete; human source acceptance and current-benefit verification remain open. Development is stopped at the Stage 2 boundary.
 
 | Stage | Current status |
 |---|---|
 | 1. Environment preflight | Complete |
 | S. Maharashtra sources | Preparation/AI comparison finished; team acceptance and current-status verification pending |
-| 2. First-state ingestion | Ten English records and one OCR example checked; full OCR integration and splitting pending |
+| 2. First-state ingestion | Technical work complete: 18 pages, 16 draft pages, 53 chunks; team acceptance and two questions deferred |
 | 3–15 | Not started |
 
-**Latest decision:** defer the user's manual source review and question-writing until the full prototype is built. Those tasks no longer block development stages 2–10; they remain required before formal evaluation and submission. Technical checks must still pass before advancing stages. Keep source acceptance flags false, preserve unknown current status, and label prototype evidence as unverified.
+**Latest authorization:** the user explicitly answered, "Yes—implement and finish technical Stage 2," allowing AI implementation of the remaining OCR loader, metadata relationships, splitting and technical checks. This supersedes the earlier helper-only/team-code instruction for Stage 2. Actual assistance must be disclosed; the assignment's AI-use rule remains unchanged.
 
-**Immediate next step:** the team generalizes the OCR example in `EV Policy Assistant.ipynb` to all eight explicit proposals, handling each source's optional relationship fields, then combines and checks the 18 unique page records using the technical checks in [STAGE_2_HANDOFF.md](STAGE_2_HANDOFF.md). The helper-only scope remains active: the team implements the extension; assistance supports explanation, review and debugging. Manual source sign-off is deferred and does not block this development work.
+**Immediate next step:** agree the second jurisdiction, then prepare its source packet (S) before Stage 3 ingestion. Stage 3 has not started. Stage 2 can be rerun independently using [STAGE_2_HANDOFF.md](STAGE_2_HANDOFF.md).
+
+The user's earlier decision to defer manual source review and question-writing until the full prototype is built still applies. Those tasks do not block development stages 2–10; they remain required before formal evaluation and submission. Technical checks must pass before advancing stages. All source acceptance flags remain false, current status remains unknown, and prototype evidence is labelled unverified.
 
 Deferred review batch: verify the source text and applicable document chains; record actual reviewers/dates; independently author and verify the 24 evaluation cases; resolve current-benefit evidence gaps or keep unsupported claims explicitly unanswered. Freeze expected answers before formal evaluation. Do not invent review completion or remove these obligations from final acceptance.
 
-The earlier review-deferral update changed ordering only. Subsequent implementation assistance and observed checks are recorded below.
+## Stage 2 technical closeout — 24 September 2026
+
+Replaced the separate worked examples with one complete notebook path using the confirmed course patterns: page loading/inspection from Lab 4, `Document` metadata from Exercise 2, and the recursive splitter at 1000 characters with 200 overlap. Added explicit PDF/proposal hash checks, original physical-page citations, optional document relationships and stable chunk IDs. No dependencies or Stage 1 code cells changed.
+
+The loader reads ten English policy pages and the eight explicitly mapped OCR proposals. All 18 records remain in `pages.jsonl`; the August old-wording and distribution-only pages are excluded from `chunks.jsonl`. Base page 19 keeps unaffected provisions and a section-specific link to the August replacement. Table conditions and page continuations are linked without combining their citations.
+
+Observed results:
+
+| Check | Result |
+|---|---|
+| Complete Stage 2 in a fresh Jupyter kernel | Passed without Stage 1, API keys or model services |
+| Unique page records | 18: base policy 10, June 4, July 1, August 3 |
+| Pages included in draft chunks | 16; two August audit-only pages excluded |
+| Draft chunks | 53: base policy 32, June 15, July 3, August 3 |
+| Notebook technical checks | All 12 passed; saved in `stage2_checks.json` |
+| Critical evidence | Table 2's ten rows/units and linked conditions, Table 3 and its cost exclusion, June clause 6 continuation, August replacement preserved |
+| Provenance and status | Original PDF citations, relationship targets, source/proposal hashes and unverified flags retained through splitting |
+| Loader failure cases | All 14 passed: missing/duplicate pages, invalid page numbers, mismatched source/role/hashes, duplicate sources/candidates and wrong PDF page count |
+| Repeatability | A separate fresh run reproduced both JSONL files byte-for-byte |
+
+Outputs: [page audit](data/processed/maharashtra/pages.jsonl), [draft chunks](data/processed/maharashtra/chunks.jsonl), [technical check report](data/processed/maharashtra/stage2_checks.json). The report records evidence chunk IDs, artifact hashes and the notebook hash at export. Reruns replace only these derived outputs. No embeddings, index, generated policy answers, UI or evaluation cases were added.
+
+Technical Stage 2 is complete; final team acceptance is deferred. The OCR loader deliberately uses proposals and cannot promote them to accepted text merely by changing a reviewer flag. Later retrieval must follow evidence links, and future team corrections require regenerated chunks and repeated checks. Current-benefit availability through the agreed cutoff remains unverified.
+
+AI assistance: implementation of the Stage 2 loader, metadata relationships, splitting, assertions and exports; independent chunk/loader review; execution checks; documentation and Git operations. The team did not author or verify these results as human review. The sections below preserve earlier checkpoints; their incomplete-work descriptions are historical and superseded by this closeout.
 
 ## Stage 2 continuation — OCR worked example
 

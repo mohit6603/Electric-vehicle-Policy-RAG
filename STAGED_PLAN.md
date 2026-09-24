@@ -1,6 +1,6 @@
 # EV Policy Assistant: proposed stages
 
-Status: stage-wise work approved by the user on 23 September 2026; Stage 1 environment preflight completed. Source of scope: IMPLEMENTATION_GUIDE.md, with REQUIREMENTS_AND_REUSE.md for exact classroom references and assignment constraints. The four-person group is approved as reported by the user. AI assistance remains helper-only: the team implements and verifies the work; assistance supports explanation, review and debugging. See `PROGRESS.md` for actual checks and the next checkpoint.
+Status: stage-wise work approved by the user on 23 September 2026; Stage 1 and technical Stage 2 are complete. Source of scope: IMPLEMENTATION_GUIDE.md, with REQUIREMENTS_AND_REUSE.md for exact classroom references and assignment constraints. The four-person group is approved as reported by the user. The user explicitly authorized AI implementation of technical Stage 2, superseding the earlier helper-only instruction for that stage. Later stages retain the previously agreed assistance scope unless changed by the user. See `PROGRESS.md` for actual checks and the next checkpoint.
 
 Confirmed choices: target 30–45-minute sessions; one state or Central per query; defer comparisons. Coverage: Maharashtra, Tamil Nadu, Uttar Pradesh, Delhi (NCT), Gujarat, Telangana, Karnataka and Madhya Pradesh. The user explicitly accepts seven states plus Delhi as the eight jurisdictions; this is a clarified scope adjustment to the proposal's literal state count, not an independently verified instructor exception. The agreed current-benefit verification cutoff is **23 September 2026**; the first pilot is **Maharashtra**. Select the central scheme and its documents during central-source review.
 
@@ -16,7 +16,7 @@ Keep exactly one active stage in `PROGRESS.md`, with an ordered list of its rema
 
 After the full prototype is built, complete one consolidated team-review batch before formal evaluation (stages 11–12) and final submission. The team must check sources, record real reviewer/date information, and independently write/freeze the 24 expected-answer cases from official evidence before evaluating model responses. Apply any resulting source corrections, rebuild affected artifacts and rerun affected checks. The review requirements listed in the stage table below are final acceptance requirements, deferred to that batch rather than waived. Current-benefit evidence gaps also remain open.
 
-The user separately reconfirmed **helper-only assistance** and said they will provide their code. Deferring manual review does not authorize the assistant to write the full application. Continue explanation, review, debugging and technical checks on the team's implementation without asking for source sign-off at each step. See [the Stage 2 handoff](STAGE_2_HANDOFF.md).
+**Latest Stage 2 authorization:** the user answered, "Yes—implement and finish technical Stage 2," explicitly allowing the assistant to complete the OCR loader, metadata relationships, splitting and technical checks with AI assistance disclosed. This replaces the earlier team-code-only instruction for Stage 2. Manual verification remains deferred, and the assignment's AI-use rule and disclosure requirement remain unchanged. Technical Stage 2 has now passed; see [the Stage 2 handoff](STAGE_2_HANDOFF.md).
 
 ## Source verification: a separate repeatable stage
 
@@ -62,13 +62,13 @@ The added OCR preparation session covers five pages: four from 19 June 2025 and 
 
 The cutoff (23 September 2026) and first pilot (Maharashtra) are agreed. Its [saved source review](data/policies/maharashtra/SOURCE_REVIEW.md) now has completed technical preparation: English extraction comparison, eight OCR proposals, document relationships and an official-research log. Team text acceptance, amendment completeness and current availability remain unverified. The workflow adjustment above permits candidate-data tests using the complete packet, not the main policy alone. Central scheme selection remains deferred to its S session.
 
-Resolve later at the relevant checkpoint: page-preserving loader choice using stage 2 extraction evidence; explicit rebuild versus incremental index updates before stage 5; notebook-only launch versus a small app.py before stage 9. Extra OCR or materially different scope must be discussed before expanding a stage.
+Stage 2 uses `pypdf.PdfReader` for physical pages, explicitly mapped OCR proposals and the classroom recursive splitter at 1000 characters with 200 overlap. All 18 page records and 53 draft chunks passed the recorded checks. Next, select the second jurisdiction and prepare its source packet before Stage 3 ingestion. Resolve explicit rebuild versus incremental index updates before stage 5, and notebook-only launch versus a small app.py before stage 9. Extra OCR or materially different scope must be discussed before expanding a stage.
 
 ## Checkpoint for every session
 
 Save a short progress note with the stage/batch, completed work, files touched, exact checks and observed outcomes, any unresolved issue, next action, and updated AI-assistance record. Keep agreed decisions in this plan and actual completion in the progress note. Begin the next session from those files instead of re-auditing the whole reference repository.
 
-Suggested continuation message: "Continue stage [number/batch] from the saved checkpoint. Keep the helper-only scope, verify its done criteria, and stop before starting another stage."
+Suggested continuation message: "Continue stage [number/batch] from the saved checkpoint. Follow the recorded assistance scope, verify its technical done criteria, and stop before starting another stage."
 
 ## Git history and attribution
 
