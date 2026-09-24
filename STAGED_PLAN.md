@@ -12,6 +12,8 @@ Work on one agreed stage or batch at a time. Do not automatically continue to th
 
 Keep exactly one active stage in `PROGRESS.md`, with an ordered list of its remaining steps. OCR preparation and other required repairs belong to that stage; completing a subtask does not complete the stage. A “continue” request resumes its first unfinished step. Finish each session by stating the current stage, checks passed, work remaining and one required next step. Do not offer unrelated follow-up paths or begin a later stage while the current stage's required checks remain unresolved. Change the agreed order only when the user requests it.
 
+**24 September workflow adjustment:** the user requested finishing the source batch and moving to Stage 2. Maharashtra's technical preparation is now finished and the per-page chat gate is removed. The team may run Stage 2 extraction/splitting tests on explicitly unverified candidate text, then complete the packet review as a batch before Stage 2 acceptance. S's full source acceptance/current-status verification remain open; this exception permits testing, not verified answers or a claim that the original source criteria passed. See [the Stage 2 handoff](STAGE_2_HANDOFF.md). Later stages keep their existing dependencies.
+
 ## Source verification: a separate repeatable stage
 
 Run one **Source verification session (S)** for each pilot state, central scheme, and later added jurisdiction, before its ingestion session. This separation keeps current-policy research from consuming the implementation session. For central, first select the buyer-relevant scheme(s) for the agreed cutoff.
@@ -54,7 +56,7 @@ The added OCR preparation session covers five pages: four from 19 June 2025 and 
 
 ## Source-verification checkpoint
 
-The cutoff (23 September 2026) and first pilot (Maharashtra) are agreed. Its [saved source review](data/policies/maharashtra/SOURCE_REVIEW.md) remains incomplete: the operational circulars need team-verified text and current benefit availability has not been established. The added OCR preparation session is approved; team verification follows preparation. Do not start Stage 2 from the main policy alone. Central scheme selection remains deferred to its S session.
+The cutoff (23 September 2026) and first pilot (Maharashtra) are agreed. Its [saved source review](data/policies/maharashtra/SOURCE_REVIEW.md) now has completed technical preparation: English extraction comparison, eight OCR proposals, document relationships and an official-research log. Team text acceptance, amendment completeness and current availability remain unverified. The workflow adjustment above permits candidate-data tests using the complete packet, not the main policy alone. Central scheme selection remains deferred to its S session.
 
 Resolve later at the relevant checkpoint: page-preserving loader choice using stage 2 extraction evidence; explicit rebuild versus incremental index updates before stage 5; notebook-only launch versus a small app.py before stage 9. Extra OCR or materially different scope must be discussed before expanding a stage.
 

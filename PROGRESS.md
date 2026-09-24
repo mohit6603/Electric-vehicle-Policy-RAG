@@ -2,26 +2,35 @@
 
 ## Current stage and next step
 
-**Only active stage: S — Maharashtra source verification.** OCR preparation is a completed subtask within S, not completion of the source stage.
+**Next working stage: 2 — Maharashtra extraction tests.** No Stage 2 application code has been written. Stage S's technical preparation batch is finished; full source acceptance and current-benefit verification remain open. This is not an unconditional Stage S pass.
 
 | Stage | Current status |
 |---|---|
 | 1. Environment preflight | Complete |
-| S. Maharashtra source verification | In progress; required checks remain |
-| 2. First-state ingestion | Not started; depends on S acceptance |
+| S. Maharashtra sources | Preparation/AI comparison finished; team acceptance and current-status verification pending |
+| 2. First-state ingestion | Ready for candidate-text tests only; acceptance criteria still apply |
 | 3–15 | Not started |
 
-Finish S in this order:
+The user requested finishing the source batch and moving toward Stage 2. The earlier per-page chat gate is replaced by one team review of the packet. Local extraction/splitting tests may proceed while these recorded checks remain open; no unverified claim is accepted for answers. This adjusts the test ordering, not the requirement to verify current benefits through 23 September 2026.
 
-1. Collect the initial official source packet — done; completeness is checked in step 4.
-2. Prepare readable circular drafts — done; errors are recorded, not accepted.
-3. Verify source text — pending: the team checks the five circular pages and the corrigendum text, with corrections and reviewer/date recorded.
-4. Complete the applicable amendment/current-status check through 23 September 2026 — pending.
-5. Review S against its acceptance criteria, record the result and commit the checkpoint — pending. Required unresolved checks keep S incomplete.
+**Immediate next step:** follow [STAGE_2_HANDOFF.md](STAGE_2_HANDOFF.md): the team implements page-preserving loading from the mapped course examples, with assistance for explanation, review and debugging. Start with ten English pages plus eight page-matched sidecars; verify the page records before splitting. Do not repeat Stage S research or add another jurisdiction on a routine “continue”. Resolve the outstanding source checks before accepting the corpus; do not fabricate team review or expected answers.
 
-**Immediate next step:** the team compares [June page 1 proposed corrections](data/ocr/maharashtra/2025-06-19/page-1-review.md) with the original PDF, saves any final corrections and records reviewer/date. Its AI-assisted comparison is prepared; actual human verification is still pending. Then continue to June page 2. Do not begin Stage 2 before S passes its acceptance checks.
+## Stage S preparation closeout — 24 September 2026
 
-The sections below are session history within this sequence. A “continue” request resumes the first unfinished step above. Report one required next step at each checkpoint rather than offering unrelated paths.
+Completed the remaining preparation as one batch:
+
+- Compared base-policy English pages 16–25 with extracted text; recorded table fields, source inconsistencies and page continuations.
+- Completed proposed corrections for all five circular pages and prepared/compared all three corrigendum pages. Eight raw/proposed pairs are mapped to source PDFs and hashes. [Text review](data/ocr/maharashtra/TEXT_REVIEW.md) explains changes and uncertainties.
+- Recorded the toll amendment's old/replacement page roles and the July circular's relationship to June. Original PDFs, earlier raw OCR, setup notebook and dependencies are unchanged.
+- Finished a bounded follow-up official-source search and saved [research findings](data/policies/maharashtra/research_log.json). The existing public portal snapshot is dated 23 September; follow-up research is dated 24 September. No backdated observation or current-entitlement verification was inferred.
+
+Remaining requirements: actual team text review; confirmation of applicable later amendments/current availability; portal launch/deadline evidence if answering historic claim deadlines. A reported later claim-window extension was not verified from an official circular. No current-entitlement claim is allowed. Unknown status and all false team/ingestion-acceptance flags are retained in the manifest.
+
+Validation: original PDF hashes/page counts, earlier raw OCR hashes, all eight proposal hashes/page mappings, JSON consistency, local document links, notebook unchanged/outputs empty, secret exclusion and the focused Git diff checked before publication. No model calls or application tests were needed for source/data documentation changes.
+
+AI assistance: OCR, visual/text comparison, proposed corrections, official-source research, provenance/status records, Stage 2 handoff and Git operations. No EV pipeline, student-written evaluation questions, human-review claims or policy-answer results were produced.
+
+The sections below are earlier checkpoints. Their pending steps and next-page instructions describe the state at that time; the current checkpoint above supersedes their work ordering.
 
 ## Stage S subtask: June circular page 1 comparison
 

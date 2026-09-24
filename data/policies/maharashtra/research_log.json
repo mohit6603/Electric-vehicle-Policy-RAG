@@ -1,0 +1,77 @@
+{
+  "research_completed_on": "2026-09-24",
+  "target_verification_cutoff": "2026-09-23",
+  "purpose": "Bounded official-source discovery and status check; audit notes, not RAG answer context.",
+  "temporal_limit": "The portal snapshot was captured on 23 September. The follow-up web checks below were performed on 24 September and cannot establish what an undated page showed at the cutoff.",
+  "checks": [
+    {
+      "url": "https://transport.maharashtra.gov.in/Site/Common/ViewPdfList.aspx?Doctype=d0bc9262-60e0-4dcd-afa2-324484089ba1",
+      "checked_on": "2026-09-24",
+      "result": "EV 2025 listing returns the May policy and June/July circulars; upload date 1 August 2025. No later EV document was identified in this listing. A listing is not an exhaustive amendment register."
+    },
+    {
+      "url": "https://transports.maharashtra.gov.in/en/documents/",
+      "checked_on": "2026-09-24",
+      "result": "Listing includes EV Corrigendum and Electric Vehicle Policy 2025 GR, both listed 22 September 2025. The saved PDF body dates are used in the manifest. No additional EV amendment was identified here."
+    },
+    {
+      "url": "https://mhevpolicy.in/",
+      "evidence_file": "data/policies/maharashtra/status_evidence.json",
+      "checked_on": "2026-09-23",
+      "result": "Official government inbound link and public counts recorded. Counts do not establish approved/paid claims or available funding. Public announcements request returned 401; no authenticated access was attempted."
+    },
+    {
+      "url": "https://mhevpolicy.in/User_Manual-MHEV-OEM_C.pdf",
+      "checked_on": "2026-09-24",
+      "result": "Publicly linked 44-page OEM manual describes portal registration, eligibility checks and claim processing. Extracted text does not establish a dated launch notice or an amendment extending historic deadlines. Not added to the policy corpus; screenshots/examples were not treated as actual current claims."
+    },
+    {
+      "url": "https://evincentive.mahadiscom.in/EVCS/",
+      "checked_on": "2026-09-24",
+      "result": "Charging-station portal links the 2025 policy alongside 2021 guidelines and describes a DISCOM/SNA/government approval flow. No dated statement establishing available 2025-policy charging incentives at the cutoff was found on this page. No application was submitted."
+    },
+    {
+      "url": "https://portal.mahadiscom.in/custom/electric-vehicle-circulars.php",
+      "checked_on": "2026-09-24",
+      "result": "Search returned 2021 charging circular/guideline material. This was not treated as a 2025 amendment or current-funding confirmation."
+    },
+    {
+      "url": "https://www.mahasamvad.in/",
+      "checked_on": "2026-09-24",
+      "result": "Targeted searches for EV incentive releases and the reported April 2026 announcement did not locate a supporting official release. Direct site-search retrieval failed. This check is limited, not evidence that no release exists."
+    }
+  ],
+  "searches": [
+    "Maharashtra electric vehicle policy amendment subsidy September 2026 site:maharashtra.gov.in",
+    "site:transport.maharashtra.gov.in electric vehicle \"2025\" \"45\"",
+    "Maharashtra EV subsidy 45 days November 28 2025 notification",
+    "site:mahasamvad.in \"प्रताप सरनाईक\" \"इलेक्ट्रिक\" \"अनुदान\"",
+    "Maharashtra EV subsidy 2026 April 2 funds Sarnaik official",
+    "\"महाराष्ट्र\" \"इलेक्ट्रिक\" \"४५ दिवस\" \"२०२५\"",
+    "\"Maharashtra\" \"EV\" \"28 November\" \"2025\" circular",
+    "\"इलेक्ट्रिक\" \"२ एप्रिल\" \"२०२६\" \"सरनाईक\""
+  ],
+  "unverified_leads": [
+    {
+      "url": "https://www.reddit.com/r/ATHERENERGY/comments/1p3tsgn/psa_maharashtra_ather_owners_claim_your_10k/",
+      "claim": "A later 2025 historic-claim window/deadline is reported by a user.",
+      "result": "No matching official circular was located in this bounded check. Do not adopt the claimed deadline or treat the four-PDF chain as exhaustive."
+    },
+    {
+      "url": "https://www.freepressjournal.in/mumbai/maharashtra-transport-minister-pratap-sarnaik-announces-major-ev-incentives-to-accelerate-electric-vehicle-adoption-statewide",
+      "claim": "2 April 2026 article reports incentive sanctions/releases.",
+      "result": "Primary release not located. Even an earlier payment release would not establish remaining category funding at the cutoff. Not accepted as policy evidence."
+    }
+  ],
+  "decision": {
+    "source_preparation": "complete",
+    "amendment_chain_completeness": "not_established",
+    "current_benefit_availability": "not_verified",
+    "portal_launch_date": null,
+    "current_entitlement_answers_allowed": false,
+    "historical_deadline_calculation_allowed": false,
+    "team_verified": false,
+    "needed_for_current_claims": "Dated applicable official amendments/status evidence through the cutoff, including relevant registration/category conditions. Further team verification is required; a public portal counter or policy period is insufficient.",
+    "next_work": "Candidate-text extraction and splitting tests in Stage 2. Retain all restrictions and do not publish current entitlement answers from this packet."
+  }
+}

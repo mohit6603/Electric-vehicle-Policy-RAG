@@ -27,4 +27,4 @@ Similarly, the unusual wording `प्रभावी/प्रोत्सा�
 
 The team should compare the complete proposed page with the original, make any remaining corrections and save the result as `page-1.checked.txt`. Record the reviewer's name and date in the page-1 entry of [review.json](../review.json), and only then mark that page `team_verified: true`. The proposed file is explicitly AI-assisted; the checked file would record the team's actual verification of it.
 
-After page 1 is verified, continue to June page 2. Stage S remains active; Stage 2 ingestion is not ready.
+Update on 24 September: the remaining pages now have proposals in the [batch review](../TEXT_REVIEW.md). Review them together; the earlier page-by-page chat gate is superseded. Candidate extraction tests can proceed as described in the Stage 2 handoff, while human acceptance remains pending.

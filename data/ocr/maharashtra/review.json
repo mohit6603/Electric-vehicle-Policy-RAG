@@ -16,7 +16,7 @@
     "languages": "mar+eng",
     "oem": 1,
     "psm": "3 except June page 3 uses 6",
-    "whitespace_cleanup": "Strip trailing line whitespace and extra blank lines at file boundaries; no spelling, date, number or wording corrections."
+    "whitespace_cleanup": "Raw files: trailing whitespace and file-boundary blank lines only. Separate proposed files contain documented AI corrections."
   },
   "models": {
     "mar": {
@@ -42,9 +42,7 @@
       "psm": 3,
       "ai_spot_check": "full_page_compared_proposal_pending_team_review",
       "issues_for_review": [
-        "Review the proposed header identifiers, date, policy reference and eligibility-word correction against the whole original page.",
-        "Earlier definite १९८९ correction withdrawn: the scan appears to print १९५९. Preserve it in transcription and separately verify the legal reference later.",
-        "Contact-line l/1 glyphs, spacing, spelling and punctuation still require the team full-page check. The non-policy file-path footer was omitted explicitly."
+        "Compare the complete proposed text with the original PDF; see TEXT_REVIEW.md for corrections, retained source wording and unresolved details."
       ],
       "team_verified": false,
       "reviewer": null,
@@ -52,7 +50,8 @@
       "corrected_text": null,
       "proposed_text": "data/ocr/maharashtra/2025-06-19/page-1.proposed.txt",
       "proposed_sha256": "28d562e975688da568cf19abe34109cdc29ee65bb4ed30a84f380554c8237fa2",
-      "proposal_notes": "data/ocr/maharashtra/2025-06-19/page-1-review.md"
+      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md",
+      "ai_reviewed_on": "2026-09-23"
     },
     {
       "source_id": "maharashtra_operational_guidelines_2025-06-19",
@@ -63,15 +62,18 @@
       "draft_sha256": "e7626fdb37d685041e8105bc624db55d67dbec803b58d920c5996c4f77a65c84",
       "text_characters": 3059,
       "psm": 3,
-      "ai_spot_check": "issues_recorded_not_full_verification",
+      "ai_spot_check": "full_page_compared_proposal_pending_team_review",
       "issues_for_review": [
-        "The invoice template policy year is garbled as 2°2%. Independently compare the printed rules year with OCR १९५९; do not assume it should be changed before reviewing this page.",
-        "Check both 30-day deadlines, their different triggers, GST conditions and first-come allocation against the scan."
+        "Compare the complete proposed text with the original PDF; see TEXT_REVIEW.md for corrections, retained source wording and unresolved details."
       ],
       "team_verified": false,
       "reviewer": null,
       "reviewed_on": null,
-      "corrected_text": null
+      "corrected_text": null,
+      "proposed_text": "data/ocr/maharashtra/2025-06-19/page-2.proposed.txt",
+      "proposed_sha256": "21608fc5a776b77be963ff455238ad974452966e154eb731307f76b96edaa0d9",
+      "ai_reviewed_on": "2026-09-24",
+      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md"
     },
     {
       "source_id": "maharashtra_operational_guidelines_2025-06-19",
@@ -82,15 +84,18 @@
       "draft_sha256": "2cbd2203733f9e52fed9962c84e75875d3aaa867a5ac08dafdc9566c9c2a778b",
       "text_characters": 3074,
       "psm": 6,
-      "ai_spot_check": "issues_recorded_not_full_verification",
+      "ai_spot_check": "full_page_compared_proposal_pending_team_review",
       "issues_for_review": [
-        "PSM 3 detached clause numbers from their paragraphs. PSM 6 was selected after visual comparison; spelling errors remain.",
-        "Verify the page-spanning clause from page 2, clauses 7–12, notification dates/numbers, exclusions and policy precedence."
+        "Compare the complete proposed text with the original PDF; see TEXT_REVIEW.md for corrections, retained source wording and unresolved details."
       ],
       "team_verified": false,
       "reviewer": null,
       "reviewed_on": null,
-      "corrected_text": null
+      "corrected_text": null,
+      "proposed_text": "data/ocr/maharashtra/2025-06-19/page-3.proposed.txt",
+      "proposed_sha256": "7f5b9d2ca42513990d91927100fc20f24ac6d71b8b2c5e38a9fed9e9cebe9f6f",
+      "ai_reviewed_on": "2026-09-24",
+      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md"
     },
     {
       "source_id": "maharashtra_operational_guidelines_2025-06-19",
@@ -101,14 +106,18 @@
       "draft_sha256": "b3a07065f1a12b7487775693b6e7f6b00a54ae023e851008524a7d11474b7c19",
       "text_characters": 757,
       "psm": 3,
-      "ai_spot_check": "issues_recorded_not_full_verification",
+      "ai_spot_check": "full_page_compared_proposal_pending_team_review",
       "issues_for_review": [
-        "Signatory name and title are partly missing or garbled. Check the authority and precedence paragraphs."
+        "Compare the complete proposed text with the original PDF; see TEXT_REVIEW.md for corrections, retained source wording and unresolved details."
       ],
       "team_verified": false,
       "reviewer": null,
       "reviewed_on": null,
-      "corrected_text": null
+      "corrected_text": null,
+      "proposed_text": "data/ocr/maharashtra/2025-06-19/page-4.proposed.txt",
+      "proposed_sha256": "29aeeb8e31510979f6db597bfcfef2b7b682956a5fc2c1c3fc1d1f157dcfa579",
+      "ai_reviewed_on": "2026-09-24",
+      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md"
     },
     {
       "source_id": "maharashtra_operational_guidelines_2025-07-28",
@@ -119,16 +128,95 @@
       "draft_sha256": "e18653c89fcb346b4f19adc7effede33b291f3c5491db0ab798d821a6bac7986",
       "text_characters": 2019,
       "psm": 3,
-      "ai_spot_check": "issues_recorded_not_full_verification",
+      "ai_spot_check": "full_page_compared_proposal_pending_team_review",
       "issues_for_review": [
-        "Stamp reads 2H JUL 2005 in OCR; scan reads 28 JUL 2025. Dispatch number Jo6S should be checked against 9068.",
-        "Reference 1 date and circular number are garbled. Compare against 23 May 2025 and 53/2025.",
-        "Signatory name/title are omitted. Check the full historic-registration interval, conditional revised invoices and 30-day deadline against the scan."
+        "Compare the complete proposed text with the original PDF; see TEXT_REVIEW.md for corrections, retained source wording and unresolved details."
       ],
       "team_verified": false,
       "reviewer": null,
       "reviewed_on": null,
-      "corrected_text": null
+      "corrected_text": null,
+      "proposed_text": "data/ocr/maharashtra/2025-07-28/page-1.proposed.txt",
+      "proposed_sha256": "6eff9187fd9cf5520c20dc5f9e4dfe9d72311e3045921d8a94d87f74c3d92fda",
+      "ai_reviewed_on": "2026-09-24",
+      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md"
+    },
+    {
+      "source_id": "maharashtra_corrigendum_2025-08-29",
+      "source_pdf": "data/policies/maharashtra/maharashtra_ev_corrigendum_2025-08-29.pdf",
+      "source_sha256": "c0e64b49da1c36de7d8bc7d6c31e2b197889f6944cb5b52431891ad07118f03e",
+      "pdf_page": 1,
+      "prepared_on": "2026-09-24",
+      "draft_text": "data/ocr/maharashtra/2025-08-29/page-1.txt",
+      "draft_sha256": "7982148a759416b61edf1032faf3bfec41ede534b6666523f49a4e28cf9622ff",
+      "text_characters": 1557,
+      "psm": 3,
+      "ai_spot_check": "full_page_compared_proposal_pending_team_review",
+      "ai_reviewed_on": "2026-09-24",
+      "issues_for_review": [
+        "Compare the full proposal with the original; keep old wording, replacement wording and distribution list roles distinct."
+      ],
+      "team_verified": false,
+      "reviewer": null,
+      "reviewed_on": null,
+      "corrected_text": null,
+      "proposed_text": "data/ocr/maharashtra/2025-08-29/page-1.proposed.txt",
+      "proposed_sha256": "a0e1547fa4bf598ac4b4062c5b966e4a14b32d57ff55bbfd01fe93a8438ea536",
+      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md",
+      "page_role": "old_wording_and_amendment_scope"
+    },
+    {
+      "source_id": "maharashtra_corrigendum_2025-08-29",
+      "source_pdf": "data/policies/maharashtra/maharashtra_ev_corrigendum_2025-08-29.pdf",
+      "source_sha256": "c0e64b49da1c36de7d8bc7d6c31e2b197889f6944cb5b52431891ad07118f03e",
+      "pdf_page": 2,
+      "prepared_on": "2026-09-24",
+      "draft_text": "data/ocr/maharashtra/2025-08-29/page-2.txt",
+      "draft_sha256": "8e13290036382657f480784c28eb95eb227cec21fb7c231e95d8e9eb5a1e4828",
+      "text_characters": 2189,
+      "psm": 3,
+      "ai_spot_check": "full_page_compared_proposal_pending_team_review",
+      "ai_reviewed_on": "2026-09-24",
+      "issues_for_review": [
+        "Compare the full proposal with the original; keep old wording, replacement wording and distribution list roles distinct."
+      ],
+      "team_verified": false,
+      "reviewer": null,
+      "reviewed_on": null,
+      "corrected_text": null,
+      "proposed_text": "data/ocr/maharashtra/2025-08-29/page-2.proposed.txt",
+      "proposed_sha256": "822cd5c33c0682894741faf59f4455a4b4ea9a3a7bd546aeee8458b9a39c2975",
+      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md",
+      "page_role": "replacement_wording_and_authority"
+    },
+    {
+      "source_id": "maharashtra_corrigendum_2025-08-29",
+      "source_pdf": "data/policies/maharashtra/maharashtra_ev_corrigendum_2025-08-29.pdf",
+      "source_sha256": "c0e64b49da1c36de7d8bc7d6c31e2b197889f6944cb5b52431891ad07118f03e",
+      "pdf_page": 3,
+      "prepared_on": "2026-09-24",
+      "draft_text": "data/ocr/maharashtra/2025-08-29/page-3.txt",
+      "draft_sha256": "8b9d87b700a82667749ceb206ea96ad82099b65887915de0b19c561eb41e08cd",
+      "text_characters": 1126,
+      "psm": 3,
+      "ai_spot_check": "full_page_compared_proposal_pending_team_review",
+      "ai_reviewed_on": "2026-09-24",
+      "issues_for_review": [
+        "Compare the full proposal with the original; keep old wording, replacement wording and distribution list roles distinct."
+      ],
+      "team_verified": false,
+      "reviewer": null,
+      "reviewed_on": null,
+      "corrected_text": null,
+      "proposed_text": "data/ocr/maharashtra/2025-08-29/page-3.proposed.txt",
+      "proposed_sha256": "eea5c34709e43222cb0b8d01b543975fbbedf88f995829006ff2c058b644cc63",
+      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md",
+      "page_role": "distribution_list_only"
     }
-  ]
+  ],
+  "batch_completed_on": "2026-09-24",
+  "ai_comparison_status": "complete_pending_team_acceptance",
+  "ready_for_extraction_tests": true,
+  "review_notes": "data/ocr/maharashtra/TEXT_REVIEW.md",
+  "text_character_count_note": "Unicode characters in raw text after stripping file-boundary whitespace; SHA-256 covers the complete file bytes."
 }

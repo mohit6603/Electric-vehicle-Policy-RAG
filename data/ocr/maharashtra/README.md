@@ -1,19 +1,20 @@
-# Maharashtra circular OCR drafts
+# Maharashtra OCR review packet
 
-Prepared on 23 September 2026. **Preparation complete; team verification pending.** These are draft transcriptions of five physical pages, not accepted RAG context. The original PDFs were not modified. Dates, names and some words are misread; do not copy these drafts into the index yet.
+Prepared on 23–24 September 2026. **Technical preparation and AI comparison complete; team verification pending.** The packet contains eight physical pages with raw OCR and separate proposed corrections. Original PDFs are unchanged. Candidate text may be used in Stage 2 extraction tests, with its unverified status preserved; it is not accepted answer context.
 
-| Original PDF | Page-matched drafts |
+| Original PDF | Proposed text |
 |---|---|
-| [19 June circular](../../policies/maharashtra/maharashtra_ev_operational_guidelines_2025-06-19.pdf) | [Page 1](2025-06-19/page-1.txt), [page 2](2025-06-19/page-2.txt), [page 3](2025-06-19/page-3.txt), [page 4](2025-06-19/page-4.txt) |
-| [28 July circular](../../policies/maharashtra/maharashtra_ev_operational_guidelines_2025-07-28.pdf) | [Page 1](2025-07-28/page-1.txt) |
+| [19 June circular](../../policies/maharashtra/maharashtra_ev_operational_guidelines_2025-06-19.pdf) | [Page 1](2025-06-19/page-1.proposed.txt), [page 2](2025-06-19/page-2.proposed.txt), [page 3](2025-06-19/page-3.proposed.txt), [page 4](2025-06-19/page-4.proposed.txt) |
+| [28 July circular](../../policies/maharashtra/maharashtra_ev_operational_guidelines_2025-07-28.pdf) | [Page 1](2025-07-28/page-1.proposed.txt) |
+| [29 August corrigendum](../../policies/maharashtra/maharashtra_ev_corrigendum_2025-08-29.pdf) | [Page 1: old wording](2025-08-29/page-1.proposed.txt), [page 2: replacement](2025-08-29/page-2.proposed.txt), [page 3: distribution list](2025-08-29/page-3.proposed.txt) |
 
-[review.json](review.json) records source and draft hashes, OCR settings, known issues and empty reviewer fields for each page. The source manifest still rejects these documents for ingestion. The August corrigendum is outside this five-page preparation batch and still needs its own text review.
+[review.json](review.json) records source/raw/proposal hashes, OCR settings and empty human reviewer fields. [TEXT_REVIEW.md](TEXT_REVIEW.md) records the completed AI comparison, corrections and remaining uncertainties. Raw OCR files sit beside each proposal as `page-N.txt`. All original acceptance flags remain false.
 
-Current review: [June page 1 proposed corrections](2025-06-19/page-1-review.md) are ready for team comparison. A `.proposed.txt` file contains AI-assisted suggestions; `.checked.txt` is reserved for the team's actual checked result. Neither filename alone establishes verification.
+Review the packet together; a separate chat approval for each page is not needed. `.proposed.txt` means AI-assisted transcription; `.checked.txt` is reserved for an actual team check. Neither filename alone establishes verification.
 
 ## Team review
 
-Open each draft beside the corresponding original PDF page. Check the full Marathi text, including dates, clause numbers, negations, conditions and sentences that continue onto the next page. AI spot checks identify examples of errors; they are not an exhaustive verification.
+Open each draft beside the corresponding original PDF page. Check the full Marathi text, including dates, clause numbers, negations, conditions and sentences that continue onto the next page. AI comparisons do not substitute for the team’s independent acceptance.
 
 | Page | Checks to prioritize |
 |---|---|
@@ -22,6 +23,7 @@ Open each draft beside the corresponding original PDF page. Check the full Marat
 | June 3 | Continuation from page 2, clause order, payment recipient, exceptions, GST requirement, notification references and policy precedence |
 | June 4 | Authority/precedence paragraphs and signatory block |
 | July 1 | Date stamp, references, historic registration interval, proof requirements, conditional revised invoices and portal-related deadline |
+| August 1–3 | Old/replacement wording, section reference, named roads, reimbursement recipient, signature and distribution list |
 
 The invoice's `Subsidy Rs...` is a placeholder, not a benefit amount. An OCR correction must reproduce the source, not rewrite or interpret its policy. If a scan is unclear, record the uncertainty rather than guessing.
 
@@ -40,6 +42,6 @@ pdftoppm -r 300 -gray -png data/policies/maharashtra/maharashtra_ev_operational_
 tesseract tmp/maharashtra/ocr/render/june-1.png tmp/maharashtra/ocr/raw/june-1 --tessdata-dir tmp/maharashtra/ocr/tessdata -l mar+eng --oem 1 --psm 3 -c tessedit_create_txt=1 -c tessedit_create_tsv=1
 ```
 
-Repeat for the other physical pages and the July PDF. Use `--psm 6` on June page 3: the first run with automatic segmentation detached clause numbers, while the second kept them beside their paragraphs. All other pages use `--psm 3`. Only trailing whitespace and extra blank lines at file boundaries were removed from the selected output; content errors were retained and flagged. Matching model hashes/settings helps reproduce this run; regenerated outputs still need review.
+Repeat for the other physical pages and the July/August PDFs. Use `--psm 6` on June page 3: the first run with automatic segmentation detached clause numbers, while the second kept them beside their paragraphs. All other pages use `--psm 3`. Only trailing whitespace and extra blank lines at file boundaries were removed from the selected output; content errors were retained and flagged. Matching model hashes/settings helps reproduce this run; regenerated outputs still need review.
 
-This is a source-preparation step using local tools. No OCR package was added to the project's Python dependencies, and no OCR, ingestion or answering code was added to the notebook.
+The original five drafts were prepared on 23 September; the three August drafts on 24 September. Separate proposals contain documented corrections. This is a source-preparation step using local tools. No OCR package was added to the project's Python dependencies, and no OCR, ingestion or answering code was added to the notebook.

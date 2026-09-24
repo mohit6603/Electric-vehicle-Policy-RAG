@@ -1,10 +1,10 @@
-# Maharashtra source checkpoint
+# Maharashtra source packet
 
-Reviewed: 23 September 2026. Agreed verification cutoff: **23 September 2026**.
+Prepared/researched on 23–24 September 2026. Agreed verification cutoff: **23 September 2026**. Follow-up research on 24 September does not move that cutoff or backdate an undated website observation.
 
-Stage S is **incomplete**. Four official PDFs are saved unchanged, with provenance, page counts and hashes in [the source manifest](../../source_manifest.json). They are research inputs, not an accepted ingestion set. The notebook still contains setup checks only.
+Stage S **technical preparation is complete; full source acceptance remains pending**. Four official PDFs are saved unchanged, with provenance, page counts and hashes in [the source manifest](../../source_manifest.json). Readable candidates are ready for Stage 2 extraction tests, but team verification and current-benefit verification have not passed. The notebook still contains setup checks only. The user's request to move toward Stage 2 is handled by allowing candidate-data tests, without labelling this an accepted answer corpus.
 
-Follow-up on the same date: the user accepted one OCR preparation session for the June and July circulars. [Five page-matched drafts](../../ocr/maharashtra/README.md) are now prepared, with observed errors recorded and team verification pending. Original extraction results below remain the audit record; OCR drafts have not been accepted in their place.
+The complete [text comparison](../../ocr/maharashtra/TEXT_REVIEW.md) now covers the ten English policy pages, five circular pages and three corrigendum pages. Eight page-matched OCR proposals and their original drafts are saved. Human reviewer fields remain empty. Review the packet as one batch; no page-by-page chat approval is required.
 
 ## Official sources found
 
@@ -14,10 +14,10 @@ All page references below are physical PDF pages, starting at 1. The observation
 
 | Document | Pages | Role and extraction result |
 |---|---:|---|
-| [Policy, 23 May 2025](maharashtra_ev_policy_2025-05-23.pdf) | 25 | Base policy. English pages 16–25 are an extraction candidate. Table 2 on page 18 and conditions on page 19 were visually compared with extracted text; row values remain readable before splitting. Marathi pages have character-mapping problems. |
-| [Circular 41/2025, 19 June 2025](maharashtra_ev_operational_guidelines_2025-06-19.pdf) | 4 | Operational conditions for demand incentives. All four pages were visually inspected. The text layer returns characters but garbles Marathi; it is unsuitable for indexing as extracted. |
-| [Circular 53/2025, 28 July 2025](maharashtra_ev_operational_guidelines_2025-07-28.pdf) | 1 | Clarifies the June circular. Visually inspected; no text extracted. Requires a checked transcription or OCR. |
-| [Corrigendum, 29 August 2025](maharashtra_ev_corrigendum_2025-08-29.pdf) | 3 | Amends the toll-reimbursement clause. Pages 1–2 were visually inspected. Marathi text extracts with character errors and needs checking before ingestion. |
+| [Policy, 23 May 2025](maharashtra_ev_policy_2025-05-23.pdf) | 25 | English pages 16–25 visually compared with extraction; body and tables readable. Marathi headers/references have glyph errors. English/Marathi equivalence is not certified. Chunk integrity remains a Stage 2 check. |
+| [Circular 41/2025, 19 June 2025](maharashtra_ev_operational_guidelines_2025-06-19.pdf) | 4 | Garbled native text. Four full-page AI comparisons and proposed OCR corrections prepared; clause 6 spans pages 2–3. |
+| [Circular 53/2025, 28 July 2025](maharashtra_ev_operational_guidelines_2025-07-28.pdf) | 1 | No native text. Full-page AI comparison and proposed OCR corrections prepared; clarifies the June circular. |
+| [Corrigendum, 29 August 2025](maharashtra_ev_corrigendum_2025-08-29.pdf) | 3 | All pages visually compared with OCR proposals. Page 1 contains old wording; page 2 the replacement; page 3 a distribution list. |
 
 ## How the documents fit together
 
@@ -42,10 +42,10 @@ The announcements request returned HTTP 401 and was not retried with credentials
 
 No current-entitlement claim is approved for the application from this checkpoint. Later answers must distinguish a policy provision from verified availability and abstain where the latter is unresolved. These review notes and public JSON responses are audit evidence, not replacements for the official PDF corpus.
 
-## Next bounded session
+## Closeout and next stage
 
-1. Have the team verify the five OCR drafts against the original circular pages, record corrections and reviewer/date, and separately review the corrigendum's extracted text. Keep the original PDFs as citation targets. Do not index the garbled text layer or unchecked OCR.
-2. Continue the official amendment/status check through the cutoff. Establish which vehicle categories and benefits can be supported as current, and retain explicit unknowns where official evidence is unavailable. Claim-process questions may need the portal launch notice and referenced supporting notifications.
-3. Have the team check the document chain and extracted evidence. Only then accept the relevant sources for Stage 2, where the team implements page metadata and splitting using the existing classroom reuse map.
+[research_log.json](research_log.json) records the follow-up official listings, public OEM manual, charging portal, searches and evidence limits. No further authoritative amendment or dated current-availability confirmation was located in this bounded check. That is **not proof that no later amendment exists**. A reported later historic-claim window remains an unverified lead; the portal launch date is still unknown. No historic deadline should be calculated from this packet alone.
 
-The initial source session created no OCR, ingestion, embeddings, index, policy answers or evaluation cases. The subsequent approved session prepared OCR drafts only; current-status verification remains open independently of text preparation.
+The S preparation batch is finished: original files, readable candidates, page roles, document relationships, hashes and an explicit unknown status are saved. Team acceptance and the user's requested verification of benefits current through the cutoff remain open requirements. Do not call those requirements complete or replace them with a static-policy-only scope.
+
+Next: [Stage 2 extraction exercise](../../../STAGE_2_HANDOFF.md), using candidate data only. Preserve review/status metadata, inspect table chunks and keep amendments linked. Team-reviewed text and two independently written/verified examples are required before accepting Stage 2. Current-entitlement answers remain disabled until suitable dated evidence resolves the status gaps.
