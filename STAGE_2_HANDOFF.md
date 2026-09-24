@@ -1,6 +1,6 @@
 # Stage 2: first-state extraction and splitting
 
-Next session: 30–45 minutes, Maharashtra only. Stage S's preparation batch is finished; source acceptance and current-benefit verification remain open. The user has deferred manual review until the full prototype is built. Candidate data may be used for development with unverified status retained; manual review is a final acceptance requirement, not a Stage 2 development blocker.
+Current work: Maharashtra only, targeting 30–45-minute sessions. A runnable one-page worked example is now in the notebook; extend it to the complete packet before splitting. Stage S's preparation batch is finished; source acceptance and current-benefit verification remain open. The user has deferred manual review until the full prototype is built. Candidate data may be used for development with unverified status retained; manual review is a final acceptance requirement, not a Stage 2 development blocker.
 
 AI assistance remains helper-only: the team implements the notebook cells and writes its own two evaluation examples; assistance can explain, review and debug that work. No Stage 2 application cells or expected answers were written during source preparation.
 

@@ -2,7 +2,7 @@
 
 An EV policy assistant planned for the Generative AI mini-project at Jio Institute. It will answer questions from official policy documents, with jurisdiction filtering and document/page citations.
 
-**Status:** Stage 1 is complete. Maharashtra source preparation now includes four official PDFs and eight OCR proposals with page-level review records. Manual team review is deferred until the prototype is built, before formal evaluation/submission; current-benefit verification remains open. Next is [Stage 2 extraction testing](STAGE_2_HANDOFF.md) using candidate text; no ingestion application code has been written. See [progress](PROGRESS.md) and the [source review](data/policies/maharashtra/SOURCE_REVIEW.md).
+**Status:** Stage 1 is complete. Maharashtra source preparation now includes four official PDFs and eight OCR proposals with page-level review records. Manual team review is deferred until the prototype is built, before formal evaluation/submission; current-benefit verification remains open. [Stage 2 extraction testing](STAGE_2_HANDOFF.md) has started with a runnable one-page worked example; full page loading and splitting remain pending. See [progress](PROGRESS.md) and the [source review](data/policies/maharashtra/SOURCE_REVIEW.md).
 
 ## Project documents
 
@@ -34,4 +34,4 @@ PDF loader imports are available, but extraction and any extra OCR dependencies 
 
 Implementation will adapt applicable examples from the [course repository](https://github.com/aagarwal4/generative-ai-pgp-ji-2026/tree/33c2faa22450cde16ead9071f7ce7ecc78ca592a). The reuse map records the relevant notebooks and cells.
 
-AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, official-source research, provenance records and OCR preparation, full-page comparisons and proposed text corrections. Actual setup outcomes and unresolved source gaps are recorded. The team still needs to verify the policy evidence and implement the EV pipeline; no policy evaluation results have been generated. Assistance remains within the agreed helper-only scope, and its actual use will be disclosed in the presentation appendix.
+AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, official-source research, provenance records and OCR preparation, full-page comparisons and proposed text corrections. A bounded Stage 2 page-loading worked example has also been added and executed. Actual setup outcomes and unresolved source gaps are recorded. The team still needs to verify the policy evidence and implement the EV pipeline; no policy evaluation results have been generated. Assistance remains within the agreed helper-only scope, and its actual use will be disclosed in the presentation appendix.

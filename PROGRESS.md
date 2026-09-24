@@ -2,22 +2,30 @@
 
 ## Current stage and next step
 
-**Next working stage: 2 — Maharashtra extraction tests.** No Stage 2 application code has been written. Stage S's technical preparation batch is finished; full source acceptance and current-benefit verification remain open. This is not an unconditional Stage S pass.
+**Active stage: 2 — Maharashtra extraction tests.** A runnable one-page worked example is now saved; the full ingestion/splitting implementation is not complete. Stage S's technical preparation batch is finished; full source acceptance and current-benefit verification remain open. This is not an unconditional Stage S pass.
 
 | Stage | Current status |
 |---|---|
 | 1. Environment preflight | Complete |
 | S. Maharashtra sources | Preparation/AI comparison finished; team acceptance and current-status verification pending |
-| 2. First-state ingestion | Ready for candidate-text tests only; acceptance criteria still apply |
+| 2. First-state ingestion | Started: one-page example runs; 18-page loading and splitting still pending |
 | 3–15 | Not started |
 
 **Latest decision:** defer the user's manual source review and question-writing until the full prototype is built. Those tasks no longer block development stages 2–10; they remain required before formal evaluation and submission. Technical checks must still pass before advancing stages. Keep source acceptance flags false, preserve unknown current status, and label prototype evidence as unverified.
 
-**Immediate next step:** the team provides its Stage 2 loading/metadata/splitting code in the notebook, as it confirmed under the helper-only scope. Assistance then reviews, debugs and runs the technical checks from [STAGE_2_HANDOFF.md](STAGE_2_HANDOFF.md). Do not ask for manual source sign-off first. No Stage 2 implementation has been supplied yet.
+**Immediate next step:** extend the example in `EV Policy Assistant.ipynb` to the 18 page records, then run the technical checks in [STAGE_2_HANDOFF.md](STAGE_2_HANDOFF.md). The helper-only scope remains active: the team implements the extension; assistance supports explanation, review and debugging. Manual source sign-off is deferred and does not block this development work.
 
 Deferred review batch: verify the source text and applicable document chains; record actual reviewers/dates; independently author and verify the 24 evaluation cases; resolve current-benefit evidence gaps or keep unsupported claims explicitly unanswered. Freeze expected answers before formal evaluation. Do not invent review completion or remove these obligations from final acceptance.
 
 AI assistance in this update: recorded the user's revised ordering only; no application code, policy verification or evaluation results were added.
+
+## Stage 2 start — one-page worked example
+
+Added an AI-assisted example loading the original policy's physical page 18 with `pypdf.PdfReader`, then applying Exercise 2 cell 9's `Document` metadata pattern. Lab 4's load/inspect sequence is reused; the page-preserving reader is an explicitly disclosed addition. It retains the original PDF/URL, page 18, a conditions-page link to page 19, document identity/date, cutoff and all unverified/acceptance restrictions.
+
+Observed checks: notebook schema and code syntax pass; both new code cells run in a fresh namespace without the Stage 1 model setup; the page returns 1,728 characters and the incentive-table heading/units checks pass. Stage 1 code and dependencies are unchanged. Saved notebook outputs are empty. This is one runnable example, not completion of the 18-record loader or proof that table chunks are correct.
+
+Remaining technical work: complete loading and metadata for all 18 records, preserve amendment relationships and distribution-only roles, split and inspect tables/conditions/continuations, and record actual results. No embeddings, index, generated policy answers or evaluation examples were added. AI assistance in this step: bounded worked example, execution checks and review guidance. Team acceptance remains deferred.
 
 ## Stage S preparation closeout — 24 September 2026
 
