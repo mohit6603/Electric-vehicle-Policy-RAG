@@ -2,7 +2,7 @@
 
 An EV policy assistant planned for the Generative AI mini-project at Jio Institute. It will answer questions from official policy documents, with jurisdiction filtering and document/page citations.
 
-**Status:** Stage 1 is complete. Maharashtra source preparation now includes four official PDFs and eight OCR proposals with page-level review records. Manual team review is deferred until the prototype is built, before formal evaluation/submission; current-benefit verification remains open. [Stage 2 extraction testing](STAGE_2_HANDOFF.md) now has a runnable worked example loading ten English policy pages; eight OCR page records and splitting remain pending. See [progress](PROGRESS.md) and the [source review](data/policies/maharashtra/SOURCE_REVIEW.md).
+**Status:** Stage 1 is complete. Maharashtra source preparation now includes four official PDFs and eight OCR proposals with page-level review records. Manual team review is deferred until the prototype is built, before formal evaluation/submission; current-benefit verification remains open. [Stage 2 extraction testing](STAGE_2_HANDOFF.md) now loads ten English policy pages and demonstrates loading one OCR proposal with source/amendment metadata. Full OCR integration and splitting remain pending. See [progress](PROGRESS.md) and the [source review](data/policies/maharashtra/SOURCE_REVIEW.md).
 
 ## Project documents
 

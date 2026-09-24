@@ -1,6 +1,6 @@
 # Stage 2: first-state extraction and splitting
 
-Current work: Maharashtra only, targeting 30–45-minute sessions. The notebook example now loads ten English policy pages; the team next adds the eight OCR page records before splitting. Stage S's preparation batch is finished; source acceptance and current-benefit verification remain open. The user has deferred manual review until the full prototype is built. Candidate data may be used for development with unverified status retained; manual review is a final acceptance requirement, not a Stage 2 development blocker.
+Current work: Maharashtra only, targeting 30–45-minute sessions. The notebook loads ten English policy pages and demonstrates one OCR page separately. The team next generalizes OCR loading to all eight records and combines the 18 unique pages before splitting. Stage S's preparation batch is finished; source acceptance and current-benefit verification remain open. The user has deferred manual review until the full prototype is built. Candidate data may be used for development with unverified status retained; manual review is a final acceptance requirement, not a Stage 2 development blocker.
 
 AI assistance remains helper-only: the team implements the notebook cells and writes its own two evaluation examples; assistance can explain, review and debug that work. No Stage 2 application cells or expected answers were written during source preparation.
 

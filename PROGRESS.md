@@ -2,22 +2,30 @@
 
 ## Current stage and next step
 
-**Active stage: 2 — Maharashtra extraction tests.** The worked example now loads all ten English policy pages; OCR-page ingestion and splitting are not complete. Stage S's technical preparation batch is finished; full source acceptance and current-benefit verification remain open. This is not an unconditional Stage S pass.
+**Active stage: 2 — Maharashtra extraction tests.** The notebook loads ten English policy pages and has a separate, tested OCR-page example. The complete OCR loader and splitting are not implemented. Stage S's technical preparation batch is finished; full source acceptance and current-benefit verification remain open. This is not an unconditional Stage S pass.
 
 | Stage | Current status |
 |---|---|
 | 1. Environment preflight | Complete |
 | S. Maharashtra sources | Preparation/AI comparison finished; team acceptance and current-status verification pending |
-| 2. First-state ingestion | Ten English page records checked; eight OCR records and splitting pending |
+| 2. First-state ingestion | Ten English records and one OCR example checked; full OCR integration and splitting pending |
 | 3–15 | Not started |
 
 **Latest decision:** defer the user's manual source review and question-writing until the full prototype is built. Those tasks no longer block development stages 2–10; they remain required before formal evaluation and submission. Technical checks must still pass before advancing stages. Keep source acceptance flags false, preserve unknown current status, and label prototype evidence as unverified.
 
-**Immediate next step:** the team extends the ten-page example in `EV Policy Assistant.ipynb` with the eight explicit OCR proposals and their document/page roles, then runs the technical checks in [STAGE_2_HANDOFF.md](STAGE_2_HANDOFF.md). The helper-only scope remains active: the team implements the extension; assistance supports explanation, review and debugging. Manual source sign-off is deferred and does not block this development work.
+**Immediate next step:** the team generalizes the OCR example in `EV Policy Assistant.ipynb` to all eight explicit proposals, handling each source's optional relationship fields, then combines and checks the 18 unique page records using the technical checks in [STAGE_2_HANDOFF.md](STAGE_2_HANDOFF.md). The helper-only scope remains active: the team implements the extension; assistance supports explanation, review and debugging. Manual source sign-off is deferred and does not block this development work.
 
 Deferred review batch: verify the source text and applicable document chains; record actual reviewers/dates; independently author and verify the 24 evaluation cases; resolve current-benefit evidence gaps or keep unsupported claims explicitly unanswered. Freeze expected answers before formal evaluation. Do not invent review completion or remove these obligations from final acceptance.
 
 The earlier review-deferral update changed ordering only. Subsequent implementation assistance and observed checks are recorded below.
+
+## Stage 2 continuation — OCR worked example
+
+Added a separate example for the August corrigendum's physical page 2. It reads the explicitly mapped proposed text, checks the original-PDF and proposal hashes, and keeps the original PDF/URL as the citation target. The text file/hash are recorded separately. Metadata preserves the replacement role, amended source/section and all pending-review/current-status restrictions; it does not inherit the base policy's title, date or page-19 link.
+
+Observed checks: all Stage 2 cells run in a fresh namespace without model calls or key access. The OCR proposal contains 1,881 characters (1,880 stripped), matches its recorded hash and source/page mapping, and retains the replacement text markers. The original ten policy records remain unchanged. Notebook schema/syntax pass, earlier cells are unchanged, outputs are clear. A read-only independent check confirmed original PDF length and both hashes.
+
+This adds one worked OCR example, not the eight-page OCR pipeline. The team still needs to handle optional June/July/August relationship fields, assemble 18 unique records, distinguish old/replacement/distribution roles, link cross-page evidence and implement/check splitting. Manual review remains deferred. AI assistance: bounded example, provenance checks, independent review and extension guidance; no generated policy answers or evaluation cases.
 
 ## Stage 2 continuation — English page records
 
