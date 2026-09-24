@@ -12,7 +12,11 @@ Work on one agreed stage or batch at a time. Do not automatically continue to th
 
 Keep exactly one active stage in `PROGRESS.md`, with an ordered list of its remaining steps. OCR preparation and other required repairs belong to that stage; completing a subtask does not complete the stage. A “continue” request resumes its first unfinished step. Finish each session by stating the current stage, checks passed, work remaining and one required next step. Do not offer unrelated follow-up paths or begin a later stage while the current stage's required checks remain unresolved. Change the agreed order only when the user requests it.
 
-**24 September workflow adjustment:** the user requested finishing the source batch and moving to Stage 2. Maharashtra's technical preparation is now finished and the per-page chat gate is removed. The team may run Stage 2 extraction/splitting tests on explicitly unverified candidate text, then complete the packet review as a batch before Stage 2 acceptance. S's full source acceptance/current-status verification remain open; this exception permits testing, not verified answers or a claim that the original source criteria passed. See [the Stage 2 handoff](STAGE_2_HANDOFF.md). Later stages keep their existing dependencies.
+**Latest workflow decision — manual review deferred:** the user requested building the project before doing their manual review. Proceed stage by stage through the development work using clearly labelled candidate sources. Technical stage completion is separate from team acceptance: manual source review and team-written question examples no longer block development stages 2–10. Keep all unverified flags and current-status restrictions; do not describe prototype output as verified policy advice.
+
+After the full prototype is built, complete one consolidated team-review batch before formal evaluation (stages 11–12) and final submission. The team must check sources, record real reviewer/date information, and independently write/freeze the 24 expected-answer cases from official evidence before evaluating model responses. Apply any resulting source corrections, rebuild affected artifacts and rerun affected checks. The review requirements listed in the stage table below are final acceptance requirements, deferred to that batch rather than waived. Current-benefit evidence gaps also remain open.
+
+The user separately reconfirmed **helper-only assistance** and said they will provide their code. Deferring manual review does not authorize the assistant to write the full application. Continue explanation, review, debugging and technical checks on the team's implementation without asking for source sign-off at each step. See [the Stage 2 handoff](STAGE_2_HANDOFF.md).
 
 ## Source verification: a separate repeatable stage
 
@@ -44,7 +48,7 @@ Dependencies: agreed cutoff, jurisdiction and scheme scope; no application code 
 
 Stages 11 and 12 each produce saved, inspectable results for their case batch. Use two questions per accepted jurisdiction, four central questions and four negative/ambiguous cases: **24 cases** across the confirmed eight jurisdictions, within the guide's 24–28 design. Include amendment/expiry handling among the applicable cases. Defects discovered during either batch receive separate bounded repair sessions rather than an unlimited fix loop. Keep results tied to the tested version; if a fix affects both batches, rerun affected cases before reporting combined results. Evaluation completion is not a claim of perfect accuracy; publish honest counts, explain remaining limitations, and resolve required-behavior failures before calling the release ready.
 
-Writing source-backed questions happens during source acceptance, before model output can influence the expected answers. Formal evaluation remains later, after full coverage and the UI are verified. A small pilot does not satisfy final corpus coverage.
+Under the latest ordering, source-backed questions may be written in the consolidated review batch after prototype development. They must be independently derived from official sources, not copied from prototype output; freeze them before formal evaluation. Formal evaluation remains later, after full coverage and the UI are verified. A small pilot does not satisfy final corpus coverage.
 
 ## Conditional extensions
 

@@ -11,9 +11,13 @@
 | 2. First-state ingestion | Ready for candidate-text tests only; acceptance criteria still apply |
 | 3–15 | Not started |
 
-The user requested finishing the source batch and moving toward Stage 2. The earlier per-page chat gate is replaced by one team review of the packet. Local extraction/splitting tests may proceed while these recorded checks remain open; no unverified claim is accepted for answers. This adjusts the test ordering, not the requirement to verify current benefits through 23 September 2026.
+**Latest decision:** defer the user's manual source review and question-writing until the full prototype is built. Those tasks no longer block development stages 2–10; they remain required before formal evaluation and submission. Technical checks must still pass before advancing stages. Keep source acceptance flags false, preserve unknown current status, and label prototype evidence as unverified.
 
-**Immediate next step:** follow [STAGE_2_HANDOFF.md](STAGE_2_HANDOFF.md): the team implements page-preserving loading from the mapped course examples, with assistance for explanation, review and debugging. Start with ten English pages plus eight page-matched sidecars; verify the page records before splitting. Do not repeat Stage S research or add another jurisdiction on a routine “continue”. Resolve the outstanding source checks before accepting the corpus; do not fabricate team review or expected answers.
+**Immediate next step:** the team provides its Stage 2 loading/metadata/splitting code in the notebook, as it confirmed under the helper-only scope. Assistance then reviews, debugs and runs the technical checks from [STAGE_2_HANDOFF.md](STAGE_2_HANDOFF.md). Do not ask for manual source sign-off first. No Stage 2 implementation has been supplied yet.
+
+Deferred review batch: verify the source text and applicable document chains; record actual reviewers/dates; independently author and verify the 24 evaluation cases; resolve current-benefit evidence gaps or keep unsupported claims explicitly unanswered. Freeze expected answers before formal evaluation. Do not invent review completion or remove these obligations from final acceptance.
+
+AI assistance in this update: recorded the user's revised ordering only; no application code, policy verification or evaluation results were added.
 
 ## Stage S preparation closeout — 24 September 2026
 
