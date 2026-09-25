@@ -1,0 +1,42 @@
+{
+  "checked_at_utc": "2026-09-25T06:39:04.596401+00:00",
+  "technical_status": "passed",
+  "checks_passed": [
+    "fresh_process_reopens_all_231_without_embeddings",
+    "query_embeds_only_question",
+    "missing_index_rejected_without_creation",
+    "repeat_full_rebuild_has_no_duplicates",
+    "repeated_open_does_not_embed_documents",
+    "metadata_change_requires_rebuild",
+    "text_change_requires_rebuild",
+    "removed_chunk_requires_rebuild",
+    "changed_model_digest_requires_rebuild",
+    "invalid_build_input_keeps_previous_index",
+    "stored_metadata_or_text_change_rejected",
+    "missing_saved_chunk_rejected",
+    "changed_rebuild_replaces_metadata_adds_and_removes_chunks",
+    "invalid_or_missing_receipt_rejected",
+    "interrupted_build_rejected_then_recovered",
+    "missing_collection_not_silently_created"
+  ],
+  "restart": {
+    "chunk_count": 231,
+    "embedding_calls_before_query": {
+      "documents": 0,
+      "queries": 0
+    },
+    "document_embeddings_after_query": 0,
+    "query_embeddings": 1,
+    "retrieved_chunk_ids": [
+      "central_pm_edrive_guidelines_2024-09-30:p16:c0:10ffdfe48dff",
+      "central_pm_edrive_guidelines_2024-09-30:p14:c800:7c105d2e1d8b",
+      "central_pm_edrive_guidelines_2024-09-30:p15:c820:23b5c518c221"
+    ]
+  },
+  "isolated_rebuild_sample_chunks": 6,
+  "test_store_document_embeddings": 56,
+  "corpus_sha256": "f2be4ed1240fbc74de1de7ad5dae8f26e5ee61f80c743ad00aa53ccf413013ba",
+  "notebook_sha256": "febea3dbe6daedad8a9260710d8e90485d9b3e48b40f8b52839f152d953176b9",
+  "check_script_sha256": "de0a42c4c210200c2fb16b2c7663d94e4b1f338119cfdbd03b3d0e568067dc70",
+  "scope": "persistence/integrity checks; no policy-answer evaluation or human source review"
+}

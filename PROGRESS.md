@@ -2,26 +2,36 @@
 
 ## Current stage and next step
 
-**Stage 4 — technical work complete.** Central PM E-DRIVE buyer ingestion adds 53 audit pages and 100 draft chunks from 35 selected pages. Maharashtra and Tamil Nadu retain their original outputs. There are now 231 draft chunks across three jurisdiction labels. Manual source acceptance, evaluation questions and unresolved current-entitlement checks remain deferred. Development is stopped at the Stage 4 boundary.
+**Stage 5 — technical work complete.** The local persistent index contains all 231 draft chunks with exact text/metadata preservation. Eight notebook checks and 16 persistence checks passed. Manual source acceptance, team-written evaluation cases and unresolved current-entitlement checks remain deferred. Development is stopped at the Stage 5 boundary.
 
 | Stage | Current status |
 |---|---|
 | 1. Environment preflight | Complete |
-| S. Maharashtra sources | Preparation/AI comparison finished; team acceptance and current-status verification pending |
-| 2. First-state ingestion | Technical work complete: 18 pages, 16 draft pages, 53 chunks; team acceptance and two questions deferred |
-| S. Tamil Nadu sources | Two official PDFs prepared; tax-period evidence found, other current-status gaps and team acceptance pending |
-| 3. Second-state ingestion | Technical work complete: 23 Tamil Nadu pages, 78 chunks; two team questions deferred |
-| S. Central sources | Ten official PM E-DRIVE documents prepared; five OCR proposals; manual acceptance/current-entitlement checks pending |
-| 4. Central-source ingestion | Technical work complete: 53 audit pages, 35 draft pages, 100 chunks; four team questions deferred |
-| 5–15 | Not started |
+| 2–4. Pilot ingestion | Technical work complete; source acceptance, expected-answer cases and current-status checks deferred |
+| 5. Persistent semantic search | Technical work complete: 231 chunks, explicit full rebuild, restart without corpus embedding |
+| 6–15 | Not started |
 
-**Latest authorization:** the user requested starting and finishing Stage 4, including central scheme selection and ingestion. Technical work continues under the disclosed AI implementation/deferred manual-review arrangement. PM E-DRIVE buyer incentives for two-/three-wheelers were selected as the stated working assumption after the optional breadth question remained unanswered; do not describe this as an explicit user choice. The assignment AI-use rule and truthful disclosure still apply.
+**Latest authorization:** the user requested completion of Stage 5. AI implementation continues under the disclosed/deferred-review arrangement. Explicit full rebuild on corpus changes is the stated recommended assumption after the optional update-policy question remained unanswered.
 
-**Immediate next step:** Stage 5 persistent semantic search. Resolve the index rebuild/update approach, then embed and persist all three pilot corpora with their existing scope/review metadata. Stage 5 has not started. See [Stage 4 run instructions](STAGE_4_HANDOFF.md).
+**Immediate next step:** Stage 6 jurisdiction-aware retrieval. Resolve state-name/selection conflict handling, then apply jurisdiction filtering and required evidence-version/conditions links. See [Stage 5 run instructions](STAGE_5_HANDOFF.md). Stage 6 has not started.
 
 The user's earlier decision to defer manual source review and question-writing until the full prototype is built still applies. Those tasks do not block development stages 2–10; they remain required before formal evaluation and submission. Technical checks must pass before advancing stages. All source acceptance flags remain false, current status remains unknown, and prototype evidence is labelled unverified.
 
 Deferred review batch: verify the source text and applicable document chains; record actual reviewers/dates; independently author and verify the 24 evaluation cases; resolve current-benefit evidence gaps or keep unsupported claims explicitly unanswered. Freeze expected answers before formal evaluation. Do not invent review completion or remove these obligations from final acceptance.
+
+## Stage 5 technical closeout — 25 September 2026
+
+Added notebook cells reusing the course's Ollama embedding, persisted Chroma, document insertion and retriever patterns. The index loads all saved pilot chunks with stable IDs, retains their full metadata, and stores a corpus/model receipt only after the build validates. Normal open checks that receipt and every saved record without embedding the corpus. Missing, incomplete or changed indexes require an explicit rebuild; re-running startup never silently ingests data.
+
+Observed results: **231 records (53 Maharashtra, 78 Tamil Nadu, 100 Central), 768-dimensional finite nonzero vectors, eight passed notebook checks**. The unfiltered e-voucher smoke query retrieved Central operational-guideline pages 16, 14 and 15. These are technical search observations, not policy-answer evaluation or evidence of current eligibility.
+
+The committed `checks/stage5_index_checks.py` passed **16 persistence/integrity checks**. A separate Python process reopened all 231 records with document embedding forbidden: zero embedding calls before search, zero corpus embeddings afterward, and one query embedding. Rebuild/change/corruption tests use six real chunks in isolated temporary stores; interruption testing stops after a 32-record batch. Rebuilds remove stale entries, preserve changed metadata and do not duplicate IDs. Invalid inputs leave the old index intact; a failed build cannot leave a valid completion receipt and recovers by rebuilding.
+
+A fresh Jupyter kernel passed Stage 5 with `rebuild_index = False`. All six earlier page/chunk files remain byte-identical after rerunning Stages 2–4. Reports contain current notebook hashes; the canonical notebook has no saved outputs. Dependencies, source records and PDFs are unchanged.
+
+Outputs: ignored local `data/chroma/` database/build receipt; [notebook checks](data/processed/search/stage5_checks.json), [persistence checks](data/processed/search/stage5_persistence_checks.json), [repeatable check script](checks/stage5_index_checks.py) and [handoff](STAGE_5_HANDOFF.md). The database is recreated from committed chunks on a fresh checkout, using a deliberate build.
+
+AI assistance: implementation, persistence/integrity tests, actual local embedding/search runs, documentation and Git publication. All source acceptance/current-entitlement flags remain false. No jurisdiction filter, amendment-aware context assembly, generated answer, formal evaluation or UI was added. Those stages and the consolidated human review remain pending.
 
 ## Stage 4 technical closeout — 25 September 2026
 

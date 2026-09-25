@@ -1,0 +1,46 @@
+{
+  "checked_at_utc": "2026-09-25T06:38:13.146437+00:00",
+  "technical_status": "passed",
+  "index_spec": {
+    "collection": "ev_policy_draft",
+    "corpus_sha256": "f2be4ed1240fbc74de1de7ad5dae8f26e5ee61f80c743ad00aa53ccf413013ba",
+    "chunk_count": 231,
+    "embedding": {
+      "model": "nomic-embed-text:latest",
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "num_ctx": 2048,
+      "langchain_ollama": "0.3.7"
+    },
+    "distance": "cosine",
+    "chunks_by_state": {
+      "Maharashtra": 53,
+      "Tamil Nadu": 78,
+      "Central": 100
+    }
+  },
+  "embedding_dimensions": 768,
+  "update_policy": "explicit_full_rebuild",
+  "team_acceptance": "deferred_not_verified",
+  "chunk_file_sha256": {
+    "data/processed/maharashtra/chunks.jsonl": "e21b464fee56a0d98006577a308b5edb5c4374428d097838139496741595a9e9",
+    "data/processed/tamil_nadu/chunks.jsonl": "8d1708d8766411a2c5e19e600cd5933dd2abd09a8a2b9a5b44fa8ffcbd930a63",
+    "data/processed/central/chunks.jsonl": "d7fb95e1c89dd21079257b1e0f1086c389488d6488ad121f6c22cbc00fc49374"
+  },
+  "checks_passed": [
+    "all_231_draft_chunks_indexed",
+    "unique_stable_ids_no_extra_records",
+    "saved_text_and_all_metadata_match",
+    "finite_nonzero_consistent_embeddings",
+    "three_jurisdiction_counts",
+    "review_and_entitlement_flags_preserved",
+    "semantic_query_returns_original_evidence",
+    "central_evoucher_smoke_hit"
+  ],
+  "smoke_query": "How does the PM E-DRIVE buyer and dealer sign the e-voucher?",
+  "retrieved_chunk_ids": [
+    "central_pm_edrive_guidelines_2024-09-30:p16:c0:10ffdfe48dff",
+    "central_pm_edrive_guidelines_2024-09-30:p14:c800:7c105d2e1d8b",
+    "central_pm_edrive_guidelines_2024-09-30:p15:c820:23b5c518c221"
+  ],
+  "notebook_sha256": "febea3dbe6daedad8a9260710d8e90485d9b3e48b40f8b52839f152d953176b9"
+}

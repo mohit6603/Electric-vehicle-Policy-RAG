@@ -32,4 +32,4 @@ Thirteen notebook checks cover page/source completeness, audit exclusions, prove
 
 These are ingestion checks. They do not verify unexhausted funding, an individual buyer's eligibility, a complete legal consolidation or model-answer quality. All acceptance/entitlement permission flags remain false. Four team-authored central expected-answer cases, genuine source/OCR review and the remaining status checks are still deferred.
 
-Stage 4 ends here. Next is Stage 5 persistent semantic search, beginning with the index rebuild/update decision. No embeddings, index, UI or generated policy answers belong to this checkpoint.
+Stage 4 ends here. Stage 5 persistent semantic search is now implemented separately; see [its handoff](STAGE_5_HANDOFF.md). No embeddings, index, UI or generated policy answers belong to this checkpoint.
