@@ -1,0 +1,72 @@
+{
+  "checked_at_utc": "2026-09-25T07:12:04.088553+00:00",
+  "technical_status": "passed",
+  "checks_passed": [
+    "rules_and_source_page_hashes_valid",
+    "filtered_tamil_nadu_query",
+    "later_tax_order_and_historical_deadline_present",
+    "exact_excerpts_with_physical_page_citations",
+    "unique_evidence_ids",
+    "review_and_entitlement_flags_preserved",
+    "conflicts_and_combined_queries_clarify",
+    "unsupported_jurisdiction_and_central_scope_rejected"
+  ],
+  "verification_cutoff": "2026-09-23",
+  "corpus_sha256": "f2be4ed1240fbc74de1de7ad5dae8f26e5ee61f80c743ad00aa53ccf413013ba",
+  "input_sha256": {
+    "data/retrieval_rules.json": "5680517abc4070414a022b9bbf9cfbc25e1003af2b57a7a0898023ec129d5583",
+    "data/source_manifest.json": "8918c38310dfdd946b3892da77e84ecb5f13f57ba293e20d8257703d426ece79",
+    "data/processed/maharashtra/chunks.jsonl": "e21b464fee56a0d98006577a308b5edb5c4374428d097838139496741595a9e9",
+    "data/processed/tamil_nadu/chunks.jsonl": "8d1708d8766411a2c5e19e600cd5933dd2abd09a8a2b9a5b44fa8ffcbd930a63",
+    "data/processed/central/chunks.jsonl": "d7fb95e1c89dd21079257b1e0f1086c389488d6488ad121f6c22cbc00fc49374",
+    "data/processed/maharashtra/pages.jsonl": "1c89f5effb8f904b7408dbb89d919b21d1693d25c50c8373f72bff88f66a2490",
+    "data/processed/tamil_nadu/pages.jsonl": "e705b5060ecddcdf3e6f5fd65845b8809b57b12f053be85c519cd2ac2a536ebe",
+    "data/processed/central/pages.jsonl": "8a0118d845ee2d800303025cff41327e895998427e78c1d81caf19f6c0bcf34a",
+    "data/policies/central/pm_edrive_extension_2026-03-27.pdf": "93615bf7878ccb10a4cf149cd9bf55ef7a497d1a4cbeb2ec58a67b576b709042",
+    "data/policies/maharashtra/maharashtra_ev_operational_guidelines_2025-07-28.pdf": "c10bf89841bb7a238f74e043943c34ad706663546af62a25fa2bd1198b2de61b",
+    "data/policies/maharashtra/maharashtra_ev_corrigendum_2025-08-29.pdf": "c0e64b49da1c36de7d8bc7d6c31e2b197889f6944cb5b52431891ad07118f03e",
+    "data/policies/central/pm_edrive_extension_2026-08-10.pdf": "1ee07bc12920d0c1ef98b8346b214548bb84e0df40dac6c52f03713cfaf48591",
+    "data/policies/central/pm_edrive_amendment_2025-03-03.pdf": "2bb21679eeeddd58257bb0ff9771e605e22f6ddbfc7076a0d41c66c2ce6980fa",
+    "data/policies/central/pm_edrive_extension_2025-08-07.pdf": "d1e004ef7e6935b8ae76aa21baf921058f047a1ef17d4507a1e1bf8b817e65e2",
+    "data/policies/central/pm_edrive_l5_amendment_2024-11-25.pdf": "d4b3235bfe017c9d223cf03570f861000ff8277801779a0561faf778ed98c02e",
+    "data/policies/central/pm_edrive_allocation_2025-08-13.pdf": "6c636a9884238e7fde5e8402035ed9c8c8bd41425c58e90fc67cfdc7fbc86227",
+    "data/policies/central/pm_edrive_guidelines_2024-09-30.pdf": "165d1a202b7bc2b2999ccf9c3ca8bc7c8591656abc06b6bcf2554f59ec1c8227",
+    "data/policies/maharashtra/maharashtra_ev_policy_2025-05-23.pdf": "a0f87168a51239e4ab112b6db5556d00a27fcfb5c1a16681a5388f8fdfa3b665",
+    "data/policies/central/pm_edrive_notification_2024-09-29.pdf": "77073915456826eb0e6751cdbcfe60e2ebdd65c0078627a50ca3b973be07c6ad",
+    "data/policies/central/pm_edrive_l5_closure_2025-12-23.pdf": "e5e310cd5ead664d673f2d0e6e9ebb1e023c6b9f53da1441193c676f867f603b",
+    "data/policies/tamil_nadu/tamil_nadu_motor_vehicle_tax_2025-12-29.pdf": "d89d2b45ab48c832b0b3d95d0ae41d4b55bd37ddddcc846ea42acd79966760f0",
+    "data/policies/tamil_nadu/tamil_nadu_ev_policy_2023.pdf": "522b06e6dd428b01c06071df2448d9232d8626ba4953b3e3ee819d1fe18601f6",
+    "data/policies/maharashtra/maharashtra_ev_operational_guidelines_2025-06-19.pdf": "5e2f170788552027a38a644f6b0c333506cceb65d51633f8df6263b9f4dc052b",
+    "data/policies/central/pm_edrive_claim_window_2025-10-29.pdf": "394861943e2b9927d0644e9957b285e3ceb70e6e53f9cd37d3b89f1d317edc97"
+  },
+  "notebook_sha256": "537b2a05768fa950918fa11fd155f2026fc545bf54e1152f7f1cb117ad429821",
+  "smoke_query": {
+    "selection": "Tamil Nadu",
+    "question": "What period does the motor vehicle tax exemption cover?",
+    "seed_chunk_ids": [
+      "tamil_nadu_policy_2023:p16:c0:54411cd352f7",
+      "tamil_nadu_motor_vehicle_tax_2025-12-29:p1:c734:804bb4a46d11",
+      "tamil_nadu_policy_2023:p16:c804:895e0576bdd4",
+      "tamil_nadu_motor_vehicle_tax_2025-12-29:p1:c0:ecbf55b4db8f"
+    ],
+    "context_evidence_ids": [
+      "tamil_nadu_motor_vehicle_tax_2025-12-29:p1:x0-1650",
+      "tamil_nadu_policy_2023:p16:x0-470",
+      "tamil_nadu_policy_2023:p16:x804-2908",
+      "tamil_nadu_policy_2023:p27:x0-1996",
+      "tamil_nadu_policy_2023:p15:x0-2921",
+      "tamil_nadu_policy_2023:p17:x0-2478"
+    ],
+    "omitted_spans": [
+      {
+        "page_id": "tamil_nadu_policy_2023:p16",
+        "start": 470,
+        "end": 804,
+        "reason": "Use later motor-vehicle-tax notification for the 2026\u20132027 period",
+        "text_sha256": "d082ea6088d4d5aea0d0ebd41b026de92c2c3e7dd792c02ccf7a0046eba3da3f"
+      }
+    ]
+  },
+  "team_acceptance": "deferred_not_verified",
+  "current_entitlement_answers_allowed": false
+}

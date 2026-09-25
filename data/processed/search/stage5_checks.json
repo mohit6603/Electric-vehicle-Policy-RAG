@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-09-25T06:38:13.146437+00:00",
+  "checked_at_utc": "2026-09-25T07:12:04.038793+00:00",
   "technical_status": "passed",
   "index_spec": {
     "collection": "ev_policy_draft",
@@ -42,5 +42,5 @@
     "central_pm_edrive_guidelines_2024-09-30:p14:c800:7c105d2e1d8b",
     "central_pm_edrive_guidelines_2024-09-30:p15:c820:23b5c518c221"
   ],
-  "notebook_sha256": "febea3dbe6daedad8a9260710d8e90485d9b3e48b40f8b52839f152d953176b9"
+  "notebook_sha256": "537b2a05768fa950918fa11fd155f2026fc545bf54e1152f7f1cb117ad429821"
 }

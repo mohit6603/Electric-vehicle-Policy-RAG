@@ -2,7 +2,7 @@
 
 An EV policy assistant planned for the Generative AI mini-project at Jio Institute. It will answer questions from official policy documents, with jurisdiction filtering and document/page citations.
 
-**Status:** Technical Stage 5 is complete. Persistent semantic search covers 231 draft chunks: Maharashtra 53, Tamil Nadu 78 and Central PM E-DRIVE 100. Startup reopens the saved index without corpus embedding; changed content/model requires an explicit full rebuild. Manual acceptance and current-entitlement checks remain deferred. See [Stage 5 run instructions](STAGE_5_HANDOFF.md) and [progress](PROGRESS.md).
+**Status:** Technical Stage 6 is complete. Jurisdiction-aware retrieval searches the 231-chunk index for Maharashtra, Tamil Nadu or Central, resolves required evidence links and labels dated provisions. Conflicting/combined inputs request clarification. Manual acceptance and current-entitlement checks remain deferred. See [Stage 6 run instructions](STAGE_6_HANDOFF.md) and [progress](PROGRESS.md).
 
 ## Project documents
 
@@ -46,10 +46,16 @@ Run **Shared page loader**, then every cell under **Stage 4: Central PM E-DRIVE 
 
 Run all **Stage 5: persistent semantic search** cells with Ollama running. The index already exists on this local machine, so leave `rebuild_index = False`. On a fresh checkout, set it to `True` once to create the ignored local index, then return it to `False`. Later corpus/model changes also require an explicit full rebuild. No API key or earlier notebook execution is needed.
 
-Expected output: **231 indexed chunks, 768 dimensions and eight passed notebook checks**. Search displays raw candidate evidence; jurisdiction-aware retrieval and generated answers remain later stages. The [Stage 5 handoff](STAGE_5_HANDOFF.md) explains rebuild/restart behavior and the 16 repeatable persistence checks.
+Expected output: **231 indexed chunks, 768 dimensions and eight passed notebook checks**. Search displays raw candidate evidence; Stage 6 adds jurisdiction-aware context; generated answers remain a later stage. The [Stage 5 handoff](STAGE_5_HANDOFF.md) explains rebuild/restart behavior and the 16 repeatable persistence checks.
+
+## Run Stage 6
+
+Run Stage 5's imports, index functions, inputs and open cells with `rebuild_index = False`, then all **Stage 6: jurisdiction-aware retrieval** cells. This stage reuses the existing index. Change the selection/question in its search cell to inspect the returned page references and evidence roles. No Groq key is needed.
+
+Expected output: **eight passed notebook checks**. The [Stage 6 handoff](STAGE_6_HANDOFF.md) documents aliases, conflict handling, source-version rules and the 19 repeatable retrieval checks. Context is still unverified evidence; no generated policy answer is produced yet.
 
 ## Reference and assistance
 
 Implementation will adapt applicable examples from the [course repository](https://github.com/aagarwal4/generative-ai-pgp-ji-2026/tree/33c2faa22450cde16ead9071f7ce7ecc78ca592a). The reuse map records the relevant notebooks and cells.
 
-AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, official-source research, provenance records, OCR preparation and proposed text corrections. The user subsequently authorized AI implementation of technical Stages 2–5: the shared page loader, source-specific extraction, metadata relationships, splitting, exports, persistent semantic index and technical checks. This supersedes the earlier helper-only instruction for those stages; it does not change the assignment's AI-use rule. The team must disclose the actual assistance in the presentation appendix. Manual source verification and independently authored evaluation cases remain the team's work; no policy-answer evaluation results have been generated.
+AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, official-source research, provenance records, OCR preparation and proposed text corrections. The user subsequently authorized AI implementation of technical Stages 2–6: the shared page loader, source-specific extraction, metadata relationships, splitting, exports, persistent semantic index, jurisdiction-aware retrieval, source-version rules and technical checks. This supersedes the earlier helper-only instruction for those stages; it does not change the assignment's AI-use rule. The team must disclose the actual assistance in the presentation appendix. Manual source verification and independently authored evaluation cases remain the team's work; no policy-answer evaluation results have been generated.

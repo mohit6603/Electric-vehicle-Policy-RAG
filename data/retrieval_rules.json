@@ -1,0 +1,398 @@
+{
+  "verification_cutoff": "2026-09-23",
+  "review_status": "ai_prepared_pending_team_review",
+  "input_policy": "accept_documented_aliases_clarify_conflicts",
+  "input_policy_decision": "stated_recommended_assumption_no_reply_to_optional_question",
+  "jurisdiction_aliases": {
+    "Maharashtra": [
+      "maharashtra"
+    ],
+    "Tamil Nadu": [
+      "tamil nadu",
+      "tamilnadu"
+    ],
+    "Uttar Pradesh": [
+      "uttar pradesh"
+    ],
+    "Delhi": [
+      "delhi",
+      "new delhi",
+      "delhi nct",
+      "nct of delhi"
+    ],
+    "Gujarat": [
+      "gujarat",
+      "gujrat"
+    ],
+    "Telangana": [
+      "telangana",
+      "telengana"
+    ],
+    "Karnataka": [
+      "karnataka"
+    ],
+    "Madhya Pradesh": [
+      "madhya pradesh"
+    ],
+    "Central": [
+      "central",
+      "central government",
+      "union government",
+      "national scheme",
+      "pm e drive",
+      "pm edrive",
+      "pmedrive",
+      "fame",
+      "emps"
+    ],
+    "Andhra Pradesh": [
+      "andhra pradesh"
+    ],
+    "Arunachal Pradesh": [
+      "arunachal pradesh"
+    ],
+    "Assam": [
+      "assam"
+    ],
+    "Bihar": [
+      "bihar"
+    ],
+    "Chhattisgarh": [
+      "chhattisgarh"
+    ],
+    "Goa": [
+      "goa"
+    ],
+    "Haryana": [
+      "haryana"
+    ],
+    "Himachal Pradesh": [
+      "himachal pradesh"
+    ],
+    "Jharkhand": [
+      "jharkhand"
+    ],
+    "Kerala": [
+      "kerala"
+    ],
+    "Manipur": [
+      "manipur"
+    ],
+    "Meghalaya": [
+      "meghalaya"
+    ],
+    "Mizoram": [
+      "mizoram"
+    ],
+    "Nagaland": [
+      "nagaland"
+    ],
+    "Odisha": [
+      "odisha"
+    ],
+    "Punjab": [
+      "punjab"
+    ],
+    "Rajasthan": [
+      "rajasthan"
+    ],
+    "Sikkim": [
+      "sikkim"
+    ],
+    "Tripura": [
+      "tripura"
+    ],
+    "Uttarakhand": [
+      "uttarakhand"
+    ],
+    "West Bengal": [
+      "west bengal"
+    ],
+    "Andaman and Nicobar Islands": [
+      "andaman and nicobar islands"
+    ],
+    "Chandigarh": [
+      "chandigarh"
+    ],
+    "Dadra and Nagar Haveli and Daman and Diu": [
+      "dadra and nagar haveli and daman and diu"
+    ],
+    "Jammu and Kashmir": [
+      "jammu and kashmir"
+    ],
+    "Ladakh": [
+      "ladakh"
+    ],
+    "Lakshadweep": [
+      "lakshadweep"
+    ],
+    "Puducherry": [
+      "puducherry"
+    ]
+  },
+  "uppercase_aliases": {
+    "MH": "Maharashtra",
+    "TN": "Tamil Nadu",
+    "UP": "Uttar Pradesh",
+    "MP": "Madhya Pradesh",
+    "GJ": "Gujarat",
+    "TS": "Telangana",
+    "KA": "Karnataka",
+    "DL": "Delhi"
+  },
+  "central_scope": "e2w_e3w_buyer_incentives",
+  "required_pages": {
+    "Maharashtra": [
+      "maharashtra_corrigendum_2025-08-29:p2",
+      "maharashtra_policy_2025-05-23:p16",
+      "maharashtra_operational_guidelines_2025-06-19:p2",
+      "maharashtra_operational_guidelines_2025-06-19:p3",
+      "maharashtra_operational_guidelines_2025-06-19:p4",
+      "maharashtra_operational_guidelines_2025-07-28:p1"
+    ],
+    "Tamil Nadu": [
+      "tamil_nadu_motor_vehicle_tax_2025-12-29:p1",
+      "tamil_nadu_policy_2023:p16",
+      "tamil_nadu_policy_2023:p27"
+    ],
+    "Central": [
+      "central_pm_edrive_extension_2026-08-10:p3",
+      "central_pm_edrive_extension_2026-03-27:p3",
+      "central_pm_edrive_l5_closure_2025-12-23:p1"
+    ]
+  },
+  "jurisdiction_notes": {
+    "Maharashtra": "Read the 2025 policy with June/July operational conditions and the August section 4.2(1) replacement. The policy period alone does not establish purchase eligibility, portal deadlines or remaining allocation.",
+    "Tamil Nadu": "The later order extends motor vehicle tax only. The printed demand-incentive, registration-charge and permit-fee deadline is 31 December 2025; their extension is not established. The general policy period does not extend those benefits.",
+    "Central": "PM E-DRIVE two-/three-wheeler buyer scope only. August 2026 governs the updated e2w/outlay/terminal clauses; March 2026 supplies the e-rickshaw row. L5 closure, fund limits and the separate claim deadline must remain visible. No live funding or individual entitlement is verified."
+  },
+  "page_rules": {
+    "maharashtra_policy_2025-05-23:p19": {
+      "page_text_sha256": "ebf4a6baa420ac7a23f30fbcbd6d3f0118be77fa6ce12e074be66efba9f8fd30",
+      "context_role": "candidate_with_updates",
+      "version_note": "Section 4.2(1) is replaced by the August corrigendum; unaffected demand/tax/charging text remains.",
+      "exclude_spans": [
+        {
+          "start": 1112,
+          "end": 1523,
+          "reason": "Section 4.2(1) superseded by August 2025 corrigendum",
+          "text_sha256": "53a1d29aa1be10f4191fb8187dbf62f227283e5ab44b743a9372613ced9967a5"
+        }
+      ],
+      "required_page_ids": [
+        "maharashtra_corrigendum_2025-08-29:p2"
+      ]
+    },
+    "maharashtra_corrigendum_2025-08-29:p2": {
+      "page_text_sha256": "822cd5c33c0682894741faf59f4455a4b4ea9a3a7bd546aeee8458b9a39c2975",
+      "context_role": "replacement_provision",
+      "version_note": "Replacement for section 4.2(1), including the reimbursement authority. Marathi OCR proposal remains unverified.",
+      "exclude_spans": []
+    },
+    "tamil_nadu_policy_2023:p16": {
+      "page_text_sha256": "4a14d90daf79d9e6d4d3ce1830e2f7a0a99f7dbfcb71bd4ad4b388c1c9038422",
+      "context_role": "historical_only",
+      "version_note": "Old road-tax paragraph omitted. Registration/permit fees and demand incentives have a printed 2025 end date; no extension established.",
+      "exclude_spans": [
+        {
+          "start": 470,
+          "end": 804,
+          "reason": "Use later motor-vehicle-tax notification for the 2026–2027 period",
+          "text_sha256": "d082ea6088d4d5aea0d0ebd41b026de92c2c3e7dd792c02ccf7a0046eba3da3f"
+        }
+      ],
+      "required_page_ids": [
+        "tamil_nadu_motor_vehicle_tax_2025-12-29:p1"
+      ]
+    },
+    "tamil_nadu_policy_2023:p17": {
+      "page_text_sha256": "fc0d4421c94f100be3374c300c701f686a1b24f50562b7d39f0d36a6749ce395",
+      "context_role": "historical_only",
+      "version_note": "Demand table is historical after its printed 2025 deadline; extension not established. The later tax order does not extend this table.",
+      "exclude_spans": []
+    },
+    "tamil_nadu_motor_vehicle_tax_2025-12-29:p1": {
+      "page_text_sha256": "fb6fe87e39b638e3d6990a1d327ba91470bc61bd4a26e3370d6a50ae50ce2e97",
+      "context_role": "dated_tax_notification",
+      "version_note": "Notified motor vehicle tax period: 1 January 2026–31 December 2027 only; not a purchase/registration/permit extension.",
+      "exclude_spans": []
+    },
+    "central_pm_edrive_notification_2024-09-29:p17": {
+      "page_text_sha256": "9982f16ac791b840a5197899c62cbc6fc22eacb4bc7ba4e26ad805e94ce8630d",
+      "context_role": "historical_only",
+      "version_note": "FAME/EMPS history only, not current PM E-DRIVE entitlement.",
+      "exclude_spans": []
+    },
+    "central_pm_edrive_notification_2024-09-29:p18": {
+      "page_text_sha256": "179bd4d711d1ec0d5182412cf32849543f8dfa4a8f7908672807ec279aa76da6",
+      "context_role": "candidate_with_updates",
+      "version_note": "Prior scheme period/outlay and allocation table omitted; read August/March updates.",
+      "exclude_spans": [
+        {
+          "start": 670,
+          "end": 1073,
+          "reason": "Prior para 5 replaced by August 2026 amendment",
+          "text_sha256": "5fae4904ac05ddcca4729b7ff4446ef44e1febf8ecd4720b6485cdb46a83c477"
+        },
+        {
+          "start": 2332,
+          "end": 2789,
+          "reason": "Prior allocation table is superseded; use retained category amendments",
+          "text_sha256": "b901a9d270e4637782181646c5fff92a568c7a8c92678be9a42c639132828b14"
+        }
+      ]
+    },
+    "central_pm_edrive_notification_2024-09-29:p20": {
+      "page_text_sha256": "9583c78bbfd9568153f5bc0876ceefa24690fc65ff5a443df4b90ac487d22fb3",
+      "context_role": "candidate_with_updates",
+      "version_note": "Earlier rate paragraph omitted; updated category tables and limits are supplied separately.",
+      "exclude_spans": [
+        {
+          "start": 3367,
+          "end": 3708,
+          "reason": "Earlier rate-year description superseded by later category amendments",
+          "text_sha256": "421c63f050bfc7c5dc3221f2e6a32be485f6bfadb7ee7d8f94db270b64258a3f"
+        }
+      ]
+    },
+    "central_pm_edrive_notification_2024-09-29:p24": {
+      "page_text_sha256": "85a8c7ccf6f75e1ee7638c4f03df327587dbeb27526b19d24f70221083c46c5c",
+      "context_role": "candidate_with_updates",
+      "version_note": "Prior paragraph 46 omitted; August 2026 provides updated fund/terminal/claim provisions.",
+      "exclude_spans": [
+        {
+          "start": 1276,
+          "end": 1664,
+          "reason": "Prior outlay and terminal date superseded by August 2026",
+          "text_sha256": "22603ccc426ba93969e911c2483b04e8a1ea5349d0d36432c794a9d73e7cbcb3"
+        }
+      ]
+    },
+    "central_pm_edrive_guidelines_2024-09-30:p1": {
+      "page_text_sha256": "1741df800662003796b51eb7bd96e7b6833d57bac90a83494bf388df6e7880e7",
+      "context_role": "candidate_with_updates",
+      "version_note": "Earlier scheme-period/outlay summary omitted; use August 2026.",
+      "exclude_spans": [
+        {
+          "start": 393,
+          "end": 857,
+          "reason": "Prior scheme-period/outlay summary superseded",
+          "text_sha256": "6609f683c6a872e94b1dfa2319c031ab83bccee4faef9f8c906aa0f3737162f3"
+        }
+      ]
+    },
+    "central_pm_edrive_guidelines_2024-09-30:p3": {
+      "page_text_sha256": "49aacbf68d15638c198c82bb17d6c80a0d8d20330de11ebe1da652594abc8d52",
+      "context_role": "candidate_with_updates",
+      "version_note": "Manufacture/registration and certificate-validity conditions retained; earlier rate paragraph omitted.",
+      "exclude_spans": [
+        {
+          "start": 706,
+          "end": 1067,
+          "reason": "Earlier rate-year summary superseded; updated 15% cap remains in current amendment",
+          "text_sha256": "cf462745cbb288f6ed0f210ca891fab66fb711795f7927cd7dc86ef6066ada5a"
+        }
+      ]
+    },
+    "central_pm_edrive_extension_2026-03-27:p3": {
+      "page_text_sha256": "3ff43f3d7853675038e50e10f8df312b509561341bce125a03ff1c34bb7c79b7",
+      "context_role": "category_update",
+      "version_note": "Only the e-rickshaw/e-cart amendment and common footnotes remain; earlier e2w and para 46 are omitted.",
+      "exclude_spans": [
+        {
+          "start": 545,
+          "end": 1959,
+          "reason": "March e2w/paragraph 46 provisions superseded by August 2026",
+          "text_sha256": "49451ad5ddadde39506db2878721a8e7f2436d473a33c55dd973a846061739e8"
+        }
+      ],
+      "required_page_ids": [
+        "central_pm_edrive_extension_2026-08-10:p3"
+      ]
+    },
+    "central_pm_edrive_extension_2026-08-10:p3": {
+      "page_text_sha256": "44eabf2826a6055ceefcdd2356b0078bad5ed5289a91eae21dab46744d9e2725",
+      "context_role": "latest_update_in_packet",
+      "version_note": "Latest e2w, outlay and terminal/claim provisions in the saved packet; retain year columns, 15% cap and fund limitation.",
+      "exclude_spans": []
+    },
+    "central_pm_edrive_l5_closure_2025-12-23:p1": {
+      "page_text_sha256": "9778c5ba6c873b6fc21ba5dc0f511514f39e555f6e178197918f9cb30adfcaed",
+      "context_role": "closure_notice",
+      "version_note": "L5 segment closure notice; newer scheme extension does not reopen L5.",
+      "exclude_spans": []
+    },
+    "central_pm_edrive_notification_2024-09-29:p23": {
+      "page_text_sha256": "bf2e0dd0390907737b7bd9c2de5171fff4f3c070964085221e9fb76786720bd3",
+      "context_role": "candidate_with_updates",
+      "version_note": "Eligibility/certification references require the March 2025 PMP replacement.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "central_pm_edrive_amendment_2025-03-03:p5",
+        "central_pm_edrive_amendment_2025-03-03:p6",
+        "central_pm_edrive_amendment_2025-03-03:p7"
+      ]
+    },
+    "central_pm_edrive_guidelines_2024-09-30:p6": {
+      "page_text_sha256": "2b8939a4669fae11a8351d7131829cc059ac7088b0cef741b797555f4a168d69",
+      "context_role": "candidate_with_updates",
+      "version_note": "Eligibility/certification references require the March 2025 PMP replacement.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "central_pm_edrive_amendment_2025-03-03:p5",
+        "central_pm_edrive_amendment_2025-03-03:p6",
+        "central_pm_edrive_amendment_2025-03-03:p7"
+      ]
+    },
+    "central_pm_edrive_guidelines_2024-09-30:p7": {
+      "page_text_sha256": "49be2e453d04c48c2f57d91ecaeb80fbbd904f4abedfa34e8a754383835bb42d",
+      "context_role": "candidate_with_updates",
+      "version_note": "Eligibility/certification references require the March 2025 PMP replacement.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "central_pm_edrive_amendment_2025-03-03:p5",
+        "central_pm_edrive_amendment_2025-03-03:p6",
+        "central_pm_edrive_amendment_2025-03-03:p7"
+      ]
+    },
+    "central_pm_edrive_amendment_2025-03-03:p7": {
+      "page_text_sha256": "ae6a86f1d87cd4914f2bce9b9323c683960857316698e3132cb7014f3100e85a",
+      "context_role": "candidate_with_updates",
+      "version_note": "Retain continuation of two-/three-wheeler PMP conditions; bus-only annexure omitted.",
+      "exclude_spans": [
+        {
+          "start": 403,
+          "end": 3497,
+          "reason": "Outside the Central buyer pilot",
+          "text_sha256": "932a1d472ab8138efe4f63e4c146a76c68bd6013fd5a31f1af91e051b85f6dc6"
+        }
+      ]
+    },
+    "central_pm_edrive_amendment_2025-03-03:p8": {
+      "page_text_sha256": "07ff6efdc5ec1153dc43b8b16207f7b6cfb18843b041b1fc31cb4a9fdd61b6d0",
+      "context_role": "excluded_outside_scope",
+      "version_note": "Bus/specialist PMP page is outside the Central buyer pilot.",
+      "exclude_spans": [
+        {
+          "start": 0,
+          "end": 2548,
+          "reason": "Outside the Central buyer pilot",
+          "text_sha256": "07ff6efdc5ec1153dc43b8b16207f7b6cfb18843b041b1fc31cb4a9fdd61b6d0"
+        }
+      ]
+    },
+    "central_pm_edrive_notification_2024-09-29:p26": {
+      "page_text_sha256": "4cc0f6547b3c8455b6722790aa177b4289c72c4676bd46da9e8b3a85fb77662d",
+      "context_role": "candidate_with_updates",
+      "version_note": "Two-/three-wheeler performance rows retained; bus performance section omitted.",
+      "exclude_spans": [
+        {
+          "start": 1062,
+          "end": 1548,
+          "reason": "Outside the Central buyer pilot",
+          "text_sha256": "ffd8dde8d87f23ac8c8e63a9ea9c29874b741fc658d88e90b9dead46d36d93b6"
+        }
+      ]
+    }
+  }
+}

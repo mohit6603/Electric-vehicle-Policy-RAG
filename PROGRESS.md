@@ -2,22 +2,37 @@
 
 ## Current stage and next step
 
-**Stage 5 — technical work complete.** The local persistent index contains all 231 draft chunks with exact text/metadata preservation. Eight notebook checks and 16 persistence checks passed. Manual source acceptance, team-written evaluation cases and unresolved current-entitlement checks remain deferred. Development is stopped at the Stage 5 boundary.
+**Stage 6 — technical work complete.** Filtered retrieval covers Maharashtra, Tamil Nadu and Central, with required evidence links, exact source excerpts and explicit dated/scope labels. Eight notebook checks and 19 retrieval checks passed. Manual review remains deferred. Development is stopped at the Stage 6 boundary.
 
 | Stage | Current status |
 |---|---|
 | 1. Environment preflight | Complete |
 | 2–4. Pilot ingestion | Technical work complete; source acceptance, expected-answer cases and current-status checks deferred |
-| 5. Persistent semantic search | Technical work complete: 231 chunks, explicit full rebuild, restart without corpus embedding |
-| 6–15 | Not started |
+| 5. Persistent semantic search | Technical work complete: 231 chunks, explicit rebuild and reopen |
+| 6. Jurisdiction-aware retrieval | Technical work complete: filtering, conflict handling and source-version context |
+| 7–15 | Not started |
 
-**Latest authorization:** the user requested completion of Stage 5. AI implementation continues under the disclosed/deferred-review arrangement. Explicit full rebuild on corpus changes is the stated recommended assumption after the optional update-policy question remained unanswered.
+**Latest authorization:** the user requested completion of Stage 6. AI implementation continues with manual review deferred. The guide's recommended alias handling and clarification for conflicts is the stated working assumption after an optional question received no answer.
 
-**Immediate next step:** Stage 6 jurisdiction-aware retrieval. Resolve state-name/selection conflict handling, then apply jurisdiction filtering and required evidence-version/conditions links. See [Stage 5 run instructions](STAGE_5_HANDOFF.md). Stage 6 has not started.
+**Immediate next step:** Stage 7 supported answers with citations, including the team's EV-specific prompt and preservation of the returned evidence's source/version/review labels. See [Stage 6 run instructions](STAGE_6_HANDOFF.md). Stage 7 has not started.
 
 The user's earlier decision to defer manual source review and question-writing until the full prototype is built still applies. Those tasks do not block development stages 2–10; they remain required before formal evaluation and submission. Technical checks must pass before advancing stages. All source acceptance flags remain false, current status remains unknown, and prototype evidence is labelled unverified.
 
 Deferred review batch: verify the source text and applicable document chains; record actual reviewers/dates; independently author and verify the 24 evaluation cases; resolve current-benefit evidence gaps or keep unsupported claims explicitly unanswered. Freeze expected answers before formal evaluation. Do not invent review completion or remove these obligations from final acceptance.
+
+## Stage 6 technical closeout — 25 September 2026
+
+Added notebook routing and retrieval cells using Lab 4's metadata-filtered retriever. Canonical aliases are explicit; questions with conflicting or multiple recognized jurisdictions request clarification before search. Only the two indexed states and Central are selectable. Recognized unsupported jurisdictions and explicit requests outside the Central buyer pilot stop without retrieving. Word-boundary/uppercase checks avoid treating ordinary lowercase “up” as Uttar Pradesh.
+
+Added `data/retrieval_rules.json` with 20 hash-checked page rules, core restriction pages and targeted exclusion offsets. Context expands seed pages by one adjacency hop and follows mandatory links to completion with cycle detection. Known superseded passages and bus-only annexure portions are omitted from context without editing the stored corpus. Unaffected conditions and original page citations are retained as exact slices with stable excerpt IDs and hashes. Missing/cross-jurisdiction required evidence raises an error; an exceeded budget returns no partial context.
+
+Observed results: **eight notebook checks and 19 repeatable retrieval checks passed**. Eight live queries across all three choices had no leakage; 20 invalid/conflicting/unsupported input cases stopped before search. All 20 page rules were exercised. Required Maharashtra circular/corrigendum context, Tamil Nadu's tax-only extension and historical demand/fee deadlines, and Central's latest category rows, funding/claim restrictions and L5 closure remained available. Excluded spans were absent. Query embeddings were used only for questions, never the corpus. Observed live contexts had 5–15 pages and 11,619–28,899 characters, below the explicit 50,000-character ceiling.
+
+Fault checks covered missing/cross-jurisdiction links, altered seed text, changed exclusion hashes/inputs/model, empty search and context overflow. A fresh Jupyter kernel passed Stage 5 reopen plus Stage 6. Earlier ingestion artifacts reproduced byte-for-byte; Stage 5's 16 persistence checks still passed. No dependency, source, chunk or main index change was required.
+
+Outputs: [rules](data/retrieval_rules.json), [notebook checks](data/processed/search/stage6_checks.json), [retrieval checks](data/processed/search/stage6_retrieval_checks.json), [repeatable check script](checks/stage6_retrieval_checks.py) and [handoff](STAGE_6_HANDOFF.md). Reports remain tied to the tested notebook, corpus and inputs.
+
+AI assistance: implementation, pilot-specific source-version/exclusion rules, technical checks, actual local searches, documentation and Git publication. The rules and sources are still pending team acceptance. Alias matching is an explicit English-name baseline, not general place/intent recognition. Relevance/answerability, generated answers, citation rendering, UI and formal evaluation remain later work. Current-entitlement permission remains false.
 
 ## Stage 5 technical closeout — 25 September 2026
 

@@ -1,0 +1,378 @@
+{
+  "checked_at_utc": "2026-09-25T07:12:08.319748+00:00",
+  "technical_status": "passed",
+  "checks_passed": [
+    "20_invalid_conflicting_or_unsupported_inputs_skip_search",
+    "aliases_word_boundaries_and_lowercase_up_handled",
+    "eight_live_queries_with_no_cross_jurisdiction_leakage",
+    "one_query_embedding_each_and_no_corpus_embeddings",
+    "required_links_resolve_after_expansion",
+    "exact_excerpts_citations_metadata_and_unverified_flags",
+    "unique_context_and_excluded_ranges_not_returned",
+    "maharashtra_replacement_and_operational_continuations_retained",
+    "tamil_nadu_tax_update_does_not_promote_expired_demand_or_fee_terms",
+    "central_march_e2w_clause_removed_erickshaw_row_preserved",
+    "central_latest_caps_dates_fund_limit_claim_deadline_and_l5_closure_retained",
+    "central_buyer_pmp_conditions_retained_bus_only_context_excluded",
+    "all_20_page_rules_exercised_without_superseded_or_excluded_spans",
+    "empty_filtered_search_does_not_return_required_pages_as_a_match",
+    "leaked_or_modified_search_hit_rejected",
+    "missing_cross_jurisdiction_or_changed_rule_evidence_rejected",
+    "changed_inputs_or_model_rejected_before_search",
+    "context_budget_never_silently_drops_required_evidence",
+    "source_artifacts_and_saved_231_record_index_unchanged"
+  ],
+  "rejected_input_cases": 20,
+  "live_queries": [
+    {
+      "selection": "Maharashtra",
+      "question": "What are the demand incentive caps for electric two-wheelers?",
+      "jurisdiction": "Maharashtra",
+      "seed_chunk_ids": [
+        "maharashtra_policy_2025-05-23:p18:c799:427f5e02e615",
+        "maharashtra_policy_2025-05-23:p19:c0:ed95e6e66213",
+        "maharashtra_policy_2025-05-23:p17:c1525:1a4667a777e9",
+        "maharashtra_policy_2025-05-23:p20:c0:4fadb647119c"
+      ],
+      "context_page_ids": [
+        "maharashtra_corrigendum_2025-08-29:p2",
+        "maharashtra_operational_guidelines_2025-06-19:p2",
+        "maharashtra_operational_guidelines_2025-06-19:p3",
+        "maharashtra_operational_guidelines_2025-06-19:p4",
+        "maharashtra_operational_guidelines_2025-07-28:p1",
+        "maharashtra_policy_2025-05-23:p16",
+        "maharashtra_policy_2025-05-23:p17",
+        "maharashtra_policy_2025-05-23:p18",
+        "maharashtra_policy_2025-05-23:p19",
+        "maharashtra_policy_2025-05-23:p20"
+      ],
+      "context_characters": 21820,
+      "omitted_spans": [
+        {
+          "page_id": "maharashtra_policy_2025-05-23:p19",
+          "start": 1112,
+          "end": 1523,
+          "reason": "Section 4.2(1) superseded by August 2025 corrigendum",
+          "text_sha256": "53a1d29aa1be10f4191fb8187dbf62f227283e5ab44b743a9372613ced9967a5"
+        }
+      ]
+    },
+    {
+      "selection": "Maharashtra",
+      "question": "Which department reimburses toll exemptions?",
+      "jurisdiction": "Maharashtra",
+      "seed_chunk_ids": [
+        "maharashtra_policy_2025-05-23:p19:c794:760e977047f4",
+        "maharashtra_policy_2025-05-23:p19:c0:ed95e6e66213",
+        "maharashtra_policy_2025-05-23:p25:c0:0bcf3cee08c8",
+        "maharashtra_policy_2025-05-23:p23:c1642:d20998decae4"
+      ],
+      "context_page_ids": [
+        "maharashtra_corrigendum_2025-08-29:p2",
+        "maharashtra_operational_guidelines_2025-06-19:p2",
+        "maharashtra_operational_guidelines_2025-06-19:p3",
+        "maharashtra_operational_guidelines_2025-06-19:p4",
+        "maharashtra_operational_guidelines_2025-07-28:p1",
+        "maharashtra_policy_2025-05-23:p16",
+        "maharashtra_policy_2025-05-23:p18",
+        "maharashtra_policy_2025-05-23:p19",
+        "maharashtra_policy_2025-05-23:p20",
+        "maharashtra_policy_2025-05-23:p22",
+        "maharashtra_policy_2025-05-23:p23",
+        "maharashtra_policy_2025-05-23:p24",
+        "maharashtra_policy_2025-05-23:p25"
+      ],
+      "context_characters": 28899,
+      "omitted_spans": [
+        {
+          "page_id": "maharashtra_policy_2025-05-23:p19",
+          "start": 1112,
+          "end": 1523,
+          "reason": "Section 4.2(1) superseded by August 2025 corrigendum",
+          "text_sha256": "53a1d29aa1be10f4191fb8187dbf62f227283e5ab44b743a9372613ced9967a5"
+        }
+      ]
+    },
+    {
+      "selection": "Tamilnadu",
+      "question": "What period does the motor vehicle tax exemption cover?",
+      "jurisdiction": "Tamil Nadu",
+      "seed_chunk_ids": [
+        "tamil_nadu_policy_2023:p16:c0:54411cd352f7",
+        "tamil_nadu_motor_vehicle_tax_2025-12-29:p1:c734:804bb4a46d11",
+        "tamil_nadu_policy_2023:p16:c804:895e0576bdd4",
+        "tamil_nadu_motor_vehicle_tax_2025-12-29:p1:c0:ecbf55b4db8f"
+      ],
+      "context_page_ids": [
+        "tamil_nadu_motor_vehicle_tax_2025-12-29:p1",
+        "tamil_nadu_policy_2023:p15",
+        "tamil_nadu_policy_2023:p16",
+        "tamil_nadu_policy_2023:p17",
+        "tamil_nadu_policy_2023:p27"
+      ],
+      "context_characters": 11619,
+      "omitted_spans": [
+        {
+          "page_id": "tamil_nadu_policy_2023:p16",
+          "start": 470,
+          "end": 804,
+          "reason": "Use later motor-vehicle-tax notification for the 2026\u20132027 period",
+          "text_sha256": "d082ea6088d4d5aea0d0ebd41b026de92c2c3e7dd792c02ccf7a0046eba3da3f"
+        }
+      ]
+    },
+    {
+      "selection": "TN",
+      "question": "What is the purchase incentive for private electric cycles?",
+      "jurisdiction": "Tamil Nadu",
+      "seed_chunk_ids": [
+        "tamil_nadu_policy_2023:p16:c1651:afc0b78abaae",
+        "tamil_nadu_policy_2023:p17:c0:7ac3dc5ebe33",
+        "tamil_nadu_policy_2023:p19:c1979:3bd10c21e540",
+        "tamil_nadu_policy_2023:p17:c440:ab5f91a5e988"
+      ],
+      "context_page_ids": [
+        "tamil_nadu_motor_vehicle_tax_2025-12-29:p1",
+        "tamil_nadu_policy_2023:p15",
+        "tamil_nadu_policy_2023:p16",
+        "tamil_nadu_policy_2023:p17",
+        "tamil_nadu_policy_2023:p18",
+        "tamil_nadu_policy_2023:p19",
+        "tamil_nadu_policy_2023:p20",
+        "tamil_nadu_policy_2023:p27"
+      ],
+      "context_characters": 18430,
+      "omitted_spans": [
+        {
+          "page_id": "tamil_nadu_policy_2023:p16",
+          "start": 470,
+          "end": 804,
+          "reason": "Use later motor-vehicle-tax notification for the 2026\u20132027 period",
+          "text_sha256": "d082ea6088d4d5aea0d0ebd41b026de92c2c3e7dd792c02ccf7a0046eba3da3f"
+        }
+      ]
+    },
+    {
+      "selection": "Tamil Nadu",
+      "question": "What subsidy is described for private fast charging stations?",
+      "jurisdiction": "Tamil Nadu",
+      "seed_chunk_ids": [
+        "tamil_nadu_policy_2023:p19:c1979:3bd10c21e540",
+        "tamil_nadu_policy_2023:p19:c1501:041dfff56787",
+        "tamil_nadu_policy_2023:p19:c0:56bfe0297968",
+        "tamil_nadu_policy_2023:p18:c0:1675e0b8e43a"
+      ],
+      "context_page_ids": [
+        "tamil_nadu_motor_vehicle_tax_2025-12-29:p1",
+        "tamil_nadu_policy_2023:p16",
+        "tamil_nadu_policy_2023:p17",
+        "tamil_nadu_policy_2023:p18",
+        "tamil_nadu_policy_2023:p19",
+        "tamil_nadu_policy_2023:p20",
+        "tamil_nadu_policy_2023:p27"
+      ],
+      "context_characters": 15509,
+      "omitted_spans": [
+        {
+          "page_id": "tamil_nadu_policy_2023:p16",
+          "start": 470,
+          "end": 804,
+          "reason": "Use later motor-vehicle-tax notification for the 2026\u20132027 period",
+          "text_sha256": "d082ea6088d4d5aea0d0ebd41b026de92c2c3e7dd792c02ccf7a0046eba3da3f"
+        }
+      ]
+    },
+    {
+      "selection": "Central",
+      "question": "What is the electric two-wheeler incentive cap and deadline under PM E-DRIVE?",
+      "jurisdiction": "Central",
+      "seed_chunk_ids": [
+        "central_pm_edrive_guidelines_2024-09-30:p3:c0:277035d7ffb5",
+        "central_pm_edrive_notification_2024-09-29:p20:c2334:332190d4a55b",
+        "central_pm_edrive_guidelines_2024-09-30:p1:c0:61e9663760df",
+        "central_pm_edrive_guidelines_2024-09-30:p1:c802:d7b81c35686f"
+      ],
+      "context_page_ids": [
+        "central_pm_edrive_amendment_2025-03-03:p5",
+        "central_pm_edrive_amendment_2025-03-03:p6",
+        "central_pm_edrive_amendment_2025-03-03:p7",
+        "central_pm_edrive_extension_2026-03-27:p3",
+        "central_pm_edrive_extension_2026-08-10:p3",
+        "central_pm_edrive_guidelines_2024-09-30:p1",
+        "central_pm_edrive_guidelines_2024-09-30:p2",
+        "central_pm_edrive_guidelines_2024-09-30:p3",
+        "central_pm_edrive_l5_closure_2025-12-23:p1",
+        "central_pm_edrive_notification_2024-09-29:p20",
+        "central_pm_edrive_notification_2024-09-29:p23"
+      ],
+      "context_characters": 21901,
+      "omitted_spans": [
+        {
+          "page_id": "central_pm_edrive_extension_2026-03-27:p3",
+          "start": 545,
+          "end": 1959,
+          "reason": "March e2w/paragraph 46 provisions superseded by August 2026",
+          "text_sha256": "49451ad5ddadde39506db2878721a8e7f2436d473a33c55dd973a846061739e8"
+        },
+        {
+          "page_id": "central_pm_edrive_guidelines_2024-09-30:p3",
+          "start": 706,
+          "end": 1067,
+          "reason": "Earlier rate-year summary superseded; updated 15% cap remains in current amendment",
+          "text_sha256": "cf462745cbb288f6ed0f210ca891fab66fb711795f7927cd7dc86ef6066ada5a"
+        },
+        {
+          "page_id": "central_pm_edrive_notification_2024-09-29:p20",
+          "start": 3367,
+          "end": 3708,
+          "reason": "Earlier rate-year description superseded by later category amendments",
+          "text_sha256": "421c63f050bfc7c5dc3221f2e6a32be485f6bfadb7ee7d8f94db270b64258a3f"
+        },
+        {
+          "page_id": "central_pm_edrive_guidelines_2024-09-30:p1",
+          "start": 393,
+          "end": 857,
+          "reason": "Prior scheme-period/outlay summary superseded",
+          "text_sha256": "6609f683c6a872e94b1dfa2319c031ab83bccee4faef9f8c906aa0f3737162f3"
+        },
+        {
+          "page_id": "central_pm_edrive_amendment_2025-03-03:p7",
+          "start": 403,
+          "end": 3497,
+          "reason": "Outside the Central buyer pilot",
+          "text_sha256": "932a1d472ab8138efe4f63e4c146a76c68bd6013fd5a31f1af91e051b85f6dc6"
+        }
+      ]
+    },
+    {
+      "selection": "Central",
+      "question": "Are L5 three-wheelers registered after 26 December 2025 covered?",
+      "jurisdiction": "Central",
+      "seed_chunk_ids": [
+        "central_pm_edrive_extension_2026-03-27:p3:c881:cade97b6604b",
+        "central_pm_edrive_l5_closure_2025-12-23:p1:c1112:8f9fee7ea3a7",
+        "central_pm_edrive_extension_2026-03-27:p3:c1465:72dd0612fcc4",
+        "central_pm_edrive_l5_closure_2025-12-23:p1:c0:975f49365fd3"
+      ],
+      "context_page_ids": [
+        "central_pm_edrive_amendment_2025-03-03:p5",
+        "central_pm_edrive_amendment_2025-03-03:p6",
+        "central_pm_edrive_amendment_2025-03-03:p7",
+        "central_pm_edrive_extension_2026-03-27:p3",
+        "central_pm_edrive_extension_2026-08-10:p3",
+        "central_pm_edrive_guidelines_2024-09-30:p2",
+        "central_pm_edrive_guidelines_2024-09-30:p3",
+        "central_pm_edrive_l5_closure_2025-12-23:p1",
+        "central_pm_edrive_notification_2024-09-29:p23"
+      ],
+      "context_characters": 17091,
+      "omitted_spans": [
+        {
+          "page_id": "central_pm_edrive_extension_2026-03-27:p3",
+          "start": 545,
+          "end": 1959,
+          "reason": "March e2w/paragraph 46 provisions superseded by August 2026",
+          "text_sha256": "49451ad5ddadde39506db2878721a8e7f2436d473a33c55dd973a846061739e8"
+        },
+        {
+          "page_id": "central_pm_edrive_guidelines_2024-09-30:p3",
+          "start": 706,
+          "end": 1067,
+          "reason": "Earlier rate-year summary superseded; updated 15% cap remains in current amendment",
+          "text_sha256": "cf462745cbb288f6ed0f210ca891fab66fb711795f7927cd7dc86ef6066ada5a"
+        },
+        {
+          "page_id": "central_pm_edrive_amendment_2025-03-03:p7",
+          "start": 403,
+          "end": 3497,
+          "reason": "Outside the Central buyer pilot",
+          "text_sha256": "932a1d472ab8138efe4f63e4c146a76c68bd6013fd5a31f1af91e051b85f6dc6"
+        }
+      ]
+    },
+    {
+      "selection": "PM E-DRIVE",
+      "question": "How do the buyer and dealer sign the e-voucher?",
+      "jurisdiction": "Central",
+      "seed_chunk_ids": [
+        "central_pm_edrive_guidelines_2024-09-30:p16:c0:10ffdfe48dff",
+        "central_pm_edrive_guidelines_2024-09-30:p17:c0:d051a02f6301",
+        "central_pm_edrive_guidelines_2024-09-30:p15:c820:23b5c518c221",
+        "central_pm_edrive_guidelines_2024-09-30:p14:c800:7c105d2e1d8b"
+      ],
+      "context_page_ids": [
+        "central_pm_edrive_amendment_2025-03-03:p5",
+        "central_pm_edrive_amendment_2025-03-03:p6",
+        "central_pm_edrive_amendment_2025-03-03:p7",
+        "central_pm_edrive_extension_2026-03-27:p3",
+        "central_pm_edrive_extension_2026-08-10:p3",
+        "central_pm_edrive_guidelines_2024-09-30:p13",
+        "central_pm_edrive_guidelines_2024-09-30:p14",
+        "central_pm_edrive_guidelines_2024-09-30:p15",
+        "central_pm_edrive_guidelines_2024-09-30:p16",
+        "central_pm_edrive_guidelines_2024-09-30:p17",
+        "central_pm_edrive_guidelines_2024-09-30:p18",
+        "central_pm_edrive_guidelines_2024-09-30:p2",
+        "central_pm_edrive_guidelines_2024-09-30:p3",
+        "central_pm_edrive_l5_closure_2025-12-23:p1",
+        "central_pm_edrive_notification_2024-09-29:p23"
+      ],
+      "context_characters": 25951,
+      "omitted_spans": [
+        {
+          "page_id": "central_pm_edrive_extension_2026-03-27:p3",
+          "start": 545,
+          "end": 1959,
+          "reason": "March e2w/paragraph 46 provisions superseded by August 2026",
+          "text_sha256": "49451ad5ddadde39506db2878721a8e7f2436d473a33c55dd973a846061739e8"
+        },
+        {
+          "page_id": "central_pm_edrive_guidelines_2024-09-30:p3",
+          "start": 706,
+          "end": 1067,
+          "reason": "Earlier rate-year summary superseded; updated 15% cap remains in current amendment",
+          "text_sha256": "cf462745cbb288f6ed0f210ca891fab66fb711795f7927cd7dc86ef6066ada5a"
+        },
+        {
+          "page_id": "central_pm_edrive_amendment_2025-03-03:p7",
+          "start": 403,
+          "end": 3497,
+          "reason": "Outside the Central buyer pilot",
+          "text_sha256": "932a1d472ab8138efe4f63e4c146a76c68bd6013fd5a31f1af91e051b85f6dc6"
+        }
+      ]
+    }
+  ],
+  "query_embedding_count": 9,
+  "corpus_embeddings": 0,
+  "corpus_sha256": "f2be4ed1240fbc74de1de7ad5dae8f26e5ee61f80c743ad00aa53ccf413013ba",
+  "input_sha256": {
+    "data/retrieval_rules.json": "5680517abc4070414a022b9bbf9cfbc25e1003af2b57a7a0898023ec129d5583",
+    "data/source_manifest.json": "8918c38310dfdd946b3892da77e84ecb5f13f57ba293e20d8257703d426ece79",
+    "data/processed/maharashtra/chunks.jsonl": "e21b464fee56a0d98006577a308b5edb5c4374428d097838139496741595a9e9",
+    "data/processed/tamil_nadu/chunks.jsonl": "8d1708d8766411a2c5e19e600cd5933dd2abd09a8a2b9a5b44fa8ffcbd930a63",
+    "data/processed/central/chunks.jsonl": "d7fb95e1c89dd21079257b1e0f1086c389488d6488ad121f6c22cbc00fc49374",
+    "data/processed/maharashtra/pages.jsonl": "1c89f5effb8f904b7408dbb89d919b21d1693d25c50c8373f72bff88f66a2490",
+    "data/processed/tamil_nadu/pages.jsonl": "e705b5060ecddcdf3e6f5fd65845b8809b57b12f053be85c519cd2ac2a536ebe",
+    "data/processed/central/pages.jsonl": "8a0118d845ee2d800303025cff41327e895998427e78c1d81caf19f6c0bcf34a",
+    "data/policies/central/pm_edrive_claim_window_2025-10-29.pdf": "394861943e2b9927d0644e9957b285e3ceb70e6e53f9cd37d3b89f1d317edc97",
+    "data/policies/maharashtra/maharashtra_ev_corrigendum_2025-08-29.pdf": "c0e64b49da1c36de7d8bc7d6c31e2b197889f6944cb5b52431891ad07118f03e",
+    "data/policies/central/pm_edrive_extension_2026-03-27.pdf": "93615bf7878ccb10a4cf149cd9bf55ef7a497d1a4cbeb2ec58a67b576b709042",
+    "data/policies/central/pm_edrive_l5_amendment_2024-11-25.pdf": "d4b3235bfe017c9d223cf03570f861000ff8277801779a0561faf778ed98c02e",
+    "data/policies/central/pm_edrive_allocation_2025-08-13.pdf": "6c636a9884238e7fde5e8402035ed9c8c8bd41425c58e90fc67cfdc7fbc86227",
+    "data/policies/central/pm_edrive_guidelines_2024-09-30.pdf": "165d1a202b7bc2b2999ccf9c3ca8bc7c8591656abc06b6bcf2554f59ec1c8227",
+    "data/policies/maharashtra/maharashtra_ev_policy_2025-05-23.pdf": "a0f87168a51239e4ab112b6db5556d00a27fcfb5c1a16681a5388f8fdfa3b665",
+    "data/policies/central/pm_edrive_extension_2025-08-07.pdf": "d1e004ef7e6935b8ae76aa21baf921058f047a1ef17d4507a1e1bf8b817e65e2",
+    "data/policies/maharashtra/maharashtra_ev_operational_guidelines_2025-06-19.pdf": "5e2f170788552027a38a644f6b0c333506cceb65d51633f8df6263b9f4dc052b",
+    "data/policies/tamil_nadu/tamil_nadu_ev_policy_2023.pdf": "522b06e6dd428b01c06071df2448d9232d8626ba4953b3e3ee819d1fe18601f6",
+    "data/policies/central/pm_edrive_l5_closure_2025-12-23.pdf": "e5e310cd5ead664d673f2d0e6e9ebb1e023c6b9f53da1441193c676f867f603b",
+    "data/policies/central/pm_edrive_extension_2026-08-10.pdf": "1ee07bc12920d0c1ef98b8346b214548bb84e0df40dac6c52f03713cfaf48591",
+    "data/policies/maharashtra/maharashtra_ev_operational_guidelines_2025-07-28.pdf": "c10bf89841bb7a238f74e043943c34ad706663546af62a25fa2bd1198b2de61b",
+    "data/policies/tamil_nadu/tamil_nadu_motor_vehicle_tax_2025-12-29.pdf": "d89d2b45ab48c832b0b3d95d0ae41d4b55bd37ddddcc846ea42acd79966760f0",
+    "data/policies/central/pm_edrive_amendment_2025-03-03.pdf": "2bb21679eeeddd58257bb0ff9771e605e22f6ddbfc7076a0d41c66c2ce6980fa",
+    "data/policies/central/pm_edrive_notification_2024-09-29.pdf": "77073915456826eb0e6751cdbcfe60e2ebdd65c0078627a50ca3b973be07c6ad"
+  },
+  "notebook_sha256": "537b2a05768fa950918fa11fd155f2026fc545bf54e1152f7f1cb117ad429821",
+  "check_script_sha256": "73e1e13159bcdd51db15ae2dee5738103b1567a18de653b4163926a84c2d171f",
+  "scope": "technical retrieval checks; not team evaluation or verified current entitlement"
+}
