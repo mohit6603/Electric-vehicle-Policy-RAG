@@ -36,4 +36,4 @@ All 12 notebook checks pass: page coverage, hashes/citations, physical numbering
 
 These results establish technical ingestion. They do not establish a fully verified policy corpus, model-answer accuracy or live entitlement. Team source review, amendment completeness/current-status gaps and the two independently authored Tamil Nadu cases remain pending. No embeddings, Chroma index, answers or UI belong to this stage.
 
-Next: Stage 4 selects the central scheme and prepares its official source packet before ingestion. Stage 4 has not started.
+Stage 4 now covers the PM E-DRIVE central buyer-incentive pilot; see [its handoff](STAGE_4_HANDOFF.md). Next is Stage 5 persistent semantic search.

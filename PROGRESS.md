@@ -2,7 +2,7 @@
 
 ## Current stage and next step
 
-**Stage 3 — technical work complete.** Tamil Nadu now has 23 page records and 78 draft chunks from two official PDFs. The shared loader supports both pilot jurisdictions; Maharashtra retains its original 18 pages and 53 chunks unchanged. Source acceptance and unresolved current-benefit checks remain deferred. Development is stopped at the Stage 3 boundary.
+**Stage 4 — technical work complete.** Central PM E-DRIVE buyer ingestion adds 53 audit pages and 100 draft chunks from 35 selected pages. Maharashtra and Tamil Nadu retain their original outputs. There are now 231 draft chunks across three jurisdiction labels. Manual source acceptance, evaluation questions and unresolved current-entitlement checks remain deferred. Development is stopped at the Stage 4 boundary.
 
 | Stage | Current status |
 |---|---|
@@ -11,15 +11,31 @@
 | 2. First-state ingestion | Technical work complete: 18 pages, 16 draft pages, 53 chunks; team acceptance and two questions deferred |
 | S. Tamil Nadu sources | Two official PDFs prepared; tax-period evidence found, other current-status gaps and team acceptance pending |
 | 3. Second-state ingestion | Technical work complete: 23 Tamil Nadu pages, 78 chunks; two team questions deferred |
-| 4–15 | Not started |
+| S. Central sources | Ten official PM E-DRIVE documents prepared; five OCR proposals; manual acceptance/current-entitlement checks pending |
+| 4. Central-source ingestion | Technical work complete: 53 audit pages, 35 draft pages, 100 chunks; four team questions deferred |
+| 5–15 | Not started |
 
-**Latest authorization:** after authorizing implementation of technical Stage 2, the user requested "start stage 3 and finish it," selected Tamil Nadu and asked to continue to completion. Technical Stage 3 was implemented with the same disclosed AI assistance and deferred manual-review arrangement. This does not change the assignment's AI-use rule or authorize inventing human review/evaluation cases.
+**Latest authorization:** the user requested starting and finishing Stage 4, including central scheme selection and ingestion. Technical work continues under the disclosed AI implementation/deferred manual-review arrangement. PM E-DRIVE buyer incentives for two-/three-wheelers were selected as the stated working assumption after the optional breadth question remained unanswered; do not describe this as an explicit user choice. The assignment AI-use rule and truthful disclosure still apply.
 
-**Immediate next step:** Stage 4 central-source preparation: select the central scheme and collect its applicable official documents through the cutoff. Stage 4 has not started. See [Stage 3 run instructions](STAGE_3_HANDOFF.md); the [Stage 2 instructions](STAGE_2_HANDOFF.md) remain available.
+**Immediate next step:** Stage 5 persistent semantic search. Resolve the index rebuild/update approach, then embed and persist all three pilot corpora with their existing scope/review metadata. Stage 5 has not started. See [Stage 4 run instructions](STAGE_4_HANDOFF.md).
 
 The user's earlier decision to defer manual source review and question-writing until the full prototype is built still applies. Those tasks do not block development stages 2–10; they remain required before formal evaluation and submission. Technical checks must pass before advancing stages. All source acceptance flags remain false, current status remains unknown, and prototype evidence is labelled unverified.
 
 Deferred review batch: verify the source text and applicable document chains; record actual reviewers/dates; independently author and verify the 24 evaluation cases; resolve current-benefit evidence gaps or keep unsupported claims explicitly unanswered. Freeze expected answers before formal evaluation. Do not invent review completion or remove these obligations from final acceptance.
+
+## Stage 4 technical closeout — 25 September 2026
+
+Selected PM E-DRIVE's two-/three-wheeler buyer-incentive scope, with the original notification, operational guidelines, applicable amendments and dated closure/claim notices. Ten PDFs downloaded from official production-portal links on 24 September retain original bytes and dates. The bounded source review records the unconfirmed scope assumption, source exclusions, later-update requirements and current-entitlement gaps. No state-plus-central benefit stacking is implied.
+
+Added Stage 4 cells that reuse the shared loader and course splitter. A small loader extension trims four mixed-language pages at recorded English headings and retains raw-text hashes. Five OCR proposals supply missing text/amounts from the newest amendment and scanned letters, with original-page citations and false acceptance flags. Historical/specialist pages remain in the audit; dated exceptions are not current claims windows.
+
+Observed results: **53 unique audit pages, 35 draft pages, 100 chunks, 13 passed notebook checks**. Critical checks preserve the latest e2w table/caps/years and 15% limitation, the e-rickshaw table, L5 closure, fund limitation, distinct claim deadline and buyer/e-voucher requirements. Required amendment/conditions references resolve. Nine invalid-input tests reject source/hash/page/OCR/marker problems. The original six state-source records and four state JSONL files are unchanged.
+
+Fresh Jupyter kernels passed Stage 4 independently and Stages 2–4 together, without API keys or model services. All six JSONL artifacts reproduced byte-for-byte, report notebook hashes match, and saved notebook outputs remain empty.
+
+Outputs: [page audit](data/processed/central/pages.jsonl), [draft chunks](data/processed/central/chunks.jsonl), [check report](data/processed/central/stage4_checks.json), [source review](data/policies/central/SOURCE_REVIEW.md) and [OCR provenance](data/ocr/central/review.json). Earlier check reports are refreshed for the current notebook/manifest. No model calls, embeddings, index, generated answers or evaluation cases were added.
+
+AI assistance: scheme/source research, official downloads, targeted visual/text comparison, OCR/proposed transcription, notebook implementation/checks, technical verification, documentation and Git operations. Four central team-written expected-answer cases, genuine OCR/source acceptance and unresolved funding/eligibility checks remain pending. Technical completion does not certify current entitlement or full coverage of specialist PM E-DRIVE segments.
 
 ## Stage 3 technical closeout — 24 September 2026
 

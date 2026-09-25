@@ -1,0 +1,65 @@
+{
+  "checked_at_utc": "2026-09-25T04:24:27.584453+00:00",
+  "technical_status": "passed",
+  "scheme": "PM E-DRIVE",
+  "coverage_scope": "e2w_e3w_buyer_incentives",
+  "verification_cutoff": "2026-09-23",
+  "team_acceptance": "deferred_not_verified",
+  "current_benefit_availability": "not_verified",
+  "source_count": 10,
+  "page_count": 53,
+  "draft_page_count": 35,
+  "chunk_count": 100,
+  "chunks_by_source": {
+    "central_pm_edrive_notification_2024-09-29": 27,
+    "central_pm_edrive_guidelines_2024-09-30": 43,
+    "central_pm_edrive_amendment_2025-03-03": 16,
+    "central_pm_edrive_l5_closure_2025-12-23": 3,
+    "central_pm_edrive_extension_2026-03-27": 5,
+    "central_pm_edrive_extension_2026-08-10": 6
+  },
+  "splitter": {
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "add_start_index": true,
+    "separators": [
+      "\n\nSl. No. |",
+      "\n4.",
+      "\n3.",
+      "\n\n",
+      "\n",
+      " ",
+      ""
+    ]
+  },
+  "checks_passed": [
+    "ten_sources_53_pages",
+    "35_draft_pages_audit_exclusions",
+    "central_scope_and_physical_citations",
+    "source_proposal_and_text_hashes",
+    "metadata_and_unverified_status_preserved",
+    "relationships_resolve",
+    "no_nonwhitespace_text_lost",
+    "latest_e2w_table_caps_and_dates",
+    "erickshaw_row_and_superseded_clause_link",
+    "fund_limit_and_claim_deadline",
+    "l5_closure",
+    "buyer_eligibility_and_evoucher",
+    "three_jurisdictions_distinct"
+  ],
+  "evidence_chunks": {
+    "e2w_table": "central_pm_edrive_extension_2026-08-10:p3:c1196:57a31912148e",
+    "erickshaw_table": "central_pm_edrive_extension_2026-03-27:p3:c1959:20ebc7b440af",
+    "l5_closure": "central_pm_edrive_l5_closure_2025-12-23:p1:c1112:8f9fee7ea3a7",
+    "fund_limit": "central_pm_edrive_extension_2026-08-10:p3:c1960:b0e6c9a2ac7e",
+    "claim_deadline": "central_pm_edrive_extension_2026-08-10:p3:c2811:6408cd3e7e5e",
+    "buyer_incentive": "central_pm_edrive_guidelines_2024-09-30:p6:c0:bb2dee843516"
+  },
+  "artifact_sha256": {
+    "pages.jsonl": "8a0118d845ee2d800303025cff41327e895998427e78c1d81caf19f6c0bcf34a",
+    "chunks.jsonl": "d7fb95e1c89dd21079257b1e0f1086c389488d6488ad121f6c22cbc00fc49374"
+  },
+  "notebook_sha256": "45cd8dd6522e17860aadebfdcb46cb710ef7d9d00adb015c09f6aac5161bfd67",
+  "source_manifest_sha256": "8918c38310dfdd946b3892da77e84ecb5f13f57ba293e20d8257703d426ece79",
+  "ocr_review_sha256": "77f4e8298a44e6ac071959c3ae552ceb104ec2bafa710895171547b8f55ec694"
+}
