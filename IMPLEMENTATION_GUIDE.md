@@ -80,7 +80,7 @@ Check: inspect retrieved metadata before calling the LLM. A Maharashtra query mu
 
 Reuse E2 cell 20's sequence: retrieve, format context, build the input dictionary, invoke a prompt/LLM chain, return the result. Reuse L4 cell 150's Groq initialization. For the baseline, one model is enough.
 
-Write the EV prompt yourselves. It should constrain answers to the supplied evidence, retain eligibility/vehicle/date conditions, identify the jurisdiction, and state when the available material does not answer the question. L4's hub prompt illustrates abstention, but does not implement this project's citations or policy rules.
+Final acceptance requires the team to review and own the EV prompt. Stage 7 currently supplies a disclosed AI-assisted draft at the user's request; this does not satisfy a claim of team authorship. It should constrain answers to the supplied evidence, retain eligibility/vehicle/date conditions, identify the jurisdiction, and state when the available material does not answer the question. L4's hub prompt illustrates abstention, but does not implement this project's citations or policy rules.
 
 Unlike E2's text-only join, format the relevant document metadata with each evidence passage. Keep citations traceable to the retrieved documents, and check that a claimed source actually supports the answer. A list of retrieved documents alone is not proof of grounding.
 
@@ -89,6 +89,8 @@ Handle an empty result before asking the model to answer. Also test cases where 
 Aim for a short answer with sources attached. Preserve necessary conditions even when they make the answer longer than one sentence. Saying "not established by these documents" is different from asserting that no benefit exists.
 
 Check: compare an amount, its unit, its cap and its eligibility conditions against the source PDF. Ask an unsupported question and inspect whether the model abstains. Verify actual cited pages rather than trusting the model's citation text.
+
+Stage 7 implements this flow in notebook cells `stage7-schema` through `stage7-checks`. The model emits supplied source IDs; code attaches exact excerpts and physical PDF-page links. See [Stage 7 handoff](STAGE_7_HANDOFF.md) for run instructions, observed checks and provenance-versus-semantic-support limits.
 
 ## 6. Add the Gradio interface and basic failure handling
 
@@ -137,7 +139,7 @@ For the final submission, use exactly these three slides:
 | 2 | Technical stack and GenAI architecture flow | Actual implemented ingestion/retrieval/generation flow and selected class libraries |
 | 3 | Appendix, including AI-use disclosure | Actual AI assistance, source/reuse attribution, observed evaluation and material limitations as space permits |
 
-Slide 3 must contain AI disclosure; the other suggested appendix material is not explicitly mandated. Keep a truthful assistance log now. AI assistance has included reading the PDFs, inspecting the reference code, mapping requirements, preparing guidance, configuring dependencies, adapting the classroom setup cells, running the environment checks, researching official Maharashtra sources, and preparing OCR drafts with provenance and visual spot checks. It has not implemented the policy-answering solution or run its policy evaluation. Update that record as work continues; do not claim work was manually authored or tested when it was not.
+Slide 3 must contain AI disclosure; the other suggested appendix material is not explicitly mandated. Keep a truthful assistance log now. AI assistance has included reading the PDFs, inspecting the reference code, mapping requirements, preparing guidance, configuring dependencies, adapting the classroom setup cells, running the environment checks, researching official Maharashtra sources, and preparing OCR drafts with provenance and visual spot checks. At the user's later request, AI also implemented technical Stages 2–7, including ingestion, persistence, retrieval rules, a draft EV prompt, structured answer generation and citation resolution, and ran actual development checks. Formal team evaluation has not run. Update that record as work continues; do not claim work was manually authored or tested when it was not.
 
 Recommended 8-minute rehearsal: 1 minute for the buyer problem, 2 for the architecture, 4 for the live demo, and 1 for observed evaluation/limitations and appendix. Prepare for a separate 3–4 minutes of questions. This timing split is advice; only the 8-minute total and approximate Q&A duration are specified.
 

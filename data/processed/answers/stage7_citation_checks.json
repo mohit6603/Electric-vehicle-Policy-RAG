@@ -1,0 +1,27 @@
+{
+  "checked_at_utc": "2026-09-25T17:11:40.693541+00:00",
+  "notebook_sha256": "e3ff990f675d8af228a8b42c17a30103b918af1d8ac20c03180c6766acf716bf",
+  "check_script_sha256": "5f44fa5cd50d8f8a6aabdf88c8f4271bb0e8f153277f208b41cbb5ccc7c85c52",
+  "corpus_sha256": "f2be4ed1240fbc74de1de7ad5dae8f26e5ee61f80c743ad00aa53ccf413013ba",
+  "retrieval_k": 1,
+  "retrieval_rules_sha256": "5680517abc4070414a022b9bbf9cfbc25e1003af2b57a7a0898023ec129d5583",
+  "scope": "AI-authored technical checks; not formal team evaluation",
+  "technical_status": "passed",
+  "checks_passed": [
+    "cited_sources_only_with_original_pdf_page_links",
+    "jurisdiction_cutoff_review_status_and_original_excerpts_retained",
+    "all_assembled_evidence_retained_in_prompt_after_whitespace_compaction",
+    "duplicate_citation_ids_collapsed",
+    "unknown_ids_and_model_supplied_evidence_rejected",
+    "missing_citations_empty_support_and_claiming_abstention_rejected",
+    "model_links_markup_and_malformed_output_withheld",
+    "truncated_response_withheld_even_with_parseable_json",
+    "structured_abstention_has_no_policy_claims_or_sources",
+    "empty_evidence_and_retrieval_rejections_skip_generation",
+    "changed_jurisdiction_review_status_or_source_metadata_rejected",
+    "changed_evidence_text_or_hash_rejected",
+    "known_cycle_eligibility_overstatement_withheld_for_review"
+  ],
+  "invalid_response_cases": 13,
+  "groq_calls": 0
+}

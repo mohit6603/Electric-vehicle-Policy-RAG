@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-09-25T07:12:07.062843+00:00",
+  "checked_at_utc": "2026-09-25T16:57:59.654466+00:00",
   "technical_status": "passed",
   "checks_passed": [
     "fresh_process_reopens_all_231_without_embeddings",
@@ -36,7 +36,7 @@
   "isolated_rebuild_sample_chunks": 6,
   "test_store_document_embeddings": 56,
   "corpus_sha256": "f2be4ed1240fbc74de1de7ad5dae8f26e5ee61f80c743ad00aa53ccf413013ba",
-  "notebook_sha256": "537b2a05768fa950918fa11fd155f2026fc545bf54e1152f7f1cb117ad429821",
+  "notebook_sha256": "e3ff990f675d8af228a8b42c17a30103b918af1d8ac20c03180c6766acf716bf",
   "check_script_sha256": "de0a42c4c210200c2fb16b2c7663d94e4b1f338119cfdbd03b3d0e568067dc70",
   "scope": "persistence/integrity checks; no policy-answer evaluation or human source review"
 }

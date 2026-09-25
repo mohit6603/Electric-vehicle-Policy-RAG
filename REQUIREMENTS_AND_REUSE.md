@@ -2,7 +2,7 @@
 
 Reviewed on 22 September 2026. This is a planning and code-review aid, not an implemented assignment or a submission-ready package.
 
-The attached assignment instructions are the assignment specification. The EV idea PDF adds the team's proposed scope. The user confirmed that the instructor approved the four-member group and initially chose helper-only assistance. On 24 September 2026 the user explicitly authorized AI implementation of technical Stage 2. The user then requested completion of Stage 3 for Tamil Nadu. Setup, both pilot-state ingestion paths, the Central PM E-DRIVE buyer-incentive pilot and Stages 5–6 persistent search/jurisdiction-aware retrieval are now implemented at the user's request; actual checks and assistance are recorded in `PROGRESS.md`. This authorization does not amend the assignment's AI-use rule.
+The attached assignment instructions are the assignment specification. The EV idea PDF adds the team's proposed scope. The user confirmed that the instructor approved the four-member group and initially chose helper-only assistance. On 24 September 2026 the user explicitly authorized AI implementation of technical Stage 2. The user then requested completion of Stage 3 for Tamil Nadu. Setup, both pilot-state ingestion paths, the Central PM E-DRIVE buyer-incentive pilot and Stages 5–7 persistent search, jurisdiction-aware retrieval and cited answer generation are now implemented at the user's request; actual checks and assistance are recorded in `PROGRESS.md`. This authorization does not amend the assignment's AI-use rule.
 
 ## Sources and decisions
 
@@ -19,17 +19,17 @@ The attached assignment instructions are the assignment specification. The EV id
 | ID | Requirement from the assignment | Where it belongs / evidence needed | Current status |
 |---|---|---|---|
 | A1 | Group of 3 | Team roster | Four members approved, as confirmed by the user |
-| A2 | RAG with a custom dataset and problem statement | EV corpus, retrieval and generation implementation; business explanation | Pilot corpus and jurisdiction/version-aware retrieval implemented; grounded generation pending |
+| A2 | RAG with a custom dataset and problem statement | EV corpus, retrieval and generation implementation; business explanation | Pilot corpus, jurisdiction/version-aware retrieval and cited generation implemented; team acceptance and formal evaluation pending |
 | A3 | Agents are optional | LangGraph only if the team implements the optional comparison path | Optional |
 | A4 | Idea PDF: member names and IDs, problem and why worthwhile, proposed approach, tech stack | Existing idea PDF | All four content categories present |
 | A5 | Idea due 22 September 2026, EOD; every member uploads a PDF on Digiicampus | Individual upload confirmations | Uploads not verified |
-| A6 | Final code: GitHub link of the project repository | The team's own runnable project repository and its URL | Repository created at https://github.com/mohit6603/Electric-vehicle-Policy-RAG; environment setup and technical Stages 2–6 present, later application stages pending |
+| A6 | Final code: GitHub link of the project repository | The team's own runnable project repository and its URL | Repository created at https://github.com/mohit6603/Electric-vehicle-Policy-RAG; environment setup and technical Stages 2–7 present, later application stages pending |
 | A7 | Exactly 3 presentation slides | Slide 1: business impact. Slide 2: technical stack and GenAI architecture flow. Slide 3: appendix including AI disclosure | Not authored |
 | A8 | Every member submits final ZIP on Digiicampus | ZIP containing the repository link and the 3-slide presentation; individual upload confirmations | Not prepared/submitted |
 | A9 | Final submission date/time to be announced | Check the announced course deadline | TBD in the PDF |
 | A10 | 8-minute team presentation and live demo, approximately 3–4 minutes of Q&A | Rehearsed running application and explanation | Not performed; date/time TBD |
 | A11 | Mainly classroom stack and syntax; explain additional syntax | Reuse map below and implementation notes | Reference code inspected |
-| A12 | AI only as code helper; brief disclosure in appendix | Student implementation, record of actual AI assistance | User authorized AI implementation of technical Stages 2–6; actual use recorded, final disclosure pending; assignment rule unchanged |
+| A12 | AI only as code helper; brief disclosure in appendix | Student implementation, record of actual AI assistance | User authorized AI implementation of technical Stages 2–7; actual use recorded, final disclosure pending; assignment rule unchanged |
 | A13 | Main grading is the demo: technical 80%, presentation including narrative 20% | Working demo, defensible design choices, clear deck | No grades or performance claims made |
 | A14 | Any member's late submission or editing GitHub after the deadline can penalize the whole group, including a possible zero | All-member upload check; preserve submitted GitHub revision after deadline | Team action at submission |
 
@@ -120,4 +120,15 @@ Start from the course environment when possible. A smaller environment should re
 
 ## What this review establishes
 
-Both PDFs were read and their rendered pages inspected. The reference repo's source cells, starter script, manifest and lockfile were inspected. The mapping distinguishes working examples, partial examples and genuine gaps. The user subsequently created the project repository for these planning documents. At the initial review, no corpus, application, model checks, evaluation, deck or submission had been completed. Subsequent environment and Stage 2 ingestion checks are recorded in `PROGRESS.md`; grounded answers, evaluation and submission remain later-stage work.
+Both PDFs were read and their rendered pages inspected. The reference repo's source cells, starter script, manifest and lockfile were inspected. The mapping distinguishes working examples, partial examples and genuine gaps. The user subsequently created the project repository for these planning documents. At the initial review, no corpus, application, model checks, evaluation, deck or submission had been completed. Subsequent technical Stages 1–7 and their observed checks are recorded in `PROGRESS.md`; team acceptance, formal evaluation and submission remain later-stage work.
+
+## Stage 7 implementation mapping
+
+| Requirement | Notebook cells / behavior | Reused course pattern |
+|---|---|---|
+| P8 model access | `stage7-prompt`: `get_answer_llm`, Groq key from ignored `.env` | L4 cell 150 `a8995b34`; E2 cell 18 `get_llm` |
+| P9 evidence-based generation | `stage7-schema`, `stage7-prompt`, `stage7-answer`: typed points/citations, EV prompt, retrieve → invoke → parse | L4 cells 153–155; E2 schema cell `517f27c0-6733-46bf-9eda-3ac1d4d66733`, prompt cell `baad3961-d934-4464-8ceb-814608c18293`, cell 20 `generate_cart` |
+| P10 state/document/page references | `stage7-citations`: check excerpt identity, label evidence, resolve IDs, attach originals and render official physical-page links | New EV addition to E2's context-formatting pattern; the course does not implement these citations |
+| P9/P10 pilot checks | `stage7-example`, `stage7-checks`, `checks/stage7_answer_checks.py` | New AI-authored technical cases, not P12's independent team evaluation |
+
+The EV prompt is an AI-assisted draft pending team review, following the user's request to finish Stage 7. Exact evidence comes from code rather than generated quotation text. Pydantic `ConfigDict(extra='forbid')`, JSON-object response mode and Groq's `include_reasoning=False` are small additions to explain in the demo. Source-ID validation proves provenance only; factual support must still be checked against the original evidence.

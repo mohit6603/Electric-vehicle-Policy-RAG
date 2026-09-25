@@ -10,7 +10,7 @@ Open `EV Policy Assistant.ipynb` from the project root in the pinned environment
 2. Run all Stage 6 cells in order. No earlier ingestion cells or Groq key are needed.
 3. Change `selected_jurisdiction` and `retrieval_question` in the search cell to inspect another query. The default Tamil Nadu query prints page references and evidence roles, then passes eight notebook checks.
 
-The public notebook function is `retrieve_policy(selection, question, k=4, max_context_chars=50000)`. Its result contains a status/message, canonical jurisdiction, `context_docs`, diagnostic `seed_chunk_ids`, omitted-span records, the verification cutoff and the false current-entitlement permission. Only `status='retrieved'` supplies context. Stage 7 must consume the context and its date/version/review labels, not fetch raw seed text by ID. A successful retrieval is not proof that the evidence answers the question.
+The public notebook function is `retrieve_policy(selection, question, k=4, max_context_chars=50000)`. Its result contains a status/message, canonical jurisdiction, `context_docs`, diagnostic `seed_chunk_ids`, omitted-span records, the verification cutoff and the false current-entitlement permission. Only `status='retrieved'` supplies context. Stage 7 consumes the context and its date/version/review labels, not fetch raw seed text by ID. A successful retrieval is not proof that the evidence answers the question.
 
 ## Input behavior
 
@@ -44,4 +44,4 @@ Reports: [notebook checks](data/processed/search/stage6_checks.json) and [retrie
 
 AI assistance covered implementation, the pilot-specific evidence rules, technical cases, actual local retrieval runs, documentation and Git publication. These technical questions do not replace the team's independently authored formal evaluation set. Manual source/rule review and current-benefit verification remain deferred.
 
-Next is **Stage 7: supported answers with citations**, including the team's EV-specific prompt. Stop at this stage boundary until Stage 7 is requested.
+Stage 7 now builds on this retrieval result. See [the Stage 7 handoff](STAGE_7_HANDOFF.md) for its AI-assisted prompt draft, source-ID checks and original PDF-page links. Team prompt/source review remains pending.

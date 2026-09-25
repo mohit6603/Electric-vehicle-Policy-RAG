@@ -2,23 +2,29 @@
 
 ## Current stage and next step
 
-**Stage 6 — technical work complete.** Filtered retrieval covers Maharashtra, Tamil Nadu and Central, with required evidence links, exact source excerpts and explicit dated/scope labels. Eight notebook checks and 19 retrieval checks passed. Manual review remains deferred. Development is stopped at the Stage 6 boundary.
+**Stage 7 — technically complete.** Groq answers use labelled Stage 6 evidence and checked source IDs, with original excerpts and PDF-page links. Seven notebook checks, 13 deterministic checks and six live pilot cases passed. The final live batch contains four supported answers and two withheld/abstained answers; it is not a formal accuracy score.
 
-| Stage | Current status |
-|---|---|
-| 1. Environment preflight | Complete |
-| 2–4. Pilot ingestion | Technical work complete; source acceptance, expected-answer cases and current-status checks deferred |
-| 5. Persistent semantic search | Technical work complete: 231 chunks, explicit rebuild and reopen |
-| 6. Jurisdiction-aware retrieval | Technical work complete: filtering, conflict handling and source-version context |
-| 7–15 | Not started |
+**Next:** Stage 8 — abstention and failure behavior. It has not started. Continue only when requested.
 
-**Latest authorization:** the user requested completion of Stage 6. AI implementation continues with manual review deferred. The guide's recommended alias handling and clarification for conflicts is the stated working assumption after an optional question received no answer.
-
-**Immediate next step:** Stage 7 supported answers with citations, including the team's EV-specific prompt and preservation of the returned evidence's source/version/review labels. See [Stage 6 run instructions](STAGE_6_HANDOFF.md). Stage 7 has not started.
+**Latest authorization:** the user requested completion of Stage 7. The EV prompt is an AI-assisted draft; genuine team prompt/source review remains deferred. The assignment's AI-use rule and disclosure requirement remain unchanged.
 
 The user's earlier decision to defer manual source review and question-writing until the full prototype is built still applies. Those tasks do not block development stages 2–10; they remain required before formal evaluation and submission. Technical checks must pass before advancing stages. All source acceptance flags remain false, current status remains unknown, and prototype evidence is labelled unverified.
 
 Deferred review batch: verify the source text and applicable document chains; record actual reviewers/dates; independently author and verify the 24 evaluation cases; resolve current-benefit evidence gaps or keep unsupported claims explicitly unanswered. Freeze expected answers before formal evaluation. Do not invent review completion or remove these obligations from final acceptance.
+
+## Stage 7 technical closeout — 25 September 2026
+
+Added notebook cells `stage7-schema` through `stage7-checks`, reusing Lab 4's Groq prompt/chain and Exercise 2's structured parser/retrieve → invoke patterns. The model returns concise points with source IDs; code validates IDs and excerpt/source metadata, attaches exact original excerpts, and renders official physical-PDF-page links. Only cited sources are displayed. Missing/invalid citations, unsupported schema content and incomplete outputs are withheld. Empty/rejected retrieval skips Groq.
+
+Generation uses one seed chunk plus all Stage 6 mandatory/adjacent evidence. Extra whitespace is removed while table line breaks are retained. Dates, evidence roles and the overall version note are supplied; full per-page notes remain in source records. This avoids oversized pilot requests without truncating required policy text. Groq remains the single proposed model, with medium reasoning and JSON-object output; the classroom Pydantic parser validates the result. No new dependency or corpus/index rebuild was needed.
+
+Observed final checks: **7 notebook checks, 13 deterministic citation checks (13 invalid response variants), and 6 live cases passed**. Four document answers cover Maharashtra's 10% / Rs 10,000 cap / 100,000-vehicle distinction and sale/registration/manufacturer conditions; Tamil Nadu's 2026–2027 motor-vehicle-tax scope; Central's e-2W rate, cap, price and percentage limits; and L5 closure versus claim/terminal dates and funding limits. The recipe question abstained. The Tamil Nadu e-cycle eligibility case was conservatively withheld, not counted as a correctly answered eligibility question. The final six-call batch needed no retries. A fresh Jupyter kernel reopened the saved index and generated the checked Central example. Earlier ingestion reproduced all six JSONL files byte-for-byte; Stage 5's 16 persistence checks and Stage 6's 19 retrieval checks still passed.
+
+Development findings are retained in the handoff: initial oversized requests, fabricated model quotation strings, a historical-date citation gap, and a table-count/currency swap led to formatting/schema/check changes. Simple presence-of-number tests were insufficient; the Maharashtra check now binds each amount to its meaning. Prompt changes did not reliably resolve the general-EV versus e-cycle FAME/registration condition. A conservative guard withholds Tamil Nadu e-cycle drafts mentioning FAME/registration, including potentially cautious drafts, pending source review. It is a known coverage limitation, not a general semantic verifier.
+
+Reports: `data/processed/answers/stage7_checks.json`, `stage7_citation_checks.json` and `stage7_live_checks.json`; all identify the tested notebook/corpus/rules. The live report stores actual outputs, exact cited excerpts and usage counts. The source-ID checks establish provenance, not arbitrary claim correctness. Manual source/OCR/prompt acceptance, current-entitlement verification and the independent 24-case evaluation remain pending. See [Stage 7 handoff](STAGE_7_HANDOFF.md) for run instructions and the boundary before Stage 8.
+
+AI assistance covered code, the prompt draft, technical case design, source/answer comparison, actual Groq/local runs, documentation and Git publication. These are AI-authored development checks, not team-written formal evaluation or evidence of team review.
 
 ## Stage 6 technical closeout — 25 September 2026
 

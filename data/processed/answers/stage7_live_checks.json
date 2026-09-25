@@ -1,0 +1,618 @@
+{
+  "checked_at_utc": "2026-09-25T17:07:35.393598+00:00",
+  "notebook_sha256": "e3ff990f675d8af228a8b42c17a30103b918af1d8ac20c03180c6766acf716bf",
+  "check_script_sha256": "5f44fa5cd50d8f8a6aabdf88c8f4271bb0e8f153277f208b41cbb5ccc7c85c52",
+  "corpus_sha256": "f2be4ed1240fbc74de1de7ad5dae8f26e5ee61f80c743ad00aa53ccf413013ba",
+  "retrieval_k": 1,
+  "retrieval_rules_sha256": "5680517abc4070414a022b9bbf9cfbc25e1003af2b57a7a0898023ec129d5583",
+  "scope": "AI-authored technical checks; not formal team evaluation",
+  "technical_status": "passed",
+  "completed_cases": 6,
+  "planned_cases": 6,
+  "model": "openai/gpt-oss-120b",
+  "model_settings": {
+    "temperature": 0,
+    "max_tokens": 2048,
+    "reasoning_effort": "medium",
+    "timeout": 60,
+    "max_retries": 0
+  },
+  "observations": [
+    {
+      "case": {
+        "id": "mh_two_wheeler",
+        "selection": "Maharashtra",
+        "question": "According to the Maharashtra policy, what percentage and per-vehicle cap apply to L1/L2 electric two-wheelers? Distinguish the vehicle-count ceiling from money and include the sale/registration condition.",
+        "patterns": [
+          "10\\s*%",
+          "10,?000",
+          "1,00,000|100,000|100000|one lakh",
+          "ex.factory",
+          "sold|sale",
+          "register"
+        ],
+        "page_ids": [
+          "maharashtra_policy_2025-05-23:p18",
+          "maharashtra_policy_2025-05-23:p19"
+        ]
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_fact_patterns": true,
+        "expected_source_pages": true,
+        "jurisdiction_isolated": true,
+        "no_current_entitlement_permission": true,
+        "rupee_cap_is_10000_not_vehicle_count": true,
+        "100000_belongs_to_vehicle_count": true
+      },
+      "result": {
+        "status": "document_answer",
+        "answer": "Maharashtra — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- The incentive for e‑2W (L1 & L2) electric two‑wheelers is 10 % of the ex‑factory cost. [S7](https://transport.maharashtra.gov.in/Site/Upload/GR/EV%20Policy%202025%20dated%2023-05-2025.pdf#page=18)\n- The maximum monetary incentive per e‑2W (L1 & L2) vehicle is Rs 10,000. [S7](https://transport.maharashtra.gov.in/Site/Upload/GR/EV%20Policy%202025%20dated%2023-05-2025.pdf#page=18)\n- The scheme caps the number of e‑2W (L1 & L2) two‑wheelers eligible for the incentive at 100,000 vehicles. [S7](https://transport.maharashtra.gov.in/Site/Upload/GR/EV%20Policy%202025%20dated%2023-05-2025.pdf#page=18)\n- Eligibility requires the vehicle to be sold and registered in Maharashtra, and the manufacturer must either produce the vehicle in Maharashtra or be registered to sell vehicles in the state. [S9](https://transport.maharashtra.gov.in/Site/Upload/GR/EV%20Policy%202025%20dated%2023-05-2025.pdf#page=19)\n\nSources:\n\n- [S7: Maharashtra — Maharashtra Electric Vehicle Policy 2025, PDF page 18](https://transport.maharashtra.gov.in/Site/Upload/GR/EV%20Policy%202025%20dated%2023-05-2025.pdf#page=18)\n- [S9: Maharashtra — Maharashtra Electric Vehicle Policy 2025, PDF page 19](https://transport.maharashtra.gov.in/Site/Upload/GR/EV%20Policy%202025%20dated%2023-05-2025.pdf#page=19)",
+        "sources": [
+          {
+            "source_id": "S7",
+            "state": "Maharashtra",
+            "document_title": "Maharashtra Electric Vehicle Policy 2025",
+            "document_date": "2025-05-23",
+            "pdf_page": 18,
+            "source": "data/policies/maharashtra/maharashtra_ev_policy_2025-05-23.pdf",
+            "official_url": "https://transport.maharashtra.gov.in/Site/Upload/GR/EV%20Policy%202025%20dated%2023-05-2025.pdf#page=18",
+            "evidence_id": "maharashtra_policy_2025-05-23:p18:x0-1728",
+            "excerpt_start": 0,
+            "excerpt_end": 1728,
+            "excerpt_sha256": "17d22228e43593b4a53f29025533dda1296785e16787b67d0b05875f4a28c7ff",
+            "context_role": "candidate_with_updates",
+            "version_note": "Read with the required dated updates; current availability is unverified."
+          },
+          {
+            "source_id": "S9",
+            "state": "Maharashtra",
+            "document_title": "Maharashtra Electric Vehicle Policy 2025",
+            "document_date": "2025-05-23",
+            "pdf_page": 19,
+            "source": "data/policies/maharashtra/maharashtra_ev_policy_2025-05-23.pdf",
+            "official_url": "https://transport.maharashtra.gov.in/Site/Upload/GR/EV%20Policy%202025%20dated%2023-05-2025.pdf#page=19",
+            "evidence_id": "maharashtra_policy_2025-05-23:p19:x0-1112",
+            "excerpt_start": 0,
+            "excerpt_end": 1112,
+            "excerpt_sha256": "c913bad201e7ba8f182e976ff66dc4d54169aa5a2964d6c030008bcbb5b5b5ec",
+            "context_role": "candidate_with_updates",
+            "version_note": "Section 4.2(1) is replaced by the August corrigendum; unaffected demand/tax/charging text remains."
+          }
+        ],
+        "points": [
+          {
+            "text": "The incentive for e‑2W (L1 & L2) electric two‑wheelers is 10 % of the ex‑factory cost.",
+            "citations": [
+              {
+                "source_id": "S7",
+                "source_excerpt": "शासन वनणणय क्रमाांकः एमव्हीआर-0125/प्र.क्र.13/पवर-2 \n \nपृष्ट्ठ 25 पैकी 18 \nSr. No. Parameter Targets \n11 A phased transition of government \nvehicle fleet to EVs.  \nAll new vehicles for travel within city \nto be EVs. \n12 Transition of defined categories of \ncity utility vehicles into EVs for six \nUAs. (Mumbai, Pune, Nagpur, \nNashik, Chhatrapati Sambhaji \nNagar, Amravati)  \n50% of new vehicle purchases  \n13 Electric vehicle adoption by fleet \noperators and aggregators  \n50% of fleet composition to be Electric \nVehicles  \n14 Charging infrastructure Charging facility at every 25 km \ninterval along the highways.  \n15 EV ready Government office \ncomplexes  \nAt least one EV charging facility in \nevery government office parking \nspaces. \n4. Policy Interventions- \n4.1) Demand Side Interventions- \n1) The Government of Maharashtra is offering fiscal incentives to encourage the adoption of \nelectric vehicles in the state. These incentives shall be availed as per the details provided in \nTable-2 below: \nTable 2: Demand Incentives for EVs \nSr. \nNo. \nVehicle Type Incentives (as \npercentage of ex-\nfactory cost)* \nNo. of vehicles \nto be \nincentivized \nMaximum \nIncentive per \nvehicle (Rupees) \n1 e-2W (L1 & L2)  10% 1,00,000 10,000 \n2 e-3W (L5M) 10% 15,000 30,000 \n3 e-3W goods carrier \n(L5N) \n15% 10,000 30,000 \n4 e-4W cars (M1) \n(Non-Transport \nvehicle) \n10% 10,000 1,50,000 \n5 e-4W cars (M1) \n(Transport vehicle) \n15% 25,000 2,00,000 \n6 e-4W Light Goods \nCarrier (N1) \n15% 10,000 1,00,000 \n7 e-buses (M3, M4) \n(STU) \n10% 1,500 20,00,000 \n8 e-buses (M3, M4) \n(non-STU) \n10% 1,500 20,00,000 \n9 e-4W goods carrier \n(N2, N3) \n15% 1,000 20,00,000 \n10 e-Agricultural \nTractors and \ncombined harvesters \n(A) \n15% 1,000 1,50,000 \n  "
+              }
+            ]
+          },
+          {
+            "text": "The maximum monetary incentive per e‑2W (L1 & L2) vehicle is Rs 10,000.",
+            "citations": [
+              {
+                "source_id": "S7",
+                "source_excerpt": "शासन वनणणय क्रमाांकः एमव्हीआर-0125/प्र.क्र.13/पवर-2 \n \nपृष्ट्ठ 25 पैकी 18 \nSr. No. Parameter Targets \n11 A phased transition of government \nvehicle fleet to EVs.  \nAll new vehicles for travel within city \nto be EVs. \n12 Transition of defined categories of \ncity utility vehicles into EVs for six \nUAs. (Mumbai, Pune, Nagpur, \nNashik, Chhatrapati Sambhaji \nNagar, Amravati)  \n50% of new vehicle purchases  \n13 Electric vehicle adoption by fleet \noperators and aggregators  \n50% of fleet composition to be Electric \nVehicles  \n14 Charging infrastructure Charging facility at every 25 km \ninterval along the highways.  \n15 EV ready Government office \ncomplexes  \nAt least one EV charging facility in \nevery government office parking \nspaces. \n4. Policy Interventions- \n4.1) Demand Side Interventions- \n1) The Government of Maharashtra is offering fiscal incentives to encourage the adoption of \nelectric vehicles in the state. These incentives shall be availed as per the details provided in \nTable-2 below: \nTable 2: Demand Incentives for EVs \nSr. \nNo. \nVehicle Type Incentives (as \npercentage of ex-\nfactory cost)* \nNo. of vehicles \nto be \nincentivized \nMaximum \nIncentive per \nvehicle (Rupees) \n1 e-2W (L1 & L2)  10% 1,00,000 10,000 \n2 e-3W (L5M) 10% 15,000 30,000 \n3 e-3W goods carrier \n(L5N) \n15% 10,000 30,000 \n4 e-4W cars (M1) \n(Non-Transport \nvehicle) \n10% 10,000 1,50,000 \n5 e-4W cars (M1) \n(Transport vehicle) \n15% 25,000 2,00,000 \n6 e-4W Light Goods \nCarrier (N1) \n15% 10,000 1,00,000 \n7 e-buses (M3, M4) \n(STU) \n10% 1,500 20,00,000 \n8 e-buses (M3, M4) \n(non-STU) \n10% 1,500 20,00,000 \n9 e-4W goods carrier \n(N2, N3) \n15% 1,000 20,00,000 \n10 e-Agricultural \nTractors and \ncombined harvesters \n(A) \n15% 1,000 1,50,000 \n  "
+              }
+            ]
+          },
+          {
+            "text": "The scheme caps the number of e‑2W (L1 & L2) two‑wheelers eligible for the incentive at 100,000 vehicles.",
+            "citations": [
+              {
+                "source_id": "S7",
+                "source_excerpt": "शासन वनणणय क्रमाांकः एमव्हीआर-0125/प्र.क्र.13/पवर-2 \n \nपृष्ट्ठ 25 पैकी 18 \nSr. No. Parameter Targets \n11 A phased transition of government \nvehicle fleet to EVs.  \nAll new vehicles for travel within city \nto be EVs. \n12 Transition of defined categories of \ncity utility vehicles into EVs for six \nUAs. (Mumbai, Pune, Nagpur, \nNashik, Chhatrapati Sambhaji \nNagar, Amravati)  \n50% of new vehicle purchases  \n13 Electric vehicle adoption by fleet \noperators and aggregators  \n50% of fleet composition to be Electric \nVehicles  \n14 Charging infrastructure Charging facility at every 25 km \ninterval along the highways.  \n15 EV ready Government office \ncomplexes  \nAt least one EV charging facility in \nevery government office parking \nspaces. \n4. Policy Interventions- \n4.1) Demand Side Interventions- \n1) The Government of Maharashtra is offering fiscal incentives to encourage the adoption of \nelectric vehicles in the state. These incentives shall be availed as per the details provided in \nTable-2 below: \nTable 2: Demand Incentives for EVs \nSr. \nNo. \nVehicle Type Incentives (as \npercentage of ex-\nfactory cost)* \nNo. of vehicles \nto be \nincentivized \nMaximum \nIncentive per \nvehicle (Rupees) \n1 e-2W (L1 & L2)  10% 1,00,000 10,000 \n2 e-3W (L5M) 10% 15,000 30,000 \n3 e-3W goods carrier \n(L5N) \n15% 10,000 30,000 \n4 e-4W cars (M1) \n(Non-Transport \nvehicle) \n10% 10,000 1,50,000 \n5 e-4W cars (M1) \n(Transport vehicle) \n15% 25,000 2,00,000 \n6 e-4W Light Goods \nCarrier (N1) \n15% 10,000 1,00,000 \n7 e-buses (M3, M4) \n(STU) \n10% 1,500 20,00,000 \n8 e-buses (M3, M4) \n(non-STU) \n10% 1,500 20,00,000 \n9 e-4W goods carrier \n(N2, N3) \n15% 1,000 20,00,000 \n10 e-Agricultural \nTractors and \ncombined harvesters \n(A) \n15% 1,000 1,50,000 \n  "
+              }
+            ]
+          },
+          {
+            "text": "Eligibility requires the vehicle to be sold and registered in Maharashtra, and the manufacturer must either produce the vehicle in Maharashtra or be registered to sell vehicles in the state.",
+            "citations": [
+              {
+                "source_id": "S9",
+                "source_excerpt": "शासन वनणणय क्रमाांकः एमव्हीआर-0125/प्र.क्र.13/पवर-2 \n \nपृष्ट्ठ 25 पैकी 19 \nNote- Demand incentives are valid for vehicles of such manufacturers of electric vehicles, \nwho are either manufacturing vehicles in the state of Maharashtra or are registered to sell \nvehicles in the state of Maharashtra. The incentives are applicable for electric vehicles sold \nand registered in the state of Maharashtra. The incentive will be disbursed as a percentage \nof the ex-factory value of the vehicle. The incentives will also be applicable on the purchase \nof electric vehicles that are purchased without transferring ownership of the battery to the \nend customer. \n 2) All EVs sold and registered during the policy period within the State will benefit from a \ncomplete exemption from motor vehicle tax. \n 3) As per the Ministry of Road Transport and Highways, Government of India, notification of \n18th June 2019, all the EVs sold and registered in the state shall be exempted from the payment \nof fees for purpose of issue or renewal of registration certificate. \n 4.2) Exemption to Toll Tax Passenger Electric Vehicles- \n"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Maharashtra",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 659,
+          "prompt_tokens": 7445,
+          "total_tokens": 8104,
+          "completion_time": 1.3832974710000001,
+          "prompt_time": 0.357867715,
+          "queue_time": 0.384901608,
+          "total_time": 1.741165186,
+          "completion_tokens_details": {
+            "reasoning_tokens": 443
+          }
+        }
+      },
+      "earlier_attempts": []
+    },
+    {
+      "case": {
+        "id": "tn_cycle_historical",
+        "selection": "Tamil Nadu",
+        "question": "What did the 2023 policy print for private e-cycle purchase incentives, including percentage, cap, vehicle count and restrictions? Distinguish those historical demand provisions from the later tax extension.",
+        "patterns": [],
+        "page_ids": [],
+        "expected_status": "not_established",
+        "expected_reason": "cycle_eligibility_review_pending"
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_fact_patterns": true,
+        "expected_source_pages": true,
+        "jurisdiction_isolated": true,
+        "no_current_entitlement_permission": true,
+        "known_eligibility_ambiguity_withheld": true
+      },
+      "result": {
+        "status": "not_established",
+        "answer": "Tamil Nadu — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\nThe available documents do not establish an answer to this question.\n\nThe general EV and separate e-cycle conditions need source review before this prototype can establish registration/FAME applicability to e-cycles.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Tamil Nadu",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 982,
+          "prompt_tokens": 3968,
+          "total_tokens": 4950,
+          "completion_time": 2.036692528,
+          "prompt_time": 0.184745178,
+          "queue_time": 0.21306928,
+          "total_time": 2.221437706,
+          "completion_tokens_details": {
+            "reasoning_tokens": 688
+          }
+        },
+        "reason": "cycle_eligibility_review_pending"
+      },
+      "earlier_attempts": []
+    },
+    {
+      "case": {
+        "id": "tn_motor_tax",
+        "selection": "Tamil Nadu",
+        "question": "Under the 29 December 2025 notification, which vehicles receive motor vehicle tax exemption and for what exact period? Does that notification itself extend purchase subsidies or registration fees?",
+        "patterns": [
+          "transport",
+          "non.transport",
+          "2026",
+          "2027",
+          "January|01\\.01|1\\.1",
+          "December|31\\.12",
+          "not|only|no "
+        ],
+        "page_ids": [
+          "tamil_nadu_motor_vehicle_tax_2025-12-29:p1"
+        ]
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_fact_patterns": true,
+        "expected_source_pages": true,
+        "jurisdiction_isolated": true,
+        "no_current_entitlement_permission": true
+      },
+      "result": {
+        "status": "document_answer",
+        "answer": "Tamil Nadu — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- The 29 December 2025 notification exempts all Battery Operated Vehicles – both transport and non‑transport electric vehicles – from payment of motor vehicle tax under the Tamil Nadu Motor Vehicles Taxation Act, 1974. [S1](https://www.stationeryprinting.tn.gov.in/extraordinary/2025/861_Ex_II_2_2025.pdf#page=1)\n- The tax exemption applies for a further period starting on 1 January 2026 and ending on 31 December 2027. [S1](https://www.stationeryprinting.tn.gov.in/extraordinary/2025/861_Ex_II_2_2025.pdf#page=1)\n- The notification does not contain any provision extending purchase subsidies or registration‑fee waivers; it solely addresses motor‑vehicle‑tax exemption. [S1](https://www.stationeryprinting.tn.gov.in/extraordinary/2025/861_Ex_II_2_2025.pdf#page=1)\n\nSources:\n\n- [S1: Tamil Nadu — G.O. Ms. No. 674: Battery-operated motor vehicle tax exemption, PDF page 1](https://www.stationeryprinting.tn.gov.in/extraordinary/2025/861_Ex_II_2_2025.pdf#page=1)",
+        "sources": [
+          {
+            "source_id": "S1",
+            "state": "Tamil Nadu",
+            "document_title": "G.O. Ms. No. 674: Battery-operated motor vehicle tax exemption",
+            "document_date": "2025-12-29",
+            "pdf_page": 1,
+            "source": "data/policies/tamil_nadu/tamil_nadu_motor_vehicle_tax_2025-12-29.pdf",
+            "official_url": "https://www.stationeryprinting.tn.gov.in/extraordinary/2025/861_Ex_II_2_2025.pdf#page=1",
+            "evidence_id": "tamil_nadu_motor_vehicle_tax_2025-12-29:p1:x0-1650",
+            "excerpt_start": 0,
+            "excerpt_end": 1650,
+            "excerpt_sha256": "fb6fe87e39b638e3d6990a1d327ba91470bc61bd4a26e3370d6a50ae50ce2e97",
+            "context_role": "dated_tax_notification",
+            "version_note": "Notified motor vehicle tax period: 1 January 2026–31 December 2027 only; not a purchase/registration/permit extension."
+          }
+        ],
+        "points": [
+          {
+            "text": "The 29 December 2025 notification exempts all Battery Operated Vehicles – both transport and non‑transport electric vehicles – from payment of motor vehicle tax under the Tamil Nadu Motor Vehicles Taxation Act, 1974.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "TAMIL NADU\nGOVERNMENT GAZETTE\nEXTRAORDINARY PUBLISHED BY AUTHORITY\n © [Regd. No. TN/CCN/467/2012-14.\n GOVERNMENT OF TAMIL NADU [R. Dis. No. 197/2009.   \n 2025 [Price: Re. 0.80 Paise. \nNo. 861] CHENNAI, MONDAY , DECEMBER 29, 2025   \n  Margazhi 14, Visuvaavasu, Thiruvalluvar Aandu–2056\nPart II—Section 2\nNotifications or Orders of interest to a Section of the public  \nissued by Secretariat Departments.\nNOTIFICATIO NS BY GOVERNMENT\nHOME DEPARTMENT  \n(Transport - I)\n TAMIL NADU ELECTRIC VEHICLES POLICY , 2023 100% TAX EXEMPTION OF MOTOR VEHICLE TAX \nIN RESPECT OF ALL BATTERY OPERATED VEHICLES (ELECTRIC VEHICLES) UNDER THE  \nTAMIL NADU MOTOR VEHICLES TAXATION ACT, 1974. \n[G.O. Ms. No. 674, Home (Transport-I), 29th December 2025, \nமாார்கழி 14, விசுவாாவாசு, திருவாள்ளுவார் ஆண்டு-2056.]\nNo. II(2)/HO/1344(d)/2025.\nIn exercise of the powers conferred by sub-clause (b) of clause (1) of section 20 of the Tamil Nadu Motor Vehicles \nTaxation Act, 1974 (Tamil Nadu Act 13 of 1974), the Governor of Tamil Nadu hereby exempts all Battery Operated \nVehicles, both Transport and Non-Transport (Electric Vehicles) from payment of motor vehicle tax under that Act for a \nfurther period commencing on and from the 1st January 2026 and ending with the 31st December 2027.\nExplanation.- For the purpose of this Notification, ‘Battery Operated Vehicle’ shall have the meaning assigned to it \nin clause (u) of rule 2 of the Central Motor Vehicles Rules, 1989.\n DHEERAJ KUMAR,\n Additional Chief Secretary to Government.\nEx-II-2—(861)\nPRINTED  AND PUBLISHED  BY  THE COMMISSIONER  OF  STATIONERY  AND PRINTING, CHENNAI  \nON BEHALF  OF  THE GOVERNMENT  OF  TAMIL NADU"
+              }
+            ]
+          },
+          {
+            "text": "The tax exemption applies for a further period starting on 1 January 2026 and ending on 31 December 2027.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "TAMIL NADU\nGOVERNMENT GAZETTE\nEXTRAORDINARY PUBLISHED BY AUTHORITY\n © [Regd. No. TN/CCN/467/2012-14.\n GOVERNMENT OF TAMIL NADU [R. Dis. No. 197/2009.   \n 2025 [Price: Re. 0.80 Paise. \nNo. 861] CHENNAI, MONDAY , DECEMBER 29, 2025   \n  Margazhi 14, Visuvaavasu, Thiruvalluvar Aandu–2056\nPart II—Section 2\nNotifications or Orders of interest to a Section of the public  \nissued by Secretariat Departments.\nNOTIFICATIO NS BY GOVERNMENT\nHOME DEPARTMENT  \n(Transport - I)\n TAMIL NADU ELECTRIC VEHICLES POLICY , 2023 100% TAX EXEMPTION OF MOTOR VEHICLE TAX \nIN RESPECT OF ALL BATTERY OPERATED VEHICLES (ELECTRIC VEHICLES) UNDER THE  \nTAMIL NADU MOTOR VEHICLES TAXATION ACT, 1974. \n[G.O. Ms. No. 674, Home (Transport-I), 29th December 2025, \nமாார்கழி 14, விசுவாாவாசு, திருவாள்ளுவார் ஆண்டு-2056.]\nNo. II(2)/HO/1344(d)/2025.\nIn exercise of the powers conferred by sub-clause (b) of clause (1) of section 20 of the Tamil Nadu Motor Vehicles \nTaxation Act, 1974 (Tamil Nadu Act 13 of 1974), the Governor of Tamil Nadu hereby exempts all Battery Operated \nVehicles, both Transport and Non-Transport (Electric Vehicles) from payment of motor vehicle tax under that Act for a \nfurther period commencing on and from the 1st January 2026 and ending with the 31st December 2027.\nExplanation.- For the purpose of this Notification, ‘Battery Operated Vehicle’ shall have the meaning assigned to it \nin clause (u) of rule 2 of the Central Motor Vehicles Rules, 1989.\n DHEERAJ KUMAR,\n Additional Chief Secretary to Government.\nEx-II-2—(861)\nPRINTED  AND PUBLISHED  BY  THE COMMISSIONER  OF  STATIONERY  AND PRINTING, CHENNAI  \nON BEHALF  OF  THE GOVERNMENT  OF  TAMIL NADU"
+              }
+            ]
+          },
+          {
+            "text": "The notification does not contain any provision extending purchase subsidies or registration‑fee waivers; it solely addresses motor‑vehicle‑tax exemption.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "TAMIL NADU\nGOVERNMENT GAZETTE\nEXTRAORDINARY PUBLISHED BY AUTHORITY\n © [Regd. No. TN/CCN/467/2012-14.\n GOVERNMENT OF TAMIL NADU [R. Dis. No. 197/2009.   \n 2025 [Price: Re. 0.80 Paise. \nNo. 861] CHENNAI, MONDAY , DECEMBER 29, 2025   \n  Margazhi 14, Visuvaavasu, Thiruvalluvar Aandu–2056\nPart II—Section 2\nNotifications or Orders of interest to a Section of the public  \nissued by Secretariat Departments.\nNOTIFICATIO NS BY GOVERNMENT\nHOME DEPARTMENT  \n(Transport - I)\n TAMIL NADU ELECTRIC VEHICLES POLICY , 2023 100% TAX EXEMPTION OF MOTOR VEHICLE TAX \nIN RESPECT OF ALL BATTERY OPERATED VEHICLES (ELECTRIC VEHICLES) UNDER THE  \nTAMIL NADU MOTOR VEHICLES TAXATION ACT, 1974. \n[G.O. Ms. No. 674, Home (Transport-I), 29th December 2025, \nமாார்கழி 14, விசுவாாவாசு, திருவாள்ளுவார் ஆண்டு-2056.]\nNo. II(2)/HO/1344(d)/2025.\nIn exercise of the powers conferred by sub-clause (b) of clause (1) of section 20 of the Tamil Nadu Motor Vehicles \nTaxation Act, 1974 (Tamil Nadu Act 13 of 1974), the Governor of Tamil Nadu hereby exempts all Battery Operated \nVehicles, both Transport and Non-Transport (Electric Vehicles) from payment of motor vehicle tax under that Act for a \nfurther period commencing on and from the 1st January 2026 and ending with the 31st December 2027.\nExplanation.- For the purpose of this Notification, ‘Battery Operated Vehicle’ shall have the meaning assigned to it \nin clause (u) of rule 2 of the Central Motor Vehicles Rules, 1989.\n DHEERAJ KUMAR,\n Additional Chief Secretary to Government.\nEx-II-2—(861)\nPRINTED  AND PUBLISHED  BY  THE COMMISSIONER  OF  STATIONERY  AND PRINTING, CHENNAI  \nON BEHALF  OF  THE GOVERNMENT  OF  TAMIL NADU"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Tamil Nadu",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 617,
+          "prompt_tokens": 3880,
+          "total_tokens": 4497,
+          "completion_time": 1.287386857,
+          "prompt_time": 0.176806062,
+          "queue_time": 0.305959996,
+          "total_time": 1.464192919,
+          "completion_tokens_details": {
+            "reasoning_tokens": 432
+          }
+        }
+      },
+      "earlier_attempts": []
+    },
+    {
+      "case": {
+        "id": "central_two_wheeler",
+        "selection": "Central",
+        "question": "According to the latest supplied amendment, what is the e-2W incentive rate and cap for 01.04.2025 to 31.03.2028? Include the price ceiling and percentage limit.",
+        "patterns": [
+          "2,?500",
+          "kwh",
+          "5,?000",
+          "1\\.5\\s*lakh|150,?000|1,50,000",
+          "15\\s*%",
+          "2025",
+          "2028"
+        ],
+        "page_ids": [
+          "central_pm_edrive_extension_2026-08-10:p3"
+        ]
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_fact_patterns": true,
+        "expected_source_pages": true,
+        "jurisdiction_isolated": true,
+        "no_current_entitlement_permission": true
+      },
+      "result": {
+        "status": "document_answer",
+        "answer": "Central — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Incentive rate for registered e‑2‑wheelers for the period 01.04.2025 to 31.03.2028 is ₹2,500 per kWh. [S1](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)\n- The monetary cap per e‑2‑W vehicle is ₹5,000 (capped at that amount). [S1](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)\n- To be eligible, the ex‑factory price of the e‑2‑W must not exceed ₹1.5 lakh. [S1](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)\n- The incentive is limited to the lower of the specified cap or 15 % of the ex‑factory price of the e‑2‑W. [S1](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)\n- The scheme supports up to 45,79,120 registered e‑2‑wheelers (vehicle‑count ceiling). [S1](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)\n\nSources:\n\n- [S1: Central — Enhancement of Scheme outlay and extension of timeline for e-2Ws, PDF page 3](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)",
+        "sources": [
+          {
+            "source_id": "S1",
+            "state": "Central",
+            "document_title": "Enhancement of Scheme outlay and extension of timeline for e-2Ws",
+            "document_date": "2026-08-10",
+            "pdf_page": 3,
+            "source": "data/policies/central/pm_edrive_extension_2026-08-10.pdf",
+            "official_url": "https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3",
+            "evidence_id": "central_pm_edrive_extension_2026-08-10:p3:x0-3524",
+            "excerpt_start": 0,
+            "excerpt_end": 3524,
+            "excerpt_sha256": "44eabf2826a6055ceefcdd2356b0078bad5ed5289a91eae21dab46744d9e2725",
+            "context_role": "latest_update_in_packet",
+            "version_note": "Latest e2w, outlay and terminal/claim provisions in the saved packet; retain year columns, 15% cap and fund limitation."
+          }
+        ],
+        "points": [
+          {
+            "text": "Incentive rate for registered e‑2‑wheelers for the period 01.04.2025 to 31.03.2028 is ₹2,500 per kWh.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "MINISTRY OF HEAVY INDUSTRIES\nNOTIFICATION\nNew Delhi, the 10th August, 2026\nS.O. 4424(E).—PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme\n\n1. In partial modification of the PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme which was notified by the Ministry of Heavy Industries vide S.O. 4259(E) dated 29th September 2024, the following amendments are made with effect from date of publication in the official gazette:\n\n2. Para 5 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 3626(E) dated 7th August 2025, shall stand further amended as under:\nThe PM E-DRIVE Scheme, with an outlay of ₹11,900 crore, is being implemented from 1st April 2024 till 31st March 2028, for faster adoption of electric vehicles (EVs), setting up of charging infrastructure and development of EV manufacturing eco-system in the country. The EMPS-2024 implemented during 1st April 2024 to 30th September 2024 was subsumed under this Scheme.\n\n3. Sl. No. 1 of the Annexure-4 of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 1617(E) dated 27th March, 2026 shall stand further amended as under:\n\nSl. No. | Vehicle Segment | Maximum number of vehicles to be supported | Incentive for vehicles*1: FY 2024-25 | Incentive for vehicles*1: 01.04.2025 to 31.03.2028 | Maximum Ex-factory price to avail incentive | Total fund support from MHI (₹ crore)\n1 | Registered e-2 wheelers | 45,79,120 | ₹5,000/kWh, capped at ₹10,000 per vehicle | ₹2,500/kWh, capped at ₹5,000 per vehicle | ₹1.5 lakh | 2,767*2\n\n*1 The proposed amount of incentive per kWh is, however, subject to review as per the reduction in vehicle cost and would be notified accordingly from time to time. The incentive shall be limited to as specified above or 15% of ex-factory price of e-2W/ e-3W, whichever is lower.\n*2 The outlay under EMPS-2024 has been subsumed within the outlay under PM E-DRIVE.\n\n4. In Table-1 of para 9 of S.O. 4259(E) dated 29th September 2024, the total outlay for e-2Ws shall be ₹2,767 crore. Further, the outlay for Admin Expenses shall be ₹55 crore along with fungibility of expenses within various sub-heads under admin expenses.\n\n5. Para 46 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 and as amended vide S.O. 3626(E) dated 7th August 2025 & vide S.O. 1617(E) dated 27th March, 2026, shall stand further amended as under:\nThis is a fund-limited scheme. Total payout under the Scheme shall be limited to the scheme outlay of ₹11,900 crore. In case the funds for the Scheme or its relevant sub-components are exhausted prior to the terminal date of the Scheme i.e. 31st March 2028, then the Scheme or its relevant subcomponents will be closed accordingly i.e. no further claims will be entertained.\n\nFurther, as the target sales for sub-component registered e-3W (L5) has already been achieved, this segment was closed on 26th December 2025, as already advised vide MHI’s O.M. F.No. 1(1)/2024-AEI (PartII) (29996) dated 23rd December 2025.\n\nSince 31st March 2028 is the terminal date for all segments under the Scheme no payments will be made by MHI/ PMA after this date. Therefore, the last date for submission of any claim to MHI/PMA for any scheme component shall be 31st December 2027.\n\n[F. No. 1(1)/2024-AEI (28077)]\nDr. HANIF QURESHI, Addl. Secy.\nUploaded by Dte. of Printing at Government of India Press, Ring Road, Mayapuri, New Delhi-110064 and Published by the Controller of Publications, Delhi-110054.\n"
+              }
+            ]
+          },
+          {
+            "text": "The monetary cap per e‑2‑W vehicle is ₹5,000 (capped at that amount).",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "MINISTRY OF HEAVY INDUSTRIES\nNOTIFICATION\nNew Delhi, the 10th August, 2026\nS.O. 4424(E).—PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme\n\n1. In partial modification of the PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme which was notified by the Ministry of Heavy Industries vide S.O. 4259(E) dated 29th September 2024, the following amendments are made with effect from date of publication in the official gazette:\n\n2. Para 5 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 3626(E) dated 7th August 2025, shall stand further amended as under:\nThe PM E-DRIVE Scheme, with an outlay of ₹11,900 crore, is being implemented from 1st April 2024 till 31st March 2028, for faster adoption of electric vehicles (EVs), setting up of charging infrastructure and development of EV manufacturing eco-system in the country. The EMPS-2024 implemented during 1st April 2024 to 30th September 2024 was subsumed under this Scheme.\n\n3. Sl. No. 1 of the Annexure-4 of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 1617(E) dated 27th March, 2026 shall stand further amended as under:\n\nSl. No. | Vehicle Segment | Maximum number of vehicles to be supported | Incentive for vehicles*1: FY 2024-25 | Incentive for vehicles*1: 01.04.2025 to 31.03.2028 | Maximum Ex-factory price to avail incentive | Total fund support from MHI (₹ crore)\n1 | Registered e-2 wheelers | 45,79,120 | ₹5,000/kWh, capped at ₹10,000 per vehicle | ₹2,500/kWh, capped at ₹5,000 per vehicle | ₹1.5 lakh | 2,767*2\n\n*1 The proposed amount of incentive per kWh is, however, subject to review as per the reduction in vehicle cost and would be notified accordingly from time to time. The incentive shall be limited to as specified above or 15% of ex-factory price of e-2W/ e-3W, whichever is lower.\n*2 The outlay under EMPS-2024 has been subsumed within the outlay under PM E-DRIVE.\n\n4. In Table-1 of para 9 of S.O. 4259(E) dated 29th September 2024, the total outlay for e-2Ws shall be ₹2,767 crore. Further, the outlay for Admin Expenses shall be ₹55 crore along with fungibility of expenses within various sub-heads under admin expenses.\n\n5. Para 46 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 and as amended vide S.O. 3626(E) dated 7th August 2025 & vide S.O. 1617(E) dated 27th March, 2026, shall stand further amended as under:\nThis is a fund-limited scheme. Total payout under the Scheme shall be limited to the scheme outlay of ₹11,900 crore. In case the funds for the Scheme or its relevant sub-components are exhausted prior to the terminal date of the Scheme i.e. 31st March 2028, then the Scheme or its relevant subcomponents will be closed accordingly i.e. no further claims will be entertained.\n\nFurther, as the target sales for sub-component registered e-3W (L5) has already been achieved, this segment was closed on 26th December 2025, as already advised vide MHI’s O.M. F.No. 1(1)/2024-AEI (PartII) (29996) dated 23rd December 2025.\n\nSince 31st March 2028 is the terminal date for all segments under the Scheme no payments will be made by MHI/ PMA after this date. Therefore, the last date for submission of any claim to MHI/PMA for any scheme component shall be 31st December 2027.\n\n[F. No. 1(1)/2024-AEI (28077)]\nDr. HANIF QURESHI, Addl. Secy.\nUploaded by Dte. of Printing at Government of India Press, Ring Road, Mayapuri, New Delhi-110064 and Published by the Controller of Publications, Delhi-110054.\n"
+              }
+            ]
+          },
+          {
+            "text": "To be eligible, the ex‑factory price of the e‑2‑W must not exceed ₹1.5 lakh.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "MINISTRY OF HEAVY INDUSTRIES\nNOTIFICATION\nNew Delhi, the 10th August, 2026\nS.O. 4424(E).—PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme\n\n1. In partial modification of the PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme which was notified by the Ministry of Heavy Industries vide S.O. 4259(E) dated 29th September 2024, the following amendments are made with effect from date of publication in the official gazette:\n\n2. Para 5 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 3626(E) dated 7th August 2025, shall stand further amended as under:\nThe PM E-DRIVE Scheme, with an outlay of ₹11,900 crore, is being implemented from 1st April 2024 till 31st March 2028, for faster adoption of electric vehicles (EVs), setting up of charging infrastructure and development of EV manufacturing eco-system in the country. The EMPS-2024 implemented during 1st April 2024 to 30th September 2024 was subsumed under this Scheme.\n\n3. Sl. No. 1 of the Annexure-4 of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 1617(E) dated 27th March, 2026 shall stand further amended as under:\n\nSl. No. | Vehicle Segment | Maximum number of vehicles to be supported | Incentive for vehicles*1: FY 2024-25 | Incentive for vehicles*1: 01.04.2025 to 31.03.2028 | Maximum Ex-factory price to avail incentive | Total fund support from MHI (₹ crore)\n1 | Registered e-2 wheelers | 45,79,120 | ₹5,000/kWh, capped at ₹10,000 per vehicle | ₹2,500/kWh, capped at ₹5,000 per vehicle | ₹1.5 lakh | 2,767*2\n\n*1 The proposed amount of incentive per kWh is, however, subject to review as per the reduction in vehicle cost and would be notified accordingly from time to time. The incentive shall be limited to as specified above or 15% of ex-factory price of e-2W/ e-3W, whichever is lower.\n*2 The outlay under EMPS-2024 has been subsumed within the outlay under PM E-DRIVE.\n\n4. In Table-1 of para 9 of S.O. 4259(E) dated 29th September 2024, the total outlay for e-2Ws shall be ₹2,767 crore. Further, the outlay for Admin Expenses shall be ₹55 crore along with fungibility of expenses within various sub-heads under admin expenses.\n\n5. Para 46 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 and as amended vide S.O. 3626(E) dated 7th August 2025 & vide S.O. 1617(E) dated 27th March, 2026, shall stand further amended as under:\nThis is a fund-limited scheme. Total payout under the Scheme shall be limited to the scheme outlay of ₹11,900 crore. In case the funds for the Scheme or its relevant sub-components are exhausted prior to the terminal date of the Scheme i.e. 31st March 2028, then the Scheme or its relevant subcomponents will be closed accordingly i.e. no further claims will be entertained.\n\nFurther, as the target sales for sub-component registered e-3W (L5) has already been achieved, this segment was closed on 26th December 2025, as already advised vide MHI’s O.M. F.No. 1(1)/2024-AEI (PartII) (29996) dated 23rd December 2025.\n\nSince 31st March 2028 is the terminal date for all segments under the Scheme no payments will be made by MHI/ PMA after this date. Therefore, the last date for submission of any claim to MHI/PMA for any scheme component shall be 31st December 2027.\n\n[F. No. 1(1)/2024-AEI (28077)]\nDr. HANIF QURESHI, Addl. Secy.\nUploaded by Dte. of Printing at Government of India Press, Ring Road, Mayapuri, New Delhi-110064 and Published by the Controller of Publications, Delhi-110054.\n"
+              }
+            ]
+          },
+          {
+            "text": "The incentive is limited to the lower of the specified cap or 15 % of the ex‑factory price of the e‑2‑W.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "MINISTRY OF HEAVY INDUSTRIES\nNOTIFICATION\nNew Delhi, the 10th August, 2026\nS.O. 4424(E).—PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme\n\n1. In partial modification of the PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme which was notified by the Ministry of Heavy Industries vide S.O. 4259(E) dated 29th September 2024, the following amendments are made with effect from date of publication in the official gazette:\n\n2. Para 5 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 3626(E) dated 7th August 2025, shall stand further amended as under:\nThe PM E-DRIVE Scheme, with an outlay of ₹11,900 crore, is being implemented from 1st April 2024 till 31st March 2028, for faster adoption of electric vehicles (EVs), setting up of charging infrastructure and development of EV manufacturing eco-system in the country. The EMPS-2024 implemented during 1st April 2024 to 30th September 2024 was subsumed under this Scheme.\n\n3. Sl. No. 1 of the Annexure-4 of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 1617(E) dated 27th March, 2026 shall stand further amended as under:\n\nSl. No. | Vehicle Segment | Maximum number of vehicles to be supported | Incentive for vehicles*1: FY 2024-25 | Incentive for vehicles*1: 01.04.2025 to 31.03.2028 | Maximum Ex-factory price to avail incentive | Total fund support from MHI (₹ crore)\n1 | Registered e-2 wheelers | 45,79,120 | ₹5,000/kWh, capped at ₹10,000 per vehicle | ₹2,500/kWh, capped at ₹5,000 per vehicle | ₹1.5 lakh | 2,767*2\n\n*1 The proposed amount of incentive per kWh is, however, subject to review as per the reduction in vehicle cost and would be notified accordingly from time to time. The incentive shall be limited to as specified above or 15% of ex-factory price of e-2W/ e-3W, whichever is lower.\n*2 The outlay under EMPS-2024 has been subsumed within the outlay under PM E-DRIVE.\n\n4. In Table-1 of para 9 of S.O. 4259(E) dated 29th September 2024, the total outlay for e-2Ws shall be ₹2,767 crore. Further, the outlay for Admin Expenses shall be ₹55 crore along with fungibility of expenses within various sub-heads under admin expenses.\n\n5. Para 46 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 and as amended vide S.O. 3626(E) dated 7th August 2025 & vide S.O. 1617(E) dated 27th March, 2026, shall stand further amended as under:\nThis is a fund-limited scheme. Total payout under the Scheme shall be limited to the scheme outlay of ₹11,900 crore. In case the funds for the Scheme or its relevant sub-components are exhausted prior to the terminal date of the Scheme i.e. 31st March 2028, then the Scheme or its relevant subcomponents will be closed accordingly i.e. no further claims will be entertained.\n\nFurther, as the target sales for sub-component registered e-3W (L5) has already been achieved, this segment was closed on 26th December 2025, as already advised vide MHI’s O.M. F.No. 1(1)/2024-AEI (PartII) (29996) dated 23rd December 2025.\n\nSince 31st March 2028 is the terminal date for all segments under the Scheme no payments will be made by MHI/ PMA after this date. Therefore, the last date for submission of any claim to MHI/PMA for any scheme component shall be 31st December 2027.\n\n[F. No. 1(1)/2024-AEI (28077)]\nDr. HANIF QURESHI, Addl. Secy.\nUploaded by Dte. of Printing at Government of India Press, Ring Road, Mayapuri, New Delhi-110064 and Published by the Controller of Publications, Delhi-110054.\n"
+              }
+            ]
+          },
+          {
+            "text": "The scheme supports up to 45,79,120 registered e‑2‑wheelers (vehicle‑count ceiling).",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "MINISTRY OF HEAVY INDUSTRIES\nNOTIFICATION\nNew Delhi, the 10th August, 2026\nS.O. 4424(E).—PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme\n\n1. In partial modification of the PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme which was notified by the Ministry of Heavy Industries vide S.O. 4259(E) dated 29th September 2024, the following amendments are made with effect from date of publication in the official gazette:\n\n2. Para 5 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 3626(E) dated 7th August 2025, shall stand further amended as under:\nThe PM E-DRIVE Scheme, with an outlay of ₹11,900 crore, is being implemented from 1st April 2024 till 31st March 2028, for faster adoption of electric vehicles (EVs), setting up of charging infrastructure and development of EV manufacturing eco-system in the country. The EMPS-2024 implemented during 1st April 2024 to 30th September 2024 was subsumed under this Scheme.\n\n3. Sl. No. 1 of the Annexure-4 of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 1617(E) dated 27th March, 2026 shall stand further amended as under:\n\nSl. No. | Vehicle Segment | Maximum number of vehicles to be supported | Incentive for vehicles*1: FY 2024-25 | Incentive for vehicles*1: 01.04.2025 to 31.03.2028 | Maximum Ex-factory price to avail incentive | Total fund support from MHI (₹ crore)\n1 | Registered e-2 wheelers | 45,79,120 | ₹5,000/kWh, capped at ₹10,000 per vehicle | ₹2,500/kWh, capped at ₹5,000 per vehicle | ₹1.5 lakh | 2,767*2\n\n*1 The proposed amount of incentive per kWh is, however, subject to review as per the reduction in vehicle cost and would be notified accordingly from time to time. The incentive shall be limited to as specified above or 15% of ex-factory price of e-2W/ e-3W, whichever is lower.\n*2 The outlay under EMPS-2024 has been subsumed within the outlay under PM E-DRIVE.\n\n4. In Table-1 of para 9 of S.O. 4259(E) dated 29th September 2024, the total outlay for e-2Ws shall be ₹2,767 crore. Further, the outlay for Admin Expenses shall be ₹55 crore along with fungibility of expenses within various sub-heads under admin expenses.\n\n5. Para 46 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 and as amended vide S.O. 3626(E) dated 7th August 2025 & vide S.O. 1617(E) dated 27th March, 2026, shall stand further amended as under:\nThis is a fund-limited scheme. Total payout under the Scheme shall be limited to the scheme outlay of ₹11,900 crore. In case the funds for the Scheme or its relevant sub-components are exhausted prior to the terminal date of the Scheme i.e. 31st March 2028, then the Scheme or its relevant subcomponents will be closed accordingly i.e. no further claims will be entertained.\n\nFurther, as the target sales for sub-component registered e-3W (L5) has already been achieved, this segment was closed on 26th December 2025, as already advised vide MHI’s O.M. F.No. 1(1)/2024-AEI (PartII) (29996) dated 23rd December 2025.\n\nSince 31st March 2028 is the terminal date for all segments under the Scheme no payments will be made by MHI/ PMA after this date. Therefore, the last date for submission of any claim to MHI/PMA for any scheme component shall be 31st December 2027.\n\n[F. No. 1(1)/2024-AEI (28077)]\nDr. HANIF QURESHI, Addl. Secy.\nUploaded by Dte. of Printing at Government of India Press, Ring Road, Mayapuri, New Delhi-110064 and Published by the Controller of Publications, Delhi-110054.\n"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Central",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 869,
+          "prompt_tokens": 5906,
+          "total_tokens": 6775,
+          "completion_time": 1.885481813,
+          "prompt_time": 0.506119552,
+          "queue_time": 0.212921033,
+          "total_time": 2.391601365,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 661
+          }
+        }
+      },
+      "earlier_attempts": []
+    },
+    {
+      "case": {
+        "id": "central_l5_deadlines",
+        "selection": "Central",
+        "question": "Are L5 three-wheelers registered after 26 December 2025 covered? Distinguish that category closure from the latest overall terminal date, final claim deadline and fund limit.",
+        "patterns": [
+          "26",
+          "2025",
+          "not eligible|ineligible|no .*incentive|not .*eligible",
+          "2027",
+          "2028",
+          "fund|outlay"
+        ],
+        "page_ids": [
+          "central_pm_edrive_l5_closure_2025-12-23:p1",
+          "central_pm_edrive_extension_2026-08-10:p3"
+        ]
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_fact_patterns": true,
+        "expected_source_pages": true,
+        "jurisdiction_isolated": true,
+        "no_current_entitlement_permission": true
+      },
+      "result": {
+        "status": "document_answer",
+        "answer": "Central — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- L5 three‑wheelers (registered e‑3W L5) that are registered after 26 December 2025 are not eligible for the demand incentive under the PM E‑DRIVE Scheme. [S4](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Letter%20to%20DG%20SIAM%2023.12.2025.pdf#page=1) [S1](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)\n- The L5 sub‑component was formally closed on 26 December 2025, as the target of 2,88,809 vehicles had been achieved. [S1](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3) [S4](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Letter%20to%20DG%20SIAM%2023.12.2025.pdf#page=1)\n- The scheme’s overall terminal date for all vehicle segments is 31 March 2028. [S1](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)\n- The last date for submitting any claim for any scheme component is 31 December 2027. [S1](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)\n- The scheme is fund‑limited with total payout capped at the overall outlay of ₹11,900 crore. [S1](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)\n\nSources:\n\n- [S4: Central — Letter to DG SIAM on terminal date for e3Ws (L5), PDF page 1](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Letter%20to%20DG%20SIAM%2023.12.2025.pdf#page=1)\n- [S1: Central — Enhancement of Scheme outlay and extension of timeline for e-2Ws, PDF page 3](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)",
+        "sources": [
+          {
+            "source_id": "S4",
+            "state": "Central",
+            "document_title": "Letter to DG SIAM on terminal date for e3Ws (L5)",
+            "document_date": "2025-12-23",
+            "pdf_page": 1,
+            "source": "data/policies/central/pm_edrive_l5_closure_2025-12-23.pdf",
+            "official_url": "https://pmedrive.heavyindustries.gov.in/docs/policy_document/Letter%20to%20DG%20SIAM%2023.12.2025.pdf#page=1",
+            "evidence_id": "central_pm_edrive_l5_closure_2025-12-23:p1:x0-1566",
+            "excerpt_start": 0,
+            "excerpt_end": 1566,
+            "excerpt_sha256": "9778c5ba6c873b6fc21ba5dc0f511514f39e555f6e178197918f9cb30adfcaed",
+            "context_role": "closure_notice",
+            "version_note": "L5 segment closure notice; newer scheme extension does not reopen L5."
+          },
+          {
+            "source_id": "S1",
+            "state": "Central",
+            "document_title": "Enhancement of Scheme outlay and extension of timeline for e-2Ws",
+            "document_date": "2026-08-10",
+            "pdf_page": 3,
+            "source": "data/policies/central/pm_edrive_extension_2026-08-10.pdf",
+            "official_url": "https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3",
+            "evidence_id": "central_pm_edrive_extension_2026-08-10:p3:x0-3524",
+            "excerpt_start": 0,
+            "excerpt_end": 3524,
+            "excerpt_sha256": "44eabf2826a6055ceefcdd2356b0078bad5ed5289a91eae21dab46744d9e2725",
+            "context_role": "latest_update_in_packet",
+            "version_note": "Latest e2w, outlay and terminal/claim provisions in the saved packet; retain year columns, 15% cap and fund limitation."
+          }
+        ],
+        "points": [
+          {
+            "text": "L5 three‑wheelers (registered e‑3W L5) that are registered after 26 December 2025 are not eligible for the demand incentive under the PM E‑DRIVE Scheme.",
+            "citations": [
+              {
+                "source_id": "S4",
+                "source_excerpt": "URGENT\n\nF. No. 1(1)/2024-AEI (PartII) (29996)\nGovernment of India\nभारत सरकार\nMinistry of Heavy Industries\nAEI Section\n\nUdyog Bhawan, New Delhi-110011.\nDated: December 23, 2025\n\nTo,\n\nThe Director General\n\nSociety of Indian Automobile Manufacturers (SIAM)\nCore 4-B, 5th Floor, India Habitat Centre\n\nLodhi Road, New Delhi- 110003\n\nSubject: Intimation of last date for sale of e-3Ws (L5) eligible for demand\nincentive under the PM E-DRIVE Scheme-reg.\n\nSir / Madam,\n\nPlease refer to the PM E-DRIVE Scheme notified vide S.O. 4259(E) dated\n29.09.2024, as amended from time to time, including notification vide S.O.\n3680 (E) dated 13.08.2025.\n\n2. Under the Scheme, maximum number of e-3Ws (L5) to be supported are\n2,88,809 nos. with a total outlay of Rs.857 crore. As per VAHAN data of\nMoRTH, integrated with the PM E-DRIVE Portal, 2,85,931 e-3Ws (L5) have\nbeen registered till 22.12.2025.\n\n3. Para 46 of the Scheme notification clearly stipulates that the PM E-\nDRIVE Scheme is fund-limited, and once the allocated funds for the Scheme\nor any of its sub-components is exhausted, no further claims will be\nentertained.\n\n4. In view of the above, it has been decided that sales of e-3Ws (L5)\nregistered after 26.12.2025 shall not be eligible for demand incentive under the\nPM E-DRIVE Scheme. Further, in case the target number for e-3Ws (L5) i.e.\n2,88,809 is reached earlier than 26.12.2025, then the sub-component for e-3Ws\n(L5) will be closed earlier and no e-3Ws (L5) registered beyond the target\nnumber of 2,88,809 will be eligible for demand incentive under this Scheme.\n"
+              },
+              {
+                "source_id": "S1",
+                "source_excerpt": "MINISTRY OF HEAVY INDUSTRIES\nNOTIFICATION\nNew Delhi, the 10th August, 2026\nS.O. 4424(E).—PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme\n\n1. In partial modification of the PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme which was notified by the Ministry of Heavy Industries vide S.O. 4259(E) dated 29th September 2024, the following amendments are made with effect from date of publication in the official gazette:\n\n2. Para 5 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 3626(E) dated 7th August 2025, shall stand further amended as under:\nThe PM E-DRIVE Scheme, with an outlay of ₹11,900 crore, is being implemented from 1st April 2024 till 31st March 2028, for faster adoption of electric vehicles (EVs), setting up of charging infrastructure and development of EV manufacturing eco-system in the country. The EMPS-2024 implemented during 1st April 2024 to 30th September 2024 was subsumed under this Scheme.\n\n3. Sl. No. 1 of the Annexure-4 of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 1617(E) dated 27th March, 2026 shall stand further amended as under:\n\nSl. No. | Vehicle Segment | Maximum number of vehicles to be supported | Incentive for vehicles*1: FY 2024-25 | Incentive for vehicles*1: 01.04.2025 to 31.03.2028 | Maximum Ex-factory price to avail incentive | Total fund support from MHI (₹ crore)\n1 | Registered e-2 wheelers | 45,79,120 | ₹5,000/kWh, capped at ₹10,000 per vehicle | ₹2,500/kWh, capped at ₹5,000 per vehicle | ₹1.5 lakh | 2,767*2\n\n*1 The proposed amount of incentive per kWh is, however, subject to review as per the reduction in vehicle cost and would be notified accordingly from time to time. The incentive shall be limited to as specified above or 15% of ex-factory price of e-2W/ e-3W, whichever is lower.\n*2 The outlay under EMPS-2024 has been subsumed within the outlay under PM E-DRIVE.\n\n4. In Table-1 of para 9 of S.O. 4259(E) dated 29th September 2024, the total outlay for e-2Ws shall be ₹2,767 crore. Further, the outlay for Admin Expenses shall be ₹55 crore along with fungibility of expenses within various sub-heads under admin expenses.\n\n5. Para 46 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 and as amended vide S.O. 3626(E) dated 7th August 2025 & vide S.O. 1617(E) dated 27th March, 2026, shall stand further amended as under:\nThis is a fund-limited scheme. Total payout under the Scheme shall be limited to the scheme outlay of ₹11,900 crore. In case the funds for the Scheme or its relevant sub-components are exhausted prior to the terminal date of the Scheme i.e. 31st March 2028, then the Scheme or its relevant subcomponents will be closed accordingly i.e. no further claims will be entertained.\n\nFurther, as the target sales for sub-component registered e-3W (L5) has already been achieved, this segment was closed on 26th December 2025, as already advised vide MHI’s O.M. F.No. 1(1)/2024-AEI (PartII) (29996) dated 23rd December 2025.\n\nSince 31st March 2028 is the terminal date for all segments under the Scheme no payments will be made by MHI/ PMA after this date. Therefore, the last date for submission of any claim to MHI/PMA for any scheme component shall be 31st December 2027.\n\n[F. No. 1(1)/2024-AEI (28077)]\nDr. HANIF QURESHI, Addl. Secy.\nUploaded by Dte. of Printing at Government of India Press, Ring Road, Mayapuri, New Delhi-110064 and Published by the Controller of Publications, Delhi-110054.\n"
+              }
+            ]
+          },
+          {
+            "text": "The L5 sub‑component was formally closed on 26 December 2025, as the target of 2,88,809 vehicles had been achieved.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "MINISTRY OF HEAVY INDUSTRIES\nNOTIFICATION\nNew Delhi, the 10th August, 2026\nS.O. 4424(E).—PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme\n\n1. In partial modification of the PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme which was notified by the Ministry of Heavy Industries vide S.O. 4259(E) dated 29th September 2024, the following amendments are made with effect from date of publication in the official gazette:\n\n2. Para 5 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 3626(E) dated 7th August 2025, shall stand further amended as under:\nThe PM E-DRIVE Scheme, with an outlay of ₹11,900 crore, is being implemented from 1st April 2024 till 31st March 2028, for faster adoption of electric vehicles (EVs), setting up of charging infrastructure and development of EV manufacturing eco-system in the country. The EMPS-2024 implemented during 1st April 2024 to 30th September 2024 was subsumed under this Scheme.\n\n3. Sl. No. 1 of the Annexure-4 of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 1617(E) dated 27th March, 2026 shall stand further amended as under:\n\nSl. No. | Vehicle Segment | Maximum number of vehicles to be supported | Incentive for vehicles*1: FY 2024-25 | Incentive for vehicles*1: 01.04.2025 to 31.03.2028 | Maximum Ex-factory price to avail incentive | Total fund support from MHI (₹ crore)\n1 | Registered e-2 wheelers | 45,79,120 | ₹5,000/kWh, capped at ₹10,000 per vehicle | ₹2,500/kWh, capped at ₹5,000 per vehicle | ₹1.5 lakh | 2,767*2\n\n*1 The proposed amount of incentive per kWh is, however, subject to review as per the reduction in vehicle cost and would be notified accordingly from time to time. The incentive shall be limited to as specified above or 15% of ex-factory price of e-2W/ e-3W, whichever is lower.\n*2 The outlay under EMPS-2024 has been subsumed within the outlay under PM E-DRIVE.\n\n4. In Table-1 of para 9 of S.O. 4259(E) dated 29th September 2024, the total outlay for e-2Ws shall be ₹2,767 crore. Further, the outlay for Admin Expenses shall be ₹55 crore along with fungibility of expenses within various sub-heads under admin expenses.\n\n5. Para 46 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 and as amended vide S.O. 3626(E) dated 7th August 2025 & vide S.O. 1617(E) dated 27th March, 2026, shall stand further amended as under:\nThis is a fund-limited scheme. Total payout under the Scheme shall be limited to the scheme outlay of ₹11,900 crore. In case the funds for the Scheme or its relevant sub-components are exhausted prior to the terminal date of the Scheme i.e. 31st March 2028, then the Scheme or its relevant subcomponents will be closed accordingly i.e. no further claims will be entertained.\n\nFurther, as the target sales for sub-component registered e-3W (L5) has already been achieved, this segment was closed on 26th December 2025, as already advised vide MHI’s O.M. F.No. 1(1)/2024-AEI (PartII) (29996) dated 23rd December 2025.\n\nSince 31st March 2028 is the terminal date for all segments under the Scheme no payments will be made by MHI/ PMA after this date. Therefore, the last date for submission of any claim to MHI/PMA for any scheme component shall be 31st December 2027.\n\n[F. No. 1(1)/2024-AEI (28077)]\nDr. HANIF QURESHI, Addl. Secy.\nUploaded by Dte. of Printing at Government of India Press, Ring Road, Mayapuri, New Delhi-110064 and Published by the Controller of Publications, Delhi-110054.\n"
+              },
+              {
+                "source_id": "S4",
+                "source_excerpt": "URGENT\n\nF. No. 1(1)/2024-AEI (PartII) (29996)\nGovernment of India\nभारत सरकार\nMinistry of Heavy Industries\nAEI Section\n\nUdyog Bhawan, New Delhi-110011.\nDated: December 23, 2025\n\nTo,\n\nThe Director General\n\nSociety of Indian Automobile Manufacturers (SIAM)\nCore 4-B, 5th Floor, India Habitat Centre\n\nLodhi Road, New Delhi- 110003\n\nSubject: Intimation of last date for sale of e-3Ws (L5) eligible for demand\nincentive under the PM E-DRIVE Scheme-reg.\n\nSir / Madam,\n\nPlease refer to the PM E-DRIVE Scheme notified vide S.O. 4259(E) dated\n29.09.2024, as amended from time to time, including notification vide S.O.\n3680 (E) dated 13.08.2025.\n\n2. Under the Scheme, maximum number of e-3Ws (L5) to be supported are\n2,88,809 nos. with a total outlay of Rs.857 crore. As per VAHAN data of\nMoRTH, integrated with the PM E-DRIVE Portal, 2,85,931 e-3Ws (L5) have\nbeen registered till 22.12.2025.\n\n3. Para 46 of the Scheme notification clearly stipulates that the PM E-\nDRIVE Scheme is fund-limited, and once the allocated funds for the Scheme\nor any of its sub-components is exhausted, no further claims will be\nentertained.\n\n4. In view of the above, it has been decided that sales of e-3Ws (L5)\nregistered after 26.12.2025 shall not be eligible for demand incentive under the\nPM E-DRIVE Scheme. Further, in case the target number for e-3Ws (L5) i.e.\n2,88,809 is reached earlier than 26.12.2025, then the sub-component for e-3Ws\n(L5) will be closed earlier and no e-3Ws (L5) registered beyond the target\nnumber of 2,88,809 will be eligible for demand incentive under this Scheme.\n"
+              }
+            ]
+          },
+          {
+            "text": "The scheme’s overall terminal date for all vehicle segments is 31 March 2028.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "MINISTRY OF HEAVY INDUSTRIES\nNOTIFICATION\nNew Delhi, the 10th August, 2026\nS.O. 4424(E).—PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme\n\n1. In partial modification of the PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme which was notified by the Ministry of Heavy Industries vide S.O. 4259(E) dated 29th September 2024, the following amendments are made with effect from date of publication in the official gazette:\n\n2. Para 5 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 3626(E) dated 7th August 2025, shall stand further amended as under:\nThe PM E-DRIVE Scheme, with an outlay of ₹11,900 crore, is being implemented from 1st April 2024 till 31st March 2028, for faster adoption of electric vehicles (EVs), setting up of charging infrastructure and development of EV manufacturing eco-system in the country. The EMPS-2024 implemented during 1st April 2024 to 30th September 2024 was subsumed under this Scheme.\n\n3. Sl. No. 1 of the Annexure-4 of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 1617(E) dated 27th March, 2026 shall stand further amended as under:\n\nSl. No. | Vehicle Segment | Maximum number of vehicles to be supported | Incentive for vehicles*1: FY 2024-25 | Incentive for vehicles*1: 01.04.2025 to 31.03.2028 | Maximum Ex-factory price to avail incentive | Total fund support from MHI (₹ crore)\n1 | Registered e-2 wheelers | 45,79,120 | ₹5,000/kWh, capped at ₹10,000 per vehicle | ₹2,500/kWh, capped at ₹5,000 per vehicle | ₹1.5 lakh | 2,767*2\n\n*1 The proposed amount of incentive per kWh is, however, subject to review as per the reduction in vehicle cost and would be notified accordingly from time to time. The incentive shall be limited to as specified above or 15% of ex-factory price of e-2W/ e-3W, whichever is lower.\n*2 The outlay under EMPS-2024 has been subsumed within the outlay under PM E-DRIVE.\n\n4. In Table-1 of para 9 of S.O. 4259(E) dated 29th September 2024, the total outlay for e-2Ws shall be ₹2,767 crore. Further, the outlay for Admin Expenses shall be ₹55 crore along with fungibility of expenses within various sub-heads under admin expenses.\n\n5. Para 46 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 and as amended vide S.O. 3626(E) dated 7th August 2025 & vide S.O. 1617(E) dated 27th March, 2026, shall stand further amended as under:\nThis is a fund-limited scheme. Total payout under the Scheme shall be limited to the scheme outlay of ₹11,900 crore. In case the funds for the Scheme or its relevant sub-components are exhausted prior to the terminal date of the Scheme i.e. 31st March 2028, then the Scheme or its relevant subcomponents will be closed accordingly i.e. no further claims will be entertained.\n\nFurther, as the target sales for sub-component registered e-3W (L5) has already been achieved, this segment was closed on 26th December 2025, as already advised vide MHI’s O.M. F.No. 1(1)/2024-AEI (PartII) (29996) dated 23rd December 2025.\n\nSince 31st March 2028 is the terminal date for all segments under the Scheme no payments will be made by MHI/ PMA after this date. Therefore, the last date for submission of any claim to MHI/PMA for any scheme component shall be 31st December 2027.\n\n[F. No. 1(1)/2024-AEI (28077)]\nDr. HANIF QURESHI, Addl. Secy.\nUploaded by Dte. of Printing at Government of India Press, Ring Road, Mayapuri, New Delhi-110064 and Published by the Controller of Publications, Delhi-110054.\n"
+              }
+            ]
+          },
+          {
+            "text": "The last date for submitting any claim for any scheme component is 31 December 2027.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "MINISTRY OF HEAVY INDUSTRIES\nNOTIFICATION\nNew Delhi, the 10th August, 2026\nS.O. 4424(E).—PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme\n\n1. In partial modification of the PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme which was notified by the Ministry of Heavy Industries vide S.O. 4259(E) dated 29th September 2024, the following amendments are made with effect from date of publication in the official gazette:\n\n2. Para 5 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 3626(E) dated 7th August 2025, shall stand further amended as under:\nThe PM E-DRIVE Scheme, with an outlay of ₹11,900 crore, is being implemented from 1st April 2024 till 31st March 2028, for faster adoption of electric vehicles (EVs), setting up of charging infrastructure and development of EV manufacturing eco-system in the country. The EMPS-2024 implemented during 1st April 2024 to 30th September 2024 was subsumed under this Scheme.\n\n3. Sl. No. 1 of the Annexure-4 of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 1617(E) dated 27th March, 2026 shall stand further amended as under:\n\nSl. No. | Vehicle Segment | Maximum number of vehicles to be supported | Incentive for vehicles*1: FY 2024-25 | Incentive for vehicles*1: 01.04.2025 to 31.03.2028 | Maximum Ex-factory price to avail incentive | Total fund support from MHI (₹ crore)\n1 | Registered e-2 wheelers | 45,79,120 | ₹5,000/kWh, capped at ₹10,000 per vehicle | ₹2,500/kWh, capped at ₹5,000 per vehicle | ₹1.5 lakh | 2,767*2\n\n*1 The proposed amount of incentive per kWh is, however, subject to review as per the reduction in vehicle cost and would be notified accordingly from time to time. The incentive shall be limited to as specified above or 15% of ex-factory price of e-2W/ e-3W, whichever is lower.\n*2 The outlay under EMPS-2024 has been subsumed within the outlay under PM E-DRIVE.\n\n4. In Table-1 of para 9 of S.O. 4259(E) dated 29th September 2024, the total outlay for e-2Ws shall be ₹2,767 crore. Further, the outlay for Admin Expenses shall be ₹55 crore along with fungibility of expenses within various sub-heads under admin expenses.\n\n5. Para 46 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 and as amended vide S.O. 3626(E) dated 7th August 2025 & vide S.O. 1617(E) dated 27th March, 2026, shall stand further amended as under:\nThis is a fund-limited scheme. Total payout under the Scheme shall be limited to the scheme outlay of ₹11,900 crore. In case the funds for the Scheme or its relevant sub-components are exhausted prior to the terminal date of the Scheme i.e. 31st March 2028, then the Scheme or its relevant subcomponents will be closed accordingly i.e. no further claims will be entertained.\n\nFurther, as the target sales for sub-component registered e-3W (L5) has already been achieved, this segment was closed on 26th December 2025, as already advised vide MHI’s O.M. F.No. 1(1)/2024-AEI (PartII) (29996) dated 23rd December 2025.\n\nSince 31st March 2028 is the terminal date for all segments under the Scheme no payments will be made by MHI/ PMA after this date. Therefore, the last date for submission of any claim to MHI/PMA for any scheme component shall be 31st December 2027.\n\n[F. No. 1(1)/2024-AEI (28077)]\nDr. HANIF QURESHI, Addl. Secy.\nUploaded by Dte. of Printing at Government of India Press, Ring Road, Mayapuri, New Delhi-110064 and Published by the Controller of Publications, Delhi-110054.\n"
+              }
+            ]
+          },
+          {
+            "text": "The scheme is fund‑limited with total payout capped at the overall outlay of ₹11,900 crore.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "MINISTRY OF HEAVY INDUSTRIES\nNOTIFICATION\nNew Delhi, the 10th August, 2026\nS.O. 4424(E).—PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme\n\n1. In partial modification of the PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE) Scheme which was notified by the Ministry of Heavy Industries vide S.O. 4259(E) dated 29th September 2024, the following amendments are made with effect from date of publication in the official gazette:\n\n2. Para 5 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 3626(E) dated 7th August 2025, shall stand further amended as under:\nThe PM E-DRIVE Scheme, with an outlay of ₹11,900 crore, is being implemented from 1st April 2024 till 31st March 2028, for faster adoption of electric vehicles (EVs), setting up of charging infrastructure and development of EV manufacturing eco-system in the country. The EMPS-2024 implemented during 1st April 2024 to 30th September 2024 was subsumed under this Scheme.\n\n3. Sl. No. 1 of the Annexure-4 of S.O. 4259(E) dated 29th September 2024 & as amended vide S.O. 1617(E) dated 27th March, 2026 shall stand further amended as under:\n\nSl. No. | Vehicle Segment | Maximum number of vehicles to be supported | Incentive for vehicles*1: FY 2024-25 | Incentive for vehicles*1: 01.04.2025 to 31.03.2028 | Maximum Ex-factory price to avail incentive | Total fund support from MHI (₹ crore)\n1 | Registered e-2 wheelers | 45,79,120 | ₹5,000/kWh, capped at ₹10,000 per vehicle | ₹2,500/kWh, capped at ₹5,000 per vehicle | ₹1.5 lakh | 2,767*2\n\n*1 The proposed amount of incentive per kWh is, however, subject to review as per the reduction in vehicle cost and would be notified accordingly from time to time. The incentive shall be limited to as specified above or 15% of ex-factory price of e-2W/ e-3W, whichever is lower.\n*2 The outlay under EMPS-2024 has been subsumed within the outlay under PM E-DRIVE.\n\n4. In Table-1 of para 9 of S.O. 4259(E) dated 29th September 2024, the total outlay for e-2Ws shall be ₹2,767 crore. Further, the outlay for Admin Expenses shall be ₹55 crore along with fungibility of expenses within various sub-heads under admin expenses.\n\n5. Para 46 of the Scheme notification of S.O. 4259(E) dated 29th September 2024 and as amended vide S.O. 3626(E) dated 7th August 2025 & vide S.O. 1617(E) dated 27th March, 2026, shall stand further amended as under:\nThis is a fund-limited scheme. Total payout under the Scheme shall be limited to the scheme outlay of ₹11,900 crore. In case the funds for the Scheme or its relevant sub-components are exhausted prior to the terminal date of the Scheme i.e. 31st March 2028, then the Scheme or its relevant subcomponents will be closed accordingly i.e. no further claims will be entertained.\n\nFurther, as the target sales for sub-component registered e-3W (L5) has already been achieved, this segment was closed on 26th December 2025, as already advised vide MHI’s O.M. F.No. 1(1)/2024-AEI (PartII) (29996) dated 23rd December 2025.\n\nSince 31st March 2028 is the terminal date for all segments under the Scheme no payments will be made by MHI/ PMA after this date. Therefore, the last date for submission of any claim to MHI/PMA for any scheme component shall be 31st December 2027.\n\n[F. No. 1(1)/2024-AEI (28077)]\nDr. HANIF QURESHI, Addl. Secy.\nUploaded by Dte. of Printing at Government of India Press, Ring Road, Mayapuri, New Delhi-110064 and Published by the Controller of Publications, Delhi-110054.\n"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Central",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 852,
+          "prompt_tokens": 5899,
+          "total_tokens": 6751,
+          "completion_time": 1.811078305,
+          "prompt_time": 0.404768199,
+          "queue_time": 0.338495976,
+          "total_time": 2.215846504,
+          "completion_tokens_details": {
+            "reasoning_tokens": 590
+          }
+        }
+      },
+      "earlier_attempts": []
+    },
+    {
+      "case": {
+        "id": "irrelevant",
+        "selection": "Central",
+        "question": "What is a recipe for chocolate cake?",
+        "patterns": [],
+        "page_ids": [],
+        "expected_status": "not_established"
+      },
+      "checks": {
+        "expected_status": true,
+        "expected_fact_patterns": true,
+        "expected_source_pages": true,
+        "jurisdiction_isolated": true,
+        "no_current_entitlement_permission": true
+      },
+      "result": {
+        "status": "not_established",
+        "answer": "Central — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\nThe available documents do not establish an answer to this question.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Central",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 100,
+          "prompt_tokens": 5871,
+          "total_tokens": 5971,
+          "completion_time": 0.209024473,
+          "prompt_time": 0.297537745,
+          "queue_time": 0.342633491,
+          "total_time": 0.506562218,
+          "completion_tokens_details": {
+            "reasoning_tokens": 78
+          }
+        }
+      },
+      "earlier_attempts": []
+    }
+  ],
+  "note": "Fact patterns and source pages are smoke checks; inspect claims against attached excerpts separately. Team review is pending.",
+  "saved_output_recheck": {
+    "checked_at_utc": "2026-09-25T17:11:40.694700+00:00",
+    "check_script_sha256": "5f44fa5cd50d8f8a6aabdf88c8f4271bb0e8f153277f208b41cbb5ccc7c85c52",
+    "groq_calls": 0,
+    "previous_checks": [
+      {
+        "expected_status": true,
+        "expected_fact_patterns": true,
+        "expected_source_pages": true,
+        "jurisdiction_isolated": true,
+        "no_current_entitlement_permission": true,
+        "rupee_cap_is_10000_not_vehicle_count": true,
+        "100000_belongs_to_vehicle_count": true
+      },
+      {
+        "expected_status": true,
+        "expected_fact_patterns": true,
+        "expected_source_pages": true,
+        "jurisdiction_isolated": true,
+        "no_current_entitlement_permission": true,
+        "known_eligibility_ambiguity_withheld": true
+      },
+      {
+        "expected_status": true,
+        "expected_fact_patterns": true,
+        "expected_source_pages": true,
+        "jurisdiction_isolated": true,
+        "no_current_entitlement_permission": true
+      },
+      {
+        "expected_status": true,
+        "expected_fact_patterns": true,
+        "expected_source_pages": true,
+        "jurisdiction_isolated": true,
+        "no_current_entitlement_permission": true
+      },
+      {
+        "expected_status": true,
+        "expected_fact_patterns": true,
+        "expected_source_pages": true,
+        "jurisdiction_isolated": true,
+        "no_current_entitlement_permission": true
+      },
+      {
+        "expected_status": true,
+        "expected_fact_patterns": true,
+        "expected_source_pages": true,
+        "jurisdiction_isolated": true,
+        "no_current_entitlement_permission": true
+      }
+    ]
+  }
+}
