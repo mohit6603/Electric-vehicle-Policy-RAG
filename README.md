@@ -2,7 +2,7 @@
 
 An EV policy assistant planned for the Generative AI mini-project at Jio Institute. It will answer questions from official policy documents, with jurisdiction filtering and document/page citations.
 
-**Status:** Technical Stage 8 is complete. The guarded entry point handles clarification, abstention and source/index/service failures while preserving cited answers for Maharashtra, Tamil Nadu or Central. It reuses the existing 231-chunk index without rebuilding at startup. Manual acceptance and current-entitlement checks remain deferred. See [Stage 8 run instructions](STAGE_8_HANDOFF.md) and [progress](PROGRESS.md). Next is Stage 9, the Gradio pilot.
+**Status:** Technical Stage 9 is complete. A local Gradio pilot now offers Maharashtra, Tamil Nadu and Central, with separate answer/source outputs and the guarded failure behavior from Stage 8. Startup reopens the 231-chunk index without rebuilding. See [Stage 9 launch instructions](STAGE_9_HANDOFF.md) and [progress](PROGRESS.md). Manual acceptance and current-entitlement verification remain pending.
 
 ## Project documents
 
@@ -66,8 +66,14 @@ Use the guarded path in [Stage 8 run instructions](STAGE_8_HANDOFF.md): load the
 
 `uv run --locked python checks/stage8_failure_checks.py` runs 50 offline checks with no model services. Adding `--live` runs the local failure/recovery check and six paced Groq cases. Missing data/index/key, local-service failures and Groq failures receive actionable messages with separate diagnostics. Source acceptance and current entitlement remain unverified.
 
+## Run Stage 9 — Gradio pilot
+
+Run the definition-cell sequence in [Stage 9 launch instructions](STAGE_9_HANDOFF.md), then the notebook's Stage 9 cells. Open `http://127.0.0.1:7860`, select a jurisdiction, enter a question and click Ask. Examples fill inputs; Clear resets the form and outputs. Keep the kernel running and use `demo.close()` to stop the server. Normal startup opens the saved index; a missing index requires the explicit Stage 5 build.
+
+`uv run --locked python checks/stage9_ui_checks.py` runs 15 local HTTP/configuration checks without model-service calls. The handoff separates these fixture checks from the actual browser/Groq observations and fresh-kernel launch. Stage 10, the remaining jurisdictions, has not started.
+
 ## Reference and assistance
 
 Implementation will adapt applicable examples from the [course repository](https://github.com/aagarwal4/generative-ai-pgp-ji-2026/tree/33c2faa22450cde16ead9071f7ce7ecc78ca592a). The reuse map records the relevant notebooks and cells.
 
-AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, official-source research, provenance records, OCR preparation and proposed text corrections. The user subsequently authorized AI implementation of technical Stages 2–8: the shared page loader, source-specific extraction, metadata relationships, splitting, exports, persistent semantic index, jurisdiction-aware retrieval, source-version rules, an EV prompt draft, structured answer generation, citation resolution, guarded startup, abstention/failure behavior and technical checks. This supersedes the earlier helper-only instruction for those stages; it does not change the assignment's AI-use rule. The team must disclose the actual assistance in the presentation appendix. Manual source verification and independently authored evaluation cases remain the team's work; the live pilot observations do not replace the independent formal evaluation.
+AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, official-source research, provenance records, OCR preparation and proposed text corrections. The user subsequently authorized AI implementation of technical Stages 2–9: the shared page loader, source-specific extraction, metadata relationships, splitting, exports, persistent semantic index, jurisdiction-aware retrieval, source-version rules, an EV prompt draft, structured answer generation, citation resolution, guarded startup, abstention/failure behavior, the Gradio pilot and technical checks. This supersedes the earlier helper-only instruction for those stages; it does not change the assignment's AI-use rule. The team must disclose the actual assistance in the presentation appendix. Manual source verification and independently authored evaluation cases remain the team's work; the live pilot observations do not replace the independent formal evaluation.

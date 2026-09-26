@@ -1,0 +1,45 @@
+{
+  "checked_at_utc": "2026-09-26T05:10:22.867836+00:00",
+  "notebook_sha256": "e22da0517c2d4d9112d5bdc7f75578b22c5bcb1f02595d22e4b7bd328097a67d",
+  "check_script_sha256": "d3f85856682a42ee7996dd98e51bcea30208a34433ed9dcf3e11eb0914298a28",
+  "retrieval_rules_sha256": "5680517abc4070414a022b9bbf9cfbc25e1003af2b57a7a0898023ec129d5583",
+  "scope": "AI-authored development checks; source review and formal evaluation pending",
+  "technical_status": "passed",
+  "startup": {
+    "status": "ready",
+    "records": 231,
+    "corpus_embeddings": 0,
+    "query_embeddings": 0,
+    "groq_calls": 0,
+    "corpus_sha256": "f2be4ed1240fbc74de1de7ad5dae8f26e5ee61f80c743ad00aa53ccf413013ba"
+  },
+  "embedding_calls": {
+    "corpus": 0,
+    "query": 0
+  },
+  "observations": [
+    {
+      "selection": "Central",
+      "question": "What e-2W rate does the supplied amendment state?",
+      "result": {
+        "status": "configuration_error",
+        "answer": "Add GROQ_API_KEY to the local .env file, then retry. Do not put the key in the notebook.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Central",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    }
+  ],
+  "missing_key_injected": true,
+  "groq_calls": 0,
+  "checks_passed": [
+    "missing_key_ui_error_without_model_calls"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "technical_status": "passed",
+  "checked_at_utc": "2026-09-26T05:09:43.986716+00:00",
+  "checks_passed": [
+    "fresh_kernel_startup_ready",
+    "saved_index_has_231_records",
+    "three_pilot_choices",
+    "negative_callback_outputs",
+    "fresh_kernel_gradio_http_launch"
+  ],
+  "notebook_sha256": "e22da0517c2d4d9112d5bdc7f75578b22c5bcb1f02595d22e4b7bd328097a67d",
+  "corpus_sha256": "f2be4ed1240fbc74de1de7ad5dae8f26e5ee61f80c743ad00aa53ccf413013ba",
+  "groq_calls": 0,
+  "note": "Fresh Jupyter kernel; alternate local port 7862 to avoid the browser-test servers."
+}

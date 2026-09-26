@@ -61,4 +61,4 @@ Stage 8 wraps the existing Stage 5 open/check functions, Stage 6 loader/router/r
 
 AI assistance covered implementation, compacting the prompt, failure-case design, observed local/Groq checks, documentation and Git publication. These are development checks, not the team's independently authored 24-case evaluation. Manual source/OCR/prompt review and the assignment's AI-use/disclosure obligations remain unchanged.
 
-Next is **Stage 9 — Gradio pilot**. It has not started. Resolve notebook-only launch versus an optional `app.py` before implementing that stage.
+Stage 9 now provides the notebook Gradio pilot; see [its handoff](STAGE_9_HANDOFF.md) for the definition-cell launch sequence and UI checks. The Stage 8 reports above retain their recorded test versions.

@@ -1,0 +1,93 @@
+{
+  "checked_at_utc": "2026-09-26T05:07:51.707927+00:00",
+  "notebook_sha256": "e22da0517c2d4d9112d5bdc7f75578b22c5bcb1f02595d22e4b7bd328097a67d",
+  "check_script_sha256": "d3f85856682a42ee7996dd98e51bcea30208a34433ed9dcf3e11eb0914298a28",
+  "retrieval_rules_sha256": "5680517abc4070414a022b9bbf9cfbc25e1003af2b57a7a0898023ec129d5583",
+  "scope": "AI-authored development checks; source review and formal evaluation pending",
+  "technical_status": "passed",
+  "checks_passed": [
+    "only_indexed_choices",
+    "two_inputs_and_outputs",
+    "no_custom_selection",
+    "markdown_sanitization",
+    "serial_queue",
+    "no_flagging_or_analytics",
+    "supported_fixture_over_http",
+    "empty_question_clears_citations",
+    "mismatch_over_http",
+    "unsupported_named_state",
+    "unsupported_central_segment",
+    "current_entitlement_abstains",
+    "missing_key_over_http",
+    "rate_limit_fixture_over_http",
+    "missing_index_over_http_without_rebuild"
+  ],
+  "observations": [
+    {
+      "case": "supported_fixture_over_http",
+      "outputs": [
+        "### Answer\n\nCentral — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- For 01‑04‑2025 to 31‑03‑2028, the e‑2W incentive is ₹2,500 per kWh, capped at ₹5,000 per vehicle; the maximum ex‑factory price to qualify is ₹1.5 lakh; the incentive is limited to the lower of this amount or 15 % of the ex‑factory price. [S1](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)",
+        "### Sources\n\n- [S1: Central — Enhancement of Scheme outlay and extension of timeline for e-2Ws, PDF page 3](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)"
+      ]
+    },
+    {
+      "case": "empty_question_clears_citations",
+      "outputs": [
+        "### Answer\n\nEnter a specific EV policy question and choose one jurisdiction.",
+        "### Sources\n\nNo sources cited."
+      ]
+    },
+    {
+      "case": "mismatch_over_http",
+      "outputs": [
+        "### Answer\n\nAlign the selected jurisdiction and the jurisdiction named in your question.",
+        "### Sources\n\nNo sources cited."
+      ]
+    },
+    {
+      "case": "unsupported_named_state",
+      "outputs": [
+        "### Answer\n\nAlign the selected jurisdiction and the jurisdiction named in your question.",
+        "### Sources\n\nNo sources cited."
+      ]
+    },
+    {
+      "case": "unsupported_central_segment",
+      "outputs": [
+        "### Answer\n\nThe Central pilot covers PM E-DRIVE two-/three-wheeler buyer incentives and eligibility. Ask about that scope.",
+        "### Sources\n\nNo sources cited."
+      ]
+    },
+    {
+      "case": "current_entitlement_abstains",
+      "outputs": [
+        "### Answer\n\nThis prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+        "### Sources\n\nNo sources cited."
+      ]
+    },
+    {
+      "case": "missing_key_over_http",
+      "outputs": [
+        "### Answer\n\nAdd GROQ_API_KEY to the local .env file, then retry. Do not put the key in the notebook.",
+        "### Sources\n\nNo sources cited."
+      ]
+    },
+    {
+      "case": "rate_limit_fixture_over_http",
+      "outputs": [
+        "### Answer\n\nGroq usage is currently limited. Wait for the account allowance to recover, then retry.",
+        "### Sources\n\nNo sources cited."
+      ]
+    },
+    {
+      "case": "missing_index_over_http_without_rebuild",
+      "outputs": [
+        "### Answer\n\nThe saved index is missing, inaccessible or out of date. Check data/chroma and explicitly rebuild Stage 5 if needed, then retry. No automatic rebuild was attempted.",
+        "### Sources\n\nNo sources cited."
+      ]
+    }
+  ],
+  "groq_calls": 0,
+  "ollama_calls": 0,
+  "note": "Supported/rate-limit responses are explicit fixtures; other cases use actual Stage 8 guards through Gradio HTTP."
+}

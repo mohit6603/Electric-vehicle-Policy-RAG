@@ -2,15 +2,27 @@
 
 ## Current stage and next step
 
-**Stage 8 — technically complete.** The guarded entry point returns consistent clarification, abstention and actionable failure results, and retains supported answers with citations. All technical checks passed; see the closeout below.
+**Stage 9 — technically complete.** The notebook Gradio pilot passes its UI, browser and fresh-kernel checks. It preserves the guarded Stage 8 answers/errors and separate cited-source output. See the closeout below.
 
-**Next: Stage 9 — Gradio pilot (not started).** Resolve notebook-only launch versus optional `app.py` at its start, then connect the jurisdiction selector/question input to `ask_policy`. Keep the existing saved-index startup and result fields. Do not begin Stage 10 until the UI's supported, unsupported and mismatch checks pass.
+**Next: Stage 10 — add one remaining jurisdiction per session (not started).** Uttar Pradesh is next in the agreed list. Begin its source packet before ingestion, then rebuild/check the index and spot-check the UI. Notebook-only launch was the stated default after the optional launcher question received no answer; no `app.py` was added.
 
-**Latest authorization:** the user requested completion of Stage 8. AI implementation and technical checks are authorized; genuine team prompt/source review remains deferred. The assignment's AI-use rule and disclosure requirement remain unchanged.
+**Latest authorization:** the user requested completion of Stage 9. AI implementation and technical checks are authorized; genuine team prompt/source review remains deferred. The assignment's AI-use rule and disclosure requirement remain unchanged.
 
 The user's earlier decision to defer manual source review and question-writing until the full prototype is built still applies. Those tasks do not block development stages 2–10; they remain required before formal evaluation and submission. Technical checks must pass before advancing stages. All source acceptance flags remain false, current status remains unknown, and prototype evidence is labelled unverified.
 
 Deferred review batch: verify the source text and applicable document chains; record actual reviewers/dates; independently author and verify the 24 evaluation cases; resolve current-benefit evidence gaps or keep unsupported claims explicitly unanswered. Freeze expected answers before formal evaluation. Do not invent review completion or remove these obligations from final acceptance.
+
+## Stage 9 technical closeout — 26 September 2026
+
+Added notebook cells `stage9-start` through `stage9-boundary`, adapting Exercise 2's `gradio_interface`, `gr.Interface` and `demo.launch`. Loaded corpus choices populate the dropdown; the callback passes selection/question to Stage 8 unchanged and separates the existing answer/source footer into two Markdown outputs. Citation links retain physical PDF pages. Ask submits, example rows only fill inputs, and Clear resets the form and outputs. The queue serializes calls against the shared notebook state. Local launch binds to `127.0.0.1:7860` without a share link; flags, analytics and example caching are disabled. No new dependency or backend implementation was introduced.
+
+Observed results: **15 UI checks, eight browser checks and five fresh-kernel checks passed**. The repeatable HTTP tests use labelled fixtures for supported/rate-limited output and real guards for negative requests, with zero model-service calls. Browser tests used two actual Groq calls: a supported Central e-2W answer with its rate/cap/price/percentage limits and PDF-page citations, and a recipe request that abstained. Mismatch, unsupported Central scope, blank input, missing-key error, Clear and example selection also behaved as recorded; prior citations were absent on rejected requests. Key absence was injected on a separate local test server without changing `.env`.
+
+Instrumented UI startup reopened all **231 records** with zero corpus/query embeddings and zero Groq calls. Only the two generated browser requests embedded queries. A fresh Jupyter kernel loaded the documented definitions, reopened the index, checked choices/negative callbacks and launched Gradio on a separate local port. Stage 8's **50 offline failure checks** still pass. All six corpus JSONLs, retrieval rules and earlier notebook cells remain unchanged; notebook outputs are empty. Test servers were closed after verification.
+
+The test embedding counter initially misclassified Ollama's delegated query embedding as corpus work; this test-only instrumentation was corrected. Visible Answer/Sources headings were added after browser inspection showed the component labels alone were not rendered. Actual final observations and check provenance are saved under `data/processed/ui/`; see [Stage 9 handoff](STAGE_9_HANDOFF.md) for launch/recovery instructions and the distinction between fixtures and live results.
+
+AI assistance covered UI adaptation, callback/test code, actual browser/local/Groq checks, documentation and Git publication. The user-facing UI keeps source review/current entitlement labelled unverified. Model abstention/citation limitations, manual acceptance and the independent 24-case evaluation remain pending. This pilot does not satisfy the final eight-jurisdiction corpus requirement. Stage 10 has not started.
 
 ## Stage 8 technical closeout — 26 September 2026
 
