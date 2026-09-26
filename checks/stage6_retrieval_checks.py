@@ -11,7 +11,7 @@ def load_stage6():
     notebook = json.loads(Path('EV Policy Assistant.ipynb').read_text())
     namespace = {}
     cells = ('stage5-imports', 'stage5-index-functions', 'stage5-inputs', 'stage5-open',
-             'stage6-inputs', 'stage6-routing', 'stage6-context')
+             'stage6-inputs', 'stage6-load', 'stage6-routing', 'stage6-context')
     for cell in notebook['cells']:
         if cell['id'] in cells:
             exec(compile(''.join(cell['source']), cell['id'], 'exec'), namespace)

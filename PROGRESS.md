@@ -2,15 +2,27 @@
 
 ## Current stage and next step
 
-**Stage 7 — technically complete.** Groq answers use labelled Stage 6 evidence and checked source IDs, with original excerpts and PDF-page links. Seven notebook checks, 13 deterministic checks and six live pilot cases passed. The final live batch contains four supported answers and two withheld/abstained answers; it is not a formal accuracy score.
+**Stage 8 — technically complete.** The guarded entry point returns consistent clarification, abstention and actionable failure results, and retains supported answers with citations. All technical checks passed; see the closeout below.
 
-**Next:** Stage 8 — abstention and failure behavior. It has not started. Continue only when requested.
+**Next: Stage 9 — Gradio pilot (not started).** Resolve notebook-only launch versus optional `app.py` at its start, then connect the jurisdiction selector/question input to `ask_policy`. Keep the existing saved-index startup and result fields. Do not begin Stage 10 until the UI's supported, unsupported and mismatch checks pass.
 
-**Latest authorization:** the user requested completion of Stage 7. The EV prompt is an AI-assisted draft; genuine team prompt/source review remains deferred. The assignment's AI-use rule and disclosure requirement remain unchanged.
+**Latest authorization:** the user requested completion of Stage 8. AI implementation and technical checks are authorized; genuine team prompt/source review remains deferred. The assignment's AI-use rule and disclosure requirement remain unchanged.
 
 The user's earlier decision to defer manual source review and question-writing until the full prototype is built still applies. Those tasks do not block development stages 2–10; they remain required before formal evaluation and submission. Technical checks must pass before advancing stages. All source acceptance flags remain false, current status remains unknown, and prototype evidence is labelled unverified.
 
 Deferred review batch: verify the source text and applicable document chains; record actual reviewers/dates; independently author and verify the 24 evaluation cases; resolve current-benefit evidence gaps or keep unsupported claims explicitly unanswered. Freeze expected answers before formal evaluation. Do not invent review completion or remove these obligations from final acceptance.
+
+## Stage 8 technical closeout — 26 September 2026
+
+Added `start_policy_assistant`, `ask_policy` and `reset_policy_assistant` in the notebook. Stage 6's existing source loader is now a function plus a separate execution cell, so missing prerequisites can be caught. The wrapper checks inputs before model work, opens the saved index without rebuilding, verifies warm index contents/receipt identity and returns 13 consistent fields. Missing/changed evidence, missing/corrupt/stale indexes, missing credentials, Ollama failures and Groq authentication/rate/size/timeout/service failures have actionable messages. Diagnostics contain only types, phases and status codes; failed requests retain no earlier policy points or citations.
+
+Observed results: **50 offline failure checks, six live cases and six fresh-kernel notebook checks passed**. Offline checks use isolated files, actual SDK exception types and explicit reply fixtures with zero Ollama/Groq calls. The live batch preserved all four supported Stage 7 topics and abstained on an absent insurance premium and an irrelevant recipe request containing policy words. A refused local endpoint returned the expected embedding failure; reset/recovery reopened 231 records. The fresh notebook returned a cited Central answer. Stage 6's **19 retrieval checks** and Stage 7's **13 citation checks** passed after the source-loader refactor. All six corpus JSONL files and retrieval rules remain byte-identical; the canonical notebook has no saved outputs and no dependency changed.
+
+Groq returned request-size errors during development. The prompt was shortened while retaining the actual evidence, citation rules, table layout and mandatory conditions. Later live supported answers passed. The last negative case then hit the account allowance twice; a separate retry on 26 September passed after allowance recovered. Those failed attempts remain recorded. No failure was counted as a successful abstention, and the application does not automatically retry or discard required evidence.
+
+Reports: `data/processed/answers/stage8_failure_checks.json`, `stage8_live_checks.json` and `stage8_checks.json`. The live report keeps its original tested notebook hash and records the final markdown-only correction with executable cells verified unchanged. Other reports retain the actual versions they tested. See [Stage 8 handoff](STAGE_8_HANDOFF.md) for the guarded definition-cell sequence and recovery actions.
+
+Input patterns cover bounded English cases; relevance and missing-fact abstention still depend on the model, and citation validation does not establish general semantic accuracy. The conservative Tamil Nadu e-cycle guard remains. Source/OCR/prompt acceptance, verified current entitlement and the team's independent 24-case evaluation remain pending. AI assistance covered implementation, prompt compacting, development checks, actual local/Groq runs, documentation and Git publication. Stage 9 has not started.
 
 ## Stage 7 technical closeout — 25 September 2026
 

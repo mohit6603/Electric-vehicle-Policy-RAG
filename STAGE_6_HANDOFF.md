@@ -7,10 +7,10 @@
 Open `EV Policy Assistant.ipynb` from the project root in the pinned environment with Ollama running.
 
 1. Run Stage 5's imports, index functions, inputs and open cells. Leave `rebuild_index = False`; the existing local index needs no rebuild for Stage 6. On a fresh checkout, complete the explicit Stage 5 build first.
-2. Run all Stage 6 cells in order. No earlier ingestion cells or Groq key are needed.
+2. Run all Stage 6 cells in order, including the new `stage6-load` execution cell. The preceding inputs cell now defines `load_retrieval_inputs()` so Stage 8 can catch setup failures. No earlier ingestion cells or Groq key are needed.
 3. Change `selected_jurisdiction` and `retrieval_question` in the search cell to inspect another query. The default Tamil Nadu query prints page references and evidence roles, then passes eight notebook checks.
 
-The public notebook function is `retrieve_policy(selection, question, k=4, max_context_chars=50000)`. Its result contains a status/message, canonical jurisdiction, `context_docs`, diagnostic `seed_chunk_ids`, omitted-span records, the verification cutoff and the false current-entitlement permission. Only `status='retrieved'` supplies context. Stage 7 consumes the context and its date/version/review labels, not fetch raw seed text by ID. A successful retrieval is not proof that the evidence answers the question.
+The public notebook function is `retrieve_policy(selection, question, k=4, max_context_chars=50000)`. Its result contains a status/message, canonical jurisdiction, `context_docs`, diagnostic `seed_chunk_ids`, omitted-span records, the verification cutoff and the false current-entitlement permission. Only `status='retrieved'` supplies context. Stage 7 consumes the context and its date/version/review labels, without fetching raw seed text by ID. A successful retrieval is not proof that the evidence answers the question.
 
 ## Input behavior
 
@@ -22,7 +22,7 @@ The guide's recommended rule was implemented after the optional preference quest
 - Aliases include `Tamilnadu`, `New Delhi`, `Gujrat`, `Telengana` and PM E-DRIVE spellings. `MH`, `TN`, `UP`, `MP`, `GJ`, `TS`, `KA` and `DL` are recognized as uppercase abbreviations in questions; selection aliases are case-insensitive. Ordinary lowercase “up” is not a state mention.
 - The Central pilot rejects explicit FAME/EMPS, car, bus, truck, ambulance and charging-infrastructure requests. Its scope remains PM E-DRIVE two-/three-wheeler buyer incentives and eligibility.
 
-The complete alias list is in [retrieval_rules.json](data/retrieval_rules.json). These are English name/word checks, not a location-recognition model: city-only queries, unlisted misspellings, other-language names, negation and quoted place names are not interpreted semantically. Explicit recognized names trigger the conservative clarification rule. Relevance/answerability checks and broader failure handling remain Stage 8 work.
+The complete alias list is in [retrieval_rules.json](data/retrieval_rules.json). These are English name/word checks, not a location-recognition model: city-only queries, unlisted misspellings, other-language names, negation and quoted place names are not interpreted semantically. Explicit recognized names trigger the conservative clarification rule. Stage 8 adds a guarded entry point; model abstention still has the limitations described in its handoff.
 
 ## Evidence and version handling
 

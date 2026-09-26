@@ -1,0 +1,501 @@
+{
+  "checked_at_utc": "2026-09-26T04:53:26.108527+00:00",
+  "notebook_sha256": "cfbe8fc05e8cb450a31955d4b464ab8fe6944ce77bbc9dfcef1904dcaa84b53f",
+  "check_script_sha256": "5f9c85caa2b86a77318276e69ed693d39660f0c9ba14e378eaf1c6a10639bd0d",
+  "corpus_sha256": "f2be4ed1240fbc74de1de7ad5dae8f26e5ee61f80c743ad00aa53ccf413013ba",
+  "retrieval_rules_sha256": "5680517abc4070414a022b9bbf9cfbc25e1003af2b57a7a0898023ec129d5583",
+  "scope": "AI-authored technical checks, not formal team evaluation",
+  "technical_status": "passed",
+  "checks_passed": [
+    "supported_fixture_before_failures",
+    "empty_question",
+    "non_string_question",
+    "punctuation_only",
+    "oversized_question",
+    "missing_selection",
+    "unsupported_state",
+    "jurisdiction_conflict",
+    "two_jurisdictions",
+    "outside_central_pilot",
+    "ambiguous_followup",
+    "current_availability",
+    "personal_eligibility",
+    "remaining_funds",
+    "rejected_inputs_skip_embedding_and_generation",
+    "missing_key",
+    "invalid_model_configuration_is_redacted",
+    "empty_filtered_evidence",
+    "irrelevant_evidence_abstention_fixture",
+    "context_overflow_returns_no_partial_answer",
+    "invalid_source_id",
+    "malformed_model_output",
+    "truncated_completion",
+    "groq_http_401",
+    "groq_http_403",
+    "groq_http_429",
+    "groq_http_413",
+    "groq_http_500",
+    "groq_http_400",
+    "APIConnectionError",
+    "APITimeoutError",
+    "ollama_query_timeout",
+    "ollama_query_disconnect",
+    "ollama_query_model_missing",
+    "ollama_query_server_error",
+    "missing_runtime_evidence",
+    "unexpected_error",
+    "model_digest_change",
+    "warm_index_missing_records",
+    "warm_index_receipt_change",
+    "missing_index_does_not_build",
+    "corrupt_index_receipt",
+    "stale_index_receipt",
+    "startup_embedding_unavailable",
+    "startup_embedding_model_missing",
+    "missing_source_at_startup",
+    "corrupt_source_or_rules_at_startup",
+    "changed_runtime_source",
+    "recovery_has_fresh_answer_and_no_stale_diagnostic",
+    "six_corpus_files_unchanged_and_no_live_services_used"
+  ],
+  "cases": [
+    {
+      "case": "supported_fixture_before_failures",
+      "status": "document_answer",
+      "answer": "Central — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- The supplied amendment states ₹2,500 per kWh. [S1](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)\n\nSources:\n\n- [S1: Central — Enhancement of Scheme outlay and extension of timeline for e-2Ws, PDF page 3](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "empty_question",
+      "status": "clarification_required",
+      "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "non_string_question",
+      "status": "clarification_required",
+      "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "punctuation_only",
+      "status": "clarification_required",
+      "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "oversized_question",
+      "status": "clarification_required",
+      "answer": "Shorten the question to 2,000 characters or fewer and ask about one benefit at a time.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "missing_selection",
+      "status": "unsupported_jurisdiction",
+      "answer": "Choose Maharashtra, Tamil Nadu or Central; other jurisdictions are not indexed yet.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "unsupported_state",
+      "status": "unsupported_jurisdiction",
+      "answer": "Choose Maharashtra, Tamil Nadu or Central; other jurisdictions are not indexed yet.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "jurisdiction_conflict",
+      "status": "clarification_required",
+      "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "two_jurisdictions",
+      "status": "clarification_required",
+      "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "outside_central_pilot",
+      "status": "unsupported_scope",
+      "answer": "The Central pilot covers PM E-DRIVE two-/three-wheeler buyer incentives and eligibility. Ask about that scope.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "ambiguous_followup",
+      "status": "clarification_required",
+      "answer": "Specify the vehicle category and the benefit or policy provision you want explained.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "current_availability",
+      "status": "not_established",
+      "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "personal_eligibility",
+      "status": "not_established",
+      "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "remaining_funds",
+      "status": "not_established",
+      "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "missing_key",
+      "status": "configuration_error",
+      "answer": "Add GROQ_API_KEY to the local .env file, then retry. Do not put the key in the notebook.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "invalid_model_configuration_is_redacted",
+      "status": "configuration_error",
+      "answer": "Check GROQ_API_KEY and the configured Groq model, then retry.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "empty_filtered_evidence",
+      "status": "no_evidence",
+      "answer": "No indexed evidence was retrieved for the selected jurisdiction.",
+      "diagnostics": {
+        "phase": "retrieval",
+        "reason": "no_evidence"
+      },
+      "retryable": false
+    },
+    {
+      "case": "irrelevant_evidence_abstention_fixture",
+      "status": "not_established",
+      "answer": "Central — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\nThe available documents do not establish an answer to this question.",
+      "diagnostics": {},
+      "retryable": false
+    },
+    {
+      "case": "context_overflow_returns_no_partial_answer",
+      "status": "context_limit",
+      "answer": "Required evidence exceeds the context budget; narrow the question. No required page was silently dropped.",
+      "diagnostics": {
+        "phase": "retrieval",
+        "reason": "context_limit"
+      },
+      "retryable": false
+    },
+    {
+      "case": "invalid_source_id",
+      "status": "citation_error",
+      "answer": "The draft answer could not be validated against its sources. No policy answer is shown; retry or inspect the evidence.",
+      "diagnostics": {
+        "phase": "generation",
+        "reason": "citation_error"
+      },
+      "retryable": false
+    },
+    {
+      "case": "malformed_model_output",
+      "status": "citation_error",
+      "answer": "The draft answer could not be validated against its sources. No policy answer is shown; retry or inspect the evidence.",
+      "diagnostics": {
+        "phase": "generation",
+        "reason": "citation_error"
+      },
+      "retryable": false
+    },
+    {
+      "case": "truncated_completion",
+      "status": "citation_error",
+      "answer": "The draft answer could not be validated against its sources. No policy answer is shown; retry or inspect the evidence.",
+      "diagnostics": {
+        "phase": "generation",
+        "reason": "citation_error"
+      },
+      "retryable": false
+    },
+    {
+      "case": "groq_http_401",
+      "status": "authentication_error",
+      "answer": "Groq rejected the credentials or access. Check GROQ_API_KEY and model access in your Groq account, then retry.",
+      "diagnostics": {
+        "phase": "generation",
+        "error_type": "AuthenticationError",
+        "http_status": 401
+      },
+      "retryable": false
+    },
+    {
+      "case": "groq_http_403",
+      "status": "authentication_error",
+      "answer": "Groq rejected the credentials or access. Check GROQ_API_KEY and model access in your Groq account, then retry.",
+      "diagnostics": {
+        "phase": "generation",
+        "error_type": "PermissionDeniedError",
+        "http_status": 403
+      },
+      "retryable": false
+    },
+    {
+      "case": "groq_http_429",
+      "status": "rate_limited",
+      "answer": "Groq usage is currently limited. Wait for the account allowance to recover, then retry.",
+      "diagnostics": {
+        "phase": "generation",
+        "error_type": "RateLimitError",
+        "http_status": 429
+      },
+      "retryable": true
+    },
+    {
+      "case": "groq_http_413",
+      "status": "request_too_large",
+      "answer": "The request exceeds the Groq allowance. Try a shorter question or review the account/context limit. Required evidence was not truncated.",
+      "diagnostics": {
+        "phase": "generation",
+        "error_type": "APIStatusError",
+        "http_status": 413
+      },
+      "retryable": false
+    },
+    {
+      "case": "groq_http_500",
+      "status": "model_unavailable",
+      "answer": "The answer service is unavailable. Check the internet/Groq service and retry.",
+      "diagnostics": {
+        "phase": "generation",
+        "error_type": "InternalServerError",
+        "http_status": 500
+      },
+      "retryable": true
+    },
+    {
+      "case": "groq_http_400",
+      "status": "model_error",
+      "answer": "Groq rejected the request. Check the configured model and request settings before retrying.",
+      "diagnostics": {
+        "phase": "generation",
+        "error_type": "BadRequestError",
+        "http_status": 400
+      },
+      "retryable": false
+    },
+    {
+      "case": "APIConnectionError",
+      "status": "model_unavailable",
+      "answer": "The answer service is unavailable. Check the internet/Groq service and retry.",
+      "diagnostics": {
+        "phase": "generation",
+        "error_type": "APIConnectionError",
+        "http_status": null
+      },
+      "retryable": true
+    },
+    {
+      "case": "APITimeoutError",
+      "status": "model_timeout",
+      "answer": "Groq did not answer within the request timeout. Check the connection and retry.",
+      "diagnostics": {
+        "phase": "generation",
+        "error_type": "APITimeoutError",
+        "http_status": null
+      },
+      "retryable": true
+    },
+    {
+      "case": "ollama_query_timeout",
+      "status": "embedding_timeout",
+      "answer": "The local embedding request timed out. Check Ollama and retry.",
+      "diagnostics": {
+        "phase": "retrieval_or_answer",
+        "error_type": "ReadTimeout"
+      },
+      "retryable": true
+    },
+    {
+      "case": "ollama_query_disconnect",
+      "status": "embedding_unavailable",
+      "answer": "Start Ollama with ollama serve and check that nomic-embed-text is installed, then retry.",
+      "diagnostics": {
+        "phase": "retrieval_or_answer",
+        "error_type": "ConnectError"
+      },
+      "retryable": true
+    },
+    {
+      "case": "ollama_query_model_missing",
+      "status": "embedding_model_missing",
+      "answer": "Install the local embedding model with ollama pull nomic-embed-text, then retry.",
+      "diagnostics": {
+        "phase": "retrieval_or_answer",
+        "error_type": "ResponseError"
+      },
+      "retryable": false
+    },
+    {
+      "case": "ollama_query_server_error",
+      "status": "embedding_error",
+      "answer": "Ollama could not embed the question. Check the local model/service and retry.",
+      "diagnostics": {
+        "phase": "retrieval_or_answer",
+        "error_type": "ResponseError"
+      },
+      "retryable": true
+    },
+    {
+      "case": "missing_runtime_evidence",
+      "status": "data_error",
+      "answer": "Policy evidence changed or failed validation. Restore the source files or rerun ingestion and the index stage, then reset the assistant.",
+      "diagnostics": {
+        "phase": "retrieval_or_answer",
+        "error_type": "KeyError"
+      },
+      "retryable": false
+    },
+    {
+      "case": "unexpected_error",
+      "status": "internal_error",
+      "answer": "The assistant could not complete this request. Reset it and retry; inspect the separate diagnostic if the problem continues.",
+      "diagnostics": {
+        "phase": "retrieval_or_answer",
+        "error_type": "RuntimeError"
+      },
+      "retryable": false
+    },
+    {
+      "case": "model_digest_change",
+      "status": "index_error",
+      "answer": "The embedding model differs from the saved index. Explicitly rebuild Stage 5 with the intended model, then retry.",
+      "diagnostics": {
+        "phase": "retrieval_or_answer",
+        "error_type": "ValueError"
+      },
+      "retryable": false
+    },
+    {
+      "case": "warm_index_missing_records",
+      "status": "index_error",
+      "answer": "The saved index is missing, inaccessible or out of date. Check data/chroma and explicitly rebuild Stage 5 if needed, then retry. No automatic rebuild was attempted.",
+      "diagnostics": {
+        "phase": "index",
+        "error_type": "ValueError"
+      },
+      "retryable": false
+    },
+    {
+      "case": "warm_index_receipt_change",
+      "status": "index_error",
+      "answer": "The saved index is missing, inaccessible or out of date. Check data/chroma and explicitly rebuild Stage 5 if needed, then retry. No automatic rebuild was attempted.",
+      "diagnostics": {
+        "phase": "index",
+        "error_type": "ValueError"
+      },
+      "retryable": false
+    },
+    {
+      "case": "missing_index_does_not_build",
+      "status": "index_error",
+      "answer": "The saved index is missing, inaccessible or out of date. Check data/chroma and explicitly rebuild Stage 5 if needed, then retry. No automatic rebuild was attempted.",
+      "diagnostics": {
+        "phase": "index",
+        "error_type": "ValueError"
+      },
+      "retryable": false
+    },
+    {
+      "case": "corrupt_index_receipt",
+      "status": "index_error",
+      "answer": "The saved index is missing, inaccessible or out of date. Check data/chroma and explicitly rebuild Stage 5 if needed, then retry. No automatic rebuild was attempted.",
+      "diagnostics": {
+        "phase": "index",
+        "error_type": "ValueError",
+        "cause_type": "JSONDecodeError"
+      },
+      "retryable": false
+    },
+    {
+      "case": "stale_index_receipt",
+      "status": "index_error",
+      "answer": "The saved index is missing, inaccessible or out of date. Check data/chroma and explicitly rebuild Stage 5 if needed, then retry. No automatic rebuild was attempted.",
+      "diagnostics": {
+        "phase": "index",
+        "error_type": "ValueError"
+      },
+      "retryable": false
+    },
+    {
+      "case": "startup_embedding_unavailable",
+      "status": "embedding_unavailable",
+      "answer": "Start Ollama with ollama serve and check that nomic-embed-text is installed, then retry.",
+      "diagnostics": {
+        "phase": "embedding",
+        "error_type": "RuntimeError"
+      },
+      "retryable": true
+    },
+    {
+      "case": "startup_embedding_model_missing",
+      "status": "embedding_model_missing",
+      "answer": "Install the local embedding model with ollama pull nomic-embed-text, then retry.",
+      "diagnostics": {
+        "phase": "embedding",
+        "error_type": "ValueError"
+      },
+      "retryable": false
+    },
+    {
+      "case": "missing_source_at_startup",
+      "status": "data_error",
+      "answer": "Policy source files or checks are missing or inconsistent. Restore the committed files or rerun the affected ingestion stage, then reset the assistant.",
+      "diagnostics": {
+        "phase": "sources",
+        "error_type": "FileNotFoundError"
+      },
+      "retryable": false
+    },
+    {
+      "case": "corrupt_source_or_rules_at_startup",
+      "status": "data_error",
+      "answer": "Policy source files or checks are missing or inconsistent. Restore the committed files or rerun the affected ingestion stage, then reset the assistant.",
+      "diagnostics": {
+        "phase": "sources",
+        "error_type": "ValueError"
+      },
+      "retryable": false
+    },
+    {
+      "case": "changed_runtime_source",
+      "status": "data_error",
+      "answer": "Policy evidence changed or failed validation. Restore the source files or rerun ingestion and the index stage, then reset the assistant.",
+      "diagnostics": {
+        "phase": "retrieval_or_answer",
+        "error_type": "ValueError"
+      },
+      "retryable": false
+    },
+    {
+      "case": "recovery_has_fresh_answer_and_no_stale_diagnostic",
+      "status": "document_answer",
+      "answer": "Central — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- The supplied amendment states ₹2,500 per kWh. [S1](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)\n\nSources:\n\n- [S1: Central — Enhancement of Scheme outlay and extension of timeline for e-2Ws, PDF page 3](https://pmedrive.heavyindustries.gov.in/docs/policy_document/Gazette%20Notification%2010%2008%202026%20on%20enhancement%20of%20Outlay%2011900%20cr.pdf#page=3)",
+      "diagnostics": {},
+      "retryable": false
+    }
+  ],
+  "groq_calls": 0,
+  "ollama_calls": 0,
+  "note": "Failures are injected with SDK exception types and isolated index files; supported model replies are fixtures."
+}

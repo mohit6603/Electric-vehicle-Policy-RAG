@@ -2,7 +2,7 @@
 
 An EV policy assistant planned for the Generative AI mini-project at Jio Institute. It will answer questions from official policy documents, with jurisdiction filtering and document/page citations.
 
-**Status:** Technical Stage 7 is complete. It adds Groq answers for Maharashtra, Tamil Nadu or Central, with source IDs resolved to original evidence and PDF-page citations. The existing 231-chunk index and dated retrieval rules are reused. Manual acceptance and current-entitlement checks remain deferred. See [Stage 7 run instructions](STAGE_7_HANDOFF.md) and [progress](PROGRESS.md).
+**Status:** Technical Stage 8 is complete. The guarded entry point handles clarification, abstention and source/index/service failures while preserving cited answers for Maharashtra, Tamil Nadu or Central. It reuses the existing 231-chunk index without rebuilding at startup. Manual acceptance and current-entitlement checks remain deferred. See [Stage 8 run instructions](STAGE_8_HANDOFF.md) and [progress](PROGRESS.md). Next is Stage 9, the Gradio pilot.
 
 ## Project documents
 
@@ -56,12 +56,18 @@ Expected output: **eight passed notebook checks**. The [Stage 6 handoff](STAGE_6
 
 ## Run Stage 7
 
-Run Stage 5's imports/functions/inputs/open cells, Stage 6's inputs/routing/context cells, then all **Stage 7: supported answers with citations** cells. Ollama and the local Groq key are required. Leave `rebuild_index = False`. Change `answer_selection` and `answer_question_text` to try a supported jurisdiction. The default Central example saves seven notebook checks.
+Run Stage 5's imports/functions/inputs/open cells, Stage 6's inputs/load/routing/context cells, then all **Stage 7: supported answers with citations** cells. Ollama and the local Groq key are required. Leave `rebuild_index = False`. Change `answer_selection` and `answer_question_text` to try a supported jurisdiction. The default Central example saves seven notebook checks.
 
-The [Stage 7 handoff](STAGE_7_HANDOFF.md) explains the result fields and citation limits. `uv run --locked python checks/stage7_answer_checks.py` runs citation checks without Groq; adding `--live` makes six paced API calls and saves actual observations. The prompt and pilot cases are AI-assisted development work, pending team review. Tamil Nadu e-cycle drafts mentioning registration/FAME are conservatively withheld pending source review. Stage 8 will extend abstention and failure handling.
+The [Stage 7 handoff](STAGE_7_HANDOFF.md) explains the result fields and citation limits. `uv run --locked python checks/stage7_answer_checks.py` runs citation checks without Groq; adding `--live` makes six paced API calls and saves actual observations. The prompt and pilot cases are AI-assisted development work, pending team review. Tamil Nadu e-cycle drafts mentioning registration/FAME are conservatively withheld pending source review. Stage 8 adds the guarded entry point below.
+
+## Run Stage 8
+
+Use the guarded path in [Stage 8 run instructions](STAGE_8_HANDOFF.md): load the Stage 5/6/7 definition cells, then run Stage 8. Call `ask_policy(selection, question)` for a consistent answer/clarification/error result. `start_policy_assistant()` opens the saved index without rebuilding; reset after replacing sources. The example exercises negative inputs and one actual Central answer.
+
+`uv run --locked python checks/stage8_failure_checks.py` runs 50 offline checks with no model services. Adding `--live` runs the local failure/recovery check and six paced Groq cases. Missing data/index/key, local-service failures and Groq failures receive actionable messages with separate diagnostics. Source acceptance and current entitlement remain unverified.
 
 ## Reference and assistance
 
 Implementation will adapt applicable examples from the [course repository](https://github.com/aagarwal4/generative-ai-pgp-ji-2026/tree/33c2faa22450cde16ead9071f7ce7ecc78ca592a). The reuse map records the relevant notebooks and cells.
 
-AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, official-source research, provenance records, OCR preparation and proposed text corrections. The user subsequently authorized AI implementation of technical Stages 2–7: the shared page loader, source-specific extraction, metadata relationships, splitting, exports, persistent semantic index, jurisdiction-aware retrieval, source-version rules, an EV prompt draft, structured answer generation, citation resolution and technical checks. This supersedes the earlier helper-only instruction for those stages; it does not change the assignment's AI-use rule. The team must disclose the actual assistance in the presentation appendix. Manual source verification and independently authored evaluation cases remain the team's work; the live pilot observations do not replace the independent formal evaluation.
+AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, official-source research, provenance records, OCR preparation and proposed text corrections. The user subsequently authorized AI implementation of technical Stages 2–8: the shared page loader, source-specific extraction, metadata relationships, splitting, exports, persistent semantic index, jurisdiction-aware retrieval, source-version rules, an EV prompt draft, structured answer generation, citation resolution, guarded startup, abstention/failure behavior and technical checks. This supersedes the earlier helper-only instruction for those stages; it does not change the assignment's AI-use rule. The team must disclose the actual assistance in the presentation appendix. Manual source verification and independently authored evaluation cases remain the team's work; the live pilot observations do not replace the independent formal evaluation.

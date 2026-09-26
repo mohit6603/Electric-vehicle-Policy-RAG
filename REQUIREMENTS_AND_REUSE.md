@@ -2,7 +2,7 @@
 
 Reviewed on 22 September 2026. This is a planning and code-review aid, not an implemented assignment or a submission-ready package.
 
-The attached assignment instructions are the assignment specification. The EV idea PDF adds the team's proposed scope. The user confirmed that the instructor approved the four-member group and initially chose helper-only assistance. On 24 September 2026 the user explicitly authorized AI implementation of technical Stage 2. The user then requested completion of Stage 3 for Tamil Nadu. Setup, both pilot-state ingestion paths, the Central PM E-DRIVE buyer-incentive pilot and Stages 5–7 persistent search, jurisdiction-aware retrieval and cited answer generation are now implemented at the user's request; actual checks and assistance are recorded in `PROGRESS.md`. This authorization does not amend the assignment's AI-use rule.
+The attached assignment instructions are the assignment specification. The EV idea PDF adds the team's proposed scope. The user confirmed that the instructor approved the four-member group and initially chose helper-only assistance. On 24 September 2026 the user explicitly authorized AI implementation of technical Stage 2. The user then requested completion of Stage 3 for Tamil Nadu. Setup, both pilot-state ingestion paths, the Central PM E-DRIVE buyer-incentive pilot and Stages 5–8 persistent search, jurisdiction-aware retrieval, cited answer generation and guarded failure behavior are now implemented at the user's request; actual checks and assistance are recorded in `PROGRESS.md`. This authorization does not amend the assignment's AI-use rule.
 
 ## Sources and decisions
 
@@ -23,13 +23,13 @@ The attached assignment instructions are the assignment specification. The EV id
 | A3 | Agents are optional | LangGraph only if the team implements the optional comparison path | Optional |
 | A4 | Idea PDF: member names and IDs, problem and why worthwhile, proposed approach, tech stack | Existing idea PDF | All four content categories present |
 | A5 | Idea due 22 September 2026, EOD; every member uploads a PDF on Digiicampus | Individual upload confirmations | Uploads not verified |
-| A6 | Final code: GitHub link of the project repository | The team's own runnable project repository and its URL | Repository created at https://github.com/mohit6603/Electric-vehicle-Policy-RAG; environment setup and technical Stages 2–7 present, later application stages pending |
+| A6 | Final code: GitHub link of the project repository | The team's own runnable project repository and its URL | Repository created at https://github.com/mohit6603/Electric-vehicle-Policy-RAG; environment setup and technical Stages 2–8 present, later application stages pending |
 | A7 | Exactly 3 presentation slides | Slide 1: business impact. Slide 2: technical stack and GenAI architecture flow. Slide 3: appendix including AI disclosure | Not authored |
 | A8 | Every member submits final ZIP on Digiicampus | ZIP containing the repository link and the 3-slide presentation; individual upload confirmations | Not prepared/submitted |
 | A9 | Final submission date/time to be announced | Check the announced course deadline | TBD in the PDF |
 | A10 | 8-minute team presentation and live demo, approximately 3–4 minutes of Q&A | Rehearsed running application and explanation | Not performed; date/time TBD |
 | A11 | Mainly classroom stack and syntax; explain additional syntax | Reuse map below and implementation notes | Reference code inspected |
-| A12 | AI only as code helper; brief disclosure in appendix | Student implementation, record of actual AI assistance | User authorized AI implementation of technical Stages 2–7; actual use recorded, final disclosure pending; assignment rule unchanged |
+| A12 | AI only as code helper; brief disclosure in appendix | Student implementation, record of actual AI assistance | User authorized AI implementation of technical Stages 2–8; actual use recorded, final disclosure pending; assignment rule unchanged |
 | A13 | Main grading is the demo: technical 80%, presentation including narrative 20% | Working demo, defensible design choices, clear deck | No grades or performance claims made |
 | A14 | Any member's late submission or editing GitHub after the deadline can penalize the whole group, including a possible zero | All-member upload check; preserve submitted GitHub revision after deadline | Team action at submission |
 
@@ -132,3 +132,14 @@ Both PDFs were read and their rendered pages inspected. The reference repo's sou
 | P9/P10 pilot checks | `stage7-example`, `stage7-checks`, `checks/stage7_answer_checks.py` | New AI-authored technical cases, not P12's independent team evaluation |
 
 The EV prompt is an AI-assisted draft pending team review, following the user's request to finish Stage 7. Exact evidence comes from code rather than generated quotation text. Pydantic `ConfigDict(extra='forbid')`, JSON-object response mode and Groq's `include_reasoning=False` are small additions to explain in the demo. Source-ID validation proves provenance only; factual support must still be checked against the original evidence.
+
+## Stage 8 implementation mapping
+
+| Requirement | Existing implementation reused | Stage 8 addition / check |
+|---|---|---|
+| P6 saved index without startup rebuild | Stage 5 `open_policy_index`, `check_index_contents` | `start_policy_assistant`, warm receipt/content checks; missing/corrupt/stale index and recovery cases |
+| P7 jurisdiction/ambiguity handling | Stage 6 `route_policy_question`, `retrieve_policy` | Input guards precede model calls; source setup moved into `load_retrieval_inputs` with a separate execution cell |
+| P9 abstention/failure behavior | Stage 7 `answer_question`; E2 local error/parser handling | `ask_policy`, consistent result fields, SDK error classification, no raw error text in answers; actual unsupported questions tested separately |
+| P10 citations remain valid | Stage 7 source-ID checks and renderer | Failed/rejected requests return no previous points/sources; supported cases retain citations |
+
+No new UI is added. Local exception types, global notebook readiness state and the reset function are small additions to explain in the demo. The compacted prompt and failure cases are AI-assisted development work; formal team evaluation remains pending.
