@@ -154,3 +154,17 @@ No new UI is added. Local exception types, global notebook readiness state and t
 | P10 traceable citations | Stage 7 renderer and validated `sources` | Preserve inline links and show the cited document/page links separately |
 
 The local notebook launch keeps Exercise 2's structure. The queue serializes requests because the notebook backend shares readiness state. Source review, later coverage and formal evaluation remain separate stages.
+
+## Stage 10 Uttar Pradesh mapping
+
+| Requirement | Reused files/functions | Uttar Pradesh extension |
+|---|---|---|
+| Official evidence, metadata, physical-page citations | `shared-loader`, `load_policy_pages`, existing manifest/review schema | Six original PDFs; ten labelled AI English readings; 39 candidate pages with original URLs/hashes |
+| Classroom recursive chunking | Stage 3 input/split/export pattern, `RecursiveCharacterTextSplitter` | Four `stage10-up-*` cells; 1000/200 split and 117 stable chunks |
+| Persistent semantic search | Stage 5 `load_index_chunks`, `rebuild_policy_index`, `open_policy_index` | Shared `ingestion_stages` list; explicit 348-record rebuild; reopen without corpus embeddings |
+| Jurisdiction filter and applicable amendments | Stage 6 routing, `page_links`, `assemble_policy_context` | UP alias enabled by loaded data; required update pages and hash-checked exclusions of superseded/masked content |
+| Supported answer and traceable sources | Stage 7 prompt/parser/citation renderer, Stage 8 guards | Same generation path; derivative-text provenance retained in source output |
+| Functional UI | Exercise 2-derived Stage 9 dropdown/callback/interface | Fourth loaded choice, UP example, translation labels; live HTTP checks |
+| Source acceptance and evaluation | Existing deferred review workflow | Review/current-status gaps documented; two team-written UP cases still required |
+
+AI assistance: source research, visual page comparison and selected English readings, implementation, development questions, actual local/Groq checks, documentation and Git publication. These checks do not replace independent team review or the formal 24-case evaluation. No new library or separate application structure was added.

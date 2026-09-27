@@ -1,0 +1,19 @@
+AI English reading of the Hindi two-column checklist; pending team verification. Preserve mandatory versus indicative column labels.
+Checklist of documents for vehicle purchase subsidy.
+Mandatory documents for qualification (left column):
+- EV registration certificate (RC).
+- GST registration.
+- Evidence of bus/coach rental services with operator (contract, permit, declaration etc.).
+- Evidence of tour-operator services (contract, permit, declaration etc.).
+- Evidence of scheduled local bus/coach charter services (contract, permit, declaration etc.).
+- Evidence of other travel arrangements/related services not elsewhere classified (contract, permit, declaration etc.).
+- Company/firm incorporation certificate.
+- Proof of commercial use, such as lease agreement, business registration or operation certificate.
+Indicative eligibility-document checklist (right column):
+- Incorporation/registration certificate.
+- Business registration certificate (Udyam/MSME).
+- GST registration, if applicable.
+- Vehicle registration certificate (RC).
+- FAME-II compliance certificate, if applicable.
+- Proof of business use (contract, permit, declaration etc.).
+- PAN and Aadhaar for persons/proprietors.

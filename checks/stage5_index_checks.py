@@ -78,8 +78,8 @@ def run_checks():
         restart_output = folder / 'restart.json'
         subprocess.run([sys.executable, __file__, '--restart', str(restart_output)], check=True)
         restart = json.loads(restart_output.read_text())
-        assert restart['chunk_count'] == len(documents) == 231
-        passed += ['fresh_process_reopens_all_231_without_embeddings', 'query_embeds_only_question']
+        assert restart['chunk_count'] == len(documents)
+        passed += ['fresh_process_reopens_all_records_without_embeddings', 'query_embeds_only_question']
 
         # Real policy chunks in an isolated store; production data is read-only here.
         sample = [doc for state in ('Maharashtra', 'Tamil Nadu', 'Central')

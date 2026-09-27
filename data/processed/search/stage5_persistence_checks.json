@@ -1,8 +1,8 @@
 {
-  "checked_at_utc": "2026-09-25T16:57:59.654466+00:00",
+  "checked_at_utc": "2026-09-27T11:12:55.986846+00:00",
   "technical_status": "passed",
   "checks_passed": [
-    "fresh_process_reopens_all_231_without_embeddings",
+    "fresh_process_reopens_all_records_without_embeddings",
     "query_embeds_only_question",
     "missing_index_rejected_without_creation",
     "repeat_full_rebuild_has_no_duplicates",
@@ -20,7 +20,7 @@
     "missing_collection_not_silently_created"
   ],
   "restart": {
-    "chunk_count": 231,
+    "chunk_count": 348,
     "embedding_calls_before_query": {
       "documents": 0,
       "queries": 0
@@ -35,8 +35,8 @@
   },
   "isolated_rebuild_sample_chunks": 6,
   "test_store_document_embeddings": 56,
-  "corpus_sha256": "f2be4ed1240fbc74de1de7ad5dae8f26e5ee61f80c743ad00aa53ccf413013ba",
-  "notebook_sha256": "e3ff990f675d8af228a8b42c17a30103b918af1d8ac20c03180c6766acf716bf",
-  "check_script_sha256": "de0a42c4c210200c2fb16b2c7663d94e4b1f338119cfdbd03b3d0e568067dc70",
+  "corpus_sha256": "35f798a9b8442d13f5f363dcac59124bff380eda4b68736b04ad9847a3562312",
+  "notebook_sha256": "fa63ccb2a976da06b240662a1874ede276b934a43562b4d52c6d95df52ceb8f1",
+  "check_script_sha256": "cfe17cb6f851a2d44309c576bbe864c4643bed783657ac1076faf123e0f951ba",
   "scope": "persistence/integrity checks; no policy-answer evaluation or human source review"
 }

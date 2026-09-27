@@ -1,0 +1,56 @@
+{
+  "technical_status": "passed",
+  "checked_at_utc": "2026-09-27T11:17:58.075141+00:00",
+  "notebook_sha256": "fa63ccb2a976da06b240662a1874ede276b934a43562b4d52c6d95df52ceb8f1",
+  "checks": {
+    "stage10_checks.json": {
+      "sha256": "b7f3942c31071c59a074ea84c6db8c676c9cb0f04e2201bca9f51bef72dd6d5b",
+      "checks_passed": 13
+    },
+    "stage10_integration_checks.json": {
+      "sha256": "03a07ad9b0949656aeb19365cafd08424b430fcdb526b0e7419938a6826e5405",
+      "checks_passed": 10
+    },
+    "stage10_notebook_checks.json": {
+      "sha256": "8291452e1d3728f2909856c9210c3777051aca6437b2a1dec895ea5679ac7187",
+      "checks_passed": 6
+    },
+    "stage10_live_cancelled_3w.json": {
+      "sha256": "9f8f6be3f64b03fb6c77b95ca0bf03d7f6c2da6e66751a91f8bf662702678190",
+      "checks_passed": 12
+    },
+    "data/processed/search/stage5_persistence_checks.json": {
+      "sha256": "56f586d0c921d9caff3df9ab24e5e1b4cfff937172bd7600834659aefeffe311",
+      "checks_passed": 16
+    },
+    "data/processed/search/stage6_retrieval_checks.json": {
+      "sha256": "8661c77b98099e5c0ea7039f841011f3b44db2645c88a8dd115ba2f9b9fb06af",
+      "checks_passed": 19
+    },
+    "data/processed/answers/stage7_citation_checks.json": {
+      "sha256": "f7278f84ea6df51b1c75c270d2183e341faf3f58c3325112e855ac7377fd32f7",
+      "checks_passed": 13
+    },
+    "data/processed/answers/stage8_failure_checks.json": {
+      "sha256": "9c4285203baacc15276d970e936dc89de33d00c2a821cacbccf1d4fe7532eae0",
+      "checks_passed": 50
+    },
+    "data/processed/ui/stage9_ui_checks.json": {
+      "sha256": "9802006bc8f2204dbd92816ace937444fb565bd735b6b6c653f620915df69498",
+      "checks_passed": 15
+    }
+  },
+  "live_cases_passed_across_recorded_attempts": [
+    "purchase",
+    "pure_ev_tax_fee",
+    "cancelled_3w"
+  ],
+  "earlier_six_corpus_files_byte_identical_to_stage9": true,
+  "scope": "UP technical batch only; source/current-entitlement acceptance and two independent team questions pending",
+  "live_reports": {
+    "stage10_initial_ui_check.json": "0debd26c29a204b9e04bee14eb64bf6719f0d31dde276845b59d1cf6ad0a24fb",
+    "stage10_live_checks.json": "c794cc7645b9b92ff567e4ad61ed408a9df4cbea9f2a6392e52cf6dafb26c1ed",
+    "stage10_live_cancelled_3w.json": "9f8f6be3f64b03fb6c77b95ca0bf03d7f6c2da6e66751a91f8bf662702678190"
+  },
+  "note": "Initial translation-label failure and later rate limit retained. All three live cases passed across attempts, not one uninterrupted run. Earlier regression reports identify their actual tested revisions."
+}

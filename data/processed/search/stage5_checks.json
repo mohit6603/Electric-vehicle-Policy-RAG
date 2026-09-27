@@ -1,10 +1,10 @@
 {
-  "checked_at_utc": "2026-09-25T16:57:58.846774+00:00",
+  "checked_at_utc": "2026-09-27T11:14:19.366920+00:00",
   "technical_status": "passed",
   "index_spec": {
     "collection": "ev_policy_draft",
-    "corpus_sha256": "f2be4ed1240fbc74de1de7ad5dae8f26e5ee61f80c743ad00aa53ccf413013ba",
-    "chunk_count": 231,
+    "corpus_sha256": "35f798a9b8442d13f5f363dcac59124bff380eda4b68736b04ad9847a3562312",
+    "chunk_count": 348,
     "embedding": {
       "model": "nomic-embed-text:latest",
       "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
@@ -15,7 +15,8 @@
     "chunks_by_state": {
       "Maharashtra": 53,
       "Tamil Nadu": 78,
-      "Central": 100
+      "Central": 100,
+      "Uttar Pradesh": 117
     }
   },
   "embedding_dimensions": 768,
@@ -24,14 +25,15 @@
   "chunk_file_sha256": {
     "data/processed/maharashtra/chunks.jsonl": "e21b464fee56a0d98006577a308b5edb5c4374428d097838139496741595a9e9",
     "data/processed/tamil_nadu/chunks.jsonl": "8d1708d8766411a2c5e19e600cd5933dd2abd09a8a2b9a5b44fa8ffcbd930a63",
-    "data/processed/central/chunks.jsonl": "d7fb95e1c89dd21079257b1e0f1086c389488d6488ad121f6c22cbc00fc49374"
+    "data/processed/central/chunks.jsonl": "d7fb95e1c89dd21079257b1e0f1086c389488d6488ad121f6c22cbc00fc49374",
+    "data/processed/uttar_pradesh/chunks.jsonl": "e33f0290b57a2f3287e58495d3875c8ecefe7804b7d7df258c45a122e9fe6953"
   },
   "checks_passed": [
-    "all_231_draft_chunks_indexed",
+    "all_draft_chunks_indexed",
     "unique_stable_ids_no_extra_records",
     "saved_text_and_all_metadata_match",
     "finite_nonzero_consistent_embeddings",
-    "three_jurisdiction_counts",
+    "loaded_jurisdiction_counts",
     "review_and_entitlement_flags_preserved",
     "semantic_query_returns_original_evidence",
     "central_evoucher_smoke_hit"
@@ -42,5 +44,5 @@
     "central_pm_edrive_guidelines_2024-09-30:p14:c800:7c105d2e1d8b",
     "central_pm_edrive_guidelines_2024-09-30:p15:c820:23b5c518c221"
   ],
-  "notebook_sha256": "e3ff990f675d8af228a8b42c17a30103b918af1d8ac20c03180c6766acf716bf"
+  "notebook_sha256": "fa63ccb2a976da06b240662a1874ede276b934a43562b4d52c6d95df52ceb8f1"
 }

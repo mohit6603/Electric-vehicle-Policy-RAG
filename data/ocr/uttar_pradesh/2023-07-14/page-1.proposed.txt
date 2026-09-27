@@ -1,0 +1,12 @@
+AI English reading of the Hindi page; pending team verification. Administrative salutation/footer omitted.
+Uttar Pradesh Government, Transport Section 3, order 92/2023/2014/30-3-2023, 14 July 2023.
+Implementation of purchase subsidy under the Uttar Pradesh Electric Vehicle Manufacturing and Mobility Policy 2022.
+1. The purchase subsidy scheme is effective from 14-10-2022 to 13-10-2023. [Historical period; read the later amendment.]
+2. Eligible applicants must apply on upevsubsidy.in.
+3. Eligible applicants have purchased and registered an electric vehicle in Uttar Pradesh after the policy notification.
+4. Distribution under paragraph 4.3(2):
+(i) Two-wheeler electric vehicles: 15% of ex-factory cost, limited to Rs 5,000 per vehicle; maximum outlay Rs 100 crore, maximum 2 lakh vehicles.
+(ii) Four-wheeler electric vehicles: 15% of ex-factory cost, limited to Rs 1 lakh per vehicle; maximum outlay Rs 250 crore, maximum 25,000 vehicles.
+(iii) Non-government e-buses: 15% of ex-factory cost, limited to Rs 20 lakh per vehicle; maximum outlay Rs 80 crore, maximum 400 e-buses.
+(iv) E-goods carriers: 10% of ex-factory cost, limited to Rs 1,00,000 per vehicle; maximum outlay Rs 10 crore, maximum 1,000 e-goods carriers.
+Note: Individual buyers may receive purchase subsidy on only one two-wheeler or four-wheeler or e-bus or e-goods carrier.

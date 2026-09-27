@@ -54,7 +54,7 @@ def run_checks():
         ui_choices=list(stage['retrieval_choices']))
     run_cell(stage, 'stage9-interface')
     demo = stage['demo']
-    assert stage['ui_choices'] == ['Central', 'Maharashtra', 'Tamil Nadu']
+    assert stage['ui_choices'] == sorted({doc.metadata['state'] for doc in stage['index_documents']})
     assert len(demo.input_components) == len(demo.output_components) == 2
     assert demo.input_components[0].allow_custom_value is False
     assert all(component.sanitize_html for component in demo.output_components)
@@ -106,7 +106,7 @@ def run_checks():
 def serve(missing_key=False):
     stage = load_stage8()
     corpus_hashes = {str(path): stage['index_file_hash'](path)
-        for state in ('maharashtra', 'tamil_nadu', 'central')
+        for state, _ in stage['ingestion_stages']
         for path in Path('data/processed', state).glob('*.jsonl')}
     embedding_calls = {'corpus': 0, 'query': 0}
     base_embedding = stage['OllamaEmbeddings']
@@ -128,8 +128,8 @@ def serve(missing_key=False):
     run_cell(stage, 'stage9-startup')
     assert stage['stage9_startup']['status'] == 'ready', stage['stage9_startup']
     assert embedding_calls == {'corpus': 0, 'query': 0}
-    assert stage['vector_store_chroma']._collection.count() == 231
-    startup = {'status': 'ready', 'records': 231, 'corpus_embeddings': 0, 'query_embeddings': 0,
+    assert stage['vector_store_chroma']._collection.count() == len(stage['index_documents'])
+    startup = {'status': 'ready', 'records': len(stage['index_documents']), 'corpus_embeddings': 0, 'query_embeddings': 0,
                'groq_calls': 0, 'corpus_sha256': stage['index_spec']['corpus_sha256']}
     observations = []
     if missing_key:

@@ -1,0 +1,305 @@
+{
+  "checked_at_utc": "2026-09-27T11:15:09.854047+00:00",
+  "notebook_sha256": "fa63ccb2a976da06b240662a1874ede276b934a43562b4d52c6d95df52ceb8f1",
+  "check_script_sha256": "3aab66918819a7a2dbc8d37733ca9f361ca06047517fd094cf2d806b5d898bc5",
+  "source_manifest_sha256": "dd66a2b9e5919e7cfdde60491d8061ebd16d7867903e7af3d884864299585c2e",
+  "retrieval_rules_sha256": "1a71ea0de1b2a18469ea2c98b73643c07c1f0b22fa462c214204c443ad6f7fd3",
+  "index_spec": {
+    "collection": "ev_policy_draft",
+    "corpus_sha256": "35f798a9b8442d13f5f363dcac59124bff380eda4b68736b04ad9847a3562312",
+    "chunk_count": 348,
+    "embedding": {
+      "model": "nomic-embed-text:latest",
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "num_ctx": 2048,
+      "langchain_ollama": "0.3.7"
+    },
+    "distance": "cosine",
+    "chunks_by_state": {
+      "Maharashtra": 53,
+      "Tamil Nadu": 78,
+      "Central": 100,
+      "Uttar Pradesh": 117
+    }
+  },
+  "technical_status": "passed",
+  "scope": "AI development checks; not team source review or formal evaluation",
+  "checks_passed": [
+    "reopen_348_records_without_embedding_or_rebuild",
+    "four_jurisdiction_counts",
+    "up_alias_and_lowercase_word_distinguished",
+    "five_filtered_semantic_queries",
+    "mandatory_amendments_and_conditions",
+    "superseded_hidden_3w_and_manufacture_clause_absent",
+    "context_within_limit",
+    "all_39_up_pages_assemble_with_version_rules",
+    "five_rejections_skip_models_and_clear_sources",
+    "gradio_lists_four_loaded_jurisdictions",
+    "live_gradio_cancelled_3w",
+    "gradio_rejection_clears_previous_citations"
+  ],
+  "embedding_calls": {
+    "corpus": 0,
+    "query": 6
+  },
+  "observations": [
+    {
+      "question": "What two-wheeler purchase subsidy and funding limit does the July 2024 amendment state?",
+      "page_ids": [
+        "uttar_pradesh_purchase_amendment_2024-07-15:p1",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p2",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p3",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p4",
+        "uttar_pradesh_purchase_scheme_2023-07-14:p2",
+        "uttar_pradesh_registration_fee_2025-11-05:p3",
+        "uttar_pradesh_road_tax_2025-11-05:p3",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p6",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p7",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p8",
+        "uttar_pradesh_policy_2022:p19",
+        "uttar_pradesh_policy_2022:p17",
+        "uttar_pradesh_policy_2022:p18",
+        "uttar_pradesh_policy_2022:p29"
+      ],
+      "context_chars": 19286,
+      "status": "retrieved"
+    },
+    {
+      "question": "What does the amendment say about three-wheeler purchase subsidy?",
+      "page_ids": [
+        "uttar_pradesh_purchase_amendment_2024-07-15:p1",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p2",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p3",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p4",
+        "uttar_pradesh_purchase_scheme_2023-07-14:p2",
+        "uttar_pradesh_registration_fee_2025-11-05:p3",
+        "uttar_pradesh_road_tax_2025-11-05:p3",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p6",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p7",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p8",
+        "uttar_pradesh_policy_2022:p19",
+        "uttar_pradesh_policy_2022:p17",
+        "uttar_pradesh_policy_2022:p18",
+        "uttar_pradesh_policy_2022:p29"
+      ],
+      "context_chars": 19286,
+      "status": "retrieved"
+    },
+    {
+      "question": "What road tax and registration fee exemptions do the November 2025 notifications specify?",
+      "page_ids": [
+        "uttar_pradesh_purchase_amendment_2024-07-15:p1",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p2",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p3",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p4",
+        "uttar_pradesh_purchase_scheme_2023-07-14:p2",
+        "uttar_pradesh_registration_fee_2025-11-05:p3",
+        "uttar_pradesh_road_tax_2025-11-05:p3",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p6",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p7",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p8",
+        "uttar_pradesh_policy_2022:p19",
+        "uttar_pradesh_policy_2022:p17",
+        "uttar_pradesh_policy_2022:p18",
+        "uttar_pradesh_policy_2022:p29"
+      ],
+      "context_chars": 19286,
+      "status": "retrieved"
+    },
+    {
+      "question": "Which fleet ownership minimum and subsidy maximum are stated?",
+      "page_ids": [
+        "uttar_pradesh_purchase_amendment_2024-07-15:p1",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p2",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p3",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p4",
+        "uttar_pradesh_purchase_scheme_2023-07-14:p2",
+        "uttar_pradesh_registration_fee_2025-11-05:p3",
+        "uttar_pradesh_road_tax_2025-11-05:p3",
+        "uttar_pradesh_policy_2022:p18",
+        "uttar_pradesh_policy_2022:p17",
+        "uttar_pradesh_policy_2022:p19",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p6",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p7",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p8",
+        "uttar_pradesh_policy_2022:p29"
+      ],
+      "context_chars": 19286,
+      "status": "retrieved"
+    },
+    {
+      "question": "What capital subsidy does the original policy specify for charging and swapping stations?",
+      "page_ids": [
+        "uttar_pradesh_purchase_amendment_2024-07-15:p1",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p2",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p3",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p4",
+        "uttar_pradesh_purchase_scheme_2023-07-14:p2",
+        "uttar_pradesh_registration_fee_2025-11-05:p3",
+        "uttar_pradesh_road_tax_2025-11-05:p3",
+        "uttar_pradesh_policy_2022:p15",
+        "uttar_pradesh_policy_2022:p14",
+        "uttar_pradesh_policy_2022:p16",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p6",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p7",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p8",
+        "uttar_pradesh_policy_2022:p19",
+        "uttar_pradesh_policy_2022:p29",
+        "uttar_pradesh_policy_2022:p17",
+        "uttar_pradesh_policy_2022:p18"
+      ],
+      "context_chars": 27453,
+      "status": "retrieved"
+    },
+    {
+      "selection": "UP",
+      "question": "Tamil Nadu purchase subsidy?",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Uttar Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "UP",
+      "question": "Compare UP and Maharashtra incentives",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Uttar Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Delhi",
+      "question": "Electric car subsidy?",
+      "result": {
+        "status": "unsupported_jurisdiction",
+        "answer": "Choose Central, Maharashtra, Tamil Nadu, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "UP",
+      "question": "",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "UP",
+      "question": "Can I claim an EV subsidy today?",
+      "result": {
+        "status": "not_established",
+        "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Uttar Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "current_entitlement_unverified",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "case": "cancelled_3w",
+      "question": "What does the July 2024 amendment say about the three-wheeler purchase-subsidy provision?",
+      "result": {
+        "status": "document_answer",
+        "answer": "Uttar Pradesh — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- The July 2024 amendment cancels the three‑wheeler electric‑vehicle purchase‑subsidy provision (marked “cancelled / निरस्त”). [S2](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=2)\n\nSources:\n\n- [S2: Uttar Pradesh — Amendment to purchase subsidy: notification 29/2024/342, PDF page 2](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=2) — AI English reading of selected Hindi provisions; not an official translation",
+        "sources": [
+          {
+            "source_id": "S2",
+            "state": "Uttar Pradesh",
+            "document_title": "Amendment to purchase subsidy: notification 29/2024/342",
+            "document_date": "2024-07-15",
+            "pdf_page": 2,
+            "source": "data/policies/uttar_pradesh/up_policy_amendment_2024.pdf",
+            "official_url": "https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=2",
+            "evidence_id": "uttar_pradesh_purchase_amendment_2024-07-15:p2:x0-873",
+            "excerpt_start": 0,
+            "excerpt_end": 873,
+            "excerpt_sha256": "9c751721c1dcd04c6bf9e260be6f422b51f61489976924613393dc02c3ff9764",
+            "context_role": "revised_purchase_provision_ai_translation",
+            "version_note": "AI English reading of revised column only; old column excluded. All retained conditions apply.",
+            "text_derivation": "AI English reading of selected Hindi provisions; not an official translation"
+          }
+        ],
+        "points": [
+          {
+            "text": "The July 2024 amendment cancels the three‑wheeler electric‑vehicle purchase‑subsidy provision (marked “cancelled / निरस्त”).",
+            "citations": [
+              {
+                "source_id": "S2",
+                "source_excerpt": "AI English reading of the Hindi revised-provision column; pending team verification. The old-provision column is deliberately not reproduced.\nContinuation of the 15 July 2024 amendment, paragraph 4.3(2).\n2. Three-wheeler electric vehicle purchase-subsidy provision: cancelled (निरस्त).\n3. Four-wheeler electric vehicles: 15% of ex-factory cost, subject to Rs 1 lakh per vehicle, maximum outlay Rs 250 crore and maximum 25,000 electric vehicles.\n4. Non-government e-buses: 15% of ex-factory cost, subject to Rs 20 lakh per vehicle, maximum outlay Rs 80 crore and maximum 400 e-buses.\n5. E-goods carriers: 10% of ex-factory cost, subject to Rs 1,00,000 per vehicle, maximum outlay Rs 10 crore and maximum 1,000 e-goods carriers.\nNote: Individual buyers may receive the above purchase subsidy only on one two-wheeler or four-wheeler [sentence continues on the next PDF page].\n"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Uttar Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 336,
+          "prompt_tokens": 5617,
+          "total_tokens": 5953,
+          "completion_time": 0.700515078,
+          "prompt_time": 0.276093964,
+          "queue_time": 0.395859612,
+          "total_time": 0.976609042,
+          "completion_tokens_details": {
+            "reasoning_tokens": 276
+          }
+        },
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      },
+      "ui_outputs": [
+        "### Answer\n\nUttar Pradesh — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- The July 2024 amendment cancels the three‑wheeler electric‑vehicle purchase‑subsidy provision (marked “cancelled / निरस्त”). [S2](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=2)",
+        "### Sources\n\n- [S2: Uttar Pradesh — Amendment to purchase subsidy: notification 29/2024/342, PDF page 2](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=2) — AI English reading of selected Hindi provisions; not an official translation"
+      ]
+    }
+  ]
+}

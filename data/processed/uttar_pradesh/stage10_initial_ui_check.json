@@ -1,0 +1,339 @@
+{
+  "checked_at_utc": "2026-09-27T11:11:17.556789+00:00",
+  "notebook_sha256": "172abd00870c2ef4617b9d58146b9dacaa39e7453d5f84bfe1f31652607afd07",
+  "check_script_sha256": "c304134d24e93e5bc57248a671c58f1008fdc68fbfaae4a4d1df1b5ad8176630",
+  "source_manifest_sha256": "dd66a2b9e5919e7cfdde60491d8061ebd16d7867903e7af3d884864299585c2e",
+  "retrieval_rules_sha256": "1a71ea0de1b2a18469ea2c98b73643c07c1f0b22fa462c214204c443ad6f7fd3",
+  "index_spec": {
+    "collection": "ev_policy_draft",
+    "corpus_sha256": "35f798a9b8442d13f5f363dcac59124bff380eda4b68736b04ad9847a3562312",
+    "chunk_count": 348,
+    "embedding": {
+      "model": "nomic-embed-text:latest",
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "num_ctx": 2048,
+      "langchain_ollama": "0.3.7"
+    },
+    "distance": "cosine",
+    "chunks_by_state": {
+      "Maharashtra": 53,
+      "Tamil Nadu": 78,
+      "Central": 100,
+      "Uttar Pradesh": 117
+    }
+  },
+  "technical_status": "failed",
+  "scope": "AI development checks; not team source review or formal evaluation",
+  "checks_passed": [
+    "reopen_348_records_without_embedding_or_rebuild",
+    "four_jurisdiction_counts",
+    "up_alias_and_lowercase_word_distinguished",
+    "five_filtered_semantic_queries",
+    "mandatory_amendments_and_conditions",
+    "superseded_hidden_3w_and_manufacture_clause_absent",
+    "context_within_limit",
+    "all_39_up_pages_assemble_with_version_rules",
+    "five_rejections_skip_models_and_clear_sources",
+    "gradio_lists_four_loaded_jurisdictions"
+  ],
+  "embedding_calls": {
+    "corpus": 0,
+    "query": 6
+  },
+  "observations": [
+    {
+      "question": "What two-wheeler purchase subsidy and funding limit does the July 2024 amendment state?",
+      "page_ids": [
+        "uttar_pradesh_purchase_amendment_2024-07-15:p1",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p2",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p3",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p4",
+        "uttar_pradesh_purchase_scheme_2023-07-14:p2",
+        "uttar_pradesh_registration_fee_2025-11-05:p3",
+        "uttar_pradesh_road_tax_2025-11-05:p3",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p6",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p7",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p8",
+        "uttar_pradesh_policy_2022:p19",
+        "uttar_pradesh_policy_2022:p17",
+        "uttar_pradesh_policy_2022:p18",
+        "uttar_pradesh_policy_2022:p29"
+      ],
+      "context_chars": 19286,
+      "status": "retrieved"
+    },
+    {
+      "question": "What does the amendment say about three-wheeler purchase subsidy?",
+      "page_ids": [
+        "uttar_pradesh_purchase_amendment_2024-07-15:p1",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p2",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p3",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p4",
+        "uttar_pradesh_purchase_scheme_2023-07-14:p2",
+        "uttar_pradesh_registration_fee_2025-11-05:p3",
+        "uttar_pradesh_road_tax_2025-11-05:p3",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p6",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p7",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p8",
+        "uttar_pradesh_policy_2022:p19",
+        "uttar_pradesh_policy_2022:p17",
+        "uttar_pradesh_policy_2022:p18",
+        "uttar_pradesh_policy_2022:p29"
+      ],
+      "context_chars": 19286,
+      "status": "retrieved"
+    },
+    {
+      "question": "What road tax and registration fee exemptions do the November 2025 notifications specify?",
+      "page_ids": [
+        "uttar_pradesh_purchase_amendment_2024-07-15:p1",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p2",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p3",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p4",
+        "uttar_pradesh_purchase_scheme_2023-07-14:p2",
+        "uttar_pradesh_registration_fee_2025-11-05:p3",
+        "uttar_pradesh_road_tax_2025-11-05:p3",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p6",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p7",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p8",
+        "uttar_pradesh_policy_2022:p19",
+        "uttar_pradesh_policy_2022:p17",
+        "uttar_pradesh_policy_2022:p18",
+        "uttar_pradesh_policy_2022:p29"
+      ],
+      "context_chars": 19286,
+      "status": "retrieved"
+    },
+    {
+      "question": "Which fleet ownership minimum and subsidy maximum are stated?",
+      "page_ids": [
+        "uttar_pradesh_purchase_amendment_2024-07-15:p1",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p2",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p3",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p4",
+        "uttar_pradesh_purchase_scheme_2023-07-14:p2",
+        "uttar_pradesh_registration_fee_2025-11-05:p3",
+        "uttar_pradesh_road_tax_2025-11-05:p3",
+        "uttar_pradesh_policy_2022:p18",
+        "uttar_pradesh_policy_2022:p17",
+        "uttar_pradesh_policy_2022:p19",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p6",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p7",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p8",
+        "uttar_pradesh_policy_2022:p29"
+      ],
+      "context_chars": 19286,
+      "status": "retrieved"
+    },
+    {
+      "question": "What capital subsidy does the original policy specify for charging and swapping stations?",
+      "page_ids": [
+        "uttar_pradesh_purchase_amendment_2024-07-15:p1",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p2",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p3",
+        "uttar_pradesh_purchase_amendment_2024-07-15:p4",
+        "uttar_pradesh_purchase_scheme_2023-07-14:p2",
+        "uttar_pradesh_registration_fee_2025-11-05:p3",
+        "uttar_pradesh_road_tax_2025-11-05:p3",
+        "uttar_pradesh_policy_2022:p15",
+        "uttar_pradesh_policy_2022:p14",
+        "uttar_pradesh_policy_2022:p16",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p6",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p7",
+        "uttar_pradesh_operator_guidelines_2025-08-18:p8",
+        "uttar_pradesh_policy_2022:p19",
+        "uttar_pradesh_policy_2022:p29",
+        "uttar_pradesh_policy_2022:p17",
+        "uttar_pradesh_policy_2022:p18"
+      ],
+      "context_chars": 27453,
+      "status": "retrieved"
+    },
+    {
+      "selection": "UP",
+      "question": "Tamil Nadu purchase subsidy?",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Uttar Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "UP",
+      "question": "Compare UP and Maharashtra incentives",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Uttar Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Delhi",
+      "question": "Electric car subsidy?",
+      "result": {
+        "status": "unsupported_jurisdiction",
+        "answer": "Choose Central, Maharashtra, Tamil Nadu, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "UP",
+      "question": "",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "UP",
+      "question": "Can I claim an EV subsidy today?",
+      "result": {
+        "status": "not_established",
+        "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Uttar Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "current_entitlement_unverified",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "case": "purchase",
+      "question": "According to the July 2024 amendment, what is the two-wheeler purchase-subsidy rate, per-vehicle cap, vehicle limit and scheme period or funding limit?",
+      "result": {
+        "status": "document_answer",
+        "answer": "Uttar Pradesh — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Purchase‑subsidy rate for two‑wheelers is 15 % of the ex‑factory cost. [S1](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=1)\n- Per‑vehicle subsidy cap is Rs 5,000 for each two‑wheel electric vehicle. [S1](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=1)\n- Maximum number of two‑wheelers that can receive the subsidy is 2 lakh vehicles. [S1](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=1)\n- Scheme period is five years from 14 Oct 2022, or until the unutilised amount of Rs 403.97 crore is spent, whichever occurs first. [S1](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=1)\n- Overall funding limit for the two‑wheel purchase subsidy is Rs 100 crore (maximum outlay). [S1](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=1)\n\nSources:\n\n- [S1: Uttar Pradesh — Amendment to purchase subsidy: notification 29/2024/342, PDF page 1](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=1) — AI English reading of selected Hindi provisions; not an official translation",
+        "sources": [
+          {
+            "source_id": "S1",
+            "state": "Uttar Pradesh",
+            "document_title": "Amendment to purchase subsidy: notification 29/2024/342",
+            "document_date": "2024-07-15",
+            "pdf_page": 1,
+            "source": "data/policies/uttar_pradesh/up_policy_amendment_2024.pdf",
+            "official_url": "https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=1",
+            "evidence_id": "uttar_pradesh_purchase_amendment_2024-07-15:p1:x0-870",
+            "excerpt_start": 0,
+            "excerpt_end": 870,
+            "excerpt_sha256": "c3a0066f68c96567c76241e6b678a2b11aeae544aa28454cb46f63f94d025078",
+            "context_role": "revised_purchase_provision_ai_translation",
+            "version_note": "AI English reading of revised column only; old column excluded. All retained conditions apply.",
+            "text_derivation": "AI English reading of selected Hindi provisions; not an official translation"
+          }
+        ],
+        "points": [
+          {
+            "text": "Purchase‑subsidy rate for two‑wheelers is 15 % of the ex‑factory cost.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "AI English reading of the Hindi revised-provision column; pending team verification. The old-provision column is deliberately not reproduced.\nUttar Pradesh Government, Industrial Development Section 6, notification 29/2024/342/77-6-2024-6099/281/2022, dated 15 July 2024.\nAmendment to the Uttar Pradesh Electric Vehicle Manufacturing and Mobility Policy 2022 notified on 14.10.2022.\nParagraph 4.3 subparagraph 2, revised provision:\nPurchase subsidy as an early-bird incentive shall be provided in the defined segments at the following rates for five years from the policy notification date, namely 14.10.2022, or until the unutilised amount of Rs 403.97 crore is spent, whichever is earlier.\n1. Two-wheeler electric vehicles: 15% of ex-factory cost, subject to a limit of Rs 5,000 per vehicle, a maximum outlay of Rs 100 crore and a maximum of 2 lakh electric vehicles.\n"
+              }
+            ]
+          },
+          {
+            "text": "Per‑vehicle subsidy cap is Rs 5,000 for each two‑wheel electric vehicle.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "AI English reading of the Hindi revised-provision column; pending team verification. The old-provision column is deliberately not reproduced.\nUttar Pradesh Government, Industrial Development Section 6, notification 29/2024/342/77-6-2024-6099/281/2022, dated 15 July 2024.\nAmendment to the Uttar Pradesh Electric Vehicle Manufacturing and Mobility Policy 2022 notified on 14.10.2022.\nParagraph 4.3 subparagraph 2, revised provision:\nPurchase subsidy as an early-bird incentive shall be provided in the defined segments at the following rates for five years from the policy notification date, namely 14.10.2022, or until the unutilised amount of Rs 403.97 crore is spent, whichever is earlier.\n1. Two-wheeler electric vehicles: 15% of ex-factory cost, subject to a limit of Rs 5,000 per vehicle, a maximum outlay of Rs 100 crore and a maximum of 2 lakh electric vehicles.\n"
+              }
+            ]
+          },
+          {
+            "text": "Maximum number of two‑wheelers that can receive the subsidy is 2 lakh vehicles.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "AI English reading of the Hindi revised-provision column; pending team verification. The old-provision column is deliberately not reproduced.\nUttar Pradesh Government, Industrial Development Section 6, notification 29/2024/342/77-6-2024-6099/281/2022, dated 15 July 2024.\nAmendment to the Uttar Pradesh Electric Vehicle Manufacturing and Mobility Policy 2022 notified on 14.10.2022.\nParagraph 4.3 subparagraph 2, revised provision:\nPurchase subsidy as an early-bird incentive shall be provided in the defined segments at the following rates for five years from the policy notification date, namely 14.10.2022, or until the unutilised amount of Rs 403.97 crore is spent, whichever is earlier.\n1. Two-wheeler electric vehicles: 15% of ex-factory cost, subject to a limit of Rs 5,000 per vehicle, a maximum outlay of Rs 100 crore and a maximum of 2 lakh electric vehicles.\n"
+              }
+            ]
+          },
+          {
+            "text": "Scheme period is five years from 14 Oct 2022, or until the unutilised amount of Rs 403.97 crore is spent, whichever occurs first.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "AI English reading of the Hindi revised-provision column; pending team verification. The old-provision column is deliberately not reproduced.\nUttar Pradesh Government, Industrial Development Section 6, notification 29/2024/342/77-6-2024-6099/281/2022, dated 15 July 2024.\nAmendment to the Uttar Pradesh Electric Vehicle Manufacturing and Mobility Policy 2022 notified on 14.10.2022.\nParagraph 4.3 subparagraph 2, revised provision:\nPurchase subsidy as an early-bird incentive shall be provided in the defined segments at the following rates for five years from the policy notification date, namely 14.10.2022, or until the unutilised amount of Rs 403.97 crore is spent, whichever is earlier.\n1. Two-wheeler electric vehicles: 15% of ex-factory cost, subject to a limit of Rs 5,000 per vehicle, a maximum outlay of Rs 100 crore and a maximum of 2 lakh electric vehicles.\n"
+              }
+            ]
+          },
+          {
+            "text": "Overall funding limit for the two‑wheel purchase subsidy is Rs 100 crore (maximum outlay).",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "AI English reading of the Hindi revised-provision column; pending team verification. The old-provision column is deliberately not reproduced.\nUttar Pradesh Government, Industrial Development Section 6, notification 29/2024/342/77-6-2024-6099/281/2022, dated 15 July 2024.\nAmendment to the Uttar Pradesh Electric Vehicle Manufacturing and Mobility Policy 2022 notified on 14.10.2022.\nParagraph 4.3 subparagraph 2, revised provision:\nPurchase subsidy as an early-bird incentive shall be provided in the defined segments at the following rates for five years from the policy notification date, namely 14.10.2022, or until the unutilised amount of Rs 403.97 crore is spent, whichever is earlier.\n1. Two-wheeler electric vehicles: 15% of ex-factory cost, subject to a limit of Rs 5,000 per vehicle, a maximum outlay of Rs 100 crore and a maximum of 2 lakh electric vehicles.\n"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Uttar Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 597,
+          "prompt_tokens": 5632,
+          "total_tokens": 6229,
+          "completion_time": 1.24350836,
+          "prompt_time": 0.284857391,
+          "queue_time": 0.309466302,
+          "total_time": 1.528365751,
+          "completion_tokens_details": {
+            "reasoning_tokens": 412
+          }
+        },
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      },
+      "ui_outputs": [
+        "### Answer\n\nUttar Pradesh — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Purchase‑subsidy rate for two‑wheelers is 15 % of the ex‑factory cost. [S1](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=1)\n- Per‑vehicle subsidy cap is Rs 5,000 for each two‑wheel electric vehicle. [S1](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=1)\n- Maximum number of two‑wheelers that can receive the subsidy is 2 lakh vehicles. [S1](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=1)\n- Scheme period is five years from 14 Oct 2022, or until the unutilised amount of Rs 403.97 crore is spent, whichever occurs first. [S1](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=1)\n- Overall funding limit for the two‑wheel purchase subsidy is Rs 100 crore (maximum outlay). [S1](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=1)",
+        "### Sources\n\n- [S1: Uttar Pradesh — Amendment to purchase subsidy: notification 29/2024/342, PDF page 1](https://invest.up.gov.in/wp-content/uploads/2024/07/342_160724.pdf#page=1)"
+      ]
+    }
+  ]
+}

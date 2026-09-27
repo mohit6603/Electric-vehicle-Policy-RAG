@@ -159,12 +159,22 @@
       "central_pm_edrive_extension_2026-08-10:p3",
       "central_pm_edrive_extension_2026-03-27:p3",
       "central_pm_edrive_l5_closure_2025-12-23:p1"
+    ],
+    "Uttar Pradesh": [
+      "uttar_pradesh_purchase_amendment_2024-07-15:p1",
+      "uttar_pradesh_purchase_amendment_2024-07-15:p2",
+      "uttar_pradesh_purchase_amendment_2024-07-15:p3",
+      "uttar_pradesh_purchase_amendment_2024-07-15:p4",
+      "uttar_pradesh_purchase_scheme_2023-07-14:p2",
+      "uttar_pradesh_registration_fee_2025-11-05:p3",
+      "uttar_pradesh_road_tax_2025-11-05:p3"
     ]
   },
   "jurisdiction_notes": {
     "Maharashtra": "Read the 2025 policy with June/July operational conditions and the August section 4.2(1) replacement. The policy period alone does not establish purchase eligibility, portal deadlines or remaining allocation.",
     "Tamil Nadu": "The later order extends motor vehicle tax only. The printed demand-incentive, registration-charge and permit-fee deadline is 31 December 2025; their extension is not established. The general policy period does not extend those benefits.",
-    "Central": "PM E-DRIVE two-/three-wheeler buyer scope only. August 2026 governs the updated e2w/outlay/terminal clauses; March 2026 supplies the e-rickshaw row. L5 closure, fund limits and the separate claim deadline must remain visible. No live funding or individual entitlement is verified."
+    "Central": "PM E-DRIVE two-/three-wheeler buyer scope only. August 2026 governs the updated e2w/outlay/terminal clauses; March 2026 supplies the e-rickshaw row. L5 closure, fund limits and the separate claim deadline must remain visible. No live funding or individual entitlement is verified.",
+    "Uttar Pradesh": "Purchase subsidy: use the 15 July 2024 revised column, including cancellation of the 3W provision and five years from 14.10.2022 OR exhaustion of Rs 403.97 crore, whichever first. No verified remaining funds. Use the separate 5 November 2025 pure-EV orders for tax and registration fees; do not infer purchase benefits from them. Fleet subsidy maximum and fleet-ownership minimum are different conditions. Hindi pages are AI English readings, not official translations. Parent 17 October 2025 amendment and any later hybrid/aggregator directions remain unverified; abstain on their current applicability. Manufacturing/charging text is base-policy evidence, not verified current operational eligibility."
   },
   "page_rules": {
     "maharashtra_policy_2025-05-23:p19": {
@@ -393,6 +403,105 @@
           "text_sha256": "ffd8dde8d87f23ac8c8e63a9ea9c29874b741fc658d88e90b9dead46d36d93b6"
         }
       ]
+    },
+    "uttar_pradesh_policy_2022:p18": {
+      "page_text_sha256": "857d1dfd512b2612c0d091e44868aed007084a40847407c456755ee2aed6e635",
+      "context_role": "definitions_with_superseded_benefits_removed",
+      "version_note": "Original fiscal paragraph omitted; read later purchase, road-tax and fee orders. The PDF also visually masks its 3W row although the hidden extraction still contains it.",
+      "exclude_spans": [
+        {
+          "start": 819,
+          "end": 2619,
+          "text_sha256": "ab92ae5e87e166e51fdf29e1e7287c242f994365aeec16f8b849302af6a02235",
+          "reason": "Original fiscal provisions superseded; do not expose hidden masked 3W row."
+        }
+      ]
+    },
+    "uttar_pradesh_policy_2022:p19": {
+      "page_text_sha256": "852b62851959b07d719ab998790b843d09f298f9ea2a72a87d22356043218b50",
+      "context_role": "unaffected_implementation_and_conditions",
+      "version_note": "Purchase notes replaced by the amendment; retain implementation and other-state restriction.",
+      "exclude_spans": [
+        {
+          "start": 0,
+          "end": 254,
+          "text_sha256": "a5b06d5e71d934df03fe0eabd224372af04a7a407a3b76f468ba4d701a824dea",
+          "reason": "Purchase-subsidy note continuation replaced by the revised column."
+        }
+      ]
+    },
+    "uttar_pradesh_purchase_scheme_2023-07-14:p1": {
+      "page_text_sha256": "01d942cb591ef3d27ee633cdef324e36d3c3a389f2ec5b0c4e7746a1291fb7f5",
+      "context_role": "implementation_with_old_period_removed",
+      "version_note": "2023 period superseded by 2024 amendment.",
+      "exclude_spans": [
+        {
+          "start": 314,
+          "end": 436,
+          "text_sha256": "70526674dcf6b86566fa5e52361cf89e6d025980aab3f80eb623719613ef3f53",
+          "reason": "Original one-year purchase-subsidy period superseded."
+        }
+      ]
+    },
+    "uttar_pradesh_purchase_amendment_2024-07-15:p1": {
+      "page_text_sha256": "c3a0066f68c96567c76241e6b678a2b11aeae544aa28454cb46f63f94d025078",
+      "context_role": "revised_purchase_provision_ai_translation",
+      "version_note": "AI English reading of revised column only; old column excluded. All retained conditions apply.",
+      "exclude_spans": []
+    },
+    "uttar_pradesh_purchase_amendment_2024-07-15:p2": {
+      "page_text_sha256": "9c751721c1dcd04c6bf9e260be6f422b51f61489976924613393dc02c3ff9764",
+      "context_role": "revised_purchase_provision_ai_translation",
+      "version_note": "AI English reading of revised column only; old column excluded. All retained conditions apply.",
+      "exclude_spans": []
+    },
+    "uttar_pradesh_purchase_amendment_2024-07-15:p3": {
+      "page_text_sha256": "156f4f2498cfe3427dcfcb9d4b6fbd5e00164f81a9e4159a38b43ae3f02e4029",
+      "context_role": "revised_purchase_provision_ai_translation",
+      "version_note": "AI English reading of revised column only; old column excluded. All retained conditions apply.",
+      "exclude_spans": []
+    },
+    "uttar_pradesh_purchase_amendment_2024-07-15:p4": {
+      "page_text_sha256": "be60cf9caecf1d3544d2d9f86e92c96adcff28c32ccf260f563fdb02dc0be718",
+      "context_role": "revised_purchase_provision_ai_translation",
+      "version_note": "AI English reading of revised column only; old column excluded. All retained conditions apply.",
+      "exclude_spans": []
+    },
+    "uttar_pradesh_operator_guidelines_2025-08-18:p5": {
+      "page_text_sha256": "25cec829cd644fe8fdb92b5c94db3aebc910ddb63bdba84e123c0faa422639ef",
+      "context_role": "operator_conditions_ai_translation",
+      "version_note": "18 August 2025 directions; do not treat historical hybrid/aggregator references as proof of current eligibility. Read with subsequent orders.",
+      "exclude_spans": []
+    },
+    "uttar_pradesh_operator_guidelines_2025-08-18:p6": {
+      "page_text_sha256": "e3cd043ebcb25a2b462c303d5624131ee5b4fa282dc240073020d76c005bb392",
+      "context_role": "operator_conditions_ai_translation",
+      "version_note": "18 August 2025 directions; do not treat historical hybrid/aggregator references as proof of current eligibility. Read with subsequent orders.",
+      "exclude_spans": []
+    },
+    "uttar_pradesh_operator_guidelines_2025-08-18:p7": {
+      "page_text_sha256": "fb2a4a2b0995687ebf09905e06bb9adda4e485878d8d10e30d761dd8c95163ed",
+      "context_role": "operator_conditions_ai_translation",
+      "version_note": "18 August 2025 directions; do not treat historical hybrid/aggregator references as proof of current eligibility. Read with subsequent orders.",
+      "exclude_spans": []
+    },
+    "uttar_pradesh_operator_guidelines_2025-08-18:p8": {
+      "page_text_sha256": "c2301a453b76439eb6b8396e076ce0bca0cca6aaf07f6e4ad38e44fe64c7b875",
+      "context_role": "operator_conditions_ai_translation",
+      "version_note": "18 August 2025 directions; do not treat historical hybrid/aggregator references as proof of current eligibility. Read with subsequent orders.",
+      "exclude_spans": []
+    },
+    "uttar_pradesh_registration_fee_2025-11-05:p3": {
+      "page_text_sha256": "c241712455785789064d6738c33681cd33ac2d56a233efe99bfc604b618d9997",
+      "context_role": "registration_fee_only_pure_evs",
+      "version_note": "Only pure EV registration fee; bought and registered in UP during the printed periods, not a subsidy extension.",
+      "exclude_spans": []
+    },
+    "uttar_pradesh_road_tax_2025-11-05:p3": {
+      "page_text_sha256": "313ad59fadfe5e1a7d63d6199079ce7b3f129ca0cc4c66a5937eeca7d4ec1873",
+      "context_role": "road_tax_only_pure_evs",
+      "version_note": "Only pure EV road tax; bought and registered in UP during the printed periods, not a subsidy extension.",
+      "exclude_spans": []
     }
   }
 }

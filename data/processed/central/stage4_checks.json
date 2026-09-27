@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-09-25T16:57:57.846926+00:00",
+  "checked_at_utc": "2026-09-27T11:12:22.573249+00:00",
   "technical_status": "passed",
   "scheme": "PM E-DRIVE",
   "coverage_scope": "e2w_e3w_buyer_incentives",
@@ -59,7 +59,7 @@
     "pages.jsonl": "8a0118d845ee2d800303025cff41327e895998427e78c1d81caf19f6c0bcf34a",
     "chunks.jsonl": "d7fb95e1c89dd21079257b1e0f1086c389488d6488ad121f6c22cbc00fc49374"
   },
-  "notebook_sha256": "e3ff990f675d8af228a8b42c17a30103b918af1d8ac20c03180c6766acf716bf",
-  "source_manifest_sha256": "8918c38310dfdd946b3892da77e84ecb5f13f57ba293e20d8257703d426ece79",
+  "notebook_sha256": "fa63ccb2a976da06b240662a1874ede276b934a43562b4d52c6d95df52ceb8f1",
+  "source_manifest_sha256": "dd66a2b9e5919e7cfdde60491d8061ebd16d7867903e7af3d884864299585c2e",
   "ocr_review_sha256": "77f4e8298a44e6ac071959c3ae552ceb104ec2bafa710895171547b8f55ec694"
 }

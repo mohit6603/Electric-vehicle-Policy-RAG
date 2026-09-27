@@ -2,15 +2,29 @@
 
 ## Current stage and next step
 
-**Stage 9 — technically complete.** The notebook Gradio pilot passes its UI, browser and fresh-kernel checks. It preserves the guarded Stage 8 answers/errors and separate cited-source output. See the closeout below.
+**Stage 10 — Uttar Pradesh technically complete.** The user explicitly selected Uttar Pradesh only for this session. Six official PDFs, page-linked prepared text, ingestion, index expansion, jurisdiction-aware retrieval and Gradio checks are complete. See [the handoff](STAGE_10_UP_HANDOFF.md).
 
-**Next: Stage 10 — add one remaining jurisdiction per session (not started).** Uttar Pradesh is next in the agreed list. Begin its source packet before ingestion, then rebuild/check the index and spot-check the UI. Notebook-only launch was the stated default after the optional launcher question received no answer; no `app.py` was added.
+**Next: Stage 10 — Delhi (NCT), not started.** Continue one jurisdiction per session. Gujarat, Telangana, Karnataka and Madhya Pradesh follow Delhi. Do not start evaluation until all remaining jurisdiction batches and the deferred independent source/question review are complete.
 
-**Latest authorization:** the user requested completion of Stage 9. AI implementation and technical checks are authorized; genuine team prompt/source review remains deferred. The assignment's AI-use rule and disclosure requirement remain unchanged.
+**Latest authorization:** the user requested Stage 10 implementation and selected Uttar Pradesh. AI implementation/technical checks continue under the authorized workflow. Genuine team source/prompt review and independently written questions remain deferred; the assignment's AI-use rule and disclosure requirement are unchanged.
 
-The user's earlier decision to defer manual source review and question-writing until the full prototype is built still applies. Those tasks do not block development stages 2–10; they remain required before formal evaluation and submission. Technical checks must pass before advancing stages. All source acceptance flags remain false, current status remains unknown, and prototype evidence is labelled unverified.
+All source acceptance/current-entitlement flags remain false. The agreed cutoff remains 23 September 2026. Source collection after that date does not certify amendment completeness, remaining funding or current eligibility at the cutoff.
 
-Deferred review batch: verify the source text and applicable document chains; record actual reviewers/dates; independently author and verify the 24 evaluation cases; resolve current-benefit evidence gaps or keep unsupported claims explicitly unanswered. Freeze expected answers before formal evaluation. Do not invent review completion or remove these obligations from final acceptance.
+Deferred review batch: compare prepared text with original PDFs; check applicable document chains/status gaps; record actual reviewers/dates; independently author and verify the 24 evaluation cases; freeze expected answers before formal evaluation. Do not invent reviewer results or count development prompts as team evaluation.
+
+## Stage 10 Uttar Pradesh technical closeout — 27 September 2026
+
+Added the 2022 policy, 14 July 2023 implementation order, 15 July 2024 purchase amendment, 18 August 2025 operator directions and separate 5 November 2025 road-tax/registration-fee notifications. The two Invest UP amendment listings served identical bytes and are represented once. The undated operational guide is excluded. Ten Hindi pages have selected AI English readings with original PDF/page hashes and explicit unofficial-translation labels; team review is still pending.
+
+The shared loader and classroom splitter produce **39 pages and 117 chunks**; 13 ingestion checks passed. Original fiscal text, including a hidden 3W row under a visual mask, is excluded from answer context in favour of the revised purchase provisions. Mandatory links retain the funding limit, verification/battery/fleet conditions and pure-EV tax/fee updates. The index was explicitly rebuilt to **348 records** (53 Maharashtra, 78 Tamil Nadu, 100 Central, 117 UP), at 768 dimensions. Earlier six corpus JSONL files reproduced byte-for-byte. No dependency changed.
+
+**10 integration checks and six fresh-kernel checks passed.** Five UP semantic queries had no jurisdiction leakage; every UP page could be assembled with version rules. Reopening/startup made no corpus embeddings. Aliases, conflicting/unsupported/current-entitlement requests, four Gradio choices and local launch were checked. Existing checks also passed: **16 persistence, 19 retrieval, 13 citation, 50 offline failure and 15 UI**, plus eight each in the Stage 5/6 notebook check cells.
+
+Three actual Groq answers were checked through Gradio HTTP: two-wheeler subsidy/rate/cap/quota/funding period, the separate pure-EV tax/fee exemptions and dates, and cancellation of the 3W purchase-subsidy provision. The first attempt exposed a missing translation label in the UI source list; the callback was fixed. The next run passed the first two cases, then Groq rate-limited the third with no stale citations. A targeted retry passed that remaining case and the subsequent mismatch cleared prior sources. Failed and successful observations are retained separately, not presented as an uninterrupted successful run.
+
+Reports and exact excerpts are under `data/processed/uttar_pradesh/`. The [source review](data/policies/uttar_pradesh/SOURCE_REVIEW.md) records unresolved parent-amendment, hybrid/aggregator, operational and current-availability checks. Technical completion does not certify current entitlement. Two independent UP evaluation questions and actual team review remain pending. No other remaining jurisdiction was added.
+
+AI assistance: official-source research/downloads, visual comparison and selected English readings, notebook/configuration/check code, development prompts, actual local/Groq verification, documentation and Git publication. Git uses the user's authorized identity; assistance still requires disclosure in the assignment appendix.
 
 ## Stage 9 technical closeout — 26 September 2026
 

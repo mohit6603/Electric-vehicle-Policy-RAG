@@ -1,0 +1,44 @@
+{
+  "checked_at_utc": "2026-09-27T11:12:50.891754+00:00",
+  "technical_status": "passed",
+  "team_acceptance": "deferred_not_verified",
+  "current_benefit_availability": "not_verified",
+  "verification_cutoff": "2026-09-23",
+  "page_count": 39,
+  "chunk_count": 117,
+  "chunks_by_source": {
+    "uttar_pradesh_policy_2022": 96,
+    "uttar_pradesh_purchase_scheme_2023-07-14": 4,
+    "uttar_pradesh_purchase_amendment_2024-07-15": 4,
+    "uttar_pradesh_operator_guidelines_2025-08-18": 7,
+    "uttar_pradesh_registration_fee_2025-11-05": 3,
+    "uttar_pradesh_road_tax_2025-11-05": 3
+  },
+  "splitter": {
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "add_start_index": true
+  },
+  "checks_passed": [
+    "39_unique_physical_pages",
+    "stable_unique_chunks",
+    "source_and_proposal_hashes",
+    "metadata_and_pending_review_preserved",
+    "all_links_resolve",
+    "no_nonwhitespace_text_lost",
+    "purchase_rate_caps_counts_and_fund_limit",
+    "three_wheeler_clause_cancelled",
+    "one_time_battery_and_operator_conditions",
+    "fleet_minimum_distinct_from_subsidy_maximum",
+    "mandatory_and_indicative_checklist_columns",
+    "pure_ev_tax_and_fee_dates",
+    "charging_and_swapping_caps"
+  ],
+  "artifact_sha256": {
+    "pages.jsonl": "c5680fe9564ea550e6ccd523ee42fae79cd07ac15b6cc61171bc1b165a33a31c",
+    "chunks.jsonl": "e33f0290b57a2f3287e58495d3875c8ecefe7804b7d7df258c45a122e9fe6953"
+  },
+  "notebook_sha256": "fa63ccb2a976da06b240662a1874ede276b934a43562b4d52c6d95df52ceb8f1",
+  "source_manifest_sha256": "dd66a2b9e5919e7cfdde60491d8061ebd16d7867903e7af3d884864299585c2e",
+  "ocr_review_sha256": "3232435a0d73f3b6fc472afbca7bd253f30292052759ead92b85da99587399bf"
+}

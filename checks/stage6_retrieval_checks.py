@@ -67,7 +67,7 @@ def run_checks():
         ('Gujrat', 'Incentives?', 'unsupported_jurisdiction'),
         ('Telengana', 'Incentives?', 'unsupported_jurisdiction'),
         ('Karnataka', 'Incentives?', 'unsupported_jurisdiction'),
-        ('UP', 'Incentives?', 'unsupported_jurisdiction'),
+        ('Kerala', 'Incentives?', 'unsupported_jurisdiction'),
         ('MP', 'Incentives?', 'unsupported_jurisdiction'),
         ('FAME', 'Incentives?', 'unsupported_jurisdiction'),
         ('Maharashtra', 'Tamil Nadu road tax?', 'clarification_required'),
@@ -87,6 +87,7 @@ def run_checks():
     passed.append('20_invalid_conflicting_or_unsupported_inputs_skip_search')
     for selection, question, expected in [
         ('mh', 'What are the incentives?', 'Maharashtra'),
+        ('UP', 'Uttar Pradesh purchase subsidy', 'Uttar Pradesh'),
         ('Tamilnadu', 'TN road tax', 'Tamil Nadu'),
         ('tamil nadu', 'Tamil Nadu subsidy', 'Tamil Nadu'),
         ('PM E-DRIVE', 'PM E DRIVE e-voucher', 'Central'),
@@ -188,7 +189,7 @@ def run_checks():
             assert applied.get('context_role') != 'excluded_outside_scope'
             for span in applied.get('exclude_spans', []):
                 assert doc.metadata['excerpt_end'] <= span['start'] or doc.metadata['excerpt_start'] >= span['end']
-    passed.append('all_20_page_rules_exercised_without_superseded_or_excluded_spans')
+    passed.append('all_page_rules_exercised_without_superseded_or_excluded_spans')
 
     class EmptySearch:
         def as_retriever(self, search_kwargs):
@@ -258,8 +259,8 @@ def run_checks():
     passed.append('context_budget_never_silently_drops_required_evidence')
     for path, digest in source_hashes.items():
         assert stage['index_file_hash'](path) == digest
-    assert stage['check_index_contents'](store, stage['index_documents']) == 231
-    passed.append('source_artifacts_and_saved_231_record_index_unchanged')
+    assert stage['check_index_contents'](store, stage['index_documents']) == len(stage['index_documents'])
+    passed.append('source_artifacts_and_saved_index_unchanged')
     validate()
     report = {'checked_at_utc': datetime.now(timezone.utc).isoformat(), 'technical_status': 'passed',
         'checks_passed': passed, 'rejected_input_cases': len(bad_inputs), 'live_queries': observed,

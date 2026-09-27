@@ -1,8 +1,8 @@
 {
-  "checked_at_utc": "2026-09-26T05:07:51.707927+00:00",
-  "notebook_sha256": "e22da0517c2d4d9112d5bdc7f75578b22c5bcb1f02595d22e4b7bd328097a67d",
-  "check_script_sha256": "d3f85856682a42ee7996dd98e51bcea30208a34433ed9dcf3e11eb0914298a28",
-  "retrieval_rules_sha256": "5680517abc4070414a022b9bbf9cfbc25e1003af2b57a7a0898023ec129d5583",
+  "checked_at_utc": "2026-09-27T11:13:54.187985+00:00",
+  "notebook_sha256": "fa63ccb2a976da06b240662a1874ede276b934a43562b4d52c6d95df52ceb8f1",
+  "check_script_sha256": "8037ad4d5c3a7f80a411eb1c2521813f52dfa55d3de88b9cafeca18806e8176d",
+  "retrieval_rules_sha256": "1a71ea0de1b2a18469ea2c98b73643c07c1f0b22fa462c214204c443ad6f7fd3",
   "scope": "AI-authored development checks; source review and formal evaluation pending",
   "technical_status": "passed",
   "checks_passed": [
