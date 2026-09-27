@@ -34,10 +34,9 @@ def run_checks(live=False, case=None):
     result = stage['start_policy_assistant']()
     assert result['status'] == 'ready', result
     assert counts == {'corpus': 0, 'query': 0}
-    assert stage['vector_store_chroma']._collection.count() == 348
-    assert stage['index_spec']['chunks_by_state'] == {
-        'Maharashtra': 53, 'Tamil Nadu': 78, 'Central': 100, 'Uttar Pradesh': 117}
-    checks += ['reopen_348_records_without_embedding_or_rebuild', 'four_jurisdiction_counts']
+    assert stage['vector_store_chroma']._collection.count() == stage['index_spec']['chunk_count']
+    assert stage['index_spec']['chunks_by_state']['Uttar Pradesh'] == 117
+    checks += ['reopen_all_records_without_embedding_or_rebuild', 'up_chunk_count']
     for selection in ('UP', 'uttar pradesh', 'Uttar Pradesh'):
         assert stage['route_policy_question'](selection, 'What purchase subsidy is described?')['jurisdiction'] == 'Uttar Pradesh'
     assert stage['mentioned_jurisdictions']('sign up for EV subsidy') == set()
@@ -79,7 +78,7 @@ def run_checks(live=False, case=None):
     for selection, question, status in [
         ('UP', 'Tamil Nadu purchase subsidy?', 'clarification_required'),
         ('UP', 'Compare UP and Maharashtra incentives', 'clarification_required'),
-        ('Delhi', 'Electric car subsidy?', 'unsupported_jurisdiction'),
+        ('Gujarat', 'Electric car subsidy?', 'unsupported_jurisdiction'),
         ('UP', '', 'clarification_required'),
         ('UP', 'Can I claim an EV subsidy today?', 'not_established'),
     ]:
@@ -91,8 +90,8 @@ def run_checks(live=False, case=None):
     run_cell(stage, 'stage9-callback')
     run_cell(stage, 'stage9-startup')
     run_cell(stage, 'stage9-interface')
-    assert stage['ui_choices'] == ['Central', 'Maharashtra', 'Tamil Nadu', 'Uttar Pradesh']
-    checks.append('gradio_lists_four_loaded_jurisdictions')
+    assert stage['ui_choices'] == sorted(stage['index_spec']['chunks_by_state'])
+    checks.append('gradio_lists_loaded_jurisdictions')
     report_path = Path('data/processed/uttar_pradesh/stage10_live_checks.json' if live
                        else 'data/processed/uttar_pradesh/stage10_integration_checks.json')
 

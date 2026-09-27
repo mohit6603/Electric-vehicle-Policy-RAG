@@ -168,3 +168,17 @@ The local notebook launch keeps Exercise 2's structure. The queue serializes req
 | Source acceptance and evaluation | Existing deferred review workflow | Review/current-status gaps documented; two team-written UP cases still required |
 
 AI assistance: source research, visual page comparison and selected English readings, implementation, development questions, actual local/Groq checks, documentation and Git publication. These checks do not replace independent team review or the formal 24-case evaluation. No new library or separate application structure was added.
+
+## Stage 10 Delhi mapping
+
+| Requirement | Existing code reused | Delhi extension |
+|---|---|---|
+| Official sources and physical-page provenance | Shared `load_policy_pages`, manifest schema, pypdf layout extraction | Two final 2026 PDFs; 51 English page records; no OCR |
+| Classroom chunking and ingestion checks | UP/Tamil Nadu input/split/check/export pattern; `RecursiveCharacterTextSplitter` | Four `stage10-delhi-*` cells; 1000/200 splitting, 132 chunks, original PDF hashes |
+| Persistent search | Stage 5 `ingestion_stages`, checked rebuild/reopen | Add Delhi, explicit 480-record build; prior corpus JSONLs unchanged |
+| Jurisdiction and applicable conditions | Stage 6 aliases, `page_links`, `assemble_policy_context` | Existing Delhi aliases enabled; mandatory dates, priority, conditions and continuations |
+| Answers, abstention and citations | Stage 7 prompt/parser/renderer and Stage 8 `ask_policy` | Same answer path; actual Delhi HTTP/Groq development cases and rejection checks |
+| UI | Exercise 2-derived Stage 9 dropdown/callback | Fifth choice plus a Delhi example; existing UI tests adapted to loaded coverage |
+| Acceptance/evaluation | Deferred independent team review | Delhi status gaps documented; no invented reviewer or independent evaluation cases |
+
+The notebook structure, function style and pinned libraries are unchanged. New work is confined to Delhi data/metadata, ingestion, test coverage and the existing stage integrations. AI assistance and actual failed/retried observations are recorded in the Delhi handoff.

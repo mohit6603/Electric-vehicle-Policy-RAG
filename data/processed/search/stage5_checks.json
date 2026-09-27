@@ -1,10 +1,10 @@
 {
-  "checked_at_utc": "2026-09-27T11:14:19.366920+00:00",
+  "checked_at_utc": "2026-09-27T16:26:44.207573+00:00",
   "technical_status": "passed",
   "index_spec": {
     "collection": "ev_policy_draft",
-    "corpus_sha256": "35f798a9b8442d13f5f363dcac59124bff380eda4b68736b04ad9847a3562312",
-    "chunk_count": 348,
+    "corpus_sha256": "a22c053c764ef33eb551c27b8d4cfbf371abf26168019bef24446b0f70549f57",
+    "chunk_count": 480,
     "embedding": {
       "model": "nomic-embed-text:latest",
       "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
@@ -16,7 +16,8 @@
       "Maharashtra": 53,
       "Tamil Nadu": 78,
       "Central": 100,
-      "Uttar Pradesh": 117
+      "Uttar Pradesh": 117,
+      "Delhi": 132
     }
   },
   "embedding_dimensions": 768,
@@ -26,7 +27,8 @@
     "data/processed/maharashtra/chunks.jsonl": "e21b464fee56a0d98006577a308b5edb5c4374428d097838139496741595a9e9",
     "data/processed/tamil_nadu/chunks.jsonl": "8d1708d8766411a2c5e19e600cd5933dd2abd09a8a2b9a5b44fa8ffcbd930a63",
     "data/processed/central/chunks.jsonl": "d7fb95e1c89dd21079257b1e0f1086c389488d6488ad121f6c22cbc00fc49374",
-    "data/processed/uttar_pradesh/chunks.jsonl": "e33f0290b57a2f3287e58495d3875c8ecefe7804b7d7df258c45a122e9fe6953"
+    "data/processed/uttar_pradesh/chunks.jsonl": "e33f0290b57a2f3287e58495d3875c8ecefe7804b7d7df258c45a122e9fe6953",
+    "data/processed/delhi/chunks.jsonl": "8e058b5223f99d363b3f3c97954221f82ac289cd15561ebefe0ce85bf28432e2"
   },
   "checks_passed": [
     "all_draft_chunks_indexed",
@@ -44,5 +46,5 @@
     "central_pm_edrive_guidelines_2024-09-30:p14:c800:7c105d2e1d8b",
     "central_pm_edrive_guidelines_2024-09-30:p15:c820:23b5c518c221"
   ],
-  "notebook_sha256": "fa63ccb2a976da06b240662a1874ede276b934a43562b4d52c6d95df52ceb8f1"
+  "notebook_sha256": "3ef33ef8978283fb0a16584467af5cde93368bafbc200b7168ad5a90bf64963e"
 }

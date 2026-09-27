@@ -1,0 +1,355 @@
+{
+  "checked_at_utc": "2026-09-27T16:23:33.946801+00:00",
+  "notebook_sha256": "8d325cdcae2613fe77dff0720808b9157dffc40a7bc88ae355b986ed9ffc4931",
+  "check_script_sha256": "7566b20482b12ce011dbebefdb355e569983464b289d5eea859b2f170280ba4c",
+  "source_manifest_sha256": "aeff5d84725d042820a8c850fdc5e35c6c8710b193c56c8ea12630a854c14d0c",
+  "retrieval_rules_sha256": "c9fca6ab8e5b102be484d7ebf1a728fe5f3ef925606676403cd7c848797fbd26",
+  "index_spec": {
+    "collection": "ev_policy_draft",
+    "corpus_sha256": "a22c053c764ef33eb551c27b8d4cfbf371abf26168019bef24446b0f70549f57",
+    "chunk_count": 480,
+    "embedding": {
+      "model": "nomic-embed-text:latest",
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "num_ctx": 2048,
+      "langchain_ollama": "0.3.7"
+    },
+    "distance": "cosine",
+    "chunks_by_state": {
+      "Maharashtra": 53,
+      "Tamil Nadu": 78,
+      "Central": 100,
+      "Uttar Pradesh": 117,
+      "Delhi": 132
+    }
+  },
+  "technical_status": "passed",
+  "scope": "AI development checks; not team source review or formal evaluation",
+  "checks_passed": [
+    "reopen_all_records_without_corpus_embedding",
+    "132_delhi_chunks",
+    "five_delhi_aliases",
+    "five_filtered_semantic_queries",
+    "conditions_and_continuations_present",
+    "no_draft_or_2020_sources",
+    "all_51_pages_assemble_within_context_limit",
+    "five_rejections_skip_models_and_clear_sources",
+    "gradio_lists_delhi_and_other_loaded_jurisdictions",
+    "live_gradio_car_scrapping",
+    "gradio_rejection_clears_previous_citations"
+  ],
+  "embedding_calls": {
+    "corpus": 0,
+    "query": 6
+  },
+  "observations": [
+    {
+      "question": "What yearly two-wheeler purchase incentive rates, caps and price ceiling does the 2026 policy state?",
+      "page_ids": [
+        "delhi_policy_2026-06-30:p12",
+        "delhi_policy_2026-06-30:p18",
+        "delhi_operating_guidelines_2026-07-02:p2",
+        "delhi_policy_2026-06-30:p13",
+        "delhi_policy_2026-06-30:p14",
+        "delhi_operating_guidelines_2026-07-02:p7",
+        "delhi_operating_guidelines_2026-07-02:p8",
+        "delhi_operating_guidelines_2026-07-02:p9"
+      ],
+      "context_chars": 26191,
+      "status": "retrieved"
+    },
+    {
+      "question": "What car scrapping incentive, applicant limit and price ceiling does the policy state?",
+      "page_ids": [
+        "delhi_policy_2026-06-30:p12",
+        "delhi_policy_2026-06-30:p18",
+        "delhi_operating_guidelines_2026-07-02:p2",
+        "delhi_policy_2026-06-30:p14",
+        "delhi_policy_2026-06-30:p13",
+        "delhi_policy_2026-06-30:p15",
+        "delhi_operating_guidelines_2026-07-02:p7",
+        "delhi_operating_guidelines_2026-07-02:p8",
+        "delhi_operating_guidelines_2026-07-02:p9",
+        "delhi_operating_guidelines_2026-07-02:p10",
+        "delhi_operating_guidelines_2026-07-02:p11"
+      ],
+      "context_chars": 35899,
+      "status": "retrieved"
+    },
+    {
+      "question": "What road tax and registration fee exemptions apply below and above the electric car price ceiling?",
+      "page_ids": [
+        "delhi_policy_2026-06-30:p12",
+        "delhi_policy_2026-06-30:p18",
+        "delhi_operating_guidelines_2026-07-02:p2",
+        "delhi_policy_2026-06-30:p14",
+        "delhi_policy_2026-06-30:p13",
+        "delhi_policy_2026-06-30:p15",
+        "delhi_operating_guidelines_2026-07-02:p7",
+        "delhi_operating_guidelines_2026-07-02:p8",
+        "delhi_operating_guidelines_2026-07-02:p9",
+        "delhi_operating_guidelines_2026-07-02:p10",
+        "delhi_operating_guidelines_2026-07-02:p11"
+      ],
+      "context_chars": 35899,
+      "status": "retrieved"
+    },
+    {
+      "question": "What no-entry exemption, vehicle limit and time windows are specified for private N2 electric trucks?",
+      "page_ids": [
+        "delhi_policy_2026-06-30:p12",
+        "delhi_policy_2026-06-30:p18",
+        "delhi_operating_guidelines_2026-07-02:p2",
+        "delhi_operating_guidelines_2026-07-02:p11",
+        "delhi_operating_guidelines_2026-07-02:p10",
+        "delhi_operating_guidelines_2026-07-02:p12",
+        "delhi_policy_2026-06-30:p15",
+        "delhi_operating_guidelines_2026-07-02:p7",
+        "delhi_policy_2026-06-30:p13",
+        "delhi_policy_2026-06-30:p14",
+        "delhi_operating_guidelines_2026-07-02:p8",
+        "delhi_operating_guidelines_2026-07-02:p9"
+      ],
+      "context_chars": 36677,
+      "status": "retrieved"
+    },
+    {
+      "question": "What is the purchase incentive application deadline from RC generation and conditional payment timeline?",
+      "page_ids": [
+        "delhi_policy_2026-06-30:p12",
+        "delhi_policy_2026-06-30:p18",
+        "delhi_operating_guidelines_2026-07-02:p2",
+        "delhi_operating_guidelines_2026-07-02:p8",
+        "delhi_operating_guidelines_2026-07-02:p7",
+        "delhi_operating_guidelines_2026-07-02:p9",
+        "delhi_policy_2026-06-30:p13",
+        "delhi_policy_2026-06-30:p14"
+      ],
+      "context_chars": 26191,
+      "status": "retrieved"
+    },
+    {
+      "all_page_context_range": [
+        12314,
+        44326
+      ]
+    },
+    {
+      "selection": "DL",
+      "question": "Tamil Nadu purchase subsidy?",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Delhi",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Delhi",
+      "question": "Compare Delhi and Maharashtra incentives",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Delhi",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Gujarat",
+      "question": "Electric car subsidy?",
+      "result": {
+        "status": "unsupported_jurisdiction",
+        "answer": "Choose Central, Delhi, Maharashtra, Tamil Nadu, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Delhi",
+      "question": "",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Delhi",
+      "question": "Can I claim an EV subsidy today?",
+      "result": {
+        "status": "not_established",
+        "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Delhi",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "current_entitlement_unverified",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "case": "car_scrapping",
+      "question": "According to the 2026 policy, what is the non-transport electric car scrapping incentive, applicant limit, price ceiling, old-car requirement, new-purchase deadline and who may receive it?",
+      "result": {
+        "status": "document_answer",
+        "answer": "Delhi — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Scrapping incentive amount for a non‑transport electric car is ₹1,00,000 per eligible applicant. [S8](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14)\n- The incentive is limited to the first 100,000 eligible applicants under the policy. [S8](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14)\n- Only new electric cars with an ex‑showroom price not exceeding ₹30 lakh are eligible for the incentive. [S8](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14)\n- The scrapped vehicle must be a Delhi‑registered car of BS‑IV emission standard or older. [S8](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14)\n- The purchase of the new electric car must occur within six (6) months of issuance of the Certificate of Deposit (CoD) from an authorised scrapping facility. [S8](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14) [S6](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/operating_guidelines.pdf#page=9)\n- The incentive is payable to the owner of the scrapped vehicle who is a resident of NCT of Delhi and registers the new electric car in Delhi (individuals or eligible entities). [S8](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14) [S6](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/operating_guidelines.pdf#page=9)\n\nSources:\n\n- [S8: Delhi — Delhi Electric Vehicle Policy 2026, PDF page 14](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14)\n- [S6: Delhi — Centralized Operating Guidelines for Delhi EV Policy 2026, PDF page 9](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/operating_guidelines.pdf#page=9)",
+        "sources": [
+          {
+            "source_id": "S8",
+            "state": "Delhi",
+            "document_title": "Delhi Electric Vehicle Policy 2026",
+            "document_date": "2026-06-30",
+            "pdf_page": 14,
+            "source": "data/policies/delhi/delhi_ev_policy_2026-06-30.pdf",
+            "official_url": "https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14",
+            "evidence_id": "delhi_policy_2026-06-30:p14:x0-4421",
+            "excerpt_start": 0,
+            "excerpt_end": 4421,
+            "excerpt_sha256": "8fe2b45d622856aec46d727ccf4e2ecf84f2339217123944f1e8a6898d6d154c",
+            "context_role": "dated_policy",
+            "version_note": "Final notified 2026 policy; read with operating conditions. Current availability is unverified."
+          },
+          {
+            "source_id": "S6",
+            "state": "Delhi",
+            "document_title": "Centralized Operating Guidelines for Delhi EV Policy 2026",
+            "document_date": "2026-07-02",
+            "pdf_page": 9,
+            "source": "data/policies/delhi/delhi_operating_guidelines_2026-07-02.pdf",
+            "official_url": "https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/operating_guidelines.pdf#page=9",
+            "evidence_id": "delhi_operating_guidelines_2026-07-02:p9:x0-2537",
+            "excerpt_start": 0,
+            "excerpt_end": 2537,
+            "excerpt_sha256": "a2e70584a3e3fc1b169c4bbb68d22bb785a2e5da34804ec1bc748bc84660edf6",
+            "context_role": "operating_conditions",
+            "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified."
+          }
+        ],
+        "points": [
+          {
+            "text": "Scrapping incentive amount for a non‑transport electric car is ₹1,00,000 per eligible applicant.",
+            "citations": [
+              {
+                "source_id": "S8",
+                "source_excerpt": "14 DELHI GAZETTE : EXTRAORDINARY PART IV]\n\n*No incentive shall be given to e-autos with battery capacity less than 4kWh. Incentive shall be applicable to\nboth plug-in and battery swapping e-three-wheelers models.\n4.3.2 The incentive mentioned at 4.3.1 shall be applicable for the replacement of old CNG auto-rickshaws or purchase\nof new electric-auto-rickshaws within the overall limit of auto-rickshaw fixed for NCT of Delhi.\n4.4 Electric Four-Wheeler Goods Vehicles (N1)\n4.4.1 Incentive Structure (Year-wise Registration):GNCTD shall provide the following incentive to promote e-\ntrucks (N1) adoption in NCT of Delhi:\nYear of Registration Incentive\nYear 1 from date of notification ₹ 1,00,000 for N1 >1.75-ton GVW and 50,000 upto 1.75 tons GVW\nYear 2 from date of notification ₹ 75,000 for N1 >1.75-ton GVW and 37,500 upto 1.75 tons GVW\nYear 3 from date of notification ₹ 50,000 for N1 >1.75-ton GVW and 25,000 upto 1.75 tons GVW\n\n4.5 The eligibility of EV models for purchase incentives shall be aligned to FAME 2, PM E-DRIVE scheme, and other\nschemes/guidelines of Government of India or GNCTD, if any.\n4.6 Scrapping Incentives\n4.6.1 Electric Two-Wheeler: A scrapping incentive of ₹10,000 shall be provided upon purc hase of a new electric vehicle\nunder this policy, provided the purchase is made within six (6) months of issuance of the Certificate of Deposit (CoD)\nfrom an authorised scrapping facility. This incentive shall be applicable for scrapping of Delhi registered BS-IV and\nbelow, two-wheelers.\n4.6.2 Electric Three-Wheeler (L5M): A scrapping incentive of ₹25,000 shall be provided upon purchase of a new electric\nvehicle under this policy, provided the purchase is made within six (6) months of issuance of the Certificate of Deposit\n(CoD) from an authorised scrapping facility. This incentive shall be applicable for scrapping of Delhi registered BS-IV\nand below, three-wheelers (L5M).\n4.6.3Electric Car (Non-Transport):A scrapping incentive of ₹1,00,000 shall be provided upon purchase of a new\nelectric car under this policy, subject to an ex-showroom price not exceeding ₹30 lakh , provided the purchase is made\nwithin six (6) months of issuance of the Certificate of Deposit (CoD) from an authorised scrapping facility. This\nincentive shall be applicable for the scrapping of Delhi-registered BS-IV and below carsand shall belimited to the\nfirst 1,00,000 eligible applicants under this policy.\n4.6.4Electric Four-Wheeler Goods Carriers (N1 Trucks):A scrapping incentive of ₹50,000 shall be provided upon\npurchase of a new electric vehicle under this policy, provided the purchase is made within six (6) months of issuance of\nthe Certificate of Deposit (CoD) from an authorised scrapping facility. This incentive shall be applicable for scrapping\nof Delhi registered BS-IV and below, four-wheeler Goods Carriers (N1 Trucks).\n4.6.5 A scrapping incentive of ₹15,000 shall be provided upo n scrapping of a Gramin Sewa vehicle registered in Delhi,\nsubject to the condition that a new electric Gramin Sewa vehicle (D+6/D+7) equipped with a Li-ion battery or any other\nadvanced/progressive battery technology is purchased within six months from the date of issuance of the Certificate of\nDeposit (CoD) by an authorised scrapping facility.\n4.6.6 All scrapping incentive shall be disbursed through direct benefit transfer to individual buyer/ proprietary\nfirms/ agencies/ companies being residents of NCT of Delhi and the vehicle being registered in Delhi. Eligible\nbeneficiaries shall apply directly for subsidy claims through a mechanism notified by the Transport Department,\nGNCTD.\n4.6.7 All scrapping incentive on CoD shall be applicable only to the owner of the scrapped vehicle.\n4.7 Road Tax, Registration Fee Exemption and No Entry Exemption\n4.7.1 All electric vehicles (subject to clause 4.7.2, and 4.7.3) purchased and registered in the NCT of Delhi during the\npolicy period shall be granted 100% exemption from road tax throughout the life of the vehicle and registration fees at\nthe time of vehicle registration.\n4.7.2 All electric cars with ex-showroom price below or equal to 30 lakhs purchased and registered in the NCT of Delhi\nshall be granted 100% exemption from road tax and registration fees till 31 March 2030.\n4.7.3 All electric cars with ex-showroom price above 30 lakhs purchased and registered in the NCT of Delhi shall not\nbe granted any exemption from road tax and registration fees."
+              }
+            ]
+          },
+          {
+            "text": "The incentive is limited to the first 100,000 eligible applicants under the policy.",
+            "citations": [
+              {
+                "source_id": "S8",
+                "source_excerpt": "14 DELHI GAZETTE : EXTRAORDINARY PART IV]\n\n*No incentive shall be given to e-autos with battery capacity less than 4kWh. Incentive shall be applicable to\nboth plug-in and battery swapping e-three-wheelers models.\n4.3.2 The incentive mentioned at 4.3.1 shall be applicable for the replacement of old CNG auto-rickshaws or purchase\nof new electric-auto-rickshaws within the overall limit of auto-rickshaw fixed for NCT of Delhi.\n4.4 Electric Four-Wheeler Goods Vehicles (N1)\n4.4.1 Incentive Structure (Year-wise Registration):GNCTD shall provide the following incentive to promote e-\ntrucks (N1) adoption in NCT of Delhi:\nYear of Registration Incentive\nYear 1 from date of notification ₹ 1,00,000 for N1 >1.75-ton GVW and 50,000 upto 1.75 tons GVW\nYear 2 from date of notification ₹ 75,000 for N1 >1.75-ton GVW and 37,500 upto 1.75 tons GVW\nYear 3 from date of notification ₹ 50,000 for N1 >1.75-ton GVW and 25,000 upto 1.75 tons GVW\n\n4.5 The eligibility of EV models for purchase incentives shall be aligned to FAME 2, PM E-DRIVE scheme, and other\nschemes/guidelines of Government of India or GNCTD, if any.\n4.6 Scrapping Incentives\n4.6.1 Electric Two-Wheeler: A scrapping incentive of ₹10,000 shall be provided upon purc hase of a new electric vehicle\nunder this policy, provided the purchase is made within six (6) months of issuance of the Certificate of Deposit (CoD)\nfrom an authorised scrapping facility. This incentive shall be applicable for scrapping of Delhi registered BS-IV and\nbelow, two-wheelers.\n4.6.2 Electric Three-Wheeler (L5M): A scrapping incentive of ₹25,000 shall be provided upon purchase of a new electric\nvehicle under this policy, provided the purchase is made within six (6) months of issuance of the Certificate of Deposit\n(CoD) from an authorised scrapping facility. This incentive shall be applicable for scrapping of Delhi registered BS-IV\nand below, three-wheelers (L5M).\n4.6.3Electric Car (Non-Transport):A scrapping incentive of ₹1,00,000 shall be provided upon purchase of a new\nelectric car under this policy, subject to an ex-showroom price not exceeding ₹30 lakh , provided the purchase is made\nwithin six (6) months of issuance of the Certificate of Deposit (CoD) from an authorised scrapping facility. This\nincentive shall be applicable for the scrapping of Delhi-registered BS-IV and below carsand shall belimited to the\nfirst 1,00,000 eligible applicants under this policy.\n4.6.4Electric Four-Wheeler Goods Carriers (N1 Trucks):A scrapping incentive of ₹50,000 shall be provided upon\npurchase of a new electric vehicle under this policy, provided the purchase is made within six (6) months of issuance of\nthe Certificate of Deposit (CoD) from an authorised scrapping facility. This incentive shall be applicable for scrapping\nof Delhi registered BS-IV and below, four-wheeler Goods Carriers (N1 Trucks).\n4.6.5 A scrapping incentive of ₹15,000 shall be provided upo n scrapping of a Gramin Sewa vehicle registered in Delhi,\nsubject to the condition that a new electric Gramin Sewa vehicle (D+6/D+7) equipped with a Li-ion battery or any other\nadvanced/progressive battery technology is purchased within six months from the date of issuance of the Certificate of\nDeposit (CoD) by an authorised scrapping facility.\n4.6.6 All scrapping incentive shall be disbursed through direct benefit transfer to individual buyer/ proprietary\nfirms/ agencies/ companies being residents of NCT of Delhi and the vehicle being registered in Delhi. Eligible\nbeneficiaries shall apply directly for subsidy claims through a mechanism notified by the Transport Department,\nGNCTD.\n4.6.7 All scrapping incentive on CoD shall be applicable only to the owner of the scrapped vehicle.\n4.7 Road Tax, Registration Fee Exemption and No Entry Exemption\n4.7.1 All electric vehicles (subject to clause 4.7.2, and 4.7.3) purchased and registered in the NCT of Delhi during the\npolicy period shall be granted 100% exemption from road tax throughout the life of the vehicle and registration fees at\nthe time of vehicle registration.\n4.7.2 All electric cars with ex-showroom price below or equal to 30 lakhs purchased and registered in the NCT of Delhi\nshall be granted 100% exemption from road tax and registration fees till 31 March 2030.\n4.7.3 All electric cars with ex-showroom price above 30 lakhs purchased and registered in the NCT of Delhi shall not\nbe granted any exemption from road tax and registration fees."
+              }
+            ]
+          },
+          {
+            "text": "Only new electric cars with an ex‑showroom price not exceeding ₹30 lakh are eligible for the incentive.",
+            "citations": [
+              {
+                "source_id": "S8",
+                "source_excerpt": "14 DELHI GAZETTE : EXTRAORDINARY PART IV]\n\n*No incentive shall be given to e-autos with battery capacity less than 4kWh. Incentive shall be applicable to\nboth plug-in and battery swapping e-three-wheelers models.\n4.3.2 The incentive mentioned at 4.3.1 shall be applicable for the replacement of old CNG auto-rickshaws or purchase\nof new electric-auto-rickshaws within the overall limit of auto-rickshaw fixed for NCT of Delhi.\n4.4 Electric Four-Wheeler Goods Vehicles (N1)\n4.4.1 Incentive Structure (Year-wise Registration):GNCTD shall provide the following incentive to promote e-\ntrucks (N1) adoption in NCT of Delhi:\nYear of Registration Incentive\nYear 1 from date of notification ₹ 1,00,000 for N1 >1.75-ton GVW and 50,000 upto 1.75 tons GVW\nYear 2 from date of notification ₹ 75,000 for N1 >1.75-ton GVW and 37,500 upto 1.75 tons GVW\nYear 3 from date of notification ₹ 50,000 for N1 >1.75-ton GVW and 25,000 upto 1.75 tons GVW\n\n4.5 The eligibility of EV models for purchase incentives shall be aligned to FAME 2, PM E-DRIVE scheme, and other\nschemes/guidelines of Government of India or GNCTD, if any.\n4.6 Scrapping Incentives\n4.6.1 Electric Two-Wheeler: A scrapping incentive of ₹10,000 shall be provided upon purc hase of a new electric vehicle\nunder this policy, provided the purchase is made within six (6) months of issuance of the Certificate of Deposit (CoD)\nfrom an authorised scrapping facility. This incentive shall be applicable for scrapping of Delhi registered BS-IV and\nbelow, two-wheelers.\n4.6.2 Electric Three-Wheeler (L5M): A scrapping incentive of ₹25,000 shall be provided upon purchase of a new electric\nvehicle under this policy, provided the purchase is made within six (6) months of issuance of the Certificate of Deposit\n(CoD) from an authorised scrapping facility. This incentive shall be applicable for scrapping of Delhi registered BS-IV\nand below, three-wheelers (L5M).\n4.6.3Electric Car (Non-Transport):A scrapping incentive of ₹1,00,000 shall be provided upon purchase of a new\nelectric car under this policy, subject to an ex-showroom price not exceeding ₹30 lakh , provided the purchase is made\nwithin six (6) months of issuance of the Certificate of Deposit (CoD) from an authorised scrapping facility. This\nincentive shall be applicable for the scrapping of Delhi-registered BS-IV and below carsand shall belimited to the\nfirst 1,00,000 eligible applicants under this policy.\n4.6.4Electric Four-Wheeler Goods Carriers (N1 Trucks):A scrapping incentive of ₹50,000 shall be provided upon\npurchase of a new electric vehicle under this policy, provided the purchase is made within six (6) months of issuance of\nthe Certificate of Deposit (CoD) from an authorised scrapping facility. This incentive shall be applicable for scrapping\nof Delhi registered BS-IV and below, four-wheeler Goods Carriers (N1 Trucks).\n4.6.5 A scrapping incentive of ₹15,000 shall be provided upo n scrapping of a Gramin Sewa vehicle registered in Delhi,\nsubject to the condition that a new electric Gramin Sewa vehicle (D+6/D+7) equipped with a Li-ion battery or any other\nadvanced/progressive battery technology is purchased within six months from the date of issuance of the Certificate of\nDeposit (CoD) by an authorised scrapping facility.\n4.6.6 All scrapping incentive shall be disbursed through direct benefit transfer to individual buyer/ proprietary\nfirms/ agencies/ companies being residents of NCT of Delhi and the vehicle being registered in Delhi. Eligible\nbeneficiaries shall apply directly for subsidy claims through a mechanism notified by the Transport Department,\nGNCTD.\n4.6.7 All scrapping incentive on CoD shall be applicable only to the owner of the scrapped vehicle.\n4.7 Road Tax, Registration Fee Exemption and No Entry Exemption\n4.7.1 All electric vehicles (subject to clause 4.7.2, and 4.7.3) purchased and registered in the NCT of Delhi during the\npolicy period shall be granted 100% exemption from road tax throughout the life of the vehicle and registration fees at\nthe time of vehicle registration.\n4.7.2 All electric cars with ex-showroom price below or equal to 30 lakhs purchased and registered in the NCT of Delhi\nshall be granted 100% exemption from road tax and registration fees till 31 March 2030.\n4.7.3 All electric cars with ex-showroom price above 30 lakhs purchased and registered in the NCT of Delhi shall not\nbe granted any exemption from road tax and registration fees."
+              }
+            ]
+          },
+          {
+            "text": "The scrapped vehicle must be a Delhi‑registered car of BS‑IV emission standard or older.",
+            "citations": [
+              {
+                "source_id": "S8",
+                "source_excerpt": "14 DELHI GAZETTE : EXTRAORDINARY PART IV]\n\n*No incentive shall be given to e-autos with battery capacity less than 4kWh. Incentive shall be applicable to\nboth plug-in and battery swapping e-three-wheelers models.\n4.3.2 The incentive mentioned at 4.3.1 shall be applicable for the replacement of old CNG auto-rickshaws or purchase\nof new electric-auto-rickshaws within the overall limit of auto-rickshaw fixed for NCT of Delhi.\n4.4 Electric Four-Wheeler Goods Vehicles (N1)\n4.4.1 Incentive Structure (Year-wise Registration):GNCTD shall provide the following incentive to promote e-\ntrucks (N1) adoption in NCT of Delhi:\nYear of Registration Incentive\nYear 1 from date of notification ₹ 1,00,000 for N1 >1.75-ton GVW and 50,000 upto 1.75 tons GVW\nYear 2 from date of notification ₹ 75,000 for N1 >1.75-ton GVW and 37,500 upto 1.75 tons GVW\nYear 3 from date of notification ₹ 50,000 for N1 >1.75-ton GVW and 25,000 upto 1.75 tons GVW\n\n4.5 The eligibility of EV models for purchase incentives shall be aligned to FAME 2, PM E-DRIVE scheme, and other\nschemes/guidelines of Government of India or GNCTD, if any.\n4.6 Scrapping Incentives\n4.6.1 Electric Two-Wheeler: A scrapping incentive of ₹10,000 shall be provided upon purc hase of a new electric vehicle\nunder this policy, provided the purchase is made within six (6) months of issuance of the Certificate of Deposit (CoD)\nfrom an authorised scrapping facility. This incentive shall be applicable for scrapping of Delhi registered BS-IV and\nbelow, two-wheelers.\n4.6.2 Electric Three-Wheeler (L5M): A scrapping incentive of ₹25,000 shall be provided upon purchase of a new electric\nvehicle under this policy, provided the purchase is made within six (6) months of issuance of the Certificate of Deposit\n(CoD) from an authorised scrapping facility. This incentive shall be applicable for scrapping of Delhi registered BS-IV\nand below, three-wheelers (L5M).\n4.6.3Electric Car (Non-Transport):A scrapping incentive of ₹1,00,000 shall be provided upon purchase of a new\nelectric car under this policy, subject to an ex-showroom price not exceeding ₹30 lakh , provided the purchase is made\nwithin six (6) months of issuance of the Certificate of Deposit (CoD) from an authorised scrapping facility. This\nincentive shall be applicable for the scrapping of Delhi-registered BS-IV and below carsand shall belimited to the\nfirst 1,00,000 eligible applicants under this policy.\n4.6.4Electric Four-Wheeler Goods Carriers (N1 Trucks):A scrapping incentive of ₹50,000 shall be provided upon\npurchase of a new electric vehicle under this policy, provided the purchase is made within six (6) months of issuance of\nthe Certificate of Deposit (CoD) from an authorised scrapping facility. This incentive shall be applicable for scrapping\nof Delhi registered BS-IV and below, four-wheeler Goods Carriers (N1 Trucks).\n4.6.5 A scrapping incentive of ₹15,000 shall be provided upo n scrapping of a Gramin Sewa vehicle registered in Delhi,\nsubject to the condition that a new electric Gramin Sewa vehicle (D+6/D+7) equipped with a Li-ion battery or any other\nadvanced/progressive battery technology is purchased within six months from the date of issuance of the Certificate of\nDeposit (CoD) by an authorised scrapping facility.\n4.6.6 All scrapping incentive shall be disbursed through direct benefit transfer to individual buyer/ proprietary\nfirms/ agencies/ companies being residents of NCT of Delhi and the vehicle being registered in Delhi. Eligible\nbeneficiaries shall apply directly for subsidy claims through a mechanism notified by the Transport Department,\nGNCTD.\n4.6.7 All scrapping incentive on CoD shall be applicable only to the owner of the scrapped vehicle.\n4.7 Road Tax, Registration Fee Exemption and No Entry Exemption\n4.7.1 All electric vehicles (subject to clause 4.7.2, and 4.7.3) purchased and registered in the NCT of Delhi during the\npolicy period shall be granted 100% exemption from road tax throughout the life of the vehicle and registration fees at\nthe time of vehicle registration.\n4.7.2 All electric cars with ex-showroom price below or equal to 30 lakhs purchased and registered in the NCT of Delhi\nshall be granted 100% exemption from road tax and registration fees till 31 March 2030.\n4.7.3 All electric cars with ex-showroom price above 30 lakhs purchased and registered in the NCT of Delhi shall not\nbe granted any exemption from road tax and registration fees."
+              }
+            ]
+          },
+          {
+            "text": "The purchase of the new electric car must occur within six (6) months of issuance of the Certificate of Deposit (CoD) from an authorised scrapping facility.",
+            "citations": [
+              {
+                "source_id": "S8",
+                "source_excerpt": "14 DELHI GAZETTE : EXTRAORDINARY PART IV]\n\n*No incentive shall be given to e-autos with battery capacity less than 4kWh. Incentive shall be applicable to\nboth plug-in and battery swapping e-three-wheelers models.\n4.3.2 The incentive mentioned at 4.3.1 shall be applicable for the replacement of old CNG auto-rickshaws or purchase\nof new electric-auto-rickshaws within the overall limit of auto-rickshaw fixed for NCT of Delhi.\n4.4 Electric Four-Wheeler Goods Vehicles (N1)\n4.4.1 Incentive Structure (Year-wise Registration):GNCTD shall provide the following incentive to promote e-\ntrucks (N1) adoption in NCT of Delhi:\nYear of Registration Incentive\nYear 1 from date of notification ₹ 1,00,000 for N1 >1.75-ton GVW and 50,000 upto 1.75 tons GVW\nYear 2 from date of notification ₹ 75,000 for N1 >1.75-ton GVW and 37,500 upto 1.75 tons GVW\nYear 3 from date of notification ₹ 50,000 for N1 >1.75-ton GVW and 25,000 upto 1.75 tons GVW\n\n4.5 The eligibility of EV models for purchase incentives shall be aligned to FAME 2, PM E-DRIVE scheme, and other\nschemes/guidelines of Government of India or GNCTD, if any.\n4.6 Scrapping Incentives\n4.6.1 Electric Two-Wheeler: A scrapping incentive of ₹10,000 shall be provided upon purc hase of a new electric vehicle\nunder this policy, provided the purchase is made within six (6) months of issuance of the Certificate of Deposit (CoD)\nfrom an authorised scrapping facility. This incentive shall be applicable for scrapping of Delhi registered BS-IV and\nbelow, two-wheelers.\n4.6.2 Electric Three-Wheeler (L5M): A scrapping incentive of ₹25,000 shall be provided upon purchase of a new electric\nvehicle under this policy, provided the purchase is made within six (6) months of issuance of the Certificate of Deposit\n(CoD) from an authorised scrapping facility. This incentive shall be applicable for scrapping of Delhi registered BS-IV\nand below, three-wheelers (L5M).\n4.6.3Electric Car (Non-Transport):A scrapping incentive of ₹1,00,000 shall be provided upon purchase of a new\nelectric car under this policy, subject to an ex-showroom price not exceeding ₹30 lakh , provided the purchase is made\nwithin six (6) months of issuance of the Certificate of Deposit (CoD) from an authorised scrapping facility. This\nincentive shall be applicable for the scrapping of Delhi-registered BS-IV and below carsand shall belimited to the\nfirst 1,00,000 eligible applicants under this policy.\n4.6.4Electric Four-Wheeler Goods Carriers (N1 Trucks):A scrapping incentive of ₹50,000 shall be provided upon\npurchase of a new electric vehicle under this policy, provided the purchase is made within six (6) months of issuance of\nthe Certificate of Deposit (CoD) from an authorised scrapping facility. This incentive shall be applicable for scrapping\nof Delhi registered BS-IV and below, four-wheeler Goods Carriers (N1 Trucks).\n4.6.5 A scrapping incentive of ₹15,000 shall be provided upo n scrapping of a Gramin Sewa vehicle registered in Delhi,\nsubject to the condition that a new electric Gramin Sewa vehicle (D+6/D+7) equipped with a Li-ion battery or any other\nadvanced/progressive battery technology is purchased within six months from the date of issuance of the Certificate of\nDeposit (CoD) by an authorised scrapping facility.\n4.6.6 All scrapping incentive shall be disbursed through direct benefit transfer to individual buyer/ proprietary\nfirms/ agencies/ companies being residents of NCT of Delhi and the vehicle being registered in Delhi. Eligible\nbeneficiaries shall apply directly for subsidy claims through a mechanism notified by the Transport Department,\nGNCTD.\n4.6.7 All scrapping incentive on CoD shall be applicable only to the owner of the scrapped vehicle.\n4.7 Road Tax, Registration Fee Exemption and No Entry Exemption\n4.7.1 All electric vehicles (subject to clause 4.7.2, and 4.7.3) purchased and registered in the NCT of Delhi during the\npolicy period shall be granted 100% exemption from road tax throughout the life of the vehicle and registration fees at\nthe time of vehicle registration.\n4.7.2 All electric cars with ex-showroom price below or equal to 30 lakhs purchased and registered in the NCT of Delhi\nshall be granted 100% exemption from road tax and registration fees till 31 March 2030.\n4.7.3 All electric cars with ex-showroom price above 30 lakhs purchased and registered in the NCT of Delhi shall not\nbe granted any exemption from road tax and registration fees."
+              },
+              {
+                "source_id": "S6",
+                "source_excerpt": " \n20.2. The applicant shall purchase a new eligible electric vehicle within six (6) months \nfrom the date of issuance of the Certificate of Deposit (CoD) by an Authorised \nVehicle Scrapping Facility, wherever applicable under the Policy. \n20.3. The scrapping incentive shall be available only to the owner of the scrapped vehicle in \nwhose favour the Certificate of Deposit (CoD) has been issued. \n21. Submission of Application \n21.1. Applicants shall submit an application for scrapping incentive through the designated \nportal, accompanied by the Certificate of Deposit (CoD) and the documents \nprescribed under these Guidelines. \n21.2. Individual applicants shall be eligible to claim scrapping incentives only in respect of \nvehicle categories covered under the Delhi Electric Vehicle Policy, 2026, subject to \nfulfilment of the residency and other eligibility conditions prescribed under Annexure \nXI. \n21.3. Companies, firms and other entities shall be eligible to claim scrapping incentives in \nrespect of vehicles registered in their name, subject to fulfilment of the eligibility \nconditions prescribed under Annexure XI, including proof that the registered office of \nthe applicant is situated in the National Capital Territory of Delhi. \n22. Verification and Disbursal \n22.1. Upon receipt of an application, the concerned DTO shall scrutinise and verify the \napplication and supporting documents in accordance with Annexure XII. \n22.2. Where the application is incomplete or requires clarification, the deficiencies shall be \ncommunicated to the applicant through the designated portal within fifteen (15) \nworking days from the date of receipt of the application. \n22.3. The applicant shall rectify the deficiencies and submit the required information or \ndocuments within seven (7) working days from the date of communication of such \ndeficiencies. \n22.4. Upon receipt of a complete application or the information furnished under Clause \n22.3, the DTO shall complete the verification and communicate the decision on the \napplication within seven (7) working days. \n22.5. The scrapping incentive shall be disbursed within the timeline prescribed under the \nDelhi Electric Vehicle Policy, 2026, subject to verification and fulfilment of the \napplicable requirements. \n22.6. The status of the application, including any deficiencies, approval, rejection or \ndisbursal of incentive, shall be communicated to the applicant through the designated \nportal and through SMS alerts on the registered mobile number of the applicant. \n "
+              }
+            ]
+          },
+          {
+            "text": "The incentive is payable to the owner of the scrapped vehicle who is a resident of NCT of Delhi and registers the new electric car in Delhi (individuals or eligible entities).",
+            "citations": [
+              {
+                "source_id": "S8",
+                "source_excerpt": "14 DELHI GAZETTE : EXTRAORDINARY PART IV]\n\n*No incentive shall be given to e-autos with battery capacity less than 4kWh. Incentive shall be applicable to\nboth plug-in and battery swapping e-three-wheelers models.\n4.3.2 The incentive mentioned at 4.3.1 shall be applicable for the replacement of old CNG auto-rickshaws or purchase\nof new electric-auto-rickshaws within the overall limit of auto-rickshaw fixed for NCT of Delhi.\n4.4 Electric Four-Wheeler Goods Vehicles (N1)\n4.4.1 Incentive Structure (Year-wise Registration):GNCTD shall provide the following incentive to promote e-\ntrucks (N1) adoption in NCT of Delhi:\nYear of Registration Incentive\nYear 1 from date of notification ₹ 1,00,000 for N1 >1.75-ton GVW and 50,000 upto 1.75 tons GVW\nYear 2 from date of notification ₹ 75,000 for N1 >1.75-ton GVW and 37,500 upto 1.75 tons GVW\nYear 3 from date of notification ₹ 50,000 for N1 >1.75-ton GVW and 25,000 upto 1.75 tons GVW\n\n4.5 The eligibility of EV models for purchase incentives shall be aligned to FAME 2, PM E-DRIVE scheme, and other\nschemes/guidelines of Government of India or GNCTD, if any.\n4.6 Scrapping Incentives\n4.6.1 Electric Two-Wheeler: A scrapping incentive of ₹10,000 shall be provided upon purc hase of a new electric vehicle\nunder this policy, provided the purchase is made within six (6) months of issuance of the Certificate of Deposit (CoD)\nfrom an authorised scrapping facility. This incentive shall be applicable for scrapping of Delhi registered BS-IV and\nbelow, two-wheelers.\n4.6.2 Electric Three-Wheeler (L5M): A scrapping incentive of ₹25,000 shall be provided upon purchase of a new electric\nvehicle under this policy, provided the purchase is made within six (6) months of issuance of the Certificate of Deposit\n(CoD) from an authorised scrapping facility. This incentive shall be applicable for scrapping of Delhi registered BS-IV\nand below, three-wheelers (L5M).\n4.6.3Electric Car (Non-Transport):A scrapping incentive of ₹1,00,000 shall be provided upon purchase of a new\nelectric car under this policy, subject to an ex-showroom price not exceeding ₹30 lakh , provided the purchase is made\nwithin six (6) months of issuance of the Certificate of Deposit (CoD) from an authorised scrapping facility. This\nincentive shall be applicable for the scrapping of Delhi-registered BS-IV and below carsand shall belimited to the\nfirst 1,00,000 eligible applicants under this policy.\n4.6.4Electric Four-Wheeler Goods Carriers (N1 Trucks):A scrapping incentive of ₹50,000 shall be provided upon\npurchase of a new electric vehicle under this policy, provided the purchase is made within six (6) months of issuance of\nthe Certificate of Deposit (CoD) from an authorised scrapping facility. This incentive shall be applicable for scrapping\nof Delhi registered BS-IV and below, four-wheeler Goods Carriers (N1 Trucks).\n4.6.5 A scrapping incentive of ₹15,000 shall be provided upo n scrapping of a Gramin Sewa vehicle registered in Delhi,\nsubject to the condition that a new electric Gramin Sewa vehicle (D+6/D+7) equipped with a Li-ion battery or any other\nadvanced/progressive battery technology is purchased within six months from the date of issuance of the Certificate of\nDeposit (CoD) by an authorised scrapping facility.\n4.6.6 All scrapping incentive shall be disbursed through direct benefit transfer to individual buyer/ proprietary\nfirms/ agencies/ companies being residents of NCT of Delhi and the vehicle being registered in Delhi. Eligible\nbeneficiaries shall apply directly for subsidy claims through a mechanism notified by the Transport Department,\nGNCTD.\n4.6.7 All scrapping incentive on CoD shall be applicable only to the owner of the scrapped vehicle.\n4.7 Road Tax, Registration Fee Exemption and No Entry Exemption\n4.7.1 All electric vehicles (subject to clause 4.7.2, and 4.7.3) purchased and registered in the NCT of Delhi during the\npolicy period shall be granted 100% exemption from road tax throughout the life of the vehicle and registration fees at\nthe time of vehicle registration.\n4.7.2 All electric cars with ex-showroom price below or equal to 30 lakhs purchased and registered in the NCT of Delhi\nshall be granted 100% exemption from road tax and registration fees till 31 March 2030.\n4.7.3 All electric cars with ex-showroom price above 30 lakhs purchased and registered in the NCT of Delhi shall not\nbe granted any exemption from road tax and registration fees."
+              },
+              {
+                "source_id": "S6",
+                "source_excerpt": " \n20.2. The applicant shall purchase a new eligible electric vehicle within six (6) months \nfrom the date of issuance of the Certificate of Deposit (CoD) by an Authorised \nVehicle Scrapping Facility, wherever applicable under the Policy. \n20.3. The scrapping incentive shall be available only to the owner of the scrapped vehicle in \nwhose favour the Certificate of Deposit (CoD) has been issued. \n21. Submission of Application \n21.1. Applicants shall submit an application for scrapping incentive through the designated \nportal, accompanied by the Certificate of Deposit (CoD) and the documents \nprescribed under these Guidelines. \n21.2. Individual applicants shall be eligible to claim scrapping incentives only in respect of \nvehicle categories covered under the Delhi Electric Vehicle Policy, 2026, subject to \nfulfilment of the residency and other eligibility conditions prescribed under Annexure \nXI. \n21.3. Companies, firms and other entities shall be eligible to claim scrapping incentives in \nrespect of vehicles registered in their name, subject to fulfilment of the eligibility \nconditions prescribed under Annexure XI, including proof that the registered office of \nthe applicant is situated in the National Capital Territory of Delhi. \n22. Verification and Disbursal \n22.1. Upon receipt of an application, the concerned DTO shall scrutinise and verify the \napplication and supporting documents in accordance with Annexure XII. \n22.2. Where the application is incomplete or requires clarification, the deficiencies shall be \ncommunicated to the applicant through the designated portal within fifteen (15) \nworking days from the date of receipt of the application. \n22.3. The applicant shall rectify the deficiencies and submit the required information or \ndocuments within seven (7) working days from the date of communication of such \ndeficiencies. \n22.4. Upon receipt of a complete application or the information furnished under Clause \n22.3, the DTO shall complete the verification and communicate the decision on the \napplication within seven (7) working days. \n22.5. The scrapping incentive shall be disbursed within the timeline prescribed under the \nDelhi Electric Vehicle Policy, 2026, subject to verification and fulfilment of the \napplicable requirements. \n22.6. The status of the application, including any deficiencies, approval, rejection or \ndisbursal of incentive, shall be communicated to the applicant through the designated \nportal and through SMS alerts on the registered mobile number of the applicant. \n "
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Delhi",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 1170,
+          "prompt_tokens": 6911,
+          "total_tokens": 8081,
+          "completion_time": 2.40952102,
+          "prompt_time": 0.289274523,
+          "queue_time": 0.39652586,
+          "total_time": 2.698795543,
+          "completion_tokens_details": {
+            "reasoning_tokens": 876
+          }
+        },
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      },
+      "ui_outputs": [
+        "### Answer\n\nDelhi — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Scrapping incentive amount for a non‑transport electric car is ₹1,00,000 per eligible applicant. [S8](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14)\n- The incentive is limited to the first 100,000 eligible applicants under the policy. [S8](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14)\n- Only new electric cars with an ex‑showroom price not exceeding ₹30 lakh are eligible for the incentive. [S8](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14)\n- The scrapped vehicle must be a Delhi‑registered car of BS‑IV emission standard or older. [S8](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14)\n- The purchase of the new electric car must occur within six (6) months of issuance of the Certificate of Deposit (CoD) from an authorised scrapping facility. [S8](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14) [S6](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/operating_guidelines.pdf#page=9)\n- The incentive is payable to the owner of the scrapped vehicle who is a resident of NCT of Delhi and registers the new electric car in Delhi (individuals or eligible entities). [S8](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14) [S6](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/operating_guidelines.pdf#page=9)",
+        "### Sources\n\n- [S8: Delhi — Delhi Electric Vehicle Policy 2026, PDF page 14](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf#page=14)\n- [S6: Delhi — Centralized Operating Guidelines for Delhi EV Policy 2026, PDF page 9](https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/operating_guidelines.pdf#page=9)"
+      ]
+    }
+  ]
+}

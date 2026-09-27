@@ -2,15 +2,27 @@
 
 ## Current stage and next step
 
-**Stage 10 — Uttar Pradesh technically complete.** The user explicitly selected Uttar Pradesh only for this session. Six official PDFs, page-linked prepared text, ingestion, index expansion, jurisdiction-aware retrieval and Gradio checks are complete. See [the handoff](STAGE_10_UP_HANDOFF.md).
+**Stage 10 — Delhi (NCT) technically complete.** The final 2026 policy and operating guidelines are ingested, indexed and available in Gradio. See [the Delhi handoff](STAGE_10_DELHI_HANDOFF.md).
 
-**Next: Stage 10 — Delhi (NCT), not started.** Continue one jurisdiction per session. Gujarat, Telangana, Karnataka and Madhya Pradesh follow Delhi. Do not start evaluation until all remaining jurisdiction batches and the deferred independent source/question review are complete.
+**Next: Stage 10 — Gujarat, not started.** Continue one jurisdiction per session, then Telangana, Karnataka and Madhya Pradesh. Do not start formal evaluation until coverage and the deferred independent source/question review are complete.
 
-**Latest authorization:** the user requested Stage 10 implementation and selected Uttar Pradesh. AI implementation/technical checks continue under the authorized workflow. Genuine team source/prompt review and independently written questions remain deferred; the assignment's AI-use rule and disclosure requirement are unchanged.
+**Latest authorization:** the user explicitly requested completion of the Delhi (NCT) batch. Technical implementation/checks follow the authorized workflow. Genuine team source/prompt review and independently written questions remain deferred; AI-use disclosure still applies.
 
 All source acceptance/current-entitlement flags remain false. The agreed cutoff remains 23 September 2026. Source collection after that date does not certify amendment completeness, remaining funding or current eligibility at the cutoff.
 
 Deferred review batch: compare prepared text with original PDFs; check applicable document chains/status gaps; record actual reviewers/dates; independently author and verify the 24 evaluation cases; freeze expected answers before formal evaluation. Do not invent reviewer results or count development prompts as team evaluation.
+
+## Stage 10 Delhi technical closeout — 27 September 2026
+
+Added the final 30 June 2026 Delhi policy (effective 1 July) and 2 July operating guidelines. The April draft and old 2020 policy are excluded. Selected-page visual checks and searchable extraction preserve original PDFs, hashes, physical pages and pending-review flags. No OCR or dependency changes were needed.
+
+**51 pages, 132 Delhi chunks and 13 ingestion checks passed.** The index was explicitly rebuilt to **480 records**. Earlier eight corpus JSONLs remained byte-identical; their receipts now match the expanded manifest. Required evidence links preserve yearly rates/caps, car price/scrapping conditions, N2 windows, technical tables and form continuations. Existing aliases work; Gradio lists five jurisdictions.
+
+**Nine integration and six fresh-kernel checks passed.** Every Delhi page assembles within the context budget, five semantic queries stay within Delhi, reopen/startup makes no corpus embeddings, and negative requests clear sources without model calls. Regression checks passed: 16 persistence, 19 retrieval, 13 citation, 50 failure, 15 UI and 10 UP integration checks. Stage 5/6 notebook checks passed eight each; updated Stage 8 example guards and 11 final artifact/schema/credential checks passed.
+
+The two-wheeler live Gradio answer passed. The first car-scrapping answer omitted ownership, which its question had not explicitly requested but the check expected; that failure is retained. The targeted retry explicitly requested the beneficiary condition and passed, followed by a mismatch that cleared citations. These are AI development observations, not formal evaluation or team-written questions. Exact reports and excerpts are under `data/processed/delhi/`.
+
+The [source review](data/policies/delhi/SOURCE_REVIEW.md) records RC-generation versus registration wording, date anchors, later-instrument/operational gaps and the deferred team acceptance. No current benefit or individual entitlement is certified. Gujarat was not started. AI assistance covered source research, visual checks, implementation, development questions, actual checks, documentation and authorized Git publication.
 
 ## Stage 10 Uttar Pradesh technical closeout — 27 September 2026
 

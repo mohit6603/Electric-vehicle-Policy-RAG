@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-09-27T16:27:04.629883+00:00",
+  "technical_status": "passed",
+  "team_acceptance": "deferred_not_verified",
+  "current_benefit_availability": "not_verified",
+  "verification_cutoff": "2026-09-23",
+  "page_count": 51,
+  "chunk_count": 132,
+  "chunks_by_source": {
+    "delhi_policy_2026-06-30": 46,
+    "delhi_operating_guidelines_2026-07-02": 86
+  },
+  "splitter": {
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "add_start_index": true
+  },
+  "checks_passed": [
+    "51_unique_physical_pages",
+    "stable_unique_chunks",
+    "original_pdf_hashes",
+    "metadata_and_pending_review_preserved",
+    "all_links_resolve",
+    "no_nonwhitespace_text_lost",
+    "notification_and_effective_dates",
+    "yearly_rates_caps_and_price_ceiling",
+    "scrapping_tax_and_vehicle_category_conditions",
+    "n2_count_window_and_duration",
+    "policy_priority_and_rc_deadline",
+    "conditional_disbursal_and_scrap_ownership",
+    "annexure_deadline_wording_preserved"
+  ],
+  "artifact_sha256": {
+    "pages.jsonl": "b319c6360611b8fa715f7d4fe7f486b9e7bc764a934a7f4c327d8ac5f43fa3af",
+    "chunks.jsonl": "8e058b5223f99d363b3f3c97954221f82ac289cd15561ebefe0ce85bf28432e2"
+  },
+  "notebook_sha256": "3ef33ef8978283fb0a16584467af5cde93368bafbc200b7168ad5a90bf64963e",
+  "source_manifest_sha256": "aeff5d84725d042820a8c850fdc5e35c6c8710b193c56c8ea12630a854c14d0c"
+}

@@ -1,0 +1,226 @@
+{
+  "checked_at_utc": "2026-09-27T16:27:09.662586+00:00",
+  "notebook_sha256": "3ef33ef8978283fb0a16584467af5cde93368bafbc200b7168ad5a90bf64963e",
+  "check_script_sha256": "7566b20482b12ce011dbebefdb355e569983464b289d5eea859b2f170280ba4c",
+  "source_manifest_sha256": "aeff5d84725d042820a8c850fdc5e35c6c8710b193c56c8ea12630a854c14d0c",
+  "retrieval_rules_sha256": "c9fca6ab8e5b102be484d7ebf1a728fe5f3ef925606676403cd7c848797fbd26",
+  "index_spec": {
+    "collection": "ev_policy_draft",
+    "corpus_sha256": "a22c053c764ef33eb551c27b8d4cfbf371abf26168019bef24446b0f70549f57",
+    "chunk_count": 480,
+    "embedding": {
+      "model": "nomic-embed-text:latest",
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "num_ctx": 2048,
+      "langchain_ollama": "0.3.7"
+    },
+    "distance": "cosine",
+    "chunks_by_state": {
+      "Maharashtra": 53,
+      "Tamil Nadu": 78,
+      "Central": 100,
+      "Uttar Pradesh": 117,
+      "Delhi": 132
+    }
+  },
+  "technical_status": "passed",
+  "scope": "AI development checks; not team source review or formal evaluation",
+  "checks_passed": [
+    "reopen_all_records_without_corpus_embedding",
+    "132_delhi_chunks",
+    "five_delhi_aliases",
+    "five_filtered_semantic_queries",
+    "conditions_and_continuations_present",
+    "no_draft_or_2020_sources",
+    "all_51_pages_assemble_within_context_limit",
+    "five_rejections_skip_models_and_clear_sources",
+    "gradio_lists_delhi_and_other_loaded_jurisdictions"
+  ],
+  "embedding_calls": {
+    "corpus": 0,
+    "query": 5
+  },
+  "observations": [
+    {
+      "question": "What yearly two-wheeler purchase incentive rates, caps and price ceiling does the 2026 policy state?",
+      "page_ids": [
+        "delhi_policy_2026-06-30:p12",
+        "delhi_policy_2026-06-30:p18",
+        "delhi_operating_guidelines_2026-07-02:p2",
+        "delhi_policy_2026-06-30:p13",
+        "delhi_policy_2026-06-30:p14",
+        "delhi_operating_guidelines_2026-07-02:p7",
+        "delhi_operating_guidelines_2026-07-02:p8",
+        "delhi_operating_guidelines_2026-07-02:p9"
+      ],
+      "context_chars": 26191,
+      "status": "retrieved"
+    },
+    {
+      "question": "What car scrapping incentive, applicant limit and price ceiling does the policy state?",
+      "page_ids": [
+        "delhi_policy_2026-06-30:p12",
+        "delhi_policy_2026-06-30:p18",
+        "delhi_operating_guidelines_2026-07-02:p2",
+        "delhi_policy_2026-06-30:p14",
+        "delhi_policy_2026-06-30:p13",
+        "delhi_policy_2026-06-30:p15",
+        "delhi_operating_guidelines_2026-07-02:p7",
+        "delhi_operating_guidelines_2026-07-02:p8",
+        "delhi_operating_guidelines_2026-07-02:p9",
+        "delhi_operating_guidelines_2026-07-02:p10",
+        "delhi_operating_guidelines_2026-07-02:p11"
+      ],
+      "context_chars": 35899,
+      "status": "retrieved"
+    },
+    {
+      "question": "What road tax and registration fee exemptions apply below and above the electric car price ceiling?",
+      "page_ids": [
+        "delhi_policy_2026-06-30:p12",
+        "delhi_policy_2026-06-30:p18",
+        "delhi_operating_guidelines_2026-07-02:p2",
+        "delhi_policy_2026-06-30:p14",
+        "delhi_policy_2026-06-30:p13",
+        "delhi_policy_2026-06-30:p15",
+        "delhi_operating_guidelines_2026-07-02:p7",
+        "delhi_operating_guidelines_2026-07-02:p8",
+        "delhi_operating_guidelines_2026-07-02:p9",
+        "delhi_operating_guidelines_2026-07-02:p10",
+        "delhi_operating_guidelines_2026-07-02:p11"
+      ],
+      "context_chars": 35899,
+      "status": "retrieved"
+    },
+    {
+      "question": "What no-entry exemption, vehicle limit and time windows are specified for private N2 electric trucks?",
+      "page_ids": [
+        "delhi_policy_2026-06-30:p12",
+        "delhi_policy_2026-06-30:p18",
+        "delhi_operating_guidelines_2026-07-02:p2",
+        "delhi_operating_guidelines_2026-07-02:p11",
+        "delhi_operating_guidelines_2026-07-02:p10",
+        "delhi_operating_guidelines_2026-07-02:p12",
+        "delhi_policy_2026-06-30:p15",
+        "delhi_operating_guidelines_2026-07-02:p7",
+        "delhi_policy_2026-06-30:p13",
+        "delhi_policy_2026-06-30:p14",
+        "delhi_operating_guidelines_2026-07-02:p8",
+        "delhi_operating_guidelines_2026-07-02:p9"
+      ],
+      "context_chars": 36677,
+      "status": "retrieved"
+    },
+    {
+      "question": "What is the purchase incentive application deadline from RC generation and conditional payment timeline?",
+      "page_ids": [
+        "delhi_policy_2026-06-30:p12",
+        "delhi_policy_2026-06-30:p18",
+        "delhi_operating_guidelines_2026-07-02:p2",
+        "delhi_operating_guidelines_2026-07-02:p8",
+        "delhi_operating_guidelines_2026-07-02:p7",
+        "delhi_operating_guidelines_2026-07-02:p9",
+        "delhi_policy_2026-06-30:p13",
+        "delhi_policy_2026-06-30:p14"
+      ],
+      "context_chars": 26191,
+      "status": "retrieved"
+    },
+    {
+      "all_page_context_range": [
+        12314,
+        44326
+      ]
+    },
+    {
+      "selection": "DL",
+      "question": "Tamil Nadu purchase subsidy?",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Delhi",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Delhi",
+      "question": "Compare Delhi and Maharashtra incentives",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Delhi",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Gujarat",
+      "question": "Electric car subsidy?",
+      "result": {
+        "status": "unsupported_jurisdiction",
+        "answer": "Choose Central, Delhi, Maharashtra, Tamil Nadu, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Delhi",
+      "question": "",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Delhi",
+      "question": "Can I claim an EV subsidy today?",
+      "result": {
+        "status": "not_established",
+        "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Delhi",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "current_entitlement_unverified",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    }
+  ]
+}

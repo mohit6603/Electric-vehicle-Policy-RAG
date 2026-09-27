@@ -168,13 +168,19 @@
       "uttar_pradesh_purchase_scheme_2023-07-14:p2",
       "uttar_pradesh_registration_fee_2025-11-05:p3",
       "uttar_pradesh_road_tax_2025-11-05:p3"
+    ],
+    "Delhi": [
+      "delhi_policy_2026-06-30:p12",
+      "delhi_policy_2026-06-30:p18",
+      "delhi_operating_guidelines_2026-07-02:p2"
     ]
   },
   "jurisdiction_notes": {
     "Maharashtra": "Read the 2025 policy with June/July operational conditions and the August section 4.2(1) replacement. The policy period alone does not establish purchase eligibility, portal deadlines or remaining allocation.",
     "Tamil Nadu": "The later order extends motor vehicle tax only. The printed demand-incentive, registration-charge and permit-fee deadline is 31 December 2025; their extension is not established. The general policy period does not extend those benefits.",
     "Central": "PM E-DRIVE two-/three-wheeler buyer scope only. August 2026 governs the updated e2w/outlay/terminal clauses; March 2026 supplies the e-rickshaw row. L5 closure, fund limits and the separate claim deadline must remain visible. No live funding or individual entitlement is verified.",
-    "Uttar Pradesh": "Purchase subsidy: use the 15 July 2024 revised column, including cancellation of the 3W provision and five years from 14.10.2022 OR exhaustion of Rs 403.97 crore, whichever first. No verified remaining funds. Use the separate 5 November 2025 pure-EV orders for tax and registration fees; do not infer purchase benefits from them. Fleet subsidy maximum and fleet-ownership minimum are different conditions. Hindi pages are AI English readings, not official translations. Parent 17 October 2025 amendment and any later hybrid/aggregator directions remain unverified; abstain on their current applicability. Manufacturing/charging text is base-policy evidence, not verified current operational eligibility."
+    "Uttar Pradesh": "Purchase subsidy: use the 15 July 2024 revised column, including cancellation of the 3W provision and five years from 14.10.2022 OR exhaustion of Rs 403.97 crore, whichever first. No verified remaining funds. Use the separate 5 November 2025 pure-EV orders for tax and registration fees; do not infer purchase benefits from them. Fleet subsidy maximum and fleet-ownership minimum are different conditions. Hindi pages are AI English readings, not official translations. Parent 17 October 2025 amendment and any later hybrid/aggregator directions remain unverified; abstain on their current applicability. Manufacturing/charging text is base-policy evidence, not verified current operational eligibility.",
+    "Delhi": "Final Delhi EV Policy 2026, notified 30 June with effect 1 July 2026, and 2 July operating guidelines. Use year-of-registration bands from date of notification exactly as printed; do not substitute the April draft or 2020 rates. The policy prevails on guideline inconsistency. The purchase application deadline is 30 days from RC generation; Annex XII instead says registration, so flag that wording discrepancy if relevant. The 60-day payment period starts at application submission and is conditional on verification. The car scrapping amount and applicant limit are separate; the Rs 30 lakh ceiling and car tax exception both apply. Model approval/listing, live allocation, portal acceptance and individual eligibility remain unverified; no current entitlement is established. External charging SoPs, tax implementation orders and 2023 aggregator rules are not a complete verified source chain."
   },
   "page_rules": {
     "maharashtra_policy_2025-05-23:p19": {
@@ -501,6 +507,312 @@
       "page_text_sha256": "313ad59fadfe5e1a7d63d6199079ce7b3f129ca0cc4c66a5937eeca7d4ec1873",
       "context_role": "road_tax_only_pure_evs",
       "version_note": "Only pure EV road tax; bought and registered in UP during the printed periods, not a subsidy extension.",
+      "exclude_spans": []
+    },
+    "delhi_policy_2026-06-30:p12": {
+      "page_text_sha256": "8efede616a719830dfa7dbbfbe95e590959be51fe332ef07a43a6703e05b4ef1",
+      "context_role": "dated_policy",
+      "version_note": "Final notified 2026 policy; read with operating conditions. Current availability is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_policy_2026-06-30:p13": {
+      "page_text_sha256": "3a975f6f13736813ae3e71dcb26bc7f969bc0c53cff0aed14dfc6908e8d29d6e",
+      "context_role": "dated_policy",
+      "version_note": "Final notified 2026 policy; read with operating conditions. Current availability is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_policy_2026-06-30:p14": {
+      "page_text_sha256": "8fe2b45d622856aec46d727ccf4e2ecf84f2339217123944f1e8a6898d6d154c",
+      "context_role": "dated_policy",
+      "version_note": "Final notified 2026 policy; read with operating conditions. Current availability is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_policy_2026-06-30:p15": {
+      "page_text_sha256": "b4c3451ecc37452853d3446885c13ec010198aab04abd7c8203aa97e9af80ea2",
+      "context_role": "dated_policy",
+      "version_note": "Final notified 2026 policy; read with operating conditions. Current availability is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_policy_2026-06-30:p16": {
+      "page_text_sha256": "66412624eca5ec657236708b5cf8217c0247caba6ad6af0cb05e1900a28ff35e",
+      "context_role": "dated_policy",
+      "version_note": "Final notified 2026 policy; read with operating conditions. Current availability is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_policy_2026-06-30:p17": {
+      "page_text_sha256": "84a1c20a6d079ccb406578103a311cf9187a86e15484aa92e07e5d4c9d2a69f0",
+      "context_role": "dated_policy",
+      "version_note": "Final notified 2026 policy; read with operating conditions. Current availability is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_policy_2026-06-30:p18": {
+      "page_text_sha256": "cdc42ec3e17b5bda937c70476205b321dc5559f8920261ac2d22aa927595d371",
+      "context_role": "dated_policy",
+      "version_note": "Final notified 2026 policy; read with operating conditions. Current availability is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p1": {
+      "page_text_sha256": "38703ef940e37e33b017db4dfbbaf566ef837352d80a85364b147949918351ab",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p2": {
+      "page_text_sha256": "0f169d13f94152fd0a91af7a243eac0d746a4c2e2962ba6c3c2ba79f849b0045",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p3": {
+      "page_text_sha256": "4a56b786c741c52a51689ad1fc9ae91f961519320538fd04bb5c00379a5b77a9",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p4": {
+      "page_text_sha256": "6472994b8197e58cfec51a6a67ae326c4056b38a8831b4c315b86c722fc375cc",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p5": {
+      "page_text_sha256": "478fd4f67c4bba0b03dd34cf7daa8a6fc9672913ef880fe3a09024e6031b7a3b",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p6": {
+      "page_text_sha256": "153dec841c1748f3298010520fd323bf71a68a4ed52505b7a2360c983835c81e",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p7": {
+      "page_text_sha256": "6cbcd43043837cb873d012753686368cffcfe0dd668f456b9ef24c5030c8de2e",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p8": {
+      "page_text_sha256": "69bd5a23bd00d8c9044659770b26fe81dd2142bf7def44dcc60e5c42f052c040",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p9": {
+      "page_text_sha256": "a2e70584a3e3fc1b169c4bbb68d22bb785a2e5da34804ec1bc748bc84660edf6",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p10": {
+      "page_text_sha256": "aae81756bab7d9b521050080871808999b8fbfff7d7679844f0db9a8501cf166",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p11": {
+      "page_text_sha256": "75c273f50ce8966137c0634eb1bed4db4af0209b934ce962854ff37df9befb38",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p12": {
+      "page_text_sha256": "9938b189f436952bce31607a717cb3630b6e0a88e4a26781366a19a854241746",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p13": {
+      "page_text_sha256": "1743da762412c46ed06ad75a9a5126fdac2c9c5d6475a5d32a9c515804317544",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p14": {
+      "page_text_sha256": "d3c7ff3cfc7224663389cf9f999f6ec622b92cbb7f87a82c1762570f23b5c0f5",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Technical tables apply to committee-assessed models; read the deemed-approved exceptions and periods on page 4.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p15": {
+      "page_text_sha256": "4709446469d318baf04532921f81b7319d86c393be2a7e519cd2eb26e613bbd6",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Technical tables apply to committee-assessed models; read the deemed-approved exceptions and periods on page 4.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p16": {
+      "page_text_sha256": "bb7afd45a02111aaf5b245898f527d359a5b6260a9f5015cbb15db8dd51e74b4",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Technical tables apply to committee-assessed models; read the deemed-approved exceptions and periods on page 4.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p17": {
+      "page_text_sha256": "5b13e4fe46f3cb8ad6cb92d3ae7e565c5876249be4974ad48d0cca787d7afe46",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Technical tables apply to committee-assessed models; read the deemed-approved exceptions and periods on page 4.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p18": {
+      "page_text_sha256": "93f3b125283290b3926ea45067909ec62869b15070b866e02e8c990f40e23949",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Technical tables apply to committee-assessed models; read the deemed-approved exceptions and periods on page 4.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p19": {
+      "page_text_sha256": "647a9c7de80e9584c313f6e7183328ba46860f4d93c341955bbc40933eb1f38f",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Technical tables apply to committee-assessed models; read the deemed-approved exceptions and periods on page 4.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p20": {
+      "page_text_sha256": "55beca00bcb71d1789a9f2882ba5b8e292de952dd545df630615108c22d47160",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p21": {
+      "page_text_sha256": "f02ddf8ce8736ad71780cc0cb86084c5948c57eb9eebfcdd51c8b13384182671",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p22": {
+      "page_text_sha256": "7711fe1adbfa1016f354d503ba95b111efb9b89ec9c2d79c3d80f78640e30866",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p23": {
+      "page_text_sha256": "1a82b3d8efd6e2c85aa056f338bb65325d949e4a89f60ce5b1fbca283b661e56",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Technical tables apply to committee-assessed models; read the deemed-approved exceptions and periods on page 4.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p24": {
+      "page_text_sha256": "4d512495851ca1f567aa2ecfcd3c6eacf5292b873abfd13d1adb6a18cca6a06e",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Technical tables apply to committee-assessed models; read the deemed-approved exceptions and periods on page 4.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p25": {
+      "page_text_sha256": "4751256a4b7e85ee0ce842062fc170d7e953c3fcec20e17d0191d5d684785954",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Technical tables apply to committee-assessed models; read the deemed-approved exceptions and periods on page 4.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p26": {
+      "page_text_sha256": "060586fde2865f8d1f3aff3357fb0d2ab3f26a7b8d97163ff281107433aa42c4",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Technical tables apply to committee-assessed models; read the deemed-approved exceptions and periods on page 4.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p27": {
+      "page_text_sha256": "d667be82801d063c20b1eb6926d6a05b7cd5db7e8425688caf64bd195747a02a",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Technical tables apply to committee-assessed models; read the deemed-approved exceptions and periods on page 4.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p28": {
+      "page_text_sha256": "9ef975df13bb79a696241e8d4278dbed20c5a8703e4af9afc9aa336ee5a83321",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p29": {
+      "page_text_sha256": "98b994c48f31e567e2c0bf07b97fc71169df2ec86385b7e78a59c19958b75ab4",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p30": {
+      "page_text_sha256": "1cd9b4227a115c89c8133fa908c1a20a0ac2704a502fc2df134b0fae4a87feac",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p31": {
+      "page_text_sha256": "af9448bc29116700372022e9ffc0466168456dad9c8e0df4727d887bb519abc8",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p32": {
+      "page_text_sha256": "cfd5274c509c0cc2a7e55a0592531d7987bbeb682e0e820b1ed33a3b7bb17dbf",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p33": {
+      "page_text_sha256": "519692e9151068e832689f11cc91368c6393e357595f8b6a93e459d04c6d83a4",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p34": {
+      "page_text_sha256": "09988e6fa23bc988dd11ae2214d7e38f59bab770dc7c7734f4b0bf3ce14c1bb3",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Forms/checklist use registration, while policy 4.1.3 and guideline 17.1 use RC generation for the 30-day deadline; do not conflate them.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p35": {
+      "page_text_sha256": "d350eb29a293a1c772a7d22690e0c5595f851a8069dad98e0227359fa640c87e",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Forms/checklist use registration, while policy 4.1.3 and guideline 17.1 use RC generation for the 30-day deadline; do not conflate them.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p36": {
+      "page_text_sha256": "6fb78bfd1b16ec10584f35cd4abb6150f202a1e1613446a89a8607aa21939a6b",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Forms/checklist use registration, while policy 4.1.3 and guideline 17.1 use RC generation for the 30-day deadline; do not conflate them.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p37": {
+      "page_text_sha256": "eac65e50d879e73acb751cb71dd9d13e0deb799facf87902fc53807f1921250c",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Forms/checklist use registration, while policy 4.1.3 and guideline 17.1 use RC generation for the 30-day deadline; do not conflate them.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p38": {
+      "page_text_sha256": "f1c117e75c70dfa46f04e102e7dda57d67d3388cdc8d48059057394834f853aa",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Forms/checklist use registration, while policy 4.1.3 and guideline 17.1 use RC generation for the 30-day deadline; do not conflate them.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p39": {
+      "page_text_sha256": "87dd48fd37a8ef0a4648ecddd7b4f258dff6520a1275f412090dc06032aba22b",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p40": {
+      "page_text_sha256": "6d9cc3829db040991852954f9f2f1c8b6829fef92a0e334546a8eae9f8f69522",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p41": {
+      "page_text_sha256": "a55f7736a9fe12e4737e57f439147e26be502cea1aee8bcb9c08b7ea9b31f60f",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p42": {
+      "page_text_sha256": "ed4fee34ded10e17c954eca3b730d8ff365e7a50b9edcec10a0749b390a17347",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Forms/checklist use registration, while policy 4.1.3 and guideline 17.1 use RC generation for the 30-day deadline; do not conflate them.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p43": {
+      "page_text_sha256": "64bd9a36e1c14c05a55e981251591dd3e540b9963015ca3f82ba966c1d5872ab",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified. Forms/checklist use registration, while policy 4.1.3 and guideline 17.1 use RC generation for the 30-day deadline; do not conflate them.",
+      "exclude_spans": []
+    },
+    "delhi_operating_guidelines_2026-07-02:p44": {
+      "page_text_sha256": "055f5774a064af86bd54c5d6bfc1fa8f66e76ec33b4b82aed83e69082dae954b",
+      "context_role": "operating_conditions",
+      "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
       "exclude_spans": []
     }
   }

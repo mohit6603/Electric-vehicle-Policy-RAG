@@ -63,7 +63,7 @@ def run_checks():
         ('Maharashtra', None, 'clarification_required'),
         (None, 'Tamil Nadu incentives', 'unsupported_jurisdiction'),
         ('unknown', 'Incentives?', 'unsupported_jurisdiction'),
-        ('Delhi', 'Incentives?', 'unsupported_jurisdiction'),
+        ('Gujarat', 'Incentives?', 'unsupported_jurisdiction'),
         ('Gujrat', 'Incentives?', 'unsupported_jurisdiction'),
         ('Telengana', 'Incentives?', 'unsupported_jurisdiction'),
         ('Karnataka', 'Incentives?', 'unsupported_jurisdiction'),

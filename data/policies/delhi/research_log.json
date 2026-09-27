@@ -1,0 +1,41 @@
+{
+  "researched_on": "2026-09-27",
+  "verification_cutoff": "2026-09-23",
+  "method": "Official Delhi Transport notifications and policy/guideline listings, official PDF downloads, extraction and selected-page rendering. Secondary search used only to locate the September official eGazette PDF.",
+  "sources": [
+    {
+      "source_id": "delhi_policy_2026-06-30",
+      "url": "https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_ev_policy_2026-30_0.pdf",
+      "sha256": "894361e8b8181a55391fcff1db17f83f19b5ddb3a18c47e35aace9e539e4a02f",
+      "listing": "https://transport.delhi.gov.in/transport/delhi-ev-policy-2026-0"
+    },
+    {
+      "source_id": "delhi_operating_guidelines_2026-07-02",
+      "url": "https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/operating_guidelines.pdf",
+      "sha256": "3e717823cc802f5c21ac74edc3b2d4397ce907cb6914435031dc6588caed279f",
+      "listing": "https://transport.delhi.gov.in/transport/centralized-operating-guidelines-delhi-ev-policy"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://transport.delhi.gov.in/sites/default/files/Transport/marquee-files/ev_policy.pdf",
+      "reason": "April 2026 consultation draft; final June notification available."
+    },
+    {
+      "url": "https://transport.delhi.gov.in/sites/default/files/Transport/circulars-orders/delhi_electric_vehicles_policy_2020.pdf",
+      "reason": "Prior policy; current pilot indexes final 2026 provisions. Historical claims need their own source chain."
+    },
+    {
+      "url": "https://egazette.gov.in/WriteReadData/2026/276193.pdf",
+      "sha256": "ddbdbb2f20c2abe0fc89e54a9dd38b385790e860abe1fad5bdb7ca14b3ceb319",
+      "reason": "14 September 2026 notification designating CMVR Rule 167(5) redressal authorities; not an EV benefit amendment. Delhi listing had an empty download link; fetched directly from official eGazette."
+    }
+  ],
+  "unresolved": [
+    "No exhaustive amendment search, currently open portal, approved-model list, remaining funds/quota or individual eligibility verified.",
+    "Notification versus effective-date anchors and RC-generation versus registration wording need team review; original wording is retained.",
+    "Separate charging SoPs, tax/fee implementing instruments and external 2023 aggregator scheme not comprehensively verified.",
+    "Collection on 27 September is after the cutoff; publication before cutoff does not establish live availability on that date."
+  ],
+  "acceptance": "team_review_pending"
+}
