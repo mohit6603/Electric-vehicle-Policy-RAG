@@ -1,0 +1,16 @@
+{
+  "technical_status": "passed",
+  "checked_at_utc": "2026-09-28T06:23:13.072582+00:00",
+  "checks_passed": [
+    "telangana_ingestion_in_fresh_kernel",
+    "restart_ready",
+    "543_records",
+    "seven_choices",
+    "telangana_current_entitlement_abstains",
+    "gradio_http_launch"
+  ],
+  "notebook_sha256": "25aa0c361314d3ad06c4e3a158601520e45a5b72b9df5ebf66f19c9f6d6a1165",
+  "corpus_sha256": "401fd0f9a16f74e3567977d63f6ef0bbae663b7dc1d36eed38c1a4d4f385f1bd",
+  "groq_calls": 0,
+  "note": "Fresh Jupyter kernel, Telangana ingestion and Gradio startup; no generated answer calls."
+}

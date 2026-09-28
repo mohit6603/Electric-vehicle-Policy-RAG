@@ -1,0 +1,100 @@
+{
+  "verification_cutoff": "2026-09-23",
+  "research_completed_on": "2026-09-28",
+  "status": "ai_research_pending_team_review",
+  "records": [
+    {
+      "official_url": "https://tgredco.telangana.gov.in/Updates_2020/Telangana_EVES_policy_2020_30.pdf",
+      "retrieved_on": "2026-09-28",
+      "sha256": "371b03a657260cd69b76f6e077eb9d4c33b43157d499ad6effb0d27012b25ac2",
+      "included_in_corpus": true,
+      "finding": "Included official booklet; current listing mistakenly links a missing Updates_2021 path. Working Updates_2020 file used."
+    },
+    {
+      "official_url": "https://tggazette.cgg.gov.in/viewDocument/1734330174633",
+      "retrieved_on": "2026-09-28",
+      "sha256": "9df43377a1c1c08066c54c159cd7a4b7ed5c35cf78bb60fd955d615245878a52",
+      "included_in_corpus": true,
+      "finding": "Included original G.O.41, 16 November 2024. Body image requires OCR."
+    },
+    {
+      "official_url": "https://transport.telangana.gov.in/pdf_uploads/GO%20MS%20No%20111612273150.pdf",
+      "retrieved_on": "2026-09-28",
+      "sha256": "0792c309aebe53433cf33961cc7b7045890fb275dc95a7aa096986b13d1dc63b",
+      "included_in_corpus": false,
+      "finding": "G.O.11, 2 February 2021, registration/retrofit implementation; references policy G.O.12, ITE&C, 29 October 2020. Older quota provisions; not indexed."
+    },
+    {
+      "official_url": "https://transport.telangana.gov.in/pdf_uploads/GO%20MS%20No%20121612273174.pdf",
+      "retrieved_on": "2026-09-28",
+      "sha256": "dc57b8fd11c07f2bc8dd1ec5e18596f867e256e3e80e3f2f931193954448a4c0",
+      "included_in_corpus": false,
+      "finding": "G.O.12, 2 February 2021, old road-tax/registration quotas. Replaced tax scope supplied by 2024 source; not indexed."
+    },
+    {
+      "official_url": "https://tggazette.cgg.gov.in/viewDocument/1626159555392",
+      "retrieved_on": "2026-09-28",
+      "sha256": "32b106c996766b5655edebca2b5ed50cbc5f9091235f32fb27e6122ea4833432",
+      "included_in_corpus": false,
+      "finding": "Original 2021 G.O.12 gazette; older quotas, not indexed."
+    },
+    {
+      "official_url": "https://tggazette.cgg.gov.in/viewDocument/1733134840751",
+      "retrieved_on": "2026-09-28",
+      "sha256": "f97fe3fe01b906eff48b93eecb304bb2a3e64cb201a16b67f8befcb726f3927f",
+      "included_in_corpus": false,
+      "finding": "G.O.22, 2 June 2023, old vehicle-count changes; earlier than the 2024 unlimited-count instrument, not indexed."
+    },
+    {
+      "official_url": "https://tgredco.telangana.gov.in/Updates_2022/3W_GO_31.pdf",
+      "retrieved_on": "2026-09-28",
+      "sha256": "0459f37f41ebd86fe6ee26ca7316cf2f888d927fcdff00831e040974b18ab68b",
+      "included_in_corpus": false,
+      "finding": "Downloaded scan; contents not visually reviewed or accepted; not indexed."
+    },
+    {
+      "official_url": "https://transport.telangana.gov.in/pdf_uploads/2025TRB_MS53.PDF",
+      "retrieved_on": "2026-09-28",
+      "sha256": "c6dcaf9833dea20ae49f64ffebe1efef3a247a74edd0e185d205be76e3f1a7f5",
+      "included_in_corpus": false,
+      "finding": "G.O.53, 13 August 2025, general Third/Sixth/Seventh Schedule rates. No EV-specific revocation identified in extracted text; not indexed or treated as proof of unchanged exemptions."
+    },
+    {
+      "official_url": "https://tggazette.cgg.gov.in/viewDocument/1776664581445",
+      "retrieved_on": "2026-09-28",
+      "sha256": "b3ae78aa18396596fc3f7c941a7da5294beabca7c304416c1904bfc2bf0d5ff3",
+      "included_in_corpus": false,
+      "finding": "G.O.16, 20 March 2026, gazette 23 March. Visually inspected: removes second-or-more personalized vehicle additional tax column in Seventh Schedule. General tax change, not an EV benefit renewal; not indexed."
+    },
+    {
+      "official_url": "https://tggazette.cgg.gov.in/viewDocument/1776498623276",
+      "retrieved_on": "2026-09-28",
+      "sha256": "cba6926fde571765dad3247979179d433be1e36d42e7d1dfa9099d957a59d663",
+      "included_in_corpus": false,
+      "finding": "G.O.10, 25 February 2026, gazette 1 March. Visually inspected commencement of Act 8 of 2026 from 1 March. Full substantive Act not reviewed; unresolved gap, not indexed."
+    },
+    {
+      "official_url": "https://tgtransport.net/onlinedashboard/Dashboard/Flagship.aspx",
+      "retrieved_on": "2026-09-28",
+      "sha256": "13479506591f4f9a8ee0abba9cffc8837e205db44928ed6e63276b7f5beb7617",
+      "included_in_corpus": false,
+      "finding": "Official Transport dashboard: corroborates unlimited-count exemption through 31 December 2026 and reports July 2026 aggregate figures. Observed after cutoff, not entitlement evidence or indexed content."
+    },
+    {
+      "official_url": "https://tggazette.cgg.gov.in/homeAllGazetteSearch?type=1",
+      "retrieved_on": "2026-09-28",
+      "sha256": "78c853bda4f32b419699631bb23232aa927bb6bd78d5bd0dec128f4d74ea6111",
+      "included_in_corpus": false,
+      "finding": "Public gazette list checked for Transport entries. Not exhaustive legal/amendment review; index itself not ingested."
+    }
+  ],
+  "rejected_downloads": [
+    "TGREDCO Updates_2021 policy link and old Ministry of Power mirror returned 404.",
+    "Guessed Transport G.O.41 PDF paths returned homepage HTML with status 200; rejected as non-PDF."
+  ],
+  "limits": [
+    "Full Act 8 of 2026 and later-instrument completeness not verified.",
+    "No operational claims, individual eligibility, remaining quota or funds verified.",
+    "Research-only downloads are ignored scratch files; only indexed originals are committed."
+  ]
+}

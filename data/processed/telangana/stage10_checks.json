@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-09-28T06:23:11.795142+00:00",
+  "technical_status": "passed",
+  "team_acceptance": "deferred_not_verified",
+  "current_benefit_availability": "not_verified",
+  "verification_cutoff": "2026-09-23",
+  "page_count": 13,
+  "chunk_count": 32,
+  "chunks_by_source": {
+    "telangana_policy_2020": 28,
+    "telangana_tax_fee_2024-11-16": 4
+  },
+  "splitter": {
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "add_start_index": true
+  },
+  "checks_passed": [
+    "13_unique_physical_pages",
+    "stable_unique_chunks",
+    "original_pdf_hashes",
+    "metadata_and_pending_review_preserved",
+    "all_links_resolve",
+    "no_nonwhitespace_text_lost",
+    "ten_year_policy_period",
+    "retrofit_rate_cap_and_quota",
+    "charging_encouragement_not_mandate",
+    "manufacturing_reference_threshold_and_caps",
+    "tax_fee_deadline_count_and_bus_qualifiers",
+    "ocr_provenance_preserved"
+  ],
+  "artifact_sha256": {
+    "pages.jsonl": "8a81dfc9cd60e3014aac56b2f6fd9099a76394eb7cd9224e7875477d337f4bbc",
+    "chunks.jsonl": "44bca858312ba09c71cce86444f1240fd6d3fd54e431c90ba71b195a36a8d7e5"
+  },
+  "notebook_sha256": "25aa0c361314d3ad06c4e3a158601520e45a5b72b9df5ebf66f19c9f6d6a1165",
+  "source_manifest_sha256": "c6fb5596e631501b1836bb8719c89967f426022c1fdbd85b62fe8dc9d87f1198",
+  "ocr_review_sha256": "e2730c92d6e4e775cd327f30fe7031107344768890938cec02af6f0f30d75d4c"
+}

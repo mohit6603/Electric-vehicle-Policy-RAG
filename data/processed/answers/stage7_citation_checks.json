@@ -1,10 +1,10 @@
 {
-  "checked_at_utc": "2026-09-28T05:59:03.819161+00:00",
-  "notebook_sha256": "695d1370dedcf9e944dfed17647bc8461451354d50ce2f2d9c525961b6e3a511",
+  "checked_at_utc": "2026-09-28T06:24:23.689746+00:00",
+  "notebook_sha256": "25aa0c361314d3ad06c4e3a158601520e45a5b72b9df5ebf66f19c9f6d6a1165",
   "check_script_sha256": "5f44fa5cd50d8f8a6aabdf88c8f4271bb0e8f153277f208b41cbb5ccc7c85c52",
-  "corpus_sha256": "cce9698acba7dd42f5e35ce709cdde5e2c1fd2586e98431a1ff8f7cc242d7732",
+  "corpus_sha256": "401fd0f9a16f74e3567977d63f6ef0bbae663b7dc1d36eed38c1a4d4f385f1bd",
   "retrieval_k": 1,
-  "retrieval_rules_sha256": "633a50ebf4f9b47e67b5d22af9362eb7c4bcc82bb99b4ca7e0e76bb329b12645",
+  "retrieval_rules_sha256": "7d72dcd4af057607dd07ab91b98bd26c8069e1cff49b315b167a9016be40bdfa",
   "scope": "AI-authored technical checks; not formal team evaluation",
   "technical_status": "passed",
   "checks_passed": [

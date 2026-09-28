@@ -1,13 +1,13 @@
 {
-  "checked_at_utc": "2026-09-28T05:54:56.469235+00:00",
-  "notebook_sha256": "8d223c5a19c7ccddea09a73d083ba13e2f47b9e9488060da77a8bb7c21b24f11",
-  "check_script_sha256": "fb73ac2422811290109c58ffdec55ccd92857b77e086d807cceb31d7319879bd",
-  "source_manifest_sha256": "377b8496ff6b9b56f0857630bd83b6ce08a070d63bb675fe1fefff2cab26884e",
-  "retrieval_rules_sha256": "633a50ebf4f9b47e67b5d22af9362eb7c4bcc82bb99b4ca7e0e76bb329b12645",
+  "checked_at_utc": "2026-09-28T06:23:15.811939+00:00",
+  "notebook_sha256": "25aa0c361314d3ad06c4e3a158601520e45a5b72b9df5ebf66f19c9f6d6a1165",
+  "check_script_sha256": "396f53c2c1580fdccddd465b12b0508e4013d7d95cb270fa69c2dfc74844f4d3",
+  "source_manifest_sha256": "c6fb5596e631501b1836bb8719c89967f426022c1fdbd85b62fe8dc9d87f1198",
+  "retrieval_rules_sha256": "7d72dcd4af057607dd07ab91b98bd26c8069e1cff49b315b167a9016be40bdfa",
   "index_spec": {
     "collection": "ev_policy_draft",
-    "corpus_sha256": "cce9698acba7dd42f5e35ce709cdde5e2c1fd2586e98431a1ff8f7cc242d7732",
-    "chunk_count": 511,
+    "corpus_sha256": "401fd0f9a16f74e3567977d63f6ef0bbae663b7dc1d36eed38c1a4d4f385f1bd",
+    "chunk_count": 543,
     "embedding": {
       "model": "nomic-embed-text:latest",
       "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
@@ -21,7 +21,8 @@
       "Central": 100,
       "Uttar Pradesh": 117,
       "Delhi": 132,
-      "Gujarat": 31
+      "Gujarat": 31,
+      "Telangana": 32
     }
   },
   "technical_status": "passed",
@@ -170,11 +171,11 @@
       }
     },
     {
-      "selection": "Telangana",
+      "selection": "Karnataka",
       "question": "Electric car subsidy?",
       "result": {
         "status": "unsupported_jurisdiction",
-        "answer": "Choose Central, Delhi, Gujarat, Maharashtra, Tamil Nadu, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "answer": "Choose Central, Delhi, Gujarat, Maharashtra, Tamil Nadu, Telangana, Uttar Pradesh; other jurisdictions are not indexed yet.",
         "sources": [],
         "points": [],
         "jurisdiction": null,

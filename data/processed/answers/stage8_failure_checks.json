@@ -1,9 +1,9 @@
 {
-  "checked_at_utc": "2026-09-28T05:57:24.987182+00:00",
-  "notebook_sha256": "11aed64954b8487a287949aa3e1a9aa956c7efecde1e1bb5b938da43bf4a5e43",
-  "check_script_sha256": "5ad3450cdff6cf57258154ef939f32237b3aff4b21cb52a10e9955237929824e",
-  "corpus_sha256": "cce9698acba7dd42f5e35ce709cdde5e2c1fd2586e98431a1ff8f7cc242d7732",
-  "retrieval_rules_sha256": "633a50ebf4f9b47e67b5d22af9362eb7c4bcc82bb99b4ca7e0e76bb329b12645",
+  "checked_at_utc": "2026-09-28T06:22:55.475182+00:00",
+  "notebook_sha256": "25aa0c361314d3ad06c4e3a158601520e45a5b72b9df5ebf66f19c9f6d6a1165",
+  "check_script_sha256": "333a1c3dfe5232b4fae66fb5c8dd5495cfd130d64c69039ac011dda464801ff1",
+  "corpus_sha256": "401fd0f9a16f74e3567977d63f6ef0bbae663b7dc1d36eed38c1a4d4f385f1bd",
+  "retrieval_rules_sha256": "7d72dcd4af057607dd07ab91b98bd26c8069e1cff49b315b167a9016be40bdfa",
   "scope": "AI-authored technical checks, not formal team evaluation",
   "technical_status": "passed",
   "checks_passed": [
@@ -97,14 +97,14 @@
     {
       "case": "missing_selection",
       "status": "unsupported_jurisdiction",
-      "answer": "Choose Central, Delhi, Gujarat, Maharashtra, Tamil Nadu, Uttar Pradesh; other jurisdictions are not indexed yet.",
+      "answer": "Choose Central, Delhi, Gujarat, Maharashtra, Tamil Nadu, Telangana, Uttar Pradesh; other jurisdictions are not indexed yet.",
       "diagnostics": {},
       "retryable": false
     },
     {
       "case": "unsupported_state",
       "status": "unsupported_jurisdiction",
-      "answer": "Choose Central, Delhi, Gujarat, Maharashtra, Tamil Nadu, Uttar Pradesh; other jurisdictions are not indexed yet.",
+      "answer": "Choose Central, Delhi, Gujarat, Maharashtra, Tamil Nadu, Telangana, Uttar Pradesh; other jurisdictions are not indexed yet.",
       "diagnostics": {},
       "retryable": false
     },

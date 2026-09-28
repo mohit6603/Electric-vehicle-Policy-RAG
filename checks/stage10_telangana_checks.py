@@ -1,4 +1,4 @@
-"""Check Delhi ingestion/retrieval; --live adds two Gradio/Groq development cases."""
+"""Check Telangana ingestion/retrieval; --live adds two Gradio/Groq development cases."""
 import argparse
 import copy
 import json
@@ -34,57 +34,64 @@ def run_checks(live=False, case=None):
     assert result['status'] == 'ready', result
     assert counts == {'corpus': 0, 'query': 0}
     assert stage['vector_store_chroma']._collection.count() == stage['index_spec']['chunk_count']
-    assert stage['index_spec']['chunks_by_state']['Delhi'] == 132
-    checks += ['reopen_all_records_without_corpus_embedding', '132_delhi_chunks']
-    for selection in ('Delhi', 'New Delhi', 'Delhi (NCT)', 'NCT of Delhi', 'DL'):
+    assert stage['index_spec']['chunks_by_state']['Telangana'] == 32
+    checks += ['reopen_all_records_without_corpus_embedding', '32_telangana_chunks']
+    for selection in ('Telangana', 'Telengana', 'TS'):
         result = stage['route_policy_question'](selection, 'What purchase incentive is described?')
-        assert result['jurisdiction'] == 'Delhi', result
-    checks.append('five_delhi_aliases')
-    policy = 'delhi_policy_2026-06-30'
-    guide = 'delhi_operating_guidelines_2026-07-02'
+        assert result['jurisdiction'] == 'Telangana', result
+    checks.append('three_telangana_aliases')
+    policy = 'telangana_policy_2020'
+    tax = 'telangana_tax_fee_2024-11-16'
     questions = [
-        ('What yearly two-wheeler purchase incentive rates, caps and price ceiling does the 2026 policy state?',
-         [f'{policy}:p13', f'{policy}:p14', f'{guide}:p7', f'{guide}:p8']),
-        ('What car scrapping incentive, applicant limit and price ceiling does the policy state?',
-         [f'{policy}:p14', f'{guide}:p9']),
-        ('What road tax and registration fee exemptions apply below and above the electric car price ceiling?',
-         [f'{policy}:p14']),
-        ('What no-entry exemption, vehicle limit and time windows are specified for private N2 electric trucks?',
-         [f'{policy}:p15', f'{guide}:p10', f'{guide}:p11']),
-        ('What is the purchase incentive application deadline from RC generation and conditional payment timeline?',
-         [f'{policy}:p13', f'{guide}:p7', f'{guide}:p8']),
+        ('What road tax and registration fee exemption, deadline and vehicle-count limit does the 2024 notification state for private electric cars?', [f'{tax}:p1']),
+        ('What retrofit incentive rate, per-vehicle cap and vehicle-count limit does the policy state for three-seater auto rickshaws?', [f'{policy}:p10']),
+        ('What highway charging-station spacing and residential-township size does the policy encourage?', [f'{policy}:p11']),
+        ('What investment or employment threshold defines a mega manufacturing project?', [f'{policy}:p13']),
+        ('What net SGST annual cap, cumulative cap and reimbursement period are stated for mega enterprises?', [f'{policy}:p13']),
     ]
-    required = set(stage['retrieval_rules']['required_pages']['Delhi'])
+    required = set(stage['retrieval_rules']['required_pages']['Telangana'])
     for question, expected in questions:
-        result = stage['retrieve_policy']('Delhi', question, k=1)
+        result = stage['retrieve_policy']('Telangana', question, k=1)
         assert result['status'] == 'retrieved', result
         docs = result['context_docs']
-        assert {d.metadata['state'] for d in docs} == {'Delhi'}
+        assert {d.metadata['state'] for d in docs} == {'Telangana'}
         assert required.union(expected) <= {d.metadata['page_id'] for d in docs}, question
-        assert all(d.metadata['policy_year'] == 2026 for d in docs)
+        assert all(d.metadata['policy_year'] in (2020, 2024) for d in docs)
         size = sum(len(d.page_content) for d in docs)
         assert size < 50000
         observations.append({'question': question, 'page_ids': [d.metadata['page_id'] for d in docs],
                              'context_chars': size, 'status': result['status']})
-    checks += ['five_filtered_semantic_queries', 'conditions_and_continuations_present', 'no_draft_or_2020_sources']
+    checks += ['five_filtered_semantic_queries', 'conditions_and_continuations_present', 'only_two_registered_telangana_sources']
     sizes = []
-    for page_id in (p for p in stage['retrieval_page_by_id'] if p.startswith('delhi_')):
+    for page_id in (p for p in stage['retrieval_page_by_id'] if p.startswith('telangana_')):
         chunk = next(d for d in stage['index_documents'] if d.metadata['page_id'] == page_id)
-        docs, omitted = stage['assemble_policy_context']([chunk], 'Delhi')
-        assert not omitted
+        docs, omitted = stage['assemble_policy_context']([chunk], 'Telangana')
+        assert all(item['page_id'] == f'{policy}:p10' for item in omitted)
+        assert len(omitted) in (0, 7)
         size = sum(len(d.page_content) for d in docs)
         assert size < 50000, (page_id, size)
         sizes.append(size)
-    assert len(sizes) == 51
+    assert len(sizes) == 13
     observations.append({'all_page_context_range': [min(sizes), max(sizes)]})
-    checks.append('all_51_pages_assemble_within_context_limit')
+    checks.append('all_13_pages_assemble_within_context_limit')
+    chunk = next(d for d in stage['index_documents'] if d.metadata['page_id'] == f'{policy}:p10')
+    docs, omitted = stage['assemble_policy_context']([chunk], 'Telangana')
+    text = '\n'.join(d.page_content for d in docs if d.metadata['page_id'] == f'{policy}:p10')
+    assert len(omitted) == 7
+    assert '15%' in text and '15,000' in text and '5,000 retrofit' in text
+    assert '2,00,000' not in text and '20,000' not in text and 'first 500 Electric buses' not in text
+    assert 'first 5,000 Electric 4-Wheeler' not in text
+    updated = next(d for d in docs if d.metadata['page_id'] == f'{tax}:p1')
+    assert 'irrespective of the number' in updated.page_content
+    assert updated.metadata['text_status'] == 'ai_proposal' and 'text_derivation' in updated.metadata
+    checks.append('old_tax_quotas_excluded_retrofit_and_ocr_update_preserved')
     before = copy.deepcopy(counts)
     for selection, question, status in [
-        ('DL', 'Tamil Nadu purchase subsidy?', 'clarification_required'),
-        ('Delhi', 'Compare Delhi and Maharashtra incentives', 'clarification_required'),
+        ('TS', 'Tamil Nadu purchase subsidy?', 'clarification_required'),
+        ('Telangana', 'Compare Telangana and Maharashtra incentives', 'clarification_required'),
         ('Karnataka', 'Electric car subsidy?', 'unsupported_jurisdiction'),
-        ('Delhi', '', 'clarification_required'),
-        ('Delhi', 'Can I claim an EV subsidy today?', 'not_established'),
+        ('Telangana', '', 'clarification_required'),
+        ('Telangana', 'Can I claim an EV subsidy today?', 'not_established'),
     ]:
         result = stage['ask_policy'](selection, question)
         assert result['status'] == status and not result['sources'], result
@@ -94,10 +101,10 @@ def run_checks(live=False, case=None):
     for cell in ('stage9-callback', 'stage9-startup', 'stage9-interface'):
         run_cell(stage, cell)
     assert stage['ui_choices'] == sorted(stage['index_spec']['chunks_by_state'])
-    assert 'Delhi' in stage['ui_choices']
-    checks.append('gradio_lists_delhi_and_other_loaded_jurisdictions')
-    report_path = Path('data/processed/delhi/stage10_live_checks.json' if live
-                       else 'data/processed/delhi/stage10_integration_checks.json')
+    assert 'Telangana' in stage['ui_choices']
+    checks.append('gradio_lists_telangana_and_other_loaded_jurisdictions')
+    report_path = Path('data/processed/telangana/stage10_live_checks.json' if live
+                       else 'data/processed/telangana/stage10_integration_checks.json')
     if case:
         report_path = report_path.with_name(f'stage10_live_{case}.json')
 
@@ -114,13 +121,14 @@ def run_checks(live=False, case=None):
 
     save('passed')
     if not live:
-        print('Stage 10 Delhi integration checks passed:', len(checks), flush=True)
+        print('Stage 10 Telangana integration checks passed:', len(checks), flush=True)
         return
     cases = [
-        ('two_wheeler', questions[0][0],
-         [r'10,?000', r'30,?000', r'6,?600', r'20,?000', r'3,?300', r'2\.25', r'kWh'], f'{policy}:p13'),
-        ('car_scrapping', 'According to the 2026 policy, what is the non-transport electric car scrapping incentive, applicant limit, price ceiling, old-car requirement, new-purchase deadline and who may receive it?',
-         [r'1,?00,?000|100,?000|one lakh|1 lakh', r'30\s*lakh', r'BS.?IV', r'six|6', r'owner', r'first'], f'{policy}:p14'),
+        ('private_car_tax', questions[0][0],
+         [r'100\s*%', r'road tax', r'registration', r'2026', r'31', r'December|12',
+          r'purchased|purchase', r'registered|registration', r'irrespective|no.*(?:limit|cap)|without.*(?:limit|cap)|unlimited'], f'{tax}:p1'),
+        ('retrofit', questions[1][0],
+         [r'15\s*%', r'15,?000', r'5,?000', r'retro'], f'{policy}:p10'),
     ]
     if case:
         cases = [item for item in cases if item[0] == case]
@@ -140,18 +148,20 @@ def run_checks(live=False, case=None):
         for position, (name, question, patterns, expected_page) in enumerate(cases):
             if position:
                 time.sleep(60)
-            rendered = client.predict('Delhi', question, api_name='/answer_policy')
+            rendered = client.predict('Telangana', question, api_name='/answer_policy')
             result = outputs[-1]
             observations.append({'case': name, 'question': question, 'result': result, 'ui_outputs': rendered})
             save('running')
             assert result['status'] == 'document_answer', (name, result)
             assert all(re.search(p, result['answer'], re.I) for p in patterns), (name, result['answer'])
             assert any(expected_page in s['evidence_id'] for s in result['sources']), name
-            assert all(s['state'] == 'Delhi' and '#page=' in s['official_url'] for s in result['sources'])
+            assert all(s['state'] == 'Telangana' and '#page=' in s['official_url'] for s in result['sources'])
             assert '#page=' in rendered[0] and '#page=' in rendered[1]
+            if name == 'private_car_tax':
+                assert 'OCR' in rendered[1] or 'transcription' in rendered[1]
             checks.append('live_gradio_'+name)
-            print('Live Delhi case passed:', name, flush=True)
-        rendered = client.predict('Delhi', 'Compare Delhi and Tamil Nadu EV subsidies', api_name='/answer_policy')
+            print('Live Telangana case passed:', name, flush=True)
+        rendered = client.predict('Telangana', 'Compare Telangana and Tamil Nadu EV subsidies', api_name='/answer_policy')
         assert outputs[-1]['status'] == 'clarification_required'
         assert rendered[1] == '### Sources\n\nNo sources cited.'
         checks.append('gradio_rejection_clears_previous_citations')
@@ -161,13 +171,13 @@ def run_checks(live=False, case=None):
         raise
     finally:
         demo.close()
-    print('Stage 10 Delhi live checks passed:', len(checks), flush=True)
+    print('Stage 10 Telangana live checks passed:', len(checks), flush=True)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--live', action='store_true')
-    parser.add_argument('--case', choices=['two_wheeler', 'car_scrapping'])
+    parser.add_argument('--case', choices=['private_car_tax', 'retrofit'])
     args = parser.parse_args()
     assert not args.case or args.live, '--case requires --live'
     run_checks(args.live, args.case)

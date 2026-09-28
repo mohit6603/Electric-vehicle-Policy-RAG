@@ -1,0 +1,351 @@
+{
+  "checked_at_utc": "2026-09-28T06:24:49.024333+00:00",
+  "notebook_sha256": "25aa0c361314d3ad06c4e3a158601520e45a5b72b9df5ebf66f19c9f6d6a1165",
+  "check_script_sha256": "098b828376dad86691f42ac01822f9260ec9ce1452548a7932208ff4807b6c0e",
+  "source_manifest_sha256": "c6fb5596e631501b1836bb8719c89967f426022c1fdbd85b62fe8dc9d87f1198",
+  "retrieval_rules_sha256": "7d72dcd4af057607dd07ab91b98bd26c8069e1cff49b315b167a9016be40bdfa",
+  "index_spec": {
+    "collection": "ev_policy_draft",
+    "corpus_sha256": "401fd0f9a16f74e3567977d63f6ef0bbae663b7dc1d36eed38c1a4d4f385f1bd",
+    "chunk_count": 543,
+    "embedding": {
+      "model": "nomic-embed-text:latest",
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "num_ctx": 2048,
+      "langchain_ollama": "0.3.7"
+    },
+    "distance": "cosine",
+    "chunks_by_state": {
+      "Maharashtra": 53,
+      "Tamil Nadu": 78,
+      "Central": 100,
+      "Uttar Pradesh": 117,
+      "Delhi": 132,
+      "Gujarat": 31,
+      "Telangana": 32
+    }
+  },
+  "technical_status": "passed",
+  "scope": "AI development checks; not team source review or formal evaluation",
+  "checks_passed": [
+    "reopen_all_records_without_corpus_embedding",
+    "32_telangana_chunks",
+    "three_telangana_aliases",
+    "five_filtered_semantic_queries",
+    "conditions_and_continuations_present",
+    "only_two_registered_telangana_sources",
+    "all_13_pages_assemble_within_context_limit",
+    "old_tax_quotas_excluded_retrofit_and_ocr_update_preserved",
+    "five_rejections_skip_models_and_clear_sources",
+    "gradio_lists_telangana_and_other_loaded_jurisdictions",
+    "live_gradio_private_car_tax",
+    "live_gradio_retrofit",
+    "gradio_rejection_clears_previous_citations"
+  ],
+  "embedding_calls": {
+    "corpus": 0,
+    "query": 7
+  },
+  "observations": [
+    {
+      "question": "What road tax and registration fee exemption, deadline and vehicle-count limit does the 2024 notification state for private electric cars?",
+      "page_ids": [
+        "telangana_policy_2020:p9",
+        "telangana_tax_fee_2024-11-16:p1"
+      ],
+      "context_chars": 2433,
+      "status": "retrieved"
+    },
+    {
+      "question": "What retrofit incentive rate, per-vehicle cap and vehicle-count limit does the policy state for three-seater auto rickshaws?",
+      "page_ids": [
+        "telangana_policy_2020:p9",
+        "telangana_tax_fee_2024-11-16:p1",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p11"
+      ],
+      "context_chars": 5330,
+      "status": "retrieved"
+    },
+    {
+      "question": "What highway charging-station spacing and residential-township size does the policy encourage?",
+      "page_ids": [
+        "telangana_policy_2020:p9",
+        "telangana_tax_fee_2024-11-16:p1",
+        "telangana_policy_2020:p11",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p12"
+      ],
+      "context_chars": 6098,
+      "status": "retrieved"
+    },
+    {
+      "question": "What investment or employment threshold defines a mega manufacturing project?",
+      "page_ids": [
+        "telangana_policy_2020:p9",
+        "telangana_tax_fee_2024-11-16:p1",
+        "telangana_policy_2020:p13",
+        "telangana_policy_2020:p12",
+        "telangana_policy_2020:p14"
+      ],
+      "context_chars": 8600,
+      "status": "retrieved"
+    },
+    {
+      "question": "What net SGST annual cap, cumulative cap and reimbursement period are stated for mega enterprises?",
+      "page_ids": [
+        "telangana_policy_2020:p9",
+        "telangana_tax_fee_2024-11-16:p1",
+        "telangana_policy_2020:p13",
+        "telangana_policy_2020:p12",
+        "telangana_policy_2020:p14"
+      ],
+      "context_chars": 8600,
+      "status": "retrieved"
+    },
+    {
+      "all_page_context_range": [
+        2433,
+        9406
+      ]
+    },
+    {
+      "selection": "TS",
+      "question": "Tamil Nadu purchase subsidy?",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Telangana",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Telangana",
+      "question": "Compare Telangana and Maharashtra incentives",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Telangana",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Karnataka",
+      "question": "Electric car subsidy?",
+      "result": {
+        "status": "unsupported_jurisdiction",
+        "answer": "Choose Central, Delhi, Gujarat, Maharashtra, Tamil Nadu, Telangana, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Telangana",
+      "question": "",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Telangana",
+      "question": "Can I claim an EV subsidy today?",
+      "result": {
+        "status": "not_established",
+        "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Telangana",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "current_entitlement_unverified",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "case": "private_car_tax",
+      "question": "What road tax and registration fee exemption, deadline and vehicle-count limit does the 2024 notification state for private electric cars?",
+      "result": {
+        "status": "document_answer",
+        "answer": "Telangana — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- The 16 Nov 2024 G.O. Ms.No. 41 provides a 100 % exemption from road tax and registration fees for electric four‑wheelers classified as private cars, provided the vehicle is purchased and registered in Telangana during the initial two‑year period ending on 31‑12‑2026, and the exemption applies irrespective of the number of such vehicles registered. [S2](https://tggazette.cgg.gov.in/viewDocument/1734330174633#page=1)\n\nSources:\n\n- [S2: Telangana — Telangana G.O.Ms.No.41 — EV road tax and registration fee exemption, PDF page 1](https://tggazette.cgg.gov.in/viewDocument/1734330174633#page=1) — AI-assisted English OCR transcription; compared with the original page image, pending team review.",
+        "sources": [
+          {
+            "source_id": "S2",
+            "state": "Telangana",
+            "document_title": "Telangana G.O.Ms.No.41 — EV road tax and registration fee exemption",
+            "document_date": "2024-11-16",
+            "pdf_page": 1,
+            "source": "data/policies/telangana/telangana_tax_fee_2024-11-16.pdf",
+            "official_url": "https://tggazette.cgg.gov.in/viewDocument/1734330174633#page=1",
+            "evidence_id": "telangana_tax_fee_2024-11-16:p1:x0-1846",
+            "excerpt_start": 0,
+            "excerpt_end": 1846,
+            "excerpt_sha256": "8f085c112185f0fd622da277ac9c349b9ec3c1c1101d4b3db1df60cb66e6dbce",
+            "context_role": "dated_tax_notification",
+            "version_note": "G.O.41, 16 November 2024: listed EV road-tax and registration-fee exemptions through 31 December 2026 without vehicle-count quotas. Bus qualifications preserved. AI English OCR proposal pending team review.",
+            "text_derivation": "AI-assisted English OCR transcription; compared with the original page image, pending team review."
+          }
+        ],
+        "points": [
+          {
+            "text": "The 16 Nov 2024 G.O. Ms.No. 41 provides a 100 % exemption from road tax and registration fees for electric four‑wheelers classified as private cars, provided the vehicle is purchased and registered in Telangana during the initial two‑year period ending on 31‑12‑2026, and the exemption applies irrespective of the number of such vehicles registered.",
+            "citations": [
+              {
+                "source_id": "S2",
+                "source_excerpt": "THE TELANGANA GAZETTE\n\nPART-I EXTRAORDINARY\nPUBLISHED BY AUTHORITY\n\nNo. 328-B ] HYDERABAD, SATURDAY, NOVEMBER 16, 2024.\n\nNOTIFICATIONS BY GOVERNMENT\nTRANSPORT, ROADS & BUILDINGS DEPARTMENT\n(TR.I)\n\nPROVIDING 100% EXEMPTION FROM ROAD TAX AND REGISTRATION FEES FOR ELECTRICAL\nVEHICLES PURCHASED AND REGISTERED IN TELANGANA FOR THE INITIAL PERIOD OF\nTWO YEARS i.e., UP TO 31-12-2026.\n\n[G.O.Ms.No.41, Transport, Roads & Buildings (TR.I), 16th November, 2024.]\n\nIn exercise of the powers conferred by sub-section (1) of Section 9 of the\nTelangana Motor Vehicles Taxation Act, 1963, (Act 5 of 1963), and Section 211 of\nMotor Vehicle Act, 1988 read with Rule 91 of Telangana Motor Vehicle Rules, 1989\nthe Governor of Telangana hereby grants to provide 100% exemption from Road\nTax and Registration fees in respect of Electric Two Wheelers, Electric 4-wheelers -\nCommercial passenger vehicles such as Taxi, Tourist cabs etc., Electric 4-wheelers —\nPrivate Cars, Electric Three — Seater Auto Rickshaws (GHMC- Non-GHMC Areas),\nElectric Light Goods Carriers including Three wheeled Goods vehicles (GHMC-\nNon-GHMC Areas), Electric Tractors, Electric Buses(100 % exemption of the Road\nTax and Registration fees for the entire life of the Electric Vehicles operated by the\nTelangana State Road Transport Corporation only, provided that the buses owned\nby any Industry for the purpose of transporting their own employees exclusively\nare also exempted provided further that these buses are not used for commercial\npurposes) purchased and registered in Telangana State for the initial period of two\nyears i.e., upto 31.12.2026, irrespective of the number of vehicles registered.\n\nVIKAS RAJ,\nSpecial Chief Secretary to Government.\n\nPrinted and Published by the Commissioner of Printing, Govt. of Telangana, at Govt. Central Press, Chanchalguda, Hyderabad.\n\nG- 629.\n"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Telangana",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 661,
+          "prompt_tokens": 1749,
+          "total_tokens": 2410,
+          "completion_time": 1.372742758,
+          "prompt_time": 0.077522274,
+          "queue_time": 0.347522639,
+          "total_time": 1.450265032,
+          "completion_tokens_details": {
+            "reasoning_tokens": 554
+          }
+        },
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      },
+      "ui_outputs": [
+        "### Answer\n\nTelangana — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- The 16 Nov 2024 G.O. Ms.No. 41 provides a 100 % exemption from road tax and registration fees for electric four‑wheelers classified as private cars, provided the vehicle is purchased and registered in Telangana during the initial two‑year period ending on 31‑12‑2026, and the exemption applies irrespective of the number of such vehicles registered. [S2](https://tggazette.cgg.gov.in/viewDocument/1734330174633#page=1)",
+        "### Sources\n\n- [S2: Telangana — Telangana G.O.Ms.No.41 — EV road tax and registration fee exemption, PDF page 1](https://tggazette.cgg.gov.in/viewDocument/1734330174633#page=1) — AI-assisted English OCR transcription; compared with the original page image, pending team review."
+      ]
+    },
+    {
+      "case": "retrofit",
+      "question": "What retrofit incentive rate, per-vehicle cap and vehicle-count limit does the policy state for three-seater auto rickshaws?",
+      "result": {
+        "status": "document_answer",
+        "answer": "Telangana — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- The 2020 Telangana Electric Vehicle & Energy Storage Policy (effective for 10 years from its notification) provides a retrofit incentive for three‑seater auto‑rickshaws equal to 15 % of the retrofit cost, with a maximum subsidy of Rs 15,000 per vehicle, applicable only to the first 5,000 retrofitted three‑seater auto‑rickshaws in the state. [S5](https://tgredco.telangana.gov.in/Updates_2020/Telangana_EVES_policy_2020_30.pdf#page=10) [S1](https://tgredco.telangana.gov.in/Updates_2020/Telangana_EVES_policy_2020_30.pdf#page=9)\n\nSources:\n\n- [S5: Telangana — Telangana Electric Vehicle & Energy Storage Policy 2020–2030, PDF page 10](https://tgredco.telangana.gov.in/Updates_2020/Telangana_EVES_policy_2020_30.pdf#page=10)\n- [S1: Telangana — Telangana Electric Vehicle & Energy Storage Policy 2020–2030, PDF page 9](https://tgredco.telangana.gov.in/Updates_2020/Telangana_EVES_policy_2020_30.pdf#page=9)",
+        "sources": [
+          {
+            "source_id": "S5",
+            "state": "Telangana",
+            "document_title": "Telangana Electric Vehicle & Energy Storage Policy 2020–2030",
+            "document_date": "2020-01-01",
+            "pdf_page": 10,
+            "source": "data/policies/telangana/telangana_ev_ess_policy_2020.pdf",
+            "official_url": "https://tgredco.telangana.gov.in/Updates_2020/Telangana_EVES_policy_2020_30.pdf#page=10",
+            "evidence_id": "telangana_policy_2020:p10:x588-868",
+            "excerpt_start": 588,
+            "excerpt_end": 868,
+            "excerpt_sha256": "0739898ff5795dd8ea68f4d9d1d1cf0dc7145cf03192482bc0bf42e73da663af",
+            "context_role": "candidate_with_updates",
+            "version_note": "2020 booklet: ten years from notification; manufacturing references Electronics Policy 2016. Read tax provisions with G.O.41 (2024); full later-instrument review pending."
+          },
+          {
+            "source_id": "S1",
+            "state": "Telangana",
+            "document_title": "Telangana Electric Vehicle & Energy Storage Policy 2020–2030",
+            "document_date": "2020-01-01",
+            "pdf_page": 9,
+            "source": "data/policies/telangana/telangana_ev_ess_policy_2020.pdf",
+            "official_url": "https://tgredco.telangana.gov.in/Updates_2020/Telangana_EVES_policy_2020_30.pdf#page=9",
+            "evidence_id": "telangana_policy_2020:p9:x0-587",
+            "excerpt_start": 0,
+            "excerpt_end": 587,
+            "excerpt_sha256": "08e3261b9a30ce6c150842c4a35bb6ead92ee731c8001f00889bb33e9ed25571",
+            "context_role": "candidate_with_updates",
+            "version_note": "2020 booklet: ten years from notification; manufacturing references Electronics Policy 2016. Read tax provisions with G.O.41 (2024); full later-instrument review pending."
+          }
+        ],
+        "points": [
+          {
+            "text": "The 2020 Telangana Electric Vehicle & Energy Storage Policy (effective for 10 years from its notification) provides a retrofit incentive for three‑seater auto‑rickshaws equal to 15 % of the retrofit cost, with a maximum subsidy of Rs 15,000 per vehicle, applicable only to the first 5,000 retrofitted three‑seater auto‑rickshaws in the state.",
+            "citations": [
+              {
+                "source_id": "S5",
+                "source_excerpt": " ii) Retro-fitment incentive at 15% of the retro-fitment cost capped at Rs. 15,000 per vehicle for  \n  first 5,000 retrofit 3 seater auto rickshaws in Telangana \n iii) Financing Institutions shall be encouraged to provide a hire-purchase scheme at discounted  \n  interest rates. \n"
+              },
+              {
+                "source_id": "S1",
+                "source_excerpt": "5. POLICY PERIOD\n6. POLICY MEASURES \nThis policy is applicable for a period of 10 years from the date of \nnotification of this policy. The policy shall be reviewed by the Steering \nCommittee as notified in this policy.\nThe policy aims to build on the policy objectives & strategies to \nencourage growth of EV & ESS sector in the state and to attract private \nsector investments in this sector. The framework consists of promoting \nEV adoption for end users, setting up of Charging Infrastructure and \nPromoting Manufacturing of EV & ESS Components in the State.\n9\nEV ESS POLICY 2020-2030"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Telangana",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 852,
+          "prompt_tokens": 2631,
+          "total_tokens": 3483,
+          "completion_time": 1.791324522,
+          "prompt_time": 0.155062918,
+          "queue_time": 0.316112179,
+          "total_time": 1.94638744,
+          "completion_tokens_details": {
+            "reasoning_tokens": 737
+          }
+        },
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      },
+      "ui_outputs": [
+        "### Answer\n\nTelangana — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- The 2020 Telangana Electric Vehicle & Energy Storage Policy (effective for 10 years from its notification) provides a retrofit incentive for three‑seater auto‑rickshaws equal to 15 % of the retrofit cost, with a maximum subsidy of Rs 15,000 per vehicle, applicable only to the first 5,000 retrofitted three‑seater auto‑rickshaws in the state. [S5](https://tgredco.telangana.gov.in/Updates_2020/Telangana_EVES_policy_2020_30.pdf#page=10) [S1](https://tgredco.telangana.gov.in/Updates_2020/Telangana_EVES_policy_2020_30.pdf#page=9)",
+        "### Sources\n\n- [S5: Telangana — Telangana Electric Vehicle & Energy Storage Policy 2020–2030, PDF page 10](https://tgredco.telangana.gov.in/Updates_2020/Telangana_EVES_policy_2020_30.pdf#page=10)\n- [S1: Telangana — Telangana Electric Vehicle & Energy Storage Policy 2020–2030, PDF page 9](https://tgredco.telangana.gov.in/Updates_2020/Telangana_EVES_policy_2020_30.pdf#page=9)"
+      ]
+    }
+  ]
+}

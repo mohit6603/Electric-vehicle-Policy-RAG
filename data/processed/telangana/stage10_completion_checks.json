@@ -1,0 +1,25 @@
+{
+  "checked_at_utc": "2026-09-28T11:07:07.929740+00:00",
+  "technical_status": "passed",
+  "notebook_sha256": "25aa0c361314d3ad06c4e3a158601520e45a5b72b9df5ebf66f19c9f6d6a1165",
+  "source_manifest_sha256": "c6fb5596e631501b1836bb8719c89967f426022c1fdbd85b62fe8dc9d87f1198",
+  "retrieval_rules_sha256": "7d72dcd4af057607dd07ab91b98bd26c8069e1cff49b315b167a9016be40bdfa",
+  "checks_passed": [
+    "notebook_schema_and_code_syntax",
+    "saved_outputs_empty",
+    "four_expected_existing_cells_changed",
+    "earlier_manifest_records_unchanged",
+    "source_hashes_and_false_acceptance_flags",
+    "earlier_twelve_jsonl_files_unchanged",
+    "dependencies_unchanged",
+    "ingestion_receipts_match",
+    "telangana_ingestion_integration_kernel_live_reports",
+    "ocr_hashes_and_empty_reviewer_fields",
+    "earlier_retrieval_rules_unchanged",
+    "credentials_absent_from_versioned_files",
+    "research_download_hashes_recorded"
+  ],
+  "team_acceptance": "deferred_not_verified",
+  "next_batch": "Karnataka",
+  "known_limit": "Source/OCR acceptance, full Act 8 of 2026 and later-instrument review, operational benefits and independent evaluation remain pending."
+}

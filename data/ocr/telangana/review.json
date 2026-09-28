@@ -1,0 +1,24 @@
+{
+  "engine": "Tesseract 5.5.3, eng, psm 3",
+  "preparation_completed_on": "2026-09-28",
+  "status": "ai_compared_proposal_pending_team_review",
+  "pages": [
+    {
+      "source_id": "telangana_tax_fee_2024-11-16",
+      "pdf_page": 1,
+      "source_pdf": "data/policies/telangana/telangana_tax_fee_2024-11-16.pdf",
+      "source_sha256": "9df43377a1c1c08066c54c159cd7a4b7ed5c35cf78bb60fd955d615245878a52",
+      "raw_text": "data/ocr/telangana/tax-2024-page-1-raw.txt",
+      "raw_sha256": "48957ebd160b5ce20c4f7da289f2342d26027567e1aa78778a334418b610e13d",
+      "proposed_text": "data/ocr/telangana/tax-2024-page-1.proposed.txt",
+      "proposed_sha256": "8f085c112185f0fd622da277ac9c349b9ec3c1c1101d4b3db1df60cb66e6dbce",
+      "text_derivation": "AI-assisted English OCR transcription; compared with the original page image, pending team review.",
+      "page_role": "policy_text",
+      "team_verified": false,
+      "accepted_for_ingestion": false,
+      "reviewer": null,
+      "reviewed_on": null,
+      "render_dpi": 220
+    }
+  ]
+}

@@ -198,3 +198,18 @@ The notebook structure, function style and pinned libraries are unchanged. New w
 | Acceptance and evaluation | Existing deferred team workflow | No invented reviewer/date or formal evaluation case; source limitations and AI assistance documented |
 
 This mapping extends the original classroom reuse map; there is no separate app or dependency change. Model-output errors led to a bounded abstention rather than a claim that the ambiguous battery provision was resolved. The underlying documents remain traceable and unaccepted.
+
+
+## Stage 10 Telangana mapping
+
+| Requirement | Existing code reused | Telangana extension |
+|---|---|---|
+| Official sources and physical-page provenance | Shared `load_policy_pages`, manifest/OCR review schema | Two original PDFs; 13 pages; one labelled English OCR proposal; year-only booklet date |
+| Classroom splitting and validation | Delhi/Gujarat input/split/check/export pattern and recursive splitter | Four `stage10-telangana-*` cells; 1000/200 splitting, 32 chunks, 12 ingestion checks |
+| Persistent search | Stage 5 ingestion list, explicit build and checked reopen | 543 records; earlier twelve JSONLs unchanged; no corpus embeddings at startup |
+| Jurisdiction and applicable provisions | Stage 6 aliases, mandatory links and hashed exclusions | Telangana/Telengana/TS; period/tax update required; seven old-tax spans excluded, retrofit retained |
+| Supported answers and failure behavior | Unchanged Stage 7/8 prompt, parser, renderer and guarded entry point | Two actual supported answers with original physical-page citations; current entitlement still abstains |
+| UI and verification | Stage 9 dropdown/callback and Delhi integration/live-check pattern | Seventh choice; private-car example; OCR provenance in Sources; fresh-kernel and HTTP checks |
+| Acceptance/evaluation | Deferred independent team workflow | No invented human review or evaluation case; full Act, later instruments and operational gaps recorded |
+
+This extends the original course-code reuse map. New code follows the same notebook structure and pinned libraries; no separate app, backend or dependency was introduced. AI research, OCR, implementation, development checks and documentation are disclosed in the handoff.

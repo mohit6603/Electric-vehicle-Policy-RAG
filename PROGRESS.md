@@ -2,15 +2,23 @@
 
 ## Current stage and next step
 
-**Stage 10 — Gujarat technically complete**, with battery-limit interpretation withheld pending review. Historical rate/price/period and separate tax provisions are available in Gradio. See [the Gujarat handoff](STAGE_10_GUJARAT_HANDOFF.md).
+**Stage 10 — Telangana technically complete.** The two-document packet works through ingestion, retrieval, citations and Gradio. See [the Telangana handoff](STAGE_10_TELANGANA_HANDOFF.md).
 
-**Next: Stage 10 — Telangana, not started.** Continue one jurisdiction per session, then Karnataka and Madhya Pradesh. Do not start formal evaluation until coverage and the deferred independent source/question review are complete.
+**Next: Stage 10 — Karnataka, not started.** Then Madhya Pradesh. Continue one jurisdiction per session; complete deferred independent review before formal evaluation.
 
-**Latest authorization:** the user explicitly requested completion of the Gujarat batch and asked to finish the remaining work within it. Technical implementation/checks follow the authorized workflow. Genuine team source/prompt review and independently written questions remain deferred; AI-use disclosure still applies.
+**Latest authorization:** the user requested completion of the Telangana batch and continuation from the existing checkpoint. Technical implementation, checks and Git publication follow the authorized workflow. Team source/prompt review and independent questions remain deferred; AI-use disclosure still applies.
 
 All source acceptance/current-entitlement flags remain false. The agreed cutoff remains 23 September 2026. Source collection after that date does not certify amendment completeness, remaining funding or current eligibility at the cutoff.
 
 Deferred review batch: compare prepared text with original PDFs; check applicable document chains/status gaps; record actual reviewers/dates; independently author and verify the 24 evaluation cases; freeze expected answers before formal evaluation. Do not invent reviewer results or count development prompts as team evaluation.
+
+## Stage 10 Telangana technical closeout — 28 September 2026
+
+Added the official 2020–2030 EV & ESS booklet and original 16 November 2024 tax/registration gazette. The latter has an image body and uses the existing labelled OCR-proposal loader. **13 pages, 32 chunks and 12 ingestion checks passed.** Earlier twelve corpus JSONLs remain byte-identical; the explicit index rebuild contains **543 records** and Gradio lists seven jurisdictions.
+
+The policy period and tax update are mandatory context. Seven hashed exclusions remove old tax quotas while retaining separate retrofit conditions. All 13 possible page seeds fit the context budget. **10 integration, six fresh-kernel and 13 combined live/integration checks passed.** Both actual Gradio/Groq answers retained requested facts with correct physical-page citations; a rejection cleared previous sources. All existing regression suites passed. The handoff records exact counts and the initial test-assertion correction, which occurred before model calls.
+
+The [source review](data/policies/telangana/SOURCE_REVIEW.md) records the year-only booklet date, bus qualifications, external manufacturing-policy dependency, full 2026 Act/later-instrument gaps and pending operational verification. The source cutoff remains 23 September; collection on 28 September is not retrospective certification. Acceptance/current-entitlement flags remain false. Karnataka has not started. AI assistance includes research, OCR comparison, implementation, development questions and output review, documentation and Git publication.
 
 ## Stage 10 Gujarat technical closeout — 28 September 2026
 

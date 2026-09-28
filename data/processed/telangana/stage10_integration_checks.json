@@ -1,7 +1,7 @@
 {
-  "checked_at_utc": "2026-09-28T06:23:17.521412+00:00",
+  "checked_at_utc": "2026-09-28T11:03:30.295818+00:00",
   "notebook_sha256": "25aa0c361314d3ad06c4e3a158601520e45a5b72b9df5ebf66f19c9f6d6a1165",
-  "check_script_sha256": "60720b1dca33e535f068bde93d9475fdc2728157c02fda6a0af9c1e4b8f04dca",
+  "check_script_sha256": "098b828376dad86691f42ac01822f9260ec9ce1452548a7932208ff4807b6c0e",
   "source_manifest_sha256": "c6fb5596e631501b1836bb8719c89967f426022c1fdbd85b62fe8dc9d87f1198",
   "retrieval_rules_sha256": "7d72dcd4af057607dd07ab91b98bd26c8069e1cff49b315b167a9016be40bdfa",
   "index_spec": {
@@ -29,103 +29,102 @@
   "scope": "AI development checks; not team source review or formal evaluation",
   "checks_passed": [
     "reopen_all_records_without_corpus_embedding",
-    "31_gujarat_chunks",
-    "three_gujarat_aliases",
+    "32_telangana_chunks",
+    "three_telangana_aliases",
     "five_filtered_semantic_queries",
     "conditions_and_continuations_present",
-    "historical_context_isolated_and_tax_chain_complete",
-    "all_10_pages_assemble_with_hashed_exclusions_within_limit",
-    "known_generated_battery_limit_claims_withheld",
-    "historical_evidence_label_is_rendered",
-    "six_rejections_skip_models_and_clear_sources",
-    "gradio_lists_gujarat_and_other_loaded_jurisdictions"
+    "only_two_registered_telangana_sources",
+    "all_13_pages_assemble_within_context_limit",
+    "old_tax_quotas_excluded_retrofit_and_ocr_update_preserved",
+    "five_rejections_skip_models_and_clear_sources",
+    "gradio_lists_telangana_and_other_loaded_jurisdictions"
   ],
   "embedding_calls": {
     "corpus": 0,
-    "query": 6
+    "query": 5
   },
   "observations": [
     {
-      "question": "What two-wheeler purchase incentive rate, battery capacity limit, ex-factory price ceiling, policy period and scheme-stacking conditions did the 2021 policy state?",
+      "question": "What road tax and registration fee exemption, deadline and vehicle-count limit does the 2024 notification state for private electric cars?",
       "page_ids": [
-        "gujarat_policy_2021-06-23:p3",
-        "gujarat_policy_2021-06-23:p5",
-        "gujarat_policy_2021-06-23:p4",
-        "gujarat_policy_2021-06-23:p6"
+        "telangana_policy_2020:p9",
+        "telangana_tax_fee_2024-11-16:p1"
       ],
-      "context_chars": 8303,
+      "context_chars": 2433,
       "status": "retrieved"
     },
     {
-      "question": "What tax rates and rebates are listed for electric auto rickshaws licensed for up to three passengers, and what deadline does the 2026 extension state?",
+      "question": "What retrofit incentive rate, per-vehicle cap and vehicle-count limit does the policy state for three-seater auto rickshaws?",
       "page_ids": [
-        "gujarat_policy_2021-06-23:p3",
-        "gujarat_motor_vehicle_tax_2025-04-17:p1",
-        "gujarat_motor_vehicle_tax_2025-04-17:p2",
-        "gujarat_policy_2021-06-23:p4",
-        "gujarat_policy_2021-06-23:p5",
-        "gujarat_policy_2021-06-23:p6",
-        "gujarat_motor_vehicle_tax_2025-04-17:p3",
-        "gujarat_motor_vehicle_tax_extension_2026-03-30:p4",
-        "gujarat_motor_vehicle_tax_extension_2026-03-30:p5"
+        "telangana_policy_2020:p9",
+        "telangana_tax_fee_2024-11-16:p1",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p11"
       ],
-      "context_chars": 15282,
+      "context_chars": 5330,
       "status": "retrieved"
     },
     {
-      "question": "What charging-station equipment subsidy, cap, station count and other-subsidy exclusion did the 2021 policy describe?",
+      "question": "What highway charging-station spacing and residential-township size does the policy encourage?",
       "page_ids": [
-        "gujarat_policy_2021-06-23:p3",
-        "gujarat_policy_2021-06-23:p5",
-        "gujarat_policy_2021-06-23:p4",
-        "gujarat_policy_2021-06-23:p6"
+        "telangana_policy_2020:p9",
+        "telangana_tax_fee_2024-11-16:p1",
+        "telangana_policy_2020:p11",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p10",
+        "telangana_policy_2020:p12"
       ],
-      "context_chars": 8303,
+      "context_chars": 6098,
       "status": "retrieved"
     },
     {
-      "question": "What tax rate, rebate and effective rate are listed for electric private service vehicles transporting educational-institution students or staff?",
+      "question": "What investment or employment threshold defines a mega manufacturing project?",
       "page_ids": [
-        "gujarat_policy_2021-06-23:p3",
-        "gujarat_motor_vehicle_tax_2025-04-17:p1",
-        "gujarat_motor_vehicle_tax_2025-04-17:p2",
-        "gujarat_policy_2021-06-23:p4",
-        "gujarat_policy_2021-06-23:p5",
-        "gujarat_policy_2021-06-23:p6",
-        "gujarat_motor_vehicle_tax_2025-04-17:p3",
-        "gujarat_motor_vehicle_tax_extension_2026-03-30:p4",
-        "gujarat_motor_vehicle_tax_extension_2026-03-30:p5"
+        "telangana_policy_2020:p9",
+        "telangana_tax_fee_2024-11-16:p1",
+        "telangana_policy_2020:p13",
+        "telangana_policy_2020:p12",
+        "telangana_policy_2020:p14"
       ],
-      "context_chars": 15282,
+      "context_chars": 8600,
       "status": "retrieved"
     },
     {
-      "question": "What historical manufacturing-policy reference and charging tariff conditions are stated?",
+      "question": "What net SGST annual cap, cumulative cap and reimbursement period are stated for mega enterprises?",
       "page_ids": [
-        "gujarat_policy_2021-06-23:p3",
-        "gujarat_policy_2021-06-23:p6",
-        "gujarat_policy_2021-06-23:p5",
-        "gujarat_policy_2021-06-23:p7",
-        "gujarat_policy_2021-06-23:p4"
+        "telangana_policy_2020:p9",
+        "telangana_tax_fee_2024-11-16:p1",
+        "telangana_policy_2020:p13",
+        "telangana_policy_2020:p12",
+        "telangana_policy_2020:p14"
       ],
-      "context_chars": 9090,
+      "context_chars": 8600,
       "status": "retrieved"
     },
     {
       "all_page_context_range": [
-        8303,
-        15282
+        2433,
+        9406
       ]
     },
     {
-      "selection": "GJ",
+      "selection": "TS",
       "question": "Tamil Nadu purchase subsidy?",
       "result": {
         "status": "clarification_required",
         "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
         "sources": [],
         "points": [],
-        "jurisdiction": "Gujarat",
+        "jurisdiction": "Telangana",
         "verification_cutoff": "2026-09-23",
         "current_entitlement_answers_allowed": false,
         "model": "openai/gpt-oss-120b",
@@ -136,14 +135,14 @@
       }
     },
     {
-      "selection": "Gujarat",
-      "question": "Compare Gujarat and Maharashtra incentives",
+      "selection": "Telangana",
+      "question": "Compare Telangana and Maharashtra incentives",
       "result": {
         "status": "clarification_required",
         "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
         "sources": [],
         "points": [],
-        "jurisdiction": "Gujarat",
+        "jurisdiction": "Telangana",
         "verification_cutoff": "2026-09-23",
         "current_entitlement_answers_allowed": false,
         "model": "openai/gpt-oss-120b",
@@ -172,7 +171,7 @@
       }
     },
     {
-      "selection": "Gujarat",
+      "selection": "Telangana",
       "question": "",
       "result": {
         "status": "clarification_required",
@@ -190,37 +189,19 @@
       }
     },
     {
-      "selection": "Gujarat",
+      "selection": "Telangana",
       "question": "Can I claim an EV subsidy today?",
       "result": {
         "status": "not_established",
         "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
         "sources": [],
         "points": [],
-        "jurisdiction": "Gujarat",
+        "jurisdiction": "Telangana",
         "verification_cutoff": "2026-09-23",
         "current_entitlement_answers_allowed": false,
         "model": "openai/gpt-oss-120b",
         "usage": {},
         "reason": "current_entitlement_unverified",
-        "retryable": false,
-        "diagnostics": {}
-      }
-    },
-    {
-      "selection": "Gujarat",
-      "question": "What two-wheeler purchase incentive rate, battery capacity limit, ex-factory price ceiling, policy period and scheme-stacking conditions did the 2021 policy state?",
-      "result": {
-        "status": "not_established",
-        "answer": "The 2021 Gujarat policy has an inconsistent battery-column reference. Source review is needed before this prototype interprets the purchase-subsidy battery limit or infers vehicle eligibility. Ask separately about the historical rate, price ceiling or period.",
-        "sources": [],
-        "points": [],
-        "jurisdiction": "Gujarat",
-        "verification_cutoff": "2026-09-23",
-        "current_entitlement_answers_allowed": false,
-        "model": "openai/gpt-oss-120b",
-        "usage": {},
-        "reason": "gujarat_battery_limit_review_pending",
         "retryable": false,
         "diagnostics": {}
       }

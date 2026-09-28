@@ -176,6 +176,10 @@
     ],
     "Gujarat": [
       "gujarat_policy_2021-06-23:p3"
+    ],
+    "Telangana": [
+      "telangana_policy_2020:p9",
+      "telangana_tax_fee_2024-11-16:p1"
     ]
   },
   "jurisdiction_notes": {
@@ -184,7 +188,8 @@
     "Central": "PM E-DRIVE two-/three-wheeler buyer scope only. August 2026 governs the updated e2w/outlay/terminal clauses; March 2026 supplies the e-rickshaw row. L5 closure, fund limits and the separate claim deadline must remain visible. No live funding or individual entitlement is verified.",
     "Uttar Pradesh": "Purchase subsidy: use the 15 July 2024 revised column, including cancellation of the 3W provision and five years from 14.10.2022 OR exhaustion of Rs 403.97 crore, whichever first. No verified remaining funds. Use the separate 5 November 2025 pure-EV orders for tax and registration fees; do not infer purchase benefits from them. Fleet subsidy maximum and fleet-ownership minimum are different conditions. Hindi pages are AI English readings, not official translations. Parent 17 October 2025 amendment and any later hybrid/aggregator directions remain unverified; abstain on their current applicability. Manufacturing/charging text is base-policy evidence, not verified current operational eligibility.",
     "Delhi": "Final Delhi EV Policy 2026, notified 30 June with effect 1 July 2026, and 2 July operating guidelines. Use year-of-registration bands from date of notification exactly as printed; do not substitute the April draft or 2020 rates. The policy prevails on guideline inconsistency. The purchase application deadline is 30 days from RC generation; Annex XII instead says registration, so flag that wording discrepancy if relevant. The 60-day payment period starts at application submission and is conditional on verification. The car scrapping amount and applicant limit are separate; the Rs 30 lakh ceiling and car tax exception both apply. Model approval/listing, live allocation, portal acceptance and individual eligibility remain unverified; no current entitlement is established. External charging SoPs, tax implementation orders and 2023 aggregator rules are not a complete verified source chain.",
-    "Gujarat": "The 2021 policy operated for four years from 1 July 2021; treat purchase/charging provisions as historical, with no renewal established. The separate 17 April 2025 motor vehicle tax table is read with the 30 March 2026 deadline replacement to 31 March 2027; it does not renew the 2021 subsidy. Tax applies to the listed vehicle categories powered exclusively by an electric motor fed exclusively by an installed battery. Tax rates/rebates must come from the matching tax-table row, never from the cash subsidy table. The full 2017 parent tax schedule, later amendments, operational claims, live funds and individual eligibility remain unverified. Policy 8(iv) refers to battery capacity in column (2), but Table 2 places it in (3); preserve the discrepancy and do not invent a corrected legal interpretation. Demand incentive permits central stacking but only one State scheme; charging subsidy has a different exclusion for other Government of India subsidies. Separate GEDA/student schemes and current tariff/industrial incentive schedules are outside this packet. When describing the battery limit, distinguish the maximum subsidised capacity from vehicle eligibility: Table 2/8(iv) does not expressly disqualify a larger battery. Explicitly flag that 8(iv) says column (2) but the battery values are actually in column (3); never repeat the wrong reference as a correct table description. Use past tense for the expired 2021 purchase provisions. The policy period is printed on physical PDF page 3, the purchase table/conditions on page 5 and charging conditions on page 6; cite the page containing each fact."
+    "Gujarat": "The 2021 policy operated for four years from 1 July 2021; treat purchase/charging provisions as historical, with no renewal established. The separate 17 April 2025 motor vehicle tax table is read with the 30 March 2026 deadline replacement to 31 March 2027; it does not renew the 2021 subsidy. Tax applies to the listed vehicle categories powered exclusively by an electric motor fed exclusively by an installed battery. Tax rates/rebates must come from the matching tax-table row, never from the cash subsidy table. The full 2017 parent tax schedule, later amendments, operational claims, live funds and individual eligibility remain unverified. Policy 8(iv) refers to battery capacity in column (2), but Table 2 places it in (3); preserve the discrepancy and do not invent a corrected legal interpretation. Demand incentive permits central stacking but only one State scheme; charging subsidy has a different exclusion for other Government of India subsidies. Separate GEDA/student schemes and current tariff/industrial incentive schedules are outside this packet. When describing the battery limit, distinguish the maximum subsidised capacity from vehicle eligibility: Table 2/8(iv) does not expressly disqualify a larger battery. Explicitly flag that 8(iv) says column (2) but the battery values are actually in column (3); never repeat the wrong reference as a correct table description. Use past tense for the expired 2021 purchase provisions. The policy period is printed on physical PDF page 3, the purchase table/conditions on page 5 and charging conditions on page 6; cite the page containing each fact.",
+    "Telangana": "The booklet is dated only 2020; its 2020-01-01 metadata is a year sorting placeholder, not a notification date. It states ten years from notification. Use the separate 16 November 2024 G.O.41 for road tax and registration fees: 100% exemption for its listed electric categories purchased and registered in Telangana up to 31 December 2026, irrespective of number registered. Old 2020 tax/fee quotas are excluded from answer context. The lifetime bus wording is limited to TSRTC-operated vehicles, with a separate qualification for industry buses used exclusively for own employees and not commercial purposes; do not say all buses receive lifetime exemption. The 2024 tax/fee change does not establish a cash purchase subsidy or remove the distinct retrofit 15%/Rs.15000/first5000 conditions. Charging provisions often encourage facilities; do not treat these as installed stations, compulsory spacing or a rupee tariff. Manufacturing highlights refer to Electronics Policy 2016, whose full terms and subsequent revisions are not collected. Original policy targets are not achieved results. Full later-amendment/Act review, operational status, funds, retrofit quota and individual eligibility remain unverified; no current entitlement is established."
   },
   "page_rules": {
     "maharashtra_policy_2025-05-23:p19": {
@@ -899,6 +904,127 @@
           "reason": "Unrelated land-revenue notifications after the tax amendment."
         }
       ]
+    },
+    "telangana_policy_2020:p5": {
+      "page_text_sha256": "1ecc7d1bdb7543e6f8bb436c47cfa84ff0acb662bdbec491045c2bd6b9d96b90",
+      "context_role": "candidate_with_updates",
+      "version_note": "2020 booklet: ten years from notification; manufacturing references Electronics Policy 2016. Read tax provisions with G.O.41 (2024); full later-instrument review pending.",
+      "exclude_spans": []
+    },
+    "telangana_policy_2020:p6": {
+      "page_text_sha256": "2a6fc14fc280e793d27f9f9ed6796a764d27d91dc307da4cfcb927cd1ec5f987",
+      "context_role": "candidate_with_updates",
+      "version_note": "2020 booklet: ten years from notification; manufacturing references Electronics Policy 2016. Read tax provisions with G.O.41 (2024); full later-instrument review pending.",
+      "exclude_spans": []
+    },
+    "telangana_policy_2020:p7": {
+      "page_text_sha256": "8f2fecd6b675144719cb8dd391c7debfd6c66ee52cc414c830776134122c07cf",
+      "context_role": "candidate_with_updates",
+      "version_note": "2020 booklet: ten years from notification; manufacturing references Electronics Policy 2016. Read tax provisions with G.O.41 (2024); full later-instrument review pending.",
+      "exclude_spans": []
+    },
+    "telangana_policy_2020:p8": {
+      "page_text_sha256": "1e5937318b2b7634a0e95043c244650750f43242041b8327d2683c6ba0511cdf",
+      "context_role": "candidate_with_updates",
+      "version_note": "2020 booklet: ten years from notification; manufacturing references Electronics Policy 2016. Read tax provisions with G.O.41 (2024); full later-instrument review pending.",
+      "exclude_spans": []
+    },
+    "telangana_policy_2020:p9": {
+      "page_text_sha256": "08e3261b9a30ce6c150842c4a35bb6ead92ee731c8001f00889bb33e9ed25571",
+      "context_role": "candidate_with_updates",
+      "version_note": "2020 booklet: ten years from notification; manufacturing references Electronics Policy 2016. Read tax provisions with G.O.41 (2024); full later-instrument review pending.",
+      "exclude_spans": []
+    },
+    "telangana_policy_2020:p10": {
+      "page_text_sha256": "5f737f592df284aefabba0712eda383d23bfcbc7ef60248d7d2ead4645a271ef",
+      "context_role": "candidate_with_updates",
+      "version_note": "2020 booklet: ten years from notification; manufacturing references Electronics Policy 2016. Read tax provisions with G.O.41 (2024); full later-instrument review pending.",
+      "exclude_spans": [
+        {
+          "start": 230,
+          "end": 410,
+          "text_sha256": "5eb81374a63d7eeb100b7bb527582abfac5c9a759c871832e7bc72c85da4d4c2",
+          "reason": "Old tax/registration provision; use mandatory G.O.41 dated 16 November 2024. Retrofit conditions remain separate."
+        },
+        {
+          "start": 457,
+          "end": 588,
+          "text_sha256": "d76a8abf46c2c314229978098c837503953baa5b69469896f57b3066acc3133b",
+          "reason": "Old tax/registration provision; use mandatory G.O.41 dated 16 November 2024. Retrofit conditions remain separate."
+        },
+        {
+          "start": 868,
+          "end": 1166,
+          "text_sha256": "e9dfd5f439386b1851e2e8537bbb0232bbf9d53188a4babe737d74e3005cca0d",
+          "reason": "Old tax/registration provision; use mandatory G.O.41 dated 16 November 2024. Retrofit conditions remain separate."
+        },
+        {
+          "start": 1166,
+          "end": 1436,
+          "text_sha256": "11a8671fb0724fe853d4947beec99bc0e8b2fd76a43c7f982a5ec5781963c85b",
+          "reason": "Old tax/registration provision; use mandatory G.O.41 dated 16 November 2024. Retrofit conditions remain separate."
+        },
+        {
+          "start": 1436,
+          "end": 1620,
+          "text_sha256": "b51a7129e0cc567a615aaf874a2c8f8c1ac73d9958b9b4be955b3ad189293a0d",
+          "reason": "Old tax/registration provision; use mandatory G.O.41 dated 16 November 2024. Retrofit conditions remain separate."
+        },
+        {
+          "start": 1645,
+          "end": 1774,
+          "text_sha256": "4ec48b870563053c9a6c298b1211fc535dcce446dafc85dbc904033678c343f3",
+          "reason": "Old tax/registration provision; use mandatory G.O.41 dated 16 November 2024. Retrofit conditions remain separate."
+        },
+        {
+          "start": 1855,
+          "end": 2139,
+          "text_sha256": "5e7f2e7260f15c27957c955776ad043248041fa180642f5ef7c9ae98ecd239b1",
+          "reason": "Old tax/registration provision; use mandatory G.O.41 dated 16 November 2024. Retrofit conditions remain separate."
+        }
+      ]
+    },
+    "telangana_policy_2020:p11": {
+      "page_text_sha256": "2cce1d086dc2912a4bd8c6c1313697162bb4d70b7a6a9d15c28eacb9f0430997",
+      "context_role": "candidate_with_updates",
+      "version_note": "2020 booklet: ten years from notification; manufacturing references Electronics Policy 2016. Read tax provisions with G.O.41 (2024); full later-instrument review pending.",
+      "exclude_spans": []
+    },
+    "telangana_policy_2020:p12": {
+      "page_text_sha256": "4c5fd93349b8266ce58bbb64b82f8b67f734e4f338d7323fca961d3db224d4f1",
+      "context_role": "candidate_with_updates",
+      "version_note": "2020 booklet: ten years from notification; manufacturing references Electronics Policy 2016. Read tax provisions with G.O.41 (2024); full later-instrument review pending.",
+      "exclude_spans": []
+    },
+    "telangana_policy_2020:p13": {
+      "page_text_sha256": "d05fb646c22e1eddf15ec9a43c6722b03ed91dc85f66db83d5f64fa3fe83ddbc",
+      "context_role": "candidate_with_updates",
+      "version_note": "2020 booklet: ten years from notification; manufacturing references Electronics Policy 2016. Read tax provisions with G.O.41 (2024); full later-instrument review pending.",
+      "exclude_spans": []
+    },
+    "telangana_policy_2020:p14": {
+      "page_text_sha256": "13fd69f6fad02e92bbbea6a77170b036c17cfc8e2c1b9209d9915823032b0980",
+      "context_role": "candidate_with_updates",
+      "version_note": "2020 booklet: ten years from notification; manufacturing references Electronics Policy 2016. Read tax provisions with G.O.41 (2024); full later-instrument review pending.",
+      "exclude_spans": []
+    },
+    "telangana_policy_2020:p15": {
+      "page_text_sha256": "5c0870f07eb09263203d71b5ebe3ba95b1f9463e5028ba19cf87584e8a5ee05c",
+      "context_role": "candidate_with_updates",
+      "version_note": "2020 booklet: ten years from notification; manufacturing references Electronics Policy 2016. Read tax provisions with G.O.41 (2024); full later-instrument review pending.",
+      "exclude_spans": []
+    },
+    "telangana_policy_2020:p16": {
+      "page_text_sha256": "fb0a358e0350962630f531cc827c76734d1bd9362977555a729fbf5c4d0cbbac",
+      "context_role": "candidate_with_updates",
+      "version_note": "2020 booklet: ten years from notification; manufacturing references Electronics Policy 2016. Read tax provisions with G.O.41 (2024); full later-instrument review pending.",
+      "exclude_spans": []
+    },
+    "telangana_tax_fee_2024-11-16:p1": {
+      "page_text_sha256": "8f085c112185f0fd622da277ac9c349b9ec3c1c1101d4b3db1df60cb66e6dbce",
+      "context_role": "dated_tax_notification",
+      "version_note": "G.O.41, 16 November 2024: listed EV road-tax and registration-fee exemptions through 31 December 2026 without vehicle-count quotas. Bus qualifications preserved. AI English OCR proposal pending team review.",
+      "exclude_spans": []
     }
   }
 }
