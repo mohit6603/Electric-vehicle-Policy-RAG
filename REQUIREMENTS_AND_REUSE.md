@@ -182,3 +182,19 @@ AI assistance: source research, visual page comparison and selected English read
 | Acceptance/evaluation | Deferred independent team review | Delhi status gaps documented; no invented reviewer or independent evaluation cases |
 
 The notebook structure, function style and pinned libraries are unchanged. New work is confined to Delhi data/metadata, ingestion, test coverage and the existing stage integrations. AI assistance and actual failed/retried observations are recorded in the Delhi handoff.
+
+
+## Stage 10 Gujarat mapping
+
+| Requirement | Existing code reused | Gujarat extension |
+|---|---|---|
+| Official documents and physical-page provenance | Shared `load_policy_pages`, manifest schema and pypdf plain/layout modes | Three original PDFs; 2021 policy and separate 2025/2026 tax chain; ten page records, all visually inspected |
+| Classroom chunking and ingestion checks | Delhi/UP input/split/check/export pattern and recursive splitter | Four `stage10-gujarat-*` cells; 1000/200 splitting, 31 stable chunks, 12 checks |
+| Persistent search | Stage 5 ingestion list, rebuild and checked reopen | Explicit 511-record build; earlier ten JSONLs unchanged; reopen without corpus embedding |
+| Jurisdiction and amendments | Stage 6 aliases, required links and hashed excerpt exclusions | Gujarat/Gujrat/GJ enabled; historical policy context separated from tax table/update; unrelated gazette text excluded from answer context |
+| Supported answers and citations | Stage 7 prompt, parser and renderer | Clearer fact/page citation instruction; historical-only cited points explicitly labelled; no new generation backend |
+| Abstention and failure behavior | Stage 8 guard pattern and Stage 7's existing conservative ambiguity handling | Battery-limit requests and observed numeric capacity claims withheld pending review; current entitlement still unverified |
+| UI and verification | Stage 9 dropdown/callback; Delhi integration/live-check pattern | Sixth jurisdiction and tax example, actual HTTP checks, retained failed attempts and fresh-kernel verification |
+| Acceptance and evaluation | Existing deferred team workflow | No invented reviewer/date or formal evaluation case; source limitations and AI assistance documented |
+
+This mapping extends the original classroom reuse map; there is no separate app or dependency change. Model-output errors led to a bounded abstention rather than a claim that the ambiguous battery provision was resolved. The underlying documents remain traceable and unaccepted.

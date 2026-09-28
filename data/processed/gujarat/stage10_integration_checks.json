@@ -1,7 +1,7 @@
 {
-  "checked_at_utc": "2026-09-28T05:54:56.469235+00:00",
-  "notebook_sha256": "8d223c5a19c7ccddea09a73d083ba13e2f47b9e9488060da77a8bb7c21b24f11",
-  "check_script_sha256": "fb73ac2422811290109c58ffdec55ccd92857b77e086d807cceb31d7319879bd",
+  "checked_at_utc": "2026-09-28T06:02:14.692322+00:00",
+  "notebook_sha256": "695d1370dedcf9e944dfed17647bc8461451354d50ce2f2d9c525961b6e3a511",
+  "check_script_sha256": "d2e6da35a1bde889a36d6a25f80a240900d9ac2fc5fc34770056fa1314ce3047",
   "source_manifest_sha256": "377b8496ff6b9b56f0857630bd83b6ce08a070d63bb675fe1fefff2cab26884e",
   "retrieval_rules_sha256": "633a50ebf4f9b47e67b5d22af9362eb7c4bcc82bb99b4ca7e0e76bb329b12645",
   "index_spec": {
@@ -28,120 +28,103 @@
   "scope": "AI development checks; not team source review or formal evaluation",
   "checks_passed": [
     "reopen_all_records_without_corpus_embedding",
-    "132_delhi_chunks",
-    "five_delhi_aliases",
+    "31_gujarat_chunks",
+    "three_gujarat_aliases",
     "five_filtered_semantic_queries",
     "conditions_and_continuations_present",
-    "no_draft_or_2020_sources",
-    "all_51_pages_assemble_within_context_limit",
-    "five_rejections_skip_models_and_clear_sources",
-    "gradio_lists_delhi_and_other_loaded_jurisdictions"
+    "historical_context_isolated_and_tax_chain_complete",
+    "all_10_pages_assemble_with_hashed_exclusions_within_limit",
+    "known_generated_battery_limit_claims_withheld",
+    "historical_evidence_label_is_rendered",
+    "six_rejections_skip_models_and_clear_sources",
+    "gradio_lists_gujarat_and_other_loaded_jurisdictions"
   ],
   "embedding_calls": {
     "corpus": 0,
-    "query": 5
+    "query": 6
   },
   "observations": [
     {
-      "question": "What yearly two-wheeler purchase incentive rates, caps and price ceiling does the 2026 policy state?",
+      "question": "What two-wheeler purchase incentive rate, battery capacity limit, ex-factory price ceiling, policy period and scheme-stacking conditions did the 2021 policy state?",
       "page_ids": [
-        "delhi_policy_2026-06-30:p12",
-        "delhi_policy_2026-06-30:p18",
-        "delhi_operating_guidelines_2026-07-02:p2",
-        "delhi_policy_2026-06-30:p13",
-        "delhi_policy_2026-06-30:p14",
-        "delhi_operating_guidelines_2026-07-02:p7",
-        "delhi_operating_guidelines_2026-07-02:p8",
-        "delhi_operating_guidelines_2026-07-02:p9"
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p4",
+        "gujarat_policy_2021-06-23:p6"
       ],
-      "context_chars": 26191,
+      "context_chars": 8303,
       "status": "retrieved"
     },
     {
-      "question": "What car scrapping incentive, applicant limit and price ceiling does the policy state?",
+      "question": "What tax rates and rebates are listed for electric auto rickshaws licensed for up to three passengers, and what deadline does the 2026 extension state?",
       "page_ids": [
-        "delhi_policy_2026-06-30:p12",
-        "delhi_policy_2026-06-30:p18",
-        "delhi_operating_guidelines_2026-07-02:p2",
-        "delhi_policy_2026-06-30:p14",
-        "delhi_policy_2026-06-30:p13",
-        "delhi_policy_2026-06-30:p15",
-        "delhi_operating_guidelines_2026-07-02:p7",
-        "delhi_operating_guidelines_2026-07-02:p8",
-        "delhi_operating_guidelines_2026-07-02:p9",
-        "delhi_operating_guidelines_2026-07-02:p10",
-        "delhi_operating_guidelines_2026-07-02:p11"
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_motor_vehicle_tax_2025-04-17:p1",
+        "gujarat_motor_vehicle_tax_2025-04-17:p2",
+        "gujarat_policy_2021-06-23:p4",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p6",
+        "gujarat_motor_vehicle_tax_2025-04-17:p3",
+        "gujarat_motor_vehicle_tax_extension_2026-03-30:p4",
+        "gujarat_motor_vehicle_tax_extension_2026-03-30:p5"
       ],
-      "context_chars": 35899,
+      "context_chars": 15282,
       "status": "retrieved"
     },
     {
-      "question": "What road tax and registration fee exemptions apply below and above the electric car price ceiling?",
+      "question": "What charging-station equipment subsidy, cap, station count and other-subsidy exclusion did the 2021 policy describe?",
       "page_ids": [
-        "delhi_policy_2026-06-30:p12",
-        "delhi_policy_2026-06-30:p18",
-        "delhi_operating_guidelines_2026-07-02:p2",
-        "delhi_policy_2026-06-30:p14",
-        "delhi_policy_2026-06-30:p13",
-        "delhi_policy_2026-06-30:p15",
-        "delhi_operating_guidelines_2026-07-02:p7",
-        "delhi_operating_guidelines_2026-07-02:p8",
-        "delhi_operating_guidelines_2026-07-02:p9",
-        "delhi_operating_guidelines_2026-07-02:p10",
-        "delhi_operating_guidelines_2026-07-02:p11"
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p4",
+        "gujarat_policy_2021-06-23:p6"
       ],
-      "context_chars": 35899,
+      "context_chars": 8303,
       "status": "retrieved"
     },
     {
-      "question": "What no-entry exemption, vehicle limit and time windows are specified for private N2 electric trucks?",
+      "question": "What tax rate, rebate and effective rate are listed for electric private service vehicles transporting educational-institution students or staff?",
       "page_ids": [
-        "delhi_policy_2026-06-30:p12",
-        "delhi_policy_2026-06-30:p18",
-        "delhi_operating_guidelines_2026-07-02:p2",
-        "delhi_operating_guidelines_2026-07-02:p11",
-        "delhi_operating_guidelines_2026-07-02:p10",
-        "delhi_operating_guidelines_2026-07-02:p12",
-        "delhi_policy_2026-06-30:p15",
-        "delhi_operating_guidelines_2026-07-02:p7",
-        "delhi_policy_2026-06-30:p13",
-        "delhi_policy_2026-06-30:p14",
-        "delhi_operating_guidelines_2026-07-02:p8",
-        "delhi_operating_guidelines_2026-07-02:p9"
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_motor_vehicle_tax_2025-04-17:p1",
+        "gujarat_motor_vehicle_tax_2025-04-17:p2",
+        "gujarat_policy_2021-06-23:p4",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p6",
+        "gujarat_motor_vehicle_tax_2025-04-17:p3",
+        "gujarat_motor_vehicle_tax_extension_2026-03-30:p4",
+        "gujarat_motor_vehicle_tax_extension_2026-03-30:p5"
       ],
-      "context_chars": 36677,
+      "context_chars": 15282,
       "status": "retrieved"
     },
     {
-      "question": "What is the purchase incentive application deadline from RC generation and conditional payment timeline?",
+      "question": "What historical manufacturing-policy reference and charging tariff conditions are stated?",
       "page_ids": [
-        "delhi_policy_2026-06-30:p12",
-        "delhi_policy_2026-06-30:p18",
-        "delhi_operating_guidelines_2026-07-02:p2",
-        "delhi_operating_guidelines_2026-07-02:p8",
-        "delhi_operating_guidelines_2026-07-02:p7",
-        "delhi_operating_guidelines_2026-07-02:p9",
-        "delhi_policy_2026-06-30:p13",
-        "delhi_policy_2026-06-30:p14"
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_policy_2021-06-23:p6",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p7",
+        "gujarat_policy_2021-06-23:p4"
       ],
-      "context_chars": 26191,
+      "context_chars": 9090,
       "status": "retrieved"
     },
     {
       "all_page_context_range": [
-        12314,
-        44326
+        8303,
+        15282
       ]
     },
     {
-      "selection": "DL",
+      "selection": "GJ",
       "question": "Tamil Nadu purchase subsidy?",
       "result": {
         "status": "clarification_required",
         "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
         "sources": [],
         "points": [],
-        "jurisdiction": "Delhi",
+        "jurisdiction": "Gujarat",
         "verification_cutoff": "2026-09-23",
         "current_entitlement_answers_allowed": false,
         "model": "openai/gpt-oss-120b",
@@ -152,14 +135,14 @@
       }
     },
     {
-      "selection": "Delhi",
-      "question": "Compare Delhi and Maharashtra incentives",
+      "selection": "Gujarat",
+      "question": "Compare Gujarat and Maharashtra incentives",
       "result": {
         "status": "clarification_required",
         "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
         "sources": [],
         "points": [],
-        "jurisdiction": "Delhi",
+        "jurisdiction": "Gujarat",
         "verification_cutoff": "2026-09-23",
         "current_entitlement_answers_allowed": false,
         "model": "openai/gpt-oss-120b",
@@ -188,7 +171,7 @@
       }
     },
     {
-      "selection": "Delhi",
+      "selection": "Gujarat",
       "question": "",
       "result": {
         "status": "clarification_required",
@@ -206,19 +189,37 @@
       }
     },
     {
-      "selection": "Delhi",
+      "selection": "Gujarat",
       "question": "Can I claim an EV subsidy today?",
       "result": {
         "status": "not_established",
         "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
         "sources": [],
         "points": [],
-        "jurisdiction": "Delhi",
+        "jurisdiction": "Gujarat",
         "verification_cutoff": "2026-09-23",
         "current_entitlement_answers_allowed": false,
         "model": "openai/gpt-oss-120b",
         "usage": {},
         "reason": "current_entitlement_unverified",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Gujarat",
+      "question": "What two-wheeler purchase incentive rate, battery capacity limit, ex-factory price ceiling, policy period and scheme-stacking conditions did the 2021 policy state?",
+      "result": {
+        "status": "not_established",
+        "answer": "The 2021 Gujarat policy has an inconsistent battery-column reference. Source review is needed before this prototype interprets the purchase-subsidy battery limit or infers vehicle eligibility. Ask separately about the historical rate, price ceiling or period.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Gujarat",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "gujarat_battery_limit_review_pending",
         "retryable": false,
         "diagnostics": {}
       }

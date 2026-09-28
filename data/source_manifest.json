@@ -1182,6 +1182,145 @@
       "ready_for_extraction_tests": true,
       "supplements_source_id": "delhi_policy_2026-06-30",
       "text_review_note": "Document signed 2 July, listed 8 July. Policy prevails on inconsistency. Annex XII says registration while policy/Clause 17.1 say RC generation for the 30-day deadline; preserve that distinction."
+    },
+    {
+      "source_id": "gujarat_policy_2021-06-23",
+      "filename": "data/policies/gujarat/gujarat_ev_policy_2021-06-23.pdf",
+      "document_title": "Gujarat State Electric Vehicle Policy 2021",
+      "state": "Gujarat",
+      "policy_year": 2021,
+      "document_date": "2021-06-23",
+      "official_url": "https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf",
+      "retrieved_on": "2026-09-28",
+      "pdf_page_count": 7,
+      "sha256": "4b69ac4675d540fcaaca1300653c74a2d26d2ba3d0751a1eda8a80c5e3014355",
+      "extraction_status": "searchable_english_text_pending_team_review",
+      "text_characters_per_pdf_page": [
+        182,
+        707,
+        1794,
+        1578,
+        2437,
+        2940,
+        2592
+      ],
+      "candidate_pdf_pages": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "layout_pdf_pages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "visually_reviewed_pdf_pages": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "ai_text_review_completed_on": "2026-09-28",
+      "accepted_for_ingestion": false,
+      "team_verified": false,
+      "current_benefit_availability": "not_verified",
+      "current_entitlement_answers_allowed": false,
+      "ready_for_extraction_tests": true,
+      "effective_from": "2021-07-01",
+      "effective_to": "2025-06-30",
+      "benefit_scope": "historical_2021_policy",
+      "policy_period_note": "Four years from 1 July 2021; 30 June 2025 end derived from that clause. No purchase-subsidy extension established.",
+      "text_review_note": "Official Ministry of Power mirror. Physical pages 3–6 use layout; page 7 has minor embedded OCR errors in headings/signature, retained unchanged. Table 2 battery column is (3), but clause 8(iv) prints (2); flag rather than silently correct."
+    },
+    {
+      "source_id": "gujarat_motor_vehicle_tax_2025-04-17",
+      "filename": "data/policies/gujarat/gujarat_motor_vehicle_tax_2025-04-17.pdf",
+      "document_title": "Gujarat motor vehicle tax notification GH/PT/2025/13",
+      "state": "Gujarat",
+      "policy_year": 2025,
+      "document_date": "2025-04-17",
+      "official_url": "https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf",
+      "retrieved_on": "2026-09-28",
+      "pdf_page_count": 3,
+      "sha256": "ddcc175bde0ddb08e809671a639c8a991a1bca8291b89f1227455cd88eb34877",
+      "extraction_status": "searchable_english_text_pending_team_review",
+      "text_characters_per_pdf_page": [
+        1888,
+        2715,
+        1518
+      ],
+      "candidate_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "layout_pdf_pages": [],
+      "visually_reviewed_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "ai_text_review_completed_on": "2026-09-28",
+      "accepted_for_ingestion": false,
+      "team_verified": false,
+      "current_benefit_availability": "not_verified",
+      "current_entitlement_answers_allowed": false,
+      "ready_for_extraction_tests": true,
+      "official_listing_url": "https://egazette.gujarat.gov.in/GazettesSearch.aspx",
+      "parent_notification": "PT/2017/6/MVD/2017/699/KH dated 31 March 2017",
+      "parent_notification_review": "Full parent notification and vehicle classification not verified.",
+      "benefit_scope": "motor_vehicle_tax_only",
+      "effective_to": "2026-03-31",
+      "text_review_note": "Original deadline is superseded by 30 March 2026 notification. Original prints Match rather than March. Plain extraction preserves table rows; layout extraction is empty/near-empty. Rebates vary by category; all listed effective rates are 1% of vehicle cost, for the specified exclusively battery-powered categories."
+    },
+    {
+      "source_id": "gujarat_motor_vehicle_tax_extension_2026-03-30",
+      "filename": "data/policies/gujarat/gujarat_motor_vehicle_tax_extension_2026-03-30.pdf",
+      "document_title": "Gujarat motor vehicle tax extension GH/PT/2026/06",
+      "state": "Gujarat",
+      "policy_year": 2026,
+      "document_date": "2026-03-30",
+      "official_url": "https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=20260404080501091.pdf&cdbid=eea3958b560b3b4ebb6101a297608df8&contentType=application/pdf",
+      "retrieved_on": "2026-09-28",
+      "pdf_page_count": 6,
+      "sha256": "4af7645ccf364c1eba200056622192c1f34a69f627efae21e8c6f12656e9fac8",
+      "extraction_status": "searchable_english_text_pending_team_review",
+      "text_characters_per_pdf_page": [
+        1999,
+        3484,
+        3995,
+        3797,
+        2314,
+        1877
+      ],
+      "candidate_pdf_pages": [
+        4,
+        5
+      ],
+      "layout_pdf_pages": [],
+      "visually_reviewed_pdf_pages": [
+        4,
+        5
+      ],
+      "ai_text_review_completed_on": "2026-09-28",
+      "accepted_for_ingestion": false,
+      "team_verified": false,
+      "current_benefit_availability": "not_verified",
+      "current_entitlement_answers_allowed": false,
+      "ready_for_extraction_tests": true,
+      "official_listing_url": "https://egazette.gujarat.gov.in/GazettesSearch.aspx",
+      "parent_notification": "PT/2017/6/MVD/2017/699/KH dated 31 March 2017",
+      "parent_notification_review": "Full parent notification and vehicle classification not verified.",
+      "benefit_scope": "motor_vehicle_tax_only",
+      "amends_source_id": "gujarat_motor_vehicle_tax_2025-04-17",
+      "amended_section": "Deadline in the EV clause above the table after the parent notification Schedule and Explanations",
+      "effective_to": "2027-03-31",
+      "gazette_published_on": "2026-04-02",
+      "text_review_note": "30 March notification in 2 April ordinary gazette. Both 2025 and 2026 instruments amend the same 2017 parent. Physical pages 4–5 include unrelated education/revenue text, excluded only from answer context with hashed spans. Tax deadline replacement does not renew the 2021 subsidy."
     }
   ],
   "technical_review_completed_on": "2026-09-27",

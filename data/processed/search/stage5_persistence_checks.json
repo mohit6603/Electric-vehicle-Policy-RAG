@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-09-27T16:20:44.055962+00:00",
+  "checked_at_utc": "2026-09-28T05:54:34.364248+00:00",
   "technical_status": "passed",
   "checks_passed": [
     "fresh_process_reopens_all_records_without_embeddings",
@@ -20,7 +20,7 @@
     "missing_collection_not_silently_created"
   ],
   "restart": {
-    "chunk_count": 480,
+    "chunk_count": 511,
     "embedding_calls_before_query": {
       "documents": 0,
       "queries": 0
@@ -35,8 +35,8 @@
   },
   "isolated_rebuild_sample_chunks": 6,
   "test_store_document_embeddings": 56,
-  "corpus_sha256": "a22c053c764ef33eb551c27b8d4cfbf371abf26168019bef24446b0f70549f57",
-  "notebook_sha256": "8d325cdcae2613fe77dff0720808b9157dffc40a7bc88ae355b986ed9ffc4931",
+  "corpus_sha256": "cce9698acba7dd42f5e35ce709cdde5e2c1fd2586e98431a1ff8f7cc242d7732",
+  "notebook_sha256": "8d223c5a19c7ccddea09a73d083ba13e2f47b9e9488060da77a8bb7c21b24f11",
   "check_script_sha256": "cfe17cb6f851a2d44309c576bbe864c4643bed783657ac1076faf123e0f951ba",
   "scope": "persistence/integrity checks; no policy-answer evaluation or human source review"
 }

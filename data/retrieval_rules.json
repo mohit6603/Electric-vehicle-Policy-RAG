@@ -173,6 +173,9 @@
       "delhi_policy_2026-06-30:p12",
       "delhi_policy_2026-06-30:p18",
       "delhi_operating_guidelines_2026-07-02:p2"
+    ],
+    "Gujarat": [
+      "gujarat_policy_2021-06-23:p3"
     ]
   },
   "jurisdiction_notes": {
@@ -180,7 +183,8 @@
     "Tamil Nadu": "The later order extends motor vehicle tax only. The printed demand-incentive, registration-charge and permit-fee deadline is 31 December 2025; their extension is not established. The general policy period does not extend those benefits.",
     "Central": "PM E-DRIVE two-/three-wheeler buyer scope only. August 2026 governs the updated e2w/outlay/terminal clauses; March 2026 supplies the e-rickshaw row. L5 closure, fund limits and the separate claim deadline must remain visible. No live funding or individual entitlement is verified.",
     "Uttar Pradesh": "Purchase subsidy: use the 15 July 2024 revised column, including cancellation of the 3W provision and five years from 14.10.2022 OR exhaustion of Rs 403.97 crore, whichever first. No verified remaining funds. Use the separate 5 November 2025 pure-EV orders for tax and registration fees; do not infer purchase benefits from them. Fleet subsidy maximum and fleet-ownership minimum are different conditions. Hindi pages are AI English readings, not official translations. Parent 17 October 2025 amendment and any later hybrid/aggregator directions remain unverified; abstain on their current applicability. Manufacturing/charging text is base-policy evidence, not verified current operational eligibility.",
-    "Delhi": "Final Delhi EV Policy 2026, notified 30 June with effect 1 July 2026, and 2 July operating guidelines. Use year-of-registration bands from date of notification exactly as printed; do not substitute the April draft or 2020 rates. The policy prevails on guideline inconsistency. The purchase application deadline is 30 days from RC generation; Annex XII instead says registration, so flag that wording discrepancy if relevant. The 60-day payment period starts at application submission and is conditional on verification. The car scrapping amount and applicant limit are separate; the Rs 30 lakh ceiling and car tax exception both apply. Model approval/listing, live allocation, portal acceptance and individual eligibility remain unverified; no current entitlement is established. External charging SoPs, tax implementation orders and 2023 aggregator rules are not a complete verified source chain."
+    "Delhi": "Final Delhi EV Policy 2026, notified 30 June with effect 1 July 2026, and 2 July operating guidelines. Use year-of-registration bands from date of notification exactly as printed; do not substitute the April draft or 2020 rates. The policy prevails on guideline inconsistency. The purchase application deadline is 30 days from RC generation; Annex XII instead says registration, so flag that wording discrepancy if relevant. The 60-day payment period starts at application submission and is conditional on verification. The car scrapping amount and applicant limit are separate; the Rs 30 lakh ceiling and car tax exception both apply. Model approval/listing, live allocation, portal acceptance and individual eligibility remain unverified; no current entitlement is established. External charging SoPs, tax implementation orders and 2023 aggregator rules are not a complete verified source chain.",
+    "Gujarat": "The 2021 policy operated for four years from 1 July 2021; treat purchase/charging provisions as historical, with no renewal established. The separate 17 April 2025 motor vehicle tax table is read with the 30 March 2026 deadline replacement to 31 March 2027; it does not renew the 2021 subsidy. Tax applies to the listed vehicle categories powered exclusively by an electric motor fed exclusively by an installed battery. Tax rates/rebates must come from the matching tax-table row, never from the cash subsidy table. The full 2017 parent tax schedule, later amendments, operational claims, live funds and individual eligibility remain unverified. Policy 8(iv) refers to battery capacity in column (2), but Table 2 places it in (3); preserve the discrepancy and do not invent a corrected legal interpretation. Demand incentive permits central stacking but only one State scheme; charging subsidy has a different exclusion for other Government of India subsidies. Separate GEDA/student schemes and current tariff/industrial incentive schedules are outside this packet. When describing the battery limit, distinguish the maximum subsidised capacity from vehicle eligibility: Table 2/8(iv) does not expressly disqualify a larger battery. Explicitly flag that 8(iv) says column (2) but the battery values are actually in column (3); never repeat the wrong reference as a correct table description. Use past tense for the expired 2021 purchase provisions. The policy period is printed on physical PDF page 3, the purchase table/conditions on page 5 and charging conditions on page 6; cite the page containing each fact."
   },
   "page_rules": {
     "maharashtra_policy_2025-05-23:p19": {
@@ -814,6 +818,87 @@
       "context_role": "operating_conditions",
       "version_note": "Operating guidelines dated 2 July 2026 (listed 8 July); policy prevails on inconsistency. Current operation is unverified.",
       "exclude_spans": []
+    },
+    "gujarat_policy_2021-06-23:p3": {
+      "page_text_sha256": "f81ba9fe96000d4be1b3551cb07f98b1025fa42733b8c9becb8e164544ca5e8b",
+      "context_role": "historical_only",
+      "version_note": "2021 policy: four years from 1 July 2021 (end 30 June 2025 inferred). No purchase/charging extension established; later tax notification is separate.",
+      "exclude_spans": []
+    },
+    "gujarat_policy_2021-06-23:p4": {
+      "page_text_sha256": "a3fc3f155d4307c19721d4d2478d27809d6018b88346912e091d29dd75a771e4",
+      "context_role": "historical_only",
+      "version_note": "2021 policy: four years from 1 July 2021 (end 30 June 2025 inferred). No purchase/charging extension established; later tax notification is separate.",
+      "exclude_spans": []
+    },
+    "gujarat_policy_2021-06-23:p5": {
+      "page_text_sha256": "0fe51a70f5900b6dd94bbf07c72f97c81b78cedf8447ee85c987ddeb1901e8f9",
+      "context_role": "historical_only",
+      "version_note": "2021 policy: four years from 1 July 2021 (end 30 June 2025 inferred). No purchase/charging extension established; later tax notification is separate. Clause 8(iv) prints column (2), while battery capacity is in column (3); retain this discrepancy. Amounts are printed per kWh, not as lump-sum caps. When describing the battery limit, distinguish the maximum subsidised capacity from vehicle eligibility: Table 2/8(iv) does not expressly disqualify a larger battery. Explicitly flag that 8(iv) says column (2) but the battery values are actually in column (3); never repeat the wrong reference as a correct table description. Use past tense for the expired 2021 purchase provisions.",
+      "exclude_spans": []
+    },
+    "gujarat_policy_2021-06-23:p6": {
+      "page_text_sha256": "beabd189a317137763fe625b2e2ed8944560e3617e8fcea001e87cacc227af79",
+      "context_role": "historical_only",
+      "version_note": "2021 policy: four years from 1 July 2021 (end 30 June 2025 inferred). No purchase/charging extension established; later tax notification is separate.",
+      "exclude_spans": []
+    },
+    "gujarat_policy_2021-06-23:p7": {
+      "page_text_sha256": "99568dae036f1d698eb7d9a2e6907c3ab8f1866f155d27d9ec918be3b9ae0962",
+      "context_role": "historical_only",
+      "version_note": "2021 policy: four years from 1 July 2021 (end 30 June 2025 inferred). No purchase/charging extension established; later tax notification is separate. Embedded PDF OCR has minor heading/signature errors; not corrected or accepted by the team.",
+      "exclude_spans": [
+        {
+          "start": 787,
+          "end": 2592,
+          "text_sha256": "c2a3793f2478bbe6d5ef0c2c15d922d40fc7f348c25d7bcbb38a7c9eae70d38a",
+          "reason": "Distribution list, not policy provisions."
+        }
+      ]
+    },
+    "gujarat_motor_vehicle_tax_2025-04-17:p1": {
+      "page_text_sha256": "24c7183488ca5ac2225da561abf920e0d67aba5407752f151708ced907ea706b",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 tax table, read with the mandatory 30 March 2026 amendment. Original Match 2026 typo/deadline is superseded by 31 March 2027. Rebates differ by vehicle category; all listed effective rates are 1% of vehicle cost. This does not extend cash purchase subsidies. Initial 6% omnibus schedule entry is followed by the specific exclusively battery-powered EV override/table; do not confuse the two rates.",
+      "exclude_spans": []
+    },
+    "gujarat_motor_vehicle_tax_2025-04-17:p2": {
+      "page_text_sha256": "6996b9886ed5c8bc72d3889f6888d4b9b09e1124eea76cffa9d0e59ed1da59fe",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 tax table, read with the mandatory 30 March 2026 amendment. Original Match 2026 typo/deadline is superseded by 31 March 2027. Rebates differ by vehicle category; all listed effective rates are 1% of vehicle cost. This does not extend cash purchase subsidies. Auto-rickshaws licensed for at most three passengers: 2.5% existing, 1.5% rebate, 1% effective, each of vehicle cost; not a 5% rebate.",
+      "exclude_spans": []
+    },
+    "gujarat_motor_vehicle_tax_2025-04-17:p3": {
+      "page_text_sha256": "8b57b7ad698a60cfc8fb0924fe2bfb183de391ffe42464d0318723404244c8cb",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 tax table, read with the mandatory 30 March 2026 amendment. Original Match 2026 typo/deadline is superseded by 31 March 2027. Rebates differ by vehicle category; all listed effective rates are 1% of vehicle cost. This does not extend cash purchase subsidies.",
+      "exclude_spans": []
+    },
+    "gujarat_motor_vehicle_tax_extension_2026-03-30:p4": {
+      "page_text_sha256": "18c2b8a0aa9c15ab23cf09b339f144ce7c35c830fd944251ee182ef22bba1433",
+      "context_role": "dated_tax_extension",
+      "version_note": "Notification dated 30 March 2026, published 2 April. Replaces 31 March 2026 with 31 March 2027 in the clause above the EV tax table after the 2017 parent Schedule/Explanations; 2025 supplies the scope/table. Tax only.",
+      "exclude_spans": [
+        {
+          "start": 0,
+          "end": 3312,
+          "text_sha256": "75bb1692964ba68bda112617bcec55f689a6201794fad0893db3caa5357dbc48",
+          "reason": "Unrelated education admission rules before the tax notification."
+        }
+      ]
+    },
+    "gujarat_motor_vehicle_tax_extension_2026-03-30:p5": {
+      "page_text_sha256": "e3890b4e201e921ea0a86f3cd99053b7adce81d7296c510f2d2db505ac4e7e67",
+      "context_role": "dated_tax_extension",
+      "version_note": "Notification dated 30 March 2026, published 2 April. Replaces 31 March 2026 with 31 March 2027 in the clause above the EV tax table after the 2017 parent Schedule/Explanations; 2025 supplies the scope/table. Tax only.",
+      "exclude_spans": [
+        {
+          "start": 373,
+          "end": 2314,
+          "text_sha256": "8e6f57852e4449690786cb7fadd823fe03aa58af4e4f90024782a32dca4e7f07",
+          "reason": "Unrelated land-revenue notifications after the tax amendment."
+        }
+      ]
     }
   }
 }

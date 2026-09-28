@@ -2,15 +2,25 @@
 
 ## Current stage and next step
 
-**Stage 10 — Delhi (NCT) technically complete.** The final 2026 policy and operating guidelines are ingested, indexed and available in Gradio. See [the Delhi handoff](STAGE_10_DELHI_HANDOFF.md).
+**Stage 10 — Gujarat technically complete**, with battery-limit interpretation withheld pending review. Historical rate/price/period and separate tax provisions are available in Gradio. See [the Gujarat handoff](STAGE_10_GUJARAT_HANDOFF.md).
 
-**Next: Stage 10 — Gujarat, not started.** Continue one jurisdiction per session, then Telangana, Karnataka and Madhya Pradesh. Do not start formal evaluation until coverage and the deferred independent source/question review are complete.
+**Next: Stage 10 — Telangana, not started.** Continue one jurisdiction per session, then Karnataka and Madhya Pradesh. Do not start formal evaluation until coverage and the deferred independent source/question review are complete.
 
-**Latest authorization:** the user explicitly requested completion of the Delhi (NCT) batch. Technical implementation/checks follow the authorized workflow. Genuine team source/prompt review and independently written questions remain deferred; AI-use disclosure still applies.
+**Latest authorization:** the user explicitly requested completion of the Gujarat batch and asked to finish the remaining work within it. Technical implementation/checks follow the authorized workflow. Genuine team source/prompt review and independently written questions remain deferred; AI-use disclosure still applies.
 
 All source acceptance/current-entitlement flags remain false. The agreed cutoff remains 23 September 2026. Source collection after that date does not certify amendment completeness, remaining funding or current eligibility at the cutoff.
 
 Deferred review batch: compare prepared text with original PDFs; check applicable document chains/status gaps; record actual reviewers/dates; independently author and verify the 24 evaluation cases; freeze expected answers before formal evaluation. Do not invent reviewer results or count development prompts as team evaluation.
+
+## Stage 10 Gujarat technical closeout — 28 September 2026
+
+Added three official PDFs: the historical 2021 policy, April 2025 motor vehicle tax table and March 2026 tax deadline extension. **Ten pages, 31 chunks and 12 ingestion checks passed.** All ten candidate pages received AI visual comparison. No new OCR or dependency was required. The index was explicitly rebuilt to **511 records**; the previous ten JSONLs are byte-identical and prior ingestion receipts were refreshed.
+
+The existing aliases and Gradio path now support six jurisdictions. Historical policy questions stay within that source; tax hits bring the full category table and required update pages. Unrelated gazette material is excluded from answer context with checked spans. Eleven integration checks and six fresh-kernel checks passed. Regression suites passed: 16 persistence, 19 retrieval, 13 citation, 50 failure, 15 UI, 10 UP and nine Delhi integration checks. Stage 5/6 notebook checks passed eight each, with updated Stage 8 example guards checked separately.
+
+Live development exposed substantive battery-limit interpretation errors, a tax/subsidy mix-up and a wrong period citation. The failed reports are retained. The final path abstains on battery-limit requests and known generated capacity-limit claims pending review, clarifies fact/page citation guidance, and explicitly labels historical-source points. The final live run passed both supported questions and citation-clearing guards (15 combined checks). The [handoff](STAGE_10_GUJARAT_HANDOFF.md) records those limits and outcomes. These are development checks, not human-authored evaluation or proof of general correctness.
+
+The [source review](data/policies/gujarat/SOURCE_REVIEW.md) records the original policy period, column-reference discrepancy, category-specific tax rebates, 2027 tax extension and outstanding parent/later-instrument and operational checks. All acceptance/current-entitlement flags remain false. Telangana has not been started. AI assistance includes research, visual comparison, implementation, development cases and result review, documentation and Git publication.
 
 ## Stage 10 Delhi technical closeout — 27 September 2026
 

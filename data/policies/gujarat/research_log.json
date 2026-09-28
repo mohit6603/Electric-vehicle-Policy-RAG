@@ -1,0 +1,90 @@
+{
+  "researched_on": "2026-09-28",
+  "verification_cutoff": "2026-09-23",
+  "method": "Official policy mirror, Gujarat Finance budget and public eGazette search/downloads; secondary search for discovery. Rendered all ten candidate pages. Bounded research, not an exhaustive legal-status review.",
+  "sources": [
+    {
+      "source_id": "gujarat_policy_2021-06-23",
+      "url": "https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf",
+      "sha256": "4b69ac4675d540fcaaca1300653c74a2d26d2ba3d0751a1eda8a80c5e3014355",
+      "document_date": "2021-06-23",
+      "candidate_pdf_pages": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "source_id": "gujarat_motor_vehicle_tax_2025-04-17",
+      "url": "https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf",
+      "sha256": "ddcc175bde0ddb08e809671a639c8a991a1bca8291b89f1227455cd88eb34877",
+      "document_date": "2025-04-17",
+      "candidate_pdf_pages": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "source_id": "gujarat_motor_vehicle_tax_extension_2026-03-30",
+      "url": "https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=20260404080501091.pdf&cdbid=eea3958b560b3b4ebb6101a297608df8&contentType=application/pdf",
+      "sha256": "4af7645ccf364c1eba200056622192c1f34a69f627efae21e8c6f12656e9fac8",
+      "document_date": "2026-03-30",
+      "candidate_pdf_pages": [
+        4,
+        5
+      ]
+    }
+  ],
+  "corroboration_not_indexed": [
+    {
+      "url": "https://financedepartment.gujarat.gov.in/Documents/Bud-Eng_1608_2026-2-18_794.pdf",
+      "sha256": "0bb32682e41df1de5b05911cdf05600c96e7b9984958a99984992886d132705e",
+      "pdf_page": 3,
+      "finding": "2026–27 budget announcement of an additional year of EV tax relief; operative gazette used instead."
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504221947570485.pdf&cdbid=ed337122ebaee47e2c5aab6886cf99c1&contentType=application/pdf",
+      "gazette_entry": "2 168 Extraordinary Part IV-B  Extra 21/04/2025 Ports & Transport Department Government Central Press, Gandhinagar Download",
+      "sha256": "32c54e0fc1d70e5517941d267fdb5104694317f3ec639017a1dcdb9929be08ac",
+      "reason": "Road Safety Authority membership age rule, not EV benefits."
+    },
+    {
+      "url": "https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210833457846.pdf&cdbid=04b1daad51e67cccdfe90fc07bb45987&contentType=application/pdf",
+      "gazette_entry": "4 162 Extraordinary Part IV-B  Extra 17/04/2025 Ports & Transport Department Government Central Press, Gandhinagar Download",
+      "sha256": "c4c62bbb7522db5e8fa0f1e0d7602000fe8a772534b5cab3370cc4a3a37a83b9",
+      "reason": "General omnibus schedule change; the separate EV override/table is in Extra 163."
+    },
+    {
+      "url": "https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202503291432305780.pdf&cdbid=52f7b8133c8627fdc35b170309d8e5b4&contentType=application/pdf",
+      "gazette_entry": "6 125 Extraordinary Part IV-B  Extra 24/03/2025 Ports & Transport Department Government Central Press, Gandhinagar Download",
+      "sha256": "17acc8677d5f19664d99633178275d03e7b738be41856e0264e5a717fd9e461f",
+      "reason": "Scrapped older vehicle tax arrears exemption, not the EV rate schedule."
+    },
+    {
+      "url": "https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202503111553549965.pdf&cdbid=74d9cb76d45f9dd4e952fd6893b8a988&contentType=application/pdf",
+      "gazette_entry": "8 99 Extraordinary Part IV-B  Extra 07/03/2025 Ports & Transport Department Government Central Press, Gandhinagar Download",
+      "sha256": "f2bf688378aa4fd77e66b81b2bb578fb683bbfc238b18b66e520dd9279419741",
+      "reason": "Diplomatic vehicle exemption, not EV-specific."
+    }
+  ],
+  "access_limits": [
+    "Alternate BEE policy download timed out; Ministry of Power official copy obtained.",
+    "Transport Commissioner host had a certificate problem; no insecure override used.",
+    "Ports and Transport homepage accessible but linked resolution/policy CMS pages returned error content.",
+    "Official eGazette searches located April 2025 Extra 163 and 2 April 2026 ordinary Part IV-B; no exhaustive later-instrument search completed."
+  ],
+  "unresolved": [
+    "Full 2017 tax parent and later amendments through cutoff not completely verified.",
+    "No purchase/charging-subsidy renewal established after the 2021 policy period.",
+    "No live funding, portal acceptance, model list, current tariff or individual entitlement verified.",
+    "Policy column-reference discrepancy and embedded OCR/word-spacing errors need team review.",
+    "Separate GEDA/student schemes and external manufacturing/charging instruments are outside this packet.",
+    "Collection after cutoff does not establish availability on the cutoff date."
+  ],
+  "acceptance": "team_review_pending"
+}

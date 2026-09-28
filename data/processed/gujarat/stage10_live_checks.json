@@ -1,0 +1,477 @@
+{
+  "checked_at_utc": "2026-09-28T06:00:01.244543+00:00",
+  "notebook_sha256": "695d1370dedcf9e944dfed17647bc8461451354d50ce2f2d9c525961b6e3a511",
+  "check_script_sha256": "d2e6da35a1bde889a36d6a25f80a240900d9ac2fc5fc34770056fa1314ce3047",
+  "source_manifest_sha256": "377b8496ff6b9b56f0857630bd83b6ce08a070d63bb675fe1fefff2cab26884e",
+  "retrieval_rules_sha256": "633a50ebf4f9b47e67b5d22af9362eb7c4bcc82bb99b4ca7e0e76bb329b12645",
+  "index_spec": {
+    "collection": "ev_policy_draft",
+    "corpus_sha256": "cce9698acba7dd42f5e35ce709cdde5e2c1fd2586e98431a1ff8f7cc242d7732",
+    "chunk_count": 511,
+    "embedding": {
+      "model": "nomic-embed-text:latest",
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "num_ctx": 2048,
+      "langchain_ollama": "0.3.7"
+    },
+    "distance": "cosine",
+    "chunks_by_state": {
+      "Maharashtra": 53,
+      "Tamil Nadu": 78,
+      "Central": 100,
+      "Uttar Pradesh": 117,
+      "Delhi": 132,
+      "Gujarat": 31
+    }
+  },
+  "technical_status": "passed",
+  "scope": "AI development checks; not team source review or formal evaluation",
+  "checks_passed": [
+    "reopen_all_records_without_corpus_embedding",
+    "31_gujarat_chunks",
+    "three_gujarat_aliases",
+    "five_filtered_semantic_queries",
+    "conditions_and_continuations_present",
+    "historical_context_isolated_and_tax_chain_complete",
+    "all_10_pages_assemble_with_hashed_exclusions_within_limit",
+    "known_generated_battery_limit_claims_withheld",
+    "historical_evidence_label_is_rendered",
+    "six_rejections_skip_models_and_clear_sources",
+    "gradio_lists_gujarat_and_other_loaded_jurisdictions",
+    "live_gradio_historical_rate",
+    "live_gradio_tax_extension",
+    "gradio_rejection_clears_previous_citations",
+    "gradio_ambiguous_battery_request_abstains"
+  ],
+  "embedding_calls": {
+    "corpus": 0,
+    "query": 8
+  },
+  "observations": [
+    {
+      "question": "What two-wheeler purchase incentive rate, battery capacity limit, ex-factory price ceiling, policy period and scheme-stacking conditions did the 2021 policy state?",
+      "page_ids": [
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p4",
+        "gujarat_policy_2021-06-23:p6"
+      ],
+      "context_chars": 8303,
+      "status": "retrieved"
+    },
+    {
+      "question": "What tax rates and rebates are listed for electric auto rickshaws licensed for up to three passengers, and what deadline does the 2026 extension state?",
+      "page_ids": [
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_motor_vehicle_tax_2025-04-17:p1",
+        "gujarat_motor_vehicle_tax_2025-04-17:p2",
+        "gujarat_policy_2021-06-23:p4",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p6",
+        "gujarat_motor_vehicle_tax_2025-04-17:p3",
+        "gujarat_motor_vehicle_tax_extension_2026-03-30:p4",
+        "gujarat_motor_vehicle_tax_extension_2026-03-30:p5"
+      ],
+      "context_chars": 15282,
+      "status": "retrieved"
+    },
+    {
+      "question": "What charging-station equipment subsidy, cap, station count and other-subsidy exclusion did the 2021 policy describe?",
+      "page_ids": [
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p4",
+        "gujarat_policy_2021-06-23:p6"
+      ],
+      "context_chars": 8303,
+      "status": "retrieved"
+    },
+    {
+      "question": "What tax rate, rebate and effective rate are listed for electric private service vehicles transporting educational-institution students or staff?",
+      "page_ids": [
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_motor_vehicle_tax_2025-04-17:p1",
+        "gujarat_motor_vehicle_tax_2025-04-17:p2",
+        "gujarat_policy_2021-06-23:p4",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p6",
+        "gujarat_motor_vehicle_tax_2025-04-17:p3",
+        "gujarat_motor_vehicle_tax_extension_2026-03-30:p4",
+        "gujarat_motor_vehicle_tax_extension_2026-03-30:p5"
+      ],
+      "context_chars": 15282,
+      "status": "retrieved"
+    },
+    {
+      "question": "What historical manufacturing-policy reference and charging tariff conditions are stated?",
+      "page_ids": [
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_policy_2021-06-23:p6",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p7",
+        "gujarat_policy_2021-06-23:p4"
+      ],
+      "context_chars": 9090,
+      "status": "retrieved"
+    },
+    {
+      "all_page_context_range": [
+        8303,
+        15282
+      ]
+    },
+    {
+      "selection": "GJ",
+      "question": "Tamil Nadu purchase subsidy?",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Gujarat",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Gujarat",
+      "question": "Compare Gujarat and Maharashtra incentives",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Gujarat",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Telangana",
+      "question": "Electric car subsidy?",
+      "result": {
+        "status": "unsupported_jurisdiction",
+        "answer": "Choose Central, Delhi, Gujarat, Maharashtra, Tamil Nadu, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Gujarat",
+      "question": "",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Gujarat",
+      "question": "Can I claim an EV subsidy today?",
+      "result": {
+        "status": "not_established",
+        "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Gujarat",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "current_entitlement_unverified",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Gujarat",
+      "question": "What two-wheeler purchase incentive rate, battery capacity limit, ex-factory price ceiling, policy period and scheme-stacking conditions did the 2021 policy state?",
+      "result": {
+        "status": "not_established",
+        "answer": "The 2021 Gujarat policy has an inconsistent battery-column reference. Source review is needed before this prototype interprets the purchase-subsidy battery limit or infers vehicle eligibility. Ask separately about the historical rate, price ceiling or period.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Gujarat",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "gujarat_battery_limit_review_pending",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "case": "historical_rate",
+      "question": "According to the historical 2021 policy, what two-wheeler demand incentive rate and ex-factory price ceiling were stated, and what was the policy period?",
+      "result": {
+        "status": "document_answer",
+        "answer": "Gujarat — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Historical provision: The 2021 Gujarat State EV Policy offered a demand‑incentive for two‑wheelers of Rs 10,000 per kWh of battery capacity. [S2](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=5)\n- Historical provision: The same policy set a maximum ex‑factory price ceiling of Rs 1.5 lakhs for eligible two‑wheelers. [S2](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=5)\n- Historical provision: The operative period of the policy was four years, commencing on 1 July 2021 (i.e., until 30 June 2025). [S1](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3)\n\nSources:\n\n- [S2: Gujarat — Gujarat State Electric Vehicle Policy 2021, PDF page 5](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=5)\n- [S1: Gujarat — Gujarat State Electric Vehicle Policy 2021, PDF page 3](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3)",
+        "sources": [
+          {
+            "source_id": "S2",
+            "state": "Gujarat",
+            "document_title": "Gujarat State Electric Vehicle Policy 2021",
+            "document_date": "2021-06-23",
+            "pdf_page": 5,
+            "source": "data/policies/gujarat/gujarat_ev_policy_2021-06-23.pdf",
+            "official_url": "https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=5",
+            "evidence_id": "gujarat_policy_2021-06-23:p5:x0-2305",
+            "excerpt_start": 0,
+            "excerpt_end": 2305,
+            "excerpt_sha256": "0fe51a70f5900b6dd94bbf07c72f97c81b78cedf8447ee85c987ddeb1901e8f9",
+            "context_role": "historical_only",
+            "version_note": "2021 policy: four years from 1 July 2021 (end 30 June 2025 inferred). No purchase/charging extension established; later tax notification is separate. Clause 8(iv) prints column (2), while battery capacity is in column (3); retain this discrepancy. Amounts are printed per kWh, not as lump-sum caps. When describing the battery limit, distinguish the maximum subsidised capacity from vehicle eligibility: Table 2/8(iv) does not expressly disqualify a larger battery. Explicitly flag that 8(iv) says column (2) but the battery values are actually in column (3); never repeat the wrong reference as a correct table description. Use past tense for the expired 2021 purchase provisions."
+          },
+          {
+            "source_id": "S1",
+            "state": "Gujarat",
+            "document_title": "Gujarat State Electric Vehicle Policy 2021",
+            "document_date": "2021-06-23",
+            "pdf_page": 3,
+            "source": "data/policies/gujarat/gujarat_ev_policy_2021-06-23.pdf",
+            "official_url": "https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3",
+            "evidence_id": "gujarat_policy_2021-06-23:p3:x0-1730",
+            "excerpt_start": 0,
+            "excerpt_end": 1730,
+            "excerpt_sha256": "f81ba9fe96000d4be1b3551cb07f98b1025fa42733b8c9becb8e164544ca5e8b",
+            "context_role": "historical_only",
+            "version_note": "2021 policy: four years from 1 July 2021 (end 30 June 2025 inferred). No purchase/charging extension established; later tax notification is separate."
+          }
+        ],
+        "points": [
+          {
+            "text": "The 2021 Gujarat State EV Policy offered a demand‑incentive for two‑wheelers of Rs 10,000 per kWh of battery capacity.",
+            "citations": [
+              {
+                "source_id": "S2",
+                "source_excerpt": "7. SCOPE AND ELIGIBILITY\n\n(i) The Policy shall be applicable to all classes of electric vehic les that have taken subsidy under\nthe Government of India’s FAME II scheme dated 8th March 2019, F. No 1(1)/2019‐AEI and\nany amendments thereafter.\n\n(ii) The incentives for setting up a charging station shall be applicable to charging stations\nmeeting the guidelines and standards of the Ministry of Power Circular, dated 1st October,\n2019 and any amendments thereafter.\n8. INCENTIVES FOR EARLY ADOPTION OF ELECTRIC VEHICLES\n\n(i) The Demand Incentive from the State shall be over and above any subsidies that are available\nfrom the Central Government through its promotional schemes and policies. The subsidy shall\nbe disbursed directly to the customer via DBT mode from the Sta te Transport Department on\nauthenticating the document for the purchase of the vehicle.\n\n(ii) The incentives for all types of electric vehicles shall be based on the electric vehicle battery\ncapacity (i.e energy content measured in kWh). The threshold pr ice to avail the subsidy for\neach vehicle segment shall be as per Government of India’s FAME II scheme dated 8th March\n2019, F. No 1(1)/2019‐AEI and any amendments thereafter.\n\nTable 2: Summary of incentive across all segments under the policy period\n\nSrl.No. Vehicle Segment Battery State Subsidy Amount Maximum ex‐factory\nCapacity (in Rs.) price to avail\n(kWh) incentive (in Rs.)\n\n(1) (2) (3) (4) (5)\n\n1 2 wheeler 2 Rs. 10,000/‐ per kWh Rs. 1.5 lakhs\n\n2 3 wheeler 5 Rs. 10,000/‐ per kWh Rs. 5 lakhs\n\n3 4‐Wheeler 15 Rs. 10,000/‐ per kWh Rs.15 lakhs\n\n(iii) The beneficiary can opt to get one time subsidy under any one scheme of the state\ngovernment runs by the different departments. the beneficiary can not claim subsidy under\nmore than one scheme of the state government.\n\n(iv) The maximum amount of subsidy for any Vehicle is limited to the maximum battery capacity\nof the vehicle shown in column (2) of the Table 2\n\n9. INCENTIVES FOR CHARGING INFRASTRUCTURE\n\n(i) The State Government shall promote charging infrastructure of different capacities/\ntechnologies and promote a variety of business models. Privately‐owned, DisCom‐owned and\nInvestor‐owned charging and battery swapping stations are encouraged under this Policy.\n\nGujarat State Electric Vehicle Policy ‐ 2021. 3"
+              }
+            ]
+          },
+          {
+            "text": "The same policy set a maximum ex‑factory price ceiling of Rs 1.5 lakhs for eligible two‑wheelers.",
+            "citations": [
+              {
+                "source_id": "S2",
+                "source_excerpt": "7. SCOPE AND ELIGIBILITY\n\n(i) The Policy shall be applicable to all classes of electric vehic les that have taken subsidy under\nthe Government of India’s FAME II scheme dated 8th March 2019, F. No 1(1)/2019‐AEI and\nany amendments thereafter.\n\n(ii) The incentives for setting up a charging station shall be applicable to charging stations\nmeeting the guidelines and standards of the Ministry of Power Circular, dated 1st October,\n2019 and any amendments thereafter.\n8. INCENTIVES FOR EARLY ADOPTION OF ELECTRIC VEHICLES\n\n(i) The Demand Incentive from the State shall be over and above any subsidies that are available\nfrom the Central Government through its promotional schemes and policies. The subsidy shall\nbe disbursed directly to the customer via DBT mode from the Sta te Transport Department on\nauthenticating the document for the purchase of the vehicle.\n\n(ii) The incentives for all types of electric vehicles shall be based on the electric vehicle battery\ncapacity (i.e energy content measured in kWh). The threshold pr ice to avail the subsidy for\neach vehicle segment shall be as per Government of India’s FAME II scheme dated 8th March\n2019, F. No 1(1)/2019‐AEI and any amendments thereafter.\n\nTable 2: Summary of incentive across all segments under the policy period\n\nSrl.No. Vehicle Segment Battery State Subsidy Amount Maximum ex‐factory\nCapacity (in Rs.) price to avail\n(kWh) incentive (in Rs.)\n\n(1) (2) (3) (4) (5)\n\n1 2 wheeler 2 Rs. 10,000/‐ per kWh Rs. 1.5 lakhs\n\n2 3 wheeler 5 Rs. 10,000/‐ per kWh Rs. 5 lakhs\n\n3 4‐Wheeler 15 Rs. 10,000/‐ per kWh Rs.15 lakhs\n\n(iii) The beneficiary can opt to get one time subsidy under any one scheme of the state\ngovernment runs by the different departments. the beneficiary can not claim subsidy under\nmore than one scheme of the state government.\n\n(iv) The maximum amount of subsidy for any Vehicle is limited to the maximum battery capacity\nof the vehicle shown in column (2) of the Table 2\n\n9. INCENTIVES FOR CHARGING INFRASTRUCTURE\n\n(i) The State Government shall promote charging infrastructure of different capacities/\ntechnologies and promote a variety of business models. Privately‐owned, DisCom‐owned and\nInvestor‐owned charging and battery swapping stations are encouraged under this Policy.\n\nGujarat State Electric Vehicle Policy ‐ 2021. 3"
+              }
+            ]
+          },
+          {
+            "text": "The operative period of the policy was four years, commencing on 1 July 2021 (i.e., until 30 June 2025).",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "Gujarat State Electric\nVehicle Policy 2021.\n\nGovernment of Gujarat\nPorts and Transport Department,\nResolution No.MVD-102019-840-Kh.\nSachivalaya, Gandhinagar.\nDated the 23rd June, 2021.\n\n1. PREAMBLE\n\nThere is an imminent shift in the nature of transportation from internal combustion vehicles to\nelectric vehicles. The shift to electric vehicles is being driven by a need to reduce air pollution,\nreduction in India’s oil import bill and to increase energy security of the country. The thrust for electric\nvehicles go hand in hand with India’s efforts to expand renewable energy capacities. In addition,\nGujarat has the highest adoption of battery operated two wheelers in the country, which makes it an\nideal proposition for industries to invest in EVs.\n2. OBJECTIVES\n\n(i) To transition the state’s transportation sector towards electric mobility.\n\n(ii) To make Gujarat a manufacturing hub for electric vehicles and ancillary equipment.\n\n(iii) To encourage start‐ups and investment in the field of electric mobility and associated support\nsectors such as data analytics and information technology.\n\n(iv) To improve the quality of the environment by reducing air pollution.\n3. TITLE\n\nThis document shall be known as the “Gujarat State Electric Vehicle Policy 2021”\n4. OPERATIVE PERIOD\n\n(i) This policy shall be valid for a period of four years commencing from 1st July 2021.\n5. ABBREVIATIONS AND DEFINITIONS\n\n(i) “Central Government” means the Government of India;\n\n(ii) “DBT” means Direct Benefit Transfer;\n\n(iii) “DHI” means Department of Heavy Industry, Ministry of Heavy Industry & Public Enterprises,\nGovernment of India;\n\n(iv) “DisCom” means Electricity Distribution Licensee;\n\nGujarat State Electric Vehicle Policy ‐ 2021. 1"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Gujarat",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 787,
+          "prompt_tokens": 3201,
+          "total_tokens": 3988,
+          "completion_time": 1.653145865,
+          "prompt_time": 0.132581924,
+          "queue_time": 0.347963127,
+          "total_time": 1.785727789,
+          "completion_tokens_details": {
+            "reasoning_tokens": 649
+          }
+        },
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      },
+      "ui_outputs": [
+        "### Answer\n\nGujarat — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Historical provision: The 2021 Gujarat State EV Policy offered a demand‑incentive for two‑wheelers of Rs 10,000 per kWh of battery capacity. [S2](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=5)\n- Historical provision: The same policy set a maximum ex‑factory price ceiling of Rs 1.5 lakhs for eligible two‑wheelers. [S2](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=5)\n- Historical provision: The operative period of the policy was four years, commencing on 1 July 2021 (i.e., until 30 June 2025). [S1](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3)",
+        "### Sources\n\n- [S2: Gujarat — Gujarat State Electric Vehicle Policy 2021, PDF page 5](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=5)\n- [S1: Gujarat — Gujarat State Electric Vehicle Policy 2021, PDF page 3](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3)"
+      ]
+    },
+    {
+      "case": "tax_extension",
+      "question": "According to the supplied tax notifications, for electric auto rickshaws licensed to carry up to three passengers, what are the existing tax rate, rebate and effective rate, their cost basis, the electric-power qualification and the deadline after the 2026 amendment? Does this tax extension renew the 2021 purchase subsidy?",
+      "result": {
+        "status": "document_answer",
+        "answer": "Gujarat — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- For electric auto‑rickshaws licensed to carry up to three passengers the tax table lists an Existing Rate of 2.5 % of the vehicle’s cost, a Rebate of 1.5 % of the vehicle’s cost, giving an Effective Rate after rebate of 1 % of the vehicle’s cost. [S3](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf#page=2)\n- The cost basis for the rates and rebate is the “cost of the vehicle”. [S3](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf#page=2)\n- The vehicle must be powered exclusively by an electric motor and its traction energy must be supplied exclusively by an electric battery installed in the vehicle to qualify for the electric‑vehicle tax rate. [S2](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf#page=1)\n- After the 2026 amendment the tax rate applies for a period up to 31 March 2027 (the deadline was changed from 31 March 2026 to 31 March 2027). [S9](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=20260404080501091.pdf&cdbid=eea3958b560b3b4ebb6101a297608df8&contentType=application/pdf#page=5)\n- Historical provision: The Gujarat State Electric Vehicle Policy 2021 was operative for four years from 1 July 2021, ending on 30 June 2025, so its purchase‑subsidy provisions have expired. [S1](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3)\n- The 2026 tax extension only amends the motor‑vehicle tax rates and does not renew the 2021 purchase subsidy; it does not contain any provision extending the subsidy period. [S2](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf#page=1) [S1](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3)\n\nSources:\n\n- [S3: Gujarat — Gujarat motor vehicle tax notification GH/PT/2025/13, PDF page 2](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf#page=2)\n- [S2: Gujarat — Gujarat motor vehicle tax notification GH/PT/2025/13, PDF page 1](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf#page=1)\n- [S9: Gujarat — Gujarat motor vehicle tax extension GH/PT/2026/06, PDF page 5](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=20260404080501091.pdf&cdbid=eea3958b560b3b4ebb6101a297608df8&contentType=application/pdf#page=5)\n- [S1: Gujarat — Gujarat State Electric Vehicle Policy 2021, PDF page 3](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3)",
+        "sources": [
+          {
+            "source_id": "S3",
+            "state": "Gujarat",
+            "document_title": "Gujarat motor vehicle tax notification GH/PT/2025/13",
+            "document_date": "2025-04-17",
+            "pdf_page": 2,
+            "source": "data/policies/gujarat/gujarat_motor_vehicle_tax_2025-04-17.pdf",
+            "official_url": "https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf#page=2",
+            "evidence_id": "gujarat_motor_vehicle_tax_2025-04-17:p2:x0-2715",
+            "excerpt_start": 0,
+            "excerpt_end": 2715,
+            "excerpt_sha256": "6996b9886ed5c8bc72d3889f6888d4b9b09e1124eea76cffa9d0e59ed1da59fe",
+            "context_role": "candidate_with_updates",
+            "version_note": "2025 tax table, read with the mandatory 30 March 2026 amendment. Original Match 2026 typo/deadline is superseded by 31 March 2027. Rebates differ by vehicle category; all listed effective rates are 1% of vehicle cost. This does not extend cash purchase subsidies. Auto-rickshaws licensed for at most three passengers: 2.5% existing, 1.5% rebate, 1% effective, each of vehicle cost; not a 5% rebate."
+          },
+          {
+            "source_id": "S2",
+            "state": "Gujarat",
+            "document_title": "Gujarat motor vehicle tax notification GH/PT/2025/13",
+            "document_date": "2025-04-17",
+            "pdf_page": 1,
+            "source": "data/policies/gujarat/gujarat_motor_vehicle_tax_2025-04-17.pdf",
+            "official_url": "https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf#page=1",
+            "evidence_id": "gujarat_motor_vehicle_tax_2025-04-17:p1:x0-1888",
+            "excerpt_start": 0,
+            "excerpt_end": 1888,
+            "excerpt_sha256": "24c7183488ca5ac2225da561abf920e0d67aba5407752f151708ced907ea706b",
+            "context_role": "candidate_with_updates",
+            "version_note": "2025 tax table, read with the mandatory 30 March 2026 amendment. Original Match 2026 typo/deadline is superseded by 31 March 2027. Rebates differ by vehicle category; all listed effective rates are 1% of vehicle cost. This does not extend cash purchase subsidies. Initial 6% omnibus schedule entry is followed by the specific exclusively battery-powered EV override/table; do not confuse the two rates."
+          },
+          {
+            "source_id": "S9",
+            "state": "Gujarat",
+            "document_title": "Gujarat motor vehicle tax extension GH/PT/2026/06",
+            "document_date": "2026-03-30",
+            "pdf_page": 5,
+            "source": "data/policies/gujarat/gujarat_motor_vehicle_tax_extension_2026-03-30.pdf",
+            "official_url": "https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=20260404080501091.pdf&cdbid=eea3958b560b3b4ebb6101a297608df8&contentType=application/pdf#page=5",
+            "evidence_id": "gujarat_motor_vehicle_tax_extension_2026-03-30:p5:x0-373",
+            "excerpt_start": 0,
+            "excerpt_end": 373,
+            "excerpt_sha256": "f9019ff887f965d941d4cbbfd51838f19901f3ae9e59405dc511f3f5c2f8a2fa",
+            "context_role": "dated_tax_extension",
+            "version_note": "Notification dated 30 March 2026, published 2 April. Replaces 31 March 2026 with 31 March 2027 in the clause above the EV tax table after the 2017 parent Schedule/Explanations; 2025 supplies the scope/table. Tax only."
+          },
+          {
+            "source_id": "S1",
+            "state": "Gujarat",
+            "document_title": "Gujarat State Electric Vehicle Policy 2021",
+            "document_date": "2021-06-23",
+            "pdf_page": 3,
+            "source": "data/policies/gujarat/gujarat_ev_policy_2021-06-23.pdf",
+            "official_url": "https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3",
+            "evidence_id": "gujarat_policy_2021-06-23:p3:x0-1730",
+            "excerpt_start": 0,
+            "excerpt_end": 1730,
+            "excerpt_sha256": "f81ba9fe96000d4be1b3551cb07f98b1025fa42733b8c9becb8e164544ca5e8b",
+            "context_role": "historical_only",
+            "version_note": "2021 policy: four years from 1 July 2021 (end 30 June 2025 inferred). No purchase/charging extension established; later tax notification is separate."
+          }
+        ],
+        "points": [
+          {
+            "text": "For electric auto‑rickshaws licensed to carry up to three passengers the tax table lists an Existing Rate of 2.5 % of the vehicle’s cost, a Rebate of 1.5 % of the vehicle’s cost, giving an Effective Rate after rebate of 1 % of the vehicle’s cost.",
+            "citations": [
+              {
+                "source_id": "S3",
+                "source_excerpt": "163-2 GUJARAT GOVERNMENT GAZETTE, EX., 17-04-2025 [ PART  IV-B \nTable \nSr. \nNo. Clause Types of Motor Vehicle Existing \nRate  \nRebate \nPercentage \nEffective  Rate \nafter Rebate \n(1)  (2) (3) (4) (5) (6) \n1 I (except \nentry(i)) \n(ii) Motor Vehicles including a trailer to \ncarry personal effects or a cam ping trailer \nfor private use, attached to such motor \nvehicle owned by an individual, a \neducational institution, a local authority, a \npublic trust, a social welfare institution or an \nUniversity: \n Provided that two or more vehicles \nshall not be chargeable un der this clause in \nrespect of the same trailer. \n6 per cent. of \ncost of the \nvehicle. \n5 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. \n(iii) Motor cycles and tricycles (including \nattachment for propelling the same by \nmechanical powe r) owned by an individual, \nan educational institution, a public trust, a \nlocal authority or a University. \n6 per cent. of \ncost of the \nvehicle. \n5 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. \n(iv) Tractors used solely for agricultu ral \noperations \n3 percent of \ncost of the \nvehicle \n2 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. \n(v) Tractors used for other than agricultural \noperations and whether or not fitted with any \nequipment such as rigs, cranes, compresso r \nor projectors or any motor vehicles which \nare not intended to carry any passenger, \ngoods or other load and which are fitted with \nany equipment such as rigs, cranes, \ncompressor or projectors and used for any \nspecial services or purposes or any \nconstruction equipment vehicles having \nunladen  weight of which does not exceeds \n7500 KG. \n3 percent of \ncost of the \nvehicle \n2 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. \n2 II (i) Two wheelers vehicles licensed to carry \nnot more than two passengers. \n6 per cent. of \ncost of the \nvehicle \n5 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. \n (ii) Three wheelers vehicles ordinarily \nknown as auto rickshaws, licensed to carry \nnote more than three passengers  \n2.5 per cent. \nof cost of the \nvehicle. \n1.5 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. \n(iii) Three wheelers vehicles ordinarily \nknown as auto rickshaws, licensed to carry \nmore than three passengers but not more \nthan six passengers \n6 per cent. of \ncost of the \nvehicle. \n5 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. \n(iv) Four wheelers vehicles licensed to carry \nnot more than six passengers. \n6 per cent. of \ncost of the \nvehicle \n5 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. "
+              }
+            ]
+          },
+          {
+            "text": "The cost basis for the rates and rebate is the “cost of the vehicle”.",
+            "citations": [
+              {
+                "source_id": "S3",
+                "source_excerpt": "163-2 GUJARAT GOVERNMENT GAZETTE, EX., 17-04-2025 [ PART  IV-B \nTable \nSr. \nNo. Clause Types of Motor Vehicle Existing \nRate  \nRebate \nPercentage \nEffective  Rate \nafter Rebate \n(1)  (2) (3) (4) (5) (6) \n1 I (except \nentry(i)) \n(ii) Motor Vehicles including a trailer to \ncarry personal effects or a cam ping trailer \nfor private use, attached to such motor \nvehicle owned by an individual, a \neducational institution, a local authority, a \npublic trust, a social welfare institution or an \nUniversity: \n Provided that two or more vehicles \nshall not be chargeable un der this clause in \nrespect of the same trailer. \n6 per cent. of \ncost of the \nvehicle. \n5 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. \n(iii) Motor cycles and tricycles (including \nattachment for propelling the same by \nmechanical powe r) owned by an individual, \nan educational institution, a public trust, a \nlocal authority or a University. \n6 per cent. of \ncost of the \nvehicle. \n5 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. \n(iv) Tractors used solely for agricultu ral \noperations \n3 percent of \ncost of the \nvehicle \n2 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. \n(v) Tractors used for other than agricultural \noperations and whether or not fitted with any \nequipment such as rigs, cranes, compresso r \nor projectors or any motor vehicles which \nare not intended to carry any passenger, \ngoods or other load and which are fitted with \nany equipment such as rigs, cranes, \ncompressor or projectors and used for any \nspecial services or purposes or any \nconstruction equipment vehicles having \nunladen  weight of which does not exceeds \n7500 KG. \n3 percent of \ncost of the \nvehicle \n2 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. \n2 II (i) Two wheelers vehicles licensed to carry \nnot more than two passengers. \n6 per cent. of \ncost of the \nvehicle \n5 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. \n (ii) Three wheelers vehicles ordinarily \nknown as auto rickshaws, licensed to carry \nnote more than three passengers  \n2.5 per cent. \nof cost of the \nvehicle. \n1.5 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. \n(iii) Three wheelers vehicles ordinarily \nknown as auto rickshaws, licensed to carry \nmore than three passengers but not more \nthan six passengers \n6 per cent. of \ncost of the \nvehicle. \n5 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. \n(iv) Four wheelers vehicles licensed to carry \nnot more than six passengers. \n6 per cent. of \ncost of the \nvehicle \n5 per cent. \nof cost of \nthe vehicle. \n1 per cent. of cost \nof the vehicle. "
+              }
+            ]
+          },
+          {
+            "text": "The vehicle must be powered exclusively by an electric motor and its traction energy must be supplied exclusively by an electric battery installed in the vehicle to qualify for the electric‑vehicle tax rate.",
+            "citations": [
+              {
+                "source_id": "S2",
+                "source_excerpt": " \n \nIV-B Ex.-163  163-1 \n \nExtra No. 163  \n ©   \nThe Gujarat Government Gazette \nEXTRAORDINARY \nPUBLISHED BY AUTHORITY \nVol. LXVI ] THURSDAY,  APRIL  17,  2025 / CHAITRA  27,  1947 \nSeparate paging is given to this Part in order that it may be filed as a Separate Compilation. \nPART IV-B \nRules and Orders (Other than those published in Parts I, I-A, and I-L) made \n by the Government of Gujarat under the Gujarat Acts \n \n \n \n \n \n \n \n \nPORTS AND TRANSPORT DEPARTMENT \nNOTIFICATION \nSachivalaya, Gandhinagar, 17th April, 2025 \nGUJARAT MOTOR VEHICLES TAX ACT, 1958. \nNo.GH/PT/2025/13/PTD/PM/e-file/22/2025/0286/KH:- In exercise of the powers conferred by sub -section (1) of \nsection 3 of the Gujarat Motor Vehicles Tax Act, 1958 (Bom. LXV of 1958), the Government of Gujarat hereby \namends the Government notification, P orts and Transport Department No. PT/2017/6/MVD/2017/699/KH, dated the \n31st March, 2017 (hereinafter named as “said notification”), as follows: - \n1.  In the said notification, in the Schedule, in clause II, for entry (v), the following entry shall be subst ituted,  \nnamely, - \nSCHEDULE \n“(v) (i)  Designated Omnibus licensed to carry not more than eight \npassengers  \n6 per cent of cost of the vehicle. \n \n(ii)  Designated Omnibus licensed to carry more than eight but not \nmore than twelve passengers  \n6 per cent of cost of the vehicle.” \n2.  After the Schedule and explanations thereunder, the following clause and Table shall be added, namely, - \n“Notwithstanding anything contained in the Schedule, any type of vehicle mentioned in clause I (except(i)), II, III \nentry(ii), IV and powered exclusively by an electric motor whose traction energy is supply exclusively by electric \nbattery installed in the vehicle shall be taxed at effective rate (after giving rebate) as specified in column no. (6) of the  \nfollowing table for a period upto 31st Match, 2026. \n"
+              }
+            ]
+          },
+          {
+            "text": "After the 2026 amendment the tax rate applies for a period up to 31 March 2027 (the deadline was changed from 31 March 2026 to 31 March 2027).",
+            "citations": [
+              {
+                "source_id": "S9",
+                "source_excerpt": "PART IV-B ] GUJARAT GOVERNMENT GAZETTE, 02-04-2026  48  \nIn the said notification, after the Schedule and Explanations, in the clause above the Table, for the word and figures \n\"31st March, 2026\", word and figures \"31st March, 2027\" shall be substituted. \nBy order and in the name of the Governor of Gujarat, \nTEJENDRA PATEL, \nDeputy Secretary to Government. \n----------- \n"
+              }
+            ]
+          },
+          {
+            "text": "The Gujarat State Electric Vehicle Policy 2021 was operative for four years from 1 July 2021, ending on 30 June 2025, so its purchase‑subsidy provisions have expired.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "Gujarat State Electric\nVehicle Policy 2021.\n\nGovernment of Gujarat\nPorts and Transport Department,\nResolution No.MVD-102019-840-Kh.\nSachivalaya, Gandhinagar.\nDated the 23rd June, 2021.\n\n1. PREAMBLE\n\nThere is an imminent shift in the nature of transportation from internal combustion vehicles to\nelectric vehicles. The shift to electric vehicles is being driven by a need to reduce air pollution,\nreduction in India’s oil import bill and to increase energy security of the country. The thrust for electric\nvehicles go hand in hand with India’s efforts to expand renewable energy capacities. In addition,\nGujarat has the highest adoption of battery operated two wheelers in the country, which makes it an\nideal proposition for industries to invest in EVs.\n2. OBJECTIVES\n\n(i) To transition the state’s transportation sector towards electric mobility.\n\n(ii) To make Gujarat a manufacturing hub for electric vehicles and ancillary equipment.\n\n(iii) To encourage start‐ups and investment in the field of electric mobility and associated support\nsectors such as data analytics and information technology.\n\n(iv) To improve the quality of the environment by reducing air pollution.\n3. TITLE\n\nThis document shall be known as the “Gujarat State Electric Vehicle Policy 2021”\n4. OPERATIVE PERIOD\n\n(i) This policy shall be valid for a period of four years commencing from 1st July 2021.\n5. ABBREVIATIONS AND DEFINITIONS\n\n(i) “Central Government” means the Government of India;\n\n(ii) “DBT” means Direct Benefit Transfer;\n\n(iii) “DHI” means Department of Heavy Industry, Ministry of Heavy Industry & Public Enterprises,\nGovernment of India;\n\n(iv) “DisCom” means Electricity Distribution Licensee;\n\nGujarat State Electric Vehicle Policy ‐ 2021. 1"
+              }
+            ]
+          },
+          {
+            "text": "The 2026 tax extension only amends the motor‑vehicle tax rates and does not renew the 2021 purchase subsidy; it does not contain any provision extending the subsidy period.",
+            "citations": [
+              {
+                "source_id": "S2",
+                "source_excerpt": " \n \nIV-B Ex.-163  163-1 \n \nExtra No. 163  \n ©   \nThe Gujarat Government Gazette \nEXTRAORDINARY \nPUBLISHED BY AUTHORITY \nVol. LXVI ] THURSDAY,  APRIL  17,  2025 / CHAITRA  27,  1947 \nSeparate paging is given to this Part in order that it may be filed as a Separate Compilation. \nPART IV-B \nRules and Orders (Other than those published in Parts I, I-A, and I-L) made \n by the Government of Gujarat under the Gujarat Acts \n \n \n \n \n \n \n \n \nPORTS AND TRANSPORT DEPARTMENT \nNOTIFICATION \nSachivalaya, Gandhinagar, 17th April, 2025 \nGUJARAT MOTOR VEHICLES TAX ACT, 1958. \nNo.GH/PT/2025/13/PTD/PM/e-file/22/2025/0286/KH:- In exercise of the powers conferred by sub -section (1) of \nsection 3 of the Gujarat Motor Vehicles Tax Act, 1958 (Bom. LXV of 1958), the Government of Gujarat hereby \namends the Government notification, P orts and Transport Department No. PT/2017/6/MVD/2017/699/KH, dated the \n31st March, 2017 (hereinafter named as “said notification”), as follows: - \n1.  In the said notification, in the Schedule, in clause II, for entry (v), the following entry shall be subst ituted,  \nnamely, - \nSCHEDULE \n“(v) (i)  Designated Omnibus licensed to carry not more than eight \npassengers  \n6 per cent of cost of the vehicle. \n \n(ii)  Designated Omnibus licensed to carry more than eight but not \nmore than twelve passengers  \n6 per cent of cost of the vehicle.” \n2.  After the Schedule and explanations thereunder, the following clause and Table shall be added, namely, - \n“Notwithstanding anything contained in the Schedule, any type of vehicle mentioned in clause I (except(i)), II, III \nentry(ii), IV and powered exclusively by an electric motor whose traction energy is supply exclusively by electric \nbattery installed in the vehicle shall be taxed at effective rate (after giving rebate) as specified in column no. (6) of the  \nfollowing table for a period upto 31st Match, 2026. \n"
+              },
+              {
+                "source_id": "S1",
+                "source_excerpt": "Gujarat State Electric\nVehicle Policy 2021.\n\nGovernment of Gujarat\nPorts and Transport Department,\nResolution No.MVD-102019-840-Kh.\nSachivalaya, Gandhinagar.\nDated the 23rd June, 2021.\n\n1. PREAMBLE\n\nThere is an imminent shift in the nature of transportation from internal combustion vehicles to\nelectric vehicles. The shift to electric vehicles is being driven by a need to reduce air pollution,\nreduction in India’s oil import bill and to increase energy security of the country. The thrust for electric\nvehicles go hand in hand with India’s efforts to expand renewable energy capacities. In addition,\nGujarat has the highest adoption of battery operated two wheelers in the country, which makes it an\nideal proposition for industries to invest in EVs.\n2. OBJECTIVES\n\n(i) To transition the state’s transportation sector towards electric mobility.\n\n(ii) To make Gujarat a manufacturing hub for electric vehicles and ancillary equipment.\n\n(iii) To encourage start‐ups and investment in the field of electric mobility and associated support\nsectors such as data analytics and information technology.\n\n(iv) To improve the quality of the environment by reducing air pollution.\n3. TITLE\n\nThis document shall be known as the “Gujarat State Electric Vehicle Policy 2021”\n4. OPERATIVE PERIOD\n\n(i) This policy shall be valid for a period of four years commencing from 1st July 2021.\n5. ABBREVIATIONS AND DEFINITIONS\n\n(i) “Central Government” means the Government of India;\n\n(ii) “DBT” means Direct Benefit Transfer;\n\n(iii) “DHI” means Department of Heavy Industry, Ministry of Heavy Industry & Public Enterprises,\nGovernment of India;\n\n(iv) “DisCom” means Electricity Distribution Licensee;\n\nGujarat State Electric Vehicle Policy ‐ 2021. 1"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Gujarat",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 1315,
+          "prompt_tokens": 5277,
+          "total_tokens": 6592,
+          "completion_time": 2.750501999,
+          "prompt_time": 0.270347537,
+          "queue_time": 0.211657584,
+          "total_time": 3.020849536,
+          "completion_tokens_details": {
+            "reasoning_tokens": 994
+          }
+        },
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      },
+      "ui_outputs": [
+        "### Answer\n\nGujarat — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- For electric auto‑rickshaws licensed to carry up to three passengers the tax table lists an Existing Rate of 2.5 % of the vehicle’s cost, a Rebate of 1.5 % of the vehicle’s cost, giving an Effective Rate after rebate of 1 % of the vehicle’s cost. [S3](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf#page=2)\n- The cost basis for the rates and rebate is the “cost of the vehicle”. [S3](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf#page=2)\n- The vehicle must be powered exclusively by an electric motor and its traction energy must be supplied exclusively by an electric battery installed in the vehicle to qualify for the electric‑vehicle tax rate. [S2](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf#page=1)\n- After the 2026 amendment the tax rate applies for a period up to 31 March 2027 (the deadline was changed from 31 March 2026 to 31 March 2027). [S9](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=20260404080501091.pdf&cdbid=eea3958b560b3b4ebb6101a297608df8&contentType=application/pdf#page=5)\n- Historical provision: The Gujarat State Electric Vehicle Policy 2021 was operative for four years from 1 July 2021, ending on 30 June 2025, so its purchase‑subsidy provisions have expired. [S1](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3)\n- The 2026 tax extension only amends the motor‑vehicle tax rates and does not renew the 2021 purchase subsidy; it does not contain any provision extending the subsidy period. [S2](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf#page=1) [S1](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3)",
+        "### Sources\n\n- [S3: Gujarat — Gujarat motor vehicle tax notification GH/PT/2025/13, PDF page 2](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf#page=2)\n- [S2: Gujarat — Gujarat motor vehicle tax notification GH/PT/2025/13, PDF page 1](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=202504210834101619.pdf&cdbid=04b1daad51e67cccdfe90fc07bb46679&contentType=application/pdf#page=1)\n- [S9: Gujarat — Gujarat motor vehicle tax extension GH/PT/2026/06, PDF page 5](https://egazette.gujarat.gov.in/ViewPdf2.aspx?docid=20260404080501091.pdf&cdbid=eea3958b560b3b4ebb6101a297608df8&contentType=application/pdf#page=5)\n- [S1: Gujarat — Gujarat State Electric Vehicle Policy 2021, PDF page 3](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3)"
+      ]
+    }
+  ]
+}

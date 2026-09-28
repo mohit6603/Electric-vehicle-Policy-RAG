@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-09-28T05:59:04.681323+00:00",
+  "technical_status": "passed",
+  "team_acceptance": "deferred_not_verified",
+  "current_benefit_availability": "not_verified",
+  "verification_cutoff": "2026-09-23",
+  "page_count": 10,
+  "chunk_count": 31,
+  "chunks_by_source": {
+    "gujarat_policy_2021-06-23": 14,
+    "gujarat_motor_vehicle_tax_2025-04-17": 9,
+    "gujarat_motor_vehicle_tax_extension_2026-03-30": 8
+  },
+  "splitter": {
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "add_start_index": true
+  },
+  "checks_passed": [
+    "10_unique_physical_pages",
+    "stable_unique_chunks",
+    "original_pdf_hashes",
+    "metadata_and_pending_review_preserved",
+    "all_links_resolve",
+    "no_nonwhitespace_text_lost",
+    "historical_policy_period_and_vehicle_targets",
+    "three_battery_rate_price_rows",
+    "purchase_stacking_and_column_discrepancy",
+    "charging_cap_count_and_exclusions",
+    "pure_battery_scope_and_category_tax_rates",
+    "shared_parent_and_2027_deadline_replacement"
+  ],
+  "artifact_sha256": {
+    "pages.jsonl": "405624b284a7674110ca3db1ab40d1896b55d1360f19c92f462ff5dbbf2747d3",
+    "chunks.jsonl": "7ec283b8c6e9e9d1a509afa2d0a739ece55cfeb780fd88d346730ded6551e89b"
+  },
+  "notebook_sha256": "695d1370dedcf9e944dfed17647bc8461451354d50ce2f2d9c525961b6e3a511",
+  "source_manifest_sha256": "377b8496ff6b9b56f0857630bd83b6ce08a070d63bb675fe1fefff2cab26884e"
+}

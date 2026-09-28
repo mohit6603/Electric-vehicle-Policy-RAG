@@ -1,13 +1,13 @@
 {
-  "checked_at_utc": "2026-09-27T16:23:30.090747+00:00",
-  "notebook_sha256": "8d325cdcae2613fe77dff0720808b9157dffc40a7bc88ae355b986ed9ffc4931",
-  "check_script_sha256": "fd22f3a5b14c2ba00424f605edaf41dac4ae9f1cb09bc4cfdc5005a57bc4a70a",
-  "source_manifest_sha256": "aeff5d84725d042820a8c850fdc5e35c6c8710b193c56c8ea12630a854c14d0c",
-  "retrieval_rules_sha256": "c9fca6ab8e5b102be484d7ebf1a728fe5f3ef925606676403cd7c848797fbd26",
+  "checked_at_utc": "2026-09-28T05:54:54.326581+00:00",
+  "notebook_sha256": "8d223c5a19c7ccddea09a73d083ba13e2f47b9e9488060da77a8bb7c21b24f11",
+  "check_script_sha256": "3169ebf574cc097c9aa9a8df1fb64cc0a777cc94b008cf2e59280318cdc6c6fd",
+  "source_manifest_sha256": "377b8496ff6b9b56f0857630bd83b6ce08a070d63bb675fe1fefff2cab26884e",
+  "retrieval_rules_sha256": "633a50ebf4f9b47e67b5d22af9362eb7c4bcc82bb99b4ca7e0e76bb329b12645",
   "index_spec": {
     "collection": "ev_policy_draft",
-    "corpus_sha256": "a22c053c764ef33eb551c27b8d4cfbf371abf26168019bef24446b0f70549f57",
-    "chunk_count": 480,
+    "corpus_sha256": "cce9698acba7dd42f5e35ce709cdde5e2c1fd2586e98431a1ff8f7cc242d7732",
+    "chunk_count": 511,
     "embedding": {
       "model": "nomic-embed-text:latest",
       "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
@@ -20,7 +20,8 @@
       "Tamil Nadu": 78,
       "Central": 100,
       "Uttar Pradesh": 117,
-      "Delhi": 132
+      "Delhi": 132,
+      "Gujarat": 31
     }
   },
   "technical_status": "passed",
@@ -187,11 +188,11 @@
       }
     },
     {
-      "selection": "Gujarat",
+      "selection": "Telangana",
       "question": "Electric car subsidy?",
       "result": {
         "status": "unsupported_jurisdiction",
-        "answer": "Choose Central, Delhi, Maharashtra, Tamil Nadu, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "answer": "Choose Central, Delhi, Gujarat, Maharashtra, Tamil Nadu, Uttar Pradesh; other jurisdictions are not indexed yet.",
         "sources": [],
         "points": [],
         "jurisdiction": null,

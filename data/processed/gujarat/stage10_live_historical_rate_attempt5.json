@@ -1,0 +1,319 @@
+{
+  "checked_at_utc": "2026-09-28T05:57:27.283014+00:00",
+  "notebook_sha256": "11aed64954b8487a287949aa3e1a9aa956c7efecde1e1bb5b938da43bf4a5e43",
+  "check_script_sha256": "4c5df4feb6e2391b10d4064b50e0601bee10c261812006f4f0adbee51c10bfc1",
+  "source_manifest_sha256": "377b8496ff6b9b56f0857630bd83b6ce08a070d63bb675fe1fefff2cab26884e",
+  "retrieval_rules_sha256": "633a50ebf4f9b47e67b5d22af9362eb7c4bcc82bb99b4ca7e0e76bb329b12645",
+  "index_spec": {
+    "collection": "ev_policy_draft",
+    "corpus_sha256": "cce9698acba7dd42f5e35ce709cdde5e2c1fd2586e98431a1ff8f7cc242d7732",
+    "chunk_count": 511,
+    "embedding": {
+      "model": "nomic-embed-text:latest",
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "num_ctx": 2048,
+      "langchain_ollama": "0.3.7"
+    },
+    "distance": "cosine",
+    "chunks_by_state": {
+      "Maharashtra": 53,
+      "Tamil Nadu": 78,
+      "Central": 100,
+      "Uttar Pradesh": 117,
+      "Delhi": 132,
+      "Gujarat": 31
+    }
+  },
+  "technical_status": "failed",
+  "scope": "AI development checks; not team source review or formal evaluation",
+  "checks_passed": [
+    "reopen_all_records_without_corpus_embedding",
+    "31_gujarat_chunks",
+    "three_gujarat_aliases",
+    "five_filtered_semantic_queries",
+    "conditions_and_continuations_present",
+    "historical_context_isolated_and_tax_chain_complete",
+    "all_10_pages_assemble_with_hashed_exclusions_within_limit",
+    "known_generated_battery_limit_claims_withheld",
+    "six_rejections_skip_models_and_clear_sources",
+    "gradio_lists_gujarat_and_other_loaded_jurisdictions"
+  ],
+  "embedding_calls": {
+    "corpus": 0,
+    "query": 7
+  },
+  "observations": [
+    {
+      "question": "What two-wheeler purchase incentive rate, battery capacity limit, ex-factory price ceiling, policy period and scheme-stacking conditions did the 2021 policy state?",
+      "page_ids": [
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p4",
+        "gujarat_policy_2021-06-23:p6"
+      ],
+      "context_chars": 8303,
+      "status": "retrieved"
+    },
+    {
+      "question": "What tax rates and rebates are listed for electric auto rickshaws licensed for up to three passengers, and what deadline does the 2026 extension state?",
+      "page_ids": [
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_motor_vehicle_tax_2025-04-17:p1",
+        "gujarat_motor_vehicle_tax_2025-04-17:p2",
+        "gujarat_policy_2021-06-23:p4",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p6",
+        "gujarat_motor_vehicle_tax_2025-04-17:p3",
+        "gujarat_motor_vehicle_tax_extension_2026-03-30:p4",
+        "gujarat_motor_vehicle_tax_extension_2026-03-30:p5"
+      ],
+      "context_chars": 15282,
+      "status": "retrieved"
+    },
+    {
+      "question": "What charging-station equipment subsidy, cap, station count and other-subsidy exclusion did the 2021 policy describe?",
+      "page_ids": [
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p4",
+        "gujarat_policy_2021-06-23:p6"
+      ],
+      "context_chars": 8303,
+      "status": "retrieved"
+    },
+    {
+      "question": "What tax rate, rebate and effective rate are listed for electric private service vehicles transporting educational-institution students or staff?",
+      "page_ids": [
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_motor_vehicle_tax_2025-04-17:p1",
+        "gujarat_motor_vehicle_tax_2025-04-17:p2",
+        "gujarat_policy_2021-06-23:p4",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p6",
+        "gujarat_motor_vehicle_tax_2025-04-17:p3",
+        "gujarat_motor_vehicle_tax_extension_2026-03-30:p4",
+        "gujarat_motor_vehicle_tax_extension_2026-03-30:p5"
+      ],
+      "context_chars": 15282,
+      "status": "retrieved"
+    },
+    {
+      "question": "What historical manufacturing-policy reference and charging tariff conditions are stated?",
+      "page_ids": [
+        "gujarat_policy_2021-06-23:p3",
+        "gujarat_policy_2021-06-23:p6",
+        "gujarat_policy_2021-06-23:p5",
+        "gujarat_policy_2021-06-23:p7",
+        "gujarat_policy_2021-06-23:p4"
+      ],
+      "context_chars": 9090,
+      "status": "retrieved"
+    },
+    {
+      "all_page_context_range": [
+        8303,
+        15282
+      ]
+    },
+    {
+      "selection": "GJ",
+      "question": "Tamil Nadu purchase subsidy?",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Gujarat",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Gujarat",
+      "question": "Compare Gujarat and Maharashtra incentives",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Gujarat",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Telangana",
+      "question": "Electric car subsidy?",
+      "result": {
+        "status": "unsupported_jurisdiction",
+        "answer": "Choose Central, Delhi, Gujarat, Maharashtra, Tamil Nadu, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Gujarat",
+      "question": "",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Gujarat",
+      "question": "Can I claim an EV subsidy today?",
+      "result": {
+        "status": "not_established",
+        "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Gujarat",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "current_entitlement_unverified",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Gujarat",
+      "question": "What two-wheeler purchase incentive rate, battery capacity limit, ex-factory price ceiling, policy period and scheme-stacking conditions did the 2021 policy state?",
+      "result": {
+        "status": "not_established",
+        "answer": "The 2021 Gujarat policy has an inconsistent battery-column reference. Source review is needed before this prototype interprets the purchase-subsidy battery limit or infers vehicle eligibility. Ask separately about the historical rate, price ceiling or period.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Gujarat",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "gujarat_battery_limit_review_pending",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "case": "historical_rate",
+      "question": "According to the historical 2021 policy, what two-wheeler demand incentive rate and ex-factory price ceiling were stated, and what was the policy period?",
+      "result": {
+        "status": "document_answer",
+        "answer": "Gujarat — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- The two‑wheel‑er demand incentive is Rs 10,000 per kWh of battery capacity. [S2](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=5)\n- The maximum ex‑factory price of a two‑wheel‑er eligible for the incentive is Rs 1.5 lakhs. [S2](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=5)\n- The policy’s operative period is four years commencing on 1 July 2021 (i.e., until 30 June 2025). [S1](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3)\n\nSources:\n\n- [S2: Gujarat — Gujarat State Electric Vehicle Policy 2021, PDF page 5](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=5)\n- [S1: Gujarat — Gujarat State Electric Vehicle Policy 2021, PDF page 3](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3)",
+        "sources": [
+          {
+            "source_id": "S2",
+            "state": "Gujarat",
+            "document_title": "Gujarat State Electric Vehicle Policy 2021",
+            "document_date": "2021-06-23",
+            "pdf_page": 5,
+            "source": "data/policies/gujarat/gujarat_ev_policy_2021-06-23.pdf",
+            "official_url": "https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=5",
+            "evidence_id": "gujarat_policy_2021-06-23:p5:x0-2305",
+            "excerpt_start": 0,
+            "excerpt_end": 2305,
+            "excerpt_sha256": "0fe51a70f5900b6dd94bbf07c72f97c81b78cedf8447ee85c987ddeb1901e8f9",
+            "context_role": "historical_only",
+            "version_note": "2021 policy: four years from 1 July 2021 (end 30 June 2025 inferred). No purchase/charging extension established; later tax notification is separate. Clause 8(iv) prints column (2), while battery capacity is in column (3); retain this discrepancy. Amounts are printed per kWh, not as lump-sum caps. When describing the battery limit, distinguish the maximum subsidised capacity from vehicle eligibility: Table 2/8(iv) does not expressly disqualify a larger battery. Explicitly flag that 8(iv) says column (2) but the battery values are actually in column (3); never repeat the wrong reference as a correct table description. Use past tense for the expired 2021 purchase provisions."
+          },
+          {
+            "source_id": "S1",
+            "state": "Gujarat",
+            "document_title": "Gujarat State Electric Vehicle Policy 2021",
+            "document_date": "2021-06-23",
+            "pdf_page": 3,
+            "source": "data/policies/gujarat/gujarat_ev_policy_2021-06-23.pdf",
+            "official_url": "https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3",
+            "evidence_id": "gujarat_policy_2021-06-23:p3:x0-1730",
+            "excerpt_start": 0,
+            "excerpt_end": 1730,
+            "excerpt_sha256": "f81ba9fe96000d4be1b3551cb07f98b1025fa42733b8c9becb8e164544ca5e8b",
+            "context_role": "historical_only",
+            "version_note": "2021 policy: four years from 1 July 2021 (end 30 June 2025 inferred). No purchase/charging extension established; later tax notification is separate."
+          }
+        ],
+        "points": [
+          {
+            "text": "The two‑wheel‑er demand incentive is Rs 10,000 per kWh of battery capacity.",
+            "citations": [
+              {
+                "source_id": "S2",
+                "source_excerpt": "7. SCOPE AND ELIGIBILITY\n\n(i) The Policy shall be applicable to all classes of electric vehic les that have taken subsidy under\nthe Government of India’s FAME II scheme dated 8th March 2019, F. No 1(1)/2019‐AEI and\nany amendments thereafter.\n\n(ii) The incentives for setting up a charging station shall be applicable to charging stations\nmeeting the guidelines and standards of the Ministry of Power Circular, dated 1st October,\n2019 and any amendments thereafter.\n8. INCENTIVES FOR EARLY ADOPTION OF ELECTRIC VEHICLES\n\n(i) The Demand Incentive from the State shall be over and above any subsidies that are available\nfrom the Central Government through its promotional schemes and policies. The subsidy shall\nbe disbursed directly to the customer via DBT mode from the Sta te Transport Department on\nauthenticating the document for the purchase of the vehicle.\n\n(ii) The incentives for all types of electric vehicles shall be based on the electric vehicle battery\ncapacity (i.e energy content measured in kWh). The threshold pr ice to avail the subsidy for\neach vehicle segment shall be as per Government of India’s FAME II scheme dated 8th March\n2019, F. No 1(1)/2019‐AEI and any amendments thereafter.\n\nTable 2: Summary of incentive across all segments under the policy period\n\nSrl.No. Vehicle Segment Battery State Subsidy Amount Maximum ex‐factory\nCapacity (in Rs.) price to avail\n(kWh) incentive (in Rs.)\n\n(1) (2) (3) (4) (5)\n\n1 2 wheeler 2 Rs. 10,000/‐ per kWh Rs. 1.5 lakhs\n\n2 3 wheeler 5 Rs. 10,000/‐ per kWh Rs. 5 lakhs\n\n3 4‐Wheeler 15 Rs. 10,000/‐ per kWh Rs.15 lakhs\n\n(iii) The beneficiary can opt to get one time subsidy under any one scheme of the state\ngovernment runs by the different departments. the beneficiary can not claim subsidy under\nmore than one scheme of the state government.\n\n(iv) The maximum amount of subsidy for any Vehicle is limited to the maximum battery capacity\nof the vehicle shown in column (2) of the Table 2\n\n9. INCENTIVES FOR CHARGING INFRASTRUCTURE\n\n(i) The State Government shall promote charging infrastructure of different capacities/\ntechnologies and promote a variety of business models. Privately‐owned, DisCom‐owned and\nInvestor‐owned charging and battery swapping stations are encouraged under this Policy.\n\nGujarat State Electric Vehicle Policy ‐ 2021. 3"
+              }
+            ]
+          },
+          {
+            "text": "The maximum ex‑factory price of a two‑wheel‑er eligible for the incentive is Rs 1.5 lakhs.",
+            "citations": [
+              {
+                "source_id": "S2",
+                "source_excerpt": "7. SCOPE AND ELIGIBILITY\n\n(i) The Policy shall be applicable to all classes of electric vehic les that have taken subsidy under\nthe Government of India’s FAME II scheme dated 8th March 2019, F. No 1(1)/2019‐AEI and\nany amendments thereafter.\n\n(ii) The incentives for setting up a charging station shall be applicable to charging stations\nmeeting the guidelines and standards of the Ministry of Power Circular, dated 1st October,\n2019 and any amendments thereafter.\n8. INCENTIVES FOR EARLY ADOPTION OF ELECTRIC VEHICLES\n\n(i) The Demand Incentive from the State shall be over and above any subsidies that are available\nfrom the Central Government through its promotional schemes and policies. The subsidy shall\nbe disbursed directly to the customer via DBT mode from the Sta te Transport Department on\nauthenticating the document for the purchase of the vehicle.\n\n(ii) The incentives for all types of electric vehicles shall be based on the electric vehicle battery\ncapacity (i.e energy content measured in kWh). The threshold pr ice to avail the subsidy for\neach vehicle segment shall be as per Government of India’s FAME II scheme dated 8th March\n2019, F. No 1(1)/2019‐AEI and any amendments thereafter.\n\nTable 2: Summary of incentive across all segments under the policy period\n\nSrl.No. Vehicle Segment Battery State Subsidy Amount Maximum ex‐factory\nCapacity (in Rs.) price to avail\n(kWh) incentive (in Rs.)\n\n(1) (2) (3) (4) (5)\n\n1 2 wheeler 2 Rs. 10,000/‐ per kWh Rs. 1.5 lakhs\n\n2 3 wheeler 5 Rs. 10,000/‐ per kWh Rs. 5 lakhs\n\n3 4‐Wheeler 15 Rs. 10,000/‐ per kWh Rs.15 lakhs\n\n(iii) The beneficiary can opt to get one time subsidy under any one scheme of the state\ngovernment runs by the different departments. the beneficiary can not claim subsidy under\nmore than one scheme of the state government.\n\n(iv) The maximum amount of subsidy for any Vehicle is limited to the maximum battery capacity\nof the vehicle shown in column (2) of the Table 2\n\n9. INCENTIVES FOR CHARGING INFRASTRUCTURE\n\n(i) The State Government shall promote charging infrastructure of different capacities/\ntechnologies and promote a variety of business models. Privately‐owned, DisCom‐owned and\nInvestor‐owned charging and battery swapping stations are encouraged under this Policy.\n\nGujarat State Electric Vehicle Policy ‐ 2021. 3"
+              }
+            ]
+          },
+          {
+            "text": "The policy’s operative period is four years commencing on 1 July 2021 (i.e., until 30 June 2025).",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "Gujarat State Electric\nVehicle Policy 2021.\n\nGovernment of Gujarat\nPorts and Transport Department,\nResolution No.MVD-102019-840-Kh.\nSachivalaya, Gandhinagar.\nDated the 23rd June, 2021.\n\n1. PREAMBLE\n\nThere is an imminent shift in the nature of transportation from internal combustion vehicles to\nelectric vehicles. The shift to electric vehicles is being driven by a need to reduce air pollution,\nreduction in India’s oil import bill and to increase energy security of the country. The thrust for electric\nvehicles go hand in hand with India’s efforts to expand renewable energy capacities. In addition,\nGujarat has the highest adoption of battery operated two wheelers in the country, which makes it an\nideal proposition for industries to invest in EVs.\n2. OBJECTIVES\n\n(i) To transition the state’s transportation sector towards electric mobility.\n\n(ii) To make Gujarat a manufacturing hub for electric vehicles and ancillary equipment.\n\n(iii) To encourage start‐ups and investment in the field of electric mobility and associated support\nsectors such as data analytics and information technology.\n\n(iv) To improve the quality of the environment by reducing air pollution.\n3. TITLE\n\nThis document shall be known as the “Gujarat State Electric Vehicle Policy 2021”\n4. OPERATIVE PERIOD\n\n(i) This policy shall be valid for a period of four years commencing from 1st July 2021.\n5. ABBREVIATIONS AND DEFINITIONS\n\n(i) “Central Government” means the Government of India;\n\n(ii) “DBT” means Direct Benefit Transfer;\n\n(iii) “DHI” means Department of Heavy Industry, Ministry of Heavy Industry & Public Enterprises,\nGovernment of India;\n\n(iv) “DisCom” means Electricity Distribution Licensee;\n\nGujarat State Electric Vehicle Policy ‐ 2021. 1"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Gujarat",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 808,
+          "prompt_tokens": 3201,
+          "total_tokens": 4009,
+          "completion_time": 1.681629322,
+          "prompt_time": 0.343021923,
+          "queue_time": 0.327350318,
+          "total_time": 2.024651245,
+          "completion_tokens_details": {
+            "reasoning_tokens": 684
+          }
+        },
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      },
+      "ui_outputs": [
+        "### Answer\n\nGujarat — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- The two‑wheel‑er demand incentive is Rs 10,000 per kWh of battery capacity. [S2](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=5)\n- The maximum ex‑factory price of a two‑wheel‑er eligible for the incentive is Rs 1.5 lakhs. [S2](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=5)\n- The policy’s operative period is four years commencing on 1 July 2021 (i.e., until 30 June 2025). [S1](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3)",
+        "### Sources\n\n- [S2: Gujarat — Gujarat State Electric Vehicle Policy 2021, PDF page 5](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=5)\n- [S1: Gujarat — Gujarat State Electric Vehicle Policy 2021, PDF page 3](https://www.powermin.gov.in/static/uploads/2025/07/3c383a891d96404e4b137b9e1ceb9ff9.pdf#page=3)"
+      ]
+    }
+  ]
+}

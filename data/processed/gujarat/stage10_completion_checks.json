@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-09-28T06:02:28.155314+00:00",
+  "technical_status": "passed",
+  "notebook_sha256": "695d1370dedcf9e944dfed17647bc8461451354d50ce2f2d9c525961b6e3a511",
+  "source_manifest_sha256": "377b8496ff6b9b56f0857630bd83b6ce08a070d63bb675fe1fefff2cab26884e",
+  "retrieval_rules_sha256": "633a50ebf4f9b47e67b5d22af9362eb7c4bcc82bb99b4ca7e0e76bb329b12645",
+  "checks_passed": [
+    "notebook_schema_and_code_syntax",
+    "saved_outputs_empty",
+    "eight_expected_existing_cells_changed",
+    "earlier_manifest_records_unchanged",
+    "source_hashes_and_false_acceptance_flags",
+    "earlier_ten_jsonl_files_unchanged",
+    "dependencies_unchanged",
+    "ingestion_receipts_match",
+    "final_gujarat_ingestion_integration_kernel_reports",
+    "final_live_passed_and_five_failed_reports_retained",
+    "credentials_absent_from_versioned_files"
+  ],
+  "team_acceptance": "deferred_not_verified",
+  "next_batch": "Telangana",
+  "known_limit": "Gujarat purchase-subsidy battery-limit interpretation withheld pending source review; pattern guards do not establish general semantic accuracy."
+}
