@@ -1,13 +1,13 @@
 {
-  "checked_at_utc": "2026-09-28T11:03:30.295818+00:00",
-  "notebook_sha256": "25aa0c361314d3ad06c4e3a158601520e45a5b72b9df5ebf66f19c9f6d6a1165",
-  "check_script_sha256": "098b828376dad86691f42ac01822f9260ec9ce1452548a7932208ff4807b6c0e",
-  "source_manifest_sha256": "c6fb5596e631501b1836bb8719c89967f426022c1fdbd85b62fe8dc9d87f1198",
-  "retrieval_rules_sha256": "7d72dcd4af057607dd07ab91b98bd26c8069e1cff49b315b167a9016be40bdfa",
+  "checked_at_utc": "2026-09-29T09:16:39.090135+00:00",
+  "notebook_sha256": "5bd5a1937dd392e78e90b169097251a460e32ea0c8968cb5a71b2a2948d39e45",
+  "check_script_sha256": "fffbba62703dd6208c6ee5de8ec9d39b1085bd55212b7fb2f247a8f7e424c6c1",
+  "source_manifest_sha256": "edb25d1d51e9d56a4047bc6569ffc93890ac7b3dabde55e909e08f871ed0669e",
+  "retrieval_rules_sha256": "2979802732839f42cb2dd4bc9852d06db3b9b5943db5240a9f9201f9288e917a",
   "index_spec": {
     "collection": "ev_policy_draft",
-    "corpus_sha256": "401fd0f9a16f74e3567977d63f6ef0bbae663b7dc1d36eed38c1a4d4f385f1bd",
-    "chunk_count": 543,
+    "corpus_sha256": "4e5e296e7ba8fafee80a580dabe7ca8549d050d86e48577e27cb95762454709b",
+    "chunk_count": 648,
     "embedding": {
       "model": "nomic-embed-text:latest",
       "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
@@ -22,7 +22,8 @@
       "Uttar Pradesh": 117,
       "Delhi": 132,
       "Gujarat": 31,
-      "Telangana": 32
+      "Telangana": 32,
+      "Karnataka": 105
     }
   },
   "technical_status": "passed",
@@ -153,11 +154,11 @@
       }
     },
     {
-      "selection": "Karnataka",
+      "selection": "Madhya Pradesh",
       "question": "Electric car subsidy?",
       "result": {
         "status": "unsupported_jurisdiction",
-        "answer": "Choose Central, Delhi, Gujarat, Maharashtra, Tamil Nadu, Telangana, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "answer": "Choose Central, Delhi, Gujarat, Karnataka, Maharashtra, Tamil Nadu, Telangana, Uttar Pradesh; other jurisdictions are not indexed yet.",
         "sources": [],
         "points": [],
         "jurisdiction": null,

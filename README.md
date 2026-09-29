@@ -2,7 +2,7 @@
 
 An EV policy assistant planned for the Generative AI mini-project at Jio Institute. It will answer questions from official policy documents, with jurisdiction filtering and document/page citations.
 
-**Status:** Stage 10 — Telangana is technically complete. Gradio offers Maharashtra, Tamil Nadu, Uttar Pradesh, Delhi, Gujarat, Telangana and Central; the saved index contains 543 draft chunks. See [Telangana handoff](STAGE_10_TELANGANA_HANDOFF.md), [launch instructions](STAGE_9_HANDOFF.md) and [progress](PROGRESS.md). Team source acceptance, current-entitlement verification and formal evaluation remain pending. Gujarat battery-limit interpretation remains withheld pending review. Karnataka is next.
+**Status:** Stage 10 — Karnataka is technically complete. Gradio offers Maharashtra, Tamil Nadu, Uttar Pradesh, Delhi, Gujarat, Telangana, Karnataka and Central; the saved index contains 648 draft chunks. See [Karnataka handoff](STAGE_10_KARNATAKA_HANDOFF.md), [launch instructions](STAGE_9_HANDOFF.md) and [progress](PROGRESS.md). Team source acceptance, current-entitlement verification and formal evaluation remain pending. Gujarat battery-limit interpretation and Karnataka's zone-total discrepancy/Act commencement need review. Madhya Pradesh is next.
 
 ## Project documents
 
@@ -46,7 +46,7 @@ Run **Shared page loader**, then every cell under **Stage 4: Central PM E-DRIVE 
 
 Run all **Stage 5: persistent semantic search** cells with Ollama running. The index already exists on this local machine, so leave `rebuild_index = False`. On a fresh checkout, set it to `True` once to create the ignored local index, then return it to `False`. Later corpus/model changes also require an explicit full rebuild. No API key or earlier notebook execution is needed.
 
-Expected output: **543 indexed chunks, 768 dimensions and eight passed notebook checks**. Search displays raw candidate evidence; Stage 6 adds jurisdiction-aware context; Stage 7 adds generated answers. The [Stage 5 handoff](STAGE_5_HANDOFF.md) explains rebuild/restart behavior and the 16 repeatable persistence checks.
+Expected output: **648 indexed chunks, 768 dimensions and eight passed notebook checks**. Search displays raw candidate evidence; Stage 6 adds jurisdiction-aware context; Stage 7 adds generated answers. The [Stage 5 handoff](STAGE_5_HANDOFF.md) explains rebuild/restart behavior and the 16 repeatable persistence checks.
 
 ## Run Stage 6
 
@@ -70,7 +70,7 @@ Use the guarded path in [Stage 8 run instructions](STAGE_8_HANDOFF.md): load the
 
 Run the definition-cell sequence in [Stage 9 launch instructions](STAGE_9_HANDOFF.md), then the notebook's Stage 9 cells. Open `http://127.0.0.1:7860`, select a jurisdiction, enter a question and click Ask. Examples fill inputs; Clear resets the form and outputs. Keep the kernel running and use `demo.close()` to stop the server. Normal startup opens the saved index; a missing index requires the explicit Stage 5 build.
 
-`uv run --locked python checks/stage9_ui_checks.py` runs 15 local HTTP/configuration checks without model-service calls. The handoff separates these fixture checks from the actual browser/Groq observations and fresh-kernel launch. Stage 10 has added Uttar Pradesh, Delhi, Gujarat and Telangana; Karnataka and Madhya Pradesh remain.
+`uv run --locked python checks/stage9_ui_checks.py` runs 15 local HTTP/configuration checks without model-service calls. The handoff separates these fixture checks from the actual browser/Groq observations and fresh-kernel launch. Stage 10 has added Uttar Pradesh, Delhi, Gujarat, Telangana and Karnataka; Madhya Pradesh remains.
 
 ## Run Stage 10 — Uttar Pradesh
 
@@ -80,13 +80,13 @@ Run the shared loader and the four **Stage 10 — Uttar Pradesh** ingestion cell
 
 ## Run Stage 10 — Delhi (NCT)
 
-Run the shared loader and the four **Stage 10 — Delhi (NCT)** code cells. They produce 51 candidate pages, 132 chunks and 13 ingestion checks. After source-manifest changes, refresh the earlier ingestion receipts before explicitly rebuilding Stage 5. Delhi was the fifth jurisdiction; the saved UI now has seven choices after Gujarat and Telangana.
+Run the shared loader and the four **Stage 10 — Delhi (NCT)** code cells. They produce 51 candidate pages, 132 chunks and 13 ingestion checks. After source-manifest changes, refresh the earlier ingestion receipts before explicitly rebuilding Stage 5. Delhi was the fifth jurisdiction; the saved UI now has eight choices after Gujarat, Telangana and Karnataka.
 
 `uv run --locked python checks/stage10_delhi_checks.py` checks routing, retrieval and the saved index without Groq. Add `--live` for two Gradio/Groq development questions, or `--live --case car_scrapping` for a targeted case. See [the Delhi handoff](STAGE_10_DELHI_HANDOFF.md) for actual outcomes, source limitations and the deferred review.
 
 ## Run Stage 10 — Gujarat
 
-Run the shared loader and the four **Stage 10 — Gujarat** code cells. They produce 10 candidate pages, 31 chunks and 12 ingestion checks. Refresh all earlier ingestion receipts after a shared-manifest change, then explicitly rebuild Stage 5 only if the corpus changed. Normal startup opens the existing 543-record index without rebuilding.
+Run the shared loader and the four **Stage 10 — Gujarat** code cells. They produce 10 candidate pages, 31 chunks and 12 ingestion checks. Refresh all earlier ingestion receipts after a shared-manifest change, then explicitly rebuild Stage 5 only if the corpus changed. Normal startup opens the existing 648-record index without rebuilding.
 
 `uv run --locked python checks/stage10_gujarat_checks.py` checks filtered retrieval, historical/tax context separation, citations, abstention and UI choices without Groq. Add `--live` for two Gradio/Groq development questions or `--live --case tax_extension` for one case. See [the handoff](STAGE_10_GUJARAT_HANDOFF.md) for retained failed attempts and final results. Historical policy answers receive an explicit label; purchase-subsidy battery-limit questions are withheld pending review of the inconsistent column reference.
 
@@ -96,8 +96,14 @@ Run the shared loader and four **Stage 10 — Telangana** code cells: 13 pages, 
 
 `uv run --locked python checks/stage10_telangana_checks.py` checks filtered retrieval, old-tax exclusions, retained retrofit terms and UI choices without Groq. Add `--live` for two Gradio/Groq examples or `--live --case retrofit` for one. See [the handoff](STAGE_10_TELANGANA_HANDOFF.md) for sources, actual results and deferred review.
 
+## Run Stage 10 — Karnataka
+
+Run the shared loader and four **Stage 10 — Karnataka** code cells: 41 pages, 105 chunks and 15 ingestion checks. Nine labelled table proposals are committed alongside ordinary PDF text; no OCR installation is needed. Refresh earlier receipts after a manifest change and explicitly rebuild Stage 5 only when the corpus changes.
+
+`uv run --locked python checks/stage10_karnataka_checks.py` checks mixed-page loading, filtered retrieval, tax updates, abstention and eight UI choices without Groq. Add `--live` for two Gradio/Groq development answers or `--live --case car_tax` for one. The [handoff](STAGE_10_KARNATAKA_HANDOFF.md) records preserved failed attempts, actual checks and pending review. The 2026 Act's commencement has not been verified; tax-table answers describe its text with that caveat. Current-entitlement questions still abstain.
+
 ## Reference and assistance
 
 Implementation will adapt applicable examples from the [course repository](https://github.com/aagarwal4/generative-ai-pgp-ji-2026/tree/33c2faa22450cde16ead9071f7ce7ecc78ca592a). The reuse map records the relevant notebooks and cells.
 
-AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, official-source research, provenance records, OCR preparation and proposed text corrections. The user subsequently authorized AI implementation of technical Stages 2–10 (Uttar Pradesh, Delhi, Gujarat and Telangana batches): the shared page loader, source-specific extraction, metadata relationships, splitting, exports, persistent semantic index, jurisdiction-aware retrieval, source-version rules, an EV prompt draft, structured answer generation, citation resolution, guarded startup, abstention/failure behavior, the Gradio pilot, Uttar Pradesh document preparation/English readings, Delhi/Gujarat/Telangana source ingestion and technical checks, explicit historical citation labels and a Gujarat battery-limit abstention after observed answer errors. This supersedes the earlier helper-only instruction for those stages; it does not change the assignment's AI-use rule. The team must disclose the actual assistance in the presentation appendix. Manual source verification and independently authored evaluation cases remain the team's work; the live pilot observations do not replace the independent formal evaluation.
+AI assistance so far has covered requirements review, repository inspection, planning, Git setup, dependency configuration, adaptation of the classroom setup cells, official-source research, provenance records, OCR preparation and proposed text corrections. The user subsequently authorized AI implementation of technical Stages 2–10 (Uttar Pradesh, Delhi, Gujarat, Telangana and Karnataka batches): the shared page loader, source-specific extraction, metadata relationships, splitting, exports, persistent semantic index, jurisdiction-aware retrieval, source-version rules, an EV prompt draft, structured answer generation, citation resolution, guarded startup, abstention/failure behavior, the Gradio pilot, Uttar Pradesh document preparation/English readings, Delhi/Gujarat/Telangana/Karnataka source ingestion and technical checks, mixed PDF/table-proposal loading, numeric-comparison normalization and tighter citation/cost-basis instructions after Karnataka development observations, explicit historical citation labels and a Gujarat battery-limit abstention after observed answer errors. This supersedes the earlier helper-only instruction for those stages; it does not change the assignment's AI-use rule. The team must disclose the actual assistance in the presentation appendix. Manual source verification and independently authored evaluation cases remain the team's work; the live pilot observations do not replace the independent formal evaluation.

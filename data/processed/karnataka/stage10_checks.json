@@ -1,0 +1,43 @@
+{
+  "checked_at_utc": "2026-09-29T09:16:32.849784+00:00",
+  "technical_status": "passed",
+  "team_acceptance": "deferred_not_verified",
+  "current_benefit_availability": "not_verified",
+  "verification_cutoff": "2026-09-23",
+  "page_count": 41,
+  "chunk_count": 105,
+  "chunks_by_source": {
+    "karnataka_policy_2025-02-11": 84,
+    "karnataka_tax_amendment_2026-04-10": 17,
+    "karnataka_registration_fee_2021-08-02": 4
+  },
+  "splitter": {
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "add_start_index": true
+  },
+  "checks_passed": [
+    "41_unique_physical_pages",
+    "stable_unique_chunks",
+    "original_pdf_hashes",
+    "metadata_and_pending_review_preserved",
+    "all_links_resolve",
+    "no_nonwhitespace_text_lost",
+    "order_date_period_and_transition",
+    "msme_category_and_zone_rates",
+    "manufacturing_land_limit_and_payments",
+    "charging_swapping_hydrogen_rows_and_slow_exclusion",
+    "employment_stacking_and_enabling_orders",
+    "zone_labels_and_continuations",
+    "new_ev_tax_slabs_cab_scope_and_age_rows",
+    "refund_versus_tax_percentages_and_limited_registration_fees",
+    "nine_labelled_table_proposals"
+  ],
+  "artifact_sha256": {
+    "pages.jsonl": "c0b02143318962082e0b3e87d442448e390372eb950e11de7e3abfc71f723ee9",
+    "chunks.jsonl": "c6811de6a051b1744c8d00ea1b0fac9f801bff9c45475397fa6b18251a7cd678"
+  },
+  "notebook_sha256": "5bd5a1937dd392e78e90b169097251a460e32ea0c8968cb5a71b2a2948d39e45",
+  "source_manifest_sha256": "edb25d1d51e9d56a4047bc6569ffc93890ac7b3dabde55e909e08f871ed0669e",
+  "ocr_review_sha256": "f40562b0c1a0375490a38b1f959dbf6fe188c55fe6af14c7274d381f968ba7ec"
+}

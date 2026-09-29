@@ -1,0 +1,40 @@
+{
+  "question": "What lifetime-tax cost slabs and rates for newly registered electric private cars does Part A5(a) of the 2026 Act state?",
+  "response": "{\"status\":\"supported\",\"points\":[{\"text\":\"Part A5(a) of the Karnataka Motor Vehicles Taxation (Amendment) Act 2026 sets the lifetime‑tax for newly registered electric motor cars, jeeps, omni‑buses and private‑service vehicles as a percentage of the vehicle’s cost: ≤ Rs 10 lakh → 5 % of cost; > Rs 10 lakh and ≤ Rs 25 lakh → 8 % of cost; > Rs 25 lakh → 10 % of cost.\",\"citations\":[\"S2\"]}]}",
+  "metadata": {
+    "token_usage": {
+      "completion_tokens": 717,
+      "prompt_tokens": 6561,
+      "total_tokens": 7278,
+      "completion_time": 1.514466368,
+      "prompt_time": 0.37463092,
+      "queue_time": 0.32481459,
+      "total_time": 1.8890972879999999,
+      "completion_tokens_details": {
+        "reasoning_tokens": 570
+      }
+    },
+    "model_name": "openai/gpt-oss-120b",
+    "system_fingerprint": "fp_87b3c396db",
+    "service_tier": "on_demand",
+    "reasoning_effort": "medium",
+    "finish_reason": "stop",
+    "logprobs": null
+  },
+  "labels": {
+    "S1": "karnataka_policy_2025-02-11:p26",
+    "S2": "karnataka_tax_amendment_2026-04-10:p6",
+    "S3": "karnataka_tax_amendment_2026-04-10:p7",
+    "S4": "karnataka_policy_2025-02-11:p2",
+    "S5": "karnataka_policy_2025-02-11:p27",
+    "S6": "karnataka_policy_2025-02-11:p28",
+    "S7": "karnataka_policy_2025-02-11:p29",
+    "S8": "karnataka_tax_amendment_2026-04-10:p2",
+    "S9": "karnataka_tax_amendment_2026-04-10:p9",
+    "S10": "karnataka_tax_amendment_2026-04-10:p10",
+    "S11": "karnataka_tax_amendment_2026-04-10:p12",
+    "S12": "karnataka_tax_amendment_2026-04-10:p13",
+    "S13": "karnataka_registration_fee_2021-08-02:p3"
+  },
+  "validation": "ValueError: Point text contains an unapproved link or citation."
+}

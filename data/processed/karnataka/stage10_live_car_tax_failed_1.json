@@ -1,0 +1,297 @@
+{
+  "checked_at_utc": "2026-09-29T09:14:46.188096+00:00",
+  "notebook_sha256": "1f8622dc79ff83bb88f0075f1fdeaaeb03a9a902021bace74cb6ab912b374648",
+  "check_script_sha256": "619b665a4bc5cb9ea2d4f4b60cebac627f0c95d531d6862f39440758b9aa2dcf",
+  "source_manifest_sha256": "edb25d1d51e9d56a4047bc6569ffc93890ac7b3dabde55e909e08f871ed0669e",
+  "retrieval_rules_sha256": "2979802732839f42cb2dd4bc9852d06db3b9b5943db5240a9f9201f9288e917a",
+  "index_spec": {
+    "collection": "ev_policy_draft",
+    "corpus_sha256": "4e5e296e7ba8fafee80a580dabe7ca8549d050d86e48577e27cb95762454709b",
+    "chunk_count": 648,
+    "embedding": {
+      "model": "nomic-embed-text:latest",
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "num_ctx": 2048,
+      "langchain_ollama": "0.3.7"
+    },
+    "distance": "cosine",
+    "chunks_by_state": {
+      "Maharashtra": 53,
+      "Tamil Nadu": 78,
+      "Central": 100,
+      "Uttar Pradesh": 117,
+      "Delhi": 132,
+      "Gujarat": 31,
+      "Telangana": 32,
+      "Karnataka": 105
+    }
+  },
+  "technical_status": "failed",
+  "scope": "AI development checks; not team source review or formal evaluation",
+  "checks_passed": [
+    "reopen_all_records_without_corpus_embedding",
+    "105_karnataka_chunks",
+    "two_karnataka_aliases",
+    "six_filtered_semantic_queries",
+    "conditions_and_continuations_present",
+    "only_three_registered_karnataka_sources",
+    "all_41_pages_assemble_within_context_limit",
+    "old_tax_and_unrelated_schedules_excluded_ev_updates_and_fee_retained",
+    "mixed_plain_and_table_pages_preserve_flags_and_reject_bad_coverage",
+    "five_rejections_skip_models_and_clear_sources",
+    "gradio_lists_karnataka_and_other_loaded_jurisdictions"
+  ],
+  "embedding_calls": {
+    "corpus": 0,
+    "query": 7
+  },
+  "observations": [
+    {
+      "question": "What fast-charging subsidy rate, per-station cap and station count does the 2025 policy state, and are slow chargers incentivized?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_policy_2025-02-11:p22",
+        "karnataka_policy_2025-02-11:p21",
+        "karnataka_policy_2025-02-11:p23",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29"
+      ],
+      "context_chars": 14169,
+      "status": "retrieved"
+    },
+    {
+      "question": "What lifetime-tax cost slabs and rates for newly registered electric private cars does Part A5(a) of the 2026 Act state?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_tax_amendment_2026-04-10:p6",
+        "karnataka_tax_amendment_2026-04-10:p7",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29",
+        "karnataka_tax_amendment_2026-04-10:p2",
+        "karnataka_tax_amendment_2026-04-10:p9",
+        "karnataka_tax_amendment_2026-04-10:p10",
+        "karnataka_tax_amendment_2026-04-10:p12",
+        "karnataka_tax_amendment_2026-04-10:p13",
+        "karnataka_registration_fee_2021-08-02:p3"
+      ],
+      "context_chars": 18952,
+      "status": "retrieved"
+    },
+    {
+      "question": "What capital subsidy rates, land limit and payment installments are stated for large, mega and ultra-mega manufacturing enterprises?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_policy_2025-02-11:p16",
+        "karnataka_policy_2025-02-11:p15",
+        "karnataka_policy_2025-02-11:p17",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29",
+        "karnataka_policy_2025-02-11:p13",
+        "karnataka_policy_2025-02-11:p14"
+      ],
+      "context_chars": 18201,
+      "status": "retrieved"
+    },
+    {
+      "question": "What capital subsidy rates and caps does the policy give for general and special category micro industries?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_policy_2025-02-11:p13",
+        "karnataka_policy_2025-02-11:p12",
+        "karnataka_policy_2025-02-11:p12",
+        "karnataka_policy_2025-02-11:p14",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29",
+        "karnataka_policy_2025-02-11:p15",
+        "karnataka_tax_amendment_2026-04-10:p2",
+        "karnataka_tax_amendment_2026-04-10:p6",
+        "karnataka_tax_amendment_2026-04-10:p7",
+        "karnataka_tax_amendment_2026-04-10:p9",
+        "karnataka_tax_amendment_2026-04-10:p10",
+        "karnataka_tax_amendment_2026-04-10:p12",
+        "karnataka_tax_amendment_2026-04-10:p13",
+        "karnataka_registration_fee_2021-08-02:p3"
+      ],
+      "context_chars": 25982,
+      "status": "retrieved"
+    },
+    {
+      "question": "Which policy zone covers Anekal in Bengaluru Urban?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_policy_2025-02-11:p30",
+        "karnataka_policy_2025-02-11:p29",
+        "karnataka_policy_2025-02-11:p31",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p32",
+        "karnataka_policy_2025-02-11:p33",
+        "karnataka_policy_2025-02-11:p34",
+        "karnataka_policy_2025-02-11:p35",
+        "karnataka_policy_2025-02-11:p36"
+      ],
+      "context_chars": 14145,
+      "status": "retrieved"
+    },
+    {
+      "question": "What registration certificate fees does GSR 525(E) exempt for battery-operated vehicles?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_registration_fee_2021-08-02:p3",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29"
+      ],
+      "context_chars": 11389,
+      "status": "retrieved"
+    },
+    {
+      "all_page_context_range": [
+        8773,
+        27867
+      ]
+    },
+    {
+      "selection": "KA",
+      "question": "Tamil Nadu purchase subsidy?",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Karnataka",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Karnataka",
+      "question": "Compare Karnataka and Maharashtra incentives",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Karnataka",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Madhya Pradesh",
+      "question": "Electric car subsidy?",
+      "result": {
+        "status": "unsupported_jurisdiction",
+        "answer": "Choose Central, Delhi, Gujarat, Karnataka, Maharashtra, Tamil Nadu, Telangana, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Karnataka",
+      "question": "",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Karnataka",
+      "question": "Can I claim an EV subsidy today?",
+      "result": {
+        "status": "not_established",
+        "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Karnataka",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "current_entitlement_unverified",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "case": "car_tax",
+      "question": "What lifetime-tax cost slabs and rates for newly registered electric private cars does Part A5(a) of the 2026 Act state?",
+      "result": {
+        "status": "citation_error",
+        "answer": "The draft answer could not be validated against its sources. No policy answer is shown; retry or inspect the evidence.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Karnataka",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 767,
+          "prompt_tokens": 6695,
+          "total_tokens": 7462,
+          "completion_time": 1.603022899,
+          "prompt_time": 1.041555316,
+          "queue_time": 0.409333812,
+          "total_time": 2.644578215,
+          "completion_tokens_details": {
+            "reasoning_tokens": 572
+          }
+        },
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {
+          "phase": "generation",
+          "reason": "citation_error"
+        }
+      },
+      "ui_outputs": [
+        "### Answer\n\nThe draft answer could not be validated against its sources. No policy answer is shown; retry or inspect the evidence.",
+        "### Sources\n\nNo sources cited."
+      ]
+    }
+  ]
+}

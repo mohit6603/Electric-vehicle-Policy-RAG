@@ -1,0 +1,323 @@
+{
+  "checked_at_utc": "2026-09-29T09:07:11.085987+00:00",
+  "notebook_sha256": "453e6c6b28d006fcc292a6e297c38ecad5b2ed717ab5fa05275f63a05b048927",
+  "check_script_sha256": "51de6e172094cafd325e43ec9f37adcb249f180e9626dfc70333110ded85d5cc",
+  "source_manifest_sha256": "edb25d1d51e9d56a4047bc6569ffc93890ac7b3dabde55e909e08f871ed0669e",
+  "retrieval_rules_sha256": "9e1f2f15fab8a6e6fdd5c84ec8ea2ad9873cdbec1171e837c83f1d121e50645b",
+  "index_spec": {
+    "collection": "ev_policy_draft",
+    "corpus_sha256": "4e5e296e7ba8fafee80a580dabe7ca8549d050d86e48577e27cb95762454709b",
+    "chunk_count": 648,
+    "embedding": {
+      "model": "nomic-embed-text:latest",
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "num_ctx": 2048,
+      "langchain_ollama": "0.3.7"
+    },
+    "distance": "cosine",
+    "chunks_by_state": {
+      "Maharashtra": 53,
+      "Tamil Nadu": 78,
+      "Central": 100,
+      "Uttar Pradesh": 117,
+      "Delhi": 132,
+      "Gujarat": 31,
+      "Telangana": 32,
+      "Karnataka": 105
+    }
+  },
+  "technical_status": "failed",
+  "scope": "AI development checks; not team source review or formal evaluation",
+  "checks_passed": [
+    "reopen_all_records_without_corpus_embedding",
+    "105_karnataka_chunks",
+    "two_karnataka_aliases",
+    "six_filtered_semantic_queries",
+    "conditions_and_continuations_present",
+    "only_three_registered_karnataka_sources",
+    "all_41_pages_assemble_within_context_limit",
+    "old_tax_and_unrelated_schedules_excluded_ev_updates_and_fee_retained",
+    "mixed_plain_and_table_pages_preserve_flags_and_reject_bad_coverage",
+    "five_rejections_skip_models_and_clear_sources",
+    "gradio_lists_karnataka_and_other_loaded_jurisdictions"
+  ],
+  "embedding_calls": {
+    "corpus": 0,
+    "query": 7
+  },
+  "observations": [
+    {
+      "question": "What fast-charging subsidy rate, per-station cap and station count does the 2025 policy state, and are slow chargers incentivized?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_policy_2025-02-11:p22",
+        "karnataka_policy_2025-02-11:p21",
+        "karnataka_policy_2025-02-11:p23",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29"
+      ],
+      "context_chars": 14428,
+      "status": "retrieved"
+    },
+    {
+      "question": "What lifetime-tax cost slabs and rates for newly registered electric private cars does Part A5(a) of the 2026 Act state?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_tax_amendment_2026-04-10:p6",
+        "karnataka_tax_amendment_2026-04-10:p7",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29",
+        "karnataka_tax_amendment_2026-04-10:p2",
+        "karnataka_tax_amendment_2026-04-10:p9",
+        "karnataka_tax_amendment_2026-04-10:p10",
+        "karnataka_tax_amendment_2026-04-10:p12",
+        "karnataka_tax_amendment_2026-04-10:p13",
+        "karnataka_registration_fee_2021-08-02:p3"
+      ],
+      "context_chars": 19211,
+      "status": "retrieved"
+    },
+    {
+      "question": "What capital subsidy rates, land limit and payment installments are stated for large, mega and ultra-mega manufacturing enterprises?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_policy_2025-02-11:p16",
+        "karnataka_policy_2025-02-11:p15",
+        "karnataka_policy_2025-02-11:p17",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29",
+        "karnataka_policy_2025-02-11:p13",
+        "karnataka_policy_2025-02-11:p14"
+      ],
+      "context_chars": 18460,
+      "status": "retrieved"
+    },
+    {
+      "question": "What capital subsidy rates and caps does the policy give for general and special category micro industries?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_policy_2025-02-11:p13",
+        "karnataka_policy_2025-02-11:p12",
+        "karnataka_policy_2025-02-11:p12",
+        "karnataka_policy_2025-02-11:p14",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29",
+        "karnataka_policy_2025-02-11:p15",
+        "karnataka_tax_amendment_2026-04-10:p2",
+        "karnataka_tax_amendment_2026-04-10:p6",
+        "karnataka_tax_amendment_2026-04-10:p7",
+        "karnataka_tax_amendment_2026-04-10:p9",
+        "karnataka_tax_amendment_2026-04-10:p10",
+        "karnataka_tax_amendment_2026-04-10:p12",
+        "karnataka_tax_amendment_2026-04-10:p13",
+        "karnataka_registration_fee_2021-08-02:p3"
+      ],
+      "context_chars": 26241,
+      "status": "retrieved"
+    },
+    {
+      "question": "Which policy zone covers Anekal in Bengaluru Urban?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_policy_2025-02-11:p30",
+        "karnataka_policy_2025-02-11:p29",
+        "karnataka_policy_2025-02-11:p31",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p32",
+        "karnataka_policy_2025-02-11:p33",
+        "karnataka_policy_2025-02-11:p34",
+        "karnataka_policy_2025-02-11:p35",
+        "karnataka_policy_2025-02-11:p36"
+      ],
+      "context_chars": 14404,
+      "status": "retrieved"
+    },
+    {
+      "question": "What registration certificate fees does GSR 525(E) exempt for battery-operated vehicles?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_registration_fee_2021-08-02:p3",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29"
+      ],
+      "context_chars": 11648,
+      "status": "retrieved"
+    },
+    {
+      "all_page_context_range": [
+        9032,
+        28126
+      ]
+    },
+    {
+      "selection": "KA",
+      "question": "Tamil Nadu purchase subsidy?",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Karnataka",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Karnataka",
+      "question": "Compare Karnataka and Maharashtra incentives",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Karnataka",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Madhya Pradesh",
+      "question": "Electric car subsidy?",
+      "result": {
+        "status": "unsupported_jurisdiction",
+        "answer": "Choose Central, Delhi, Gujarat, Karnataka, Maharashtra, Tamil Nadu, Telangana, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Karnataka",
+      "question": "",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Karnataka",
+      "question": "Can I claim an EV subsidy today?",
+      "result": {
+        "status": "not_established",
+        "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Karnataka",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "current_entitlement_unverified",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "case": "fast_charging",
+      "question": "What fast-charging subsidy rate, per-station cap and station count does the 2025 policy state, and are slow chargers incentivized?",
+      "result": {
+        "status": "document_answer",
+        "answer": "Karnataka — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Fast‑charging stations for 2W, 3W, cars and buses receive a capital subsidy of twenty‑five percent, with a maximum subsidy of ten lakh rupees per station and a total of up to five hundred stations eligible for the incentive. [S2](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)\n- Slow‑charging stations are not covered by any incentive under the 2025 Clean Mobility Policy. [S2](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)\n\nSources:\n\n- [S2: Karnataka — Karnataka Clean Mobility Policy 2025–2030, PDF page 22](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)",
+        "sources": [
+          {
+            "source_id": "S2",
+            "state": "Karnataka",
+            "document_title": "Karnataka Clean Mobility Policy 2025–2030",
+            "document_date": "2025-02-11",
+            "pdf_page": 22,
+            "source": "data/policies/karnataka/karnataka_clean_mobility_policy_2025-02-11.pdf",
+            "official_url": "https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22",
+            "evidence_id": "karnataka_policy_2025-02-11:p22:x0-1116",
+            "excerpt_start": 0,
+            "excerpt_end": 1116,
+            "excerpt_sha256": "27834d52aa4e5d767a42a97a3eea184c6f897a7043e94e4eef5ddd494d7cab68",
+            "context_role": "candidate_with_updates",
+            "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review."
+          }
+        ],
+        "points": [
+          {
+            "text": "Fast‑charging stations for 2W, 3W, cars and buses receive a capital subsidy of twenty‑five percent, with a maximum subsidy of ten lakh rupees per station and a total of up to five hundred stations eligible for the incentive.",
+            "citations": [
+              {
+                "source_id": "S2",
+                "source_excerpt": "Karnataka Clean Mobility Policy 2025-2030\n\n4.3.2 Incentives for Charging and Hydrogen stations for all Zones\n\nThere are 3 types of charging stations for electric vehicles:\n Fast charging\n Slow charging\n Battery switching/swapping\n\nFor hydrogen vehicles, there are hydrogen stations.\n\n4.3.2.1 Fast charging stations for all Zones.\n\nAll fast charging stations for 2W, 3W, cars and buses will be offered the following\nincentives:\n\nVehicle Type Incentive Number of Charging\nStations to be incentivized\n2W, 3W, cars and buses Capital Subsidy of 25%; up to 500\nRs. 10,00,000 per station\n\n4.3.2.2 Slow charging stations\n\nNo incentives for slow charging station.\n\n4.3.2.3 Battery switching/swapping\n\nAll battery switching/swapping stations for 2W, 3W, cars and buses will be offered the\nfollowing incentives for all zones:\n\nNumber of battery\nVehicle Type Incentive switching/swapping\nStations to be incentivized\n2W, 3W Capital Subsidy of 25%; up to 500\nRs. 3,00,000 per station\nCars Capital Subsidy of 25%; up to 200\nRs. 5,00,000 per station\nBuses Capital Subsidy of 25%; up to 200\nRs. 10,00,000 per station\n\n19 | P a g e"
+              }
+            ]
+          },
+          {
+            "text": "Slow‑charging stations are not covered by any incentive under the 2025 Clean Mobility Policy.",
+            "citations": [
+              {
+                "source_id": "S2",
+                "source_excerpt": "Karnataka Clean Mobility Policy 2025-2030\n\n4.3.2 Incentives for Charging and Hydrogen stations for all Zones\n\nThere are 3 types of charging stations for electric vehicles:\n Fast charging\n Slow charging\n Battery switching/swapping\n\nFor hydrogen vehicles, there are hydrogen stations.\n\n4.3.2.1 Fast charging stations for all Zones.\n\nAll fast charging stations for 2W, 3W, cars and buses will be offered the following\nincentives:\n\nVehicle Type Incentive Number of Charging\nStations to be incentivized\n2W, 3W, cars and buses Capital Subsidy of 25%; up to 500\nRs. 10,00,000 per station\n\n4.3.2.2 Slow charging stations\n\nNo incentives for slow charging station.\n\n4.3.2.3 Battery switching/swapping\n\nAll battery switching/swapping stations for 2W, 3W, cars and buses will be offered the\nfollowing incentives for all zones:\n\nNumber of battery\nVehicle Type Incentive switching/swapping\nStations to be incentivized\n2W, 3W Capital Subsidy of 25%; up to 500\nRs. 3,00,000 per station\nCars Capital Subsidy of 25%; up to 200\nRs. 5,00,000 per station\nBuses Capital Subsidy of 25%; up to 200\nRs. 10,00,000 per station\n\n19 | P a g e"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Karnataka",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 964,
+          "prompt_tokens": 4603,
+          "total_tokens": 5567,
+          "completion_time": 2.017858147,
+          "prompt_time": 0.219471527,
+          "queue_time": 0.346173315,
+          "total_time": 2.237329674,
+          "completion_tokens_details": {
+            "reasoning_tokens": 858
+          }
+        },
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      },
+      "ui_outputs": [
+        "### Answer\n\nKarnataka — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Fast‑charging stations for 2W, 3W, cars and buses receive a capital subsidy of twenty‑five percent, with a maximum subsidy of ten lakh rupees per station and a total of up to five hundred stations eligible for the incentive. [S2](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)\n- Slow‑charging stations are not covered by any incentive under the 2025 Clean Mobility Policy. [S2](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)",
+        "### Sources\n\n- [S2: Karnataka — Karnataka Clean Mobility Policy 2025–2030, PDF page 22](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)"
+      ]
+    }
+  ]
+}

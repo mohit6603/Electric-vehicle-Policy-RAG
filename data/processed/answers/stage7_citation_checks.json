@@ -1,10 +1,10 @@
 {
-  "checked_at_utc": "2026-09-28T06:24:23.689746+00:00",
-  "notebook_sha256": "25aa0c361314d3ad06c4e3a158601520e45a5b72b9df5ebf66f19c9f6d6a1165",
-  "check_script_sha256": "5f44fa5cd50d8f8a6aabdf88c8f4271bb0e8f153277f208b41cbb5ccc7c85c52",
-  "corpus_sha256": "401fd0f9a16f74e3567977d63f6ef0bbae663b7dc1d36eed38c1a4d4f385f1bd",
+  "checked_at_utc": "2026-09-29T09:16:30.066291+00:00",
+  "notebook_sha256": "5bd5a1937dd392e78e90b169097251a460e32ea0c8968cb5a71b2a2948d39e45",
+  "check_script_sha256": "fa1e186004de254502c9f7c27f633c97213464e1c9b85961f922c9f7bb01afa7",
+  "corpus_sha256": "4e5e296e7ba8fafee80a580dabe7ca8549d050d86e48577e27cb95762454709b",
   "retrieval_k": 1,
-  "retrieval_rules_sha256": "7d72dcd4af057607dd07ab91b98bd26c8069e1cff49b315b167a9016be40bdfa",
+  "retrieval_rules_sha256": "2979802732839f42cb2dd4bc9852d06db3b9b5943db5240a9f9201f9288e917a",
   "scope": "AI-authored technical checks; not formal team evaluation",
   "technical_status": "passed",
   "checks_passed": [
@@ -12,6 +12,7 @@
     "jurisdiction_cutoff_review_status_and_original_excerpts_retained",
     "all_assembled_evidence_retained_in_prompt_after_whitespace_compaction",
     "duplicate_citation_ids_collapsed",
+    "numeric_comparison_symbols_rendered_as_words",
     "unknown_ids_and_model_supplied_evidence_rejected",
     "missing_citations_empty_support_and_claiming_abstention_rejected",
     "model_links_markup_and_malformed_output_withheld",

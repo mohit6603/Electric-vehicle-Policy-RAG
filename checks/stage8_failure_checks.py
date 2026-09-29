@@ -134,7 +134,7 @@ def run_offline():
             ('punctuation_only', 'Central', '???', 'clarification_required'),
             ('oversized_question', 'Central', 'x' * 2001, 'clarification_required'),
             ('missing_selection', None, query, 'unsupported_jurisdiction'),
-            ('unsupported_state', 'Karnataka', query, 'unsupported_jurisdiction'),
+            ('unsupported_state', 'Madhya Pradesh', query, 'unsupported_jurisdiction'),
             ('jurisdiction_conflict', 'Maharashtra', 'Tamil Nadu road tax?', 'clarification_required'),
             ('two_jurisdictions', 'Maharashtra', 'Compare Maharashtra and Tamil Nadu', 'clarification_required'),
             ('outside_central_pilot', 'Central', 'Electric bus grant?', 'unsupported_scope'),

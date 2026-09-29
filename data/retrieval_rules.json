@@ -180,6 +180,9 @@
     "Telangana": [
       "telangana_policy_2020:p9",
       "telangana_tax_fee_2024-11-16:p1"
+    ],
+    "Karnataka": [
+      "karnataka_policy_2025-02-11:p26"
     ]
   },
   "jurisdiction_notes": {
@@ -189,7 +192,8 @@
     "Uttar Pradesh": "Purchase subsidy: use the 15 July 2024 revised column, including cancellation of the 3W provision and five years from 14.10.2022 OR exhaustion of Rs 403.97 crore, whichever first. No verified remaining funds. Use the separate 5 November 2025 pure-EV orders for tax and registration fees; do not infer purchase benefits from them. Fleet subsidy maximum and fleet-ownership minimum are different conditions. Hindi pages are AI English readings, not official translations. Parent 17 October 2025 amendment and any later hybrid/aggregator directions remain unverified; abstain on their current applicability. Manufacturing/charging text is base-policy evidence, not verified current operational eligibility.",
     "Delhi": "Final Delhi EV Policy 2026, notified 30 June with effect 1 July 2026, and 2 July operating guidelines. Use year-of-registration bands from date of notification exactly as printed; do not substitute the April draft or 2020 rates. The policy prevails on guideline inconsistency. The purchase application deadline is 30 days from RC generation; Annex XII instead says registration, so flag that wording discrepancy if relevant. The 60-day payment period starts at application submission and is conditional on verification. The car scrapping amount and applicant limit are separate; the Rs 30 lakh ceiling and car tax exception both apply. Model approval/listing, live allocation, portal acceptance and individual eligibility remain unverified; no current entitlement is established. External charging SoPs, tax implementation orders and 2023 aggregator rules are not a complete verified source chain.",
     "Gujarat": "The 2021 policy operated for four years from 1 July 2021; treat purchase/charging provisions as historical, with no renewal established. The separate 17 April 2025 motor vehicle tax table is read with the 30 March 2026 deadline replacement to 31 March 2027; it does not renew the 2021 subsidy. Tax applies to the listed vehicle categories powered exclusively by an electric motor fed exclusively by an installed battery. Tax rates/rebates must come from the matching tax-table row, never from the cash subsidy table. The full 2017 parent tax schedule, later amendments, operational claims, live funds and individual eligibility remain unverified. Policy 8(iv) refers to battery capacity in column (2), but Table 2 places it in (3); preserve the discrepancy and do not invent a corrected legal interpretation. Demand incentive permits central stacking but only one State scheme; charging subsidy has a different exclusion for other Government of India subsidies. Separate GEDA/student schemes and current tariff/industrial incentive schedules are outside this packet. When describing the battery limit, distinguish the maximum subsidised capacity from vehicle eligibility: Table 2/8(iv) does not expressly disqualify a larger battery. Explicitly flag that 8(iv) says column (2) but the battery values are actually in column (3); never repeat the wrong reference as a correct table description. Use past tense for the expired 2021 purchase provisions. The policy period is printed on physical PDF page 3, the purchase table/conditions on page 5 and charging conditions on page 6; cite the page containing each fact.",
-    "Telangana": "The booklet is dated only 2020; its 2020-01-01 metadata is a year sorting placeholder, not a notification date. It states ten years from notification. Use the separate 16 November 2024 G.O.41 for road tax and registration fees: 100% exemption for its listed electric categories purchased and registered in Telangana up to 31 December 2026, irrespective of number registered. Old 2020 tax/fee quotas are excluded from answer context. The lifetime bus wording is limited to TSRTC-operated vehicles, with a separate qualification for industry buses used exclusively for own employees and not commercial purposes; do not say all buses receive lifetime exemption. The 2024 tax/fee change does not establish a cash purchase subsidy or remove the distinct retrofit 15%/Rs.15000/first5000 conditions. Charging provisions often encourage facilities; do not treat these as installed stations, compulsory spacing or a rupee tariff. Manufacturing highlights refer to Electronics Policy 2016, whose full terms and subsequent revisions are not collected. Original policy targets are not achieved results. Full later-amendment/Act review, operational status, funds, retrofit quota and individual eligibility remain unverified; no current entitlement is established."
+    "Telangana": "The booklet is dated only 2020; its 2020-01-01 metadata is a year sorting placeholder, not a notification date. It states ten years from notification. Use the separate 16 November 2024 G.O.41 for road tax and registration fees: 100% exemption for its listed electric categories purchased and registered in Telangana up to 31 December 2026, irrespective of number registered. Old 2020 tax/fee quotas are excluded from answer context. The lifetime bus wording is limited to TSRTC-operated vehicles, with a separate qualification for industry buses used exclusively for own employees and not commercial purposes; do not say all buses receive lifetime exemption. The 2024 tax/fee change does not establish a cash purchase subsidy or remove the distinct retrofit 15%/Rs.15000/first5000 conditions. Charging provisions often encourage facilities; do not treat these as installed stations, compulsory spacing or a rupee tariff. Manufacturing highlights refer to Electronics Policy 2016, whose full terms and subsequent revisions are not collected. Original policy targets are not achieved results. Full later-amendment/Act review, operational status, funds, retrofit quota and individual eligibility remain unverified; no current entitlement is established.",
+    "Karnataka": "Read the 11 February 2025 Clean Mobility Policy for five years from its order or until replaced, with its transition and sanction conditions. The old broad vehicle-tax exemption paragraph is excluded in favour of final Act 29 of 2026, published 10 April (assent 9 April). Its commencement requires a separate notification that is not collected; publication is not a verified effective date. Part A5(a) gives new electric cars/jeeps/omnibuses/private-service vehicles cost slabs <=Rs10 lakh:5%, >Rs10 to <=Rs25 lakh:8%, >Rs25 lakh:10%, each of vehicle cost. Part A8(a) separately covers electric motor cabs with its out-of-State permit exclusion. Age-table percentages are of the clause-A lifetime tax, not of vehicle cost; refunds have different time boundaries. Do not describe a blanket road-tax exemption. GSR525(E) is a common CMVR rule hosted by Karnataka Transport, not a state purchase subsidy: it only exempts rule81 table serial4 fees for issue/renewal of RC and new registration mark, not every fee. Charging and manufacturing incentives are not cash subsidies for buying a private car. Keep general/special categories, zone rates, caps, eligible fixed assets and employment/stacking conditions distinct. Slow chargers have no incentive in the supplied policy; 500/200 station counts are scheme limits, not remaining slots. Industrial stamp duty/registration concessions concern specified documents, not vehicle registration. MSME definitions may change subject to State enabling orders; those orders and full Industrial Policy2025-30 are not collected. Appendix2 prints zone totals199/32/9 but the labelled AI row count is198/33/9; do not silently alter a taluk assignment to reconcile totals. All table proposals, later-instrument completeness, commencement, operational eligibility, funds and current entitlement remain unverified. For tax-table answers, include a separate point stating that commencement is not verified and cite the Act commencement clause on physical page 2. For charging, report the printed capital subsidy percentage without adding a project-cost or station-cost basis that the excerpt does not define."
   },
   "page_rules": {
     "maharashtra_policy_2025-05-23:p19": {
@@ -1024,6 +1028,329 @@
       "page_text_sha256": "8f085c112185f0fd622da277ac9c349b9ec3c1c1101d4b3db1df60cb66e6dbce",
       "context_role": "dated_tax_notification",
       "version_note": "G.O.41, 16 November 2024: listed EV road-tax and registration-fee exemptions through 31 December 2026 without vehicle-count quotas. Bus qualifications preserved. AI English OCR proposal pending team review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p2": {
+      "page_text_sha256": "b387d9d2a73e77f2c434ff3cb126556d0e21c595aaeff440c46a1317731178e1",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": [
+        {
+          "start": 3,
+          "end": 262,
+          "text_sha256": "a2b84d671685b8345a8311c0d9078d506a98bbb24e4dd53c410fdfc0e031b522",
+          "reason": "Historical 2017 policy period; the 2025 policy period is on physical page 26."
+        }
+      ]
+    },
+    "karnataka_policy_2025-02-11:p3": {
+      "page_text_sha256": "1d3b7b0124d96d3ecc659d04369922c4ba1e9b3977b1553ae0f9198a5cb352ca",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p6": {
+      "page_text_sha256": "0004bac4113dce3c3cb803a4dfb33b1b0321cc1bac82bec7a9f56796f7077998",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p7": {
+      "page_text_sha256": "f49b4f32ae181515aa5404e6d4ad4140daa4cc44b5f66c46a7ad27f830c7fcde",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p8": {
+      "page_text_sha256": "639a72b044766a0a8e57b306ea067899ffa44412c944915ec11f2f4cf29e23ed",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p9": {
+      "page_text_sha256": "ab8792714167352d5ebc6cd6b68739be43e9de8af32e9b2b420a9a8a6d4869b0",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p10": {
+      "page_text_sha256": "d0d4132152fe2c4789e15ff4bd15b741878d07238b6da5186a3f73e5ddcc8429",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p11": {
+      "page_text_sha256": "94febaecb9f74e55762fb3b7315465b6dea9456f1d181df88ed112f5d83cbf91",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p12": {
+      "page_text_sha256": "db63a8c9b56ece85ec1db4d5b270f7a8ca77503beebf96f357135e11397a2756",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": [
+        {
+          "start": 491,
+          "end": 1018,
+          "text_sha256": "55750f16d287417d95e327ea61276d42499c8e4ee0d3bb578372ec90b2ee403b",
+          "reason": "Older road-tax paragraph; mandatory 2026 Act supplies later slabs. Registration fee is a separate rule."
+        }
+      ]
+    },
+    "karnataka_policy_2025-02-11:p13": {
+      "page_text_sha256": "9a33cc8ad65a0dcfa3fa5e05f354ee0d61ad6575b7c0b838c55c86ec553efe9c",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p14": {
+      "page_text_sha256": "9ad12cd38f7275d630d071f7dee7fd7394f19225bc55082e463891262d84e85f",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p15": {
+      "page_text_sha256": "027cabe5f3a3329f804b848dce478ffe039374f2af39f43e595d92e70014eae4",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p16": {
+      "page_text_sha256": "c83d1a6a7b44124fa5c679ea49588b5872440628e31e098895f68abf4f97eb20",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p17": {
+      "page_text_sha256": "ac087eab3503abbbacb26dfefd00f9e596b22db60380c56d946c14cb42b0eeff",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p18": {
+      "page_text_sha256": "10cd17e20525200b14241c37ae229b5772925ce24a372cf18484083a06522095",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p19": {
+      "page_text_sha256": "a35ac01a5e61491d715a7d79a41d0f195acfe1473ed6499a9065ab2e29dda836",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p20": {
+      "page_text_sha256": "7dd8a15f54067e6c3d5ba3a1eb1530d55e8f791d035c70da67b1f21928e947b5",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p21": {
+      "page_text_sha256": "3f68e0b4397450ec1d75c15b3236310b94e5a701f921d6cedd3ceb31ae56f06c",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p22": {
+      "page_text_sha256": "27834d52aa4e5d767a42a97a3eea184c6f897a7043e94e4eef5ddd494d7cab68",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p23": {
+      "page_text_sha256": "15bce7b98a15d3acdb979821aa5d25a26daf3c967e3a108c0fc1a4ea70a23353",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p24": {
+      "page_text_sha256": "31484e95da45e23ae56635dd8ac8774257e0236af617402a768710fce16bddea",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p25": {
+      "page_text_sha256": "0592ed6e88adc09c9955d60c0b4a5b79b550fe6a53efad79785c9307f752b405",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p26": {
+      "page_text_sha256": "5c5efcdac0d57d3b5d43492f0797d20b73f1ea0595e70ac019af38a8c42fa9c3",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p27": {
+      "page_text_sha256": "3dcc534876ef08f93afd65c3061cff2e55ce244c9d0a31ead350d5128ecdd309",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p28": {
+      "page_text_sha256": "6783570db8448f82a6d5eb00ba689b807bd8a63a1f3601dce5631d504dfbe88a",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p29": {
+      "page_text_sha256": "419cb54eae528faa7c7e7301019d5ed1bc16d533fe49ae4d73980b680964237c",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p30": {
+      "page_text_sha256": "066023ec682cd8b42cdd74e4198ba7a1142614bed739d23dfbef27e166f680a8",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p31": {
+      "page_text_sha256": "5e6e0bdd67f5a32a067cfe507cb22d51443a66b115b7e52f922f2fbe05a2dce5",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p32": {
+      "page_text_sha256": "ae2a6ea35c657f4b8d41f18321b7a996009e08aa165c16b39fbcc408733dd753",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p33": {
+      "page_text_sha256": "74b8b8de1f8b9c67b3ff12b1dd6558fb38876ec458ee58cf015d9ed56f2ab8b9",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p34": {
+      "page_text_sha256": "cb1f575bb881060e308fcdef3d5d9a5d54c385eebdcecc62088b63ca02051734",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p35": {
+      "page_text_sha256": "6cffa5541b220ecce41c3c9f970bdca8aa7702ece74206e12fa8f2696d5607d8",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_policy_2025-02-11:p36": {
+      "page_text_sha256": "afda104e59cf8e3113a82c069d6333d28261ab51fc64462db5b85b80e27fcf51",
+      "context_role": "candidate_with_updates",
+      "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review.",
+      "exclude_spans": []
+    },
+    "karnataka_tax_amendment_2026-04-10:p2": {
+      "page_text_sha256": "1552d69f7101b8c7f25dc254bc37e866378228ee7dec7139736ef96aebf2f443",
+      "context_role": "dated_tax_amendment",
+      "version_note": "Act29 of2026, published10April. EV slabs, age/refund rows and cab exclusion; separate commencement notification not collected.",
+      "exclude_spans": [
+        {
+          "start": 1843,
+          "end": 2180,
+          "text_sha256": "983ee743fac9897a02bcf3174b1c1eb3b3d54b8ae183eae8bb8c637c14d8ffd2",
+          "reason": "Other vehicle schedules outside this EV packet."
+        }
+      ],
+      "required_page_ids": [
+        "karnataka_registration_fee_2021-08-02:p3"
+      ]
+    },
+    "karnataka_tax_amendment_2026-04-10:p6": {
+      "page_text_sha256": "5f4f661f8e0d2f4a4ee81d206470df6ed976d4f0ebe32e704a4280fbc3fc3a7b",
+      "context_role": "dated_tax_amendment",
+      "version_note": "Act29 of2026, published10April. EV slabs, age/refund rows and cab exclusion; separate commencement notification not collected.",
+      "exclude_spans": [
+        {
+          "start": 0,
+          "end": 234,
+          "text_sha256": "deda0f0e43e198629cc048f9c7a5c625633d52a9962bc2220b3996eccbe59595",
+          "reason": "Continuation of non-EV Part A5 before electric Part A5(a)."
+        }
+      ],
+      "required_page_ids": [
+        "karnataka_registration_fee_2021-08-02:p3"
+      ]
+    },
+    "karnataka_tax_amendment_2026-04-10:p7": {
+      "page_text_sha256": "bcb834bfce6e21ec949cd879247e6a0d5f666985b9a68c7a72641071dc710e89",
+      "context_role": "dated_tax_amendment",
+      "version_note": "Act29 of2026, published10April. EV slabs, age/refund rows and cab exclusion; separate commencement notification not collected.",
+      "exclude_spans": [
+        {
+          "start": 667,
+          "end": 961,
+          "text_sha256": "168d5ae5985880b91a5236c0c7785de62b54d02138610389adf2ea2197487395",
+          "reason": "Construction equipment tax outside EV scope."
+        }
+      ],
+      "required_page_ids": [
+        "karnataka_registration_fee_2021-08-02:p3"
+      ]
+    },
+    "karnataka_tax_amendment_2026-04-10:p9": {
+      "page_text_sha256": "0b366074d1cdc68e3815d13edd4c27f1345fdc5b41dbdf7ac338660fef0b243f",
+      "context_role": "dated_tax_amendment",
+      "version_note": "Act29 of2026, published10April. EV slabs, age/refund rows and cab exclusion; separate commencement notification not collected.",
+      "exclude_spans": [
+        {
+          "start": 0,
+          "end": 750,
+          "text_sha256": "529b6df5ac787c684bfa2a4b052014c59dd699133aaa80e0909c993ddffaaaa5",
+          "reason": "Continuation of non-EV Part A8 before electric motor-cab Part A8(a)."
+        }
+      ],
+      "required_page_ids": [
+        "karnataka_registration_fee_2021-08-02:p3"
+      ]
+    },
+    "karnataka_tax_amendment_2026-04-10:p10": {
+      "page_text_sha256": "34470f7a861aec487c819a1d43cb88710a62a25a8acd337acec77382cc3b94d1",
+      "context_role": "dated_tax_amendment",
+      "version_note": "Act29 of2026, published10April. EV slabs, age/refund rows and cab exclusion; separate commencement notification not collected.",
+      "exclude_spans": [
+        {
+          "start": 808,
+          "end": 1504,
+          "text_sha256": "e7ed88978276b86da9282cbebdbacbb78ce623122df4a4e66b6718d31c0a4ec8",
+          "reason": "Drilling-rig schedule outside EV scope."
+        }
+      ],
+      "required_page_ids": [
+        "karnataka_registration_fee_2021-08-02:p3"
+      ]
+    },
+    "karnataka_tax_amendment_2026-04-10:p12": {
+      "page_text_sha256": "0067ff5ed30cac90721892fcbd697b48dd37c065c3be7a070c278104d5e28f8c",
+      "context_role": "dated_tax_amendment",
+      "version_note": "Act29 of2026, published10April. EV slabs, age/refund rows and cab exclusion; separate commencement notification not collected.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "karnataka_registration_fee_2021-08-02:p3"
+      ]
+    },
+    "karnataka_tax_amendment_2026-04-10:p13": {
+      "page_text_sha256": "ed444b621c3f9d6039fc0c3f630331565f931193066e1c11158af27933d2d23b",
+      "context_role": "dated_tax_amendment",
+      "version_note": "Act29 of2026, published10April. EV slabs, age/refund rows and cab exclusion; separate commencement notification not collected.",
+      "exclude_spans": [
+        {
+          "start": 377,
+          "end": 1248,
+          "text_sha256": "47f09d2abc0b26305592ff7d45993dde1a4d5c853d8a9a33d37fe813ff383426",
+          "reason": "General power/signature after electric-cab refund continuation."
+        }
+      ],
+      "required_page_ids": [
+        "karnataka_registration_fee_2021-08-02:p3"
+      ]
+    },
+    "karnataka_registration_fee_2021-08-02:p3": {
+      "page_text_sha256": "1f99a5b7108569892b020bbf65571e6b72d48c08414053a9e26da8e96911f453",
+      "context_role": "dated_registration_fee_rule",
+      "version_note": "Central CMVR GSR525(E), Karnataka Transport copy: rule81 serial4 registration fees only. English starts on physical page3; not a road-tax waiver.",
       "exclude_spans": []
     }
   }

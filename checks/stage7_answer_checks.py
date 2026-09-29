@@ -88,6 +88,16 @@ def run_checks(stage):
         assert len(answer(duplicate)['points'][0]['citations']) == 1
         passed.append('duplicate_citation_ids_collapsed')
 
+        comparisons = copy.deepcopy(valid)
+        comparisons['points'][0]['text'] = 'Cost > Rs 10 lakh and <= ₹25 lakh; age < 2 years or >= 15 years.'
+        result = answer(comparisons)
+        assert result['status'] == 'document_answer', result
+        text = result['points'][0]['text']
+        for phrase in ('more than Rs 10 lakh', 'at most ₹25 lakh', 'less than 2 years', 'at least 15 years'):
+            assert phrase in text
+        assert '<' not in text and '>' not in text
+        passed.append('numeric_comparison_symbols_rendered_as_words')
+
         invalid = []
         for citations in (['S999'], ['S1', 'S999'],
                           [{'source_id': source_id, 'quote': 'Invented evidence'}]):

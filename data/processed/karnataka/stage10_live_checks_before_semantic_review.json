@@ -1,0 +1,404 @@
+{
+  "checked_at_utc": "2026-09-29T09:05:04.848645+00:00",
+  "notebook_sha256": "00eb81dd57a2033097273a3337050f4fa2d121636537c14c27eb21ad5b778f4e",
+  "check_script_sha256": "dff9746268d91b0c34ddf6a16231ea7a899a90f3881281077e3ddc3beaec9f89",
+  "source_manifest_sha256": "edb25d1d51e9d56a4047bc6569ffc93890ac7b3dabde55e909e08f871ed0669e",
+  "retrieval_rules_sha256": "81bc982a9d84ad7b435d9c60bce7347db8c6d0f68993794082a725576536b7d3",
+  "index_spec": {
+    "collection": "ev_policy_draft",
+    "corpus_sha256": "4e5e296e7ba8fafee80a580dabe7ca8549d050d86e48577e27cb95762454709b",
+    "chunk_count": 648,
+    "embedding": {
+      "model": "nomic-embed-text:latest",
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "num_ctx": 2048,
+      "langchain_ollama": "0.3.7"
+    },
+    "distance": "cosine",
+    "chunks_by_state": {
+      "Maharashtra": 53,
+      "Tamil Nadu": 78,
+      "Central": 100,
+      "Uttar Pradesh": 117,
+      "Delhi": 132,
+      "Gujarat": 31,
+      "Telangana": 32,
+      "Karnataka": 105
+    }
+  },
+  "technical_status": "passed",
+  "scope": "AI development checks; not team source review or formal evaluation",
+  "checks_passed": [
+    "reopen_all_records_without_corpus_embedding",
+    "105_karnataka_chunks",
+    "two_karnataka_aliases",
+    "six_filtered_semantic_queries",
+    "conditions_and_continuations_present",
+    "only_three_registered_karnataka_sources",
+    "all_41_pages_assemble_within_context_limit",
+    "old_tax_and_unrelated_schedules_excluded_ev_updates_and_fee_retained",
+    "mixed_plain_and_table_pages_preserve_flags_and_reject_bad_coverage",
+    "five_rejections_skip_models_and_clear_sources",
+    "gradio_lists_karnataka_and_other_loaded_jurisdictions",
+    "live_gradio_fast_charging",
+    "live_gradio_car_tax",
+    "gradio_rejection_clears_previous_citations"
+  ],
+  "embedding_calls": {
+    "corpus": 0,
+    "query": 8
+  },
+  "observations": [
+    {
+      "question": "What fast-charging subsidy rate, per-station cap and station count does the 2025 policy state, and are slow chargers incentivized?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_policy_2025-02-11:p22",
+        "karnataka_policy_2025-02-11:p21",
+        "karnataka_policy_2025-02-11:p23",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29"
+      ],
+      "context_chars": 14428,
+      "status": "retrieved"
+    },
+    {
+      "question": "What lifetime-tax cost slabs and rates for newly registered electric private cars does Part A5(a) of the 2026 Act state?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_tax_amendment_2026-04-10:p6",
+        "karnataka_tax_amendment_2026-04-10:p7",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29",
+        "karnataka_tax_amendment_2026-04-10:p2",
+        "karnataka_tax_amendment_2026-04-10:p9",
+        "karnataka_tax_amendment_2026-04-10:p10",
+        "karnataka_tax_amendment_2026-04-10:p12",
+        "karnataka_tax_amendment_2026-04-10:p13",
+        "karnataka_registration_fee_2021-08-02:p3"
+      ],
+      "context_chars": 19211,
+      "status": "retrieved"
+    },
+    {
+      "question": "What capital subsidy rates, land limit and payment installments are stated for large, mega and ultra-mega manufacturing enterprises?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_policy_2025-02-11:p16",
+        "karnataka_policy_2025-02-11:p15",
+        "karnataka_policy_2025-02-11:p17",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29",
+        "karnataka_policy_2025-02-11:p13",
+        "karnataka_policy_2025-02-11:p14"
+      ],
+      "context_chars": 18460,
+      "status": "retrieved"
+    },
+    {
+      "question": "What capital subsidy rates and caps does the policy give for general and special category micro industries?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_policy_2025-02-11:p13",
+        "karnataka_policy_2025-02-11:p12",
+        "karnataka_policy_2025-02-11:p12",
+        "karnataka_policy_2025-02-11:p14",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29",
+        "karnataka_policy_2025-02-11:p15",
+        "karnataka_tax_amendment_2026-04-10:p2",
+        "karnataka_tax_amendment_2026-04-10:p6",
+        "karnataka_tax_amendment_2026-04-10:p7",
+        "karnataka_tax_amendment_2026-04-10:p9",
+        "karnataka_tax_amendment_2026-04-10:p10",
+        "karnataka_tax_amendment_2026-04-10:p12",
+        "karnataka_tax_amendment_2026-04-10:p13",
+        "karnataka_registration_fee_2021-08-02:p3"
+      ],
+      "context_chars": 26241,
+      "status": "retrieved"
+    },
+    {
+      "question": "Which policy zone covers Anekal in Bengaluru Urban?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_policy_2025-02-11:p30",
+        "karnataka_policy_2025-02-11:p29",
+        "karnataka_policy_2025-02-11:p31",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p32",
+        "karnataka_policy_2025-02-11:p33",
+        "karnataka_policy_2025-02-11:p34",
+        "karnataka_policy_2025-02-11:p35",
+        "karnataka_policy_2025-02-11:p36"
+      ],
+      "context_chars": 14404,
+      "status": "retrieved"
+    },
+    {
+      "question": "What registration certificate fees does GSR 525(E) exempt for battery-operated vehicles?",
+      "page_ids": [
+        "karnataka_policy_2025-02-11:p26",
+        "karnataka_registration_fee_2021-08-02:p3",
+        "karnataka_policy_2025-02-11:p2",
+        "karnataka_policy_2025-02-11:p27",
+        "karnataka_policy_2025-02-11:p28",
+        "karnataka_policy_2025-02-11:p29"
+      ],
+      "context_chars": 11648,
+      "status": "retrieved"
+    },
+    {
+      "all_page_context_range": [
+        9032,
+        28126
+      ]
+    },
+    {
+      "selection": "KA",
+      "question": "Tamil Nadu purchase subsidy?",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Karnataka",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Karnataka",
+      "question": "Compare Karnataka and Maharashtra incentives",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Karnataka",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Madhya Pradesh",
+      "question": "Electric car subsidy?",
+      "result": {
+        "status": "unsupported_jurisdiction",
+        "answer": "Choose Central, Delhi, Gujarat, Karnataka, Maharashtra, Tamil Nadu, Telangana, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Karnataka",
+      "question": "",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Karnataka",
+      "question": "Can I claim an EV subsidy today?",
+      "result": {
+        "status": "not_established",
+        "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Karnataka",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "current_entitlement_unverified",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "case": "fast_charging",
+      "question": "What fast-charging subsidy rate, per-station cap and station count does the 2025 policy state, and are slow chargers incentivized?",
+      "result": {
+        "status": "document_answer",
+        "answer": "Karnataka — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Fast‑charging stations for 2W, 3W, cars and buses receive a capital subsidy of 25 % of the project cost, with a maximum subsidy of Rs 10,00,000 per station, and the policy earmarks up to 500 such stations for incentive support. [S2](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)\n- Slow‑charging stations are not covered by any incentive; the policy explicitly provides no incentives for slow‑charging stations. [S2](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)\n\nSources:\n\n- [S2: Karnataka — Karnataka Clean Mobility Policy 2025–2030, PDF page 22](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)",
+        "sources": [
+          {
+            "source_id": "S2",
+            "state": "Karnataka",
+            "document_title": "Karnataka Clean Mobility Policy 2025–2030",
+            "document_date": "2025-02-11",
+            "pdf_page": 22,
+            "source": "data/policies/karnataka/karnataka_clean_mobility_policy_2025-02-11.pdf",
+            "official_url": "https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22",
+            "evidence_id": "karnataka_policy_2025-02-11:p22:x0-1116",
+            "excerpt_start": 0,
+            "excerpt_end": 1116,
+            "excerpt_sha256": "27834d52aa4e5d767a42a97a3eea184c6f897a7043e94e4eef5ddd494d7cab68",
+            "context_role": "candidate_with_updates",
+            "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review."
+          }
+        ],
+        "points": [
+          {
+            "text": "Fast‑charging stations for 2W, 3W, cars and buses receive a capital subsidy of 25 % of the project cost, with a maximum subsidy of Rs 10,00,000 per station, and the policy earmarks up to 500 such stations for incentive support.",
+            "citations": [
+              {
+                "source_id": "S2",
+                "source_excerpt": "Karnataka Clean Mobility Policy 2025-2030\n\n4.3.2 Incentives for Charging and Hydrogen stations for all Zones\n\nThere are 3 types of charging stations for electric vehicles:\n Fast charging\n Slow charging\n Battery switching/swapping\n\nFor hydrogen vehicles, there are hydrogen stations.\n\n4.3.2.1 Fast charging stations for all Zones.\n\nAll fast charging stations for 2W, 3W, cars and buses will be offered the following\nincentives:\n\nVehicle Type Incentive Number of Charging\nStations to be incentivized\n2W, 3W, cars and buses Capital Subsidy of 25%; up to 500\nRs. 10,00,000 per station\n\n4.3.2.2 Slow charging stations\n\nNo incentives for slow charging station.\n\n4.3.2.3 Battery switching/swapping\n\nAll battery switching/swapping stations for 2W, 3W, cars and buses will be offered the\nfollowing incentives for all zones:\n\nNumber of battery\nVehicle Type Incentive switching/swapping\nStations to be incentivized\n2W, 3W Capital Subsidy of 25%; up to 500\nRs. 3,00,000 per station\nCars Capital Subsidy of 25%; up to 200\nRs. 5,00,000 per station\nBuses Capital Subsidy of 25%; up to 200\nRs. 10,00,000 per station\n\n19 | P a g e"
+              }
+            ]
+          },
+          {
+            "text": "Slow‑charging stations are not covered by any incentive; the policy explicitly provides no incentives for slow‑charging stations.",
+            "citations": [
+              {
+                "source_id": "S2",
+                "source_excerpt": "Karnataka Clean Mobility Policy 2025-2030\n\n4.3.2 Incentives for Charging and Hydrogen stations for all Zones\n\nThere are 3 types of charging stations for electric vehicles:\n Fast charging\n Slow charging\n Battery switching/swapping\n\nFor hydrogen vehicles, there are hydrogen stations.\n\n4.3.2.1 Fast charging stations for all Zones.\n\nAll fast charging stations for 2W, 3W, cars and buses will be offered the following\nincentives:\n\nVehicle Type Incentive Number of Charging\nStations to be incentivized\n2W, 3W, cars and buses Capital Subsidy of 25%; up to 500\nRs. 10,00,000 per station\n\n4.3.2.2 Slow charging stations\n\nNo incentives for slow charging station.\n\n4.3.2.3 Battery switching/swapping\n\nAll battery switching/swapping stations for 2W, 3W, cars and buses will be offered the\nfollowing incentives for all zones:\n\nNumber of battery\nVehicle Type Incentive switching/swapping\nStations to be incentivized\n2W, 3W Capital Subsidy of 25%; up to 500\nRs. 3,00,000 per station\nCars Capital Subsidy of 25%; up to 200\nRs. 5,00,000 per station\nBuses Capital Subsidy of 25%; up to 200\nRs. 10,00,000 per station\n\n19 | P a g e"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Karnataka",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 393,
+          "prompt_tokens": 4510,
+          "total_tokens": 4903,
+          "completion_time": 0.813386948,
+          "prompt_time": 0.224999316,
+          "queue_time": 0.213801285,
+          "total_time": 1.0383862640000001,
+          "completion_tokens_details": {
+            "reasoning_tokens": 274
+          }
+        },
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      },
+      "ui_outputs": [
+        "### Answer\n\nKarnataka — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Fast‑charging stations for 2W, 3W, cars and buses receive a capital subsidy of 25 % of the project cost, with a maximum subsidy of Rs 10,00,000 per station, and the policy earmarks up to 500 such stations for incentive support. [S2](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)\n- Slow‑charging stations are not covered by any incentive; the policy explicitly provides no incentives for slow‑charging stations. [S2](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)",
+        "### Sources\n\n- [S2: Karnataka — Karnataka Clean Mobility Policy 2025–2030, PDF page 22](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)"
+      ]
+    },
+    {
+      "case": "car_tax",
+      "question": "What lifetime-tax cost slabs and rates for newly registered electric private cars does Part A5(a) of the 2026 Act state?",
+      "result": {
+        "status": "document_answer",
+        "answer": "Karnataka — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- For newly registered electric private cars (motor cars, jeeps, omni buses and private‑service vehicles) the lifetime tax is a percentage of the vehicle cost: if the cost does not exceed Rs 10 lakh the tax is 5 % of cost; if the cost is more than Rs 10 lakh but does not exceed Rs 25 lakh the tax is 8 % of cost; and if the cost exceeds Rs 25 lakh the tax is 10 % of cost. [S1](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=26) [S2](https://dpal.karnataka.gov.in/uploads/media_to_upload1776323794.pdf#page=6)\n\nSources:\n\n- [S1: Karnataka — Karnataka Clean Mobility Policy 2025–2030, PDF page 26](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=26)\n- [S2: Karnataka — Karnataka Motor Vehicles Taxation (Amendment) Act, 2026 — Act 29, PDF page 6](https://dpal.karnataka.gov.in/uploads/media_to_upload1776323794.pdf#page=6)",
+        "sources": [
+          {
+            "source_id": "S1",
+            "state": "Karnataka",
+            "document_title": "Karnataka Clean Mobility Policy 2025–2030",
+            "document_date": "2025-02-11",
+            "pdf_page": 26,
+            "source": "data/policies/karnataka/karnataka_clean_mobility_policy_2025-02-11.pdf",
+            "official_url": "https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=26",
+            "evidence_id": "karnataka_policy_2025-02-11:p26:x0-721",
+            "excerpt_start": 0,
+            "excerpt_end": 721,
+            "excerpt_sha256": "5c5efcdac0d57d3b5d43492f0797d20b73f1ea0595e70ac019af38a8c42fa9c3",
+            "context_role": "candidate_with_updates",
+            "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review."
+          },
+          {
+            "source_id": "S2",
+            "state": "Karnataka",
+            "document_title": "Karnataka Motor Vehicles Taxation (Amendment) Act, 2026 — Act 29",
+            "document_date": "2026-04-10",
+            "pdf_page": 6,
+            "source": "data/policies/karnataka/karnataka_motor_vehicles_tax_amendment_2026-04-10.pdf",
+            "official_url": "https://dpal.karnataka.gov.in/uploads/media_to_upload1776323794.pdf#page=6",
+            "evidence_id": "karnataka_tax_amendment_2026-04-10:p6:x234-1502",
+            "excerpt_start": 234,
+            "excerpt_end": 1502,
+            "excerpt_sha256": "7fa5fc9712c7bed7c00cb374edbf30762ed5ebc921d358b2b4cb62a050a0aa28",
+            "context_role": "dated_tax_amendment",
+            "version_note": "Act29 of2026, published10April. EV slabs, age/refund rows and cab exclusion; separate commencement notification not collected."
+          }
+        ],
+        "points": [
+          {
+            "text": "For newly registered electric private cars (motor cars, jeeps, omni buses and private‑service vehicles) the lifetime tax is a percentage of the vehicle cost: if the cost does not exceed Rs 10 lakh the tax is 5 % of cost; if the cost is more than Rs 10 lakh but does not exceed Rs 25 lakh the tax is 8 % of cost; and if the cost exceeds Rs 25 lakh the tax is 10 % of cost.",
+            "citations": [
+              {
+                "source_id": "S1",
+                "source_excerpt": "Karnataka Clean Mobility Policy 2025-2030  \n  \n23 | P a g e \n \n \n7     Validity of the policy \n \nThis policy shall be valid for a period of five years from the date of issue of \nGovernment Order or till a new policy is introduced by Government of Karnataka. \n \nIn the event that a project is sanctioned within the stipulated policy duration, and if \nthe execution of one or multiple phases transpires beyond the policy period, all \ncorresponding incentives including capital subsidies, etc., will remain applicable in \naccordance with the prevailing policy in effect during the project's approval. \nFurthermore, investors shall be given the choice to transition to the updated policy \nframework should they opt to do so. "
+              },
+              {
+                "source_id": "S2",
+                "source_excerpt": "(iv) after Part-A5 and the entries relating thereto, the following shall be\ninserted, namely:-\n\n“PART A5(a)\n(see section 3(1))\n(Battery Operated Vehicle (BOV))\nLifetime Tax for Motor cars, Jeeps, Omni Buses and Private Service\nVehicles which run on Electricity\nSl. Class of vehicles Motor cars, Jeeps, Motor cars, Jeeps, Motor cars, Jeeps,\nNo. Omni Buses and Omni Buses and Omni Buses and\nPrivate Service Private Service Private Service\nVehicles run on Vehicles run on Vehicles run on\nElectricity having Electricity having Electricity having\ncost of the vehicle cost of the vehicle cost of the vehicle\nwhich does not which exceeds Rs. which exceeds Rs.\nexceed Rs. 10 Lakhs 10 Lakhs but does 25 Lakhs\nnot exceed Rs 25\nLakhs\n1 2 3 4 5\nAt the time of 5 % of cost of the 8 % of the cost of 10 % of the cost of\nA Registration of Vehicle the Vehicle the Vehicle\nNew Vehicle\nIf the vehicle is Percentage of the Percentage of the Percentage of the\nalready registered Life Time Tax Life Time Tax levied Life Time Tax\nB and its age from levied under Clause under Clause A levied under\nthe month of A Clause A\nRegistration is:\nNot more than 2\n1 years 93% 93% 93%\n\nMore than 2\n2 Years but not 87% 87% 87%\nmore than 3\nYears\nMore than 3\n3 Years but not 81% 81% 81%\nmore than 4\nYears"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Karnataka",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 818,
+          "prompt_tokens": 6584,
+          "total_tokens": 7402,
+          "completion_time": 1.699954244,
+          "prompt_time": 0.363614342,
+          "queue_time": 0.21251034,
+          "total_time": 2.063568586,
+          "completion_tokens_details": {
+            "reasoning_tokens": 681
+          }
+        },
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      },
+      "ui_outputs": [
+        "### Answer\n\nKarnataka — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- For newly registered electric private cars (motor cars, jeeps, omni buses and private‑service vehicles) the lifetime tax is a percentage of the vehicle cost: if the cost does not exceed Rs 10 lakh the tax is 5 % of cost; if the cost is more than Rs 10 lakh but does not exceed Rs 25 lakh the tax is 8 % of cost; and if the cost exceeds Rs 25 lakh the tax is 10 % of cost. [S1](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=26) [S2](https://dpal.karnataka.gov.in/uploads/media_to_upload1776323794.pdf#page=6)",
+        "### Sources\n\n- [S1: Karnataka — Karnataka Clean Mobility Policy 2025–2030, PDF page 26](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=26)\n- [S2: Karnataka — Karnataka Motor Vehicles Taxation (Amendment) Act, 2026 — Act 29, PDF page 6](https://dpal.karnataka.gov.in/uploads/media_to_upload1776323794.pdf#page=6)"
+      ]
+    }
+  ]
+}

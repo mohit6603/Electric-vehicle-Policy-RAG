@@ -1,0 +1,6 @@
+{
+  "status": "revision_required",
+  "reason": "Mechanical checks passed, but AI review found an unsupported calculation-basis gloss (project cost) in charging and an extra policy-period citation attached to the tax table. The Act commencement gap also needs an explicit answer caveat.",
+  "report": "stage10_live_checks_before_semantic_review.json",
+  "team_review": false
+}

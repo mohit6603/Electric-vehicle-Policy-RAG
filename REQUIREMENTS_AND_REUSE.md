@@ -213,3 +213,18 @@ This mapping extends the original classroom reuse map; there is no separate app 
 | Acceptance/evaluation | Deferred independent team workflow | No invented human review or evaluation case; full Act, later instruments and operational gaps recorded |
 
 This extends the original course-code reuse map. New code follows the same notebook structure and pinned libraries; no separate app, backend or dependency was introduced. AI research, OCR, implementation, development checks and documentation are disclosed in the handoff.
+
+
+## Stage 10 Karnataka mapping
+
+| Requirement | Existing code reused | Karnataka extension |
+|---|---|---|
+| Official sources and physical-page provenance | Shared `load_policy_pages`, manifest/review records | Three originals, 41 pages; nine labelled table proposals; explicit proposal-page subset mixed with normal extraction |
+| Classroom splitting and validation | Existing Stage 10 input/split/check/export cells and recursive splitter | Four `stage10-karnataka-*` cells, 1000/200 splitting, 105 chunks and 15 ingestion checks |
+| Persistent search | Stage 5 ingestion list, explicit build and checked reopen | 648 records; earlier fourteen JSONLs unchanged; no corpus embeddings at startup |
+| Jurisdiction and applicable provisions | Stage 6 aliases, mandatory links and hash-checked exclusions | Karnataka/KA; period/conditions/table continuations retained; old tax/2017-period paragraphs and unrelated schedules excluded; commencement and zone-total gaps recorded |
+| Supported answers and failure behavior | Stage 7 prompt/parser/renderer and guarded Stage 8 entry point | Comparisons in words, only supporting labels and no invented cost basis; Act answers carry commencement caveat; numeric comparisons normalized while markup/source checks remain |
+| UI and verification | Stage 9 dropdown/callback and existing Stage 10 integration/live pattern | Eighth choice and charging example; fresh kernel, HTTP answers, preserved failed/development results |
+| Acceptance and evaluation | Deferred independent team workflow | No invented reviewers or evaluation cases; all source/current-entitlement flags false |
+
+No new dependency, generation backend or separate app was introduced. AI assistance includes official-source research, visual/table reading, implementation, development questions and output review, documentation and authorized Git publication. These records do not establish current entitlement or replace the team's evaluation.

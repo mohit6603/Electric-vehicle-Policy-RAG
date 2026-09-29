@@ -1,0 +1,25 @@
+{
+  "checked_at_utc": "2026-09-29T09:17:57.760857+00:00",
+  "technical_status": "passed",
+  "notebook_sha256": "5bd5a1937dd392e78e90b169097251a460e32ea0c8968cb5a71b2a2948d39e45",
+  "source_manifest_sha256": "edb25d1d51e9d56a4047bc6569ffc93890ac7b3dabde55e909e08f871ed0669e",
+  "retrieval_rules_sha256": "2979802732839f42cb2dd4bc9852d06db3b9b5943db5240a9f9201f9288e917a",
+  "checks_passed": [
+    "notebook_schema_and_code_syntax",
+    "saved_outputs_empty",
+    "seven_expected_existing_cells_changed",
+    "earlier_manifest_records_unchanged",
+    "source_hashes_and_false_acceptance_flags",
+    "earlier_fourteen_jsonl_files_unchanged",
+    "dependencies_unchanged",
+    "ingestion_receipts_match",
+    "karnataka_ingestion_integration_kernel_live_reports",
+    "ocr_hashes_and_empty_reviewer_fields",
+    "earlier_retrieval_rules_unchanged",
+    "credentials_absent_from_versioned_files",
+    "research_download_hashes_recorded"
+  ],
+  "team_acceptance": "deferred_not_verified",
+  "next_batch": "Madhya Pradesh",
+  "known_limit": "Source/table acceptance, Act commencement, zone-total discrepancy, enabling/later instruments, operational benefits and independent evaluation remain pending."
+}

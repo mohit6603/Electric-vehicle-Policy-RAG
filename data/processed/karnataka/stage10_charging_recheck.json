@@ -1,0 +1,88 @@
+{
+  "checked_at_utc": "2026-09-29T09:14:37.292861+00:00",
+  "technical_status": "passed",
+  "scope": "Local revalidation of the preserved actual Gradio/Groq response, not another model call.",
+  "original_report": "stage10_live_checks_failed_percent_format.json",
+  "original_report_sha256": "20cbe6a07cda8bbbadb8e6aba93c912ebafeba1df7d80093d69059c2f79a7d61",
+  "notebook_sha256": "1f8622dc79ff83bb88f0075f1fdeaaeb03a9a902021bace74cb6ab912b374648",
+  "retrieval_rules_sha256": "2979802732839f42cb2dd4bc9852d06db3b9b5943db5240a9f9201f9288e917a",
+  "check_script_sha256": "619b665a4bc5cb9ea2d4f4b60cebac627f0c95d531d6862f39440758b9aa2dcf",
+  "checks_passed": [
+    "charging_fact_patterns_accept_percent_word",
+    "supporting_physical_page_citation",
+    "no_invented_charging_cost_basis",
+    "http_answer_and_sources_links",
+    "unchanged_charging_points_pass_final_numeric_comparison_validator"
+  ],
+  "additional_groq_calls": 0,
+  "observation": {
+    "case": "fast_charging",
+    "question": "What fast-charging subsidy rate, per-station cap and station count does the 2025 policy state, and are slow chargers incentivized?",
+    "result": {
+      "status": "document_answer",
+      "answer": "Karnataka — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Fast‑charging stations for 2W, 3W, cars and buses receive a capital subsidy of 25 percent, with the subsidy capped at Rs 10,00,000 per station, and the scheme authorises up to 500 stations to be incentivised. [S2](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)\n- Slow‑charging stations are not eligible for any incentive under the 2025 Clean Mobility Policy. [S2](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)\n\nSources:\n\n- [S2: Karnataka — Karnataka Clean Mobility Policy 2025–2030, PDF page 22](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)",
+      "sources": [
+        {
+          "source_id": "S2",
+          "state": "Karnataka",
+          "document_title": "Karnataka Clean Mobility Policy 2025–2030",
+          "document_date": "2025-02-11",
+          "pdf_page": 22,
+          "source": "data/policies/karnataka/karnataka_clean_mobility_policy_2025-02-11.pdf",
+          "official_url": "https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22",
+          "evidence_id": "karnataka_policy_2025-02-11:p22:x0-1116",
+          "excerpt_start": 0,
+          "excerpt_end": 1116,
+          "excerpt_sha256": "27834d52aa4e5d767a42a97a3eea184c6f897a7043e94e4eef5ddd494d7cab68",
+          "context_role": "candidate_with_updates",
+          "version_note": "2025 policy with period, definitions, sanction/transition conditions. Tax paragraph superseded in context; nine labelled table proposals pending review."
+        }
+      ],
+      "points": [
+        {
+          "text": "Fast‑charging stations for 2W, 3W, cars and buses receive a capital subsidy of 25 percent, with the subsidy capped at Rs 10,00,000 per station, and the scheme authorises up to 500 stations to be incentivised.",
+          "citations": [
+            {
+              "source_id": "S2",
+              "source_excerpt": "Karnataka Clean Mobility Policy 2025-2030\n\n4.3.2 Incentives for Charging and Hydrogen stations for all Zones\n\nThere are 3 types of charging stations for electric vehicles:\n Fast charging\n Slow charging\n Battery switching/swapping\n\nFor hydrogen vehicles, there are hydrogen stations.\n\n4.3.2.1 Fast charging stations for all Zones.\n\nAll fast charging stations for 2W, 3W, cars and buses will be offered the following\nincentives:\n\nVehicle Type Incentive Number of Charging\nStations to be incentivized\n2W, 3W, cars and buses Capital Subsidy of 25%; up to 500\nRs. 10,00,000 per station\n\n4.3.2.2 Slow charging stations\n\nNo incentives for slow charging station.\n\n4.3.2.3 Battery switching/swapping\n\nAll battery switching/swapping stations for 2W, 3W, cars and buses will be offered the\nfollowing incentives for all zones:\n\nNumber of battery\nVehicle Type Incentive switching/swapping\nStations to be incentivized\n2W, 3W Capital Subsidy of 25%; up to 500\nRs. 3,00,000 per station\nCars Capital Subsidy of 25%; up to 200\nRs. 5,00,000 per station\nBuses Capital Subsidy of 25%; up to 200\nRs. 10,00,000 per station\n\n19 | P a g e"
+            }
+          ]
+        },
+        {
+          "text": "Slow‑charging stations are not eligible for any incentive under the 2025 Clean Mobility Policy.",
+          "citations": [
+            {
+              "source_id": "S2",
+              "source_excerpt": "Karnataka Clean Mobility Policy 2025-2030\n\n4.3.2 Incentives for Charging and Hydrogen stations for all Zones\n\nThere are 3 types of charging stations for electric vehicles:\n Fast charging\n Slow charging\n Battery switching/swapping\n\nFor hydrogen vehicles, there are hydrogen stations.\n\n4.3.2.1 Fast charging stations for all Zones.\n\nAll fast charging stations for 2W, 3W, cars and buses will be offered the following\nincentives:\n\nVehicle Type Incentive Number of Charging\nStations to be incentivized\n2W, 3W, cars and buses Capital Subsidy of 25%; up to 500\nRs. 10,00,000 per station\n\n4.3.2.2 Slow charging stations\n\nNo incentives for slow charging station.\n\n4.3.2.3 Battery switching/swapping\n\nAll battery switching/swapping stations for 2W, 3W, cars and buses will be offered the\nfollowing incentives for all zones:\n\nNumber of battery\nVehicle Type Incentive switching/swapping\nStations to be incentivized\n2W, 3W Capital Subsidy of 25%; up to 500\nRs. 3,00,000 per station\nCars Capital Subsidy of 25%; up to 200\nRs. 5,00,000 per station\nBuses Capital Subsidy of 25%; up to 200\nRs. 10,00,000 per station\n\n19 | P a g e"
+            }
+          ]
+        }
+      ],
+      "jurisdiction": "Karnataka",
+      "verification_cutoff": "2026-09-23",
+      "current_entitlement_answers_allowed": false,
+      "model": "openai/gpt-oss-120b",
+      "usage": {
+        "completion_tokens": 758,
+        "prompt_tokens": 4621,
+        "total_tokens": 5379,
+        "completion_time": 1.577949179,
+        "prompt_time": 0.206184182,
+        "queue_time": 0.395475299,
+        "total_time": 1.7841333609999999,
+        "completion_tokens_details": {
+          "reasoning_tokens": 647
+        }
+      },
+      "reason": "",
+      "retryable": false,
+      "diagnostics": {}
+    },
+    "ui_outputs": [
+      "### Answer\n\nKarnataka — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Fast‑charging stations for 2W, 3W, cars and buses receive a capital subsidy of 25 percent, with the subsidy capped at Rs 10,00,000 per station, and the scheme authorises up to 500 stations to be incentivised. [S2](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)\n- Slow‑charging stations are not eligible for any incentive under the 2025 Clean Mobility Policy. [S2](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)",
+      "### Sources\n\n- [S2: Karnataka — Karnataka Clean Mobility Policy 2025–2030, PDF page 22](https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf#page=22)"
+    ]
+  },
+  "validated_with_notebook_sha256": "5bd5a1937dd392e78e90b169097251a460e32ea0c8968cb5a71b2a2948d39e45",
+  "formatter_recheck_at_utc": "2026-09-29T09:17:57.368166+00:00"
+}

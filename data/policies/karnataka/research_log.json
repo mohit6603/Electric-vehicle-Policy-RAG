@@ -1,0 +1,187 @@
+{
+  "prepared_on": "2026-09-28",
+  "technical_closeout_on": "2026-09-29",
+  "verification_target_cutoff": "2026-09-23",
+  "status": "source_acceptance_and_current_entitlement_unverified",
+  "records": [
+    {
+      "source_id": "karnataka_policy_2025-02-11",
+      "official_url": "https://investkarnataka.co.in/wp-content/uploads/2025/12/Clean-mobility-policy.pdf",
+      "local_file": "data/policies/karnataka/karnataka_clean_mobility_policy_2025-02-11.pdf",
+      "sha256": "121a1b16891ef017ecde1bae5ebc09745f7734e37d138c662e9d9f724033e835",
+      "bytes": 2157287,
+      "pdf_page_count": 36,
+      "candidate_pdf_pages": [
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "visually_compared_by_ai": [
+        2,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "disposition": "included_as_unaccepted_development_evidence"
+    },
+    {
+      "source_id": "karnataka_tax_amendment_2026-04-10",
+      "official_url": "https://dpal.karnataka.gov.in/uploads/media_to_upload1776323794.pdf",
+      "local_file": "data/policies/karnataka/karnataka_motor_vehicles_tax_amendment_2026-04-10.pdf",
+      "sha256": "44c28a7102266ad5a67af0200a965e1d7a3000e5362615288a2b8c747546a409",
+      "bytes": 609938,
+      "pdf_page_count": 13,
+      "candidate_pdf_pages": [
+        2,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "visually_compared_by_ai": [
+        2,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "disposition": "included_as_unaccepted_development_evidence"
+    },
+    {
+      "source_id": "karnataka_registration_fee_2021-08-02",
+      "official_url": "https://transport.karnataka.gov.in/storage/pdf-files/Notifications/fee%20exemption.pdf",
+      "local_file": "data/policies/karnataka/karnataka_registration_fee_gsr525_2021-08-02.pdf",
+      "sha256": "f4a25ec47a8923fc299edfca0a478e4644c0b365a7bb06f9e2f0599f3f5460a4",
+      "bytes": 1325676,
+      "pdf_page_count": 3,
+      "candidate_pdf_pages": [
+        3
+      ],
+      "visually_compared_by_ai": [
+        2,
+        3
+      ],
+      "disposition": "included_as_unaccepted_development_evidence"
+    }
+  ],
+  "research_only_downloads": [
+    {
+      "url": "https://dpal.karnataka.gov.in/170/2026/en",
+      "research_only_scratch_path": "tmp/karnataka/acts-2026.html",
+      "sha256": "e874dc9df8d4bddfe935a7be998ac64762ab7f0cd98f154b8165602d322ae8ab",
+      "bytes": 128912,
+      "disposition": "Official 2026 Acts listing, English Act 29 link; discovery only."
+    },
+    {
+      "url": "https://transport.karnataka.gov.in/47/notifications/en",
+      "research_only_scratch_path": "tmp/karnataka/notifications.html",
+      "sha256": "ea86dd33aa40d2d1ae321389a747397f5eff942394a2b1e51531d7200336285b",
+      "bytes": 109382,
+      "disposition": "Independent Transport listing names DPAL 14 SHASANA 2026 dated 10 April; discovery only."
+    },
+    {
+      "url": "https://transport.karnataka.gov.in/uploads/Taxation%20Notification_1781165374.pdf",
+      "research_only_scratch_path": "tmp/karnataka/tax-notification.pdf",
+      "sha256": "fb62138db3fefd92babc15c35bc3a68c38e27c8c8434908d80840aec92613c6d",
+      "bytes": 8399688,
+      "disposition": "28-page scanned gazette copy; research only, not visually verified, indexed or certified binary-equivalent."
+    },
+    {
+      "url": "https://transport.karnataka.gov.in/36/motor-vehicles-taxation-schedule/en",
+      "research_only_scratch_path": "tmp/karnataka/tax-schedule.html",
+      "sha256": "911633e4a3f59526ae9006261cb3d66d3ec18b0c155fc03fe81d810ec4f107fc",
+      "bytes": 80926,
+      "disposition": "Older tax-schedule listing; not accepted as the latest EV rule."
+    },
+    {
+      "url": "https://transport.karnataka.gov.in/48/circulars/en",
+      "research_only_scratch_path": "tmp/karnataka/circulars.html",
+      "sha256": "d5b0111c61a99c6e03bb72399a3de22eb565d9ef1f84f5f1fd95064e907fa87c",
+      "bytes": 92543,
+      "disposition": "Circular listing checked for discovery; no claim of a complete amendment chain."
+    }
+  ],
+  "other_attempts": [
+    {
+      "url": "https://static.investindia.gov.in/s3fs-public/2025-04/8211.pdf",
+      "result": "403; not used. Policy downloaded from Invest Karnataka."
+    },
+    {
+      "url": "https://investkarnataka.co.in/wp-content/uploads/2025/03/Government-of-Karnataka-Unveils-Clean-Mobility-Policy.pdf",
+      "result": "Official press release discovery reference; not downloaded or indexed."
+    },
+    {
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/7605/1/35_of_1957.pdf",
+      "result": "Consolidated Act downloads timed out, including host/query variants. Search snippet about commencement was not accepted as original evidence."
+    },
+    {
+      "url": "https://dpal.karnataka.gov.in/uploads/media_to_upload1776057106.pdf",
+      "result": "Original bilingual gazette link discovered in DPAL listing; not downloaded."
+    },
+    {
+      "url": "https://dpal.karnataka.gov.in/uploads/media_to_upload1777274594.pdf",
+      "result": "Kannada copy link discovered; not downloaded."
+    }
+  ],
+  "transport_limitation": "DPAL certificate validation failed. Public requests used verify=False, without credentials; independent Transport listing corroborates the Act identity. No claim of verified transport integrity beyond saved hashes.",
+  "unresolved": [
+    "Separate commencement notification for Act 29 of 2026",
+    "Full Industrial Policy 2025–30 and State MSME enabling orders",
+    "Zone row counts 198/33/9 versus printed totals 199/32/9",
+    "Later relevant policy, tax and fee instruments through cutoff",
+    "Operational eligibility, approvals, funds, station quotas and actual current entitlement",
+    "Independent source acceptance and two team-authored Karnataka evaluation questions"
+  ],
+  "ai_assistance": "Official-source discovery, extraction, visual/table reading, metadata, code and development checks. No human acceptance or independent evaluation asserted."
+}
