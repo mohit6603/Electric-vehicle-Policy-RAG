@@ -1,0 +1,38 @@
+- 	 Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025-- 
+technical specifications of the charging station. [Refer to A nnexure,10.] 	 - 
+.4- 
+10. AVAILING INCENTIVES FOR PUBLIC -d -IARGING --
+. STATIONS 
+10.1 Scope & Applicability 
+i. 	 As per the limit mentioned in the EV Policy, incentives will be available on a first-come, first- 
+served basis through the MP EV Tarang portal. 
+CPOs/BSOs can apply for incentives multiple times and across multiple charging station 
+categories. 
+10.1.1 Application Process on MP EV Tarang Portal - CPOs/BSOs must submit the following 
+details while applying for the incentive. [Refer to Annexure I I] 
+10.1.2 Approval & Disbursement Process 
+10.1.2.1 Applications will be reviewed by the nodal department based on compliance with 
+policy guidelines. 
+10.1.2.2 The nodal agency or authorised agency will carry out a physical verification of the 
+charging station, assessing both the information submitted by the CPOs/BSOs and its 
+safety and accessibility. Detailed criteria for verification are outlined in Section 12. 
+10.1.2.3 Upon approval, incentives will be transferred directly to the CPO's registered bank 
+account. 
+10.1.2.4 (fan application is incomplete or requires additional details, the CPO will be notified 
+For corrections 
+10.2 Monitoring & Compliance 
+10.2.1 CPOs/BSOs must ensure the station remains operational for a minimum uptime of 97% 
+post-incentive disbursement. A charging port is considered "up" when its hardware and 
+software are both online and available for use, or in use and the charging port successfully 
+dispenses electricity in accordance with requirements for minimum power level. Charging 
+port uptime must be calculated on a monthly basis. [Refer to Annexure 12.] 
+10.9.9 If uptime is less than 97% on a monthly-basis, it may lead to penalty or blacklisting from 
+future incentives. [Refer .Annexure 13.] 
+11. ACCESSIBILITY AND SAFETY AT CHARGING 
+STATIONS 
+11.1 Safety Standards for Charging Stations 
+11.1.1 	 Fire Safety 
+11.1.1.1 Charging stations located at petrol pumps must be installed in a manner that ensures 
+strict adherence to Petroleum and Safety Explosives Organisation (PESO) safety 
+. 	 norms, maintaining prescribed minimum safety distances and ensuring that operations 
+17

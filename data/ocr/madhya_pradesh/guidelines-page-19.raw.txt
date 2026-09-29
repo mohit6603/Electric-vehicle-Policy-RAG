@@ -1,0 +1,38 @@
+Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025 
+11.3 Accessibility for People with Reduced Mobility 
+11.3.1 All Public Charging Stations / Battery Swapping Stations need to adhere to the space and 
+service standards confirming to .the needs of the •differently abled. persons, such as the 
+guideline for Barrier Free Built Environment Guideline by CPWD, National Building Code 
+or any other contemporary document issued by the government. 	 - 
+U.: PROTOCOL FOR SHARING- CHARGING STATION 
+DATA WITH UDHD AND MPPMCL 
+12.1 CP0s/BSOs must develop an endpoint API to share details of charging and swapping stations, 
+ensuring seamless integration with the EV Tarang portal. This requirement is mandatory for all 
+CPOs operating in the state and the necessary details must be provided within 30 days of the station's 
+commissioning. [Refer to Annexure 14.] 
+OTHER INITIATIVES FOR DEVELOPMENT OF 
+CHARGING INFRASTRUCTURE 
+13.1 Government buildings will set a roadmap to setup charging or swapping stations in all of its parking 
+spaces. 
+13.9  Existing and new government buildings or offices must install charging stations, ensuring that at 
+least 10% of all parking spots are equipped with EV chargers. 
+13.3 Inter-State Bus Terminals (ISBT), bus terminals and bus stops are encouraged to have charging 
+stations. 
+13.4 Municipal Corporation's Public parking spaces will be mandated to have charging stations. 
+13.5 Existing buildings, including malls and other commercial properties, will be incentivized to install 
+charging and battery-swapping stations. 
+13.6 All new permits for commercial complexes. housing societies and residential townships with a 
+built-up area of 2,000 sq.mt  and above will mandatorily have charging stations. Additionally, at 
+least 10% of all parking spots within these premises will be equiPped with charging star ions. 
+RWAS TO ISSUE NOCS FOR RESIDENT EV CHARGING 
+INFRASTRUCTURE 
+Residents do not require a No Objection Certificate (NOC) from the RWA. to install a 15A indusnial 
+socket for charging their EV near the parking spot, provided the connection is drawn from the individual 
+resident's electricity meter. However, if a higher-capacity charging System is to be installed by drawing 
+power from the RWA'spommon load connection, the following guidelines Shall apply. 
+4-  tali 
+".00,AFAri 
+ti4fi 
+4 r" 71 	 I 
+19 
+   

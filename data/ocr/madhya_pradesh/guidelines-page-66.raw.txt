@@ -1,0 +1,16 @@
+- Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025 
+ANNEXURE 12 
+.Calculation Procedure for Uptime of Charging Stations 
+Parameter Value 
+-Total Time in Period (hrs) 
+Actual Uptime (hrs).  
+Downtime (hrs) 
+Calculated Uptime (%) 
+Required Uptime (%) 97% 
+Deviation from Required Uptime 
+Is Requirement Met? 
+Reason for Downtime (if any) 
+Remarks 
+11 
+gr-% 	 i.• 
+\ 45—:-012-) - 66 

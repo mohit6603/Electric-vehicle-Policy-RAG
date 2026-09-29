@@ -1,0 +1,36 @@
+Madhya Pradesh Electric Vehicle Policy Operational Guidelines-2025 
+charge electric two-wheelers. electric three-wheelers. and. as a mandatory requirement. electric , 	 , _ 	 . 	 . 
+four-wheelers. The station is connected to an electricity supply with a capacity of less than 112 
+kW, or is linked to a Low-Tension line as per the regulations of The Madhya Pradesh Electricity 
+Regulatory Commission. 
+Large Charging Station: A facility equipped with multiple Electric Vehicle Supply Equipment 
+(EVSE) offering varying capacities and supporting both AC and DC charging capabilities, with a 
+total capacity exceeding 112 kW (connected to al-ligh Tension (HT) line). It is mandatorily designed 
+to charge light commercial vehicles, trucks, or buses, in addition to any other vehicle segments. The 
+station is connected to an electricity supply with a capacity greater than 112 kW, in accordance with 
+the regulations of the Madhya Pradesh Electricity Regulatory Commission. 
+Station Type 	 .1 
+. 
+Vehicle Category 
+, 
+Location rpe of Connection 
+if, 	 ._ 
+Small Charging 
+Stations 
+2W & 3W City Low Tension (LT)* 
+Medium Charging 
+Stations 
+2\V. 3W. Cars & c- 
+LCV 
+City & Highways Low Tension (LT)* 
+Large Charging 
+Stations 
+2W, 3W, Cars. e-LCV 
+& Heavy-Duty . 
+Vehicles 
+City & I-hallways High Tension (HT)** 
+*According to MPERC egulation, consumers with a connected load not exceeding 150 
+HP (112 KW) will be supplied power in LT category. 
+**Accordina to MPERC regulation, consumers having installation with a connected load exceeding 
+150 HP (112 KW) will be given in HT category. 
+14 

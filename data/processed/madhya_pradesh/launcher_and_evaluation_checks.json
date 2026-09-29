@@ -1,0 +1,24 @@
+{
+  "checked_at_utc": "2026-09-29T16:51:29.859824+00:00",
+  "technical_status": "passed",
+  "checks_passed": [
+    "complete_synthetic_schema_accepted",
+    "empty_team_template_rejected",
+    "unaccepted_sources_rejected",
+    "missing_author",
+    "unknown_page",
+    "cross_jurisdiction",
+    "wrong_status",
+    "duplicate_ids_rejected",
+    "incomplete_case_set_rejected",
+    "launcher_definitions_open_final_index",
+    "launched_cli_http_has_nine_choices"
+  ],
+  "scope": "Launcher and synthetic evaluation-gate checks; no formal evaluation or model answer calls.",
+  "artifact_sha256": {
+    "run.py": "1c2dcecbd29a7ac03fbf1b8a2245ca4905c9e35c5e1675b4adb3bc697e2d7edf",
+    "evaluate.py": "710a4d6432d9b1a31639f5421b72db32fa810433ac6c408eb4cf8457cba7f87a",
+    "checks/evaluation_checks.py": "6271e3827fe249aacf303196589acda686cd1e3bbf5dd6b08977ef560d7b4e26",
+    "EV Policy Assistant.ipynb": "66cb4b572fb15220d29643045754633388d59cba9c8c520bf556b88c4e669068"
+  }
+}

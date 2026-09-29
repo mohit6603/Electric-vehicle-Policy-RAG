@@ -1,0 +1,235 @@
+{
+  "checked_at_utc": "2026-09-29T16:45:10.523090+00:00",
+  "notebook_sha256": "66cb4b572fb15220d29643045754633388d59cba9c8c520bf556b88c4e669068",
+  "check_script_sha256": "635140665e6c3c34d93b5a4d4ef36ea6b3899da49bb35db71964d0736ccb8eff",
+  "source_manifest_sha256": "914260d5c4c942ee0db5908a5e0aacb1be38cc61922e3930b64086335706e179",
+  "retrieval_rules_sha256": "930b0c19219209c25ad1a3f3d8ba2e61031358662c3fe9a3118fa42025c44f96",
+  "index_spec": {
+    "collection": "ev_policy_draft",
+    "corpus_sha256": "25dd54fe4aa64a12fc30169addec4baf139712b8020cf313dc0c315d3cd76897",
+    "chunk_count": 804,
+    "embedding": {
+      "model": "nomic-embed-text:latest",
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "num_ctx": 2048,
+      "langchain_ollama": "0.3.7"
+    },
+    "distance": "cosine",
+    "chunks_by_state": {
+      "Maharashtra": 53,
+      "Tamil Nadu": 78,
+      "Central": 100,
+      "Uttar Pradesh": 117,
+      "Delhi": 132,
+      "Gujarat": 31,
+      "Telangana": 32,
+      "Karnataka": 105,
+      "Madhya Pradesh": 156
+    }
+  },
+  "technical_status": "passed",
+  "scope": "AI development checks; not team source review or formal evaluation",
+  "checks_passed": [
+    "reopen_all_records_without_corpus_embedding",
+    "156_madhya_pradesh_chunks",
+    "three_madhya_pradesh_aliases",
+    "five_filtered_semantic_queries",
+    "conditions_and_continuations_present",
+    "two_registered_mp_sources",
+    "all_60_pages_assemble_within_context_limit",
+    "ocr_proposals_and_pending_review_preserved",
+    "five_rejections_skip_models_and_clear_sources",
+    "gradio_lists_madhya_pradesh_and_other_loaded_jurisdictions"
+  ],
+  "embedding_calls": {
+    "corpus": 0,
+    "query": 5
+  },
+  "observations": [
+    {
+      "question": "What small public charging station subsidy rate, cost basis, cap and station count do the supplied documents state?",
+      "page_ids": [
+        "madhya_pradesh_policy_2025:p13",
+        "madhya_pradesh_guidelines_2025-09-15:p1",
+        "madhya_pradesh_policy_2025:p28",
+        "madhya_pradesh_policy_2025:p27",
+        "madhya_pradesh_policy_2025:p29",
+        "madhya_pradesh_guidelines_2025-09-15:p13",
+        "madhya_pradesh_guidelines_2025-09-15:p14",
+        "madhya_pradesh_guidelines_2025-09-15:p16",
+        "madhya_pradesh_guidelines_2025-09-15:p17",
+        "madhya_pradesh_guidelines_2025-09-15:p65",
+        "madhya_pradesh_guidelines_2025-09-15:p19",
+        "madhya_pradesh_guidelines_2025-09-15:p20",
+        "madhya_pradesh_guidelines_2025-09-15:p70",
+        "madhya_pradesh_guidelines_2025-09-15:p72",
+        "madhya_pradesh_guidelines_2025-09-15:p66",
+        "madhya_pradesh_guidelines_2025-09-15:p67"
+      ],
+      "context_chars": 24952,
+      "status": "retrieved"
+    },
+    {
+      "question": "What NOC deadline, safety exceptions and written-rejection requirement does section 14 state for resident charging from an RWA common load connection?",
+      "page_ids": [
+        "madhya_pradesh_policy_2025:p13",
+        "madhya_pradesh_guidelines_2025-09-15:p1",
+        "madhya_pradesh_guidelines_2025-09-15:p70",
+        "madhya_pradesh_guidelines_2025-09-15:p71",
+        "madhya_pradesh_guidelines_2025-09-15:p19",
+        "madhya_pradesh_guidelines_2025-09-15:p20",
+        "madhya_pradesh_guidelines_2025-09-15:p72"
+      ],
+      "context_chars": 9497,
+      "status": "retrieved"
+    },
+    {
+      "question": "What incentive does the policy state for retrofitting a car, and what conditions apply?",
+      "page_ids": [
+        "madhya_pradesh_policy_2025:p13",
+        "madhya_pradesh_guidelines_2025-09-15:p1",
+        "madhya_pradesh_policy_2025:p19",
+        "madhya_pradesh_policy_2025:p18",
+        "madhya_pradesh_policy_2025:p20",
+        "madhya_pradesh_policy_2025:p25",
+        "madhya_pradesh_guidelines_2025-09-15:p8",
+        "madhya_pradesh_guidelines_2025-09-15:p9",
+        "madhya_pradesh_guidelines_2025-09-15:p10",
+        "madhya_pradesh_guidelines_2025-09-15:p11",
+        "madhya_pradesh_guidelines_2025-09-15:p12"
+      ],
+      "context_chars": 20225,
+      "status": "retrieved"
+    },
+    {
+      "question": "What first-year e-car tax exemption and ex-factory price ceiling does the policy describe?",
+      "page_ids": [
+        "madhya_pradesh_policy_2025:p13",
+        "madhya_pradesh_guidelines_2025-09-15:p1",
+        "madhya_pradesh_policy_2025:p18",
+        "madhya_pradesh_policy_2025:p17",
+        "madhya_pradesh_policy_2025:p19",
+        "madhya_pradesh_policy_2025:p20",
+        "madhya_pradesh_policy_2025:p25",
+        "madhya_pradesh_guidelines_2025-09-15:p8",
+        "madhya_pradesh_guidelines_2025-09-15:p9",
+        "madhya_pradesh_guidelines_2025-09-15:p10",
+        "madhya_pradesh_guidelines_2025-09-15:p11",
+        "madhya_pradesh_guidelines_2025-09-15:p12"
+      ],
+      "context_chars": 21764,
+      "status": "retrieved"
+    },
+    {
+      "question": "What monthly uptime and incentive-recovery steps apply to public charging stations?",
+      "page_ids": [
+        "madhya_pradesh_policy_2025:p13",
+        "madhya_pradesh_guidelines_2025-09-15:p1",
+        "madhya_pradesh_guidelines_2025-09-15:p17",
+        "madhya_pradesh_guidelines_2025-09-15:p16",
+        "madhya_pradesh_guidelines_2025-09-15:p18",
+        "madhya_pradesh_guidelines_2025-09-15:p65",
+        "madhya_pradesh_guidelines_2025-09-15:p66",
+        "madhya_pradesh_guidelines_2025-09-15:p67"
+      ],
+      "context_chars": 10567,
+      "status": "retrieved"
+    },
+    {
+      "all_page_context_range": [
+        2518,
+        37642
+      ]
+    },
+    {
+      "selection": "MP",
+      "question": "Tamil Nadu purchase subsidy?",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Madhya Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Madhya Pradesh",
+      "question": "Compare Madhya Pradesh and Maharashtra incentives",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Madhya Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Kerala",
+      "question": "Electric car subsidy?",
+      "result": {
+        "status": "unsupported_jurisdiction",
+        "answer": "Choose Central, Delhi, Gujarat, Karnataka, Madhya Pradesh, Maharashtra, Tamil Nadu, Telangana, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Madhya Pradesh",
+      "question": "",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Madhya Pradesh",
+      "question": "Can I claim an EV subsidy today?",
+      "result": {
+        "status": "not_established",
+        "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Madhya Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "current_entitlement_unverified",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    }
+  ]
+}

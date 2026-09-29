@@ -1,0 +1,401 @@
+{
+  "checked_at_utc": "2026-09-29T16:44:06.608992+00:00",
+  "notebook_sha256": "66cb4b572fb15220d29643045754633388d59cba9c8c520bf556b88c4e669068",
+  "check_script_sha256": "635140665e6c3c34d93b5a4d4ef36ea6b3899da49bb35db71964d0736ccb8eff",
+  "source_manifest_sha256": "914260d5c4c942ee0db5908a5e0aacb1be38cc61922e3930b64086335706e179",
+  "retrieval_rules_sha256": "930b0c19219209c25ad1a3f3d8ba2e61031358662c3fe9a3118fa42025c44f96",
+  "index_spec": {
+    "collection": "ev_policy_draft",
+    "corpus_sha256": "25dd54fe4aa64a12fc30169addec4baf139712b8020cf313dc0c315d3cd76897",
+    "chunk_count": 804,
+    "embedding": {
+      "model": "nomic-embed-text:latest",
+      "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "num_ctx": 2048,
+      "langchain_ollama": "0.3.7"
+    },
+    "distance": "cosine",
+    "chunks_by_state": {
+      "Maharashtra": 53,
+      "Tamil Nadu": 78,
+      "Central": 100,
+      "Uttar Pradesh": 117,
+      "Delhi": 132,
+      "Gujarat": 31,
+      "Telangana": 32,
+      "Karnataka": 105,
+      "Madhya Pradesh": 156
+    }
+  },
+  "technical_status": "passed",
+  "scope": "AI development checks; not team source review or formal evaluation",
+  "checks_passed": [
+    "reopen_all_records_without_corpus_embedding",
+    "156_madhya_pradesh_chunks",
+    "three_madhya_pradesh_aliases",
+    "five_filtered_semantic_queries",
+    "conditions_and_continuations_present",
+    "two_registered_mp_sources",
+    "all_60_pages_assemble_within_context_limit",
+    "ocr_proposals_and_pending_review_preserved",
+    "five_rejections_skip_models_and_clear_sources",
+    "gradio_lists_madhya_pradesh_and_other_loaded_jurisdictions",
+    "live_gradio_small_charging",
+    "live_gradio_rwa_noc",
+    "gradio_rejection_clears_previous_citations"
+  ],
+  "embedding_calls": {
+    "corpus": 0,
+    "query": 7
+  },
+  "observations": [
+    {
+      "question": "What small public charging station subsidy rate, cost basis, cap and station count do the supplied documents state?",
+      "page_ids": [
+        "madhya_pradesh_policy_2025:p13",
+        "madhya_pradesh_guidelines_2025-09-15:p1",
+        "madhya_pradesh_policy_2025:p28",
+        "madhya_pradesh_policy_2025:p27",
+        "madhya_pradesh_policy_2025:p29",
+        "madhya_pradesh_guidelines_2025-09-15:p13",
+        "madhya_pradesh_guidelines_2025-09-15:p14",
+        "madhya_pradesh_guidelines_2025-09-15:p16",
+        "madhya_pradesh_guidelines_2025-09-15:p17",
+        "madhya_pradesh_guidelines_2025-09-15:p65",
+        "madhya_pradesh_guidelines_2025-09-15:p19",
+        "madhya_pradesh_guidelines_2025-09-15:p20",
+        "madhya_pradesh_guidelines_2025-09-15:p70",
+        "madhya_pradesh_guidelines_2025-09-15:p72",
+        "madhya_pradesh_guidelines_2025-09-15:p66",
+        "madhya_pradesh_guidelines_2025-09-15:p67"
+      ],
+      "context_chars": 24952,
+      "status": "retrieved"
+    },
+    {
+      "question": "What NOC deadline, safety exceptions and written-rejection requirement does section 14 state for resident charging from an RWA common load connection?",
+      "page_ids": [
+        "madhya_pradesh_policy_2025:p13",
+        "madhya_pradesh_guidelines_2025-09-15:p1",
+        "madhya_pradesh_guidelines_2025-09-15:p70",
+        "madhya_pradesh_guidelines_2025-09-15:p71",
+        "madhya_pradesh_guidelines_2025-09-15:p19",
+        "madhya_pradesh_guidelines_2025-09-15:p20",
+        "madhya_pradesh_guidelines_2025-09-15:p72"
+      ],
+      "context_chars": 9497,
+      "status": "retrieved"
+    },
+    {
+      "question": "What incentive does the policy state for retrofitting a car, and what conditions apply?",
+      "page_ids": [
+        "madhya_pradesh_policy_2025:p13",
+        "madhya_pradesh_guidelines_2025-09-15:p1",
+        "madhya_pradesh_policy_2025:p19",
+        "madhya_pradesh_policy_2025:p18",
+        "madhya_pradesh_policy_2025:p20",
+        "madhya_pradesh_policy_2025:p25",
+        "madhya_pradesh_guidelines_2025-09-15:p8",
+        "madhya_pradesh_guidelines_2025-09-15:p9",
+        "madhya_pradesh_guidelines_2025-09-15:p10",
+        "madhya_pradesh_guidelines_2025-09-15:p11",
+        "madhya_pradesh_guidelines_2025-09-15:p12"
+      ],
+      "context_chars": 20225,
+      "status": "retrieved"
+    },
+    {
+      "question": "What first-year e-car tax exemption and ex-factory price ceiling does the policy describe?",
+      "page_ids": [
+        "madhya_pradesh_policy_2025:p13",
+        "madhya_pradesh_guidelines_2025-09-15:p1",
+        "madhya_pradesh_policy_2025:p18",
+        "madhya_pradesh_policy_2025:p17",
+        "madhya_pradesh_policy_2025:p19",
+        "madhya_pradesh_policy_2025:p20",
+        "madhya_pradesh_policy_2025:p25",
+        "madhya_pradesh_guidelines_2025-09-15:p8",
+        "madhya_pradesh_guidelines_2025-09-15:p9",
+        "madhya_pradesh_guidelines_2025-09-15:p10",
+        "madhya_pradesh_guidelines_2025-09-15:p11",
+        "madhya_pradesh_guidelines_2025-09-15:p12"
+      ],
+      "context_chars": 21764,
+      "status": "retrieved"
+    },
+    {
+      "question": "What monthly uptime and incentive-recovery steps apply to public charging stations?",
+      "page_ids": [
+        "madhya_pradesh_policy_2025:p13",
+        "madhya_pradesh_guidelines_2025-09-15:p1",
+        "madhya_pradesh_guidelines_2025-09-15:p17",
+        "madhya_pradesh_guidelines_2025-09-15:p16",
+        "madhya_pradesh_guidelines_2025-09-15:p18",
+        "madhya_pradesh_guidelines_2025-09-15:p65",
+        "madhya_pradesh_guidelines_2025-09-15:p66",
+        "madhya_pradesh_guidelines_2025-09-15:p67"
+      ],
+      "context_chars": 10567,
+      "status": "retrieved"
+    },
+    {
+      "all_page_context_range": [
+        2518,
+        37642
+      ]
+    },
+    {
+      "selection": "MP",
+      "question": "Tamil Nadu purchase subsidy?",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Align the selected jurisdiction and the jurisdiction named in your question.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Madhya Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Madhya Pradesh",
+      "question": "Compare Madhya Pradesh and Maharashtra incentives",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Ask about one state or Central at a time; split comparisons and combined benefits into separate queries.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Madhya Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Kerala",
+      "question": "Electric car subsidy?",
+      "result": {
+        "status": "unsupported_jurisdiction",
+        "answer": "Choose Central, Delhi, Gujarat, Karnataka, Madhya Pradesh, Maharashtra, Tamil Nadu, Telangana, Uttar Pradesh; other jurisdictions are not indexed yet.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Madhya Pradesh",
+      "question": "",
+      "result": {
+        "status": "clarification_required",
+        "answer": "Enter a specific EV policy question and choose one jurisdiction.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": null,
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "selection": "Madhya Pradesh",
+      "question": "Can I claim an EV subsidy today?",
+      "result": {
+        "status": "not_established",
+        "answer": "This prototype cannot verify current availability, remaining funds or your personal eligibility. Ask what the dated policy documents state; source review is still pending.",
+        "sources": [],
+        "points": [],
+        "jurisdiction": "Madhya Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {},
+        "reason": "current_entitlement_unverified",
+        "retryable": false,
+        "diagnostics": {}
+      }
+    },
+    {
+      "case": "small_charging",
+      "question": "What small public charging station subsidy rate, cost basis, cap and station count do the supplied documents state?",
+      "result": {
+        "status": "document_answer",
+        "answer": "Madhya Pradesh — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Small public charging stations receive a capital subsidy of thirty percent of the value of the charging equipment or machinery; the subsidy is capped at INR 1,50,000 per station and is available for the first five hundred small charging stations. [S8](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=16)\n\nSources:\n\n- [S8: Madhya Pradesh — Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025, PDF page 16](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=16) — AI-assisted OCR correction or selected table/flow reading; page 1 is an unofficial English translation; pending team review.",
+        "sources": [
+          {
+            "source_id": "S8",
+            "state": "Madhya Pradesh",
+            "document_title": "Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025",
+            "document_date": "2025-09-15",
+            "pdf_page": 16,
+            "source": "data/policies/madhya_pradesh/madhya_pradesh_guidelines_2025-09-15.pdf",
+            "official_url": "https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=16",
+            "evidence_id": "madhya_pradesh_guidelines_2025-09-15:p16:x0-1918",
+            "excerpt_start": 0,
+            "excerpt_end": 1918,
+            "excerpt_sha256": "f6ba20f42485c67fbcfa434463aa00b6d910ef1f2c1e5f6ac8d14efe99b32aef",
+            "context_role": "candidate_with_updates",
+            "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+            "text_derivation": "AI-assisted OCR correction or selected table/flow reading; page 1 is an unofficial English translation; pending team review."
+          }
+        ],
+        "points": [
+          {
+            "text": "Small public charging stations receive a capital subsidy of thirty percent of the value of the charging equipment or machinery; the subsidy is capped at INR 1,50,000 per station and is available for the first five hundred small charging stations.",
+            "citations": [
+              {
+                "source_id": "S8",
+                "source_excerpt": "Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025\nCharging station incentives (labelled table reading):\nSmall charging stations: On chargers, capital subsidy of 30% of the value of charging equipment/machinery for the first 500 charging stations, maximum INR 1,50,000.\nMedium charging stations: On chargers, capital subsidy of 30% of the value of charging equipment/machinery for the first 300 stations, maximum INR 3,00,000.\nLarge charging stations: On chargers, capital subsidy of 30% of the value of charging equipment/machinery for the first 200 stations, maximum INR 10,00,000.\nBattery swapping stations: One-time capital subsidy on eligible fixed capital investment for service providers at 30%, for the first 300 swap stations in the State, maximum INR 5,00,000.\n9.3.2 MPPMCL will review all incentive applications submitted by CPOs and BSOs for compliance with policy guidelines.\n9.3.3 New electricity connections with load up to 150 kW shall be provided without physical site inspection or survey by the distribution licensee, under the simplified process.\n9.3.4 CPOs/BSOs must submit an electrical safety Test Report issued by an A class Electrical Contractor registered with the Office of the Chief Electrical Inspector.\n9.3.5 All relevant safety certificates must be uploaded on the portal.\n9.3.6 Site/premises photographs, required documents and certificates may be uploaded on the MP EV Tarang portal with application information.\n9.3.7 PESO safety certification, wherever applicable (especially charging stations within or near fuel retail outlets), must be obtained and uploaded with other mandatory forms and documents.\n9.4 CPOs/BSOs must submit PCS details on the MP EV Tarang portal within 15 days of obtaining an electricity connection from MPPMCL at a specific location. Details include general details, type of connection, load requirement and (continued on next physical page).\n"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Madhya Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 1270,
+          "prompt_tokens": 7345,
+          "total_tokens": 8615,
+          "completion_time": 2.64036445,
+          "prompt_time": 0.614719839,
+          "queue_time": 0.227904533,
+          "total_time": 3.255084289,
+          "completion_tokens_details": {
+            "reasoning_tokens": 1196
+          }
+        },
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      },
+      "ui_outputs": [
+        "### Answer\n\nMadhya Pradesh — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- Small public charging stations receive a capital subsidy of thirty percent of the value of the charging equipment or machinery; the subsidy is capped at INR 1,50,000 per station and is available for the first five hundred small charging stations. [S8](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=16)",
+        "### Sources\n\n- [S8: Madhya Pradesh — Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025, PDF page 16](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=16) — AI-assisted OCR correction or selected table/flow reading; page 1 is an unofficial English translation; pending team review."
+      ]
+    },
+    {
+      "case": "rwa_noc",
+      "question": "What NOC deadline, safety exceptions and written-rejection requirement does section 14 state for resident charging from an RWA common load connection?",
+      "result": {
+        "status": "document_answer",
+        "answer": "Madhya Pradesh — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- RWAs must issue a No‑Objection Certificate within seven working days of receiving a resident’s request. [S6](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=20)\n- The seven‑day deadline does not apply if there are valid safety concerns or any breach of contemporary standards, guidelines, instructions, directives, orders or codes related to installation, operation or maintenance of the charging infrastructure. [S6](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=20)\n- If the RWA denies the NOC, it must provide written reasons for the rejection within the same seven‑day period. [S6](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=20)\n- A NOC is required only when a resident seeks to install a higher‑capacity charging system that draws power from the RWA’s common load; a 15 A socket from the resident’s own meter is exempt. [S5](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=19)\n\nSources:\n\n- [S6: Madhya Pradesh — Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025, PDF page 20](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=20) — AI-assisted OCR correction or selected table/flow reading; page 1 is an unofficial English translation; pending team review.\n- [S5: Madhya Pradesh — Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025, PDF page 19](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=19) — AI-assisted OCR correction or selected table/flow reading; page 1 is an unofficial English translation; pending team review.",
+        "sources": [
+          {
+            "source_id": "S6",
+            "state": "Madhya Pradesh",
+            "document_title": "Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025",
+            "document_date": "2025-09-15",
+            "pdf_page": 20,
+            "source": "data/policies/madhya_pradesh/madhya_pradesh_guidelines_2025-09-15.pdf",
+            "official_url": "https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=20",
+            "evidence_id": "madhya_pradesh_guidelines_2025-09-15:p20:x0-2435",
+            "excerpt_start": 0,
+            "excerpt_end": 2435,
+            "excerpt_sha256": "43897596ac0ac768e771adc0b9a253363436b5cfef30adbbc40993972eb9e680",
+            "context_role": "candidate_with_updates",
+            "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+            "text_derivation": "AI-assisted OCR correction or selected table/flow reading; page 1 is an unofficial English translation; pending team review."
+          },
+          {
+            "source_id": "S5",
+            "state": "Madhya Pradesh",
+            "document_title": "Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025",
+            "document_date": "2025-09-15",
+            "pdf_page": 19,
+            "source": "data/policies/madhya_pradesh/madhya_pradesh_guidelines_2025-09-15.pdf",
+            "official_url": "https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=19",
+            "evidence_id": "madhya_pradesh_guidelines_2025-09-15:p19:x0-2371",
+            "excerpt_start": 0,
+            "excerpt_end": 2371,
+            "excerpt_sha256": "89c9a2ae3e5b6770e3d7d0b66e96511f14ff0eb12c6f89130fecce2dbbf84e39",
+            "context_role": "candidate_with_updates",
+            "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+            "text_derivation": "AI-assisted OCR correction or selected table/flow reading; page 1 is an unofficial English translation; pending team review."
+          }
+        ],
+        "points": [
+          {
+            "text": "RWAs must issue a No‑Objection Certificate within seven working days of receiving a resident’s request.",
+            "citations": [
+              {
+                "source_id": "S6",
+                "source_excerpt": "Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025 \n14.1 _Scope &.Applicability \n.- \n\t\n\t - Covers residents seeking to install EV charging infrastructiire at their dedicated parking \nspaces in existing and new residential complexes. \n14.1.2 Ensures a streamlined No Objection Certificate (NOC) issuance process to facilitate private \nEV charging. \n14.1.3 For .RWAs willing to self-establish charging stations, the guidelines outlined in section 9 & \n10 of this document are to be followed. \n14.2 NOC Issuance Process & Timeline • \n14.2-,1 RWAs must issue an NOC within 7 working days of receiving a request from .a resident. \n14.9.9  The application process should be simple and transparent. [Refer to Annexure 15.] \n14.2.3 NOC is granted within 7 working days, unless there are valid safety concerns or violation \nof any contemporary standards, guidelines, instructions, directives, orders, code etc. \nconcerning installation, operation or maintenance of the charging infrastructure. [Refer to \nAnnexure 16.] \n14.3 Conditions for NOC Approval \n14.3.1 The RWA cannot deny the NOC without a justified safety or retaliatory reason. \n14.3.2 If denied, the RWA must provide written reasons for rejection within the same 7-day period. \n14.4 Compliance & Monitoring \n14.4.1 RWAs must maintain a publicly accessible register of NOCs issued and denied. Residents \ncan escalate delayed or unfairly denied requests through the MP EV Tarang Portal. [Refer \nto Annexure 17.] \n15. CREATING A LAND BANK FOR CHARGING • \nINFRASTRUCTURE \n15.1 Objective & Scope \n15.1.1 The Nodal Department will develop a comprehensive land bank database to facilitate the \ndeployment of EV charging and battery swapping infrastructure across Madhya Pradesh :  \n15.1.2 This initiative will focus primarily on government-owned land parcels sourced from \n_ Municipal Corporations, .government departments and other state entities. All Charging \nInfrastructure installed on government-owned land parcels will preferentially be on a \nPublic-Private Partnership (PPP) model, where the terms and conditions described in the \nconcerned tender documents Will be upheld. \n15.1.3 Additionally, private landowners interested in setting up charging stations can submit their \nland dethils through the MP EV Tarang Portal for consideration. The Nodal department will \nfacilitate connecting private land owners with CP0s/13S0s/Govt. departments for setting \n20,_ T-N\n"
+              }
+            ]
+          },
+          {
+            "text": "The seven‑day deadline does not apply if there are valid safety concerns or any breach of contemporary standards, guidelines, instructions, directives, orders or codes related to installation, operation or maintenance of the charging infrastructure.",
+            "citations": [
+              {
+                "source_id": "S6",
+                "source_excerpt": "Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025 \n14.1 _Scope &.Applicability \n.- \n\t\n\t - Covers residents seeking to install EV charging infrastructiire at their dedicated parking \nspaces in existing and new residential complexes. \n14.1.2 Ensures a streamlined No Objection Certificate (NOC) issuance process to facilitate private \nEV charging. \n14.1.3 For .RWAs willing to self-establish charging stations, the guidelines outlined in section 9 & \n10 of this document are to be followed. \n14.2 NOC Issuance Process & Timeline • \n14.2-,1 RWAs must issue an NOC within 7 working days of receiving a request from .a resident. \n14.9.9  The application process should be simple and transparent. [Refer to Annexure 15.] \n14.2.3 NOC is granted within 7 working days, unless there are valid safety concerns or violation \nof any contemporary standards, guidelines, instructions, directives, orders, code etc. \nconcerning installation, operation or maintenance of the charging infrastructure. [Refer to \nAnnexure 16.] \n14.3 Conditions for NOC Approval \n14.3.1 The RWA cannot deny the NOC without a justified safety or retaliatory reason. \n14.3.2 If denied, the RWA must provide written reasons for rejection within the same 7-day period. \n14.4 Compliance & Monitoring \n14.4.1 RWAs must maintain a publicly accessible register of NOCs issued and denied. Residents \ncan escalate delayed or unfairly denied requests through the MP EV Tarang Portal. [Refer \nto Annexure 17.] \n15. CREATING A LAND BANK FOR CHARGING • \nINFRASTRUCTURE \n15.1 Objective & Scope \n15.1.1 The Nodal Department will develop a comprehensive land bank database to facilitate the \ndeployment of EV charging and battery swapping infrastructure across Madhya Pradesh :  \n15.1.2 This initiative will focus primarily on government-owned land parcels sourced from \n_ Municipal Corporations, .government departments and other state entities. All Charging \nInfrastructure installed on government-owned land parcels will preferentially be on a \nPublic-Private Partnership (PPP) model, where the terms and conditions described in the \nconcerned tender documents Will be upheld. \n15.1.3 Additionally, private landowners interested in setting up charging stations can submit their \nland dethils through the MP EV Tarang Portal for consideration. The Nodal department will \nfacilitate connecting private land owners with CP0s/13S0s/Govt. departments for setting \n20,_ T-N\n"
+              }
+            ]
+          },
+          {
+            "text": "If the RWA denies the NOC, it must provide written reasons for the rejection within the same seven‑day period.",
+            "citations": [
+              {
+                "source_id": "S6",
+                "source_excerpt": "Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025 \n14.1 _Scope &.Applicability \n.- \n\t\n\t - Covers residents seeking to install EV charging infrastructiire at their dedicated parking \nspaces in existing and new residential complexes. \n14.1.2 Ensures a streamlined No Objection Certificate (NOC) issuance process to facilitate private \nEV charging. \n14.1.3 For .RWAs willing to self-establish charging stations, the guidelines outlined in section 9 & \n10 of this document are to be followed. \n14.2 NOC Issuance Process & Timeline • \n14.2-,1 RWAs must issue an NOC within 7 working days of receiving a request from .a resident. \n14.9.9  The application process should be simple and transparent. [Refer to Annexure 15.] \n14.2.3 NOC is granted within 7 working days, unless there are valid safety concerns or violation \nof any contemporary standards, guidelines, instructions, directives, orders, code etc. \nconcerning installation, operation or maintenance of the charging infrastructure. [Refer to \nAnnexure 16.] \n14.3 Conditions for NOC Approval \n14.3.1 The RWA cannot deny the NOC without a justified safety or retaliatory reason. \n14.3.2 If denied, the RWA must provide written reasons for rejection within the same 7-day period. \n14.4 Compliance & Monitoring \n14.4.1 RWAs must maintain a publicly accessible register of NOCs issued and denied. Residents \ncan escalate delayed or unfairly denied requests through the MP EV Tarang Portal. [Refer \nto Annexure 17.] \n15. CREATING A LAND BANK FOR CHARGING • \nINFRASTRUCTURE \n15.1 Objective & Scope \n15.1.1 The Nodal Department will develop a comprehensive land bank database to facilitate the \ndeployment of EV charging and battery swapping infrastructure across Madhya Pradesh :  \n15.1.2 This initiative will focus primarily on government-owned land parcels sourced from \n_ Municipal Corporations, .government departments and other state entities. All Charging \nInfrastructure installed on government-owned land parcels will preferentially be on a \nPublic-Private Partnership (PPP) model, where the terms and conditions described in the \nconcerned tender documents Will be upheld. \n15.1.3 Additionally, private landowners interested in setting up charging stations can submit their \nland dethils through the MP EV Tarang Portal for consideration. The Nodal department will \nfacilitate connecting private land owners with CP0s/13S0s/Govt. departments for setting \n20,_ T-N\n"
+              }
+            ]
+          },
+          {
+            "text": "A NOC is required only when a resident seeks to install a higher‑capacity charging system that draws power from the RWA’s common load; a 15 A socket from the resident’s own meter is exempt.",
+            "citations": [
+              {
+                "source_id": "S5",
+                "source_excerpt": "Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025 \n11.3 Accessibility for People with Reduced Mobility \n11.3.1 All Public Charging Stations / Battery Swapping Stations need to adhere to the space and \nservice standards confirming to .the needs of the •differently abled. persons, such as the \nguideline for Barrier Free Built Environment Guideline by CPWD, National Building Code \nor any other contemporary document issued by the government. \t - \nU.: PROTOCOL FOR SHARING- CHARGING STATION \nDATA WITH UDHD AND MPPMCL \n12.1 CP0s/BSOs must develop an endpoint API to share details of charging and swapping stations, \nensuring seamless integration with the EV Tarang portal. This requirement is mandatory for all \nCPOs operating in the state and the necessary details must be provided within 30 days of the station's \ncommissioning. [Refer to Annexure 14.] \nOTHER INITIATIVES FOR DEVELOPMENT OF \nCHARGING INFRASTRUCTURE \n13.1 Government buildings will set a roadmap to setup charging or swapping stations in all of its parking \nspaces. \n13.9  Existing and new government buildings or offices must install charging stations, ensuring that at \nleast 10% of all parking spots are equipped with EV chargers. \n13.3 Inter-State Bus Terminals (ISBT), bus terminals and bus stops are encouraged to have charging \nstations. \n13.4 Municipal Corporation's Public parking spaces will be mandated to have charging stations. \n13.5 Existing buildings, including malls and other commercial properties, will be incentivized to install \ncharging and battery-swapping stations. \n13.6 All new permits for commercial complexes. housing societies and residential townships with a \nbuilt-up area of 2,000 sq.mt  and above will mandatorily have charging stations. Additionally, at \nleast 10% of all parking spots within these premises will be equiPped with charging stations. \nRWAS TO ISSUE NOCS FOR RESIDENT EV CHARGING \nINFRASTRUCTURE \nResidents do not require a No Objection Certificate (NOC) from the RWA. to install a 15A industrial \nsocket for charging their EV near the parking spot, provided the connection is drawn from the individual \nresident's electricity meter. However, if a higher-capacity charging System is to be installed by drawing \npower from the RWA's common load connection, the following guidelines Shall apply. \n4-  tali \n\".00,AFAri \nti4fi \n4 r\" 71 \t I \n19\n"
+              }
+            ]
+          }
+        ],
+        "jurisdiction": "Madhya Pradesh",
+        "verification_cutoff": "2026-09-23",
+        "current_entitlement_answers_allowed": false,
+        "model": "openai/gpt-oss-120b",
+        "usage": {
+          "completion_tokens": 912,
+          "prompt_tokens": 3655,
+          "total_tokens": 4567,
+          "completion_time": 1.921787896,
+          "prompt_time": 0.252957921,
+          "queue_time": 0.362593886,
+          "total_time": 2.174745817,
+          "completion_tokens_details": {
+            "reasoning_tokens": 726
+          }
+        },
+        "reason": "",
+        "retryable": false,
+        "diagnostics": {}
+      },
+      "ui_outputs": [
+        "### Answer\n\nMadhya Pradesh — source cutoff: 2026-09-23.\n\nPrototype source review is pending; current availability and individual eligibility are not verified.\n\n- RWAs must issue a No‑Objection Certificate within seven working days of receiving a resident’s request. [S6](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=20)\n- The seven‑day deadline does not apply if there are valid safety concerns or any breach of contemporary standards, guidelines, instructions, directives, orders or codes related to installation, operation or maintenance of the charging infrastructure. [S6](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=20)\n- If the RWA denies the NOC, it must provide written reasons for the rejection within the same seven‑day period. [S6](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=20)\n- A NOC is required only when a resident seeks to install a higher‑capacity charging system that draws power from the RWA’s common load; a 15 A socket from the resident’s own meter is exempt. [S5](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=19)",
+        "### Sources\n\n- [S6: Madhya Pradesh — Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025, PDF page 20](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=20) — AI-assisted OCR correction or selected table/flow reading; page 1 is an unofficial English translation; pending team review.\n- [S5: Madhya Pradesh — Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025, PDF page 19](https://www.mpurban.gov.in/Uploaded%20Document/guidelines/Notified_EV_Guideline_MP2025.pdf#page=19) — AI-assisted OCR correction or selected table/flow reading; page 1 is an unofficial English translation; pending team review."
+      ]
+    }
+  ]
+}

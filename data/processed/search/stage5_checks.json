@@ -1,10 +1,10 @@
 {
-  "checked_at_utc": "2026-09-29T09:16:40.081216+00:00",
+  "checked_at_utc": "2026-09-29T16:45:07.718315+00:00",
   "technical_status": "passed",
   "index_spec": {
     "collection": "ev_policy_draft",
-    "corpus_sha256": "4e5e296e7ba8fafee80a580dabe7ca8549d050d86e48577e27cb95762454709b",
-    "chunk_count": 648,
+    "corpus_sha256": "25dd54fe4aa64a12fc30169addec4baf139712b8020cf313dc0c315d3cd76897",
+    "chunk_count": 804,
     "embedding": {
       "model": "nomic-embed-text:latest",
       "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
@@ -20,7 +20,8 @@
       "Delhi": 132,
       "Gujarat": 31,
       "Telangana": 32,
-      "Karnataka": 105
+      "Karnataka": 105,
+      "Madhya Pradesh": 156
     }
   },
   "embedding_dimensions": 768,
@@ -34,7 +35,8 @@
     "data/processed/delhi/chunks.jsonl": "8e058b5223f99d363b3f3c97954221f82ac289cd15561ebefe0ce85bf28432e2",
     "data/processed/gujarat/chunks.jsonl": "7ec283b8c6e9e9d1a509afa2d0a739ece55cfeb780fd88d346730ded6551e89b",
     "data/processed/telangana/chunks.jsonl": "44bca858312ba09c71cce86444f1240fd6d3fd54e431c90ba71b195a36a8d7e5",
-    "data/processed/karnataka/chunks.jsonl": "c6811de6a051b1744c8d00ea1b0fac9f801bff9c45475397fa6b18251a7cd678"
+    "data/processed/karnataka/chunks.jsonl": "c6811de6a051b1744c8d00ea1b0fac9f801bff9c45475397fa6b18251a7cd678",
+    "data/processed/madhya_pradesh/chunks.jsonl": "1ea6f579a3cfcab939343d536305511edfa94b90aa1d5b6a5757dc4f4fe66482"
   },
   "checks_passed": [
     "all_draft_chunks_indexed",
@@ -52,5 +54,5 @@
     "central_pm_edrive_guidelines_2024-09-30:p14:c800:7c105d2e1d8b",
     "central_pm_edrive_guidelines_2024-09-30:p15:c820:23b5c518c221"
   ],
-  "notebook_sha256": "5bd5a1937dd392e78e90b169097251a460e32ea0c8968cb5a71b2a2948d39e45"
+  "notebook_sha256": "66cb4b572fb15220d29643045754633388d59cba9c8c520bf556b88c4e669068"
 }

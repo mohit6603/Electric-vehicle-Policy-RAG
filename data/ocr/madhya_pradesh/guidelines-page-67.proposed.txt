@@ -1,0 +1,7 @@
+ANNEXURE 13: Procedure for future penalties for failure to meet uptime requirements.
+Compliance monitoring timeline:
+Month 1: uptime below 97% — formal warning issued to CPO.
+Month 2: uptime below 97% again — 50% of incentive amount recovered.
+Month 3+: continued non-compliance (uptime below 97%) — remaining 50% incentive recovered.
+Penalty calculation: assuming incentive disbursed is Rs X, after month 2 of non-compliance partial recovery is X times 50%; after month 3 or further non-compliance full recovery of the remaining amount is X times 50%.
+Date: blank form field.

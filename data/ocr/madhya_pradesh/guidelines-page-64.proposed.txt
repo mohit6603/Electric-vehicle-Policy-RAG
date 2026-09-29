@@ -1,0 +1,3 @@
+ANNEXURE 11: Process for availing incentive for public charging station.
+Flow: Submit application on EV Tarang portal; nodal department reviews; physical verification assesses submitted information, safety and accessibility. If discrepancies are found, notify CPO/BSO to update the application. After approval, incentives transfer to the registered bank account.
+Application fields: station type (small LT, medium LT, large HT, or battery swapping); number of chargers; charger capacity in kW; charging standard (CCS2, CHAdeMO, Bharat DC001, others); total charging guns; total EVSE units. The form continues on physical page 65.

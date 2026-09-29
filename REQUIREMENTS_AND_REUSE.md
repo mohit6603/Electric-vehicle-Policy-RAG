@@ -228,3 +228,9 @@ This extends the original course-code reuse map. New code follows the same noteb
 | Acceptance and evaluation | Deferred independent team workflow | No invented reviewers or evaluation cases; all source/current-entitlement flags false |
 
 No new dependency, generation backend or separate app was introduced. AI assistance includes official-source research, visual/table reading, implementation, development questions and output review, documentation and authorized Git publication. These records do not establish current entitlement or replace the team's evaluation.
+
+## Final coverage and remaining acceptance — 29 September 2026
+
+P1–P11 technical paths now cover all eight agreed jurisdictions plus the selected Central scope. MP reuses `load_policy_pages`, the classroom recursive splitter, Stage 5 Chroma and Stage 6–9 retrieval/citations/Gradio; its four `stage10-mp-*` cells add the source packet. The complete index has 804 chunks. `run.py` executes the same notebook definitions, with no separate backend or new dependency.
+
+P12 remains pending independent team-authored questions and source acceptance. `evaluate.py` only supplies freeze/batch code, actual-output logging and empty semantic-grade fields; nine synthetic gate checks are not assignment evaluation results. A7/A8/A10 and final A12 disclosure still require the team-authored exactly-three-slide deck, ZIP/uploads and presentation/rehearsal. Technical implementation does not waive the assignment's AI-use restriction. The final assistance scope includes MP research/OCR reading, implementation, development checks, launcher/evaluation tooling, documentation and publication.

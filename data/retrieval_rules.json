@@ -183,6 +183,10 @@
     ],
     "Karnataka": [
       "karnataka_policy_2025-02-11:p26"
+    ],
+    "Madhya Pradesh": [
+      "madhya_pradesh_policy_2025:p13",
+      "madhya_pradesh_guidelines_2025-09-15:p1"
     ]
   },
   "jurisdiction_notes": {
@@ -193,7 +197,8 @@
     "Delhi": "Final Delhi EV Policy 2026, notified 30 June with effect 1 July 2026, and 2 July operating guidelines. Use year-of-registration bands from date of notification exactly as printed; do not substitute the April draft or 2020 rates. The policy prevails on guideline inconsistency. The purchase application deadline is 30 days from RC generation; Annex XII instead says registration, so flag that wording discrepancy if relevant. The 60-day payment period starts at application submission and is conditional on verification. The car scrapping amount and applicant limit are separate; the Rs 30 lakh ceiling and car tax exception both apply. Model approval/listing, live allocation, portal acceptance and individual eligibility remain unverified; no current entitlement is established. External charging SoPs, tax implementation orders and 2023 aggregator rules are not a complete verified source chain.",
     "Gujarat": "The 2021 policy operated for four years from 1 July 2021; treat purchase/charging provisions as historical, with no renewal established. The separate 17 April 2025 motor vehicle tax table is read with the 30 March 2026 deadline replacement to 31 March 2027; it does not renew the 2021 subsidy. Tax applies to the listed vehicle categories powered exclusively by an electric motor fed exclusively by an installed battery. Tax rates/rebates must come from the matching tax-table row, never from the cash subsidy table. The full 2017 parent tax schedule, later amendments, operational claims, live funds and individual eligibility remain unverified. Policy 8(iv) refers to battery capacity in column (2), but Table 2 places it in (3); preserve the discrepancy and do not invent a corrected legal interpretation. Demand incentive permits central stacking but only one State scheme; charging subsidy has a different exclusion for other Government of India subsidies. Separate GEDA/student schemes and current tariff/industrial incentive schedules are outside this packet. When describing the battery limit, distinguish the maximum subsidised capacity from vehicle eligibility: Table 2/8(iv) does not expressly disqualify a larger battery. Explicitly flag that 8(iv) says column (2) but the battery values are actually in column (3); never repeat the wrong reference as a correct table description. Use past tense for the expired 2021 purchase provisions. The policy period is printed on physical PDF page 3, the purchase table/conditions on page 5 and charging conditions on page 6; cite the page containing each fact.",
     "Telangana": "The booklet is dated only 2020; its 2020-01-01 metadata is a year sorting placeholder, not a notification date. It states ten years from notification. Use the separate 16 November 2024 G.O.41 for road tax and registration fees: 100% exemption for its listed electric categories purchased and registered in Telangana up to 31 December 2026, irrespective of number registered. Old 2020 tax/fee quotas are excluded from answer context. The lifetime bus wording is limited to TSRTC-operated vehicles, with a separate qualification for industry buses used exclusively for own employees and not commercial purposes; do not say all buses receive lifetime exemption. The 2024 tax/fee change does not establish a cash purchase subsidy or remove the distinct retrofit 15%/Rs.15000/first5000 conditions. Charging provisions often encourage facilities; do not treat these as installed stations, compulsory spacing or a rupee tariff. Manufacturing highlights refer to Electronics Policy 2016, whose full terms and subsequent revisions are not collected. Original policy targets are not achieved results. Full later-amendment/Act review, operational status, funds, retrofit quota and individual eligibility remain unverified; no current entitlement is established.",
-    "Karnataka": "Read the 11 February 2025 Clean Mobility Policy for five years from its order or until replaced, with its transition and sanction conditions. The old broad vehicle-tax exemption paragraph is excluded in favour of final Act 29 of 2026, published 10 April (assent 9 April). Its commencement requires a separate notification that is not collected; publication is not a verified effective date. Part A5(a) gives new electric cars/jeeps/omnibuses/private-service vehicles cost slabs <=Rs10 lakh:5%, >Rs10 to <=Rs25 lakh:8%, >Rs25 lakh:10%, each of vehicle cost. Part A8(a) separately covers electric motor cabs with its out-of-State permit exclusion. Age-table percentages are of the clause-A lifetime tax, not of vehicle cost; refunds have different time boundaries. Do not describe a blanket road-tax exemption. GSR525(E) is a common CMVR rule hosted by Karnataka Transport, not a state purchase subsidy: it only exempts rule81 table serial4 fees for issue/renewal of RC and new registration mark, not every fee. Charging and manufacturing incentives are not cash subsidies for buying a private car. Keep general/special categories, zone rates, caps, eligible fixed assets and employment/stacking conditions distinct. Slow chargers have no incentive in the supplied policy; 500/200 station counts are scheme limits, not remaining slots. Industrial stamp duty/registration concessions concern specified documents, not vehicle registration. MSME definitions may change subject to State enabling orders; those orders and full Industrial Policy2025-30 are not collected. Appendix2 prints zone totals199/32/9 but the labelled AI row count is198/33/9; do not silently alter a taluk assignment to reconcile totals. All table proposals, later-instrument completeness, commencement, operational eligibility, funds and current entitlement remain unverified. For tax-table answers, include a separate point stating that commencement is not verified and cite the Act commencement clause on physical page 2. For charging, report the printed capital subsidy percentage without adding a project-cost or station-cost basis that the excerpt does not define."
+    "Karnataka": "Read the 11 February 2025 Clean Mobility Policy for five years from its order or until replaced, with its transition and sanction conditions. The old broad vehicle-tax exemption paragraph is excluded in favour of final Act 29 of 2026, published 10 April (assent 9 April). Its commencement requires a separate notification that is not collected; publication is not a verified effective date. Part A5(a) gives new electric cars/jeeps/omnibuses/private-service vehicles cost slabs <=Rs10 lakh:5%, >Rs10 to <=Rs25 lakh:8%, >Rs25 lakh:10%, each of vehicle cost. Part A8(a) separately covers electric motor cabs with its out-of-State permit exclusion. Age-table percentages are of the clause-A lifetime tax, not of vehicle cost; refunds have different time boundaries. Do not describe a blanket road-tax exemption. GSR525(E) is a common CMVR rule hosted by Karnataka Transport, not a state purchase subsidy: it only exempts rule81 table serial4 fees for issue/renewal of RC and new registration mark, not every fee. Charging and manufacturing incentives are not cash subsidies for buying a private car. Keep general/special categories, zone rates, caps, eligible fixed assets and employment/stacking conditions distinct. Slow chargers have no incentive in the supplied policy; 500/200 station counts are scheme limits, not remaining slots. Industrial stamp duty/registration concessions concern specified documents, not vehicle registration. MSME definitions may change subject to State enabling orders; those orders and full Industrial Policy2025-30 are not collected. Appendix2 prints zone totals199/32/9 but the labelled AI row count is198/33/9; do not silently alter a taluk assignment to reconcile totals. All table proposals, later-instrument completeness, commencement, operational eligibility, funds and current entitlement remain unverified. For tax-table answers, include a separate point stating that commencement is not verified and cite the Act commencement clause on physical page 2. For charging, report the printed capital subsidy percentage without adding a project-cost or station-cost basis that the excerpt does not define.",
+    "Madhya Pradesh": "Final 2025 booklet plus 15 September 2025 operational guidelines. Booklet date metadata is a year-only placeholder; guideline cover references a 27 March 2025 policy notification. Original gazette and separate April 2025 transport-tax notification are not collected. Describe stated first/second-year windows; do not assert present entitlement or verified tax commencement. E-car policy exemption has an ex-factory price ceiling of Rs20 lakh; a guideline table omitting that ceiling does not establish its repeal. All incentives require vehicles purchased and registered in MP. Retrofit amounts are not new-vehicle purchase subsidies; retain first-year, initial MP registration, approved-kit, re-registration and one-time-per-individual conditions. Charging rate is 30% of charging equipment/machinery value; swapping uses eligible fixed capital investment. Annex11 excludes auxiliary equipment, transformers and fire-safety equipment. Station counts are scheme limits, not remaining slots. Follow first-come approval, safety/accessibility and 97% monthly uptime requirements. 112kW LT/HT classification differs from the separate up-to-150kW connection inspection rule. RWA section14 exempts a 15A socket on an individual meter from NOC; common-load higher-capacity installation follows seven WORKING days, with safety/regulatory reasons and written rejection. Annex15 labels seven days; Annex17 escalation form lists delay beyond 30 days: do not merge those into a new NOC deadline. Industrial incentives refer to uncollected IPP2025; no draft manufacturing figures or unverified tariff. Targets are not achieved outcomes. Existing OCR and AI readings, later instruments, funds and current eligibility remain unverified. Detailed engineering tests, charger specification diagram and omitted application/fleet-penalty annexures are outside indexed scope."
   },
   "page_rules": {
     "maharashtra_policy_2025-05-23:p19": {
@@ -1352,6 +1357,548 @@
       "context_role": "dated_registration_fee_rule",
       "version_note": "Central CMVR GSR525(E), Karnataka Transport copy: rule81 serial4 registration fees only. English starts on physical page3; not a road-tax waiver.",
       "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p8": {
+      "page_text_sha256": "9e831cf6b162bb46b66bf955df4053048eefd26f14796244d9447e18431f8125",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p9": {
+      "page_text_sha256": "16d63ab88196ac93ac8f826e981a9a4b1ceb846f0e674d56fdfa40c1800ffd38",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p10": {
+      "page_text_sha256": "40ccd533a3feaef8236179f1fd1a42712043e9fe2153bf3af00eb16475602af2",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p11": {
+      "page_text_sha256": "cea2eb87b6401fcfbbc58e20df4da1f958097c6b08719903f2dc78d8eeb4e1cc",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p12": {
+      "page_text_sha256": "52fb7bbfca05e0cc25b8a2ba71fbd95a714d3f307451df0aa04ef46fdd6d71cc",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p13": {
+      "page_text_sha256": "0a93b5efca799d39826e9002a536c21eb9dd6f1614792a7f350690eb5c94f68a",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p14": {
+      "page_text_sha256": "324b67e284da0eb2d752e5aad70ea01d1cb5714ef2bf7b6dc2b405c4879fa930",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p15": {
+      "page_text_sha256": "2b71d33fc611104de8e98a4bc18d07ecd27267f2258cc06b74123b59592ff4a8",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p16": {
+      "page_text_sha256": "9197256f6b6655d0ec0a70ef6b2a18ed5e553e09c51442a8d58896fa0f540fa8",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p17": {
+      "page_text_sha256": "ac6107ab2f11f1458098871fab85ba749627308f64cd787d77224e0b8f197824",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p18": {
+      "page_text_sha256": "874942287c2ec00b8bdccff4df9320fcfcc4ae2005ee2569b97178974107ff25",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_policy_2025:p20",
+        "madhya_pradesh_policy_2025:p25",
+        "madhya_pradesh_guidelines_2025-09-15:p8",
+        "madhya_pradesh_guidelines_2025-09-15:p9",
+        "madhya_pradesh_guidelines_2025-09-15:p10",
+        "madhya_pradesh_guidelines_2025-09-15:p11",
+        "madhya_pradesh_guidelines_2025-09-15:p12"
+      ]
+    },
+    "madhya_pradesh_policy_2025:p19": {
+      "page_text_sha256": "715726019d2fae4d9e14e2a561985eb290e0a8dceae8715cfafa2935b8d9973d",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_policy_2025:p20",
+        "madhya_pradesh_policy_2025:p25",
+        "madhya_pradesh_guidelines_2025-09-15:p8",
+        "madhya_pradesh_guidelines_2025-09-15:p9",
+        "madhya_pradesh_guidelines_2025-09-15:p10",
+        "madhya_pradesh_guidelines_2025-09-15:p11",
+        "madhya_pradesh_guidelines_2025-09-15:p12"
+      ]
+    },
+    "madhya_pradesh_policy_2025:p20": {
+      "page_text_sha256": "3e7dda4dcaa176ee77d269a7d9ddea05935cd95a90d2acb3b7febffbd63659c6",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_policy_2025:p25",
+        "madhya_pradesh_guidelines_2025-09-15:p8",
+        "madhya_pradesh_guidelines_2025-09-15:p9",
+        "madhya_pradesh_guidelines_2025-09-15:p10",
+        "madhya_pradesh_guidelines_2025-09-15:p11",
+        "madhya_pradesh_guidelines_2025-09-15:p12"
+      ]
+    },
+    "madhya_pradesh_policy_2025:p21": {
+      "page_text_sha256": "baf4521d44d157d6d459d5741dc63b414a1a23fb0723e0be1f558d057f38ba3c",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_policy_2025:p20",
+        "madhya_pradesh_policy_2025:p25",
+        "madhya_pradesh_guidelines_2025-09-15:p8",
+        "madhya_pradesh_guidelines_2025-09-15:p9",
+        "madhya_pradesh_guidelines_2025-09-15:p10",
+        "madhya_pradesh_guidelines_2025-09-15:p11",
+        "madhya_pradesh_guidelines_2025-09-15:p12"
+      ]
+    },
+    "madhya_pradesh_policy_2025:p22": {
+      "page_text_sha256": "30807fa778be6d5b70580eb5dee2669e68196181b9b56a3a9fd1c9fecf0f58ee",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_policy_2025:p20",
+        "madhya_pradesh_policy_2025:p25",
+        "madhya_pradesh_guidelines_2025-09-15:p8",
+        "madhya_pradesh_guidelines_2025-09-15:p9",
+        "madhya_pradesh_guidelines_2025-09-15:p10",
+        "madhya_pradesh_guidelines_2025-09-15:p11",
+        "madhya_pradesh_guidelines_2025-09-15:p12"
+      ]
+    },
+    "madhya_pradesh_policy_2025:p23": {
+      "page_text_sha256": "63849a725d020396de90a2e39440554cbb4c97676e6197ac11a4987773cc843f",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_policy_2025:p20",
+        "madhya_pradesh_policy_2025:p25",
+        "madhya_pradesh_guidelines_2025-09-15:p8",
+        "madhya_pradesh_guidelines_2025-09-15:p9",
+        "madhya_pradesh_guidelines_2025-09-15:p10",
+        "madhya_pradesh_guidelines_2025-09-15:p11",
+        "madhya_pradesh_guidelines_2025-09-15:p12"
+      ]
+    },
+    "madhya_pradesh_policy_2025:p24": {
+      "page_text_sha256": "f547976c8ba5af88542b5e4d7cd0f0889f9e0efd4e5b3ea8b2e4e1925050380f",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_policy_2025:p20",
+        "madhya_pradesh_policy_2025:p25",
+        "madhya_pradesh_guidelines_2025-09-15:p8",
+        "madhya_pradesh_guidelines_2025-09-15:p9",
+        "madhya_pradesh_guidelines_2025-09-15:p10",
+        "madhya_pradesh_guidelines_2025-09-15:p11",
+        "madhya_pradesh_guidelines_2025-09-15:p12"
+      ]
+    },
+    "madhya_pradesh_policy_2025:p25": {
+      "page_text_sha256": "ff4da584fba35acaafac3f6305954964b1003af4ff733261a2a86b2c961176c7",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_policy_2025:p20",
+        "madhya_pradesh_guidelines_2025-09-15:p8",
+        "madhya_pradesh_guidelines_2025-09-15:p9",
+        "madhya_pradesh_guidelines_2025-09-15:p10",
+        "madhya_pradesh_guidelines_2025-09-15:p11",
+        "madhya_pradesh_guidelines_2025-09-15:p12"
+      ]
+    },
+    "madhya_pradesh_policy_2025:p26": {
+      "page_text_sha256": "15469e9376ed86b706c6aaa38434720f4b6d704a6e6cae9fb8ff566005faa991",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p13",
+        "madhya_pradesh_guidelines_2025-09-15:p14",
+        "madhya_pradesh_guidelines_2025-09-15:p16",
+        "madhya_pradesh_guidelines_2025-09-15:p17",
+        "madhya_pradesh_guidelines_2025-09-15:p65"
+      ]
+    },
+    "madhya_pradesh_policy_2025:p27": {
+      "page_text_sha256": "27339471d6da711f0f3aaf43522abf963226f9263652aa91de2f81f9a61af858",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p19",
+        "madhya_pradesh_guidelines_2025-09-15:p20",
+        "madhya_pradesh_guidelines_2025-09-15:p70",
+        "madhya_pradesh_guidelines_2025-09-15:p72"
+      ]
+    },
+    "madhya_pradesh_policy_2025:p28": {
+      "page_text_sha256": "8a27467a4914a9d7ace3bc4da4c2a9d0de1ff2592734957ff7c5da0d70c97e4d",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p13",
+        "madhya_pradesh_guidelines_2025-09-15:p14",
+        "madhya_pradesh_guidelines_2025-09-15:p16",
+        "madhya_pradesh_guidelines_2025-09-15:p17",
+        "madhya_pradesh_guidelines_2025-09-15:p65"
+      ]
+    },
+    "madhya_pradesh_policy_2025:p29": {
+      "page_text_sha256": "8f6d7e561715a3673ff6e099b34744ce0195c0f47ab235637af5f635feec7aa0",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p30": {
+      "page_text_sha256": "db8fddbc4190b55e4a07bd917253bb1554169c93d9b8c0b61f864bab378f4412",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p31": {
+      "page_text_sha256": "db32bb3fc5dbee5ba7b3eea16d9b623940efb3b153854050b90c82b7cbe57625",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p32": {
+      "page_text_sha256": "b47a8f1b9273103812b87a5a5e7f80c62be747f5f38ef79847017c53b20804d5",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p33": {
+      "page_text_sha256": "3c7013116cc985a463e9da2195358ba193174f5470a4e1b1aecc834368b86956",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p34": {
+      "page_text_sha256": "c2a51a979ef16b0ca0f39a50edda070fe65d5c36748e513e17f2fee6d15a98be",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p35": {
+      "page_text_sha256": "c0759b7ab8a3f23ad1cc7f64fe5469c0f01b9cc5de6d7ab7cd87fe8247f4437d",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_policy_2025:p36": {
+      "page_text_sha256": "0a18cd07412ae95463905aca3bfec916a1596611dc383284d282fc307511fd66",
+      "context_role": "candidate_with_updates",
+      "version_note": "Final policy booklet; read with notified guidelines and unresolved transport-tax/operational status. No current entitlement established.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p1": {
+      "page_text_sha256": "c5304690c02563bafee907cf5a2afdd1074d31cd7697fb4066c9611f827e1c37",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p5": {
+      "page_text_sha256": "f37560d97fdd20389c8e6ca5c32241c023d91f5404daf9cce979e01831c3b99d",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p6": {
+      "page_text_sha256": "09a2d1a37703191dd490774d01db6e680d86b94eb8cfb41e36b381a117538750",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p7": {
+      "page_text_sha256": "da8c8abfa3c6e97fcf18a30f0166f125588b10e66df35928b919087cfa45f58f",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p8": {
+      "page_text_sha256": "8e2291a4d6b228ed5168e015c3b1bc419a4ea1437ff59e81f979a9f602ef576e",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_policy_2025:p20",
+        "madhya_pradesh_policy_2025:p25"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p9": {
+      "page_text_sha256": "9128d2b58b5ac00dd19caeb54967cc9f6855340c55603d5581f207a4d93c036b",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_policy_2025:p20",
+        "madhya_pradesh_policy_2025:p25"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p10": {
+      "page_text_sha256": "c5da5a18654cd90be907ec6ec31f9db4f16a4bd25e2848531ee6cce77675c99f",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_policy_2025:p25",
+        "madhya_pradesh_guidelines_2025-09-15:p11",
+        "madhya_pradesh_guidelines_2025-09-15:p12"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p11": {
+      "page_text_sha256": "3123cacf4cc4619ae878af3ef8bc7174d4c79d76ba681714146f0d78aa4e4d6c",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_policy_2025:p25",
+        "madhya_pradesh_guidelines_2025-09-15:p10",
+        "madhya_pradesh_guidelines_2025-09-15:p12"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p12": {
+      "page_text_sha256": "708e3d34ae64c2e4523d13b635296bf1aea3970fa1c282ba60ee8be889e52683",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_policy_2025:p25",
+        "madhya_pradesh_guidelines_2025-09-15:p10",
+        "madhya_pradesh_guidelines_2025-09-15:p11"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p13": {
+      "page_text_sha256": "fbfbebd052669be75acbbcdea2e422600168e465a1c04eeebdf7922d03b9fbae",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p14"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p14": {
+      "page_text_sha256": "cae19fdb11b9c5c786ae6a9659c7173ea590af69156885735c761016ea4ea531",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p13"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p16": {
+      "page_text_sha256": "f6ba20f42485c67fbcfa434463aa00b6d910ef1f2c1e5f6ac8d14efe99b32aef",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p17",
+        "madhya_pradesh_guidelines_2025-09-15:p65",
+        "madhya_pradesh_guidelines_2025-09-15:p66",
+        "madhya_pradesh_guidelines_2025-09-15:p67"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p17": {
+      "page_text_sha256": "d2a3203b32c96a244710e36fe78fe37c343b515b41ec915ae912977f8d83d108",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p16",
+        "madhya_pradesh_guidelines_2025-09-15:p65",
+        "madhya_pradesh_guidelines_2025-09-15:p66",
+        "madhya_pradesh_guidelines_2025-09-15:p67"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p18": {
+      "page_text_sha256": "751d23ae9a5d5c4e2616b581db5bf0ccc8299f1851665adbeba3c869031accc8",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p19": {
+      "page_text_sha256": "89c9a2ae3e5b6770e3d7d0b66e96511f14ff0eb12c6f89130fecce2dbbf84e39",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p20",
+        "madhya_pradesh_guidelines_2025-09-15:p70",
+        "madhya_pradesh_guidelines_2025-09-15:p72"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p20": {
+      "page_text_sha256": "43897596ac0ac768e771adc0b9a253363436b5cfef30adbbc40993972eb9e680",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p19",
+        "madhya_pradesh_guidelines_2025-09-15:p70",
+        "madhya_pradesh_guidelines_2025-09-15:p72"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p21": {
+      "page_text_sha256": "bce3267ba89bdb55845d5c2c1b206a3c388aa556140097d2c38635fa222d4b79",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p22": {
+      "page_text_sha256": "9f3545d9be1055f96e8ffa01bfc4ed928baafa52f47c65344daedc0446e0ab31",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p23": {
+      "page_text_sha256": "2042d4dd90ea4437a99d914e21c412dfb593b875432a7686834e20f4c20895f3",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p24": {
+      "page_text_sha256": "f7770af87703d750d848c45aaaef9aa412cb8ed122363eb456f3c6902fcd8d7d",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p25": {
+      "page_text_sha256": "9f853adec7d5ba98a7b844c1168cdf8450b3cbff63d9eb5adff6f923fcecc3bf",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p26": {
+      "page_text_sha256": "c77fcd8e76a2e78d202d2e5c9fb7d7612d4ec7dfedb8245e3944b9dab304e1a9",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p27": {
+      "page_text_sha256": "c3c8dab45eebac442a74d2307a8a72302996b3feb9e5729512c68c41516f59ca",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p28": {
+      "page_text_sha256": "114c212af182f68696c70b1de09f828614c5bfa1ee7ff967113657fc7fa9a144",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": []
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p64": {
+      "page_text_sha256": "6d0e607205879cd9fefcf1e83fc4f2824ed84a4c8b366a9e230c9e981b80db2b",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p16",
+        "madhya_pradesh_guidelines_2025-09-15:p17",
+        "madhya_pradesh_guidelines_2025-09-15:p65",
+        "madhya_pradesh_guidelines_2025-09-15:p66",
+        "madhya_pradesh_guidelines_2025-09-15:p67"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p65": {
+      "page_text_sha256": "fe11ab58be0e43bf8cc1731283c761934ee009e8698474d6d026d6ee546de092",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p16",
+        "madhya_pradesh_guidelines_2025-09-15:p17",
+        "madhya_pradesh_guidelines_2025-09-15:p66",
+        "madhya_pradesh_guidelines_2025-09-15:p67"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p66": {
+      "page_text_sha256": "a963d8e0fe424078bff25089f28499505d4ae15e28aa18f150ff976e3b5de584",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p16",
+        "madhya_pradesh_guidelines_2025-09-15:p17",
+        "madhya_pradesh_guidelines_2025-09-15:p65",
+        "madhya_pradesh_guidelines_2025-09-15:p67"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p67": {
+      "page_text_sha256": "0dc6828c1869a9b31714ba4c5f62ec7b81b754679da3c8100fb264fbf1d3b378",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p16",
+        "madhya_pradesh_guidelines_2025-09-15:p17",
+        "madhya_pradesh_guidelines_2025-09-15:p65",
+        "madhya_pradesh_guidelines_2025-09-15:p66"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p70": {
+      "page_text_sha256": "133876717f5058bb148ae96d5b2ec695a1ce800f15ea044ca1a28da177196740",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p19",
+        "madhya_pradesh_guidelines_2025-09-15:p20",
+        "madhya_pradesh_guidelines_2025-09-15:p72"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p71": {
+      "page_text_sha256": "fe6c44327a8b4dd2c183063e194d7e21e4d6d061c67b3c9668d8b0967c84c031",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p19",
+        "madhya_pradesh_guidelines_2025-09-15:p20",
+        "madhya_pradesh_guidelines_2025-09-15:p70",
+        "madhya_pradesh_guidelines_2025-09-15:p72"
+      ]
+    },
+    "madhya_pradesh_guidelines_2025-09-15:p72": {
+      "page_text_sha256": "b8958345ac12f0d9c4d42f8638abb4da05413de6c77b620bdc7f21279bdaa187",
+      "context_role": "candidate_with_updates",
+      "version_note": "Notified September 2025 operational guidelines; existing OCR and selected AI readings pending team review.",
+      "exclude_spans": [],
+      "required_page_ids": [
+        "madhya_pradesh_guidelines_2025-09-15:p19",
+        "madhya_pradesh_guidelines_2025-09-15:p20",
+        "madhya_pradesh_guidelines_2025-09-15:p70"
+      ]
     }
   }
 }

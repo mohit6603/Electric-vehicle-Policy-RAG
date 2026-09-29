@@ -2,15 +2,23 @@
 
 ## Current stage and next step
 
-**Stage 10 — Karnataka technically complete.** Three official PDFs now work through ingestion, retrieval, citations and Gradio. See [the Karnataka handoff](STAGE_10_KARNATAKA_HANDOFF.md).
+**Stage 10 — all eight jurisdictions technically complete.** Madhya Pradesh closes coverage; the index contains 804 chunks and Gradio lists nine choices including Central. See [MP handoff](STAGE_10_MP_HANDOFF.md) and [project finish checkpoint](PROJECT_FINISH.md).
 
-**Next: Stage 10 — Madhya Pradesh, not started.** Continue one jurisdiction per session; complete deferred independent review before formal evaluation.
+**Active stage: Stage 11 preparation — awaiting consolidated team review and independent expected answers.** The user requested finishing the project quickly. The technical prototype is complete; manual acceptance remains deferred, so formal evaluation is not run or fabricated. `evaluate.py` and 24 empty case slots are prepared. `run.py` launches the existing notebook implementation directly.
 
-**Latest authorization:** the user requested completion of Karnataka and continuation from the saved checkpoint after a usage interruption. Technical implementation, checks and Git publication follow the authorized workflow. Team source/prompt review and independent questions remain deferred; AI-use disclosure still applies.
+Remaining order: actual team source/OCR/prompt acceptance and case authorship; freeze/run/grade evaluation batches; final reproducibility and fixes; team-authored three-slide deck; rehearsal and submission ZIP. The three-slide presentation, human evaluation content and Digiicampus uploads remain outstanding. The assignment's code-helper-only rule and disclosure requirement remain unchanged.
 
-All source acceptance/current-entitlement flags remain false. The agreed cutoff remains 23 September 2026. Source collection after that date does not certify amendment completeness, remaining funding or current eligibility at the cutoff.
+All source acceptance/current-entitlement flags remain false. The cutoff is still 23 September 2026; later source collection does not certify current benefits. No independent reviewer/date, accuracy metric or submission has been invented.
 
-Deferred review batch: compare prepared text with original PDFs; check applicable document chains/status gaps; record actual reviewers/dates; independently author and verify the 24 evaluation cases; freeze expected answers before formal evaluation. Do not invent reviewer results or count development prompts as team evaluation.
+## Stage 10 Madhya Pradesh technical closeout — 29 September 2026
+
+Added two official PDFs, 60 selected pages and 156 chunks using the existing ingestion/index/retrieval/UI paths. Sixteen labelled OCR/table/flow proposals retain original hashes; four booklet table pages use layout extraction. The draft-for-comments PDF is excluded. Mandatory evidence links retain the policy period, vehicle conditions, charging approval/cost/uptime provisions and RWA exceptions. Original gazette/transport tax instruments, later amendments and operational/current-status checks remain open in the source review.
+
+15 ingestion, 10 integration, 13 combined integration/live and six fresh-kernel checks passed. Both actual Gradio/Groq answers retained requested charging and RWA facts with supporting PDF-page citations; a rejected comparison cleared prior sources. All 60 page seeds fit the 50,000-character context limit. Earlier sixteen corpus JSONLs remain byte-identical. Existing suites passed: 16 persistence, 19 retrieval, 14 citation, 50 failure, 15 UI, 10 UP, nine Delhi, 11 Gujarat, 10 Telangana and 11 Karnataka checks. Stage 5/6 notebook checks passed eight each and Stage 8 example guards passed. The initial OCR typo caught during ingestion was corrected against the original before indexing; stopped Ollama was started for the rebuild.
+
+The CLI launcher reuses exact notebook cells and reopens 804 records without a corpus rebuild or Groq call. The evaluation runner freezes input/version hashes, records resumable batches and leaves semantic grades to the team. Nine synthetic-schema gate checks passed; the actual empty team template correctly refused freezing before review, with zero formal evaluation calls. These fixtures are not policy evaluation cases.
+
+AI assistance includes research, selected visual/OCR readings, code, development questions/output review, technical checks, documentation, launch/evaluation tooling and Git publication. Git uses the authorized human identity without LLM coauthor trailers. The actual assistance still belongs in the assignment appendix.
 
 ## Stage 10 Karnataka technical closeout — 29 September 2026
 

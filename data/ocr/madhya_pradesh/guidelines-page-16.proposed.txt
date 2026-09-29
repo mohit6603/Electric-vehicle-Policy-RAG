@@ -1,0 +1,13 @@
+Madhya Pradesh Electric Vehicle Policy Operational Guidelines 2025
+Charging station incentives (labelled table reading):
+Small charging stations: On chargers, capital subsidy of 30% of the value of charging equipment/machinery for the first 500 charging stations, maximum INR 1,50,000.
+Medium charging stations: On chargers, capital subsidy of 30% of the value of charging equipment/machinery for the first 300 stations, maximum INR 3,00,000.
+Large charging stations: On chargers, capital subsidy of 30% of the value of charging equipment/machinery for the first 200 stations, maximum INR 10,00,000.
+Battery swapping stations: One-time capital subsidy on eligible fixed capital investment for service providers at 30%, for the first 300 swap stations in the State, maximum INR 5,00,000.
+9.3.2 MPPMCL will review all incentive applications submitted by CPOs and BSOs for compliance with policy guidelines.
+9.3.3 New electricity connections with load up to 150 kW shall be provided without physical site inspection or survey by the distribution licensee, under the simplified process.
+9.3.4 CPOs/BSOs must submit an electrical safety Test Report issued by an A class Electrical Contractor registered with the Office of the Chief Electrical Inspector.
+9.3.5 All relevant safety certificates must be uploaded on the portal.
+9.3.6 Site/premises photographs, required documents and certificates may be uploaded on the MP EV Tarang portal with application information.
+9.3.7 PESO safety certification, wherever applicable (especially charging stations within or near fuel retail outlets), must be obtained and uploaded with other mandatory forms and documents.
+9.4 CPOs/BSOs must submit PCS details on the MP EV Tarang portal within 15 days of obtaining an electricity connection from MPPMCL at a specific location. Details include general details, type of connection, load requirement and (continued on next physical page).

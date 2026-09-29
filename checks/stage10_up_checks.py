@@ -78,7 +78,7 @@ def run_checks(live=False, case=None):
     for selection, question, status in [
         ('UP', 'Tamil Nadu purchase subsidy?', 'clarification_required'),
         ('UP', 'Compare UP and Maharashtra incentives', 'clarification_required'),
-        ('Madhya Pradesh', 'Electric car subsidy?', 'unsupported_jurisdiction'),
+        ('Kerala', 'Electric car subsidy?', 'unsupported_jurisdiction'),
         ('UP', '', 'clarification_required'),
         ('UP', 'Can I claim an EV subsidy today?', 'not_established'),
     ]:

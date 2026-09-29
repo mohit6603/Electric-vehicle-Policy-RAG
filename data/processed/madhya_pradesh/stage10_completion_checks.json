@@ -1,0 +1,43 @@
+{
+  "checked_at_utc": "2026-09-29T16:50:36.172737+00:00",
+  "technical_status": "passed",
+  "checks_passed": [
+    "only_expected_notebook_cells_changed",
+    "notebook_ids_unique_outputs_empty",
+    "all_ingestion_receipts_refreshed",
+    "sixteen_earlier_corpus_jsonls_byte_identical",
+    "nine_choices_and_all_pdf_hashes_match",
+    "no_false_acceptance_or_entitlement_flags",
+    "proposal_raw_hashes_and_pending_review_match",
+    "no_keys_local_index_or_scratch_in_publication",
+    "new_python_files_compile",
+    "formal_cases_remain_empty_no_invented_evaluation"
+  ],
+  "notebook_sha256": "66cb4b572fb15220d29643045754633388d59cba9c8c520bf556b88c4e669068",
+  "changed_prior_cells": [
+    "shared-loader",
+    "stage5-imports",
+    "stage6-checks",
+    "stage8-example",
+    "stage9-interface"
+  ],
+  "earlier_corpus_hashes": {
+    "data/processed/uttar_pradesh/chunks.jsonl": "e33f0290b57a2f3287e58495d3875c8ecefe7804b7d7df258c45a122e9fe6953",
+    "data/processed/uttar_pradesh/pages.jsonl": "c5680fe9564ea550e6ccd523ee42fae79cd07ac15b6cc61171bc1b165a33a31c",
+    "data/processed/telangana/chunks.jsonl": "44bca858312ba09c71cce86444f1240fd6d3fd54e431c90ba71b195a36a8d7e5",
+    "data/processed/telangana/pages.jsonl": "8a81dfc9cd60e3014aac56b2f6fd9099a76394eb7cd9224e7875477d337f4bbc",
+    "data/processed/gujarat/chunks.jsonl": "7ec283b8c6e9e9d1a509afa2d0a739ece55cfeb780fd88d346730ded6551e89b",
+    "data/processed/gujarat/pages.jsonl": "405624b284a7674110ca3db1ab40d1896b55d1360f19c92f462ff5dbbf2747d3",
+    "data/processed/delhi/chunks.jsonl": "8e058b5223f99d363b3f3c97954221f82ac289cd15561ebefe0ce85bf28432e2",
+    "data/processed/delhi/pages.jsonl": "b319c6360611b8fa715f7d4fe7f486b9e7bc764a934a7f4c327d8ac5f43fa3af",
+    "data/processed/tamil_nadu/chunks.jsonl": "8d1708d8766411a2c5e19e600cd5933dd2abd09a8a2b9a5b44fa8ffcbd930a63",
+    "data/processed/tamil_nadu/pages.jsonl": "e705b5060ecddcdf3e6f5fd65845b8809b57b12f053be85c519cd2ac2a536ebe",
+    "data/processed/karnataka/chunks.jsonl": "c6811de6a051b1744c8d00ea1b0fac9f801bff9c45475397fa6b18251a7cd678",
+    "data/processed/karnataka/pages.jsonl": "c0b02143318962082e0b3e87d442448e390372eb950e11de7e3abfc71f723ee9",
+    "data/processed/maharashtra/chunks.jsonl": "e21b464fee56a0d98006577a308b5edb5c4374428d097838139496741595a9e9",
+    "data/processed/maharashtra/pages.jsonl": "1c89f5effb8f904b7408dbb89d919b21d1693d25c50c8373f72bff88f66a2490",
+    "data/processed/central/chunks.jsonl": "d7fb95e1c89dd21079257b1e0f1086c389488d6488ad121f6c22cbc00fc49374",
+    "data/processed/central/pages.jsonl": "8a0118d845ee2d800303025cff41327e895998427e78c1d81caf19f6c0bcf34a"
+  },
+  "scope": "Technical completion checks; deferred team acceptance and formal evaluation remain pending."
+}

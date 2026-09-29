@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-09-29T09:16:05.778976+00:00",
+  "checked_at_utc": "2026-09-29T16:50:35.390575+00:00",
   "technical_status": "passed",
   "team_acceptance": "deferred_not_verified",
   "current_benefit_availability": "not_verified",
@@ -33,7 +33,7 @@
     "pages.jsonl": "8a81dfc9cd60e3014aac56b2f6fd9099a76394eb7cd9224e7875477d337f4bbc",
     "chunks.jsonl": "44bca858312ba09c71cce86444f1240fd6d3fd54e431c90ba71b195a36a8d7e5"
   },
-  "notebook_sha256": "5bd5a1937dd392e78e90b169097251a460e32ea0c8968cb5a71b2a2948d39e45",
-  "source_manifest_sha256": "edb25d1d51e9d56a4047bc6569ffc93890ac7b3dabde55e909e08f871ed0669e",
+  "notebook_sha256": "66cb4b572fb15220d29643045754633388d59cba9c8c520bf556b88c4e669068",
+  "source_manifest_sha256": "914260d5c4c942ee0db5908a5e0aacb1be38cc61922e3930b64086335706e179",
   "ocr_review_sha256": "e2730c92d6e4e775cd327f30fe7031107344768890938cec02af6f0f30d75d4c"
 }
