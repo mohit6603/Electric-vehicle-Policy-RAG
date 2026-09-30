@@ -1,142 +1,70 @@
 # EV Policy Assistant
 
-Ask a question about an EV policy and get an answer with the original document and page number. The app uses government PDFs, searches within the selected jurisdiction and shows the evidence beside the answer.
+Ask about an EV policy and get an answer with the original document and page number. The app searches government PDFs for one selected jurisdiction at a time.
 
-**Working prototype; source review and formal evaluation are pending.** It covers Maharashtra, Tamil Nadu, Uttar Pradesh, Delhi (NCT), Gujarat, Telangana, Karnataka and Madhya Pradesh, plus the Central PM E-DRIVE two-/three-wheeler pilot. Ask about one jurisdiction at a time; comparisons and combined Central-plus-state answers are outside this version.
+Coverage includes Maharashtra, Tamil Nadu, Uttar Pradesh, Delhi, Gujarat, Telangana, Karnataka, Madhya Pradesh and Central PM E-DRIVE buyer incentives. The dataset contains **34 PDFs and 804 text chunks**.
 
-The dataset has **34 PDFs, 308 selected pages and 804 chunks**. The source-verification target is **23 September 2026**, but current benefits and personal eligibility have not been verified. The app states this limitation and refuses current-entitlement claims.
+## Tech stack
 
-## Run locally
+Python 3.12, LangChain, Chroma, Ollama (`nomic-embed-text`), Groq (`openai/gpt-oss-120b`) and Gradio.
 
-Install [uv](https://docs.astral.sh/uv/) and [Ollama](https://ollama.com/). Keep Ollama running; if needed, run `ollama serve` in another terminal. For a fresh checkout, use the commands below. If you already have the project, skip the first two lines and work from its folder.
+## Setup
+
+Install [uv](https://docs.astral.sh/uv/) and [Ollama](https://ollama.com/). Keep Ollama running, then run:
 
 ```sh
 git clone https://github.com/mohit6603/Electric-vehicle-Policy-RAG.git
 cd Electric-vehicle-Policy-RAG
-uv sync --locked
+uv sync
 ollama pull nomic-embed-text
+cp .env.example .env
 ```
 
-On first setup, copy `.env.example` to `.env` and add your key:
+Add your Groq API key to `.env`:
 
 ```dotenv
-GROQ_API_KEY=your_groq_api_key
+GROQ_API_KEY=your_key_here
 ```
 
-Keep `.env` private. It is excluded from Git, along with `.venv`, temporary files and the local index. Questions and retrieved policy excerpts are sent to Groq; embeddings run locally.
-
-Build the index once, then start the app:
+Build the index once and start the app:
 
 ```sh
-uv run --locked python run.py --build-index
-uv run --locked python run.py
+uv run python run.py --build-index
+uv run python run.py
 ```
 
-Open **http://127.0.0.1:7860**. For later runs, use only the second command. Normal startup reuses the saved index. Rebuild explicitly after changing the corpus or embedding model. Stop with `Ctrl+C`; use `--port 7861` if port 7860 is busy.
+Open **http://127.0.0.1:7860**. For later runs, use only `uv run python run.py`. Rebuild the index after changing source data or the embedding model. Keep `.env` private. Questions and retrieved excerpts are sent to Groq; embeddings run locally.
 
-`uv run --locked python run.py --check` checks startup without calling Groq. A missing index needs a build; a missing key needs `.env`; connection errors usually mean Ollama is stopped. Wait before retrying a Groq rate-limit error.
+## Project files
 
-## How it works
-
-**PDFs → page text and metadata → chunks → local embeddings → saved Chroma index → jurisdiction-filtered search → Groq answer → page citations in Gradio.**
-
-The stack is Python 3.12, LangChain, Chroma, Ollama `nomic-embed-text`, Groq `openai/gpt-oss-120b` and Gradio. Dependencies are pinned in [pyproject.toml](pyproject.toml) and [uv.lock](uv.lock).
-
-| File or folder | Purpose |
-|---|---|
-| [EV Policy Assistant.ipynb](EV%20Policy%20Assistant.ipynb) | Main implementation, organised by stage |
-| [run.py](run.py) | Launches the notebook's implementation; also checks or rebuilds the index |
-| [data/policies](data/policies) | Original government PDFs |
-| [data/source_manifest.json](data/source_manifest.json) | Source URLs, dates, hashes, page selections and review status |
-| [data/ocr](data/ocr) | Raw text, AI-assisted readings and page review records |
-| [data/processed](data/processed) | Page/chunk JSONL files and stage results |
-| [data/retrieval_rules.json](data/retrieval_rules.json) | Amendment links, exclusions and evidence rules |
-| [checks](checks) / [evaluation](evaluation) | Development checks / independent team evaluation |
+* [EV Policy Assistant.ipynb](EV%20Policy%20Assistant.ipynb): main implementation.
+* [run.py](run.py): app launcher and index builder.
+* [data](data): original PDFs, source records, OCR text and processed chunks.
+* [checks](checks): development checks and saved results.
+* [evaluation](evaluation): case template used by [evaluate.py](evaluate.py).
 
 ## Stage progress
 
-“Done” means the technical checks passed. Source review and independent evaluation remain separate steps.
-
-| Stage | Work and result | Status / depends on |
-|---|---|---|
-| S | Collect original sources, dates, amendments and OCR where needed | Preparation done; team acceptance pending before 11 |
-| 1 | Set up Python, dependencies, Ollama and Groq | Done |
-| 2 | Ingest Maharashtra and preserve tables, conditions and page metadata | Done; 1 + source preparation |
-| 3 | Ingest Tamil Nadu through the shared loader | Done; 2 |
-| 4 | Select and ingest Central PM E-DRIVE buyer-incentive documents | Done; 2 |
-| 5 | Build, save and reopen semantic search without duplicate chunks | Done; 3–4 |
-| 6 | Filter by jurisdiction and include required amendments | Done; 5 |
-| 7 | Generate supported answers with document/page citations | Done; 6 |
-| 8 | Handle unsupported questions, unclear inputs and service failures | Done; 7 |
-| 9 | Add the Gradio picker, question box, answers and sources | Done; 8 |
-| 10 | Add UP, Delhi, Gujarat, Telangana, Karnataka and MP individually | All six done; 9 + each source packet |
-| 11 | Complete team review, write/freeze 24 cases and run batch 1 | **Next**; 10 + actual team inputs |
-| 12 | Run batch 2, grade results and fix observed failures | Pending; 11 |
-| 13 | Reproduce setup and verify repository access | Setup checked; final validation follows 12 |
-
-For notebook work, open `uv run --locked jupyter lab "EV Policy Assistant.ipynb"`. Run **Shared page loader**, then the chosen Stage 2, 3, 4 or 10 ingestion section in order. These sections do not need Groq or Ollama; saved OCR text is already included. They replace derived page/chunk files and stage receipts. Refresh all ingestion receipts after manifest changes, then rebuild the index if corpus data changed. Use `run.py` for normal launch rather than running every notebook cell.
+1. Environment setup: complete.
+2. Maharashtra ingestion: complete.
+3. Tamil Nadu ingestion: complete.
+4. Central scheme ingestion: complete.
+5. Persistent semantic search: complete.
+6. Jurisdiction filtering: complete.
+7. Answers with page citations: complete.
+8. Abstention and error handling: complete.
+9. Gradio interface: complete.
+10. Remaining jurisdictions: complete.
+11. Source review and first evaluation batch: pending.
+12. Second evaluation batch and grading: pending.
+13. Reproducibility: setup checked; final validation pending.
 
 ## Source review
 
-All 34 sources still need team review, and current benefit availability is unverified. Original PDFs stay the citation targets; AI-assisted OCR, translations and table readings remain labelled. Readable text and valid citations do not establish correct interpretation or current availability. Sources collected after the target date do not prove availability at that cutoff.
+The app describes the supplied documents. Current benefit availability and personal eligibility are unverified. All sources still need team review, including OCR readings and amendments. Comparisons and combined state/Central answers are outside this version.
 
-| Jurisdiction | Pages / chunks | Main points still needing review |
-|---|---:|---|
-| Maharashtra | 18 / 53 | Policy and registration start dates differ. Check Marathi circulars and cross-page conditions. August page 2 replaces toll reimbursement wording, not purchase support; pages 1/3 are history/distribution only. Portal launch, claim windows and remaining funds are unverified. |
-| Tamil Nadu | 23 / 78 | The later motor-vehicle-tax extension does not extend purchase incentives, registration charges or permit fees. E-cycle registration/FAME interpretation remains withheld. |
-| Central | 53 / 100 | Keep each year/period with its own rate and cap. Scheme end, claim deadline and funding limit differ; retain the L5 closure. Detailed non-buyer segments and operational availability remain outside the checked scope. |
-| Uttar Pradesh | 39 / 117 | Hindi-to-English readings are unofficial; old masked 3W text is superseded. Keep purchase provisions separate from pure-EV tax/fee exemptions. Parent amendments, hybrid/aggregator rules and operational status need review. |
-| Delhi | 51 / 132 | Use the final 2026 policy and guidelines, not drafts. Check notification/commencement dates, RC-generation versus registration wording, ownership/scrapping conditions, car exceptions and later instruments. |
-| Gujarat | 10 / 31 | The purchase policy is historical. Later tax extensions do not renew purchase benefits. Battery-limit questions are withheld because the table's column reference is inconsistent. |
-| Telangana | 13 / 32 | Later tax/fee rules replace old quotas; this is not a cash subsidy. Separate retrofit conditions remain. Bus qualifications, manufacturing-policy dependencies and the full later Act need review. |
-| Karnataka | 41 / 105 | Act commencement is unverified. Printed zone totals 199/32/9 differ from counted rows 198/33/9; MSME/industrial-policy dependencies remain open. Do not invent a charging-subsidy cost basis. |
-| Madhya Pradesh | 60 / 156 | The draft is excluded; original gazette/transport instruments remain missing. Check amendments and charging conditions. RWA provisions distinguish seven working days, seven days and a 30-day grievance threshold. |
+Source dates, URLs, hashes and review status are in [source_manifest.json](data/source_manifest.json). The verification target is 23 September 2026; it is not a claim that benefits were verified through that date. Detailed earlier source notes remain in [Git history](https://github.com/mohit6603/Electric-vehicle-Policy-RAG/tree/f73e596a068c247eb74239e5b6d51388b0712471).
 
-Detailed earlier source notes and OCR corrections are preserved in the [documentation before consolidation](https://github.com/mohit6603/Electric-vehicle-Policy-RAG/tree/f73e596a068c247eb74239e5b6d51388b0712471). In particular, Maharashtra's printed rules-year and bus-category inconsistencies must be checked against the originals, not silently corrected. Keep raw OCR files unchanged when preparing reviewed text.
+## Validation
 
-The saved AI-assisted readings cover eight Maharashtra pages, five Central pages, ten UP pages, one Telangana page, nine Karnataka tables and sixteen MP pages. UP readings and MP page 1 include unofficial English translations. Original-page mappings, file hashes and preparation settings stay in each OCR folder's `review.json`; a matching hash does not prove the reading is accurate.
-
-## Checks and evaluation
-
-The 30 September technical audit passed **196 automated checks and 117 ingestion assertions**. All 18 corpus JSONL files reproduced unchanged. A fresh environment on the same Mac installed successfully, rebuilt 804 chunks and reopened them. This was not a second-machine test or a formal accuracy score.
-
-The audit fixed a Central rate-period error and a loader bug that discarded completed review status. Two corrected Central answers matched their cited page; refusal and citation-clearing checks passed. [Saved audit reports](checks/professor_audit) retain the original failure and actual retests. Their hashes describe the audited revision before this documentation cleanup.
-
-To rerun development checks with Ollama available:
-
-```sh
-for check in checks/*_checks.py; do
-  uv run --locked python "$check" || break
-done
-```
-
-These checks do not call Groq unless a supported script is given `--live`. The [24-case evaluation template](evaluation/team_cases.json) is still empty: two per jurisdiction, four Central and four negative/ambiguous cases. These cases need independently checked questions and expected answers.
-
-Before formal evaluation:
-
-1. Compare source/OCR text and the prompt with the original evidence. Record actual `reviewer`, `reviewed_on` (`YYYY-MM-DD`), `team_verified` and `accepted_for_ingestion` values in the manifest and relevant OCR `review.json` pages. Legacy Maharashtra pages need the acceptance field added when accepted. A source cannot be accepted while its selected OCR pages remain unaccepted.
-2. Keep raw text intact. The loader reads `proposed_text` and checks `proposed_sha256`; if using a corrected file, update that path/hash pair too—`corrected_text` alone does not change ingestion. Regenerate affected outputs and explicitly rebuild the index. Text acceptance does not verify current benefits.
-3. Write questions, expected answers and physical-page references independently, before looking at model output. Include amendments and expiry conditions. In `evaluation/team_cases.json`, fill the actual `authored_by`, `verified_by` and `verified_on` for each case, plus the top-level `source_review` record (`completed`, `reviewer`, `reviewed_on`). Then freeze the cases and run both batches:
-
-```sh
-uv run --locked python evaluate.py --freeze
-uv run --locked python evaluate.py --batch 1
-uv run --locked python evaluate.py --batch 2
-```
-
-The runner records versions and real responses, resumes unfinished batches and spaces requests by 60 seconds. The team grades retrieval, answers and citations separately. Keep failed runs and report honest counts; service errors are not successful abstentions. **No formal evaluation cases have run.**
-
-## Course code and AI assistance
-
-This project adapts the [course repository at commit 33c2faa](https://github.com/aagarwal4/generative-ai-pgp-ji-2026/tree/33c2faa22450cde16ead9071f7ce7ecc78ca592a). Cell numbers count all cells, starting at 1.
-
-| Classroom example | Reused here |
-|---|---|
-| `class-labs/4. Retrieval Augmented Generation (RAG).ipynb`, cells 65–66, 77 | PDF-loading workflow and recursive splitting: 1,000 characters with 200 overlap; `pypdf` adds physical-page preservation |
-| Same notebook, cells 37–38, 127/129, 150, 153–155 | Ollama embeddings, filtered retrieval, Groq setup and prompt-chain pattern |
-| `class-labs/5. Advanced RAG with LangChain.ipynb`, cell 17 | Persisted Chroma collection |
-| `class-exercises/exercise-2/exercise2_solution.ipynb`, cells 9, 20, 23–24 | Document metadata, retrieve/format/generate flow and Gradio callback/interface |
-
-EV source collection, OCR handling, amendment rules, citation checks, failure handling, explicit rebuilding and evaluation tooling extend those examples.
-
-AI assistance included planning, source research, OCR/readings, code generation, debugging, development checks, documentation and Git work.
+The technical audit passed **196 automated checks and 117 ingestion assertions**. These are development results, not an accuracy score. The [24-case evaluation template](evaluation/team_cases.json) is still empty; formal evaluation awaits source review and independently checked expected answers.
