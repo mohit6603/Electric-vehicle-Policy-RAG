@@ -55,9 +55,7 @@ Open **http://127.0.0.1:7860**. For later runs, use only `uv run python run.py`.
 8. Abstention and error handling: complete.
 9. Gradio interface: complete.
 10. Remaining jurisdictions: complete.
-11. Source review and first evaluation batch: pending.
-12. Second evaluation batch and grading: pending.
-13. Reproducibility: setup checked; final validation pending.
+
 
 ## Source review
 
