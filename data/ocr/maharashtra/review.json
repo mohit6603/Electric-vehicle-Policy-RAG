@@ -42,7 +42,7 @@
       "psm": 3,
       "ai_spot_check": "full_page_compared_proposal_pending_team_review",
       "issues_for_review": [
-        "Compare the complete proposed text with the original PDF; see TEXT_REVIEW.md for corrections, retained source wording and unresolved details."
+        "Compare the complete proposed text with the original PDF; see the Source review section in README.md and its historical notes link for corrections, retained wording and unresolved details."
       ],
       "team_verified": false,
       "reviewer": null,
@@ -50,7 +50,7 @@
       "corrected_text": null,
       "proposed_text": "data/ocr/maharashtra/2025-06-19/page-1.proposed.txt",
       "proposed_sha256": "28d562e975688da568cf19abe34109cdc29ee65bb4ed30a84f380554c8237fa2",
-      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md",
+      "proposal_notes": "README.md",
       "ai_reviewed_on": "2026-09-23"
     },
     {
@@ -64,7 +64,7 @@
       "psm": 3,
       "ai_spot_check": "full_page_compared_proposal_pending_team_review",
       "issues_for_review": [
-        "Compare the complete proposed text with the original PDF; see TEXT_REVIEW.md for corrections, retained source wording and unresolved details."
+        "Compare the complete proposed text with the original PDF; see the Source review section in README.md and its historical notes link for corrections, retained wording and unresolved details."
       ],
       "team_verified": false,
       "reviewer": null,
@@ -73,7 +73,7 @@
       "proposed_text": "data/ocr/maharashtra/2025-06-19/page-2.proposed.txt",
       "proposed_sha256": "21608fc5a776b77be963ff455238ad974452966e154eb731307f76b96edaa0d9",
       "ai_reviewed_on": "2026-09-24",
-      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md"
+      "proposal_notes": "README.md"
     },
     {
       "source_id": "maharashtra_operational_guidelines_2025-06-19",
@@ -86,7 +86,7 @@
       "psm": 6,
       "ai_spot_check": "full_page_compared_proposal_pending_team_review",
       "issues_for_review": [
-        "Compare the complete proposed text with the original PDF; see TEXT_REVIEW.md for corrections, retained source wording and unresolved details."
+        "Compare the complete proposed text with the original PDF; see the Source review section in README.md and its historical notes link for corrections, retained wording and unresolved details."
       ],
       "team_verified": false,
       "reviewer": null,
@@ -95,7 +95,7 @@
       "proposed_text": "data/ocr/maharashtra/2025-06-19/page-3.proposed.txt",
       "proposed_sha256": "7f5b9d2ca42513990d91927100fc20f24ac6d71b8b2c5e38a9fed9e9cebe9f6f",
       "ai_reviewed_on": "2026-09-24",
-      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md"
+      "proposal_notes": "README.md"
     },
     {
       "source_id": "maharashtra_operational_guidelines_2025-06-19",
@@ -108,7 +108,7 @@
       "psm": 3,
       "ai_spot_check": "full_page_compared_proposal_pending_team_review",
       "issues_for_review": [
-        "Compare the complete proposed text with the original PDF; see TEXT_REVIEW.md for corrections, retained source wording and unresolved details."
+        "Compare the complete proposed text with the original PDF; see the Source review section in README.md and its historical notes link for corrections, retained wording and unresolved details."
       ],
       "team_verified": false,
       "reviewer": null,
@@ -117,7 +117,7 @@
       "proposed_text": "data/ocr/maharashtra/2025-06-19/page-4.proposed.txt",
       "proposed_sha256": "29aeeb8e31510979f6db597bfcfef2b7b682956a5fc2c1c3fc1d1f157dcfa579",
       "ai_reviewed_on": "2026-09-24",
-      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md"
+      "proposal_notes": "README.md"
     },
     {
       "source_id": "maharashtra_operational_guidelines_2025-07-28",
@@ -130,7 +130,7 @@
       "psm": 3,
       "ai_spot_check": "full_page_compared_proposal_pending_team_review",
       "issues_for_review": [
-        "Compare the complete proposed text with the original PDF; see TEXT_REVIEW.md for corrections, retained source wording and unresolved details."
+        "Compare the complete proposed text with the original PDF; see the Source review section in README.md and its historical notes link for corrections, retained wording and unresolved details."
       ],
       "team_verified": false,
       "reviewer": null,
@@ -139,7 +139,7 @@
       "proposed_text": "data/ocr/maharashtra/2025-07-28/page-1.proposed.txt",
       "proposed_sha256": "6eff9187fd9cf5520c20dc5f9e4dfe9d72311e3045921d8a94d87f74c3d92fda",
       "ai_reviewed_on": "2026-09-24",
-      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md"
+      "proposal_notes": "README.md"
     },
     {
       "source_id": "maharashtra_corrigendum_2025-08-29",
@@ -162,7 +162,7 @@
       "corrected_text": null,
       "proposed_text": "data/ocr/maharashtra/2025-08-29/page-1.proposed.txt",
       "proposed_sha256": "a0e1547fa4bf598ac4b4062c5b966e4a14b32d57ff55bbfd01fe93a8438ea536",
-      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md",
+      "proposal_notes": "README.md",
       "page_role": "old_wording_and_amendment_scope"
     },
     {
@@ -186,7 +186,7 @@
       "corrected_text": null,
       "proposed_text": "data/ocr/maharashtra/2025-08-29/page-2.proposed.txt",
       "proposed_sha256": "822cd5c33c0682894741faf59f4455a4b4ea9a3a7bd546aeee8458b9a39c2975",
-      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md",
+      "proposal_notes": "README.md",
       "page_role": "replacement_wording_and_authority"
     },
     {
@@ -210,13 +210,13 @@
       "corrected_text": null,
       "proposed_text": "data/ocr/maharashtra/2025-08-29/page-3.proposed.txt",
       "proposed_sha256": "eea5c34709e43222cb0b8d01b543975fbbedf88f995829006ff2c058b644cc63",
-      "proposal_notes": "data/ocr/maharashtra/TEXT_REVIEW.md",
+      "proposal_notes": "README.md",
       "page_role": "distribution_list_only"
     }
   ],
   "batch_completed_on": "2026-09-24",
   "ai_comparison_status": "complete_pending_team_acceptance",
   "ready_for_extraction_tests": true,
-  "review_notes": "data/ocr/maharashtra/TEXT_REVIEW.md",
+  "review_notes": "README.md",
   "text_character_count_note": "Unicode characters in raw text after stripping file-boundary whitespace; SHA-256 covers the complete file bytes."
 }

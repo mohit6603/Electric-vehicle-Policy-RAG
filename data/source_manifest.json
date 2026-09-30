@@ -3,7 +3,7 @@
   "page_numbering": "Physical PDF pages, 1-based; paths are relative to the repository root.",
   "source_stage_status": "preparation_complete_acceptance_pending",
   "current_benefit_availability": "not_verified",
-  "review_file": "data/policies/maharashtra/SOURCE_REVIEW.md",
+  "review_file": "README.md",
   "sources": [
     {
       "source_id": "maharashtra_policy_2025-05-23",
@@ -250,7 +250,7 @@
       "current_benefit_availability": "not_verified",
       "current_entitlement_answers_allowed": false,
       "ready_for_extraction_tests": true,
-      "review_file": "data/policies/tamil_nadu/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "layout_pdf_pages": [
         17,
         19,
@@ -289,7 +289,7 @@
       "current_benefit_availability": "not_verified",
       "current_entitlement_answers_allowed": false,
       "ready_for_extraction_tests": true,
-      "review_file": "data/policies/tamil_nadu/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "official_listing_url": "https://www.stationeryprinting.tn.gov.in/extra_ordinary_lists.php?id=MjAyNQ%3D%3D",
       "supplements_source_id": "tamil_nadu_policy_2023",
       "effective_from": "2026-01-01",
@@ -344,7 +344,7 @@
       "ready_for_extraction_tests": true,
       "scheme": "PM E-DRIVE",
       "coverage_scope": "e2w_e3w_buyer_incentives",
-      "review_file": "data/policies/central/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "page_roles": {
         "17": "buyer_context_requires_updates",
         "18": "buyer_context_requires_updates",
@@ -434,7 +434,7 @@
       "ready_for_extraction_tests": true,
       "scheme": "PM E-DRIVE",
       "coverage_scope": "e2w_e3w_buyer_incentives",
-      "review_file": "data/policies/central/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "page_roles": {
         "1": "buyer_context_requires_updates",
         "2": "buyer_context_requires_updates",
@@ -488,7 +488,7 @@
       "ready_for_extraction_tests": true,
       "scheme": "PM E-DRIVE",
       "coverage_scope": "e2w_e3w_buyer_incentives",
-      "review_file": "data/policies/central/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "page_roles": {
         "2": "historical_or_outside_buyer_scope",
         "3": "historical_or_outside_buyer_scope"
@@ -530,7 +530,7 @@
       "ready_for_extraction_tests": true,
       "scheme": "PM E-DRIVE",
       "coverage_scope": "e2w_e3w_buyer_incentives",
-      "review_file": "data/policies/central/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "page_roles": {
         "5": "buyer_context_requires_updates",
         "6": "buyer_context_requires_updates",
@@ -566,7 +566,7 @@
       "ready_for_extraction_tests": true,
       "scheme": "PM E-DRIVE",
       "coverage_scope": "e2w_e3w_buyer_incentives",
-      "review_file": "data/policies/central/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "page_roles": {
         "2": "historical_or_outside_buyer_scope"
       },
@@ -600,7 +600,7 @@
       "ready_for_extraction_tests": true,
       "scheme": "PM E-DRIVE",
       "coverage_scope": "e2w_e3w_buyer_incentives",
-      "review_file": "data/policies/central/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "page_roles": {
         "3": "historical_or_outside_buyer_scope",
         "4": "historical_or_outside_buyer_scope"
@@ -632,7 +632,7 @@
       "ready_for_extraction_tests": true,
       "scheme": "PM E-DRIVE",
       "coverage_scope": "e2w_e3w_buyer_incentives",
-      "review_file": "data/policies/central/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "page_roles": {
         "1": "historical_or_outside_buyer_scope",
         "2": "historical_or_outside_buyer_scope"
@@ -667,7 +667,7 @@
       "ready_for_extraction_tests": true,
       "scheme": "PM E-DRIVE",
       "coverage_scope": "e2w_e3w_buyer_incentives",
-      "review_file": "data/policies/central/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "page_roles": {
         "1": "buyer_context_requires_updates",
         "2": "historical_or_outside_buyer_scope"
@@ -701,7 +701,7 @@
       "ready_for_extraction_tests": true,
       "scheme": "PM E-DRIVE",
       "coverage_scope": "e2w_e3w_buyer_incentives",
-      "review_file": "data/policies/central/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "page_roles": {
         "3": "buyer_context_requires_updates"
       },
@@ -733,7 +733,7 @@
       "ready_for_extraction_tests": true,
       "scheme": "PM E-DRIVE",
       "coverage_scope": "e2w_e3w_buyer_incentives",
-      "review_file": "data/policies/central/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "page_roles": {
         "3": "buyer_context_requires_updates"
       },
@@ -816,7 +816,7 @@
       "current_benefit_availability": "not_verified",
       "current_entitlement_answers_allowed": false,
       "ready_for_extraction_tests": true,
-      "review_file": "data/policies/uttar_pradesh/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "layout_pdf_pages": [
         15,
         18
@@ -847,7 +847,7 @@
       "current_benefit_availability": "not_verified",
       "current_entitlement_answers_allowed": false,
       "ready_for_extraction_tests": true,
-      "review_file": "data/policies/uttar_pradesh/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "supplements_source_id": "uttar_pradesh_policy_2022",
       "ocr_review_file": "data/ocr/uttar_pradesh/review.json",
       "extraction_status": "ai_visual_english_reading_pending_review"
@@ -881,7 +881,7 @@
       "current_benefit_availability": "not_verified",
       "current_entitlement_answers_allowed": false,
       "ready_for_extraction_tests": true,
-      "review_file": "data/policies/uttar_pradesh/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "supplements_source_id": "uttar_pradesh_policy_2022",
       "ocr_review_file": "data/ocr/uttar_pradesh/review.json",
       "extraction_status": "ai_visual_english_reading_pending_review"
@@ -915,7 +915,7 @@
       "current_benefit_availability": "not_verified",
       "current_entitlement_answers_allowed": false,
       "ready_for_extraction_tests": true,
-      "review_file": "data/policies/uttar_pradesh/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "supplements_source_id": "uttar_pradesh_policy_2022",
       "ocr_review_file": "data/ocr/uttar_pradesh/review.json",
       "extraction_status": "ai_visual_english_reading_pending_review"
@@ -943,7 +943,7 @@
       "current_benefit_availability": "not_verified",
       "current_entitlement_answers_allowed": false,
       "ready_for_extraction_tests": true,
-      "review_file": "data/policies/uttar_pradesh/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "supplements_source_id": "uttar_pradesh_policy_2022",
       "effective_from": "2025-10-14",
       "effective_to": "2027-10-13",
@@ -972,7 +972,7 @@
       "current_benefit_availability": "not_verified",
       "current_entitlement_answers_allowed": false,
       "ready_for_extraction_tests": true,
-      "review_file": "data/policies/uttar_pradesh/SOURCE_REVIEW.md",
+      "review_file": "README.md",
       "supplements_source_id": "uttar_pradesh_policy_2022",
       "effective_from": "2025-10-14",
       "effective_to": "2027-10-13",
@@ -1943,13 +1943,13 @@
   "current_entitlement_answers_allowed": false,
   "ready_for_extraction_tests": true,
   "readiness_note": "Candidate text is ready for local extraction/splitting tests. Team acceptance and current-status verification remain open; this is not an accepted answer corpus.",
-  "text_review_file": "data/ocr/maharashtra/TEXT_REVIEW.md",
+  "text_review_file": "README.md",
   "research_log": "data/policies/maharashtra/research_log.json",
   "jurisdiction_reviews": {
-    "Maharashtra": "data/policies/maharashtra/SOURCE_REVIEW.md",
-    "Tamil Nadu": "data/policies/tamil_nadu/SOURCE_REVIEW.md",
-    "Central": "data/policies/central/SOURCE_REVIEW.md",
-    "Uttar Pradesh": "data/policies/uttar_pradesh/SOURCE_REVIEW.md"
+    "Maharashtra": "README.md",
+    "Tamil Nadu": "README.md",
+    "Central": "README.md",
+    "Uttar Pradesh": "README.md"
   },
   "central_scheme": {
     "name": "PM E-DRIVE",
