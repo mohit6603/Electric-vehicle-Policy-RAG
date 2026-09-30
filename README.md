@@ -2,7 +2,7 @@
 
 Ask a question about an EV policy and get an answer with the original document and page number. The app uses government PDFs, searches within the selected jurisdiction and shows the evidence beside the answer.
 
-**The app is built. Team review, formal evaluation and final submission are still pending.** It covers Maharashtra, Tamil Nadu, Uttar Pradesh, Delhi (NCT), Gujarat, Telangana, Karnataka and Madhya Pradesh, plus the Central PM E-DRIVE two-/three-wheeler pilot. Ask about one jurisdiction at a time; comparisons and combined Central-plus-state answers are outside this version.
+**Working prototype; source review and formal evaluation are pending.** It covers Maharashtra, Tamil Nadu, Uttar Pradesh, Delhi (NCT), Gujarat, Telangana, Karnataka and Madhya Pradesh, plus the Central PM E-DRIVE two-/three-wheeler pilot. Ask about one jurisdiction at a time; comparisons and combined Central-plus-state answers are outside this version.
 
 The dataset has **34 PDFs, 308 selected pages and 804 chunks**. The source-verification target is **23 September 2026**, but current benefits and personal eligibility have not been verified. The app states this limitation and refuses current-entitlement claims.
 
@@ -55,7 +55,7 @@ The stack is Python 3.12, LangChain, Chroma, Ollama `nomic-embed-text`, Groq `op
 
 ## Stage progress
 
-“Done” below means the technical work passed its checks. It does not mean the source text or benefits have been accepted by the team. Work through pending stages in order, one 30–45-minute session at a time; save the next unfinished step here.
+“Done” means the technical checks passed. Source review and independent evaluation remain separate steps.
 
 | Stage | Work and result | Status / depends on |
 |---|---|---|
@@ -72,15 +72,13 @@ The stack is Python 3.12, LangChain, Chroma, Ollama `nomic-embed-text`, Groq `op
 | 10 | Add UP, Delhi, Gujarat, Telangana, Karnataka and MP individually | All six done; 9 + each source packet |
 | 11 | Complete team review, write/freeze 24 cases and run batch 1 | **Next**; 10 + actual team inputs |
 | 12 | Run batch 2, grade results and fix observed failures | Pending; 11 |
-| 13 | Confirm reproducibility and access at the final revision | Setup audited; final acceptance follows 12 |
-| 14 | Prepare exactly three presentation slides | Pending; 13 |
-| 15 | Rehearse, make the ZIP and submit from every member's account | Pending; 14 |
+| 13 | Reproduce setup and verify repository access | Setup checked; final validation follows 12 |
 
 For notebook work, open `uv run --locked jupyter lab "EV Policy Assistant.ipynb"`. Run **Shared page loader**, then the chosen Stage 2, 3, 4 or 10 ingestion section in order. These sections do not need Groq or Ollama; saved OCR text is already included. They replace derived page/chunk files and stage receipts. Refresh all ingestion receipts after manifest changes, then rebuild the index if corpus data changed. Use `run.py` for normal launch rather than running every notebook cell.
 
 ## Source review
 
-All 34 sources remain unaccepted, and no current-benefit permission has been granted. Original PDFs stay the citation targets; AI-assisted OCR, translations and table readings remain labelled. Readable text and valid citations do not establish correct interpretation or current availability. Sources collected after the target date do not prove availability at that cutoff.
+All 34 sources still need team review, and current benefit availability is unverified. Original PDFs stay the citation targets; AI-assisted OCR, translations and table readings remain labelled. Readable text and valid citations do not establish correct interpretation or current availability. Sources collected after the target date do not prove availability at that cutoff.
 
 | Jurisdiction | Pages / chunks | Main points still needing review |
 |---|---:|---|
@@ -112,7 +110,7 @@ for check in checks/*_checks.py; do
 done
 ```
 
-These checks do not call Groq unless a supported script is given `--live`. They do not replace the team's promised **20–30 self-written questions**. The agreed [24-case template](evaluation/team_cases.json) is still empty: two per jurisdiction, four Central and four negative/ambiguous cases.
+These checks do not call Groq unless a supported script is given `--live`. The [24-case evaluation template](evaluation/team_cases.json) is still empty: two per jurisdiction, four Central and four negative/ambiguous cases. These cases need independently checked questions and expected answers.
 
 Before formal evaluation:
 
@@ -139,18 +137,6 @@ This project adapts the [course repository at commit 33c2faa](https://github.com
 | `class-labs/5. Advanced RAG with LangChain.ipynb`, cell 17 | Persisted Chroma collection |
 | `class-exercises/exercise-2/exercise2_solution.ipynb`, cells 9, 20, 23–24 | Document metadata, retrieve/format/generate flow and Gradio callback/interface |
 
-EV source collection, OCR handling, amendment rules, citation checks, failure handling, explicit rebuilding and evaluation tooling extend those examples. The team needs to understand and explain these additions.
+EV source collection, OCR handling, amendment rules, citation checks, failure handling, explicit rebuilding and evaluation tooling extend those examples.
 
-AI assisted with planning, source research, OCR/readings, implementation, debugging, development questions and output checks, documentation and Git work. This includes generated code and must be disclosed accurately in slide 3. The professor's written rule permits code-helper use only and states a **30% flat penalty for detected AI-generated code**. Broader permission is user-reported; its wording has not been supplied for verification. Git authorship does not replace that disclosure or approval.
-
-## Final submission
-
-The project is a custom-dataset RAG application; agents are optional. The four-person group exception is user-confirmed: Mohit Patle (27PGAI0102), Pushkar Brahmankar (27PGAI0100), Vaishnavi B (27PGAI0120) and Sehal Chodankar (27PGAI0116). The agreed coverage is seven states plus Delhi, a change from the proposal's literal 8–10 states. Answers use concise cited points rather than a strict one-line format.
-
-- **Idea PDF:** names/IDs, problem and rationale, approach and stack were checked. Every member's upload, due 22 September 2026 EOD, remains unverified.
-- **Exactly three slides:** 1. business impact; 2. technical stack and GenAI architecture flow; 3. appendix including actual AI assistance.
-- **Demo:** rehearse an eight-minute presentation/live demo and prepare for about 3–4 minutes of Q&A. Grading is technical **80%**, presentation/narrative **20%**.
-- **Final ZIP:** include the three-slide presentation and [project GitHub link](https://github.com/mohit6603/Electric-vehicle-Policy-RAG). Every member must upload it to Digiicampus and retain a receipt.
-- **Deadline:** the user reports **1 October 2026**; exact time and demo date remain unconfirmed. Late uploads by any member or GitHub edits after the deadline can penalise the whole group, including a possible zero. Preserve the submitted commit after the deadline.
-
-The deck, formal evaluation, rehearsal, ZIP and upload confirmations are still pending. The professor does not mandate 24 cases, a minimum accuracy, hosting, a video or a separate report; the evaluation target comes from our proposal and plan.
+AI assistance included planning, source research, OCR/readings, code generation, debugging, development checks, documentation and Git work.
