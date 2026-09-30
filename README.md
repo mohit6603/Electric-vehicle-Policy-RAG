@@ -4,9 +4,11 @@ Ask about an EV policy and get an answer with the original document and page num
 
 Coverage includes Maharashtra, Tamil Nadu, Uttar Pradesh, Delhi, Gujarat, Telangana, Karnataka, Madhya Pradesh and Central PM E-DRIVE buyer incentives. The dataset contains **34 PDFs and 804 text chunks**.
 
+
 ## Tech stack
 
 Python 3.12, LangChain, Chroma, Ollama (`nomic-embed-text`), Groq (`openai/gpt-oss-120b`) and Gradio.
+
 
 ## Setup
 
@@ -36,6 +38,7 @@ uv run python run.py
 
 Open **http://127.0.0.1:7860**. For later runs, use only `uv run python run.py`. Rebuild the index after changing source data or the embedding model. Keep `.env` private. Questions and retrieved excerpts are sent to Groq; embeddings run locally.
 
+
 ## Project files
 
 * [EV Policy Assistant.ipynb](EV%20Policy%20Assistant.ipynb): main implementation.
@@ -43,6 +46,7 @@ Open **http://127.0.0.1:7860**. For later runs, use only `uv run python run.py`.
 * [data](data): original PDFs, source records, OCR text and processed chunks.
 * [checks](checks): development checks and saved results.
 * [evaluation](evaluation): case template used by [evaluate.py](evaluate.py).
+
 
 ## Stage progress
 
@@ -64,10 +68,7 @@ The app describes the supplied documents. Current benefit availability and perso
 
 Source dates, URLs, hashes and review status are in [source_manifest.json](data/source_manifest.json). The verification target is 23 September 2026; it is not a claim that benefits were verified through that date. Detailed earlier source notes remain in [Git history](https://github.com/mohit6603/Electric-vehicle-Policy-RAG/tree/f73e596a068c247eb74239e5b6d51388b0712471).
 
+
 ## Validation
 
 The technical audit passed **196 automated checks and 117 ingestion assertions**. These are development results, not an accuracy score. The [24-case evaluation template](evaluation/team_cases.json) is still empty; formal evaluation awaits source review and independently checked expected answers.
-
-
-
-
