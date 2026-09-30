@@ -12,6 +12,7 @@ Python 3.12, LangChain, Chroma, Ollama (`nomic-embed-text`), Groq (`openai/gpt-o
 
 Install [uv](https://docs.astral.sh/uv/) and [Ollama](https://ollama.com/). Keep Ollama running, then run:
 
+
 ```sh
 git clone https://github.com/mohit6603/Electric-vehicle-Policy-RAG.git
 cd Electric-vehicle-Policy-RAG
