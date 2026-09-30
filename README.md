@@ -66,3 +66,7 @@ Source dates, URLs, hashes and review status are in [source_manifest.json](data/
 ## Validation
 
 The technical audit passed **196 automated checks and 117 ingestion assertions**. These are development results, not an accuracy score. The [24-case evaluation template](evaluation/team_cases.json) is still empty; formal evaluation awaits source review and independently checked expected answers.
+
+
+
+
