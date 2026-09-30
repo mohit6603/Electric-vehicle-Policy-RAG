@@ -125,7 +125,8 @@ def run_checks():
             metadata = doc.metadata
             page = pages[metadata['page_id']]
             assert doc.page_content == page.page_content[metadata['excerpt_start']:metadata['excerpt_end']]
-            assert metadata['accepted_for_ingestion'] is False and metadata['current_entitlement_answers_allowed'] is False
+            assert not metadata['accepted_for_ingestion'] or metadata['team_verified']
+            assert metadata['current_entitlement_answers_allowed'] is False
             assert metadata['source'] == page.metadata['source'] and metadata['pdf_page'] == page.metadata['pdf_page']
             for field, value in page.metadata.items():
                 assert metadata[field] == value

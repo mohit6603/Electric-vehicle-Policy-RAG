@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-09-30T05:44:10.591331+00:00",
+  "scope": "AI development/browser review; not human source acceptance or formal evaluation",
+  "baseline_response_semantics": "Failed: earlier-period rate/cap presented without that period restriction. Citation target valid but interpretation wrong.",
+  "patched_response_semantics": [
+    {
+      "observation": 0,
+      "result": "passed targeted comparison",
+      "basis": "Original PDF physical page 3 table and footnote 1; both periods, rates, caps, price ceiling and lower-of percentage limit preserved."
+    },
+    {
+      "observation": 2,
+      "result": "passed targeted comparison",
+      "basis": "Original PDF physical page 3; explicit 1 Apr 2025–31 Mar 2028 period selects 2500/kWh and 5000 cap, with 1.5 lakh ceiling and 15% limit."
+    }
+  ],
+  "browser_checks": {
+    "six_statuses_match": true,
+    "four_nonanswer_results_have_no_sources": true,
+    "both_answer_citations_resolve_to_supporting_page": true,
+    "cited_excerpt_hashes_match": true,
+    "clear_resets_selection_question_and_outputs": true,
+    "nine_dropdown_choices_visible": true,
+    "corpus_embedding_calls": 0,
+    "query_embedding_calls": 3
+  },
+  "review_transition_note": "First repair run rejected legacy Maharashtra OCR missing acceptance field. Fixed by defaulting absent flag to false, then reran ingestion and all suites.",
+  "formal_evaluation_freeze": "Expected refusal: Complete and record the deferred team source review before formal evaluation. No formal cases or model calls from freeze.",
+  "tested_code_sha256": {
+    "EV Policy Assistant.ipynb": "22c2c4314a63479620a3e25b342080c1ef05f1241c581dee802c8806f5af1415",
+    "checks/review_transition_checks.py": "2bf68dad84cb9fe6ac57b271a22696469f56495b0af9caaf8d7de6743251bb1d",
+    "checks/stage6_retrieval_checks.py": "55385171f9048d670399b78335868a53adc080ce6970c3128bbe5e7a2e628595",
+    "checks/stage10_karnataka_checks.py": "e3686cd0d480e50417e9ae20633406d34a013a2aa8284c4f92850e000d102202",
+    "checks/stage10_mp_checks.py": "24a8d5124f7f2d08ef6601f59ec6250537232b3504726221893a8786b54ea91f",
+    "run.py": "1c2dcecbd29a7ac03fbf1b8a2245ca4905c9e35c5e1675b4adb3bc697e2d7edf",
+    "evaluate.py": "710a4d6432d9b1a31639f5421b72db32fa810433ac6c408eb4cf8457cba7f87a",
+    "uv.lock": "834a9c96e69f2944298d170d38c463dc9de66e8e205fb13806db2964b232fe18",
+    "data/source_manifest.json": "914260d5c4c942ee0db5908a5e0aacb1be38cc61922e3930b64086335706e179",
+    "data/retrieval_rules.json": "930b0c19219209c25ad1a3f3d8ba2e61031358662c3fe9a3118fa42025c44f96"
+  }
+}

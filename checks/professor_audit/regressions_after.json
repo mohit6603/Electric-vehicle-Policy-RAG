@@ -1,0 +1,126 @@
+{
+  "checked_at_utc": "2026-09-30T04:14:09.111887+00:00",
+  "source": "published export with audited notebook/check patches; existing rebuilt index; fresh virtual environment",
+  "results": [
+    {
+      "suite": "dependencies",
+      "exit_code": 0,
+      "seconds": 0.12,
+      "summary": []
+    },
+    {
+      "suite": "stage5_index_checks",
+      "exit_code": 0,
+      "seconds": 3.22,
+      "summary": [
+        "Stage 5 persistence checks passed: 16"
+      ]
+    },
+    {
+      "suite": "stage6_retrieval_checks",
+      "exit_code": 0,
+      "seconds": 1.5,
+      "summary": [
+        "Stage 6 retrieval checks passed: 19"
+      ]
+    },
+    {
+      "suite": "stage7_answer_checks",
+      "exit_code": 0,
+      "seconds": 1.02,
+      "summary": [
+        "Stage 7 citation checks passed: 14"
+      ]
+    },
+    {
+      "suite": "stage8_failure_checks",
+      "exit_code": 0,
+      "seconds": 1.07,
+      "summary": [
+        "Stage 8 offline checks passed: 50"
+      ]
+    },
+    {
+      "suite": "stage9_ui_checks",
+      "exit_code": 0,
+      "seconds": 2.25,
+      "summary": [
+        "Stage 9 UI checks passed: 15"
+      ]
+    },
+    {
+      "suite": "stage10_up_checks",
+      "exit_code": 0,
+      "seconds": 1.74,
+      "summary": [
+        "Stage 10 UP integration checks passed: 10"
+      ]
+    },
+    {
+      "suite": "stage10_delhi_checks",
+      "exit_code": 0,
+      "seconds": 1.74,
+      "summary": [
+        "Stage 10 Delhi integration checks passed: 9"
+      ]
+    },
+    {
+      "suite": "stage10_gujarat_checks",
+      "exit_code": 0,
+      "seconds": 1.73,
+      "summary": [
+        "Stage 10 Gujarat integration checks passed: 11"
+      ]
+    },
+    {
+      "suite": "stage10_telangana_checks",
+      "exit_code": 0,
+      "seconds": 1.77,
+      "summary": [
+        "Stage 10 Telangana integration checks passed: 10"
+      ]
+    },
+    {
+      "suite": "stage10_karnataka_checks",
+      "exit_code": 0,
+      "seconds": 2.27,
+      "summary": [
+        "Stage 10 Karnataka integration checks passed: 11"
+      ]
+    },
+    {
+      "suite": "stage10_mp_checks",
+      "exit_code": 0,
+      "seconds": 1.73,
+      "summary": [
+        "Stage 10 Madhya Pradesh integration checks passed: 10"
+      ]
+    },
+    {
+      "suite": "evaluation_checks",
+      "exit_code": 0,
+      "seconds": 0.02,
+      "summary": [
+        "Evaluation gate checks passed: 9"
+      ]
+    },
+    {
+      "suite": "review_transition_checks",
+      "exit_code": 0,
+      "seconds": 5.17,
+      "summary": [
+        "Technical checks passed: 12",
+        "Stage 3 technical checks passed: 12",
+        "Stage 4 technical checks passed: 13",
+        "Stage 10 Uttar Pradesh ingestion checks passed: 13",
+        "Stage 10 Delhi ingestion checks passed: 13",
+        "Stage 10 Gujarat ingestion checks passed: 12",
+        "Stage 10 Telangana ingestion checks passed: 12",
+        "Stage 10 Karnataka ingestion checks passed: 15",
+        "Stage 10 Madhya Pradesh ingestion checks passed: 15",
+        "Review transition checks passed: 12"
+      ]
+    }
+  ],
+  "scope": "Technical development checks, not team-authored formal evaluation"
+}

@@ -4,6 +4,10 @@
 
 After the consolidated source/prompt review, update actual acceptance records and rerun affected ingestion/index checks. Current-benefit gaps remain separate and must not be marked resolved without evidence. The runner refuses formal evaluation while sources are unaccepted or cases are incomplete.
 
+For each actually reviewed source in `data/source_manifest.json`, record `reviewer`, `reviewed_on` (`YYYY-MM-DD`), `team_verified` and `accepted_for_ingestion`. For OCR/table proposals, record those fields on each relevant page in `data/ocr/<jurisdiction>/review.json` too; legacy Maharashtra pages need the explicit acceptance field added when accepted. A source cannot be accepted while one of its selected OCR pages is unaccepted. Corrected text needs its recorded hash updated, followed by ingestion and an explicit index rebuild. Keep AI-origin labels and current-entitlement flags separate from team text acceptance. The loader validates records but cannot verify that a person actually performed the review.
+
+Run `uv run --locked python checks/review_transition_checks.py` to check the pending/accepted paths using in-memory fixtures. It never changes the actual review records or fills the independent cases.
+
 From the project root:
 
 ```sh

@@ -74,7 +74,7 @@ def run_checks(live=False, case=None):
     observations.append({'all_page_context_range': [min(sizes), max(sizes)]})
     checks.append('all_60_pages_assemble_within_context_limit')
     assert stage['retrieval_page_by_id'][f'{guide}:p16'].metadata['text_status'] == 'ai_proposal'
-    assert all(not d.metadata['accepted_for_ingestion'] for d in stage['index_documents'])
+    assert all(not d.metadata['accepted_for_ingestion'] or d.metadata['team_verified'] for d in stage['index_documents'])
     checks.append('ocr_proposals_and_pending_review_preserved')
     before = copy.deepcopy(counts)
     for selection, question, status in [

@@ -4,6 +4,8 @@ An EV policy assistant for the Generative AI mini-project at Jio Institute. It a
 
 **Status:** Application implementation (Stages 1–10) is technically complete. Eight agreed jurisdictions plus Central, **804 chunks**, nine Gradio choices, cited answers and failure handling are implemented. Team source acceptance, current-benefit verification, formal evaluation and final submission remain pending. See [the finish checkpoint](PROJECT_FINISH.md), [Madhya Pradesh handoff](STAGE_10_MP_HANDOFF.md) and [progress](PROGRESS.md).
 
+The [professor requirement audit](PROFESSOR_AUDIT.md) records the 30 September checks, two repairs and remaining submission gaps. After repairs, 196 automated checks and 117 ingestion assertions passed; all 18 corpus files reproduced unchanged. These are development checks, not the independent team evaluation.
+
 ## Quick launch
 
 With the dependencies installed, Ollama running and the key in local `.env`:

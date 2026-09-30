@@ -1,8 +1,8 @@
 # EV Policy Assistant: requirements and course-code reuse
 
-Reviewed on 22 September 2026. This is a planning and code-review aid, not an implemented assignment or a submission-ready package.
+Initial reuse review: 22 September 2026. Status updated 30 September; technical Stages 1–10 are implemented. The [professor audit](PROFESSOR_AUDIT.md) records fresh checks and remaining submission requirements. This mapping is not a submission-ready package.
 
-The attached assignment instructions are the assignment specification. The EV idea PDF adds the team's proposed scope. The user confirmed that the instructor approved the four-member group and initially chose helper-only assistance. On 24 September 2026 the user explicitly authorized AI implementation of technical Stage 2. The user then requested completion of Stage 3 for Tamil Nadu. Setup, both pilot-state ingestion paths, the Central PM E-DRIVE buyer-incentive pilot and Stages 5–9 persistent search, jurisdiction-aware retrieval, cited answer generation, guarded failure behavior and the Gradio pilot are now implemented at the user's request; actual checks and assistance are recorded in `PROGRESS.md`. This authorization does not amend the assignment's AI-use rule.
+The attached assignment instructions are the assignment specification. The EV idea PDF adds the team's proposed scope. The user confirmed that the instructor approved the four-member group and initially chose helper-only assistance. From 24 September the user authorized technical implementation, subsequently through Stage 10. The complete eight-jurisdiction plus Central pipeline and its checks are recorded in `PROGRESS.md`. User authorization does not amend the assignment's AI-use rule. A broader professor exception is now user-reported, but its wording has not been supplied for verification.
 
 ## Sources and decisions
 
@@ -19,17 +19,17 @@ The attached assignment instructions are the assignment specification. The EV id
 | ID | Requirement from the assignment | Where it belongs / evidence needed | Current status |
 |---|---|---|---|
 | A1 | Group of 3 | Team roster | Four members approved, as confirmed by the user |
-| A2 | RAG with a custom dataset and problem statement | EV corpus, retrieval and generation implementation; business explanation | Pilot corpus, jurisdiction/version-aware retrieval and cited generation implemented; team acceptance and formal evaluation pending |
+| A2 | RAG with a custom dataset and problem statement | EV corpus, retrieval and generation implementation; business explanation | Eight agreed jurisdictions plus Central, 34 PDFs, 804 chunks, filtered retrieval and cited generation implemented; team acceptance and formal evaluation pending |
 | A3 | Agents are optional | LangGraph only if the team implements the optional comparison path | Optional |
 | A4 | Idea PDF: member names and IDs, problem and why worthwhile, proposed approach, tech stack | Existing idea PDF | All four content categories present |
 | A5 | Idea due 22 September 2026, EOD; every member uploads a PDF on Digiicampus | Individual upload confirmations | Uploads not verified |
-| A6 | Final code: GitHub link of the project repository | The team's own runnable project repository and its URL | Repository created at https://github.com/mohit6603/Electric-vehicle-Policy-RAG; environment setup and technical Stages 2–9 present, later application stages pending |
+| A6 | Final code: GitHub link of the project repository | The team's own runnable project repository and its URL | https://github.com/mohit6603/Electric-vehicle-Policy-RAG; technical Stages 1–10 complete; anonymous access and fresh-environment setup checked |
 | A7 | Exactly 3 presentation slides | Slide 1: business impact. Slide 2: technical stack and GenAI architecture flow. Slide 3: appendix including AI disclosure | Not authored |
 | A8 | Every member submits final ZIP on Digiicampus | ZIP containing the repository link and the 3-slide presentation; individual upload confirmations | Not prepared/submitted |
-| A9 | Final submission date/time to be announced | Check the announced course deadline | TBD in the PDF |
+| A9 | Final submission date/time to be announced | Check the announced course deadline | User reports 1 October 2026; exact time not supplied. PDF says TBD |
 | A10 | 8-minute team presentation and live demo, approximately 3–4 minutes of Q&A | Rehearsed running application and explanation | Not performed; date/time TBD |
 | A11 | Mainly classroom stack and syntax; explain additional syntax | Reuse map below and implementation notes | Reference code inspected |
-| A12 | AI only as code helper; brief disclosure in appendix | Student implementation, record of actual AI assistance | User authorized AI implementation of technical Stages 2–9; actual use recorded, final disclosure pending; assignment rule unchanged |
+| A12 | AI only as code helper; brief disclosure in appendix | Record of actual AI assistance and any instructor exception | User-authorized implementation completed through Stage 10. Broader instructor permission is user-reported; wording not supplied. Actual assistance recorded; slide disclosure pending |
 | A13 | Main grading is the demo: technical 80%, presentation including narrative 20% | Working demo, defensible design choices, clear deck | No grades or performance claims made |
 | A14 | Any member's late submission or editing GitHub after the deadline can penalize the whole group, including a possible zero | All-member upload check; preserve submitted GitHub revision after deadline | Team action at submission |
 

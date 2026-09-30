@@ -6,9 +6,21 @@
 
 **Active stage: Stage 11 preparation — awaiting consolidated team review and independent expected answers.** The user requested finishing the project quickly. The technical prototype is complete; manual acceptance remains deferred, so formal evaluation is not run or fabricated. `evaluate.py` and 24 empty case slots are prepared. `run.py` launches the existing notebook implementation directly.
 
-Remaining order: actual team source/OCR/prompt acceptance and case authorship; freeze/run/grade evaluation batches; final reproducibility and fixes; team-authored three-slide deck; rehearsal and submission ZIP. The three-slide presentation, human evaluation content and Digiicampus uploads remain outstanding. The assignment's code-helper-only rule and disclosure requirement remain unchanged.
+Remaining order: actual team source/OCR/prompt acceptance and case authorship; freeze/run/grade evaluation batches; final reproducibility and fixes; team-authored three-slide deck; rehearsal and submission ZIP. The three-slide presentation, human evaluation content and Digiicampus uploads remain outstanding. The written assignment's code-helper-only rule and disclosure requirement remain; a broader instructor exception is now user-reported, with wording not supplied.
 
 All source acceptance/current-entitlement flags remain false. The cutoff is still 23 September 2026; later source collection does not certify current benefits. No independent reviewer/date, accuracy metric or submission has been invented.
+
+## Professor audit — 30 September 2026
+
+Read both professor-instruction pages and the proposal again; saved the complete requirement/status matrix in [PROFESSOR_AUDIT.md](PROFESSOR_AUDIT.md). The user clarified the final deadline as 1 October 2026; time/demo date remain unknown. Four-member approval was already user-confirmed. The reported broader AI-use exception cannot be checked until its wording is supplied.
+
+Anonymous download of published `4b85eed` matched all 285 tracked files. A new locked virtual environment installed 220 compatible packages, explicitly rebuilt 804 chunks using the existing Ollama service, and reopened the persisted index. All 184 existing checks passed. This is same-machine reproduction, not an independent machine.
+
+A real browser answer then exposed a Central rate-period error despite a valid citation. The failed output is retained. The prompt now pairs each table period with its rate/cap; the generic and explicit-period Central queries both matched physical page 3 of the supplied amendment in targeted live retests. The audit also fixed hard-coded pending-review logic that prevented genuine accepted source/OCR records from surviving ingestion. It requires recorded reviewer/date and source/page consistency; synthetic acceptance fixtures never modify real records. A first repair check caught legacy Maharashtra OCR pages without per-page acceptance flags; they now default to unaccepted and are covered in the regression.
+
+After fixes, all 196 automated checks and 117 real ingestion assertions passed. The 18 corpus JSONLs reproduced byte-for-byte; no real review flags were changed. Original PDF hashes, notebook schema/syntax, empty saved outputs and bounded credential exclusion checks passed. The patched code was also exercised in the fresh environment. Source acceptance, current availability, independent case authorship, formal grades, deck, rehearsal and all-member uploads remain incomplete. Reports and browser observations are under `checks/professor_audit/`.
+
+AI assistance in this audit: requirement mapping, code inspection, repairs, synthetic regression cases, live development questions and output comparison, documentation and Git publication. No team review or instructor approval wording was invented.
 
 ## Stage 10 Madhya Pradesh technical closeout — 29 September 2026
 

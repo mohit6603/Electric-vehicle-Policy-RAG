@@ -1,0 +1,109 @@
+{
+  "checked_at_utc": "2026-09-29T17:01:45.165369+00:00",
+  "source": "anonymous published-commit export with a new virtual environment and rebuilt index",
+  "results": [
+    {
+      "suite": "dependencies",
+      "exit_code": 0,
+      "seconds": 0.09,
+      "summary": []
+    },
+    {
+      "suite": "stage5_index_checks",
+      "exit_code": 0,
+      "seconds": 2.64,
+      "summary": [
+        "Stage 5 persistence checks passed: 16"
+      ]
+    },
+    {
+      "suite": "stage6_retrieval_checks",
+      "exit_code": 0,
+      "seconds": 1.52,
+      "summary": [
+        "Stage 6 retrieval checks passed: 19"
+      ]
+    },
+    {
+      "suite": "stage7_answer_checks",
+      "exit_code": 0,
+      "seconds": 1.0,
+      "summary": [
+        "Stage 7 citation checks passed: 14"
+      ]
+    },
+    {
+      "suite": "stage8_failure_checks",
+      "exit_code": 0,
+      "seconds": 1.09,
+      "summary": [
+        "Stage 8 offline checks passed: 50"
+      ]
+    },
+    {
+      "suite": "stage9_ui_checks",
+      "exit_code": 0,
+      "seconds": 4.61,
+      "summary": [
+        "Stage 9 UI checks passed: 15"
+      ]
+    },
+    {
+      "suite": "stage10_up_checks",
+      "exit_code": 0,
+      "seconds": 1.73,
+      "summary": [
+        "Stage 10 UP integration checks passed: 10"
+      ]
+    },
+    {
+      "suite": "stage10_delhi_checks",
+      "exit_code": 0,
+      "seconds": 1.79,
+      "summary": [
+        "Stage 10 Delhi integration checks passed: 9"
+      ]
+    },
+    {
+      "suite": "stage10_gujarat_checks",
+      "exit_code": 0,
+      "seconds": 1.75,
+      "summary": [
+        "Stage 10 Gujarat integration checks passed: 11"
+      ]
+    },
+    {
+      "suite": "stage10_telangana_checks",
+      "exit_code": 0,
+      "seconds": 1.76,
+      "summary": [
+        "Stage 10 Telangana integration checks passed: 10"
+      ]
+    },
+    {
+      "suite": "stage10_karnataka_checks",
+      "exit_code": 0,
+      "seconds": 2.77,
+      "summary": [
+        "Stage 10 Karnataka integration checks passed: 11"
+      ]
+    },
+    {
+      "suite": "stage10_mp_checks",
+      "exit_code": 0,
+      "seconds": 1.71,
+      "summary": [
+        "Stage 10 Madhya Pradesh integration checks passed: 10"
+      ]
+    },
+    {
+      "suite": "evaluation_checks",
+      "exit_code": 0,
+      "seconds": 0.02,
+      "summary": [
+        "Evaluation gate checks passed: 9"
+      ]
+    }
+  ],
+  "scope": "Technical development checks, not team-authored formal evaluation"
+}

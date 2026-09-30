@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-09-30T04:15:27.291888+00:00",
+  "notebook": {
+    "cells": 98,
+    "code_cells": 68,
+    "schema_and_syntax_passed": true,
+    "saved_outputs_empty": true
+  },
+  "sources": 34,
+  "all_original_pdf_hashes_match": true,
+  "page_records": 308,
+  "unique_chunks": 804,
+  "jurisdictions": [
+    "Central",
+    "Delhi",
+    "Gujarat",
+    "Karnataka",
+    "Madhya Pradesh",
+    "Maharashtra",
+    "Tamil Nadu",
+    "Telangana",
+    "Uttar Pradesh"
+  ],
+  "accepted_sources": 0,
+  "current_entitlement_sources": 0,
+  "evaluation_slots": 24,
+  "nonempty_team_questions": 0,
+  "credential_pattern_scan_passed": true,
+  "credential_scan_limit": "Common token/private-key patterns in tracked file contents; not exhaustive secret detection.",
+  "env_virtualenv_index_not_tracked": true,
+  "git_authors": [
+    "Mohit Patle <142034520+mohit6603@users.noreply.github.com>"
+  ],
+  "llm_coauthor_trailers": false,
+  "final_deck_files": [],
+  "final_zip_files": []
+}

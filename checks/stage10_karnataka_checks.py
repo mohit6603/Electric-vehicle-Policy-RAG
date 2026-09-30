@@ -118,7 +118,7 @@ def run_checks(live=False, case=None):
     review = json.loads(Path('data/ocr/karnataka/review.json').read_text())
     pages = stage['load_policy_pages'](manifest, review, 'Karnataka')
     assert sum(d.metadata['text_status'] == 'ai_proposal' for d in pages) == 9
-    assert all(not d.metadata['team_verified'] and not d.metadata['accepted_for_ingestion'] for d in pages)
+    assert all(not d.metadata['accepted_for_ingestion'] or d.metadata['team_verified'] for d in pages)
     broken = copy.deepcopy(review)
     broken['pages'].pop()
     try:

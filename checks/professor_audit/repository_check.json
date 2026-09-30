@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-09-29T17:00:01.218948+00:00",
+  "published_commit": "4b85eedd788b20e83b702ebc92a93dbe5d7d4167",
+  "public_repository": true,
+  "anonymous_archive_download": true,
+  "archive_sha256": "62c7bffb7f2d49fc741dec417a80ed24a727c23e6ae185acf7e42c5cb2440e4a",
+  "tracked_files_match": true,
+  "tracked_file_count": 285,
+  "secrets_and_local_index_absent": true,
+  "github_url": "https://github.com/mohit6603/Electric-vehicle-Policy-RAG"
+}
